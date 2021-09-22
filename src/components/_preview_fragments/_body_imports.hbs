@@ -1,0 +1,15 @@
+<!-- if dev -->
+{{#if (IS_DEV)}}
+<script
+  type="module"
+  src="http://{{HMR_URL}}:{{HMR_PORT}}/@vite/client"
+></script>
+<script
+  type="module"
+  src="http://{{HMR_URL}}:{{HMR_PORT}}/src/js/app.ts"
+></script>
+{{else}}
+<!-- if production -->
+<script type="module" src="{{path '/app.js'}}"></script>
+<script type="module" src="{{path '/vendor.js'}}"></script>
+{{/if}}

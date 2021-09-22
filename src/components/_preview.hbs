@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{> @head_meta }} {{> @head_imports }}
+  </head>
+
+  <body class="preview-wrapper max-w-2xl mx-auto">
+    <div itemscope itemtype="http://schema.org/Article">
+      {{{ yield }}} {{> @body_imports }}
+    </div>
+  </body>
+</html>

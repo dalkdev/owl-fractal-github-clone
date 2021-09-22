@@ -1,0 +1,23 @@
+<!-- if dev -->
+{{#if (IS_DEV)}}
+<link
+  rel="stylesheet"
+  href="http://{{HMR_URL}}:{{HMR_PORT}}/src/css/fonts.scss"
+/>
+<link
+  rel="stylesheet"
+  href="http://{{HMR_URL}}:{{HMR_PORT}}/src/css/app.scss"
+/>
+{{!--
+<link
+  rel="stylesheet"
+  href="http://{{HMR_URL}}:{{HMR_PORT}}/src/css/fonts.scss"
+/>
+--}} {{else}}
+<!-- if production -->
+<link rel="stylesheet" href="{{path '/app.css'}}" />
+<link rel="stylesheet" href="{{path '/fonts.css'}}" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+
+{{/if}}

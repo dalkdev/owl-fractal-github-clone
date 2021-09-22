@@ -1,0 +1,15 @@
+{
+  "overrides": [
+    {
+      "files": "*.hbs",
+      "options": { "parser": "html" }
+    }
+  ],
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "semi": true,
+  "tabWidth": 2,
+  "proseWrap": "preserve",
+  "htmlWhitespaceSensitivity": "css",
+  "arrowParens": "avoid"
+}

@@ -1,0 +1,14 @@
+@use "sass:color";
+
+@use 'variables' as *;
+@use 'mixins/responsive';
+
+@use './general/reset';
+@use './general/main';
+
+// has to be at the end to override certain properties
+@use 'general/a11y';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

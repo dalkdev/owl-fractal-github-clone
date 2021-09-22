@@ -1,0 +1,20 @@
+{
+  "plugins": ["stylelint-scss"],
+  "extends": "stylelint-config-prettier",
+  "ignoreFiles": [
+    "**/*.ico",
+    "**/*.png",
+    "**/*.jpg",
+    "**/*.svg",
+    "**/*.woff",
+    "**/*.woff2",
+    "**/*.json",
+    "**/*.webmanifest"
+  ],
+  "rules": {
+    "comment-whitespace-inside": "always",
+    "length-zero-no-unit": true,
+    "max-empty-lines": 1,
+    "unit-case": "lower"
+  }
+}

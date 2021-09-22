@@ -1,0 +1,4 @@
+{
+  "src/js/**/*.{ts,js}": "yarn eslint --fix",
+  "*.{scss,css}": "yarn stylelint --fix"
+}

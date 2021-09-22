@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+// set basic rem unit
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  font-family: $font-sans;
+  color: $color-font-primary;
+  background: $color-background-primary;
+  padding: 0;
+  overflow-x: hidden;
+}

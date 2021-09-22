@@ -1,0 +1,58 @@
+// ---------------------
+// Basic color variables
+// ---------------------
+
+// Grey
+$color-black: #000000;
+$color-almostblack: #3a3a3a;
+$color-grey-dark: #646464;
+$color-grey-medium: #999;
+$color-grey-light: #e4e2dc;
+$color-grey-light-2: #e6e6e7;
+$color-grey-ultralight: #f6f6f6;
+$color-grey-yellowish: #f1f0ed;
+$color-white: #fff;
+
+// Red
+$color-red-medium: #d6001c;
+$color-red-light: #c9443a;
+$color-red-light2: #de5247;
+
+// Green
+$color-green-dark: #229554;
+$color-green-medium: #13a538;
+$color-green-light: #8ab63b;
+
+// Blue
+$color-blue-dark: #2b4290;
+$color-blue-medium: #0085ca;
+$color-blue-light: #2dafe6;
+$color-cyan: #32a2ad;
+$color-cyan-light: #82cad7;
+
+// Orange
+$color-orange: #ef7d00;
+
+// Purple
+$color-purple-dark: #7e2754;
+$color-purple-light: #b31852;
+
+// Yellow
+$color-yellow-dark: #e4a400;
+$color-yellow-medium: #eec212;
+$color-yellow-light: #ffd500;
+$color-yellow-green: #c8d300;
+$color-yellow-postit-1: #f0dc84;
+$color-yellow-postit-2: #f4e49a;
+
+// -----------------------
+// Derived color variables
+// -----------------------
+
+$color-font-primary: $color-almostblack;
+$color-font-inverted: $color-white;
+$color-background-primary: $color-white;
+
+$color-state-error: $color-red-medium;
+$color-state-warning: $color-orange;
+$color-state-ok: $color-green-dark;
