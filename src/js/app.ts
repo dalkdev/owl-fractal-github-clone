@@ -1,13 +1,11 @@
 import { initPolyfills } from './global/polyfills';
-import { initSlider } from './modules/slider';
-
-console.log('app.ts loaded!');
+import { initSliders } from './modules/embla-slider';
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
 
 // These will be called after DOMContentLoaded event
-const initializationFunctions: Array<() => void> = [initSlider];
+const initializationFunctions: Array<() => void> = [initSliders];
 
 preloadFunctions.forEach(initializationFunction => {
   try {

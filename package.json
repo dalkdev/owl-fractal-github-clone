@@ -4,6 +4,8 @@
   "license": "MIT",
   "dependencies": {
     "@frctl/fractal": "^1.5.8",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "embla-carousel": "^4.5.3",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "engines": {
@@ -12,6 +14,7 @@
   "scripts": {
     "start": "cross-env HMR_PORT=3042 concurrently -n fractal,vite -c magenta,yellow \"yarn fractal:start\" \"yarn vite:start\"",
     "build": "yarn vite:build && fractal build",
+    "build:serve": "yarn build && serve build",
     "fractal:start": "cross-env NODE_ENV=dev fractal start ./ --sync",
     "vite:start": "cross-env  HMR_PORT=3042 vite",
     "vite:build": "tsc && vite build",
@@ -48,6 +51,7 @@
     "pretty-quick": "^3.1.0",
     "rimraf": "^3.0.2",
     "sass": "^1.34.1",
+    "serve": "^12.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-scss": "^3.19.0",

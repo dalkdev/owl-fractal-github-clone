@@ -8,7 +8,7 @@
 ## Setup
 
 - clone and `cd` into this repository
-- `yarn install`
+- `yarn`
 
 ## Important Commands
 

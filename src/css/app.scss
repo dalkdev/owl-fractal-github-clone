@@ -6,9 +6,23 @@
 @use './general/reset';
 @use './general/main';
 
+@use './modules/embla-slider';
+
 // has to be at the end to override certain properties
 @use 'general/a11y';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
+.slider--button-next {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slider--button-prev {
+  -webkit-tap-highlight-color: transparent;
+}
