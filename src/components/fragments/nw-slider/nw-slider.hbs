@@ -1,19 +1,19 @@
-<div class="slider bg-nw-gray-100 pb-4">
+<div class="slider nw-bg-nw-gray-100 nw-pb-4">
   <div class="embla embla--main-carousel">
     <div class="embla__viewport relative">
       <div class="embla__container">
         {{#each images}}
         <div class="embla__slide">
           <div class="embla__slide__inner">
-            <div class="aspect-w-3 aspect-h-2">
+            <div class="nw-aspect-w-3 nw-aspect-h-2">
               <img
-                class="embla__slide__img h-full w-full object-cover"
+                class="embla__slide__img nw-h-full nw-w-full nw-object-cover"
                 src="{{src}}"
               />
             </div>
           </div>
-          <div class="px-4 pt-2 pb-1">
-            <p class="text-xs text-black">{{{caption}}}</p>
+          <div class="nw-px-4 nw-pt-2 nw-pb-1">
+            <p class="nw-text-xs nw-text-black">{{{caption}}}</p>
           </div>
         </div>
         {{/each}}
@@ -21,19 +21,19 @@
       <div
         class="
           slider--button-prev
-          flex
-          bg-black
-          text-white
-          w-8
-          h-8
-          absolute
-          rounded-full
-          object-center
-          top-1/2
-          left-2
-          transform
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-left-2
+          nw-transform
           -translate-y-1/2
-          cursor-pointer
+          nw-cursor-pointer
         "
       >
         <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
@@ -41,19 +41,19 @@
       <div
         class="
           slider--button-next
-          flex
-          bg-black
-          text-white
-          w-8
-          h-8
-          absolute
-          rounded-full
-          object-center
-          top-1/2
-          right-2
-          transform
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-right-2
+          nw-transform
           -translate-y-1/2
-          cursor-pointer
+          nw-cursor-pointer
         "
       >
         <img class="w-full" src="{{path '/images/arrow-right.svg'}}" />
@@ -61,8 +61,8 @@
     </div>
   </div>
 
-  <div class="px-4 py-2">
-    <p class="text-xs text-mw-grey-400">
+  <div class="nw-px-4 nw-py-2">
+    <p class="nw-text-xs nw-text-mw-grey-400">
       Bild <span class="slider--counter-current">1</span> von
       <span class="slider--counter-total"></span>
     </p>
@@ -70,11 +70,11 @@
 
   <!-- Thumbs -->
   <div class="embla embla--thumb">
-    <div class="embla__viewport px-4">
+    <div class="embla__viewport nw-px-4">
       <div class="embla__container embla__container--thumb">
         {{#each images}}
         <div class="embla__slide embla__slide--thumb">
-          <div class="aspect-w-3 aspect-h-2">
+          <div class="nw-aspect-w-3 nw-aspect-h-2">
             <button
               class="embla__slide__inner embla__slide__inner--thumb"
               type="button"

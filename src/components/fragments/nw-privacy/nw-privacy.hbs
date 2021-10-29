@@ -1,23 +1,23 @@
-<div class="mx-4 my-2 bg-nw-gray-100">
-  <div class="p-4">
-    <p class="text-tiny font-bold">Empfohlener redaktioneller Inhalt</p>
-    <p class="text-sm font-regular">
+<div class="nw-mx-4 nw-my-2 nw-bg-nw-gray-100">
+  <div class="nw-p-4">
+    <p class="nw-text-tiny nw-font-bold">Empfohlener redaktioneller Inhalt</p>
+    <p class="nw-text-sm nw-font-regular">
       Wir bieten an dieser Stelle weitere externe Informationen zu dem Artikel
       an. Mit einem Klick können Sie sich diese anzeigen lassen und auch wieder
       ausblenden.
     </p>
-    <div class="my-4">
+    <div class="nw-my-4">
       <div
         class="
-          relative
-          inline-block
-          w-12
-          mr-2
-          align-middle
-          select-none
-          transition
-          duration-200
-          ease-in
+          nw-relative
+          nw-inline-block
+          nw-w-12
+          nw-mr-2
+          nw-align-middle
+          nw-select-none
+          nw-transition
+          nw-duration-200
+          nw-ease-in
         "
       >
         <input
@@ -25,40 +25,40 @@
           name="toggle"
           id="toggle"
           class="
-            toggle-checkbox
-            absolute
-            block
-            w-6
-            h-6
-            rounded-full
-            bg-white
-            border-4
-            appearance-none
-            cursor-pointer
+            nw-toggle-checkbox
+            nw-absolute
+            nw-block
+            nw-w-6
+            nw-h-6
+            nw-rounded-full
+            nw-bg-white
+            nw-border-4
+            nw-appearance-none
+            nw-cursor-pointer
           "
         />
         <label
           for="toggle"
           class="
-            toggle-label
-            block
-            overflow-hidden
-            h-6
-            rounded-full
-            bg-gray-300
-            cursor-pointer
+            nw-toggle-label
+            nw-block
+            nw-overflow-hidden
+            nw-h-6
+            nw-rounded-full
+            nw-bg-gray-300
+            nw-cursor-pointer
           "
         ></label>
       </div>
-      <label for="toggle" class="text-black text-tiny font-regular"
+      <label for="toggle" class="nw-text-black nw-text-tiny nw-font-regular"
         >Externe Inhalte aktivieren</label
       >
     </div>
-    <p class="text-sm font-regular">
+    <p class="nw-text-sm nw-font-regular">
       Wenn Sie sich externe Inhalte anzeigen lassen, erklären Sie sich damit
       einverstanden, dass personenbezogene Daten an Drittplattformen übermittelt
       werden.
-      <em class="not-italic text-nw-red-100"
+      <em class="nw-not-italic nw-text-nw-red-100"
         >Weitere Hinweise dazu finden Sie in unserer Datenschutzerklärung.</em
       >
     </p>
@@ -68,13 +68,13 @@
 <style>
   /* CHECKBOX TOGGLE SWITCH */
   /* @apply rules for documentation, these do not work as inline style */
-  .toggle-checkbox:checked {
-    @apply: right-0 border-green-400;
+  .nw-toggle-checkbox:checked {
+    @apply: nw-right-0 nw-border-green-400;
     right: 0;
     border-color: #68d391;
   }
-  .toggle-checkbox:checked + .toggle-label {
-    @apply: bg-green-400;
+  .nw-toggle-checkbox:checked + .nw-toggle-label {
+    @apply: nw-bg-green-400;
     background-color: #68d391;
   }
 </style>

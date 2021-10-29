@@ -1,5 +1,6 @@
 module.exports = {
   purge: { layers: ['utilities'], content: ['./src/components/**/*.hbs'] },
+  prefix: 'nw-',
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
