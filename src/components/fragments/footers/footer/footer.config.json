@@ -1,0 +1,21 @@
+{
+  "status": "qm",
+  "context": {
+    "headline": "NW App",
+    "firstColumn": {
+      "headline": "NW App"
+    },
+    "secondColumn": {
+      "headline": "NW-Portale"
+    },
+    "thirdColumn": {
+      "headline": "Service"
+    },
+    "fourthColumn": {
+      "headline": "Rechtliches"
+    },
+    "fifthColumn": {
+      "headline": "Newsletter abonnieren"
+    }
+  }
+}

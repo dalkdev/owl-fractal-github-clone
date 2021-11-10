@@ -1,0 +1,23 @@
+<div class="nw-mx-4 nw-my-4 nw-divide-y-2">
+  <div class="nw-flex nw-space-x-1 nw-h-3 nw-mb-1">
+    <div
+      class="
+        nw-w-3 nw-h-3 nw-border-2 nw-rounded-full nw-border-nw-red-100 nw-flex
+      "
+    ></div>
+    <p
+      class="
+        nw-text-sm
+        nw-font-bold
+        nw-place-self-center
+        nw-tracking-wide
+        nw-uppercase
+      "
+    >
+      {{sectionTitle}}
+    </p>
+  </div>
+  <div class="nw-flex-col nw-pt-2 nw-space-y-2">
+    {{#each links}} {{>@link}} {{/each}}
+  </div>
+</div>

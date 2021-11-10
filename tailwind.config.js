@@ -5,18 +5,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'nw-gray': {
+        gray: {
           100: '#F2F2F2',
           200: '#C8C8C8',
           300: '#999999',
           400: '#737373',
           500: '#4D4D4D',
         },
-        'nw-red': {
+        red: {
           100: '#D20A11',
           200: '#D1050C',
         },
-        'nw-blue': '#41B7CC',
+        blue: '#41B7CC',
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
@@ -39,6 +39,9 @@ module.exports = {
         'teaser-width': '125px',
         'teaser-height': '72px',
         'video-height': '200px',
+      },
+      screens: {
+        desktop: '1062px',
       },
     },
   },

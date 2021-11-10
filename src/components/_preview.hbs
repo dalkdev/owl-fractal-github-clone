@@ -4,9 +4,13 @@
     {{> @head_meta }} {{> @head_imports }}
   </head>
 
-  <body class="nw-preview-wrapper nw-max-w-2xl nw-mx-auto">
+  <body>
     <div itemscope itemtype="http://schema.org/Article">
-      {{{ yield }}} {{> @body_imports }}
+      <main
+        class="nw-max-w-6xl nw-w-full nw-mx-auto nw-px-4 sm:nw-px-6 lg:nw-px-8"
+      >
+        {{{ yield }}} {{> @body_imports }}
+      </main>
     </div>
   </body>
 </html>

@@ -119,3 +119,6 @@ dist
 
 # Fractal build destination
 build
+
+#PHPStorm config
+/.idea
