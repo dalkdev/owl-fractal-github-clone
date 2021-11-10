@@ -59,6 +59,22 @@
       }
     ],
 
-    "copyright": "© Zeitungsverlag Neue Westfälische GmbH & Co. KG"
+    "copyright": "© Zeitungsverlag Neue Westfälische GmbH & Co. KG",
+    "firstColumn": {
+      "headline": "NW App"
+    },
+    "secondColumn": {
+      "headline": "NW-Portale"
+    },
+    "thirdColumn": {
+      "headline": "Service"
+    },
+    "fourthColumn": {
+      "headline": "Rechtliches"
+    },
+    "fifthColumn": {
+      "headline": "Newsletter abonnieren"
+    },
+    "menuitem": "Menüpunkt 1"
   }
 }
