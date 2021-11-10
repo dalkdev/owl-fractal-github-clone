@@ -1,16 +1,16 @@
-<div class="nw-mx-4 nw-my-4 nw-flex-col nw-space-y-2">
+<div class="mx-4 my-4 flex-col space-y-2">
   <div>
     <div
       class="
-        nw-relative
-        nw-inline-block
-        nw-w-12
-        nw-mr-2
-        nw-align-middle
-        nw-select-none
-        nw-transition
-        nw-duration-200
-        nw-ease-in
+        relative
+        inline-block
+        w-12
+        mr-2
+        align-middle
+        select-none
+        transition
+        duration-200
+        ease-in
       "
     >
       <input
@@ -18,51 +18,51 @@
         name="toggle"
         id="toggle"
         class="
-          nw-toggle-checkbox
-          nw-absolute
-          nw-block
-          nw-w-6
-          nw-h-6
-          nw-rounded-full
+          toggle-checkbox
+          absolute
+          block
+          w-6
+          h-6
+          rounded-full
           bg-white
-          nw-border-4
-          nw-appearance-none
-          nw-cursor-pointer
+          border-4
+          appearance-none
+          cursor-pointer
         "
       />
       <label
         for="toggle"
         class="
-          nw-toggle-label
-          nw-block
-          nw-overflow-hidden
-          nw-h-6
-          nw-rounded-full
-          nw-bg-gray-300
-          nw-cursor-pointer
+          toggle-label
+          block
+          overflow-hidden
+          h-6
+          rounded-full
+          bg-gray-300
+          cursor-pointer
         "
       ></label>
     </div>
-    <label for="toggle" class="nw-text-black nw-text-tiny nw-font-regular"
+    <label for="toggle" class="text-black text-tiny font-regular"
       >Externe Inhalte deaktivieren</label
     >
   </div>
-  <p class="nw-text-sm nw-font-regular">
+  <p class="text-sm font-regular">
     Weitere Hinweise dazu finden Sie in unserer
-    <em class="nw-not-italic nw-text-nw-red-100 nw-underline">Datenschutzerklärung.</em>
+    <em class="not-italic text-nw-red-100 underline">Datenschutzerklärung.</em>
   </p>
 </div>
 
 <style>
   /* CHECKBOX TOGGLE SWITCH */
   /* @apply rules for documentation, these do not work as inline style */
-  .nw-toggle-checkbox:checked {
-    @apply: nw-right-0 nw-border-green-400;
+  .toggle-checkbox:checked {
+    @apply: right-0 border-green-400;
     right: 0;
     border-color: #68d391;
   }
-  .nw-toggle-checkbox:checked + .nw-toggle-label {
-    @apply: nw-bg-green-400;
+  .toggle-checkbox:checked + .toggle-label {
+    @apply: bg-green-400;
     background-color: #68d391;
   }
 </style>
