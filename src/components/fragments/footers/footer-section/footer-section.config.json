@@ -1,3 +1,22 @@
 {
-  "status": "qm"
+  "status": "qm",
+  "headline": "NW-Portale",
+  "menuitem": "Stellen",
+  "menuitems": [
+    {
+      "menuitem": "Stellen"
+    },
+    {
+      "menuitem": "Immobilien"
+    },
+    {
+      "menuitem": "Fahrzeugmarkt"
+    },
+    {
+      "menuitem": "Trauer"
+    },
+    {
+      "menuitem": "Ausbildung"
+    }
+  ]
 }

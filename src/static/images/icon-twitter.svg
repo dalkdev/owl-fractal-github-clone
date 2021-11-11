@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-icon-twitter">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="icon-twitter" clip-path="url(#clip-icon-twitter)">
+    <g id="Gruppe_25" data-name="Gruppe 25" transform="translate(-256 -11339)">
+      <g id="Symbols_Molecules_Buttons_Btn-Icon-Ghost" data-name="Symbols/Molecules/Buttons/Btn-Icon-Ghost" transform="translate(264 11348.333)">
+        <path id="Pfad_183" data-name="Pfad 183" d="M16,49.578a6.706,6.706,0,0,1-1.89.531,3.332,3.332,0,0,0,1.443-1.859,6.457,6.457,0,0,1-2.08.814A3.249,3.249,0,0,0,11.077,48,3.322,3.322,0,0,0,7.8,51.365a3.55,3.55,0,0,0,.076.767,9.21,9.21,0,0,1-6.761-3.519,3.454,3.454,0,0,0-.449,1.7,3.393,3.393,0,0,0,1.457,2.8A3.178,3.178,0,0,1,.64,52.7v.037a3.36,3.36,0,0,0,2.628,3.306,3.2,3.2,0,0,1-.86.111,2.83,2.83,0,0,1-.621-.057,3.323,3.323,0,0,0,3.065,2.344A6.487,6.487,0,0,1,.785,59.87,5.994,5.994,0,0,1,0,59.824a9.068,9.068,0,0,0,5.032,1.51,9.4,9.4,0,0,0,9.336-9.573c0-.149,0-.292-.012-.435A6.639,6.639,0,0,0,16,49.578Z" transform="translate(0 -48)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

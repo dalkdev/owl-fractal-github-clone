@@ -1,0 +1,13 @@
+{
+  "status": "qm",
+  "context": {
+    "default": {
+      "label": "Texteingabe",
+      "placeholder": "Text eingeben"
+    },
+    "email": {
+      "label": "E-Mail Adresse",
+      "placeholder": "E-Mail-Adresse eingeben"
+    }
+  }
+}

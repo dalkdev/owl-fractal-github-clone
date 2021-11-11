@@ -2,20 +2,97 @@
   "status": "qm",
   "context": {
     "headline": "NW App",
-    "firstColumn": {
-      "headline": "NW App"
+    "menuitem": "Menüpunkt",
+    "copyright": "© Zeitungsverlag Neue Westfälische GmbH & Co. KG",
+    "submitButton": {
+      "buttontext": "Abonnieren"
     },
-    "secondColumn": {
-      "headline": "NW-Portale"
+    "socialmedia": {
+      "facebook": {
+        "name": "Facebook",
+        "image": "icon-facebook.svg"
+      },
+      "twitter": {
+        "name": "Twitter",
+        "image": "icon-twitter.svg"
+      },
+      "instagram": {
+        "name": "Instagram",
+        "image": "icon-instagram.svg"
+      }
     },
-    "thirdColumn": {
-      "headline": "Service"
-    },
-    "fourthColumn": {
-      "headline": "Rechtliches"
-    },
-    "fifthColumn": {
-      "headline": "Newsletter abonnieren"
+    "columns": {
+      "first": {
+        "headline": "NW App"
+      },
+      "second": {
+        "headline": "NW-Portale",
+        "menuitems": [
+          {
+            "menuitem": "Stellen"
+          },
+          {
+            "menuitem": "Immobilien"
+          },
+          {
+            "menuitem": "Fahrzeugmarkt"
+          },
+          {
+            "menuitem": "Trauer"
+          },
+          {
+            "menuitem": "Ausbildung"
+          }
+        ]
+      },
+      "third": {
+        "headline": "Service",
+        "menuitems": [
+          {
+            "menuitem": "Abo-Service"
+          },
+          {
+            "menuitem": "ePaper-Login"
+          },
+          {
+            "menuitem": "Anzeigen"
+          },
+          {
+            "menuitem": "NW-Karte"
+          },
+          {
+            "menuitem": "Newsletter"
+          },
+          {
+            "menuitem": "Kontakt"
+          },
+          {
+            "menuitem": "Mediadaten"
+          }
+        ]
+      },
+      "fourth": {
+        "headline": "Rechtliches",
+        "menuitems": [
+          {
+            "menuitem": "Impressum"
+          },
+          {
+            "menuitem": "Datenschutz"
+          },
+          {
+            "menuitem": "AGB"
+          }
+        ]
+      },
+      "fifth": {
+        "headline": "Newsletter abonnieren",
+        "menuitems": [
+          {
+            "menuitem": "NW Newsletter - die wichtigsten News"
+          }
+        ]
+      }
     }
   }
 }
