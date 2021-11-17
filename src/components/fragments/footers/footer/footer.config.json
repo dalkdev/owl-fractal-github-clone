@@ -22,10 +22,10 @@
       }
     },
     "columns": {
-      "first": {
+      "nwapp": {
         "headline": "NW App"
       },
-      "second": {
+      "nwportale": {
         "headline": "NW-Portale",
         "menuitems": [
           {
@@ -45,7 +45,7 @@
           }
         ]
       },
-      "third": {
+      "service": {
         "headline": "Service",
         "menuitems": [
           {
@@ -71,7 +71,7 @@
           }
         ]
       },
-      "fourth": {
+      "rechtliches": {
         "headline": "Rechtliches",
         "menuitems": [
           {
@@ -85,7 +85,7 @@
           }
         ]
       },
-      "fifth": {
+      "newsletter": {
         "headline": "Newsletter abonnieren",
         "menuitems": [
           {

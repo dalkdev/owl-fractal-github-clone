@@ -11,7 +11,7 @@
       <div
         class="
           nw-grid nw-grid-rows-1
-          lg:nw-grid-cols-2
+          sm:nw-grid-cols-2
           nw-gap-8
           xl:nw-col-span-2
         "
@@ -20,34 +20,40 @@
           <div>
             {{>'@footer-headline'}}
             <div class="nw-flex nw-flex-col nw-gap-2 nw-pt-4">
-              <img src="/images/label_google-play@2x.png" class="nw-w-48" />
-              <img src="/images/label-appstore@2x.png" class="nw-w-48" />
+              <img
+                src="/images/label_google-play@2x.png"
+                class="nw-w-32 nw md:nw-max-w-xs"
+              />
+              <img
+                src="/images/label-appstore@2x.png"
+                class="nw-w-32 nw-max-w-xs"
+              />
             </div>
           </div>
           <div class="nw-mt-12 md:nw-mt-0">
-            {{#with columns}} {{>'@footer-headline' second}}
-            {{>'@footer-section' second}} {{/with}}
+            {{#with columns}} {{>'@footer-headline' nwportale}}
+            {{>'@footer-section' nwportale}} {{/with}}
           </div>
         </div>
         <div class="md:nw-grid md:nw-grid-cols-2 md:nw-gap-8">
           <div>
-            {{#with columns}} {{>'@footer-headline' third}} {{>'@footer-section'
-            third}} {{/with}}
+            {{#with columns}} {{>'@footer-headline' service}}
+            {{>'@footer-section' service}} {{/with}}
           </div>
           <div class="nw-mt-12 md:nw-mt-0">
-            {{#with columns}} {{>'@footer-headline' fourth}}
-            {{>'@footer-section' fourth}} {{/with}}
+            {{#with columns}} {{>'@footer-headline' rechtliches}}
+            {{>'@footer-section' rechtliches}} {{/with}}
           </div>
         </div>
       </div>
 
       <div class="nw-mt-8 xl:nw-mt-0">
-        {{>@footer-headline columns.fifth}}
+        {{>@footer-headline columns.newsletter}}
         <p class="nw-mt-4 nw-text-base nw-text-gray-100">
-          {{columns.fifth.menuitems.[0].menuitem}}
+          {{columns.newsletter.menuitems.[0].menuitem}}
         </p>
         <form
-          class="nw-mt-4 sm:nw-flex sm:nw-max-w-md nw-flex nw-flex-col nw-gap-2"
+          class="nw-mt-4 sm:nw-flex md:nw-max-w-md nw-flex nw-flex-col nw-gap-2"
         >
           {{>@input--email (contextData '@input')}}
           <div class="nw-rounded-md sm:nw-flex-shrink-0">
@@ -58,17 +64,26 @@
     </div>
     <div
       class="
-        nw-mt-8 nw-border-t nw-border-gray-700 nw-pt-8
+        nw-mt-8 nw-border-t nw-border-gray-600 nw-pt-8
         md:nw-flex md:nw-items-center md:nw-justify-between
       "
     >
-      <p class="nw-mt-8 nw-text-sm nw-text-gray-400 md:nw-mt-0 md:nw-order-0">
-        {{copyright}}
-      </p>
-      <div class="nw-flex nw-justify-end nw-gap-1">
+      <div
+        class="
+          nw-flex nw-justify-start
+          md:nw-justify-end
+          nw-gap-1
+          md:nw-order-2
+        "
+      >
         {{>'@social-media-button' socialmedia.instagram}}
         {{>'@social-media-button' socialmedia.facebook}}
         {{>'@social-media-button' socialmedia.twitter}}
+      </div>
+      <div
+        class="nw-mt-8 nw-text-base nw-text-gray-400 md:nw-mt-0 md:nw-order-1"
+      >
+        © Zeitungsverlag Neue Westfälische GmbH & Co. KG
       </div>
     </div>
   </div>
