@@ -1,4 +1,4 @@
-<footer class="nw-bg-gray-700" aria-labelledby="footer-heading">
+<footer class="nw-bg-gray-800" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="nw-sr-only">Footer</h2>
   <div
     class="
@@ -8,25 +8,18 @@
     "
   >
     <div class="xl:nw-grid xl:nw-grid-cols-3 xl:nw-gap-8">
-      <div
-        class="
-          nw-grid nw-grid-rows-1
-          sm:nw-grid-cols-2
-          nw-gap-8
-          xl:nw-col-span-2
-        "
-      >
+      <div class="nw-grid nw-grid-cols-2 nw-gap-8 xl:nw-col-span-2">
         <div class="md:nw-grid md:nw-grid-cols-2 md:nw-gap-8">
           <div>
             {{>'@footer-headline'}}
             <div class="nw-flex nw-flex-col nw-gap-2 nw-pt-4">
               <img
                 src="/images/label_google-play@2x.png"
-                class="nw-w-32 nw md:nw-max-w-xs"
+                class="nw-w-32 md:nw-max-w-md"
               />
               <img
                 src="/images/label-appstore@2x.png"
-                class="nw-w-32 nw-max-w-xs"
+                class="nw-w-32 md:nw-max-w-md"
               />
             </div>
           </div>
@@ -46,14 +39,13 @@
           </div>
         </div>
       </div>
-
       <div class="nw-mt-8 xl:nw-mt-0">
         {{>@footer-headline columns.newsletter}}
         <p class="nw-mt-4 nw-text-base nw-text-gray-100">
           {{columns.newsletter.menuitems.[0].menuitem}}
         </p>
         <form
-          class="nw-mt-4 sm:nw-flex md:nw-max-w-md nw-flex nw-flex-col nw-gap-2"
+          class="nw-mt-4 sm:nw-flex sm:nw-max-w-md nw-flex nw-flex-col nw-gap-2"
         >
           {{>@input--email (contextData '@input')}}
           <div class="nw-rounded-md sm:nw-flex-shrink-0">
@@ -80,11 +72,9 @@
         {{>'@social-media-button' socialmedia.facebook}}
         {{>'@social-media-button' socialmedia.twitter}}
       </div>
-      <div
-        class="nw-mt-8 nw-text-base nw-text-gray-400 md:nw-mt-0 md:nw-order-1"
-      >
+      <p class="nw-mt-8 nw-text-base nw-text-gray-400 md:nw-mt-0 md:nw-order-1">
         © Zeitungsverlag Neue Westfälische GmbH & Co. KG
-      </div>
+      </p>
     </div>
   </div>
 </footer>
