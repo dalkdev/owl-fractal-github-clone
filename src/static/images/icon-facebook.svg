@@ -1,16 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-  <defs>
-    <clipPath id="clip-icon-facebook">
-      <rect width="32" height="32"/>
-    </clipPath>
-  </defs>
-  <g id="icon-facebook" clip-path="url(#clip-icon-facebook)">
-    <g id="Gruppe_2129" data-name="Gruppe 2129" transform="translate(22)">
-      <g id="Gruppe_24" data-name="Gruppe 24" transform="translate(-278 -11339)">
-        <g id="Symbols_Atoms_Icons_Facebook" data-name="Symbols/Atoms/Icons/Facebook" transform="translate(262 11345)">
-          <path id="Symbols_Atoms_Icons_Facebook-2" data-name="Symbols/Atoms/Icons/Facebook" d="M2.93,20H9.453V12.891H7.109V10.547H9.453V7.617a2.933,2.933,0,0,1,2.93-2.93h2.93V7.031H12.969A1.173,1.173,0,0,0,11.8,8.2v2.344h3.41l-.391,2.344H11.8V20H17.07A2.933,2.933,0,0,0,20,17.07V2.93A2.933,2.933,0,0,0,17.07,0H2.93A2.933,2.933,0,0,0,0,2.93V17.07A2.933,2.933,0,0,0,2.93,20ZM1.172,2.93A1.76,1.76,0,0,1,2.93,1.172H17.07A1.76,1.76,0,0,1,18.828,2.93V17.07a1.76,1.76,0,0,1-1.758,1.758h-4.1V14.063h2.84l.781-4.687H12.969V8.2h3.516V3.516h-4.1a4.106,4.106,0,0,0-4.1,4.1V9.375H5.938v4.688H8.281v4.766H2.93A1.76,1.76,0,0,1,1.172,17.07Zm0,0"/>
-        </g>
-      </g>
-    </g>
-  </g>
+<svg id="icon_Socialmedia_facebook" data-name="icon/Socialmedia/facebook" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Vereinigungsmenge_1" data-name="Vereinigungsmenge 1" d="M-4682,912a12.032,12.032,0,0,0-12,12.062,12.035,12.035,0,0,0,10.206,11.913v-8.717h-2.969v-3.17h2.969v-2.11c0-3.493,1.693-5.026,4.581-5.026a16.73,16.73,0,0,1,2.461.15v2.767h-1.97c-1.226,0-1.654,1.169-1.654,2.486v1.733h3.593l-.487,3.17h-3.106V936A12.033,12.033,0,0,0-4670,924.062,12.031,12.031,0,0,0-4682,912Z" transform="translate(4694 -912)" fill="#fff"/>
 </svg>

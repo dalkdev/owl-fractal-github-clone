@@ -45,8 +45,7 @@ const settings = {
   showGitCommit: true,
   showGeneratedDate: true,
   showUeUrl: true,
-  gitlabRepoUrl:
-    'https://gitlab.ueberbit.de/neue-westfaelische/nw-website-templates',
+  gitlabRepoUrl: 'https://gitlab.com/technik-owl-digital/owl-fractal',
 };
 
 // get commit hash via console
@@ -91,8 +90,12 @@ settings.showGeneratedDate &&
   informationPanelContent.push({
     label: 'Umsetzung',
     value: `
+<a href='https://www.nw.de/' target='_blank'>
+NW.de
+</a>
+ / 
 <a href='https://www.ueberbit.de/' target='_blank'>
-UEBERBIT GmbH
+ueberbit
 </a>`,
   });
 
