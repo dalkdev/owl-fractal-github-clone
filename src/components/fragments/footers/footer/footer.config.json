@@ -16,6 +16,10 @@
         "name": "Twitter",
         "image": "icon-twitter.svg"
       },
+      "pinterest": {
+        "name": "Pinterest",
+        "image": "icon-pinterest.svg"
+      },
       "instagram": {
         "name": "Instagram",
         "image": "icon-instagram.svg"
