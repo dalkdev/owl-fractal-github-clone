@@ -7,6 +7,8 @@
 @use './general/main';
 
 @use './modules/embla-slider';
+@use './modules/embla-navigation';
+@use './modules/embla-newsticker';
 
 // has to be at the end to override certain properties
 @use 'general/a11y';
@@ -25,4 +27,16 @@ html {
 
 .slider--button-prev {
   -webkit-tap-highlight-color: transparent;
+}
+
+.nw-newsticker-chevron {
+  position: relative;
+  top: 18px;
+  left: 24px;
+}
+
+.nw-menu-seperator {
+  background: transparent url('/images/black_pixel.png') center center;
+  width: 1px;
+  height: 24px;
 }
