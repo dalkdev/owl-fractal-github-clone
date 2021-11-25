@@ -5,10 +5,10 @@ export const setupPrevNextBtns = (prevBtn, nextBtn, embla) => {
 
 export const disablePrevNextBtns = (prevBtn, nextBtn, embla) => {
   return () => {
-    if (embla.canScrollPrev()) prevBtn.removeAttribute('disabled');
-    else prevBtn.setAttribute('disabled', 'disabled');
+    if (embla.canScrollPrev()) prevBtn.classList.remove('nw-hidden');
+    else prevBtn.classList.add('nw-hidden');
 
-    if (embla.canScrollNext()) nextBtn.removeAttribute('disabled');
-    else nextBtn.setAttribute('disabled', 'disabled');
+    if (embla.canScrollNext()) nextBtn.classList.remove('nw-hidden');
+    else nextBtn.classList.add('nw-hidden');
   };
 };

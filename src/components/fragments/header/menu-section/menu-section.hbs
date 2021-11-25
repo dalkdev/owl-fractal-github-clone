@@ -1,6 +1,10 @@
 <ul
   id="nw-menu-section"
-  class="nw-flex nw-justify-items-stretch nw-px-2 nw-h-10 nw-items-center"
+  class="
+    nw-flex nw-justify-items-stretch nw-px-0
+    sm:nw-px-2
+    nw-h-10 nw-items-center
+  "
 >
   <!-- burger menu -->
   <li
@@ -69,15 +73,7 @@
   <li class="nw-menu-seperator nw-inline-block"></li>
   <!-- navigation -->
   <li id="nw-navigation" class="nw-flex-grow nw-overflow-hidden">
-    <div
-      class="
-        embla-navigation
-        nw-max-w-full
-        sm:nw-max-w-sm
-        lg:nw-max-w-xl
-        xl:nw-max-w-3xl
-      "
-    >
+    <div class="embla-navigation nw-max-w-full">
       <div class="embla-navigation__viewport nw-overflow-hidden nw-w-full">
         <nav class="embla-navigation__container nw-flex nw-text-sm">
           <a
@@ -89,10 +85,10 @@
               nw-items-center
               nw-font-normal
               nw-whitespace-nowrap
-              nw-border-b-2
+              nw-px-1
             "
           >
-            Corona
+            <span class="nw-border-b-2">Corona</span>
           </a>
           <a
             href="#"
@@ -105,7 +101,7 @@
               nw-whitespace-nowrap
             "
           >
-            Arminia
+            <span>Arminia</span>
           </a>
           <a
             href="#"
@@ -118,7 +114,7 @@
               nw-whitespace-nowrap
             "
           >
-            Verkehrswende in Bielefeld
+            <span>Verkehrswende in Bielefeld</span>
           </a>
           <a
             href="#"
@@ -131,7 +127,7 @@
               nw-whitespace-nowrap
             "
           >
-            Sport
+            <span>Sport</span>
           </a>
           <a
             href="#"
@@ -144,7 +140,7 @@
               nw-whitespace-nowrap
             "
           >
-            Gesundheit
+            <span>Gesundheit</span>
           </a>
           <a
             href="#"
@@ -157,7 +153,7 @@
               nw-whitespace-nowrap
             "
           >
-            Umwelt
+            <span>Umwelt</span>
           </a>
           <a
             href="#"
@@ -170,7 +166,7 @@
               nw-whitespace-nowrap
             "
           >
-            Lifestyle
+            <span>Lifestyle</span>
           </a>
           <a
             href="#"
@@ -183,7 +179,7 @@
               nw-whitespace-nowrap
             "
           >
-            Lifestyle
+            <span>Lifestyle</span>
           </a>
           <a
             href="#"
@@ -196,16 +192,38 @@
               nw-whitespace-nowrap
             "
           >
-            Lifestyle
+            <span>Lifestyle</span>
+          </a>
+          <a
+            href="#"
+            class="
+              hover:nw-border-gray-300 hover:nw-text-gray-700
+              nw-inline-flex
+              nw-items-center
+              nw-px-1
+              nw-font-normal
+              nw-whitespace-nowrap
+            "
+          >
+            <span>Lifestyle</span>
+          </a>
+          <a
+            href="#"
+            class="
+              hover:nw-border-gray-300 hover:nw-text-gray-700
+              nw-inline-flex
+              nw-items-center
+              nw-px-1
+              nw-font-normal
+              nw-whitespace-nowrap
+            "
+          >
+            <span>Lifestyle</span>
           </a>
         </nav>
       </div>
       <button
-        class="
-          embla-navigation__button embla-navigation__button--prev
-          nw-hidden
-          sm:nw-inline-block
-        "
+        class="embla-navigation__button embla-navigation__button--prev"
         type="button"
       >
         <svg
@@ -223,11 +241,7 @@
         </svg>
       </button>
       <button
-        class="
-          embla-navigation__button embla-navigation__button--next
-          nw-hidden
-          sm:nw-inline-block
-        "
+        class="embla-navigation__button embla-navigation__button--next"
         type="button"
       >
         <svg
@@ -249,7 +263,7 @@
   <!-- service links -->
   <li
     id="nw-service-links"
-    class="nw-justify-self-end nw-hidden md:nw-inline-block"
+    class="nw-justify-self-end nw-hidden xl:nw-inline-block"
   >
     <div class="nw-flex nw-flex-nowrap nw-gap-2">
       <a
