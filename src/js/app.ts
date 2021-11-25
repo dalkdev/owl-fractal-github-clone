@@ -1,11 +1,17 @@
 import { initPolyfills } from './global/polyfills';
 import { initSliders } from './modules/embla-slider';
+import { initNavigation } from './modules/embla-navigation';
+import { initNewsticker } from './modules/embla-newsticker';
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
 
 // These will be called after DOMContentLoaded event
-const initializationFunctions: Array<() => void> = [initSliders];
+const initializationFunctions: Array<() => void> = [
+  initSliders,
+  initNavigation,
+  initNewsticker,
+];
 
 preloadFunctions.forEach(initializationFunction => {
   try {

@@ -21,6 +21,9 @@ module.exports = {
           400: '#D5353A',
           500: '#D20A11',
         },
+        custom: {
+          '1-700': '#4A5568',
+        },
         blue: '#41B7CC',
       },
       fontFamily: {
@@ -44,9 +47,6 @@ module.exports = {
         'teaser-width': '125px',
         'teaser-height': '72px',
         'video-height': '200px',
-      },
-      screens: {
-        desktop: '1062px',
       },
     },
   },

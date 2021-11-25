@@ -1,0 +1,71 @@
+#nw-navigation {
+  .embla-navigation {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .embla-navigation__viewport {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .embla-navigation__viewport.is-draggable {
+    cursor: move;
+    cursor: grab;
+  }
+
+  .embla-navigation__viewport.is-dragging {
+    cursor: grabbing;
+  }
+
+  .embla-navigation__container {
+    display: flex;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .embla-navigation__slide {
+    position: relative;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+
+  .embla-navigation__button {
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    touch-action: manipulation;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    fill: #1bcacd;
+    padding: 0;
+  }
+
+  .embla-navigation__button:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  .embla-navigation__button__svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .embla-navigation__button--prev {
+    left: 0;
+  }
+
+  .embla-navigation__button--next {
+    right: 0;
+  }
+}
