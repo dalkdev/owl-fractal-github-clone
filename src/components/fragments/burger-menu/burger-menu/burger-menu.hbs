@@ -1,24 +1,27 @@
-<ul
-  id="nwsidebar-navigation"
-  class="
-    nw-fixed
-    nw-left-0
-    nw-top-0
-    nw-w-72
-    nw-h-full
-    nw-bg-custom-1-700
-    nw-overflow-y
-  "
->
-  <li class="nw-px-3 nw-pt-2.5 nw-pb-3 nw-bg-custom-1-700">
-    {{>'@input--search'}}
-  </li>
-  {{>'@burger-nav-item-single' navitems.startseite}}
-  {{>'@burger-nav-item-single' navitems.newsletter}}
-  {{>'@burger-nav-item-dropdown' navitems.lokal}} {{>'@burger-nav-item-dropdown'
-  navitems.corona}} {{>'@burger-nav-item-dropdown' navitems.nachrichten}}
-  {{>'@burger-nav-item-dropdown' navitems.sport}} {{>'@burger-nav-item-single'
-  navitems.gesundheit}} {{>'@burger-nav-item-single' navitems.umwelt}}
-  {{>'@burger-nav-item-dropdown' navitems.lifestyle}} {{>'@burger-menu-footer'
-  (contextData "@burger-menu-footer")}}
-</ul>
+<div class="">
+  <ul
+    id="nwsidebar-navigation"
+    class="
+      nw-fixed
+      nw-left-0
+      nw-top-0
+      nw-w-72
+      nw-h-full
+      nw-bg-custom-1-700
+      nw-overflow-y-auto
+    "
+  >
+    <li class="nw-px-3 nw-pt-2.5 nw-pb-3 nw-bg-custom-1-700">
+      {{>'@input--search'}}
+    </li>
+    {{>'@burger-nav-item-single' navitems.startseite}}
+    {{>'@burger-nav-item-single' navitems.newsletter}}
+    {{>'@burger-nav-item-dropdown' navitems.lokal}}
+    {{>'@burger-nav-item-dropdown' navitems.corona}}
+    {{>'@burger-nav-item-dropdown' navitems.nachrichten}}
+    {{>'@burger-nav-item-dropdown' navitems.sport}} {{>'@burger-nav-item-single'
+    navitems.gesundheit}} {{>'@burger-nav-item-single' navitems.umwelt}}
+    {{>'@burger-nav-item-dropdown' navitems.lifestyle}} {{>'@burger-menu-footer'
+    (contextData "@burger-menu-footer")}}
+  </ul>
+</div>
