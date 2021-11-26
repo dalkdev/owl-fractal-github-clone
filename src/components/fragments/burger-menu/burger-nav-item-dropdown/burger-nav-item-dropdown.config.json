@@ -1,0 +1,22 @@
+{
+  "context": {
+    "label": "Lokal",
+    "menus": [
+      {
+        "label": "Bielefeld",
+        "items": [
+          "Brackwede",
+          "Dornberg",
+          "Gadderbaum",
+          "Heepen",
+          "Jöllenbeck",
+          "Mitte",
+          "Schildesche",
+          "Senne",
+          "Sennestadt",
+          "Stieghorst"
+        ]
+      }
+    ]
+  }
+}

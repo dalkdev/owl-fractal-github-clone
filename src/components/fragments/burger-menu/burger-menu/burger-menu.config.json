@@ -1,0 +1,225 @@
+{
+  "context": {
+    "navitems": {
+      "startseite": {
+        "label": "Startseite"
+      },
+      "newsletter": {
+        "label": "Newsletter"
+      },
+      "lokal": {
+        "label": "Lokal",
+        "menus": [
+          {
+            "label": "Bielefeld",
+            "menus": [
+              "Brackwede",
+              "Dornberg",
+              "Gadderbaum",
+              "Heepen",
+              "Jöllenbeck",
+              "Mitte",
+              "Schildesche",
+              "Senne",
+              "Sennestadt",
+              "Stieghorst"
+            ]
+          },
+          {
+            "label": "Kreis Gütersloh",
+            "menus": [
+              "Borgholzhausen",
+              "Gütersloh",
+              "Halle",
+              "Harsewinkel",
+              "Herzebrock-Clarholz",
+              "Rheda-Wiedenbrück",
+              "Rietberg",
+              "Schloß Holte-Stukenbrock",
+              "Steinhagen",
+              "Verl",
+              "Versmold",
+              "Werther"
+            ]
+          },
+          {
+            "label": "Kreis Herford",
+            "menus": [
+              "Bünde",
+              "Enger",
+              "Herford",
+              "Hiddenhausen",
+              "Kirchlengern",
+              "Löhne",
+              "Rödinghausen",
+              "Spenge",
+              "Vlotho"
+            ]
+          },
+          {
+            "label": "Kreis Höxter",
+            "menus": [
+              "Bünde",
+              "Enger",
+              "Herford",
+              "Hiddenhausen",
+              "Kirchlengern",
+              "Löhne",
+              "Rödinghausen",
+              "Spenge",
+              "Vlotho"
+            ]
+          },
+          {
+            "label": "Kreis Lippe",
+            "menus": [
+              "Bünde",
+              "Enger",
+              "Herford",
+              "Hiddenhausen",
+              "Kirchlengern",
+              "Löhne",
+              "Rödinghausen",
+              "Spenge",
+              "Vlotho"
+            ]
+          },
+          {
+            "label": "Kreis Minden-Lübbecke",
+            "menus": [
+              "Bünde",
+              "Enger",
+              "Herford",
+              "Hiddenhausen",
+              "Kirchlengern",
+              "Löhne",
+              "Rödinghausen",
+              "Spenge",
+              "Vlotho"
+            ]
+          },
+          {
+            "label": "Kreis Paderborn",
+            "menus": [
+              "Bünde",
+              "Enger",
+              "Herford",
+              "Hiddenhausen",
+              "Kirchlengern",
+              "Löhne",
+              "Rödinghausen",
+              "Spenge",
+              "Vlotho"
+            ]
+          }
+        ]
+      },
+      "corona": {
+        "label": "Corona",
+        "menus": [
+          "Meldungen",
+          "Corona in Bielefeld",
+          "Corona im Kreis Gütersloh",
+          "Corona im Kreis Herford",
+          "Corona im Kreis Höxter",
+          "Corona im Kreis Minden-Lübbecke",
+          "Corona im Kreis Paderborn"
+        ]
+      },
+      "nachrichten": {
+        "label": "Nachrichten",
+        "menus": [
+          "Zwischen Weser und Rhein",
+          "Politik",
+          "Meinung",
+          "Wirtschaft",
+          "Panorama",
+          "Computer / Internet",
+          {
+            "label": "Kultur",
+            "menus": [
+              "Kultur",
+              "Comedy",
+              "Literatur",
+              "Musik",
+              "Theater & Kunst",
+              "TV & Film",
+              "Veranstaltungstipps",
+              "Magazin"
+            ]
+          },
+          "Topthemen",
+          "Wissenschaft",
+          "Nachrichten"
+        ]
+      },
+      "sport": {
+        "label": "Sport",
+        "menus": [
+          "Sport",
+          "Sport in OWL",
+          {
+            "label": "Lokalsport",
+            "menus": [
+              "Übersicht",
+              "Bielefeld",
+              "Kreis Gütersloh",
+              "Kreis Herford",
+              "Kreis Höxter",
+              "Kreis Lippe",
+              "Kreis Minden-Lübbecke",
+              "Kreis Paderborn"
+            ]
+          },
+          "Fußball",
+          "DSC Arminia Bielefeld",
+          "SC Paderborn 07",
+          "Basketball",
+          "Handball",
+          "Hermannslauf",
+          "Sporttabellen",
+          "Sport-Nachrichten",
+          "Formel 1",
+          "Tennis"
+        ]
+      },
+      "gesundheit": {
+        "label": "Gesundheit"
+      },
+      "umwelt": {
+        "label": "Umwelt"
+      },
+      "lifestyle": {
+        "label": "Lifestyle",
+        "menus": [
+          "Übersicht",
+          "Essen & Trinken",
+          "Familie",
+          "Garten",
+          "Lust und Liebe",
+          "Medien",
+          "Mode",
+          "Netzwelt",
+          "Reise",
+          "Wohnen",
+          "Lotto",
+          "Mobilität"
+        ]
+      }
+    },
+    "footer": {
+      "menus": [
+        "Abo",
+        "ePaper",
+        "News-App",
+        "Lesezeichen",
+        "NW-Karte",
+        "Shop",
+        "Anzeigen",
+        "Tickets",
+        "Kontakt",
+        "Newsletter"
+      ]
+    }
+  }
+}
