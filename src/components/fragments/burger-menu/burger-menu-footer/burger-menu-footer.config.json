@@ -21,6 +21,20 @@
         "image": "icon-instagram.svg",
         "svg": "<svg id=\"icon_Socialmedia_instagram\" data-name=\"icon/Socialmedia/instagram\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">\n<path id=\"Ausschluss_1\" data-name=\"Ausschluss 1\" d=\"M-4677,936h-10a7.009,7.009,0,0,1-7-7V919a7.008,7.008,0,0,1,7-7h10a7.008,7.008,0,0,1,7,7v10A7.008,7.008,0,0,1-4677,936Zm-5-18a6.006,6.006,0,0,0-6,6,6.007,6.007,0,0,0,6,6,6.007,6.007,0,0,0,6-6A6.007,6.007,0,0,0-4682,918Zm6.5-3a1.5,1.5,0,0,0-1.5,1.5,1.5,1.5,0,0,0,1.5,1.5,1.5,1.5,0,0,0,1.5-1.5A1.5,1.5,0,0,0-4675.5,915Zm-6.5,13a4,4,0,0,1-4-4,4,4,0,0,1,4-4,4,4,0,0,1,4,4A4,4,0,0,1-4682,928Z\" transform=\"translate(4694 -912)\" fill=\"#fff\"/>\n</svg>"
       }
+    },
+    "footer": {
+      "menus": [
+        "Abo",
+        "ePaper",
+        "News-App",
+        "Lesezeichen",
+        "NW-Karte",
+        "Shop",
+        "Anzeigen",
+        "Tickets",
+        "Kontakt",
+        "Newsletter"
+      ]
     }
   }
 }
