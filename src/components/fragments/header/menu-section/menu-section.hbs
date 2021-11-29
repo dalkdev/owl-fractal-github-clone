@@ -11,26 +11,55 @@
     id="nw-burger"
     class="nw-nav-item nw-pr-3 nw-py-2 nw-hidden sm:nw-inline-block"
   >
-    <a href="#" class="nw-flex nw-justify-start nw-items-center nw-gap-1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="nw-h-5 nw-w-5"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        />
-      </svg>
+    <a href="#" class="" id="nw-burger-menu-switcher">
       <span
-        class="
-          nw-uppercase nw-text-black nw-text-sm nw-hidden
-          md:nw-inline-block
-        "
-        >Menü</span
+        id="nw-hidden-burger"
+        class="nw-flex nw-justify-start nw-items-center nw-gap-1 nw-hidden"
       >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="nw-h-5 nw-w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <span
+          class="
+            nw-uppercase nw-text-black nw-text-sm nw-hidden
+            md:nw-inline-block
+          "
+          >Menü</span
+        >
+      </span>
+      <span
+        id="nw-visible-burger"
+        class="nw-flex nw-justify-start nw-items-center nw-gap-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="nw-h-5 nw-w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <span
+          class="
+            nw-uppercase nw-text-black nw-text-sm nw-hidden
+            md:nw-inline-block
+          "
+          >Schliessen</span
+        >
+      </span>
     </a>
   </li>
   <li class="nw-menu-seperator nw-hidden md:nw-inline-block"></li>

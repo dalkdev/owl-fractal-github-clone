@@ -9,6 +9,7 @@
 @use './modules/embla-slider';
 @use './modules/embla-navigation';
 @use './modules/embla-newsticker';
+@use './modules/burger-menu';
 
 // has to be at the end to override certain properties
 @use 'general/a11y';
