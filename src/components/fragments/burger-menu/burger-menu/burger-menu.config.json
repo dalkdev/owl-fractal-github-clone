@@ -11,6 +11,9 @@
       "startseite": {
         "label": "Startseite"
       },
+      "menupunkt": {
+        "label": "Neuer Menüpunkt"
+      },
       "newsticker": {
         "label": "Newsticker"
       },

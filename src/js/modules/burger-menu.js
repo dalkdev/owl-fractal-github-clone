@@ -6,20 +6,22 @@ export function initBurgermenu() {
     document.getElementById('nw-visible-burger').classList.toggle('nw-hidden');
   }
 
-  const userSelection = document.getElementsByClassName('nw-dropdown-indicator');
+  const burgermenuDropdown = document.getElementsByClassName(
+    'nw-dropdown-indicator'
+  );
 
-  for (let i = 0; i < userSelection.length; i++) {
-    userSelection[i].addEventListener('click', function () {
+  for (let i = 0; i < burgermenuDropdown.length; i++) {
+    burgermenuDropdown[i].addEventListener('click', function () {
       const target = this.dataset.target;
       document.getElementById(target).classList.toggle('open');
     });
   }
 
-  document
-    .getElementById('nw-burger-menu-hide')
-    .addEventListener('click', () => toggleBurgermenu());
+  const burgermenuSwitch = document.getElementsByClassName(
+    'nw-burger-menu-switcher'
+  );
 
-  document
-    .getElementById('nw-burger-menu-switcher')
-    .addEventListener('click', () => toggleBurgermenu());
+  for (let i = 0; i < burgermenuSwitch.length; i++) {
+    burgermenuSwitch[i].addEventListener('click', () => toggleBurgermenu());
+  }
 }
