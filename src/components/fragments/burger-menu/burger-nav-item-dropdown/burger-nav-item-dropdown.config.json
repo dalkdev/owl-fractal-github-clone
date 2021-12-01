@@ -1,10 +1,16 @@
 {
   "context": {
     "label": "Lokal",
+    "target_2nd": {
+      "target": "nav-item-0-0"
+    },
+    "target_3rd": {
+      "target": "nav-item-1-0"
+    },
     "menus": [
       {
         "label": "Bielefeld",
-        "items": [
+        "menus": [
           "Brackwede",
           "Dornberg",
           "Gadderbaum",

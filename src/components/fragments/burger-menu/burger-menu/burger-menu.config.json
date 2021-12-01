@@ -1,5 +1,11 @@
 {
   "context": {
+    "target_2nd": {
+      "target": "nav-item-0-0"
+    },
+    "target_3rd": {
+      "target": "nav-item-1-0"
+    },
     "navitems": {
       "startseite": {
         "label": "Startseite"

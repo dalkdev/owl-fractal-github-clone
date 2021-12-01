@@ -1,4 +1,9 @@
 <div class="nw-max-w-6xl nw-bg-white" style="max-height: 206px">
-  {{>'@logo-section'}} {{>'@menu-section'}} {{>'@newsticker'}} {{>'@burger-menu'
-  (contextData '@burger-menu')}}
+  {{>'@logo-section'}} {{>'@menu-section'}} {{>'@newsticker'}}
+  <div
+    id="nw-sidebar-display-switch"
+    class="nw-w-72 nw-h-full nw-left-0 nw-top-0 nw-z-50"
+  >
+    {{>'@burger-menu' (contextData '@burger-menu')}}
+  </div>
 </div>

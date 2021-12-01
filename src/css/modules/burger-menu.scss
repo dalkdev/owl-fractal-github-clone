@@ -1,10 +1,14 @@
-#nwsidebar-navigation {
+#nw-sidebar-navigation {
+  @apply nw-fixed nw-top-0 nw-left-0 nw-w-72 nw-h-full nw-bg-custom-1-700 nw-overflow-y-auto nw-text-sm;
+
   .nw-nav-item {
+    @apply nw-bg-gray-100;
+
     > div {
-      @apply nw-flex nw-justify-between  nw-py-2 nw-pl-3 nw-border-b nw-bg-gray-100;
+      @apply nw-flex nw-justify-between nw-py-2 nw-pl-3 nw-border-b;
 
       > a {
-        @apply nw-text-black nw-uppercase nw-text-sm nw-my-1.5 nw-flex-grow;
+        @apply nw-text-black nw-uppercase nw-text-sm nw-flex-grow;
       }
 
       .nw-dropdown-indicator-closed {
@@ -16,16 +20,60 @@
       }
     }
 
-    .nw-nav-item-2nd {
-      @apply nw-flex nw-justify-between nw-border-b nw-py-2 nw-items-center;
+    .nw-burger-nav-2nd {
+      @apply nw-bg-white nw-hidden;
+
+      .nw-dropdown-indicator-closed {
+        @apply nw-px-2 nw-inline-block;
+      }
+
+      .nw-dropdown-indicator-open {
+        @apply nw-px-2 nw-hidden;
+      }
     }
 
-    .nw-nav-item-3rd {
+    .nw-burger-nav-3rd {
+      @apply nw-hidden;
+    }
+
+    .nw-burger-nav-2nd-item {
+      > div {
+        @apply nw-pl-6 nw-bg-white;
+        > a {
+          @apply nw-normal-case;
+        }
+      }
+      &.open {
+        > div {
+          > a {
+            @apply nw-normal-case;
+          }
+        }
+
+        .nw-burger-nav-3rd {
+          @apply nw-block;
+        }
+
+        .nw-dropdown-indicator-closed {
+          @apply nw-hidden;
+        }
+
+        .nw-dropdown-indicator-open {
+          @apply nw-inline-block;
+        }
+      }
+    }
+
+    .nw-burger-nav-3rd-item {
       @apply nw-pl-9 nw-py-1.5;
     }
 
     &.open {
       @apply nw-border-b nw-bg-white;
+
+      .nw-burger-nav-2nd {
+        @apply nw-block;
+      }
 
       > div {
         @apply nw-flex nw-justify-between nw-border-b nw-py-2 nw-items-center nw-bg-white;
@@ -35,19 +83,11 @@
         }
 
         .nw-dropdown-indicator-closed {
-          @apply nw-px-2 nw-hidden nw-my-auto;
+          @apply nw-hidden;
         }
 
         .nw-dropdown-indicator-open {
-          @apply nw-px-2 nw-inline-block nw-my-auto;
-        }
-
-        .nw-nav-item-2nd {
-          @apply nw-flex nw-justify-between nw-border-b nw-py-2 nw-items-center;
-
-          .nw-nav-item-3rd {
-            @apply nw-pl-9 nw-py-1.5;
-          }
+          @apply nw-inline-block;
         }
       }
     }
