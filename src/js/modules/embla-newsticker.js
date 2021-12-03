@@ -9,7 +9,7 @@ export function initNewsticker() {
   const embla = EmblaCarousel(viewPort, {
     align: 'start',
     slidesToScroll: 1,
-    skipSnaps: false,
+    skipSnaps: true,
   });
   const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
 

@@ -2,8 +2,8 @@ export function initBurgermenu() {
   function toggleBurgermenu() {
     const burgermenu = document.getElementById('nw-sidebar-navigation');
     burgermenu.classList.toggle('nw-hidden');
-    document.getElementById('nw-hidden-burger').classList.toggle('nw-hidden');
-    document.getElementById('nw-visible-burger').classList.toggle('nw-hidden');
+    const burgermenuOverlay = document.getElementById('burger-overlay');
+    burgermenuOverlay.classList.toggle('nw-hidden');
   }
 
   const burgermenuDropdown = document.getElementsByClassName(

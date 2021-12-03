@@ -96,3 +96,7 @@
     }
   }
 }
+
+#burger-overlay {
+  @apply nw-bg-black nw-opacity-30 nw-fixed nw-top-0 nw-left-0 nw-h-screen nw-w-screen;
+}
