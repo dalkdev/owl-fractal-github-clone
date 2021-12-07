@@ -1,3 +1,26 @@
-<div class="nw-mb-12 sm:nw-mb-0">
-    {{>'@input--email'}}
+<div class="nw-mb-12 nw-p-4 sm:nw-mb-0 nw-bg-white">
+    <div class="nw-mb-1">
+        {{>'@input--email'}}
+    </div>
+    <div class="nw-mb-1">
+        {{>'@input--password'}}
+    </div>
+    <div class="nw-text-right">
+        {{>'@link--black'}}
+    </div>
+    <div class="nw-mb-3">
+        <label class="nw-flex nw-items-center nw-space-x-3">
+            <input type="checkbox" name="checked-demo" value="1" class="nw-form-tick nw-h-3 nw-w-3 nw-border nw-border-gray-300 checked:bg-white focus:outline-none">
+            <span class="nw-text-gray-700">Angemeldet bleiben</span>
+        </label>
+    </div>
+    <div class="nw-mb-3">
+        {{>'@submit-button'}}
+    </div>
+
+    <div class="nw-text-center">
+        <p>Sie haben noch keinen Zugang?</p>
+        {{>'@link'}}
+
+    </div>
 </div>
