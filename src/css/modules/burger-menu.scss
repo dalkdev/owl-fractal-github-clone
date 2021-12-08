@@ -1,5 +1,13 @@
 #nw-sidebar-navigation {
-  @apply nw-fixed nw-top-0 nw-left-0 nw-w-72 nw-h-full nw-bg-custom-1-700 nw-overflow-y-auto nw-text-sm;
+  @apply nw-fixed nw-top-0 nw-left-0 nw-w-72 nw-h-full nw-bg-custom-1-700 nw-overflow-y-auto nw-text-sm nw-z-50 nw-transform nw--translate-x-72;
+
+  &.nw-close {
+    @apply nw-inline-block nw-transform nw--translate-x-72 nw-duration-500;
+  }
+
+  &.nw-open {
+    @apply nw-inline-block nw-transform nw-translate-x-0 nw-duration-500;
+  }
 
   .nw-nav-item {
     @apply nw-bg-gray-100;
@@ -98,5 +106,5 @@
 }
 
 #burger-overlay {
-  @apply nw-bg-black nw-opacity-30 nw-fixed nw-top-0 nw-left-0 nw-h-screen nw-w-screen;
+  @apply nw-bg-black nw-opacity-20 nw-fixed nw-top-0 nw-left-0 nw-h-screen nw-w-screen;
 }

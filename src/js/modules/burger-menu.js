@@ -1,7 +1,11 @@
 export function initBurgermenu() {
   function toggleBurgermenu() {
     const burgermenu = document.getElementById('nw-sidebar-navigation');
-    burgermenu.classList.toggle('nw-hidden');
+    if (burgermenu.classList.contains('nw-open')) {
+      burgermenu.classList.replace('nw-open', 'nw-close');
+    } else {
+      burgermenu.classList.replace('nw-close', 'nw-open');
+    }
     const burgermenuOverlay = document.getElementById('burger-overlay');
     burgermenuOverlay.classList.toggle('nw-hidden');
   }
