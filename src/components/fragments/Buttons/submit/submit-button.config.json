@@ -1,6 +1,6 @@
 {
   "status": "qm",
   "context": {
-    "buttontext": "Abschicken"
+    "label": "Abschicken"
   }
 }

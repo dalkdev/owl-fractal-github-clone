@@ -11,6 +11,14 @@
     },
     "buttontext": "Anmelden",
     "link": "Hier kostenlos registrieren",
+
+    "buttontext-login": {
+      "label": "Anmelden"
+    },
+
+    "buttontext-profile": {
+      "label": "Mein Profil"
+    },
     "buttontext-signout": "Abmelden"
   }
 }
