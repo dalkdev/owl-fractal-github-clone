@@ -17,8 +17,10 @@
     },
 
     "buttontext-profile": {
-      "label": "Mein Profil"
+      "label": "Mein Konto"
     },
+
+
     "buttontext-signout": "Abmelden"
   }
 }
