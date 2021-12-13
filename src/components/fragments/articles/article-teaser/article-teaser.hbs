@@ -1,13 +1,14 @@
-<div class="nw-grid md:nw-grid-cols-2 nw-grid-cols-1">
-
-    <div class="nw-grid md:nw-grid-cols-2 nw-grid-cols-1 nw-rounded-lg nw-bg-white">
-        <div>
-            {{>@image--teaser-half-page-image}}
-        </div>
-        <div class="nw-shadow-md">
-            {{>@banner}}{{>@headline--teaser-half-page}}
-        </div>
-    </div>
-    <div></div>
+<div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-2 lg:nw-grid-cols-2">
+  <div
+    class="
+      nw-grid nw-grid-cols-1
+      md:nw-grid-cols-2
+      lg:nw-grid-cols-2
+      nw-rounded-lg nw-bg-white
+    "
+  >
+    <div>{{>@image--teaser-half-page-image}}</div>
+    <div class="nw-shadow-md">{{>@banner}}{{>@headline--teaser-half-page}}</div>
+  </div>
+  <div></div>
 </div>
-
