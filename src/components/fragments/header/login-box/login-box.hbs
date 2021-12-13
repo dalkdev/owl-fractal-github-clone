@@ -6,11 +6,11 @@
         {{>'@input--password'}}
     </div>
     <div class="nw-text-right nw-mb-2 nw-text-xs">
-        {{>'@link--black'}}
+        <div><a href="#" class="nw-text-gray-700 hover:nw-underline">Passwort vergessen?</a></div>
     </div>
     <div class="nw-mb-3">
         <label class="nw-flex nw-items-center nw-space-x-3">
-            <input type="checkbox" name="checked-demo" value="1" class="nw-form-tick nw-h-3 nw-w-3 nw-border nw-border-gray-300 checked:nw-bg-white focus:outline-none">
+            <input type="checkbox" name="checked-demo" class="nw-form-tick nw-border nw-nw-border-gray-300 nw-appearance-none nw-h-3 nw-w-3 checked:nw-bg-gray-500 focus:outline-none">
             <span class="nw-text-gray-600 nw-text-xs nw-font-medium">Angemeldet bleiben</span>
         </label>
     </div>
@@ -20,6 +20,6 @@
 
     <div class="nw-text-center">
         <p>Sie haben noch keinen Zugang?</p>
-        <div class="nw-font-medium nw-underline">{{>'@link'}}</div>
+        <div class="nw-font-medium"><div><a href="{{link-target}}" class="nw-text-red-500 hover:nw-underline">{{link}}</a></div></div>
     </div>
 </div>

@@ -10,6 +10,8 @@
       "placeholder": "Passwort"
     },
     "buttontext": "Anmelden",
+
+
     "link": "Hier kostenlos registrieren",
 
     "buttontext-login": {
@@ -17,8 +19,10 @@
     },
 
     "buttontext-profile": {
-      "label": "Mein Profil"
+      "label": "Mein Konto"
     },
+
+
     "buttontext-signout": "Abmelden"
   }
 }
