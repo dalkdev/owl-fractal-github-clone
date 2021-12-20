@@ -20,7 +20,7 @@ module.exports = {
           300: '#D96165',
           400: '#D5353A',
           500: '#D20A11',
-          600: '#B3080E'
+          600: '#B3080E',
         },
         custom: {
           '1-700': '#4A5568',
@@ -51,6 +51,11 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      backgroundColor: ['checked'],
+      borderColor: ['checked'],
+    },
+  },
   plugins: [require('@tailwindcss/aspect-ratio')],
 };

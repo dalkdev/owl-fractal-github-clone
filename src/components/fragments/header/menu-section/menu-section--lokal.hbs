@@ -1,4 +1,5 @@
 <ul
+  id="nw-menu-section"
   class="
     nw-flex nw-bg-white nw-justify-items-stretch nw-px-0
     sm:nw-px-2
@@ -7,9 +8,15 @@
   "
 >
   <!-- burger menu -->
-  <li class="nw-nav-item nw-pr-3 nw-py-2 nw-hidden sm:nw-inline-block">
+  <li
+    id="nw-burger"
+    class="nw-nav-item nw-pr-3 nw-py-2 nw-hidden sm:nw-inline-block"
+  >
     <a href="#" class="nw-burger-menu-switcher">
-      <span class="nw-flex nw-justify-start nw-items-center nw-gap-1">
+      <span
+        id="nw-hidden-burger"
+        class="nw-flex nw-justify-start nw-items-center nw-gap-1"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="nw-h-5 nw-w-5"
@@ -35,50 +42,14 @@
     </a>
   </li>
   <li class="nw-menu-seperator nw-hidden md:nw-inline-block"></li>
-  <!-- newsticker -->
-  <li>
-    <a
-      href="#"
-      class="
-        nw-flex nw-justify-start nw-items-center nw-text-sm nw-pt-1 nw-px-2
-      "
-    >
-      Newsticker
-    </a>
-    <span
-      class="nw-relative nw-bg-white nw-leading-none nw-left-10"
-      style="bottom: -3px"
-    >
-      <svg
-        width="15"
-        height="7"
-        viewBox="0 0 15 7"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-hidden="true"
-      >
-        <g>
-          <path
-            class="nw-fill-current nw-text-gray-200 nw-"
-            d="M7.5 0l-7 7h14L11 3.5 7.5 0z"
-          ></path>
-          <path
-            class="nw-fill-current nw-text-white"
-            d="M7.5 1.5L2 7h11L7.5 1.5z"
-          ></path>
-        </g>
-      </svg>
-    </span>
-  </li>
-  <li class="nw-menu-seperator nw-inline-block"></li>
   <!-- navigation -->
-  <li class="nw-menu-nav">
+  <li id="nw-navigation" class="nw-flex-grow nw-overflow-hidden">
     <div class="embla-navigation nw-max-w-full lg:nw-max-w-2xl">
       <div class="embla-navigation__viewport nw-overflow-hidden">
         <nav class="embla-navigation__container nw-flex nw-text-sm">
-          {{#each menuitems}} {{#if this.active}} {{>'@menu-nav-item--active'
-          this}} {{else}} {{>'@menu-nav-item' this}} {{/if}} {{/each}}
+          {{#each menuitems-lokal}} {{#if this.active}}
+          {{>'@menu-nav-item--active' this}} {{else}} {{>'@menu-nav-item' this}}
+          {{/if}} {{/each}}
         </nav>
       </div>
       {{>'@menu-nav-scroll-buttons'}}

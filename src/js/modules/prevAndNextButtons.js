@@ -10,5 +10,12 @@ export const disablePrevNextBtns = (prevBtn, nextBtn, embla) => {
 
     if (embla.canScrollNext()) nextBtn.classList.remove('nw-hidden');
     else nextBtn.classList.add('nw-hidden');
+
+    console.log(embla.slidesNotInView().length);
+
+    if (embla.slidesNotInView().length === 0) {
+      prevBtn.classList.add('nw-hidden');
+      nextBtn.classList.add('nw-hidden');
+    }
   };
 };

@@ -1,0 +1,47 @@
+.nw-newsticker-chevron {
+  position: relative;
+  top: 18px;
+  left: 24px;
+}
+
+.nw-menu-seperator {
+  border-left: 1px solid #d9d9d9;
+  height: 24px;
+}
+.nw-form-tick:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+#nw-sticky-container {
+  @apply nw-w-full
+  nw-filter
+  nw-drop-shadow-md
+  nw-bg-white
+  md:nw-fixed
+  md:nw-top-0
+  md:nw-left-0
+  nw-hidden
+  md:nw-block
+  nw-z-50;
+
+  &.nw-show-sticky {
+    @apply nw-inline-block md:nw-transform md:nw-translate-y-0 md:nw-duration-500;
+  }
+
+  &.nw-hide-sticky {
+    @apply nw-inline-block md:nw-transform md:nw--translate-y-36 md:nw-duration-500;
+  }
+
+  #nw-sticky-menu {
+    @apply nw-bg-white
+    nw-flex
+    nw-justify-items-stretch
+    nw-h-10 nw-items-center
+    nw-max-w-6xl nw-w-full nw-mx-auto nw-px-0 sm:nw-px-8 lg:nw-px-12;
+  }
+}

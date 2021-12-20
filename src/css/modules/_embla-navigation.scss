@@ -1,9 +1,11 @@
-#nw-navigation {
-  .embla-navigation {
-    position: relative;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+.nw-menu-nav {
+  @apply nw-flex-grow nw-overflow-hidden;
+}
+
+.embla-navigation {
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
 
   .embla-navigation__viewport {
     overflow: hidden;

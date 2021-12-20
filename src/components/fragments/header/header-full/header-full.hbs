@@ -1,4 +1,5 @@
 <div class="nw-max-w-6xl nw-mb-12 sm:nw-mb-0">
-  {{>'@logo-section'}} {{>'@menu-section'}} {{>'@newsticker'}} {{>'@burger-menu'
-  (contextData '@burger-menu')}}
+  {{>'@logo-section'}} {{>'@menu-section' (contextData '@menu-section') }}
+  {{>'@newsticker'}} {{>'@menu-section--sticky' (contextData '@menu-section') }}
+  {{>'@burger-menu' (contextData '@burger-menu')}}
 </div>

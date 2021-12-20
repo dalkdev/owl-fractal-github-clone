@@ -15,6 +15,11 @@ export function initNavigation() {
 
   setupPrevNextBtns(prevBtn, nextBtn, embla);
 
-  embla.on('select', disablePrevAndNextBtns);
+  //  embla.on('select', disablePrevAndNextBtns);
   embla.on('init', disablePrevAndNextBtns);
+  embla.on('scroll', disablePrevAndNextBtns);
+
+  // for (let i = 0; i < embla.length; i++) {
+  //   burgermenuSwitch[i].addEventListener('click', () => toggleBurgermenu());
+  // }
 }
