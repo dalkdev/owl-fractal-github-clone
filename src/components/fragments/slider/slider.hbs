@@ -1,4 +1,27 @@
-<div class="slider nw-bg-gray-100 nw-pb-4">
+<div class="slider nw-bg-custom-1-700 nw-pb-4 nw-pl-4 md:nw-pb-4 md:nw-pl-24">
+  <div>
+    <p
+      class="
+        nw-text-white
+        nw-inline
+        nw-text-xl
+        nw-uppercase
+        nw-font-bold
+        nw-text-roboto
+        nw-border-solid
+        nw-border-red-500
+        nw-border-b-2
+        nw-pt-6
+      "
+    >
+      fotostreck
+    </p>
+  </div>
+  <div>
+    <p class="nw-text-white nw-text-left nw-pt-2 nw-text-xl nw-text-normal">
+      Arminia gewinnt 2:0 gegen Bochum
+    </p>
+  </div>
   <div class="embla embla--main-carousel">
     <div class="embla__viewport relative">
       <div class="embla__container">
@@ -7,13 +30,13 @@
           <div class="embla__slide__inner">
             <div class="nw-aspect-w-3 nw-aspect-h-2">
               <img
-                class="embla__slide__img nw-h-full nw-w-full nw-object-cover"
+                class="
+                  embla__slide__img
+                  nw-h-full nw-w-full nw-object-none nw-pt-1
+                "
                 src="{{src}}"
               />
             </div>
-          </div>
-          <div class="nw-px-4 nw-pt-2 nw-pb-1">
-            <p class="nw-text-xs nw-text-black">{{{caption}}}</p>
           </div>
         </div>
         {{/each}}
@@ -32,7 +55,7 @@
           nw-top-1/2
           nw-left-2
           nw-transform
-          -translate-y-1/2
+          nw-translate-y-1/2
           nw-cursor-pointer
         "
       >
@@ -52,7 +75,7 @@
           nw-top-1/2
           nw-right-2
           nw-transform
-          -translate-y-1/2
+          nw-translate-y-1/2
           nw-cursor-pointer
         "
       >
