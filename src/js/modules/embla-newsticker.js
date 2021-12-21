@@ -3,6 +3,9 @@ import { setupPrevNextBtns, disablePrevNextBtns } from './prevAndNextButtons';
 
 export function initNewsticker() {
   const wrap = document.querySelector('.embla-newsticker');
+
+  if (wrap == null) return;
+
   const viewPort = wrap.querySelector('.embla-newsticker__viewport');
   const prevBtn = wrap.querySelector('.embla-newsticker__button--prev');
   const nextBtn = wrap.querySelector('.embla-newsticker__button--next');

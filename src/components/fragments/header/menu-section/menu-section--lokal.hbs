@@ -52,7 +52,8 @@
           {{/if}} {{/each}}
         </nav>
       </div>
-      {{>'@menu-nav-scroll-buttons'}}
+      {{>'@menu-nav-scroll-buttons' (contextData '@menu-nav-scroll-buttons'
+      default)}}
     </div>
   </li>
   <!-- service links -->

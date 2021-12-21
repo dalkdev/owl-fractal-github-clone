@@ -3,7 +3,7 @@
     nw-flex nw-bg-white nw-justify-items-stretch nw-px-0
     sm:nw-px-2
     nw-h-10 nw-items-center nw-mt-16
-    sm:nw-mt-0
+    md:nw-mt-0
   "
 >
   <!-- burger menu -->
@@ -81,7 +81,7 @@
           this}} {{else}} {{>'@menu-nav-item' this}} {{/if}} {{/each}}
         </nav>
       </div>
-      {{>'@menu-nav-scroll-buttons'}}
+      {{>'@menu-nav-scroll-buttons' (contextData '@menu-nav-scroll-buttons')}}
     </div>
   </li>
   <!-- service links -->

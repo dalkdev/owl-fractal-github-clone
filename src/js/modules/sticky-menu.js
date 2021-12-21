@@ -2,9 +2,11 @@ export function initStickymenu() {
   function toggleStickymenu() {
     const stickymenu = document.getElementById('nw-sticky-container');
 
+    if (stickymenu == null) return;
+
     if (
-      document.body.scrollTop > 160 ||
-      document.documentElement.scrollTop > 160
+      document.body.scrollTop > 180 ||
+      document.documentElement.scrollTop > 180
     ) {
       stickymenu.classList.add('nw-show-sticky');
       stickymenu.classList.remove('nw-hide-sticky');

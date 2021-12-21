@@ -22,11 +22,10 @@
   nw-filter
   nw-drop-shadow-md
   nw-bg-white
+  nw-hidden
   md:nw-fixed
   md:nw-top-0
   md:nw-left-0
-  nw-hidden
-  md:nw-block
   nw-z-50;
 
   &.nw-show-sticky {
@@ -34,7 +33,7 @@
   }
 
   &.nw-hide-sticky {
-    @apply nw-inline-block md:nw-transform md:nw--translate-y-36 md:nw-duration-500;
+    @apply md:nw-transform md:nw--translate-y-36 md:nw-duration-500;
   }
 
   #nw-sticky-menu {

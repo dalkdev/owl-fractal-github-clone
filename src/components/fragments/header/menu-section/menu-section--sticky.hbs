@@ -1,4 +1,4 @@
-<div id="nw-sticky-container" class="nw-hide-sticky nw-hidden">
+<div id="nw-sticky-container" class="nw-hidden">
   <ul id="nw-sticky-menu">
     <!-- burger menu -->
     <li class="nw-nav-item nw-pr-3 nw-py-2 nw-hidden sm:nw-inline-block">
@@ -34,7 +34,7 @@
 
     <li class="nw-menu-seperator nw-hidden md:nw-inline-block"></li>
     <!-- newsticker -->
-    <li id="nw-newsticker">
+    <li id="nw-newsticker" style="min-width: 36px">
       <a href="/" class="nw-flex nw-justify-start nw-items-center nw-mx-1">
         <img
           src="/images/nw-wortmarke-logo.svg"
@@ -48,17 +48,18 @@
     <li class="nw-menu-seperator nw-inline-block"></li>
     <!-- navigation -->
     <li class="nw-menu-nav">
-      <div class="embla-navigation nw-max-w-full lg:nw-max-w-2xl">
-        <div class="embla-navigation__viewport nw-overflow-hidden">
-          <nav class="embla-navigation__container nw-flex nw-text-sm">
+      <div class="embla-navigation-sticky nw-max-w-full lg:nw-max-w-2xl">
+        <div class="embla-navigation-sticky__viewport nw-overflow-hidden">
+          <nav class="embla-navigation-sticky__container nw-flex nw-text-sm">
             {{#each menuitems}} {{#if this.active}} {{>'@menu-nav-item--active'
             this}} {{else}} {{>'@menu-nav-item' this}} {{/if}} {{/each}}
           </nav>
         </div>
-        {{>'@menu-nav-scroll-buttons'}}
+        {{>'@menu-nav-scroll-buttons' (contextData '@menu-nav-scroll-buttons'
+        sticky.class-prefix)}}
       </div>
     </li>
     <!-- service links -->
-    <!--  {{>'@service-links'}}-->
+    <!--      {{>'@service-links'}}-->
   </ul>
 </div>
