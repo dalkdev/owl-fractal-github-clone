@@ -30,6 +30,7 @@
         md:nw-text-xl
         nw-text-normal nw-pt-2 nw-pb-2
         md:nw-pb-1
+        nw-pr-1
       "
     >
       Arminia gewinnt 2:0 gegen Bochum
@@ -40,10 +41,20 @@
       <div class="embla__container">
         {{#each images}}
         <div class="embla__slide">
-          <div class="embla__slide__inner nw-bg-clip-padding">
-            <div class="nw-aspect-w-3 nw-aspect-h-2">
+          <div
+            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
+          >
+            <div
+              class="
+                nw-aspect-w-4 nw-aspect-h-3
+                md:nw-aspect-w-4 md:nw-aspect-h-3
+              "
+            >
               <img
-                class="embla__slide__img nw-h-full nw-w-full nw-object-none"
+                class="
+                  embla__slide__img
+                  nw-h-full nw-w-full nw-object-none nw-rounded-md
+                "
                 src="{{src}}"
               />
             </div>
@@ -84,10 +95,8 @@
           nw-rounded-full
           nw-object-center
           nw-top-1/3
-          nw-right-2
-          nw-transform
-          nw-translate-y-1/2
-          nw-cursor-pointer
+          md:nw-top-1/3
+          nw-right-2 nw-transform nw-translate-y-1/2 nw-cursor-pointer
         "
       >
         <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}" />
