@@ -28,32 +28,28 @@
     margin-left: -10px;
   }
 }
+.embla__slide {
+  padding-left: 10px;
+  position: relative;
+}
 @media screen and (max-width: 640px) {
   .embla__slide {
-    padding-left: 10px;
     min-width: 80%;
-    position: relative;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
   .embla__slide {
-    padding-left: 10px;
     min-width: 70%;
-    position: relative;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .embla__slide {
-    padding-left: 10px;
     min-width: 40%;
-    position: relative;
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .embla__slide {
-    padding-left: 10px;
     min-width: 40%;
-    position: relative;
   }
 }
 @media (min-width: 1280px) and (max-width: 1536px) {
