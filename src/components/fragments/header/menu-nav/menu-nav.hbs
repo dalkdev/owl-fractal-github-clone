@@ -1,0 +1,11 @@
+<li class="nw-menu-nav">
+  <div class="embla-navigation nw-max-w-full lg:nw-max-w-2xl">
+    <div class="embla-navigation__viewport nw-overflow-hidden">
+      <nav class="embla-navigation__container nw-flex nw-text-sm">
+        {{#each menuitems}} {{#if this.active}} {{>'@menu-nav-item--active'
+        this}} {{else}} {{>'@menu-nav-item' this}} {{/if}} {{/each}}
+      </nav>
+    </div>
+    {{>'@menu-nav-scroll-buttons' (contextData '@menu-nav-scroll-buttons')}}
+  </div>
+</li>

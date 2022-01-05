@@ -1,13 +1,11 @@
 .nw-menu-nav {
   @apply nw-flex-grow nw-overflow-hidden;
 }
-.embla-navigation-sticky,
 .embla-navigation {
   position: relative;
   padding-left: 16px;
   padding-right: 16px;
 
-  .embla-navigation-sticky__viewport,
   .embla-navigation__viewport {
     overflow: hidden;
     width: 100%;
@@ -15,18 +13,15 @@
     mask-image: linear-gradient(to right, black 90%, transparent 100%);
   }
 
-  .embla-navigation-sticky__viewport.is-draggable,
   .embla-navigation__viewport.is-draggable {
     cursor: move;
     cursor: grab;
   }
 
-  .embla-navigation-sticky__viewport.is-dragging,
   .embla-navigation__viewport.is-dragging {
     cursor: grabbing;
   }
 
-  .embla-navigation-sticky__container,
   .embla-navigation__container {
     display: flex;
     user-select: none;
@@ -35,14 +30,12 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  .embla-navigation-sticky__slide,
   .embla-navigation__slide {
     position: relative;
     margin-right: 10px;
     overflow: hidden;
   }
 
-  .embla-navigation-sticky__button,
   .embla-navigation__button {
     outline: 0;
     cursor: pointer;
@@ -66,18 +59,15 @@
     }
   }
 
-  .embla-navigation-sticky__button__svg,
   .embla-navigation__button__svg {
     width: 100%;
     height: 100%;
   }
 
-  .embla-navigation-sticky__button--prev,
   .embla-navigation__button--prev {
     left: 0;
   }
 
-  .embla-navigation-sticky__button--next,
   .embla-navigation__button--next {
     right: 0;
   }
