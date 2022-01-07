@@ -15,7 +15,8 @@
     ],
     "menuitems": [
       {
-        "label": "Corona"
+        "label": "Corona",
+        "active": true
       },
       {
         "label": "Arminia"
