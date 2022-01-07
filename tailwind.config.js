@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: { layers: ['utilities'], content: ['./src/components/**/*.hbs'] },
   darkMode: false, // or 'media' or 'class'
   prefix: 'nw-',
@@ -20,7 +21,7 @@ module.exports = {
           300: '#D96165',
           400: '#D5353A',
           500: '#D20A11',
-          600: '#B3080E'
+          600: '#B3080E',
         },
         custom: {
           '1-700': '#4A5568',
