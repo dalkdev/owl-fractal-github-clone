@@ -3,6 +3,7 @@ import { initSliders } from './modules/embla-slider';
 import { initNavigation } from './modules/embla-navigation';
 import { initNewsticker } from './modules/embla-newsticker';
 import { initBurgermenu } from './modules/burger-menu';
+import { initStickymenu } from './modules/sticky-menu';
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
@@ -13,6 +14,7 @@ const initializationFunctions: Array<() => void> = [
   initNavigation,
   initNewsticker,
   initBurgermenu,
+  initStickymenu,
 ];
 
 preloadFunctions.forEach(initializationFunction => {

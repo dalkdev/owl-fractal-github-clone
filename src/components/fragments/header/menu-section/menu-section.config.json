@@ -1,0 +1,83 @@
+{
+  "context": {
+    "menuitemsnew": [
+      "Arminia",
+      "Verkehrswende in Bielefeld",
+      "Sport",
+      "Gesundheit",
+      "Umwelt",
+      "Lifestyle",
+      "Lifestyle",
+      "Lifestyle",
+      "Lifestyle",
+      "Lifestyle",
+      "Lifestyle"
+    ],
+    "menuitems": [
+      {
+        "label": "Corona",
+        "active": true
+      },
+      {
+        "label": "Arminia"
+      },
+      {
+        "label": "Verkehrswende in Bielefeld"
+      },
+      {
+        "label": "Sport"
+      },
+      {
+        "label": "Gesundheit"
+      },
+      {
+        "label": "Umwelt"
+      },
+      {
+        "label": "Lifestyle"
+      },
+      {
+        "label": "Lifestyle"
+      },
+      {
+        "label": "Lifestyle"
+      },
+      {
+        "label": "Lifestyle"
+      }
+    ],
+    "menuitems-lokal": [
+      {
+        "label": "Brackwede",
+        "active": true
+      },
+      {
+        "label": "Dornberg"
+      },
+      {
+        "label": "Gadderbaum"
+      },
+      {
+        "label": "Heepen"
+      },
+      {
+        "label": "Jöllenbeck"
+      },
+      {
+        "label": "Mitte"
+      },
+      {
+        "label": "Schildesche"
+      },
+      {
+        "label": "Senne"
+      },
+      {
+        "label": "Sennestadt"
+      },
+      {
+        "label": "Stieghorst"
+      }
+    ]
+  }
+}

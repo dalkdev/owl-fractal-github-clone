@@ -1,8 +1,8 @@
 export function initBurgermenu() {
   function toggleBurgermenu() {
     const burgermenu = document.getElementById('nw-sidebar-navigation');
-    burgermenu.classList.toggle('nw-open');
-    burgermenu.classList.toggle('nw-close');
+    burgermenu.classList.toggle('nw-open-burgermenu');
+    burgermenu.classList.toggle('nw-close-burgermenu');
     const burgermenuOverlay = document.getElementById('burger-overlay');
     burgermenuOverlay.classList.toggle('nw-hidden');
   }

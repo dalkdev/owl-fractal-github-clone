@@ -1,9 +1,10 @@
-#nw-navigation {
-  .embla-navigation {
-    position: relative;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+.nw-menu-nav {
+  @apply nw-flex-grow nw-overflow-hidden;
+}
+.embla-navigation {
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
 
   .embla-navigation__viewport {
     overflow: hidden;
@@ -51,11 +52,11 @@
     align-items: center;
     fill: #1bcacd;
     padding: 0;
-  }
 
-  .embla-navigation__button:disabled {
-    cursor: default;
-    opacity: 0.3;
+    &:disabled {
+      cursor: default;
+      opacity: 0.3;
+    }
   }
 
   .embla-navigation__button__svg {

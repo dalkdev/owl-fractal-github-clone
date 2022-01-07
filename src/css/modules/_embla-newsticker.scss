@@ -1,11 +1,20 @@
-#nw-newsticker {
-  .embla-newsticker {
-    position: relative;
-  }
+.embla-newsticker {
+  position: relative;
+  background-color: white;
 
   .embla-newsticker__viewport {
     overflow: hidden;
     width: 100%;
+    background-color: white;
+
+    @media (max-width: 639px) {
+      -webkit-mask-image: linear-gradient(
+        to right,
+        black 60%,
+        transparent 100%
+      );
+      mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    }
   }
 
   .embla-newsticker__viewport.is-draggable {
@@ -25,6 +34,7 @@
     -webkit-tap-highlight-color: transparent;
     padding-top: 16px;
     padding-bottom: 16px;
+    background-color: white;
   }
 
   .embla-newsticker__slide {
@@ -33,11 +43,6 @@
     padding-left: 16px;
     padding-right: 16px;
     border-right: 1px solid #d2d2d2;
-  }
-
-  @media (max-width: 639px) {
-    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    mask-image: linear-gradient(to right, black 85%, transparent 100%);
   }
 
   .embla-newsticker__slide:last-child {
