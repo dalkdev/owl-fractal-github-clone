@@ -1,15 +1,26 @@
-<div class="nw-mx-4 nw-my-4">
-  <div class="nw-grid nw-grid-cols-1 nw-text-center nw-font-roboto">
-    <div>
-      <p
-        class="
-          nw-uppercase nw-text-custom-1-700 nw-font-bold nw-text-2xl nw-mx-4
-        "
-      >
-        {{title}}
-      </p>
-    </div>
+<div class="nw-mx-4 md:nw-mx-0 nw-my-4">
+  <div>
+    <p
+      class="
+        nw-uppercase
+        nw-text-custom-1-700
+        nw-font-bold
+        nw-text-2xl
+        nw-mx-4
+        nw-text-center
+      "
+    >
+      {{title}}
+    </p>
+  </div>
 
+  <div
+    class="
+      nw-grid nw-grid-cols-1
+      sm:nw-grid-cols-2 sm:nw-gap-4
+      nw-text-center nw-font-roboto
+    "
+  >
     <a
       href="#"
       class="
@@ -21,7 +32,7 @@
         nw-border-none
         nw-mt-4
         nw-py-4
-        nw-px-4
+        nw-px-2
         nw-rounded-md
         nw-text-lg
         nw-shadow-md
@@ -67,88 +78,57 @@
 
       {{pushnachricht}}
     </a>
-    <!--
-     <a href="#" class="button nw-w-full nw-bg-white nw-font-bold nw-text-black nw-border-none nw-mt-4 nw-py-4 nw-px-4 nw-rounded-md nw-text-lg nw-shadow-md">
 
-          <svg class=" nw-mb-2 nw-ml-auto nw-mr-auto" xmlns="http://www.w3.org/2000/svg" width="52.614" height="34.8" viewBox="0 0 52.614 34.8">
-               <g id="icons_outline_icon-massage" data-name="icons/outline/icon-massage" transform="translate(0.405 0.4)">
-                 <g id="Group" transform="translate(6 -3)">
-                   <g id="Symbols_Atoms_Icon_Newsletter" data-name="Symbols/Atoms/Icon/Newsletter" transform="translate(-6 3)">
-                     <path id="Symbols_Atoms_Icon_Newsletter-2" data-name="Symbols/Atoms/Icon/Newsletter" d="M51.8,11.022c0-.02.009-.041.011-.061a.884.884,0,0,0-.009-.19c0-.016,0-.031,0-.048a.845.845,0,0,0-.086-.246c-.007-.014-.016-.026-.024-.04s0,0,0-.007,0,0,0-.005-.011-.02-.017-.028a.845.845,0,0,0-.191-.2c-.016-.012-.035-.019-.053-.03a.832.832,0,0,0-.2-.1.753.753,0,0,0-.1-.021.845.845,0,0,0-.192-.017.82.82,0,0,0-.1.008c-.022,0-.044,0-.066.005L.688,20.247a.856.856,0,0,0-.68.713.847.847,0,0,0,.451.871l14.347,7.459,2.516,13.763c0,.01,0,.021,0,.031a.788.788,0,0,0,0,.2.774.774,0,0,0,.017.1.814.814,0,0,0,.095.228c.009.014.009.03.018.043a.063.063,0,0,0,.01.011c.011.016.027.029.04.045a.875.875,0,0,0,.131.133c.008.006.013.015.022.021s.028.012.041.02a.883.883,0,0,0,.165.084c.023.008.045.019.069.026a.876.876,0,0,0,.239.037h0l.01,0,.044,0a.863.863,0,0,0,.614-.268l9.557-6.28L38.4,43.9a.875.875,0,0,0,.742.094.858.858,0,0,0,.537-.514l12.073-32.3a.77.77,0,0,0,.028-.089c0-.013,0-.026.007-.037A.3.3,0,0,0,51.8,11.022Zm-9.991,5.427-20.7,15a.835.835,0,0,0-.09.084.353.353,0,0,0-.032.03c-.018.02-.035.039-.051.06s-.028.042-.041.063a.864.864,0,0,0-.079.16c0,.011-.011.02-.015.031s0,.005-.005.009l-2.372,7.6L16.544,29.2ZM19.761,41.118l2.351-7.655,3.661,2.346,1.047.671-3.557,2.337ZM44.894,12.979,15.588,27.774l-12.2-6.341ZM38.437,41.892,25.148,33.38l-2.012-1.29L49.147,13.239Z" transform="translate(0 -10.035)" fill="#d20a11" stroke="#d20a11" stroke-width="0.8"/>
-                   </g>
-                 </g>
-               </g>
-          </svg>
-
-       {{newsletter}}
-     </a>
-   -->
-    <!--
-      <div class=" nw-bg-white nw-py-4 nw-px-4 nw-mt-4 nw-rounded-md nw-text-lg nw-font-bold nw-shadow-md" >
-
-          <a href="default.asp">
-
-            <svg class=" nw-mb-2 nw-ml-auto nw-mr-auto " xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
-              <g id="icons_outline_icon-bell" data-name="icons/outline/icon-bell" transform="translate(1.5 1.5)">
-                 <g id="Group" transform="translate(0 0)">
-                    <path id="Shape" d="M20,40c-4.135,0-7.5-2.99-7.5-6.666V31.111H0l3.513-3.122A4.25,4.25,0,0,0,5,24.8V17.778A12.27,12.27,0,0,1,7.815,10,14.921,14.921,0,0,1,15,5.2V4.444A4.752,4.752,0,0,1,20,0a4.752,4.752,0,0,1,5,4.444V5.2A14.921,14.921,0,0,1,32.184,10,12.271,12.271,0,0,1,35,17.778V24.8a4.25,4.25,0,0,0,1.488,3.192L40,31.109l0,0H27.5v2.222C27.5,37.009,24.135,40,20,40Z" fill="none" stroke="#d20a11" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-                    <path id="Path" d="M15,.5H0" transform="translate(12.5 30.611)" fill="none" stroke="#d20a11" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-                 </g>
-              </g>
-            </svg>
-
-           {{pushnachricht}}
-          </a>
-
-      </div>
-      -->
-    <div
+    <a
+      href="#"
       class="
+        button
+        nw-w-full
         nw-bg-white
-        nw-py-4
-        nw-px-4
+        nw-font-bold
+        nw-text-black
+        nw-border-none
         nw-mt-4
+        nw-py-4
+        nw-px-2
         nw-rounded-md
         nw-text-lg
-        nw-font-bold
         nw-shadow-md
       "
     >
-      <a href="default.asp">
-        <svg
-          class="nw-mb-2 nw-ml-auto nw-mr-auto"
-          xmlns="http://www.w3.org/2000/svg"
-          width="52.614"
-          height="34.8"
-          viewBox="0 0 52.614 34.8"
+      <svg
+        class="nw-mb-2 nw-ml-auto nw-mr-auto"
+        xmlns="http://www.w3.org/2000/svg"
+        width="52.614"
+        height="34.8"
+        viewBox="0 0 52.614 34.8"
+      >
+        <g
+          id="icons_outline_icon-massage"
+          data-name="icons/outline/icon-massage"
+          transform="translate(0.405 0.4)"
         >
-          <g
-            id="icons_outline_icon-massage"
-            data-name="icons/outline/icon-massage"
-            transform="translate(0.405 0.4)"
-          >
-            <g id="Group" transform="translate(6 -3)">
-              <g
-                id="Symbols_Atoms_Icon_Newsletter"
+          <g id="Group" transform="translate(6 -3)">
+            <g
+              id="Symbols_Atoms_Icon_Newsletter"
+              data-name="Symbols/Atoms/Icon/Newsletter"
+              transform="translate(-6 3)"
+            >
+              <path
+                id="Symbols_Atoms_Icon_Newsletter-2"
                 data-name="Symbols/Atoms/Icon/Newsletter"
-                transform="translate(-6 3)"
-              >
-                <path
-                  id="Symbols_Atoms_Icon_Newsletter-2"
-                  data-name="Symbols/Atoms/Icon/Newsletter"
-                  d="M51.8,11.022c0-.02.009-.041.011-.061a.884.884,0,0,0-.009-.19c0-.016,0-.031,0-.048a.845.845,0,0,0-.086-.246c-.007-.014-.016-.026-.024-.04s0,0,0-.007,0,0,0-.005-.011-.02-.017-.028a.845.845,0,0,0-.191-.2c-.016-.012-.035-.019-.053-.03a.832.832,0,0,0-.2-.1.753.753,0,0,0-.1-.021.845.845,0,0,0-.192-.017.82.82,0,0,0-.1.008c-.022,0-.044,0-.066.005L.688,20.247a.856.856,0,0,0-.68.713.847.847,0,0,0,.451.871l14.347,7.459,2.516,13.763c0,.01,0,.021,0,.031a.788.788,0,0,0,0,.2.774.774,0,0,0,.017.1.814.814,0,0,0,.095.228c.009.014.009.03.018.043a.063.063,0,0,0,.01.011c.011.016.027.029.04.045a.875.875,0,0,0,.131.133c.008.006.013.015.022.021s.028.012.041.02a.883.883,0,0,0,.165.084c.023.008.045.019.069.026a.876.876,0,0,0,.239.037h0l.01,0,.044,0a.863.863,0,0,0,.614-.268l9.557-6.28L38.4,43.9a.875.875,0,0,0,.742.094.858.858,0,0,0,.537-.514l12.073-32.3a.77.77,0,0,0,.028-.089c0-.013,0-.026.007-.037A.3.3,0,0,0,51.8,11.022Zm-9.991,5.427-20.7,15a.835.835,0,0,0-.09.084.353.353,0,0,0-.032.03c-.018.02-.035.039-.051.06s-.028.042-.041.063a.864.864,0,0,0-.079.16c0,.011-.011.02-.015.031s0,.005-.005.009l-2.372,7.6L16.544,29.2ZM19.761,41.118l2.351-7.655,3.661,2.346,1.047.671-3.557,2.337ZM44.894,12.979,15.588,27.774l-12.2-6.341ZM38.437,41.892,25.148,33.38l-2.012-1.29L49.147,13.239Z"
-                  transform="translate(0 -10.035)"
-                  fill="#d20a11"
-                  stroke="#d20a11"
-                  stroke-width="0.8"
-                />
-              </g>
+                d="M51.8,11.022c0-.02.009-.041.011-.061a.884.884,0,0,0-.009-.19c0-.016,0-.031,0-.048a.845.845,0,0,0-.086-.246c-.007-.014-.016-.026-.024-.04s0,0,0-.007,0,0,0-.005-.011-.02-.017-.028a.845.845,0,0,0-.191-.2c-.016-.012-.035-.019-.053-.03a.832.832,0,0,0-.2-.1.753.753,0,0,0-.1-.021.845.845,0,0,0-.192-.017.82.82,0,0,0-.1.008c-.022,0-.044,0-.066.005L.688,20.247a.856.856,0,0,0-.68.713.847.847,0,0,0,.451.871l14.347,7.459,2.516,13.763c0,.01,0,.021,0,.031a.788.788,0,0,0,0,.2.774.774,0,0,0,.017.1.814.814,0,0,0,.095.228c.009.014.009.03.018.043a.063.063,0,0,0,.01.011c.011.016.027.029.04.045a.875.875,0,0,0,.131.133c.008.006.013.015.022.021s.028.012.041.02a.883.883,0,0,0,.165.084c.023.008.045.019.069.026a.876.876,0,0,0,.239.037h0l.01,0,.044,0a.863.863,0,0,0,.614-.268l9.557-6.28L38.4,43.9a.875.875,0,0,0,.742.094.858.858,0,0,0,.537-.514l12.073-32.3a.77.77,0,0,0,.028-.089c0-.013,0-.026.007-.037A.3.3,0,0,0,51.8,11.022Zm-9.991,5.427-20.7,15a.835.835,0,0,0-.09.084.353.353,0,0,0-.032.03c-.018.02-.035.039-.051.06s-.028.042-.041.063a.864.864,0,0,0-.079.16c0,.011-.011.02-.015.031s0,.005-.005.009l-2.372,7.6L16.544,29.2ZM19.761,41.118l2.351-7.655,3.661,2.346,1.047.671-3.557,2.337ZM44.894,12.979,15.588,27.774l-12.2-6.341ZM38.437,41.892,25.148,33.38l-2.012-1.29L49.147,13.239Z"
+                transform="translate(0 -10.035)"
+                fill="#d20a11"
+                stroke="#d20a11"
+                stroke-width="0.8"
+              />
             </g>
           </g>
-        </svg>
+        </g>
+      </svg>
 
-        {{newsletter}}
-      </a>
-    </div>
+      {{newsletter}}
+    </a>
   </div>
 </div>
