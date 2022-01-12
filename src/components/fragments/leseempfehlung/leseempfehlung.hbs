@@ -1,0 +1,110 @@
+<div
+  class="
+    slider
+    nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-pl-4
+    md:nw-pb-4 md:nw-pl-24
+  "
+>
+  <div>
+    <p
+      class="
+        nw-text-white
+        nw-text-xl
+        nw-uppercase
+        nw-font-bold
+        nw-text-roboto
+        nw-pt-3
+        nw-text-center
+      "
+    >
+      {{title}}
+    </p>
+  </div>
+  <div>
+    <p
+      class="
+        nw-text-white nw-text-center nw-text-base nw-text-normal nw-pb-8
+        md:nw-pb-1
+        nw-pr-1
+      "
+    >
+      {{caption}}
+    </p>
+  </div>
+  <div class="embla embla--main-carousel">
+    <div class="embla__viewport relative">
+      <div class="embla__container">
+        {{#each images}}
+
+        <div class="embla__slide">
+          <div
+            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
+          >
+            <div class="nw-aspect-w-4 nw-aspect-h-3">
+              <img
+                class="
+                  embla__slide__img
+                  nw-h-full nw-w-full nw-object-none nw-rounded-md
+                "
+                src="{{src}}"
+              />
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+      <!--<div
+        class="
+          slider--button-prev
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-left-2
+          nw-transform
+          nw-translate-y-1/2
+          nw-cursor-pointer
+        "
+      >
+        <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
+      </div> -->
+      <!--
+      <div
+        class="
+          slider--button-next
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-right-2
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
+        "
+      >
+        <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}" />
+      </div>
+    </div>
+  </div>
+  -->
+
+      <!-- Dots -->
+      <div class="embla__dots"></div>
+
+      <script type="text/template" id="embla-dot-template">
+        <button class="embla__dot" type="button"></button>
+      </script>
+    </div>
+  </div>
+</div>
