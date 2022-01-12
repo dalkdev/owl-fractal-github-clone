@@ -1,7 +1,7 @@
 <div
   class="
     slider
-    nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-pl-4
+    nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-pl-2
     md:nw-pb-4 md:nw-pl-24
   "
 >
@@ -10,7 +10,6 @@
       class="
         nw-text-white
         nw-text-xl
-        nw-uppercase
         nw-font-bold
         nw-text-roboto
         nw-pt-3
@@ -31,6 +30,7 @@
       {{caption}}
     </p>
   </div>
+
   <div class="embla embla--main-carousel">
     <div class="embla__viewport relative">
       <div class="embla__container">
@@ -40,15 +40,22 @@
           <div
             class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
           >
-            <div class="nw-aspect-w-4 nw-aspect-h-3">
+            <div
+              class="
+                nw-aspect-w-16 nw-aspect-h-9
+                md:nw-aspect-h-3 md:nw-aspect-w-4
+              "
+            >
               <img
-                class="
-                  embla__slide__img
-                  nw-h-full nw-w-full nw-object-none nw-rounded-md
-                "
+                class="embla__slide__img nw-h-full nw-w-full nw-object-none"
                 src="{{src}}"
               />
             </div>
+          </div>
+          <div class="nw-h-70 nw-bg-white nw-pr-8 nw-pl-4">
+            <div class="nw-pt-4">{{caption}}</div>
+            <div class="nw-pt-4">{{caption}}</div>
+            <div class="nw-pt-4"></div>
           </div>
         </div>
         {{/each}}
@@ -98,10 +105,8 @@
     </div>
   </div>
   -->
-
       <!-- Dots -->
       <div class="embla__dots"></div>
-
       <script type="text/template" id="embla-dot-template">
         <button class="embla__dot" type="button"></button>
       </script>
