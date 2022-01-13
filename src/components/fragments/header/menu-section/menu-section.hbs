@@ -28,6 +28,7 @@
           class="
             nw-uppercase nw-text-black nw-text-sm nw-hidden
             md:nw-inline-block
+            nw-select-none
           "
           >Menü</span
         >
@@ -73,7 +74,9 @@
   </li>
   <li class="nw-menu-seperator nw-inline-block"></li>
   <!-- navigation -->
-  {{>'@menu-nav'}}
+  <li class="nw-menu-nav nw-flex-wrap nw-content-center nw-align-baseline">
+    <div class="embla-navigation nw-max-w-full">{{>'@menu-nav'}}</div>
+  </li>
   <!-- service links -->
   <!--  {{>'@service-links'}}-->
 </ul>

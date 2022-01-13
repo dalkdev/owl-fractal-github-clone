@@ -110,5 +110,5 @@
 }
 
 #burger-overlay {
-  @apply nw-bg-black nw-opacity-20 nw-fixed nw-top-0 nw-left-0 nw-h-screen nw-w-screen;
+  @apply nw-bg-black nw-opacity-20 nw-fixed nw-top-0 nw-left-0 nw-h-screen nw-w-screen nw-z-30;
 }

@@ -14,7 +14,8 @@ export function initBurgermenu() {
   for (let i = 0; i < burgermenuDropdown.length; i++) {
     burgermenuDropdown[i].addEventListener('click', function () {
       const target = this.dataset.target;
-      document.getElementById(target).classList.toggle('open');
+      const targetElement = document.getElementById(target);
+      targetElement.classList.toggle('open');
     });
   }
 

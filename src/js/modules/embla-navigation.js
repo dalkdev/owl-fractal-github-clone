@@ -1,7 +1,9 @@
 import EmblaCarousel from 'embla-carousel';
+import { checkVisible } from './helpers';
+
 import { setupPrevNextBtns, disablePrevNextBtns } from './prevAndNextButtons';
 
-export function initNavigation() {
+export function initNavigation(reInit = false) {
   const setupEmblaCarousel = (emblaNode, options) => {
     const viewPort = emblaNode.querySelector('.embla-navigation__viewport');
     const prevBtn = emblaNode.querySelector('.embla-navigation__button--prev');
@@ -11,9 +13,16 @@ export function initNavigation() {
 
     if (prevBtn != null || nextBtn != null) {
       setupPrevNextBtns(prevBtn, nextBtn, embla);
+
       embla.on('init', disablePrevAndNextBtns);
-      embla.on('reInit', disablePrevAndNextBtns);
       embla.on('scroll', disablePrevAndNextBtns);
+
+      console.log(checkVisible(emblaNode));
+
+      if (embla.slidesNotInView().length === 0) {
+        prevBtn.classList.add('nw-hidden');
+        nextBtn.classList.add('nw-hidden');
+      }
     }
   };
 
