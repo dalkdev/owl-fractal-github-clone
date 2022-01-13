@@ -31,7 +31,7 @@
     </p>
   </div>
 
-  <div class="embla embla--main-carousel">
+  <div class="embla embla--main-carousel nw-mt-5">
     <div class="embla__viewport relative">
       <div class="embla__container">
         {{#each images}}
@@ -47,64 +47,96 @@
               "
             >
               <img
-                class="embla__slide__img nw-h-full nw-w-full nw-object-none"
+                class="
+                  embla__slide__img
+                  nw-h-full nw-w-full nw-object-none nw-rounded-t-md
+                "
                 src="{{src}}"
               />
             </div>
           </div>
-          <div class="nw-h-70 nw-bg-white nw-pr-8 nw-pl-4">
-            <div class="nw-pt-4">{{caption}}</div>
-            <div class="nw-pt-4">{{caption}}</div>
-            <div class="nw-pt-4"></div>
+          <div
+            class="
+              nw-h-4/7
+              nw-bg-white
+              nw-pr-8
+              nw-pl-4
+              nw-pb-4
+              nw-text-left
+              nw-rounded-b-md
+            "
+          >
+            <div
+              class="
+                nw-pt-4
+                nw-text-xs
+                nw-uppercase
+                nw-font-roboto
+                nw-font-normal
+                nw-tracking-wider
+                nw-pr-4
+              "
+            >
+              {{heading}}
+            </div>
+            <div
+              class="
+                nw-pt-1
+                nw-text-lg
+                nw-font-roboto
+                nw-font-normal
+                nw-font-bold
+                nw-tracking-normal
+                nw-pr-4
+              "
+            >
+              {{title}}
+            </div>
+            <div
+              class="
+                nw-pt-1
+                nw-text-sm
+                nw-font-roboto
+                nw-font-normal
+                nw-font-medium
+                nw-tracking-normal
+                nw-pr-4
+              "
+            >
+              {{description}}
+            </div>
+            <div
+              class="
+                nw-pt-3
+                nw-text-xs
+                nw-uppercase
+                nw-font-roboto
+                nw-text-gray-700
+                nw-font-normal
+                nw-tracking-wider
+                nw-pr-4
+              "
+            >
+              {{autor}}
+            </div>
+            <div
+              class="
+                nw-text-tiny
+                nw-font-roboto
+                nw-text-tiny
+                nw-text-gray-700
+                nw-font-normal
+                nw-font-medium
+                nw-pr-4
+              "
+            >
+              {{name}}
+            </div>
           </div>
         </div>
         {{/each}}
       </div>
 
-      <!--<div
-        class="
-          slider--button-prev
-          nw-flex
-          nw-bg-black
-          nw-text-white
-          nw-w-8
-          nw-h-8
-          nw-absolute
-          nw-rounded-full
-          nw-object-center
-          nw-top-1/2
-          nw-left-2
-          nw-transform
-          nw-translate-y-1/2
-          nw-cursor-pointer
-        "
-      >
-        <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
-      </div> -->
-      <!--
-      <div
-        class="
-          slider--button-next
-          nw-flex
-          nw-bg-black
-          nw-text-white
-          nw-w-8
-          nw-h-8
-          nw-absolute
-          nw-rounded-full
-          nw-object-center
-          nw-top-1/2
-          nw-right-2
-          nw-transform
-          nw--translate-y-1/2
-          nw-cursor-pointer
-        "
-      >
-        <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}" />
-      </div>
-    </div>
-  </div>
-  -->
       <!-- Dots -->
       <div class="embla__dots"></div>
       <script type="text/template" id="embla-dot-template">
