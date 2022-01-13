@@ -1,0 +1,20 @@
+<div>
+    <div class="nw-text-white nw-font-bold nw-flex nw-items-center nw-py-1 nw-pl-2" style="background-color:rgb(0, 175, 203)">
+        <div class="nw-inline-block nw-mr-1">
+            {{>'@nw-plus-icon'}}
+        </div>
+        <div class="nw-inline-block nw-text-md">
+            {{caption}}
+        </div>
+    </div>
+    <div class="nw-list-none nw-flex nw-items-center nw-flex nw-px-1 nw-bg-white nw-pl-2">
+        <div class="nw-font-bold nw-text-md">
+            {{#each footeritems}}
+                <li>{{this}}</li>
+            {{/each}}
+        </div>
+        <div>
+            {{>'@nw-plus-cta'}}
+        </div>
+    </div>
+</div>
