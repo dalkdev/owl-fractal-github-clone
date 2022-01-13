@@ -11,8 +11,8 @@ export function initNavigation() {
 
     if (prevBtn != null || nextBtn != null) {
       setupPrevNextBtns(prevBtn, nextBtn, embla);
-      embla.on('select', disablePrevAndNextBtns);
       embla.on('init', disablePrevAndNextBtns);
+      embla.on('reInit', disablePrevAndNextBtns);
       embla.on('scroll', disablePrevAndNextBtns);
     }
   };

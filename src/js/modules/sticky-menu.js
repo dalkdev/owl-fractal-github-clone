@@ -1,3 +1,5 @@
+import { initNavigation } from './embla-navigation';
+
 export function initStickymenu() {
   function toggleStickymenu() {
     const stickymenu = document.getElementById('nw-sticky-container');
@@ -17,6 +19,7 @@ export function initStickymenu() {
   }
 
   window.onscroll = function () {
+    initNavigation();
     toggleStickymenu();
   };
 }
