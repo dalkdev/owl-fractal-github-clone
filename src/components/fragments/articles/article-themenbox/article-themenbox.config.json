@@ -2,26 +2,17 @@
   "status": "qm",
   "context": {
     "title": "Mehr zum Thema",
-
     "buttons": [
-      { "label": "Bundesregierung" },
-
-      { "label": "Deutschland" },
-      { "label": "Bundestag" },
-
-      { "label": "Christian Lindner" },
-
-      { "label": "Corona" },
-
-      { "label": "Klimawandel" },
-
-      { "label": "Digital" },
-
-      { "label": "Haushaltsentwurf" },
-
-      { "label": "Haushaltsentwurf" }
-    ],
-
-    "label": "Klimawandel"
+      "Bundesregierung",
+      "Deutschland",
+      "Bundestag",
+      "Christian Lindner",
+      "Corona",
+      "Klimawandel",
+      "Digital",
+      "Haushaltsentwurf",
+      "Klimaschutz",
+      "Alle Themen"
+    ]
   }
 }
