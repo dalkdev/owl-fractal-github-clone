@@ -1,7 +1,9 @@
 import EmblaCarousel from 'embla-carousel';
-import { checkVisible } from './helpers';
+// import { checkVisible } from './helpers';
 
 import { setupPrevNextBtns, disablePrevNextBtns } from './prevAndNextButtons';
+
+let currentSlideIndex = 0;
 
 export function initNavigation(reInit = false) {
   const setupEmblaCarousel = (emblaNode, options) => {
@@ -17,12 +19,18 @@ export function initNavigation(reInit = false) {
       embla.on('init', disablePrevAndNextBtns);
       embla.on('scroll', disablePrevAndNextBtns);
 
-      console.log(checkVisible(emblaNode));
-
       if (embla.slidesNotInView().length === 0) {
         prevBtn.classList.add('nw-hidden');
         nextBtn.classList.add('nw-hidden');
       }
+
+      embla.slideNodes().forEach(function callback(slideNode, i) {
+        if (slideNode.classList.contains('embla-navigation-slide-active')) {
+          currentSlideIndex = i;
+        }
+      });
+
+      embla.scrollTo(currentSlideIndex, true);
     }
   };
 
@@ -39,15 +47,4 @@ export function initNavigation(reInit = false) {
   );
 
   return emblaCarousels;
-}
-
-export function navigationScrollTo(targetSlide) {
-  const emblaNodes = [].slice.call(
-    document.querySelectorAll('.embla-navigation')
-  );
-
-  emblaNodes.map(emblaNode => {
-    const embla = EmblaCarousel(emblaNode);
-    return embla.scrollTo(targetSlide);
-  });
 }
