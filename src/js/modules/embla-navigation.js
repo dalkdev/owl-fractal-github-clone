@@ -40,3 +40,14 @@ export function initNavigation(reInit = false) {
 
   return emblaCarousels;
 }
+
+export function navigationScrollTo(targetSlide) {
+  const emblaNodes = [].slice.call(
+    document.querySelectorAll('.embla-navigation')
+  );
+
+  emblaNodes.map(emblaNode => {
+    const embla = EmblaCarousel(emblaNode);
+    return embla.scrollTo(targetSlide);
+  });
+}
