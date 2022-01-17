@@ -1,6 +1,7 @@
 import { initPolyfills } from './global/polyfills';
 import { initSliders } from './modules/embla-slider';
-import { initNavigation } from './modules/embla-navigation';
+// eslint-disable-next-line no-unused-vars
+import { initNavigation, navigationScrollTo } from './modules/embla-navigation';
 import { initNewsticker } from './modules/embla-newsticker';
 import { initBurgermenu } from './modules/burger-menu';
 import { initStickymenu } from './modules/sticky-menu';
