@@ -40,23 +40,9 @@
   </a>
   <div class="nw-flex nw-justify-end nw-items-center nw-bg-white nw-gap-3">
     <a href="#" class="nw-text-xs nw-hidden sm:nw-inline">ePaper</a>
-    <a
-      href="#"
-      class="
-        nw-font-bold
-        nw-bg-red-500
-        nw-text-white
-        nw-py-0.5
-        nw-px-1
-        nw-rounded
-        nw-uppercase
-        nw-hidden
-        sm:nw-inline
-        hover:nw-bg-white hover:nw-text-red-500
-      "
-      >Abo</a
-    >
-    <a href="#" class="nw-text-custom-1-700">
+    <a href="#" class="nw-abo-button">Abo</a>
+    {{>'@login-box' (contextData '@login-box')}}
+    <span id="nw-login-button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="nw-h-8 nw-w-8"
@@ -71,6 +57,6 @@
           clip-rule="evenodd"
         />
       </svg>
-    </a>
+    </span>
   </div>
 </div>
