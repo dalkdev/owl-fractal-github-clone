@@ -63,7 +63,6 @@
     position: relative;
     overflow: hidden;
     height: 190px;
-    border-radius: 6px;
     background-clip: padding-box;
   }
 
@@ -109,6 +108,7 @@
     list-style: none;
     justify-content: center;
     padding-top: 30px;
+    padding-bottom: 10px;
   }
 
   .embla__dot {
@@ -116,12 +116,12 @@
     cursor: pointer;
     position: relative;
     padding: 0;
-    outline: 0;
+    outline: 5px;
     border: 0;
-    width: 10px;
-    height: 10px;
-    margin-right: 6px;
-    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+    margin-right: 6.5px;
+    margin-left: 6.5px;
     display: flex;
     align-items: center;
   }
