@@ -40,107 +40,103 @@
         {{#each images}}
 
         <div class="embla__slide">
-          <div class="embla__slide__inner nw-bg-clip-padding nw-inline">
-            <div
-              class="
-                nw-aspect-w-16 nw-aspect-h-9
-                md:nw-aspect-h-3 md:nw-aspect-w-4
-              "
-            >
+          <a href="" class="embla__slide__inner nw-rounded-md nw-block">
+            <div class="nw-aspect-w-16 nw-aspect-h-9">
               <img
                 class="
                   embla__slide__img
-                  nw-h-full nw-w-full nw-object-none nw-rounded-t-md
+                  nw-h-full nw-w-full nw-object-none nw-rounded-t
                 "
                 src="{{src}}"
               />
             </div>
-          </div>
-          <div
-            class="
-              nw-h-4/7
-              nw-bg-white
-              nw-pr-8
-              nw-pl-4
-              nw-pb-4
-              nw-text-left
-              nw-rounded-b-md
-              nw-text-opacity-100
-            "
-          >
+
             <div
               class="
-                nw-pt-4
-                nw-text-xs
-                nw-uppercase
-                nw-font-roboto
-                nw-font-normal
-                nw-text-black
-                nw-tracking-wider
-                nw-pr-4
+                nw-h-4/7
+                nw-bg-white
+                nw-pr-8
+                nw-pl-4
+                nw-pb-4
+                nw-text-left
                 nw-text-opacity-100
+                nw-rounded-b
               "
             >
-              {{heading}}
+              <div
+                class="
+                  nw-pt-4
+                  nw-text-xs
+                  nw-uppercase
+                  nw-font-roboto
+                  nw-font-normal
+                  nw-text-black
+                  nw-tracking-wider
+                  nw-pr-4
+                  nw-text-opacity-100
+                "
+              >
+                {{heading}}
+              </div>
+              <div
+                class="
+                  nw-pt-1
+                  nw-text-lg
+                  nw-font-roboto
+                  nw-text-black
+                  nw-font-bold
+                  nw-tracking-normal
+                  nw-pr-4
+                  nw-text-opacity-100
+                "
+              >
+                {{title}}
+              </div>
+              <div
+                class="
+                  nw-pt-1
+                  nw-text-sm
+                  nw-font-roboto
+                  nw-font-normal
+                  nw-font-gray-600
+                  nw-tracking-normal
+                  nw-pr-4
+                  nw-text-opacity-100
+                "
+              >
+                {{description}}
+              </div>
+              <div
+                class="
+                  nw-pt-3
+                  nw-text-xs
+                  nw-uppercase
+                  nw-font-roboto
+                  nw-text-gray-700
+                  nw-font-normal
+                  nw-tracking-wider
+                  nw-pr-4
+                  nw-text-opacity-100
+                "
+              >
+                {{autor}}
+              </div>
+              <div
+                class="
+                  nw-text-tiny
+                  nw-font-roboto
+                  nw-text-tiny
+                  nw-text-gray-700
+                  nw-font-normal
+                  nw-font-medium
+                  nw-pr-4
+                  nw-text-opacity-100
+                "
+              >
+                {{name}}
+              </div>
             </div>
-            <div
-              class="
-                nw-pt-1
-                nw-text-lg
-                nw-font-roboto
-                nw-text-black
-                nw-font-bold
-                nw-tracking-normal
-                nw-pr-4
-                nw-text-opacity-100
-              "
-            >
-              {{title}}
-            </div>
-            <div
-              class="
-                nw-pt-1
-                nw-text-sm
-                nw-font-roboto
-                nw-font-normal
-                nw-font-gray-600
-                nw-tracking-normal
-                nw-pr-4
-                nw-text-opacity-100
-              "
-            >
-              {{description}}
-            </div>
-            <div
-              class="
-                nw-pt-3
-                nw-text-xs
-                nw-uppercase
-                nw-font-roboto
-                nw-text-gray-700
-                nw-font-normal
-                nw-tracking-wider
-                nw-pr-4
-                nw-text-opacity-100
-              "
-            >
-              {{autor}}
-            </div>
-            <div
-              class="
-                nw-text-tiny
-                nw-font-roboto
-                nw-text-tiny
-                nw-text-gray-700
-                nw-font-normal
-                nw-font-medium
-                nw-pr-4
-                nw-text-opacity-100
-              "
-            >
-              {{name}}
-            </div>
-          </div>
+          </a>
         </div>
         {{/each}}
       </div>
