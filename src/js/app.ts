@@ -1,9 +1,11 @@
 import { initPolyfills } from './global/polyfills';
 import { initSliders } from './modules/embla-slider';
+// eslint-disable-next-line no-unused-vars
 import { initNavigation } from './modules/embla-navigation';
 import { initNewsticker } from './modules/embla-newsticker';
 import { initBurgermenu } from './modules/burger-menu';
 import { initStickymenu } from './modules/sticky-menu';
+import { initLoginBox } from './modules/login-box';
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
@@ -15,6 +17,7 @@ const initializationFunctions: Array<() => void> = [
   initNewsticker,
   initBurgermenu,
   initStickymenu,
+  initLoginBox,
 ];
 
 preloadFunctions.forEach(initializationFunction => {

@@ -44,3 +44,48 @@
     nw-max-w-6xl nw-w-full nw-mx-auto nw-px-0 sm:nw-px-8 lg:nw-px-12;
   }
 }
+
+#nw-loginbox {
+  @apply nw-w-80 nw-p-2 nw-bg-white nw-rounded
+    nw-z-50
+    nw-border
+    nw-border-gray-200
+    nw-absolute
+    nw-top-14
+    nw-filter
+    nw-shadow-md;
+}
+
+.nw-loginbox-arrow {
+  @apply nw-inline-block
+    nw-bg-white
+    nw-border-gray-200
+    nw-border-l
+    nw-border-t
+    nw-transform
+    nw-rotate-45
+    nw-bg-white
+    nw-absolute;
+
+  height: 8px;
+  width: 8px;
+  top: -5px;
+  right: 12px;
+}
+
+.nw-abo-button {
+  @apply nw-font-bold
+  nw-bg-red-500
+  nw-text-white
+  nw-py-0.5
+  nw-px-1
+  nw-rounded
+  nw-uppercase
+  nw-hidden
+  sm:nw-inline
+  hover:nw-bg-white hover:nw-text-red-500;
+}
+
+#nw-login-button {
+  @apply nw-text-custom-1-700 nw-cursor-pointer;
+}

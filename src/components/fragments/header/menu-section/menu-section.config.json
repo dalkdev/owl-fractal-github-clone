@@ -15,8 +15,7 @@
     ],
     "menuitems": [
       {
-        "label": "Corona",
-        "active": true
+        "label": "Corona"
       },
       {
         "label": "Arminia"
@@ -25,7 +24,8 @@
         "label": "Verkehrswende in Bielefeld"
       },
       {
-        "label": "Sport"
+        "label": "Sport",
+        "active": true
       },
       {
         "label": "Gesundheit"
@@ -34,16 +34,28 @@
         "label": "Umwelt"
       },
       {
-        "label": "Lifestyle"
+        "label": "Umwelt"
       },
       {
-        "label": "Lifestyle"
+        "label": "Umwelt"
       },
       {
-        "label": "Lifestyle"
+        "label": "Umwelt"
       },
       {
-        "label": "Lifestyle"
+        "label": "Umwelt"
+      },
+      {
+        "label": "Umwelt"
+      },
+      {
+        "label": "Umwelt"
+      },
+      {
+        "label": "Umwelt"
+      },
+      {
+        "label": "Umwelt"
       }
     ],
     "menuitems-lokal": [

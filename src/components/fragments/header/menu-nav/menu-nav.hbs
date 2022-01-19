@@ -1,11 +1,7 @@
-<li class="nw-menu-nav nw-flex-wrap nw-content-center nw-align-baseline">
-  <div class="embla-navigation nw-max-w-full">
-    <div class="embla-navigation__viewport nw-overflow-hidden">
-      <nav class="embla-navigation__container nw-flex nw-text-sm nw-pt-0.5">
-        {{#each menuitems}} {{#if this.active}} {{>'@menu-nav-item--active'
-        this}} {{else}} {{>'@menu-nav-item' this}} {{/if}} {{/each}}
-      </nav>
-    </div>
-    {{>'@menu-nav-scroll-buttons' (contextData '@menu-nav-scroll-buttons')}}
-  </div>
-</li>
+<div class="embla-navigation__viewport nw-overflow-hidden">
+  <nav class="embla-navigation__container nw-flex nw-text-sm nw-pt-0.5">
+    {{#each menuitems}} {{#if this.active}} {{>'@menu-nav-item--active' this}}
+    {{else}} {{>'@menu-nav-item' this}} {{/if}} {{/each}}
+  </nav>
+</div>
+{{>'@menu-nav-scroll-buttons' (contextData '@menu-nav-scroll-buttons')}}

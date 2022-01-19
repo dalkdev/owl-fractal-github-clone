@@ -6,6 +6,8 @@ export function initStickymenu() {
 
     if (stickymenu == null) return;
 
+    initNavigation(true);
+
     if (
       document.body.scrollTop > 180 ||
       document.documentElement.scrollTop > 180
@@ -19,7 +21,6 @@ export function initStickymenu() {
   }
 
   window.onscroll = function () {
-    initNavigation();
     toggleStickymenu();
   };
 }
