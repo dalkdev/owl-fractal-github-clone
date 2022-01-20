@@ -1,24 +1,64 @@
-<div class="slider nw-bg-gray-100 nw-pb-4">
+<div
+  class="
+    slider
+    nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-pl-4
+    md:nw-pb-4 md:nw-pl-24
+  "
+>
+  <div>
+    <p
+      class="
+        nw-text-white
+        nw-inline
+        nw-text-xl
+        nw-uppercase
+        nw-font-bold
+        nw-text-roboto
+        nw-border-solid
+        nw-border-red-500
+        nw-border-b-2
+        nw-pt-6
+      "
+    >
+      {{title}}
+    </p>
+  </div>
+  <div>
+    <p
+      class="
+        nw-text-white nw-text-left nw-text-base
+        md:nw-text-xl
+        nw-text-normal nw-pt-2 nw-pb-2
+        md:nw-pb-1
+        nw-pr-1
+      "
+    >
+      {{caption}}
+    </p>
+  </div>
   <div class="embla embla--main-carousel">
     <div class="embla__viewport relative">
       <div class="embla__container">
         {{#each images}}
         <div class="embla__slide">
-          <div class="embla__slide__inner">
-            <div class="nw-aspect-w-3 nw-aspect-h-2">
+          <div
+            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
+          >
+            <div class="nw-aspect-w-4 nw-aspect-h-3">
               <img
-                class="embla__slide__img nw-h-full nw-w-full nw-object-cover"
+                class="
+                  embla__slide__img
+                  nw-h-full nw-w-full nw-object-none nw-rounded-md
+                "
                 src="{{src}}"
               />
             </div>
           </div>
-          <div class="nw-px-4 nw-pt-2 nw-pb-1">
-            <p class="nw-text-xs nw-text-black">{{{caption}}}</p>
-          </div>
         </div>
         {{/each}}
       </div>
-      <div
+
+      <!--<div
         class="
           slider--button-prev
           nw-flex
@@ -32,12 +72,12 @@
           nw-top-1/2
           nw-left-2
           nw-transform
-          -translate-y-1/2
+          nw-translate-y-1/2
           nw-cursor-pointer
         "
       >
         <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
-      </div>
+      </div> -->
       <div
         class="
           slider--button-next
@@ -52,7 +92,7 @@
           nw-top-1/2
           nw-right-2
           nw-transform
-          -translate-y-1/2
+          nw--translate-y-1/2
           nw-cursor-pointer
         "
       >
@@ -61,15 +101,22 @@
     </div>
   </div>
 
-  <div class="nw-px-4 nw-py-2">
+  <!-- Dots -->
+  <div class="embla__dots"></div>
+
+  <script type="text/template" id="embla-dot-template">
+    <button class="embla__dot" type="button"></button>
+  </script>
+
+  <!-- <div class="nw-px-4 nw-py-2">
     <p class="nw-text-xs nw-text-grey-400">
       Bild <span class="slider--counter-current">1</span> von
       <span class="slider--counter-total"></span>
     </p>
-  </div>
+  </div>-->
 
   <!-- Thumbs -->
-  <div class="embla embla--thumb">
+  <!--<div class="embla embla--thumb">
     <div class="embla__viewport px-4">
       <div class="embla__container embla__container--thumb">
         {{#each images}}
@@ -86,5 +133,5 @@
         {{/each}}
       </div>
     </div>
-  </div>
+  </div>-->
 </div>
