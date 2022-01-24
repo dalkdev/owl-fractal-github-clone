@@ -1,0 +1,270 @@
+<div class="nw-bg-white nw-pb-4 nw-mx-0 nw-px-4 sm:nw-px-40 md:nw-px-52">
+  <div>
+    <p
+      class="
+        nw-text-left
+        nw-text-base
+        nw-font-roboto
+        nw-font-bold
+        nw-opacity-100
+        nw-text-black
+        nw-pt-4
+        nw-pb-1
+      "
+    >
+      {{headline}}
+    </p>
+  </div>
+
+  <div>
+    <p
+      class="
+        nw-text-left
+        nw-text-tiny
+        nw-font-roboto
+        nw-font-medium
+        nw-opacity-100
+        nw-text-black
+        nw-py-1
+      "
+    >
+      {{caption}}
+    </p>
+  </div>
+  <div>
+    <form action="">
+      <select
+        class="
+          nw-text-gray-400
+          nw-w-full
+          nw-px-3
+          nw-py-1
+          nw-mx-auto
+          nw-mb-1
+          nw-inline-block
+          nw-border-2
+          nw-border-solid
+          nw-border-gray-200
+          nw-rounded
+          nw-box-border
+          nw-cursor-pointer
+          hover:nw-border-gray-400
+          focus:nw-border-gary-400
+        "
+        id=""
+        name=""
+      >
+        <option value="">Bitte wählen</option>
+        <option value="mänlich">weiblich</option>
+        <option value="mänlich">mänlich</option>
+      </select>
+
+      <input
+        class="
+          nw-w-full
+          nw-px-4
+          nw-py-1
+          nw-mx-auto
+          nw-mb-1
+          nw-inline-block
+          nw-border-2
+          nw-border-solid
+          nw-border-gray-200
+          nw-rounded
+          nw-box-border
+          nw-cursor-pointer
+          hover:nw-border-gray-400
+          focus:nw-border-gary-400
+        "
+        type="text"
+        id="fname"
+        name="fname"
+        value=""
+        placeholder="Vorname"
+      />
+
+      <input
+        class="
+          nw-w-full
+          nw-px-4
+          nw-py-1
+          nw-mx-auto
+          nw-mb-1
+          nw-inline-block
+          nw-border-2
+          nw-border-solid
+          nw-border-gray-200
+          nw-rounded
+          nw-box-border
+          nw-cursor-pointer
+          hover:nw-border-gray-400
+          focus:nw-border-gary-400
+        "
+        type="text"
+        id="lname"
+        name="lname"
+        value=""
+        placeholder="Nachname"
+      />
+
+      <input
+        class="
+          nw-w-full
+          nw-px-4
+          nw-py-1
+          nw-mx-auto
+          nw-mb-1
+          nw-inline-block
+          nw-border-2
+          nw-border-solid
+          nw-border-gray-200
+          nw-rounded
+          nw-box-border
+          nw-cursor-pointer
+          hover:nw-border-gray-400
+          focus:nw-border-gary-400
+        "
+        type="email"
+        id=""
+        value=""
+        name="email"
+        placeholder="E-Mail"
+      />
+
+      <input
+        class="
+          nw-w-full
+          nw-px-4
+          nw-py-1
+          nw-mx-auto
+          nw-inline-block
+          nw-border-2
+          nw-border-solid
+          nw-border-gray-200
+          nw-rounded
+          nw-box-border
+          nw-cursor-pointer
+          hover:nw-border-gray-400
+          focus:nw-border-gary-400
+        "
+        type="password"
+        id=""
+        name="password"
+        value=""
+        placeholder="Passwort"
+      />
+      <div class="nw-mb-2 nw-mt-4 nw-flex">
+        <div>
+          <input
+            type="checkbox"
+            name="checked-demo"
+            id="myCheck"
+            class="
+              nw-form-tick
+              nw-border
+              nw-rounded-sm
+              nw-nw-border-gray-300
+              nw-appearance-none
+              nw-cursor-pointer
+              nw-h-3
+              nw-w-3
+              checked:nw-bg-gray-600
+              focus:outline-none
+            "
+            onclick="myFunction()"
+          />
+        </div>
+        <div>
+          <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
+            <span
+              class="
+                nw-pr-6
+                nw-text-gray-700
+                nw-text-xs
+                nw-font-normal
+                nw-text-left
+                nw-tracking-normal
+                nw-opacity-100
+              "
+            >
+              {{condition1}}
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="nw-my-1 nw-flex">
+        <div>
+          <input
+            type="checkbox"
+            name="checked-demo"
+            id="myCheck"
+            class="
+              nw-form-tick
+              nw-border
+              nw-rounded-sm
+              nw-nw-border-gray-300
+              nw-appearance-none
+              nw-cursor-pointer
+              nw-h-3
+              nw-w-3
+              checked:nw-bg-gray-600
+              focus:outline-none
+            "
+            onclick="myFunction()"
+          />
+        </div>
+        <div>
+          <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
+            <span
+              class="
+                nw-pr-6
+                nw-text-gray-700
+                nw-text-xs
+                nw-font-normal
+                nw-text-left
+                nw-tracking-normal
+                nw-opacity-100
+              "
+            >
+              {{condition2}}</span
+            >
+          </label>
+        </div>
+      </div>
+
+      <input
+        disabled
+        id="text1"
+        class="
+          nw-w-full
+          nw-px-8
+          nw-py-1
+          nw-mx-auto
+          nw-my-1
+          nw-inline-block
+          nw-rounded
+          nw-text-white
+          nw-cursor-pointer
+          focus:nw-bg-red-700
+          disabled:nw-bg-red-100
+        "
+        type="submit"
+        value="Registrieren"
+      />
+    </form>
+  </div>
+</div>
+
+<script>
+  function myFunction() {
+    var checkBox = document.getElementById('myCheck');
+    var text = document.getElementById('text1');
+    if (checkBox.checked == true) {
+      document.getElementById('text1').disabled = false;
+      text.style.backgroundColor = '#D20A11';
+    } else {
+      document.getElementById('text1').disabled = true;
+      text.style.backgroundColor = '#E1B9BA';
+    }
+  }
+</script>
