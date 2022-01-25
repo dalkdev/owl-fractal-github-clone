@@ -1,11 +1,11 @@
 <div
   id="nw-logo-section"
   class="
-    nw-flex nw-justify-between nw-items-center nw-px-2 nw-py-3 nw--ml-2.5
+    nw-flex nw-justify-between nw-items-center nw-px-3 nw-py-4 nw--ml-2.5
     sm:nw-ml-0 sm:nw-pr-2.5
     nw-border-b nw-fixed
     md:nw-static
-    nw-top-0 nw-max-h-16 nw-w-full nw-bg-white nw-z-50
+    nw-top-0 nw-w-full nw-bg-white nw-z-50
   "
 >
   <span
@@ -38,7 +38,11 @@
       height="36"
     />
   </a>
-  <div class="nw-flex nw-justify-end nw-items-center nw-bg-white nw-gap-3">
+  <div
+    class="
+      nw-flex nw-justify-end nw-items-center nw-bg-white nw-gap-3 nw-relative
+    "
+  >
     <a href="#" class="nw-text-xs nw-hidden sm:nw-inline">ePaper</a>
     <a href="#" class="nw-abo-button">Abo</a>
     {{>'@login-box' (contextData '@login-box')}}
