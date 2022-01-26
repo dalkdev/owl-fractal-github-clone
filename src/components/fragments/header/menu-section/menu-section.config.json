@@ -15,14 +15,15 @@
     ],
     "menuitems": [
       {
-        "label": "Corona",
+        "label": "Corona"
+      },
+      {
+        "label": "Ampel-Koalition",
         "active": true
       },
       {
-        "label": "Ampel-Koalition"
-      },
-      {
-        "label": "Verkehrswende in Bielefeld"
+        "label": "Verkehrswende in Bielefeld",
+        "active": true
       },
       {
         "label": "Lokal"
