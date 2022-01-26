@@ -1,0 +1,12 @@
+{
+  "status": "qm",
+  "context": {
+    "name": "Herr Frank Walter von Halten",
+    "title1": "Anzeigen erstellen",
+    "title2": "Anzeigen verwalten",
+    "caption1": "Für den Bereich NW Fundgrube, Immo-markt, Jobbörse, Familienanzeigen\n            uvm.",
+    "caption2": "Löschen, Bearbeiten alles in einem Bereich verwalten.",
+    "label1": "Anzeige erstellen",
+    "label2": "Anzeigen verwalten"
+  }
+}
