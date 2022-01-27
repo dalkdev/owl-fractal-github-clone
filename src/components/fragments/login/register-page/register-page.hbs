@@ -34,12 +34,21 @@
     </p>
   </div>
   <div>
+    <style>
+      select:invalid {
+        color: #999999;
+      }
+
+      option {
+        color: black;
+      }
+    </style>
     <form action="">
       <select
         class="
           nw-w-full
           nw-px-3
-          nw-py-1
+          nw-py-1.5
           nw-mx-auto
           nw-mb-1
           nw-inline-block
@@ -56,9 +65,9 @@
         name=""
         required
       >
-        <option value="">Bitte wählen</option>
-        <option value="mänlich">Herr</option>
-        <option value="mänlich">Frau</option>
+        <option value="" disabled selected hidden>Bitte wählen</option>
+        <option value="herr">Herr</option>
+        <option value="frau">Frau</option>
       </select>
 
       <input
