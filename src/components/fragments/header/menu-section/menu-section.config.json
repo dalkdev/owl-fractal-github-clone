@@ -18,14 +18,24 @@
         "label": "Corona"
       },
       {
-        "label": "Arminia"
-      },
-      {
-        "label": "Verkehrswende in Bielefeld"
-      },
-      {
-        "label": "Sport",
+        "label": "Ampel-Koalition",
         "active": true
+      },
+      {
+        "label": "Verkehrswende in Bielefeld",
+        "active": true
+      },
+      {
+        "label": "Lokal"
+      },
+      {
+        "label": "Corona"
+      },
+      {
+        "label": "Nachrichten"
+      },
+      {
+        "label": "Sport"
       },
       {
         "label": "Gesundheit"
@@ -34,28 +44,13 @@
         "label": "Umwelt"
       },
       {
-        "label": "Umwelt"
+        "label": "Lifestyle"
       },
       {
-        "label": "Umwelt"
+        "label": "Lifestyle"
       },
       {
-        "label": "Umwelt"
-      },
-      {
-        "label": "Umwelt"
-      },
-      {
-        "label": "Umwelt"
-      },
-      {
-        "label": "Umwelt"
-      },
-      {
-        "label": "Umwelt"
-      },
-      {
-        "label": "Umwelt"
+        "label": "Lifestyle"
       }
     ],
     "menuitems-lokal": [
