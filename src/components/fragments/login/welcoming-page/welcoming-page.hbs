@@ -1,4 +1,4 @@
-<div class="nw-bg-white nw-pb-4 nw-mx-0 nw-px-4 sm:nw-px-24 md:nw-px-32">
+<div class="nw-bg-white nw-pb-4 nw-mx-auto nw-px-4 sm:nw-px-16 md:nw-px-36">
   <div id="">
     <div class=""></div>
     <div class="nw-max-w-full nw-mb-6 nw-bg-white">
@@ -15,7 +15,7 @@
         <div
           class="
             nw-mt-6
-            nw-bg-custom-1-700
+            nw-bg-gray-600
             nw-relative
             nw-text-white
             nw-text-center
@@ -81,14 +81,14 @@
     Anzeigen erstellen oder einfach bereits erstelle Anzeigen verwalten.
   </div>
   <!-- box -->
-  <div>
+  <div class="md:nw-flex md:nw-mt-2 md:nw-gap-4">
     <!-- box1-->
     <div class="nw-w-full nw-bg-gray-100 nw-rounded-md nw-mt-4">
       <div class="nw-pt-2">
         <svg
-          class="nw-mx-auto nw-text-gray-500"
-          width="35"
-          height="35"
+          class="nw-mx-auto nw-text-custom-1-700"
+          width="30"
+          height="30"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -163,9 +163,13 @@
       </div>
     </div>
     <!-- box2-->
+
     <div
       class="
         nw-w-full
+        nw-flex
+        nw-flex-col
+        nw-justify-between
         nw-border
         nw-bg-white
         nw-border-1
@@ -176,9 +180,9 @@
     >
       <div class="nw-pt-2">
         <svg
-          class="nw-mx-auto nw-text-gray-500"
-          width="35"
-          height="35"
+          class="nw-mx-auto nw-text-custom-1-700"
+          width="30"
+          height="30"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -207,49 +211,50 @@
           >
             {{title2}}
           </p>
-
-          <p
-            class="
-              nw-mx-auto
-              nw-pb-2
-              nw-px-4
-              nw-text-sm
-              nw-font-roboto
-              nw-font-normal
-              nw-tracking-normal
-              nw-text-gray-600
-              nw-text-center
-            "
-          >
-            {{caption2}}
-          </p>
-          <div class="nw-mx-2">
-            <a
-              href=""
+          <div class="">
+            <p
               class="
-                nw-mt-1
-                nw-mb-4
-                nw-w-full
-                nw-text-white
-                nw-bg-gray-600
-                nw-rounded
-                nw-text-center
-                nw-inline-block
-                nw-text-tiny
+                nw-mx-auto
+                nw-pb-2
+                nw-px-4
+                nw-text-sm
                 nw-font-roboto
+                nw-font-normal
                 nw-tracking-normal
-                nw-font-bold
-                nw-cursor-pointer
-                nw-py-1
-                nw-px-auto
-                hover:nw-bg-gray-700
+                nw-text-gray-600
+                nw-text-center
               "
-              type="button"
             >
-              {{label2}}
-            </a>
+              {{caption2}}
+            </p>
           </div>
         </div>
+      </div>
+      <div class="nw-mx-2">
+        <a
+          href=""
+          class="
+            nw-mt-1
+            nw-mb-4
+            nw-w-full
+            nw-text-white
+            nw-bg-gray-600
+            nw-rounded
+            nw-text-center
+            nw-inline-block
+            nw-text-tiny
+            nw-font-roboto
+            nw-tracking-normal
+            nw-font-bold
+            nw-cursor-pointer
+            nw-py-1
+            nw-px-auto
+            hover:nw-bg-gray-700
+          "
+          type="button"
+        >
+          {{label2}}
+        </a>
       </div>
     </div>
   </div>
