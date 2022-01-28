@@ -1,4 +1,4 @@
-<div class="nw-bg-white nw-pb-4 nw-mx-0 nw-px-4 sm:nw-px-40 md:nw-px-52">
+<div class="nw-bg-white nw-pb-4 nw-mx-0 nw-px-4 sm:nw-px-20 md:nw-px-36">
   <div>
     <p
       class="
@@ -36,451 +36,459 @@
   <div>
     <form action="" id="myForm">
       <!-- Anrede-->
-      <label
-        class="
-          nw-font-roboto
-          nw-font-medium
-          nw-text-xs
-          nw-uppercase
-          nw-text-black
-          nw-tracking-normal
-        "
-        for=""
-        >Anrede</label
-      >
-      <select
-        class="
-          nw-w-full
-          nw-px-1
-          nw-py-1
-          nw-mx-auto
-          nw-text-base
-          nw-inline-block
-          nw-border-2
-          nw-border-solid
-          nw-rounded
-          nw-box-border
-          nw-cursor-pointer
-        "
-        id="anrede"
-        name=""
-        onchange="Validator()"
-      >
-        <option value="" disabled selected hidden>Bitte wählen</option>
-        <option value="herr">Herr</option>
-        <option value="frau">Frau</option>
-      </select>
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Anrede</label
+        >
+        <select
+          class="
+            nw-w-full
+            nw-px-1
+            nw-py-1
+            nw-mx-auto
+            nw-text-tiny
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+          id="anrede"
+          name=""
+        >
+          <option value="" disabled selected hidden>Bitte wählen</option>
+          <option value="herr">Herr</option>
+          <option value="frau">Frau</option>
+        </select>
 
-      <p
-        id="anredeT"
-        class="
-          nw-mb-4
-          nw-text-red-500
-          nw-text-xs
-          nw-font-medium
-          nw-tracking-normal
-          nw-font-roboto
-          nw-hidden
-        "
-      >
-        Please choose a password.
-      </p>
+        <p
+          id="anredeT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Anrede eingeben
+        </p>
+      </div>
       <!-- vorname-->
-
-      <label
-        class="
-          nw-font-roboto
-          nw-font-medium
-          nw-text-xs
-          nw-uppercase
-          nw-text-black
-          nw-tracking-normal
-        "
-        for=""
-        >Vorname</label
-      >
-      <input
-        class="
-          nw-w-full
-          nw-px-2
-          nw-py-1
-          nw-mx-auto
-          nw-inline-block
-          nw-border-2
-          nw-border-solid
-          nw-rounded
-          nw-box-border
-          nw-cursor-pointer
-        "
-        type="text"
-        placeholder=""
-        name=""
-        id="vname"
-        onchange="Validator()"
-      />
-      <p
-        id="vnameT"
-        class="
-          nw-mb-4
-          nw-text-red-500
-          nw-text-xs
-          nw-font-medium
-          nw-tracking-normal
-          nw-font-roboto
-          nw-hidden
-        "
-      >
-        Please choose a password.
-      </p>
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Vorname</label
+        >
+        <input
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-text-tiny
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="text"
+          placeholder=""
+          name=""
+          id="vname"
+        />
+        <p
+          id="vnameT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Vorname eingeben
+        </p>
+      </div>
 
       <!-- Nachname-->
-      <label
-        class="
-          nw-font-roboto
-          nw-font-medium
-          nw-text-xs
-          nw-uppercase
-          nw-text-black
-          nw-tracking-normal
-        "
-        for=""
-        >Nachname</label
-      >
-      <input
-        class="
-          nw-w-full
-          nw-px-2
-          nw-py-1
-          nw-mx-auto
-          nw-inline-block
-          nw-border-2
-          nw-border-solid
-          nw-rounded
-          nw-box-border
-          nw-cursor-pointer
-        "
-        type="text"
-        placeholder=""
-        name=""
-        id="nname"
-        onchange="Validator()"
-      />
-      <p
-        id="nnameT"
-        class="
-          nw-mb-4
-          nw-text-red-500
-          nw-text-xs
-          nw-font-medium
-          nw-tracking-normal
-          nw-font-roboto
-          nw-hidden
-        "
-      >
-        Please choose a password.
-      </p>
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Nachname</label
+        >
+        <input
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-text-tiny
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="text"
+          placeholder=""
+          name=""
+          id="nname"
+        />
+        <p
+          id="nnameT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Nachname eingeben
+        </p>
+      </div>
 
       <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 md:nw-gap-2">
         <!-- Straße-->
         <div class="nw-col-span-2">
-          <label
-            class="
-              nw-font-roboto
-              nw-font-medium
-              nw-text-xs
-              nw-uppercase
-              nw-text-black
-              nw-tracking-normal
-            "
-            for=""
-            >Straße</label
-          >
-          <input
-            class="
-              nw-w-full
-              nw-px-2
-              nw-py-1
-              nw-mx-auto
-              nw-inline-block
-              nw-border-2
-              nw-border-solid
-              nw-rounded
-              nw-box-border
-              nw-cursor-pointer
-            "
-            type="text"
-            placeholder=""
-            name=""
-            id="strasse"
-            onchange="Validator()"
-          />
-          <p
-            id="strasseT"
-            class="
-              nw-mb-4
-              nw-text-red-500
-              nw-text-xs
-              nw-font-medium
-              nw-tracking-normal
-              nw-font-roboto
-              nw-hidden
-            "
-          >
-            Please choose a password.
-          </p>
+          <div class="nw-mb-4">
+            <label
+              class="
+                nw-font-roboto
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+                nw-text-black
+                nw-tracking-normal
+              "
+              for=""
+              >Straße</label
+            >
+            <input
+              class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-tiny
+                nw-box-border
+                nw-cursor-pointer
+              "
+              type="text"
+              placeholder=""
+              name=""
+              id="strasse"
+            />
+            <p
+              id="strasseT"
+              class="
+                nw-text-red-500
+                nw-text-xs
+                nw-font-medium
+                nw-tracking-normal
+                nw-font-roboto
+                nw-hidden
+              "
+            >
+              Bitte Straße eingeben
+            </p>
+          </div>
         </div>
         <!-- Hausnummer-->
         <div>
-          <label
-            class="
-              nw-font-roboto
-              nw-font-medium
-              nw-text-xs
-              nw-uppercase
-              nw-text-black
-              nw-tracking-normal
-            "
-            for=""
-            >Hausnummer</label
-          >
-          <input
-            class="
-              nw-w-full
-              nw-px-2
-              nw-py-1
-              nw-mx-auto
-              nw-inline-block
-              nw-border-2
-              nw-border-solid
-              nw-rounded
-              nw-box-border
-              nw-cursor-pointer
-            "
-            type="text"
-            placeholder=""
-            name=""
-            id="hnummer"
-            onchange="Validator()"
-          />
-          <p
-            id="hnummerT"
-            class="
-              nw-mb-4
-              nw-text-red-500
-              nw-text-xs
-              nw-font-medium
-              nw-tracking-normal
-              nw-font-roboto
-              nw-hidden
-            "
-          >
-            Please choose a password.
-          </p>
+          <div class="nw-mb-4">
+            <label
+              class="
+                nw-font-roboto
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+                nw-text-black
+                nw-tracking-normal
+              "
+              for=""
+              >Hausnummer</label
+            >
+            <input
+              class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-tiny
+                nw-box-border
+                nw-cursor-pointer
+              "
+              type="text"
+              placeholder=""
+              name=""
+              id="hnummer"
+            />
+            <p
+              id="hnummerT"
+              class="
+                nw-text-red-500
+                nw-text-xs
+                nw-font-medium
+                nw-tracking-normal
+                nw-font-roboto
+                nw-hidden
+              "
+            >
+              Bitte Hausnummer eingeben
+            </p>
+          </div>
         </div>
       </div>
       <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 md:nw-gap-2">
         <!-- PLZ-->
         <div>
-          <label
-            class="
-              nw-font-roboto
-              nw-font-medium
-              nw-text-xs
-              nw-uppercase
-              nw-text-black
-              nw-tracking-normal
-            "
-            for=""
-            >PLZ</label
-          >
-          <input
-            class="
-              nw-w-full
-              nw-px-2
-              nw-py-1
-              nw-mx-auto
-              nw-inline-block
-              nw-border-2
-              nw-border-solid
-              nw-rounded
-              nw-box-border
-              nw-cursor-pointer
-            "
-            type="text"
-            placeholder=""
-            name=""
-            id="plz"
-            onchange="Validator()"
-          />
-          <p
-            id="plzT"
-            class="
-              nw-mb-4
-              nw-text-red-500
-              nw-text-xs
-              nw-font-medium
-              nw-tracking-normal
-              nw-font-roboto
-              nw-hidden
-            "
-          >
-            Please choose a password.
-          </p>
+          <div class="nw-mb-4">
+            <label
+              class="
+                nw-font-roboto
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+                nw-text-black
+                nw-tracking-normal
+              "
+              for=""
+              >PLZ</label
+            >
+            <input
+              class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-tiny
+                nw-box-border
+                nw-cursor-pointer
+              "
+              type="text"
+              placeholder=""
+              name=""
+              id="plz"
+            />
+            <p
+              id="plzT"
+              class="
+                nw-text-red-500
+                nw-text-xs
+                nw-font-medium
+                nw-tracking-normal
+                nw-font-roboto
+                nw-hidden
+              "
+            >
+              Bitte PLZ eingeben
+            </p>
+          </div>
         </div>
         <!-- Ort-->
         <div class="nw-col-span-2">
-          <label
-            class="
-              nw-font-roboto
-              nw-font-medium
-              nw-text-xs
-              nw-uppercase
-              nw-text-black
-              nw-tracking-normal
-            "
-            for=""
-            >Ort</label
-          >
-          <select
-            class="
-              nw-w-full
-              nw-px-2
-              nw-py-1
-              nw-mx-auto
-              nw-text-base
-              nw-inline-block
-              nw-border-2
-              nw-border-solid
-              nw-rounded
-              nw-box-border
-              nw-cursor-pointer
-            "
-            type="text"
-            placeholder=""
-            name=""
-            id="ort"
-            onchange="Validator()"
-          >
-            <option value="">Deutchland</option>
-            <option value="herr">Herr</option>
-            <option value="frau">Frau</option>
-          </select>
-          <p
-            id="ortT"
-            class="
-              nw-mb-4
-              nw-text-red-500
-              nw-text-xs
-              nw-font-medium
-              nw-tracking-normal
-              nw-font-roboto
-              nw-hidden
-            "
-          >
-            Please choose a password.
-          </p>
+          <div class="nw-mb-4">
+            <label
+              class="
+                nw-font-roboto
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+                nw-text-black
+                nw-tracking-normal
+              "
+              for=""
+              >Ort</label
+            >
+            <select
+              class="
+                nw-w-full
+                nw-px-2
+                nw-py-1
+                nw-mx-auto
+                nw-text-tiny
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-tiny
+                nw-box-border
+                nw-cursor-pointer
+              "
+              type="text"
+              placeholder=""
+              name=""
+              id="ort"
+            >
+              <option value="Deutschland">Deutschland</option>
+              <option value="herr">Herr</option>
+              <option value="frau">Frau</option>
+            </select>
+            <p
+              id="ortT"
+              class="
+                nw-text-red-500
+                nw-text-xs
+                nw-font-medium
+                nw-tracking-normal
+                nw-font-roboto
+                nw-hidden
+              "
+            >
+              Bitte Ort eingeben
+            </p>
+          </div>
         </div>
       </div>
 
       <!--email-->
-      <label
-        class="
-          nw-font-roboto
-          nw-font-medium
-          nw-text-xs
-          nw-uppercase
-          nw-text-black
-          nw-tracking-normal
-        "
-        for=""
-        >E-Mail</label
-      >
-      <input
-        class="
-          nw-w-full
-          nw-px-2
-          nw-py-1
-          nw-mx-auto
-          nw-inline-block
-          nw-border-2
-          nw-border-solid
-          nw-rounded
-          nw-box-border
-          nw-cursor-pointer
-        "
-        type="email"
-        placeholder=""
-        name=""
-        id="eMail"
-        onchange="Validator()"
-      />
-      <p
-        id="eMailT"
-        class="
-          nw-mb-4
-          nw-text-red-500
-          nw-text-xs
-          nw-font-medium
-          nw-tracking-normal
-          nw-font-roboto
-          nw-hidden
-        "
-      >
-        Please choose a password.
-      </p>
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >E-Mail</label
+        >
+        <input
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-tiny
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="email"
+          placeholder=""
+          name=""
+          id="eMail"
+        />
+        <p
+          id="eMailT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte E-Mail eingeben
+        </p>
+      </div>
 
       <!-- Passwort-->
-      <label
-        class="
-          nw-font-roboto
-          nw-font-medium
-          nw-text-xs
-          nw-uppercase
-          nw-text-black
-          nw-tracking-normal
-        "
-        for="psw"
-        >Passwort</label
-      >
-      <input
-        class="
-          nw-w-full
-          nw-px-2
-          nw-py-1
-          nw-mx-auto
-          nw-inline-block
-          nw-border-2
-          nw-border-solid
-          nw-rounded
-          nw-box-border
-          nw-cursor-pointer
-        "
-        type="password"
-        placeholder="Ihr Passwort muss min. 6 Zeichen lang sein"
-        name=""
-        id="passwort"
-      />
-      <p
-        id="passwortT"
-        class="
-          nw-mb-4
-          nw-text-red-500
-          nw-text-xs
-          nw-font-medium
-          nw-tracking-normal
-          nw-font-roboto
-          nw-hidden
-        "
-      >
-        Please choose a password.
-      </p>
-
+      <div class="nw-mb-2">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for="psw"
+          >Passwort</label
+        >
+        <input
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-tiny
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="password"
+          placeholder="Ihr Passwort muss min. 6 Zeichen lang sein"
+          name=""
+          id="passwort"
+        />
+        <p
+          id="passwortT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Passwort eingeben
+        </p>
+      </div>
+      <!-- Conditions-->
       <div class="nw-mb-2 nw-mt-4 nw-flex">
         <div>
           <input
             type="checkbox"
             name="checked-demo"
-            id="myCheck1"
+            id="checkCondition1"
             class="
               nw-form-tick
               nw-border
@@ -493,7 +501,7 @@
               checked:nw-bg-gray-600
               focus:outline-none
             "
-            onclick="myFunction()"
+            onclick="checkFunction()"
           />
         </div>
         <div>
@@ -519,7 +527,7 @@
           <input
             type="checkbox"
             name="checked-demo"
-            id="myCheck2"
+            id="checkCondition2"
             class="
               nw-form-tick
               nw-border
@@ -532,6 +540,7 @@
               checked:nw-bg-gray-600
               focus:outline-none
             "
+            onclick="checkFunction()"
           />
         </div>
         <div>
@@ -555,7 +564,7 @@
 
       <input
         disabled
-        id="text1"
+        id="registerButton"
         class="
           nw-w-full
           nw-px-8
@@ -574,31 +583,36 @@
         "
         type="button"
         value="Registrieren"
-        onclick="Validator(); return false;"
+        onclick="onClickRegistrieren(); return false;"
       />
     </form>
   </div>
 </div>
 
 <script>
-  function myFunction() {
-    var checkBox1 = document.getElementById('myCheck1');
-    var checkBox2 = document.getElementById('myCheck2');
-    var text = document.getElementById('text1');
+  function checkFunction() {
+    var checkBox1 = document.getElementById('checkCondition1');
+    var checkBox2 = document.getElementById('checkCondition2');
+    var bRegister = document.getElementById('registerButton');
     if (
       checkBox1.checked == true &&
       (checkBox2.checked == true || checkBox2.checked == false)
     ) {
-      text.disabled = false;
-      text.style.backgroundColor = '#D20A11';
+      bRegister.disabled = false;
+      bRegister.style.backgroundColor = '#D20A11';
     } else {
-      text.disabled = true;
-      text.style.backgroundColor = '#E1B9BA';
+      bRegister.disabled = true;
+      bRegister.style.backgroundColor = '#E1B9BA';
     }
   }
 </script>
 
 <script>
+  function onClickRegistrieren() {
+    var valid = Validator();
+    if (valid) alert('ok');
+  }
+
   function Validator() {
     var gender = document.getElementById('anrede');
     var fname = document.getElementById('vname');
@@ -697,64 +711,82 @@
       password.classList.remove('nw-border-red-500');
       hide9.style.display = 'none';
     }
-    if (valid) {
-    }
+    return valid;
   }
 </script>
 
 <script>
-  document.getElementById('anrede').addEventListener('change', my1Function);
-  document.getElementById('vname').addEventListener('change', my2Function);
-  document.getElementById('nname').addEventListener('change', my3Function);
-  document.getElementById('strasse').addEventListener('change', my4Function);
-  document.getElementById('hnummer').addEventListener('change', my5Function);
-  document.getElementById('plz').addEventListener('change', my6Function);
-  document.getElementById('ort').addEventListener('change', my7Function);
-  document.getElementById('eMail').addEventListener('change', my8Function);
-  document.getElementById('passwort').addEventListener('change', my9Function);
+  document.getElementById('anrede').addEventListener('change', alertAnrede);
+  document.getElementById('vname').addEventListener('change', alertVorname);
+  document.getElementById('nname').addEventListener('change', alertNachname);
+  document.getElementById('strasse').addEventListener('change', alertStrasse);
+  document.getElementById('hnummer').addEventListener('change', alertHnummer);
+  document.getElementById('plz').addEventListener('change', alertPlz);
+  document.getElementById('ort').addEventListener('change', alertOrt);
+  document.getElementById('eMail').addEventListener('change', alertEmail);
+  document.getElementById('passwort').addEventListener('change', alertPasswort);
 
-  function my1Function() {
+  var hide1 = document.getElementById('anredeT');
+  var hide2 = document.getElementById('vnameT');
+  var hide3 = document.getElementById('nnameT');
+  var hide4 = document.getElementById('strasseT');
+  var hide5 = document.getElementById('hnummerT');
+  var hide6 = document.getElementById('plzT');
+  var hide7 = document.getElementById('ortT');
+  var hide8 = document.getElementById('eMailT');
+  var hide9 = document.getElementById('passwortT');
+
+  function alertAnrede() {
     var x = document.getElementById('anrede');
     x.classList.remove('nw-border-red-500');
+    hide1.style.display = 'none';
   }
 
-  function my2Function() {
+  function alertVorname() {
     var x = document.getElementById('vname');
     x.classList.remove('nw-border-red-500');
+    hide2.style.display = 'none';
   }
 
-  function my3Function() {
+  function alertNachname() {
     var x = document.getElementById('nname');
     x.classList.remove('nw-border-red-500');
+    hide3.style.display = 'none';
   }
 
-  function my4Function() {
+  function alertStrasse() {
     var x = document.getElementById('strasse');
     x.classList.remove('nw-border-red-500');
+    hide4.style.display = 'none';
   }
 
-  function my5Function() {
+  function alertHnummer() {
     var x = document.getElementById('hnummer');
     x.classList.remove('nw-border-red-500');
+    hide5.style.display = 'none';
   }
 
-  function my6Function() {
+  function alertPlz() {
     var x = document.getElementById('plz');
     x.classList.remove('nw-border-red-500');
+    hide6.style.display = 'none';
   }
 
-  function my7Function() {
+  function alertOrt() {
     var x = document.getElementById('ort');
     x.classList.remove('nw-border-red-500');
+    hide7.style.display = 'none';
   }
 
-  function my8Function() {
+  function alertEmail() {
     var x = document.getElementById('eMail');
     x.classList.remove('nw-border-red-500');
+    hide8.style.display = 'none';
   }
 
-  function my9Function() {
+  function alertPasswort() {
     var x = document.getElementById('passwort');
     x.classList.remove('nw-border-red-500');
+    hide9.style.display = 'none';
   }
 </script>
