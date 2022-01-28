@@ -34,16 +34,7 @@
     </p>
   </div>
   <div>
-    <style>
-      select:invalid {
-        color: #999999;
-      }
-
-      option {
-        color: black;
-      }
-    </style>
-    <form action="">
+    <form action="" id="myForm">
       <!-- Anrede-->
       <label
         class="
@@ -60,27 +51,42 @@
       <select
         class="
           nw-w-full
-          nw-px-3
-          nw-py-2
+          nw-px-1
+          nw-py-1
           nw-mx-auto
+          nw-text-base
           nw-inline-block
           nw-border-2
           nw-border-solid
-          nw-border-gray-200
           nw-rounded
           nw-box-border
           nw-cursor-pointer
-          hover:nw-border-gray-400
-          focus:nw-border-gary-400
         "
-        id=""
+        id="anrede"
         name=""
+        onchange="Validator()"
       >
         <option value="" disabled selected hidden>Bitte wählen</option>
         <option value="herr">Herr</option>
         <option value="frau">Frau</option>
       </select>
+
+      <p
+        id="anredeT"
+        class="
+          nw-mb-4
+          nw-text-red-500
+          nw-text-xs
+          nw-font-medium
+          nw-tracking-normal
+          nw-font-roboto
+          nw-hidden
+        "
+      >
+        Please choose a password.
+      </p>
       <!-- vorname-->
+
       <label
         class="
           nw-font-roboto
@@ -96,23 +102,37 @@
       <input
         class="
           nw-w-full
-          nw-px-4
+          nw-px-2
           nw-py-1
           nw-mx-auto
           nw-inline-block
           nw-border-2
           nw-border-solid
-          nw-border-gray-200
           nw-rounded
           nw-box-border
           nw-cursor-pointer
-          hover:nw-border-gray-400
-          focus:nw-border-gary-400
         "
         type="text"
         placeholder=""
-        name="uname"
+        name=""
+        id="vname"
+        onchange="Validator()"
       />
+      <p
+        id="vnameT"
+        class="
+          nw-mb-4
+          nw-text-red-500
+          nw-text-xs
+          nw-font-medium
+          nw-tracking-normal
+          nw-font-roboto
+          nw-hidden
+        "
+      >
+        Please choose a password.
+      </p>
+
       <!-- Nachname-->
       <label
         class="
@@ -129,23 +149,36 @@
       <input
         class="
           nw-w-full
-          nw-px-4
+          nw-px-2
           nw-py-1
           nw-mx-auto
           nw-inline-block
           nw-border-2
           nw-border-solid
-          nw-border-gray-200
           nw-rounded
           nw-box-border
           nw-cursor-pointer
-          hover:nw-border-gray-400
-          focus:nw-border-gary-400
         "
         type="text"
         placeholder=""
         name=""
+        id="nname"
+        onchange="Validator()"
       />
+      <p
+        id="nnameT"
+        class="
+          nw-mb-4
+          nw-text-red-500
+          nw-text-xs
+          nw-font-medium
+          nw-tracking-normal
+          nw-font-roboto
+          nw-hidden
+        "
+      >
+        Please choose a password.
+      </p>
 
       <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 md:nw-gap-2">
         <!-- Straße-->
@@ -165,25 +198,37 @@
           <input
             class="
               nw-w-full
-              nw-px-4
+              nw-px-2
               nw-py-1
               nw-mx-auto
               nw-inline-block
               nw-border-2
               nw-border-solid
-              nw-border-gray-200
               nw-rounded
               nw-box-border
               nw-cursor-pointer
-              hover:nw-border-gray-400
-              focus:nw-border-gary-400
             "
             type="text"
             placeholder=""
             name=""
+            id="strasse"
+            onchange="Validator()"
           />
+          <p
+            id="strasseT"
+            class="
+              nw-mb-4
+              nw-text-red-500
+              nw-text-xs
+              nw-font-medium
+              nw-tracking-normal
+              nw-font-roboto
+              nw-hidden
+            "
+          >
+            Please choose a password.
+          </p>
         </div>
-
         <!-- Hausnummer-->
         <div>
           <label
@@ -201,23 +246,36 @@
           <input
             class="
               nw-w-full
-              nw-px-4
+              nw-px-2
               nw-py-1
               nw-mx-auto
               nw-inline-block
               nw-border-2
               nw-border-solid
-              nw-border-gray-200
               nw-rounded
               nw-box-border
               nw-cursor-pointer
-              hover:nw-border-gray-400
-              focus:nw-border-gary-400
             "
             type="text"
             placeholder=""
             name=""
+            id="hnummer"
+            onchange="Validator()"
           />
+          <p
+            id="hnummerT"
+            class="
+              nw-mb-4
+              nw-text-red-500
+              nw-text-xs
+              nw-font-medium
+              nw-tracking-normal
+              nw-font-roboto
+              nw-hidden
+            "
+          >
+            Please choose a password.
+          </p>
         </div>
       </div>
       <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 md:nw-gap-2">
@@ -238,23 +296,36 @@
           <input
             class="
               nw-w-full
-              nw-px-4
+              nw-px-2
               nw-py-1
               nw-mx-auto
               nw-inline-block
               nw-border-2
               nw-border-solid
-              nw-border-gray-200
               nw-rounded
               nw-box-border
               nw-cursor-pointer
-              hover:nw-border-gray-400
-              focus:nw-border-gary-400
             "
             type="text"
             placeholder=""
             name=""
+            id="plz"
+            onchange="Validator()"
           />
+          <p
+            id="plzT"
+            class="
+              nw-mb-4
+              nw-text-red-500
+              nw-text-xs
+              nw-font-medium
+              nw-tracking-normal
+              nw-font-roboto
+              nw-hidden
+            "
+          >
+            Please choose a password.
+          </p>
         </div>
         <!-- Ort-->
         <div class="nw-col-span-2">
@@ -270,26 +341,44 @@
             for=""
             >Ort</label
           >
-          <input
+          <select
             class="
               nw-w-full
-              nw-px-4
+              nw-px-2
               nw-py-1
               nw-mx-auto
+              nw-text-base
               nw-inline-block
               nw-border-2
               nw-border-solid
-              nw-border-gray-200
               nw-rounded
               nw-box-border
               nw-cursor-pointer
-              hover:nw-border-gray-400
-              focus:nw-border-gary-400
             "
             type="text"
             placeholder=""
             name=""
-          />
+            id="ort"
+            onchange="Validator()"
+          >
+            <option value="">Deutchland</option>
+            <option value="herr">Herr</option>
+            <option value="frau">Frau</option>
+          </select>
+          <p
+            id="ortT"
+            class="
+              nw-mb-4
+              nw-text-red-500
+              nw-text-xs
+              nw-font-medium
+              nw-tracking-normal
+              nw-font-roboto
+              nw-hidden
+            "
+          >
+            Please choose a password.
+          </p>
         </div>
       </div>
 
@@ -309,23 +398,36 @@
       <input
         class="
           nw-w-full
-          nw-px-4
+          nw-px-2
           nw-py-1
           nw-mx-auto
           nw-inline-block
           nw-border-2
           nw-border-solid
-          nw-border-gray-200
           nw-rounded
           nw-box-border
           nw-cursor-pointer
-          hover:nw-border-gray-400
-          focus:nw-border-gary-400
         "
         type="email"
         placeholder=""
         name=""
+        id="eMail"
+        onchange="Validator()"
       />
+      <p
+        id="eMailT"
+        class="
+          nw-mb-4
+          nw-text-red-500
+          nw-text-xs
+          nw-font-medium
+          nw-tracking-normal
+          nw-font-roboto
+          nw-hidden
+        "
+      >
+        Please choose a password.
+      </p>
 
       <!-- Passwort-->
       <label
@@ -343,23 +445,35 @@
       <input
         class="
           nw-w-full
-          nw-px-4
+          nw-px-2
           nw-py-1
           nw-mx-auto
           nw-inline-block
           nw-border-2
           nw-border-solid
-          nw-border-gray-200
           nw-rounded
           nw-box-border
           nw-cursor-pointer
-          hover:nw-border-gray-400
-          focus:nw-border-gary-400
         "
         type="password"
-        placeholder=""
+        placeholder="Ihr Passwort muss min. 6 Zeichen lang sein"
         name=""
+        id="passwort"
       />
+      <p
+        id="passwortT"
+        class="
+          nw-mb-4
+          nw-text-red-500
+          nw-text-xs
+          nw-font-medium
+          nw-tracking-normal
+          nw-font-roboto
+          nw-hidden
+        "
+      >
+        Please choose a password.
+      </p>
 
       <div class="nw-mb-2 nw-mt-4 nw-flex">
         <div>
@@ -458,8 +572,9 @@
           focus:nw-bg-red-700
           disabled:nw-bg-red-100
         "
-        type="submit"
+        type="button"
         value="Registrieren"
+        onclick="Validator(); return false;"
       />
     </form>
   </div>
@@ -480,5 +595,166 @@
       text.disabled = true;
       text.style.backgroundColor = '#E1B9BA';
     }
+  }
+</script>
+
+<script>
+  function Validator() {
+    var gender = document.getElementById('anrede');
+    var fname = document.getElementById('vname');
+    var lname = document.getElementById('nname');
+    var street = document.getElementById('strasse');
+    var hnumber = document.getElementById('hnummer');
+    var zip = document.getElementById('plz');
+    var land = document.getElementById('ort');
+    var email = document.getElementById('eMail');
+    var password = document.getElementById('passwort');
+
+    var hide1 = document.getElementById('anredeT');
+    var hide2 = document.getElementById('vnameT');
+    var hide3 = document.getElementById('nnameT');
+    var hide4 = document.getElementById('strasseT');
+    var hide5 = document.getElementById('hnummerT');
+    var hide6 = document.getElementById('plzT');
+    var hide7 = document.getElementById('ortT');
+    var hide8 = document.getElementById('eMailT');
+    var hide9 = document.getElementById('passwortT');
+
+    var valid = true;
+
+    if (gender.value == '') {
+      valid = false;
+      gender.classList.add('nw-border-red-500');
+      hide1.style.display = 'block';
+    } else {
+      gender.classList.remove('nw-border-red-500');
+      hide1.style.display = 'none';
+    }
+
+    if (fname.value == '') {
+      valid = false;
+      fname.classList.add('nw-border-red-500');
+      hide2.style.display = 'block';
+    } else {
+      fname.classList.remove('nw-border-red-500');
+      hide2.style.display = 'none';
+    }
+
+    if (lname.value == '') {
+      valid = false;
+      lname.classList.add('nw-border-red-500');
+      hide3.style.display = 'block';
+    } else {
+      lname.classList.remove('nw-border-red-500');
+      hide3.style.display = 'none';
+    }
+    if (street.value == '') {
+      valid = false;
+      street.classList.add('nw-border-red-500');
+      hide4.style.display = 'block';
+    } else {
+      street.classList.remove('nw-border-red-500');
+      hide4.style.display = 'none';
+    }
+
+    if (hnumber.value == '') {
+      valid = false;
+      hnumber.classList.add('nw-border-red-500');
+      hide5.style.display = 'block';
+    } else {
+      hnumber.classList.remove('nw-border-red-500');
+      hide5.style.display = 'none';
+    }
+    if (zip.value == '') {
+      valid = false;
+      zip.classList.add('nw-border-red-500');
+      hide6.style.display = 'block';
+    } else {
+      zip.classList.remove('nw-border-red-500');
+      hide6.style.display = 'none';
+    }
+    if (land.value == '') {
+      valid = false;
+      land.classList.add('nw-border-red-500');
+      hide7.style.display = 'block';
+    } else {
+      land.classList.remove('nw-border-red-500');
+      hide7.style.display = 'none';
+    }
+    if (email.value == '') {
+      valid = false;
+      email.classList.add('nw-border-red-500');
+      hide8.style.display = 'block';
+    } else {
+      email.classList.remove('nw-border-red-500');
+      hide8.style.display = 'none';
+    }
+    if (password.value == '') {
+      valid = false;
+      password.classList.add('nw-border-red-500');
+      hide9.style.display = 'block';
+    } else {
+      password.classList.remove('nw-border-red-500');
+      hide9.style.display = 'none';
+    }
+    if (valid) {
+    }
+  }
+</script>
+
+<script>
+  document.getElementById('anrede').addEventListener('change', my1Function);
+  document.getElementById('vname').addEventListener('change', my2Function);
+  document.getElementById('nname').addEventListener('change', my3Function);
+  document.getElementById('strasse').addEventListener('change', my4Function);
+  document.getElementById('hnummer').addEventListener('change', my5Function);
+  document.getElementById('plz').addEventListener('change', my6Function);
+  document.getElementById('ort').addEventListener('change', my7Function);
+  document.getElementById('eMail').addEventListener('change', my8Function);
+  document.getElementById('passwort').addEventListener('change', my9Function);
+
+  function my1Function() {
+    var x = document.getElementById('anrede');
+    x.classList.remove('nw-border-red-500');
+  }
+
+  function my2Function() {
+    var x = document.getElementById('vname');
+    x.classList.remove('nw-border-red-500');
+  }
+
+  function my3Function() {
+    var x = document.getElementById('nname');
+    x.classList.remove('nw-border-red-500');
+  }
+
+  function my4Function() {
+    var x = document.getElementById('strasse');
+    x.classList.remove('nw-border-red-500');
+  }
+
+  function my5Function() {
+    var x = document.getElementById('hnummer');
+    x.classList.remove('nw-border-red-500');
+  }
+
+  function my6Function() {
+    var x = document.getElementById('plz');
+    x.classList.remove('nw-border-red-500');
+  }
+
+  function my7Function() {
+    var x = document.getElementById('ort');
+    x.classList.remove('nw-border-red-500');
+  }
+
+  function my8Function() {
+    var x = document.getElementById('eMail');
+    x.classList.remove('nw-border-red-500');
+  }
+
+  function my9Function() {
+    var x = document.getElementById('passwort');
+    x.classList.remove('nw-border-red-500');
   }
 </script>
