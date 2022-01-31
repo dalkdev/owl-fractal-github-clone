@@ -346,13 +346,12 @@
               for=""
               >Ort</label
             >
-            <select
+            <input
               class="
                 nw-w-full
                 nw-px-2
-                nw-py-1
+                nw-py-1.5
                 nw-mx-auto
-                nw-text-tiny
                 nw-inline-block
                 nw-border-2
                 nw-border-solid
@@ -365,11 +364,7 @@
               placeholder=""
               name=""
               id="ort"
-            >
-              <option value="Deutschland">Deutschland</option>
-              <option value="herr">Herr</option>
-              <option value="frau">Frau</option>
-            </select>
+            />
             <p
               id="ortT"
               class="
@@ -385,6 +380,59 @@
             </p>
           </div>
         </div>
+      </div>
+
+      <!--land-->
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Land</label
+        >
+        <select
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1
+            nw-mx-auto
+            nw-text-tiny
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-tiny
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="text"
+          placeholder=""
+          name=""
+          id="land1"
+        >
+          <option value="Deutschland">Deutschland</option>
+          <option value="herr">Herr</option>
+          <option value="frau">Frau</option>
+        </select>
+        <p
+          id="land1T"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Land eingeben
+        </p>
       </div>
 
       <!--email-->
@@ -446,7 +494,7 @@
             nw-text-black
             nw-tracking-normal
           "
-          for="psw"
+          for=""
           >Passwort</label
         >
         <input
@@ -620,7 +668,8 @@
     var street = document.getElementById('strasse');
     var hnumber = document.getElementById('hnummer');
     var zip = document.getElementById('plz');
-    var land = document.getElementById('ort');
+    var place = document.getElementById('ort');
+    var land = document.getElementById('land1');
     var email = document.getElementById('eMail');
     var password = document.getElementById('passwort');
 
@@ -631,6 +680,7 @@
     var hide5 = document.getElementById('hnummerT');
     var hide6 = document.getElementById('plzT');
     var hide7 = document.getElementById('ortT');
+    var hide71 = document.getElementById('land1T');
     var hide8 = document.getElementById('eMailT');
     var hide9 = document.getElementById('passwortT');
 
@@ -687,13 +737,21 @@
       zip.classList.remove('nw-border-red-500');
       hide6.style.display = 'none';
     }
+    if (place.value == '') {
+      valid = false;
+      place.classList.add('nw-border-red-500');
+      hide7.style.display = 'block';
+    } else {
+      place.classList.remove('nw-border-red-500');
+      hide7.style.display = 'none';
+    }
     if (land.value == '') {
       valid = false;
       land.classList.add('nw-border-red-500');
-      hide7.style.display = 'block';
+      hide71.style.display = 'block';
     } else {
       land.classList.remove('nw-border-red-500');
-      hide7.style.display = 'none';
+      hide71.style.display = 'none';
     }
     if (email.value == '') {
       valid = false;
@@ -723,6 +781,7 @@
   document.getElementById('hnummer').addEventListener('change', alertHnummer);
   document.getElementById('plz').addEventListener('change', alertPlz);
   document.getElementById('ort').addEventListener('change', alertOrt);
+  document.getElementById('land1').addEventListener('change', alertLand1);
   document.getElementById('eMail').addEventListener('change', alertEmail);
   document.getElementById('passwort').addEventListener('change', alertPasswort);
 
@@ -733,6 +792,7 @@
   var hide5 = document.getElementById('hnummerT');
   var hide6 = document.getElementById('plzT');
   var hide7 = document.getElementById('ortT');
+  var hide71 = document.getElementById('land1T');
   var hide8 = document.getElementById('eMailT');
   var hide9 = document.getElementById('passwortT');
 
@@ -776,6 +836,12 @@
     var x = document.getElementById('ort');
     x.classList.remove('nw-border-red-500');
     hide7.style.display = 'none';
+  }
+
+  function alertLand1() {
+    var x = document.getElementById('land1');
+    x.classList.remove('nw-border-red-500');
+    hide71.style.display = 'none';
   }
 
   function alertEmail() {
