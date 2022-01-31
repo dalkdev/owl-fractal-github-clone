@@ -50,6 +50,9 @@ module.exports = {
         'teaser-height': '72px',
         'video-height': '200px',
       },
+      width: {
+        "200px" : "200px"
+      }
     },
   },
   variants: {
