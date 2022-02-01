@@ -1,0 +1,25 @@
+select.nw-select-icon-plus {
+  > option {
+    color: blue;
+    content: 'Reference ';
+
+    //&:before {
+    //content: 'abc';
+    //}
+  }
+
+  @apply nw-w-full
+  nw-px-2
+  nw-py-1
+  nw-mx-auto
+  nw-text-tiny
+  nw-font-medium
+  nw-tracking-normal
+  nw-inline-block
+  nw-border-2
+  nw-border-solid
+  nw-rounded
+  nw-text-tiny
+  nw-box-border
+  nw-cursor-pointer;
+}
