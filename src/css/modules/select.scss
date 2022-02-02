@@ -1,8 +1,6 @@
 select.nw-select-icon-plus {
   > option {
-    color: blue;
-    content: 'Reference ';
-
+    content: 'Reference';
     //&:before {
     //content: 'abc';
     //}
@@ -13,13 +11,13 @@ select.nw-select-icon-plus {
   nw-py-1
   nw-mx-auto
   nw-text-tiny
+  nw-font-roboto
   nw-font-medium
   nw-tracking-normal
   nw-inline-block
   nw-border-2
   nw-border-solid
   nw-rounded
-  nw-text-tiny
   nw-box-border
   nw-cursor-pointer;
 }
