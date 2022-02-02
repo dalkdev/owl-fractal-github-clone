@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
+    "yarn": "*",
+    "global-prefix": "*",
     "@frctl/fractal": "^1.5.8",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "embla-carousel": "^4.5.3",
@@ -58,7 +60,7 @@
     "stylelint-scss": "^3.19.0",
     "tailwindcss": "^2.1.4",
     "typescript": "^4.3.2",
-    "vite": "^2.3.6"
+    "vite": "2.3.6"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

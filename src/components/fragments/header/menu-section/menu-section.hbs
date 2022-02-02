@@ -1,8 +1,9 @@
 <ul
+  id="nw-menu-section"
   class="
     nw-border-b nw-flex nw-bg-white nw-justify-items-stretch nw-px-0
     sm:nw-px-2
-    nw-h-10 nw-items-center nw-mt-16
+    nw-h-10 nw-items-center nw-mt-20
     md:nw-mt-0
   "
 >
@@ -28,6 +29,7 @@
           class="
             nw-uppercase nw-text-black nw-text-sm nw-hidden
             md:nw-inline-block
+            nw-select-none
           "
           >Menü</span
         >
@@ -40,7 +42,13 @@
     <a
       href="#"
       class="
-        nw-flex nw-justify-start nw-items-center nw-text-sm nw-pt-1 nw-px-2
+        nw-flex
+        nw-justify-start
+        nw-items-center
+        nw-text-sm
+        nw-pt-1
+        nw-pb-px
+        nw-px-2
       "
     >
       Newsticker
@@ -73,7 +81,9 @@
   </li>
   <li class="nw-menu-seperator nw-inline-block"></li>
   <!-- navigation -->
-  {{>'@menu-nav'}}
+  <li class="nw-menu-nav nw-flex-wrap nw-content-center nw-align-baseline">
+    <div class="embla-navigation nw-max-w-full">{{>'@menu-nav'}}</div>
+  </li>
   <!-- service links -->
   <!--  {{>'@service-links'}}-->
 </ul>

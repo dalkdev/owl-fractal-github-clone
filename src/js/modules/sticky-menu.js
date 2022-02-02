@@ -1,15 +1,14 @@
 import { initNavigation } from './embla-navigation';
 
 export function initStickymenu() {
+  const stickymenu = document.getElementById('nw-sticky-container');
+  const originalmenu = document.getElementById('nw-menu-section');
+
   function toggleStickymenu() {
-    const stickymenu = document.getElementById('nw-sticky-container');
-
     if (stickymenu == null) return;
+    initNavigation(true);
 
-    if (
-      document.body.scrollTop > 180 ||
-      document.documentElement.scrollTop > 180
-    ) {
+    if (originalmenu.getBoundingClientRect().y < 0) {
       stickymenu.classList.add('nw-show-sticky');
       stickymenu.classList.remove('nw-hide-sticky');
     } else {
@@ -17,9 +16,5 @@ export function initStickymenu() {
       stickymenu.classList.add('nw-hide-sticky');
     }
   }
-
-  window.onscroll = function () {
-    initNavigation();
-    toggleStickymenu();
-  };
+  window.addEventListener('scroll', () => toggleStickymenu());
 }

@@ -1,25 +1,46 @@
-<div class="nw-max-w-xs nw-mb-12 nw-p-4 sm:nw-mb-0 nw-bg-white">
-    <div class="nw-mb-1">
-        {{>'@input--email'}}
-    </div>
-    <div class="nw-mb-1">
-        {{>'@input--password'}}
-    </div>
+<div id="nw-loginbox" class="nw-hidden">
+  <div class="nw-loginbox-arrow"></div>
+  <form action="">
+    <div class="nw-mb-1">{{>'@input--email'}}</div>
+    <div class="nw-mb-1">{{>'@input--password'}}</div>
     <div class="nw-text-right nw-mb-2 nw-text-xs">
-        <div><a href="#" class="nw-text-gray-700 hover:nw-underline">Passwort vergessen?</a></div>
+      <div>
+        <a href="#" class="nw-text-gray-700 hover:nw-underline"
+          >Passwort vergessen?</a
+        >
+      </div>
     </div>
     <div class="nw-mb-3">
-        <label class="nw-flex nw-items-center nw-space-x-3">
-            <input type="checkbox" name="checked-demo" class="nw-form-tick nw-border nw-nw-border-gray-300 nw-appearance-none nw-h-3 nw-w-3 checked:nw-bg-gray-500 focus:outline-none">
-            <span class="nw-text-gray-600 nw-text-xs nw-font-medium">Angemeldet bleiben</span>
-        </label>
+      <label class="nw-flex nw-items-center nw-space-x-3">
+        <input
+          type="checkbox"
+          name="checked-demo"
+          class="
+            nw-form-tick
+            nw-border
+            nw-nw-border-gray-300
+            nw-appearance-none
+            nw-h-3
+            nw-w-3
+            checked:nw-bg-gray-500
+            focus:outline-none
+          "
+        />
+        <span class="nw-text-gray-600 nw-text-xs nw-font-medium"
+          >Angemeldet bleiben</span
+        >
+      </label>
     </div>
-    <div class="nw-mb-4">
-        {{>'@submit-button' buttontext-login}}
+    <div class="nw-mb-4">{{>'@submit-button' buttontext-login}}</div>
+  </form>
+  <div class="nw-text-center">
+    <p>Sie haben noch keinen Zugang?</p>
+    <div class="nw-font-medium">
+      <div>
+        <a href="{{link-target}}" class="nw-text-red-500 hover:nw-underline"
+          >{{link}}</a
+        >
+      </div>
     </div>
-
-    <div class="nw-text-center">
-        <p>Sie haben noch keinen Zugang?</p>
-        <div class="nw-font-medium"><div><a href="{{link-target}}" class="nw-text-red-500 hover:nw-underline">{{link}}</a></div></div>
-    </div>
+  </div>
 </div>
