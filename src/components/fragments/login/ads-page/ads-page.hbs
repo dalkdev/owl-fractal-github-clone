@@ -1,22 +1,4 @@
 <div class="nw-bg-white nw-pb-4 nw-mx-0 nw-px-4">
-  <div>
-    <p
-      class="
-        nw-text-left
-        nw-text-base
-        nw-font-roboto
-        nw-font-bold
-        nw-opacity-100
-        nw-text-black
-        nw-pt-4
-        nw-pb-1
-        nw-tracking-normal
-      "
-    >
-      {{headline}}
-    </p>
-  </div>
-
   <div id="">
     <div class=""></div>
     <div class="nw-max-w-full nw-mb-6 nw-bg-white">
@@ -166,28 +148,28 @@
   </div>
 
   <!--
-          <button
-              class="nw-bg-gray-300 hover:nw-bg-gray-400 nw-text-gray-800 nw-font-bold nw-py-2 nw-px-4 nw-rounded nw-inline-flex
-              nw-items-center">
-              <svg
-                  class="nw-mx-auto nw-text-custom-1-700 nw-cursor-pointer"
-                  width="30"
-                  height="30"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-              >
-                  <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-              </svg>
-              <span>Download</span>
-          </button>
-          -->
+            <button
+                class="nw-bg-gray-300 hover:nw-bg-gray-400 nw-text-gray-800 nw-font-bold nw-py-2 nw-px-4 nw-rounded nw-inline-flex
+                nw-items-center">
+                <svg
+                    class="nw-mx-auto nw-text-custom-1-700 nw-cursor-pointer"
+                    width="30"
+                    height="30"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                </svg>
+                <span>Download</span>
+            </button>
+            -->
 
   <!-- Für Desktop-->
   <div class="nw-hidden md:nw-block">
@@ -215,21 +197,27 @@
             nw-uppercase
             nw-tracking-normal
             nw-py-2
-            nw-px-4
+            nw-px-1
             nw-inline-flex
             nw-text-sm
             nw-cursor-pointer
-            hover:nw-border-solid hover:nw-border-black hover:nw-border-b-2
             nw-items-center
-            hover:nw-text-black
-            focus:nw-text-black
+            nw-text-black
+            nw-border-b-2
+            nw-border-gray-600
           "
+          id="tabs-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#tabs-home"
+          role="tab"
+          aria-controls="tabs-home"
+          aria-selected="true"
         >
           <svg
             id="svgErstellen"
-            class="nw-mr-1.5 nw-cursor-pointer"
-            width="30"
-            height="30"
+            class="nw-mr-1.5 nw-cursor-pointer nw-text-custom-1-700"
+            width="25"
+            height="25"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -254,24 +242,27 @@
             nw-uppercase
             nw-tracking-normal
             nw-py-2
-            nw-px-4
+            nw-px-1
             nw-inline-flex
             nw-text-sm
             nw-cursor-pointer
             nw-border-b-2
             nw-border-solid
             nw-border-white
-            hover:nw-border-solid hover:nw-border-gray-600 hover:nw-border-b-2
             nw-items-center
-            hover:nw-text-black
-            focus:nw-text-black
           "
+          id="tabs-contact-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#tabs-contact"
+          role="tab"
+          aria-controls="tabs-contact"
+          aria-selected="false"
         >
           <svg
             id="svgVerwalten"
-            class="nw-mr-1.5 nw-cursor-pointer"
-            width="30"
-            height="30"
+            class="nw-mr-1.5 nw-cursor-pointer nw-text-gray-400"
+            width="25"
+            height="25"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -292,34 +283,40 @@
   <!--div fur alle-->
 </div>
 
+<!-- Script für das Desktop-Design -->
+
 <script>
   var iconerstellen = document.getElementById('aErstellen');
   var iconverwalten = document.getElementById('aVerwalten');
   var svg1 = document.getElementById('svgErstellen');
   var svg2 = document.getElementById('svgVerwalten');
 
-  iconerstellen.addEventListener('mouseover', mouseOver1);
-  iconerstellen.addEventListener('mouseout', mouseOut1);
-  iconverwalten.addEventListener('mouseover', mouseOver2);
-  iconverwalten.addEventListener('mouseout', mouseOut2);
+  iconerstellen.addEventListener('click', mouseOver1);
+  iconverwalten.addEventListener('click', mouseOut2);
 
   function mouseOver1() {
-    iconerstellen.classList.add('nw-text-black-500');
     svg1.classList.add('nw-text-custom-1-700');
-  }
-
-  function mouseOut1() {
-    iconerstellen.classList.remove('nw-text-black-500');
-    svg1.classList.remove('nw-text-custom-1-700');
-  }
-
-  function mouseOver2() {
-    iconverwalten.classList.add('nw-text-black-500');
-    svg2.classList.add('nw-text-custom-1-700');
+    svg2.classList.remove('nw-text-custom-1-700');
+    svg2.classList.add('nw-text-gray-400');
+    iconerstellen.classList.add('nw-text-black');
+    iconverwalten.classList.remove('nw-text-black');
+    iconverwalten.classList.add('nw-text-gray-400');
+    iconerstellen.classList.add('nw-border-b-2');
+    iconerstellen.classList.add('nw-border-gray-600');
+    iconerstellen.classList.add('nw-border-solid');
+    iconverwalten.classList.remove('nw-border-b-2');
   }
 
   function mouseOut2() {
-    iconverwalten.classList.remove('nw-text-black-500');
-    svg2.classList.remove('nw-text-custom-1-700');
+    svg2.classList.add('nw-text-custom-1-700');
+    svg1.classList.remove('nw-text-custom-1-700');
+    svg1.classList.add('nw-text-gray-400');
+    iconverwalten.classList.add('nw-text-black');
+    iconerstellen.classList.remove('nw-text-black');
+    iconerstellen.classList.add('nw-text-gray-400');
+    iconverwalten.classList.add('nw-border-b-2');
+    iconverwalten.classList.add('nw-border-gray-600');
+    iconverwalten.classList.add('nw-border-solid');
+    iconerstellen.classList.remove('nw-border-b-2');
   }
 </script>
