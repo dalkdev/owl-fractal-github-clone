@@ -5,6 +5,9 @@ export function initBurgermenu() {
     burgermenu.classList.toggle('nw-close-burgermenu');
     const burgermenuOverlay = document.getElementById('burger-overlay');
     burgermenuOverlay.classList.toggle('nw-hidden');
+    const htmlTag = document.querySelector('html');
+    htmlTag.style.overflowY =
+      htmlTag.style.overflowY === 'hidden' ? '' : 'hidden';
   }
 
   const burgermenuDropdown = document.getElementsByClassName(

@@ -22,6 +22,7 @@ module.exports = {
           400: '#D5353A',
           500: '#D20A11',
           600: '#B3080E',
+          700: '#8C070B',
         },
         custom: {
           '1-700': '#4A5568',
@@ -29,6 +30,7 @@ module.exports = {
         blue: '#41B7CC',
       },
       fontFamily: {
+        body: ['Roboto', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
@@ -51,8 +53,8 @@ module.exports = {
         'video-height': '200px',
       },
       width: {
-        "200px" : "200px"
-      }
+        '200px': '200px',
+      },
     },
   },
   variants: {

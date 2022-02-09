@@ -17,6 +17,7 @@
   "scripts": {
     "start": "cross-env HMR_PORT=3042 concurrently -n fractal,vite -c magenta,yellow \"yarn fractal:start\" \"yarn vite:start\"",
     "build": "yarn vite:build && fractal build",
+    "build:copy": "yarn build && copy build\\app.css ..\\owl-cms-twig\\public\\css\\ && copy build\\app.js ..\\owl-cms-twig\\public\\js\\ && copy build\\vendor.js ..\\owl-cms-twig\\public\\js\\",
     "build:serve": "yarn build && serve build",
     "fractal:start": "cross-env NODE_ENV=dev fractal start ./ --sync",
     "vite:start": "cross-env  HMR_PORT=3042 vite",
