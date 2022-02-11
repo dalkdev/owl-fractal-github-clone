@@ -1,6 +1,13 @@
 .nw-menu-nav {
   @apply nw-flex-grow nw-overflow-hidden;
 }
+
+.embla-navigation {
+  #nw-newsticker {
+    @apply nw-mb-8 md:nw-mb-0;
+  }
+}
+
 .embla-navigation-sticky,
 .embla-navigation {
   position: relative;
