@@ -11,6 +11,7 @@
 @use './modules/embla-newsticker';
 @use './modules/burger-menu';
 @use './modules/header';
+@use './modules/select';
 
 // has to be at the end to override certain properties
 @use 'general/a11y';
