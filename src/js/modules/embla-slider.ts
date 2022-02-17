@@ -13,7 +13,7 @@ function initSlider(wrapperNode: HTMLElement) {
   const counterCurrent = wrapperNode.querySelector('.slider--counter-current');
   const counterTotal = wrapperNode.querySelector('.slider--counter-total');
   const btnNext = wrapperNode.querySelector('.slider--button-next');
-  /* const btnPrev = wrapperNode.querySelector('.slider--button-prev'); */
+  const btnPrev = wrapperNode.querySelector('.slider--button-prev');
   const dots = document.querySelector('.embla__dots');
 
   const mainCarouselWrap = wrapperNode.querySelector('.embla--main-carousel');
@@ -29,20 +29,20 @@ function initSlider(wrapperNode: HTMLElement) {
   mainCarousel.on('init', setSelectedDotBtn);
 
   /* const thumbCarouselWrap = wrapperNode.querySelector('.embla--thumb');
-  const thumbCarouselView =
-    thumbCarouselWrap?.querySelector('.embla__viewport');
-  const thumbCarousel = EmblaCarousel(thumbCarouselView as HTMLElement, {
-    selectedClass: '',
-    containScroll: 'keepSnaps',
-    dragFree: true,
-  }); */
+    const thumbCarouselView =
+      thumbCarouselWrap?.querySelector('.embla__viewport');
+    const thumbCarousel = EmblaCarousel(thumbCarouselView as HTMLElement, {
+      selectedClass: '',
+      containScroll: 'keepSnaps',
+      dragFree: true,
+    }); */
 
   /* thumbCarousel.slideNodes().forEach((thumbNode, index) => {
-    thumbNode.addEventListener('click', () => {
-      mainCarousel.scrollTo(index);
-      thumbCarousel.scrollTo(index);
-    });
-  }); */
+      thumbNode.addEventListener('click', () => {
+        mainCarousel.scrollTo(index);
+        thumbCarousel.scrollTo(index);
+      });
+    }); */
 
   mainCarousel.on('init', () => {
     if (counterCurrent) {
@@ -56,13 +56,13 @@ function initSlider(wrapperNode: HTMLElement) {
   });
 
   /* mainCarousel.on('select', () => {
-    thumbCarousel.scrollTo(mainCarousel.selectedScrollSnap());
-    if (counterCurrent) {
-      counterCurrent.textContent = (
-        mainCarousel.selectedScrollSnap() + 1
-      ).toString();
-    }
-  }); */
+      thumbCarousel.scrollTo(mainCarousel.selectedScrollSnap());
+      if (counterCurrent) {
+        counterCurrent.textContent = (
+          mainCarousel.selectedScrollSnap() + 1
+        ).toString();
+      }
+    }); */
 
   if (btnNext) {
     btnNext.addEventListener('click', () => {
@@ -70,9 +70,9 @@ function initSlider(wrapperNode: HTMLElement) {
     });
   }
 
-  /* if (btnPrev) {
+  if (btnPrev) {
     btnPrev.addEventListener('click', () => {
       mainCarousel.scrollPrev();
     });
-  } */
+  }
 }

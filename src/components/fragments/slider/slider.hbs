@@ -2,39 +2,41 @@
   class="
     slider
     nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-pl-4
-    md:nw-pb-4 md:nw-pl-24
+    md:nw-pl-0 md:nw-pb-4
   "
 >
-  <div>
-    <p
-      class="
-        nw-text-white
-        nw-inline
-        nw-text-xl
-        nw-uppercase
-        nw-font-bold
-        nw-text-roboto
-        nw-border-solid
-        nw-border-red-500
-        nw-border-b-2
-        nw-pt-6
-      "
-    >
-      {{title}}
-    </p>
-  </div>
-  <div>
-    <p
-      class="
-        nw-text-white nw-text-left nw-text-base nw-tracking-normal
-        md:nw-text-xl
-        nw-font-normal nw-pt-2
-        md:nw-pb-1
-        nw-pr-1
-      "
-    >
-      {{caption}}
-    </p>
+  <div class="nw-pl-0 md:nw-pl-16">
+    <div>
+      <p
+        class="
+          nw-text-white
+          nw-inline
+          nw-text-xl
+          nw-uppercase
+          nw-font-bold
+          nw-text-roboto
+          nw-border-solid
+          nw-border-red-500
+          nw-border-b-2
+          nw-pt-6
+        "
+      >
+        {{title}}
+      </p>
+    </div>
+    <div>
+      <p
+        class="
+          nw-text-white nw-text-left nw-text-base nw-tracking-normal
+          md:nw-text-xl
+          nw-font-normal nw-pt-2
+          md:nw-pb-1
+          nw-pr-1
+        "
+      >
+        {{caption}}
+      </p>
+    </div>
   </div>
   <div class="embla embla--main-carousel">
     <div class="embla__viewport relative">
@@ -58,8 +60,10 @@
         {{/each}}
       </div>
 
-      <!--<div
+      <div
         class="
+          nw-hidden
+          md:nw-block
           slider--button-prev
           nw-flex
           nw-bg-black
@@ -72,12 +76,13 @@
           nw-top-1/2
           nw-left-2
           nw-transform
-          nw-translate-y-1/2
+          nw--translate-y-1/2
           nw-cursor-pointer
         "
       >
         <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
-      </div> -->
+      </div>
+
       <div
         class="
           slider--button-next
@@ -109,11 +114,11 @@
   </script>
 
   <!-- <div class="nw-px-4 nw-py-2">
-      <p class="nw-text-xs nw-text-grey-400">
-        Bild <span class="slider--counter-current">1</span> von
-        <span class="slider--counter-total"></span>
-      </p>
-    </div>-->
+        <p class="nw-text-xs nw-text-grey-400">
+          Bild <span class="slider--counter-current">1</span> von
+          <span class="slider--counter-total"></span>
+        </p>
+      </div>-->
 
   <!-- Thumbs -->
   <!--<div class="embla embla--thumb">
