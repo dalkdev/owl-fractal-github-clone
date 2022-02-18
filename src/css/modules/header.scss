@@ -26,8 +26,8 @@
   md:nw-fixed
   md:nw-top-0
   md:nw-left-0
-  nw-z-50;
-
+  nw-z-50
+    nw-origin-bottom;
   &.nw-show-sticky {
     @apply nw-inline-block md:nw-transform md:nw-translate-y-0 md:nw-duration-500;
   }

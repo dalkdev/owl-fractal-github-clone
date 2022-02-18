@@ -8,12 +8,12 @@ export function initStickymenu() {
     if (stickymenu == null) return;
     initNavigation(true);
 
-    if (originalmenu.getBoundingClientRect().y < 0) {
-      stickymenu.classList.add('nw-show-sticky');
-      stickymenu.classList.remove('nw-hide-sticky');
-    } else {
+    if (originalmenu.getBoundingClientRect().y > 0) {
       stickymenu.classList.remove('nw-show-sticky');
       stickymenu.classList.add('nw-hide-sticky');
+    } else {
+      stickymenu.classList.add('nw-show-sticky');
+      stickymenu.classList.remove('nw-hide-sticky');
     }
   }
   window.addEventListener('scroll', () => toggleStickymenu());

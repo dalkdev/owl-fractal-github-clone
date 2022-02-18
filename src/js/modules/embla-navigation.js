@@ -19,8 +19,6 @@ export function initNavigation(reInit = false) {
       embla.on('init', disablePrevAndNextBtns);
       embla.on('scroll', disablePrevAndNextBtns);
 
-      console.log(embla.slidesNotInView().length);
-
       if (embla.slidesNotInView().length === 0) {
         prevBtn.classList.add('nw-hidden');
         nextBtn.classList.add('nw-hidden');
