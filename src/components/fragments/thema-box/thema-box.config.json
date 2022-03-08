@@ -1,0 +1,71 @@
+{
+  "status": "qm",
+  "context": {
+    "image-src-m": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+    "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+    "buttons": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "thema1": [
+      "1 Wetter Bielefeld",
+      "2 Polizei Bielefeld",
+      "3 Resturants Bielefeld",
+      "4 Inzidenzwert Bielefeld"
+    ],
+    "thema2": [
+      "1 Tim Kähler",
+      "2 Pit Clausen",
+      "3 Michael Dreier",
+      "4 Christian Haase"
+    ],
+    "thema3": [
+      "1 Jahnplatz Bielefeld",
+      "2 Wiehengebirge",
+      "3 Lippesee",
+      "4 Schloss Corvey"
+    ],
+    "thema4": [
+      "1 Polizei Gütersloh",
+      "2 Polizei Höxter",
+      "3 Feuerwehr Paderborn",
+      "4 Feuerwehr Höxter"
+    ],
+    "thema5": [
+      "1 Polizei Gütersloh",
+      "2 Polizei Höxter",
+      "3 Feuerwehr Paderborn",
+      "4 Feuerwehr Höxter"
+    ],
+    "thema6": [
+      "1 Polizei Gütersloh",
+      "2 Polizei Höxter",
+      "3 Feuerwehr Paderborn",
+      "4 Feuerwehr Höxter"
+    ]
+  }
+}
