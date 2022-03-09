@@ -20,33 +20,67 @@
     class="
       nw-grid nw-grid-cols-1
       md:nw-grid-cols-3
-      nw-gap-4 nw-pt-6 nw-flex nw-flex-col nw-justify-between
+      nw-gap-4 nw-pt-6 nw-flex nw-flex-col nw-flex-row nw-justify-between
     "
   >
     <!-- box1 -->
     <div class="nw-bg-white nw-rounded-md">
       <!-- Head -->
-      <div
-        class="
-          nw-py-2
-          nw-text-center
-          nw-bg-auto
-          nw-bg-no-repeat
-          nw-bg-center
-          nw-rounded-t-md
-          nw-font-roboto
-          nw-flex
-          nw-flex-col
-          nw-justify-between
-          nw-opacity-70
-        "
-        style="background-image: url({{image-src-m}})"
-      >
-        <span class="nw-text-white nw-opacity-100"> Thema </span>
-        <br />
-        <span class="nw-text-white nw-opacity-100">
-          Die Russische Invasion
-        </span>
+      <div class="nw-w-full nw-relative">
+        <div
+          class="
+            nw-w-full
+            nw-h-full
+            nw-bg-gray-600
+            nw-top-0
+            nw-left-0
+            nw-absolute
+            nw-opacity-80
+            nw-rounded-md
+          "
+        ></div>
+        <div
+          class="
+            nw-w-full
+            nw-h-full
+            nw-flex
+            nw-flex-col
+            nw-absolute
+            nw-top-0
+            nw-left-0
+            nw-justify-center
+            nw-items-center
+            nw-z-30
+          "
+        >
+          <div
+            class="
+              nw-text-tiny
+              nw-font-medium
+              nw-font-roboto
+              nw-tracking-normal
+              nw-uppercase
+              nw-text-gray-200
+            "
+          >
+            Thema
+          </div>
+          <div
+            class="
+              nw-text-base
+              nw-tracking-normal
+              nw-font-roboto
+              nw-font-bold
+              nw-text-white
+            "
+          >
+            Die Russische Invasion
+          </div>
+        </div>
+        <img
+          class="nw-rounded-t-md nw-object-cover nw-w-96 nw-h-24"
+          src="{{image-src-s}}"
+        />
       </div>
       <!-- Head Ende -->
       <!-- Liste 1 -->
@@ -56,73 +90,67 @@
             <li
               class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Corona-Maßnahmen: So verschärfen die Ampel-Partner ihre
-                    Gesetzespläne
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                  Corona-Maßnahmen: So verschärfen die Ampel-Partner ihre
+                  Gesetzespläne
+                </span>
+              </a>
             </li>
 
             <li
               class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Bielefelder Intensivpfleger spricht offen von Triage in den
-                    Kliniken
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                  Bielefelder Intensivpfleger spricht offen von Triage in den
+                  Kliniken
+                </span>
+              </a>
             </li>
 
             <li
               class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für
-                    Montag
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                  Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für
+                  Montag
+                </span>
+              </a>
             </li>
             <li>
               <a
@@ -165,27 +193,61 @@
     <!-- box2 -->
     <div class="nw-bg-white nw-rounded-md">
       <!-- Head -->
-      <div
-        class="
-          nw-py-2
-          nw-text-center
-          nw-bg-auto
-          nw-bg-no-repeat
-          nw-bg-center
-          nw-rounded-t-md
-          nw-font-roboto
-          nw-flex
-          nw-flex-col
-          nw-justify-between
-          nw-opacity-70
-        "
-        style="background-image: url({{image-src-m}})"
-      >
-        <span class="nw-text-white nw-opacity-100"> Thema </span>
-        <br />
-        <span class="nw-text-white nw-opacity-100">
-          Die Russische Invasion
-        </span>
+      <div class="nw-w-full nw-relative">
+        <div
+          class="
+            nw-w-full
+            nw-h-full
+            nw-bg-gray-600
+            nw-top-0
+            nw-left-0
+            nw-absolute
+            nw-opacity-80
+            nw-rounded-md
+          "
+        ></div>
+        <div
+          class="
+            nw-w-full
+            nw-h-full
+            nw-flex
+            nw-flex-col
+            nw-absolute
+            nw-top-0
+            nw-left-0
+            nw-justify-center
+            nw-items-center
+            nw-z-30
+          "
+        >
+          <div
+            class="
+              nw-text-tiny
+              nw-font-medium
+              nw-font-roboto
+              nw-tracking-normal
+              nw-uppercase
+              nw-text-gray-200
+            "
+          >
+            Thema
+          </div>
+          <div
+            class="
+              nw-text-base
+              nw-tracking-normal
+              nw-font-roboto
+              nw-font-bold
+              nw-text-white
+            "
+          >
+            Corona Deutschland 2022
+          </div>
+        </div>
+        <img
+          class="nw-rounded-t-md nw-object-cover nw-w-96 nw-h-24"
+          src="{{image-src-s}}"
+        />
       </div>
       <!-- Head Ende -->
       <!-- Liste 2-->
@@ -193,81 +255,69 @@
         <div>
           <ul class="nw-m-2 nw-block">
             <li
-              class="
-                nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2 nw-px-2
-              "
+              class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-60" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Corona-Maßnahmen: So verschärfen die Ampel-Partner ihre
-                    Gesetzespläne
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                  Corona-Maßnahmen: So verschärfen die Ampel-Partner ihre
+                  Gesetzespläne
+                </span>
+              </a>
             </li>
 
             <li
-              class="
-                nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2 nw-px-2
-              "
+              class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Bielefelder Intensivpfleger spricht offen von Triage in den
-                    Kliniken
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                  Bielefelder Intensivpfleger spricht offen von Triage in den
+                  Kliniken
+                </span>
+              </a>
             </li>
 
             <li
-              class="
-                nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2 nw-px-2
-              "
+              class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für
-                    Montag
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                  Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für
+                  Montag
+                </span>
+              </a>
             </li>
             <li>
               <a
@@ -310,27 +360,61 @@
     <!-- box3 -->
     <div class="nw-bg-white nw-rounded-md">
       <!-- Head -->
-      <div
-        class="
-          nw-py-2
-          nw-text-center
-          nw-bg-auto
-          nw-bg-no-repeat
-          nw-bg-center
-          nw-rounded-t-md
-          nw-font-roboto
-          nw-flex
-          nw-flex-col
-          nw-justify-between
-          nw-opacity-70
-        "
-        style="background-image: url({{image-src-m}})"
-      >
-        <span class="nw-text-white nw-opacity-100"> Thema </span>
-        <br />
-        <span class="nw-text-white nw-opacity-100">
-          Die Russische Invasion
-        </span>
+      <div class="nw-w-full nw-relative">
+        <div
+          class="
+            nw-w-full
+            nw-h-full
+            nw-bg-gray-600
+            nw-top-0
+            nw-left-0
+            nw-absolute
+            nw-opacity-80
+            nw-rounded-md
+          "
+        ></div>
+        <div
+          class="
+            nw-w-full
+            nw-h-full
+            nw-flex
+            nw-flex-col
+            nw-absolute
+            nw-top-0
+            nw-left-0
+            nw-justify-center
+            nw-items-center
+            nw-z-30
+          "
+        >
+          <div
+            class="
+              nw-text-tiny
+              nw-font-medium
+              nw-font-roboto
+              nw-tracking-normal
+              nw-uppercase
+              nw-text-gray-200
+            "
+          >
+            Thema
+          </div>
+          <div
+            class="
+              nw-text-base
+              nw-tracking-normal
+              nw-font-roboto
+              nw-font-bold
+              nw-text-white
+            "
+          >
+            Schwerster Kampf
+          </div>
+        </div>
+        <img
+          class="nw-rounded-t-md nw-object-cover nw-w-96 nw-h-24"
+          src="{{image-src-s}}"
+        />
       </div>
       <!-- Head Ende -->
       <!-- Liste 3 -->
@@ -338,81 +422,67 @@
         <div>
           <ul class="nw-m-2 nw-block">
             <li
-              class="
-                nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2 nw-px-2
-              "
+              class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-60" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Corona-Maßnahmen: So verschärfen die Ampel-Partner ihre
-                    Gesetzespläne
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                </span>
+              </a>
             </li>
 
             <li
-              class="
-                nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2 nw-px-2
-              "
+              class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Bielefelder Intensivpfleger spricht offen von Triage in den
-                    Kliniken
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                  Bielefelder Intensivpfleger spricht offen von Triage in den
+                  Kliniken
+                </span>
+              </a>
             </li>
 
             <li
-              class="
-                nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2 nw-px-2
-              "
+              class="nw-border-b-2 nw-border-solid nw-border-gray-200 nw-py-2"
             >
-              <div>
-                <a href="" class="nw-flex">
-                  <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
-                  <span
-                    class="
-                      nw-ml-2
-                      nw-text-tiny
-                      nw-font-roboto
-                      nw-text-left
-                      nw-font-medium
-                      nw-tracking-normal
-                      nw-text-black
-                    "
-                  >
-                    Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für
-                    Montag
-                  </span>
-                </a>
-              </div>
+              <a href="" class="nw-flex">
+                <img class="nw-h-16 nw-w-56" src="{{image-src-m}}" />
+                <span
+                  class="
+                    nw-ml-2
+                    nw-text-tiny
+                    nw-font-roboto
+                    nw-text-left
+                    nw-font-medium
+                    nw-tracking-normal
+                    nw-text-black
+                  "
+                >
+                  Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für
+                  Montag
+                </span>
+              </a>
             </li>
             <li>
               <a
@@ -479,6 +549,9 @@
       nw-text-center
       nw-bg-white
       nw-rounded-md
+      nw-overflow-x-auto
+      nw-overflow-y-hidden
+      nw-whitespace-nowrap
     "
   >
     {{#each buttons}}
@@ -523,7 +596,9 @@
   </div>
   <!-- buttons Ende -->
 
-  <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4 nw-mt-6">
+  <div
+    class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4 nw-mt-6 nw-mb-4"
+  >
     <!-- box1-->
     <div
       class="
@@ -606,8 +681,8 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="nw-float-right nw-text-black"
-          width="20"
-          height="20"
+          width="17"
+          height="17"
           fill=" none
                 "
           viewBox="0 0 24 24"
@@ -705,8 +780,8 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="nw-float-right nw-text-black"
-          width="20"
-          height="20"
+          width="17"
+          height="17"
           fill=" none
                 "
           viewBox="0 0 24 24"
@@ -804,8 +879,8 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="nw-float-right nw-text-black"
-          width="20"
-          height="20"
+          width="17"
+          height="17"
           fill=" none
                 "
           viewBox="0 0 24 24"
@@ -903,8 +978,8 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="nw-float-right nw-text-black"
-          width="20"
-          height="20"
+          width="17"
+          height="17"
           fill=" none
                 "
           viewBox="0 0 24 24"
@@ -1002,8 +1077,8 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="nw-float-right nw-text-black"
-          width="20"
-          height="20"
+          width="17"
+          height="17"
           fill=" none
                 "
           viewBox="0 0 24 24"
@@ -1101,8 +1176,8 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="nw-float-right nw-text-black"
-          width="20"
-          height="20"
+          width="17"
+          height="17"
           fill=" none
                 "
           viewBox="0 0 24 24"
