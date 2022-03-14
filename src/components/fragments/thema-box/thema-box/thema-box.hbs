@@ -1,0 +1,124 @@
+<div class="nw-mx-4 sm:nw-mx-0 md:nw-mx-0">
+  <div
+    class="
+      nw-pt-12
+      nw-pb-6
+      nw-text-center
+      nw-font-roboto
+      nw-font-bold
+      nw-text-black
+      nw-text-2xl
+      nw-tracking-normal
+      nw-leading-6
+      nw-uppercase
+    "
+  >
+    Was gerade wichtig ist
+  </div>
+  <!-- grid -->
+  <div
+    class="
+      nw-grid nw-grid-cols-1
+      md:nw-grid-cols-3
+      nw-gap-4 nw-pt-6 nw-flex nw-flex-col nw-flex-row nw-justify-between
+    "
+  >
+    <!-- box1 -->
+    {{>'@single-thema-box'}}
+    <!-- box1 Ende -->
+    <!-- box2 -->
+    {{>'@single-thema-box'}}
+    <!-- box2 Ende -->
+    <!-- box3 -->
+    {{>'@single-thema-box'}}
+    <!-- box3 Ende -->
+  </div>
+
+  <div class="nw-mt-8 nw-mb-4">
+    <span
+      class="
+        nw-text-left
+        nw-text-black
+        nw-font-bold
+        nw-font-roboto
+        nw-text-xl
+        nw-tracking-normal
+      "
+    >
+      Themenglossar
+    </span>
+  </div>
+  <!--buttons -->
+  <div
+    class="
+      nw-inline-block
+      nw-flex
+      nw-flex-row
+      nw-justify-between
+      nw-border
+      nw-text-center
+      nw-bg-white
+      nw-rounded-md
+      nw-overflow-x-auto
+      nw-overflow-y-hidden
+      nw-whitespace-nowrap
+    "
+  >
+    {{#each buttons}}
+    <a
+      href=""
+      class="
+        nw-px-2
+        nw-py-1.5
+        nw-border-r
+        nw-float-left
+        nw-text-center
+        nw-text-black
+        nw-text-roboto
+        nw-tracking-normal
+        nw-uppercase
+        nw-text-tiny
+        nw-font-normal
+        nw-cursor-pointer
+      "
+    >
+      {{this}}
+    </a>
+    {{/each}}
+    <a
+      href=""
+      class="
+        nw-px-2
+        nw-py-1.5
+        nw-float-left
+        nw-text-center
+        nw-text-black
+        nw-text-roboto
+        nw-tracking-normal
+        nw-uppercase
+        nw-text-tiny
+        nw-font-normal
+        nw-cursor-pointer
+      "
+    >
+      0-9
+    </a>
+  </div>
+  <!-- buttons Ende -->
+  <div
+    class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4 nw-mt-6 nw-mb-4"
+  >
+    <!-- box1-->
+    {{>'@single-list'}}
+    <!-- box2-->
+    {{>'@single-list'}}
+    <!-- box3-->
+    {{>'@single-list'}}
+    <!-- box4-->
+    {{>'@single-list'}}
+    <!-- box5-->
+    {{>'@single-list'}}
+    <!-- box6-->
+    {{>'@single-list'}}
+  </div>
+</div>

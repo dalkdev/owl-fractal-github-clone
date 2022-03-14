@@ -31,41 +31,12 @@
       "Y",
       "Z"
     ],
+    "label": "Bielefeld",
     "thema1": [
       "1 Wetter Bielefeld",
       "2 Polizei Bielefeld",
       "3 Resturants Bielefeld",
       "4 Inzidenzwert Bielefeld"
-    ],
-    "thema2": [
-      "1 Tim Kähler",
-      "2 Pit Clausen",
-      "3 Michael Dreier",
-      "4 Christian Haase"
-    ],
-    "thema3": [
-      "1 Jahnplatz Bielefeld",
-      "2 Wiehengebirge",
-      "3 Lippesee",
-      "4 Schloss Corvey"
-    ],
-    "thema4": [
-      "1 Polizei Gütersloh",
-      "2 Polizei Höxter",
-      "3 Feuerwehr Paderborn",
-      "4 Feuerwehr Höxter"
-    ],
-    "thema5": [
-      "1 Polizei Gütersloh",
-      "2 Polizei Höxter",
-      "3 Feuerwehr Paderborn",
-      "4 Feuerwehr Höxter"
-    ],
-    "thema6": [
-      "1 Polizei Gütersloh",
-      "2 Polizei Höxter",
-      "3 Feuerwehr Paderborn",
-      "4 Feuerwehr Höxter"
     ]
   }
 }
