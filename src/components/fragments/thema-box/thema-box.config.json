@@ -31,12 +31,31 @@
       "Y",
       "Z"
     ],
-    "label": "Bielefeld",
-    "thema1": [
-      "1 Wetter Bielefeld",
-      "2 Polizei Bielefeld",
-      "3 Resturants Bielefeld",
-      "4 Inzidenzwert Bielefeld"
+    "glossar": [
+      {
+        "label": "Bielefeld",
+        "items": ["Brackwede", "Dornberg", "Dornberg", "Gadderbaum"]
+      },
+      {
+        "label": "Kreis Gütersloh",
+        "items": ["Borgholzhausen", "Gütersloh", "Halle", "Harsewinkel"]
+      },
+      {
+        "label": "Kreis Herford",
+        "items": ["Bünde", "Enger", "Herford", "Hiddenhausen"]
+      },
+      {
+        "label": "Kreis Höxter",
+        "items": ["Bünde", "Enger", "Herford", "Hiddenhausen"]
+      },
+      {
+        "label": "Kreis Lippe",
+        "items": ["Bünde", "Enger", "Herford", "Hiddenhausen"]
+      },
+      {
+        "label": "Kreis Minden-Lübbecke",
+        "items": ["Bünde", "Enger", "Herford", "Hiddenhausen"]
+      }
     ]
   }
 }
