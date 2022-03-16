@@ -19,11 +19,11 @@
 }
  */
 
-#journal-scroll {
+#scrollbar {
   &::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
     cursor: pointer;
-    background-color: rgba(229, 231, 235);
+    background-color: rgba(229, 231, 235, 0.6);
   }
 
   &::-webkit-scrollbar-track {
