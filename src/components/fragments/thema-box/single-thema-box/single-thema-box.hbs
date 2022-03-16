@@ -1,3 +1,4 @@
+{{#each this.themabox}}
 <div class="nw-bg-white nw-rounded-md">
   <!-- Head -->
   <div class="nw-w-full nw-relative">
@@ -53,21 +54,23 @@
     </div>
     <img
       class="nw-rounded-t-md nw-object-cover nw-w-full nw-h-24"
-      src="{{image-src-s}}"
+      src="{{this.image-src-s}}"
     />
   </div>
   <!-- Head1 Ende -->
   <!-- Liste 1 -->
+
   <div class="">
-    <div class="nw-border-b-2">
-      <a href="" class="nw-cursor-pointer nw-flex">
+    <div class="">
+      {{#each this.images}}
+      <a href="" class="nw-cursor-pointer nw-flex nw-border-b-2">
         <img
           class="
             nw-p-3 nw-min-h-20 nw-max-h-20 nw-max-w-24 nw-min-w-24
             sm:nw-min-h-24 sm:nw-max-h-24 sm:nw-max-w-28 sm:nw-min-w-28
             md:nw-min-h-20 md:nw-max-h-20 md:nw-max-w-24 md:nw-min-w-24
           "
-          src="{{image-src-m}}"
+          src="{{this.src}}"
         />
         <span
           class="
@@ -82,65 +85,13 @@
             nw-mb-2
           "
         >
-          Corona-Maßnahmen: So verschärfen die Ampel-Partner ihre Gesetzespläne
+          {{this.caption}}
         </span>
+        {{/each}}
       </a>
     </div>
-    <div class="nw-border-b-2">
-      <a href="" class="nw-cursor-pointer nw-flex">
-        <img
-          class="
-            nw-p-3 nw-min-h-20 nw-max-h-20 nw-max-w-24 nw-min-w-24
-            sm:nw-min-h-24 sm:nw-max-h-24 sm:nw-max-w-28 sm:nw-min-w-28
-            md:nw-min-h-20 md:nw-max-h-20 md:nw-max-w-24 md:nw-min-w-24
-          "
-          src="{{image-src-m}}"
-        />
-        <span
-          class="
-            nw-pt-2
-            nw-pr-2
-            nw-text-tiny
-            nw-font-roboto
-            nw-text-left
-            nw-font-medium
-            nw-tracking-normal
-            nw-text-black
-            nw-mb-2
-          "
-        >
-          Corona-Maßnahmen: So verschärfen die Ampel-Partner ihre Gesetzespläne
-        </span>
-      </a>
-    </div>
-    <div class="nw-border-b-2">
-      <a href="" class="nw-cursor-pointer nw-flex">
-        <img
-          class="
-            nw-p-3 nw-min-h-20 nw-max-h-20 nw-max-w-24 nw-min-w-24
-            sm:nw-min-h-24 sm:nw-max-h-24 sm:nw-max-w-28 sm:nw-min-w-28
-            md:nw-min-h-20 md:nw-max-h-20 md:nw-max-w-24 md:nw-min-w-24
-          "
-          src="{{image-src-m}}"
-        />
-        <span
-          class="
-            nw-pt-2
-            nw-pr-2
-            nw-text-tiny
-            nw-font-roboto
-            nw-text-left
-            nw-font-medium
-            nw-tracking-normal
-            nw-text-black
-            nw-mb-2
-          "
-        >
-          Corona-Maßnahmen: So verschärfen die Ampel-Partner ihre Gesetzespläne
-        </span>
-      </a>
-    </div>
-    <div class="nw-flex nw-justify-end nw-place-content-end">
+
+    <div class="">
       <a
         href=""
         class="
@@ -176,3 +127,4 @@
   </div>
   <!-- Liste1 Ende -->
 </div>
+{{/each}}
