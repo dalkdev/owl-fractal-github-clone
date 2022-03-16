@@ -1,0 +1,65 @@
+/* .scroll {
+  &::-webkit-scrollbar {
+    //scrollbar-width: thin;
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #BFBFBF;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #999999;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #262626;
+  }
+}
+ */
+
+#journal-scroll {
+  &::-webkit-scrollbar {
+    width: 2px;
+    cursor: pointer;
+    background-color: rgba(229, 231, 235);
+  }
+
+  &::-webkit-scrollbar-track {
+    cursor: pointer;
+    background: white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #a0aec0;
+  }
+}
+
+/*
+.scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #e0cbcb;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9;
+}
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #000 #fff;
+}
+*/
