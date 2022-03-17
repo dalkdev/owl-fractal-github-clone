@@ -1,0 +1,85 @@
+{{#each this.head}}
+<div>
+  <div
+    class="
+      nw-text-left
+      nw-font-roboto
+      nw-font-bold
+      nw-tracking-normal
+      nw-text-xl
+      nw-text-gray-600
+    "
+  >
+    {{this.header}}
+  </div>
+  <div
+    class="
+      nw-text-left
+      nw-font-roboto
+      nw-font-bold
+      nw-tracking-normal
+      nw-text-2xl
+      nw-text-black
+      nw-max-w-lg
+    "
+  >
+    {{this.title}}
+  </div>
+  {{#each this.items}}
+  <div class="nw-mt-2 nw-flex nw-pr-4">
+    <div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        class="nw-mr-2"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+    </div>
+    <div>
+      <span
+        class="
+          nw-text-black nw-text-base nw-font-normal nw-font-roboto nw-text-left
+        "
+      >
+        <span class="nw-font-bold"> {{this.item1}} </span> {{this.item2}}
+      </span>
+    </div>
+  </div>
+  {{/each}}
+  <div>
+    <a
+      href=""
+      class="
+        nw-mt-4 nw-mb-4 nw-w-full
+        md:nw-w-1/2
+        nw-text-white
+        nw-bg-red-500
+        nw-rounded
+        nw-text-center
+        nw-inline-block
+        nw-text-tiny
+        nw-font-roboto
+        nw-tracking-normal
+        nw-font-bold
+        nw-cursor-pointer
+        nw-py-1
+        nw-px-auto
+        hover:nw-bg-red-700
+      "
+      type="button"
+    >
+      {{this.button}}
+    </a>
+  </div>
+</div>
+{{/each}}
