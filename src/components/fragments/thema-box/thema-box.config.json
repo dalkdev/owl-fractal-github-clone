@@ -32,32 +32,63 @@
     "glossar": [
       {
         "label": "Bielefeld",
-        "items": ["Brackwede", "Dornberg", "Dornberg", "Gadderbaum"]
+        "items": [
+          "1 Wetter Bielefeld",
+          "2 Polizei Bielefeld",
+          "3 Resturants Bielefeld",
+          "4 Inzidenzwert Bielefeld"
+        ]
       },
       {
         "label": "Kreis Gütersloh",
-        "items": ["Borgholzhausen", "Gütersloh", "Halle", "Harsewinkel"]
+        "items": [
+          "1 Tim Kähler",
+          "2 Pit Clausen",
+          "3 Michael Dreier",
+          "4 Christian Haase"
+        ]
       },
       {
         "label": "Kreis Herford",
-        "items": ["Bünde", "Enger", "Herford", "Hiddenhausen"]
+        "items": [
+          "1 Christian Haase",
+          "2 Wiehengebirge",
+          "3 Lippesee",
+          "4 Schloss Corvey"
+        ]
       },
       {
         "label": "Kreis Höxter",
-        "items": ["Bünde", "Enger", "Herford", "Hiddenhausen"]
-      },
-      {
-        "label": "Kreis Lippe",
-        "items": ["Bünde", "Enger", "Herford", "Hiddenhausen"]
+        "items": [
+          "1 Polizei Gütersloh",
+          "2 Polizei Höxter",
+          "3 Feuerwehr Paderborn",
+          "4 Feuerwehr Höxter"
+        ]
       },
       {
         "label": "Kreis Minden-Lübbecke",
-        "items": ["Bünde", "Enger", "Herford", "Hiddenhausen"]
+        "items": [
+          "1 Polizei Gütersloh",
+          "2 Polizei Höxter",
+          "3 Feuerwehr Paderborn",
+          "4 Feuerwehr Höxter"
+        ]
+      },
+      {
+        "label": "Kreis Paderborn",
+        "items": [
+          "1 Polizei Gütersloh",
+          "2 Polizei Höxter",
+          "3 Feuerwehr Paderborn",
+          "4 Feuerwehr Höxter"
+        ]
       }
     ],
     "themabox": [
       {
         "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Die Russische Invasion",
         "images": [
           {
             "src": "https://via.placeholder.com/495x294",
@@ -75,6 +106,7 @@
       },
       {
         "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Corona Deutschland 2022",
         "images": [
           {
             "src": "https://via.placeholder.com/495x294",
@@ -92,6 +124,7 @@
       },
       {
         "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Schwerster Kampf",
         "images": [
           {
             "src": "https://via.placeholder.com/495x294",
