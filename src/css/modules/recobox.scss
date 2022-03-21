@@ -1,0 +1,28 @@
+#nw-reco-box {
+  @apply nw-grid nw-grid-cols-1 md:nw-grid-cols-2 lg:nw-grid-cols-3 nw-gap-8 nw-mb-16;
+
+  .nw-reco-item {
+    @apply nw-flex nw-flex-row md:nw-flex-col nw-max-w-full lg:nw-max-w-full nw-max-h-full;
+  }
+
+  .nw-reco-image-container {
+    @apply nw-max-h-full nw-max-w-full;
+
+    .nw-reco-image {
+      @apply nw-object-cover nw-object-left nw-max-h-32 md:nw-max-h-16 nw-max-w-xs md:nw-max-w-full;
+    }
+  }
+
+  a.nw-reco-link {
+    @apply nw-no-underline nw-break-words nw-text-black;
+  }
+
+  .nw-reco-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    hyphens: auto;
+    line-height: 24px;
+    @apply nw-no-underline nw-text-black nw-mt-0 md:nw-mt-2 nw-ml-4 md:nw-ml-0 md:nw-max-w-full;
+  }
+}

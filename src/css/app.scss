@@ -12,6 +12,7 @@
 @use './modules/burger-menu';
 @use './modules/header';
 @use './modules/select';
+@use './modules/recobox';
 
 // has to be at the end to override certain properties
 @use 'general/a11y';
