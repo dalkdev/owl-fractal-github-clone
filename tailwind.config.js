@@ -1,5 +1,4 @@
 module.exports = {
-  mode: 'jit',
   purge: { layers: ['utilities'], content: ['./src/components/**/*.hbs'] },
   darkMode: false, // or 'media' or 'class'
   prefix: 'nw-',
