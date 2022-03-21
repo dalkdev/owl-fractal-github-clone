@@ -29,6 +29,28 @@
           }
         ]
       }
+    ],
+    "cards": [
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Luisa-Michelle Bergmann"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Lars Hofmann"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Hermann Keller"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Hilde Feldhammer"
+      }
     ]
   }
 }

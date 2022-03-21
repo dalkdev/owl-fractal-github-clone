@@ -1,0 +1,37 @@
+{{#each this.cards}}
+<div class="nw-max-w-lg md:nw-max-w-md nw-pl-4">
+  <div class="nw-flex nwn-items-center nw-space-x-4 nw-pb-4">
+    <div class="nw-flex-shrink-0">
+      <img
+        class="nw-w-24 nw-h-24 nw-rounded-full"
+        src="{{this.image-src-s}}"
+        alt=""
+      />
+    </div>
+    <div class="nw-flex-1 nw-min-w-0">
+      <p
+        class="
+          nw-text-base
+          nw-font-roboto
+          nw-tracking-normal
+          nw-font-medium
+          nw-text-black
+        "
+      >
+        {{this.caption}}
+      </p>
+      <p
+        class="
+          nw-text-sm
+          nw-text-gray-600
+          nw-font-roboto
+          nw-font-normal
+          nw-tracking-normal
+        "
+      >
+        {{this.name}}
+      </p>
+    </div>
+  </div>
+</div>
+{{/each}}
