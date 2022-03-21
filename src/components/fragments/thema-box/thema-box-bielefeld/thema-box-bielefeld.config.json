@@ -1,0 +1,89 @@
+{
+  "status": "qm",
+  "context": {
+    "buttons": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "themabox": [
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Jahnplatz Bielefeld",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": " Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      },
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Inzidenzwert Bielefeld",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      },
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Pit Clausen",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      }
+    ]
+  }
+}
