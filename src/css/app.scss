@@ -43,11 +43,19 @@ html {
     &::-webkit-scrollbar {
       width: 8px;
     }
+
+    &::-webkit-scrollbar-thumb {
+      background: #999999;
+    }
   }
 
   &-horizontal {
     &::-webkit-scrollbar {
-      height: 8px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #000000;
     }
   }
 
@@ -56,7 +64,6 @@ html {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #999999;
     border-radius: 100px;
   }
 }
