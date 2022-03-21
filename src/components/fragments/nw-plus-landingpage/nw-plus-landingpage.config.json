@@ -1,0 +1,56 @@
+{
+  "status": "qm",
+  "context": {
+    "image-src-m": "https://via.placeholder.com/350x150",
+    "image-src-s": "https://via.placeholder.com/150x150",
+    "image-src-n": "https://via.placeholder.com/150x100",
+    "caption": "Mit den digitalen Angeboten der NW sind Sie immer bestens informiert. Lesen Sie aktuelle Nachrichten, exklusive Berichte und Interviews aus Ostwestfalen-Lippe, Deutschland und der Welt von mehr als 140 Journalisten für Sie recherchiert.",
+    "head": [
+      {
+        "header": "NW+ Webabo",
+        "title": "Rund um die Uhr top informiert",
+        "button": "Zum Angebot",
+        "items": [
+          {
+            "item1": "Unbegrenzt",
+            "item2": " alle Artikel ohne Einschränkungen auf NW.de lesen"
+          },
+          {
+            "item1": "Ständig aktuell:",
+            "item2": " Eilmeldungen, Nachrichten, Liveticker und Kommentare"
+          },
+          {
+            "item1": "News-App",
+            "item2": " kostenlos für Android und iPhone"
+          },
+          {
+            "item1": "Nützliche Funktionen:",
+            "item2": " Push-Nachrichten erhalten, Artikel kommentieren, merken und teilen"
+          }
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Luisa-Michelle Bergmann"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Lars Hofmann"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Hermann Keller"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Hilde Feldhammer"
+      }
+    ]
+  }
+}
