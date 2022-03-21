@@ -1,5 +1,5 @@
 {{#each this.head}}
-<div class="nw-pl-8">
+<div class="nw-mx-0 md:nw-ml-8">
   <div
     class="
       nw-text-left
@@ -12,17 +12,7 @@
   >
     {{this.header}}
   </div>
-  <div
-    class="
-      nw-text-left
-      nw-font-roboto
-      nw-font-bold
-      nw-tracking-normal
-      nw-text-2xl
-      nw-text-black
-      nw-max-w-lg
-    "
-  >
+  <div class="nw-text-left nw-font-bold nw-text-2xl nw-text-black nw-max-w-lg">
     {{this.title}}
   </div>
   {{#each this.items}}
@@ -46,11 +36,7 @@
       </svg>
     </div>
     <div>
-      <span
-        class="
-          nw-text-black nw-text-base nw-font-normal nw-font-roboto nw-text-left
-        "
-      >
+      <span class="nw-text-black nw-text-base nw-font-normal nw-text-left">
         <span class="nw-font-bold"> {{this.item1}} </span> {{this.item2}}
       </span>
     </div>
@@ -68,8 +54,6 @@
         nw-text-center
         nw-inline-block
         nw-text-tiny
-        nw-font-roboto
-        nw-tracking-normal
         nw-font-bold
         nw-cursor-pointer
         nw-py-1
