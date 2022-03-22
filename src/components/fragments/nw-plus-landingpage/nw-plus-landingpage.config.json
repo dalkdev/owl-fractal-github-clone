@@ -1,10 +1,12 @@
 {
   "status": "qm",
   "context": {
-    "image-src-m": "https://via.placeholder.com/350x150",
-    "image-src-s": "https://via.placeholder.com/150x150",
-    "image-src-n": "https://via.placeholder.com/150x100",
-    "caption": "Mit den digitalen Angeboten der NW sind Sie immer bestens informiert. Lesen Sie aktuelle Nachrichten, exklusive Berichte und Interviews aus Ostwestfalen-Lippe, Deutschland und der Welt von mehr als 140 Journalisten für Sie recherchiert.",
+    "image-src-banner": "https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/banner-women-notebook.jpg?csf=1&web=1&e=39Eje3",
+    "image-src-nw": "https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/480x480-banner-nw+_smartphone.jpg?csf=1&web=1&e=nZtZtL",
+    "image-src-ipad-interaction": " https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/ipad-interaction.png?csf=1&web=1&e=pCM6No",
+    "image-src-ipad-ipad": " https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/480x480-banner-nw+_ipad+ipad.jpg?csf=1&web=1&e=wN2tnx",
+    "image-src-ipad": "https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/480x480-banner-nw+_ipad.jpg?csf=1&web=1&e=iMUlyz",
+    "caption": "",
     "head": [
       {
         "header": "NW+ Webabo",
