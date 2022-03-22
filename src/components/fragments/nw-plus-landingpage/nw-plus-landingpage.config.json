@@ -1,11 +1,11 @@
 {
   "status": "qm",
   "context": {
-    "image-src-banner": "https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/banner-women-notebook.jpg?csf=1&web=1&e=39Eje3",
-    "image-src-nw": "https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/480x480-banner-nw+_smartphone.jpg?csf=1&web=1&e=nZtZtL",
-    "image-src-ipad-interaction": " https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/ipad-interaction.png?csf=1&web=1&e=pCM6No",
-    "image-src-ipad-ipad": " https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/480x480-banner-nw+_ipad+ipad.jpg?csf=1&web=1&e=wN2tnx",
-    "image-src-ipad": "https://mgnw365-my.sharepoint.com/:i:/r/personal/ranselm_owl-digital_de/Documents/NW-Products/Web/NW-Redesign/TEMP/TEMP-Nw-Produkte_Landingpage/480x480-banner-nw+_ipad.jpg?csf=1&web=1&e=iMUlyz",
+    "image-src-banner": "/images/nw-plus-landingpage/banner-women-notebook.jpg",
+    "image-src-nw": "/images/nw-plus-landingpage/480x480-banner-nw+_smartphone.jpg",
+    "image-src-ipad-interaction": "/images/nw-plus-landingpage/ipad-interaction.png",
+    "image-src-ipad-ipad": "/images/nw-plus-landingpage/480x480-banner-nw+_ipad+ipad.jpg",
+    "image-src-ipad": "/images/nw-plus-landingpage/480x480-banner-nw+_ipad.jpg",
     "caption": "",
     "head": [
       {
@@ -28,6 +28,52 @@
           {
             "item1": "Nützliche Funktionen:",
             "item2": " Push-Nachrichten erhalten, Artikel kommentieren, merken und teilen"
+          }
+        ]
+      }
+    ],
+    "nwepaper": [
+      {
+        "header": "NW ePaper",
+        "title": "Ihre gewohnte Zeitung in digitaler Form",
+        "button": "Zum Angebot",
+        "items": [
+          {
+            "item1": "Vollständiger Zugang ",
+            "item2": "zu allen Inhalten der NW per Browser oder App"
+          },
+          {
+            "item1": "Wissensvorsprung:",
+            "item2": "schon am Vorabend die neue Ausgabe lesen"
+          },
+          {
+            "item1": "Bequem:",
+            "item2": "einfach ausgewählte Artikel vorlesen lassen"
+          },
+          {
+            "item1": "Ohne Risiko: ",
+            "item2": "Nach Mindestlaufzeit monatlich kündbar"
+          }
+        ]
+      }
+    ],
+    "nwbundle": [
+      {
+        "header": "NW Bundle",
+        "title": "Sie wünschen sich ein Tablet oder Smartphone?",
+        "button": "Jetzt Gerät wählen",
+        "items": [
+          {
+            "item1": "",
+            "item2": "Bestellen Sie das ePaper-Abo in Kombination mit einem Gerät Ihrer Wahl"
+          },
+          {
+            "item1": "",
+            "item2": "Attraktive Auswahl verschiedener Geräte im iOS und Android Bereich"
+          },
+          {
+            "item1": "",
+            "item2": "Besonders preisattraktives Komplett- paket"
           }
         ]
       }
