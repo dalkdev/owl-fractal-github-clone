@@ -32,8 +32,8 @@
   <!-- buttons Ende -->
   <div class="nw-mt-8 nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4">
     <div class="nw-col-span-2">
-      <div class="nw-relative nw-overflow-x-auto nw-shadow-md nw-rounded-md">
-        <table class="nw-w-full nw-text-sm nw-text-left nw-text-gray-black">
+      <div class="nw-relative nw-overflow-hidden nw-shadow-md nw-rounded-md">
+        <table class="nw-w-full nw-text-sm nw-text-left nw-text-black">
           <thead class="nw-text-base nw-text-white nw-bg-custom-1-700">
             <tr>
               <th colspan="2" scope="col" class="nw-px-4 nw-py-2">Bielefeld</th>
@@ -41,8 +41,20 @@
           </thead>
           <tbody>
             {{#each this.row}}
-            <tr class="nw-bg-white nw-text-base nw-font-medium nw-text-left">
-              <td class="nw-px-4 nw-py-2 nw-border nw-border-gray-200">
+            <tr
+              class="
+                nw-bg-white nw-text-base nw-font-medium nw-text-left nw-block
+                sm:nw-block
+                md:nw-flex
+              "
+            >
+              <td
+                class="
+                  nw-px-4 nw-py-2 nw-border nw-border-gray-200 nw-block
+                  sm:nw-block
+                  md:nw-flex-1
+                "
+              >
                 <a href="#">
                   {{this.cell1}}
                   <svg
@@ -64,7 +76,13 @@
                   </svg>
                 </a>
               </td>
-              <td class="nw-px-4 nw-py-2 nw-border nw-border-gray-200">
+              <td
+                class="
+                  nw-px-4 nw-py-2 nw-border nw-border-gray-200 nw-block
+                  sm:nw-block
+                  md:nw-flex-1
+                "
+              >
                 <a href="#">
                   {{this.cell2}}
                   <svg
@@ -178,77 +196,6 @@
         </div>
         {{/each}}
       </div>
-    </div>
-  </div>
-  <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4">
-    <div class="nw-col-span-2">
-      {{#each this.stadt}}
-      <div
-        class="
-          nw-mt-4 nw-relative nw-overflow-x-auto nw-shadow-md nw-rounded-md
-        "
-      >
-        <table class="nw-w-full nw-text-sm nw-text-left nw-text-gray-black">
-          <thead class="nw-text-base nw-text-white nw-bg-custom-1-700">
-            <tr>
-              <th colspan="2" scope="col" class="nw-px-4 nw-py-2">
-                {{this.label}}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {{#each this.items}}
-            <tr class="nw-bg-white nw-text-base nw-font-medium nw-text-left">
-              <td class="nw-px-4 nw-py-2 nw-border nw-border-gray-200">
-                <a href="#">
-                  {{this.cell1}}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="nw-float-right nw-text-black nw-mt-0.5"
-                    width="17"
-                    height="17"
-                    fill=" none
-                "
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-              </td>
-              <td class="nw-px-4 nw-py-2 nw-border nw-border-gray-200">
-                <a href="#">
-                  {{this.cell2}}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="nw-float-right nw-text-black nw-mt-0.5"
-                    width="17"
-                    height="17"
-                    fill=" none
-                "
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-              </td>
-            </tr>
-            {{/each}}
-          </tbody>
-        </table>
-      </div>
-      {{/each}}
     </div>
   </div>
 </div>
