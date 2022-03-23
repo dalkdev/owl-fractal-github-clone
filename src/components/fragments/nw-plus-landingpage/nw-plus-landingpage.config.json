@@ -64,16 +64,13 @@
         "button": "Jetzt Gerät wählen",
         "items": [
           {
-            "item1": "",
-            "item2": "Bestellen Sie das ePaper-Abo in Kombination mit einem Gerät Ihrer Wahl"
+            "item1": "Bestellen Sie das ePaper-Abo in Kombination mit einem Gerät Ihrer Wahl"
           },
           {
-            "item1": "",
-            "item2": "Attraktive Auswahl verschiedener Geräte im iOS und Android Bereich"
+            "item1": "Attraktive Auswahl verschiedener Geräte im iOS und Android Bereich"
           },
           {
-            "item1": "",
-            "item2": "Besonders preisattraktives Komplett- paket"
+            "item1": "Besonders preisattraktives Komplett- paket"
           }
         ]
       }
