@@ -1,0 +1,215 @@
+<div class="nw-ml-4 sm:nw-ml-0 md:nw-ml-0">
+  <div class="nw-mt-8 nw-mb-4 nw-text-center">
+    <span class="nw-font-bold nw-font-roboto nw-text-xl nw-text-gray-500">
+      ALLE SCHLAGWORTE MIT <span class="nw-text-black">A </span>
+    </span>
+  </div>
+  <!--buttons -->
+  <div
+    class="
+      nw-inline-block
+      nw-flex
+      nw-flex-row
+      nw-justify-between
+      nw-bg-white
+      nw-rounded-md
+      nw-shadow-sm
+      nw-overflow-x-auto
+      nw-overflow-y-hidden
+      nw-scrollbar
+      nw-scrollbar-horizontal
+      nw-whitespace-nowrap
+    "
+  >
+    <a
+      type="button"
+      class="
+        nw-inline-flex
+        nw-items-center
+        nw-py-1
+        nw-px-2
+        nw-text-base
+        nw-font-medium
+        nw-text-black
+        nw-rounded-l-md
+        nw-border
+        hover:nw-bg-gray-200 hover:nw-border-gray-500
+        focus:nw-bg-gray-200 focus:nw-border-gray-500
+        nw-uppercase
+      "
+    >
+      A
+    </a>
+
+    {{#each this.buttons}}
+    <a
+      type="button"
+      class="
+        nw-inline-flex
+        nw-items-center
+        nw-py-1
+        nw-px-2
+        nw-text-base
+        nw-font-medium
+        nw-text-black
+        nw-border
+        hover:nw-bg-gray-200 hover:nw-border-gray-500
+        focus:nw-bg-gray-200 focus:nw-border-gray-500
+        nw-uppercase
+      "
+    >
+      {{this}}
+    </a>
+    {{/each}}
+    <a
+      type="button"
+      class="
+        nw-inline-flex
+        nw-items-center
+        nw-py-1
+        nw-px-2
+        nw-text-base
+        nw-font-medium
+        nw-text-black
+        nw-rounded-r-md
+        nw-border
+        hover:nw-bg-gray-200 hover:nw-border-gray-500
+        focus:nw-bg-gray-200 focus:nw-border-gray-500
+        nw-uppercase
+      "
+    >
+      0-9
+    </a>
+  </div>
+  <!--buttons Ende -->
+  <div class="nw-px-0 md:nw-px-4 nw-grid nw-grid-1">
+    <div
+      class="
+        nw-text-sm
+        nw-font-medium
+        nw-text-gray-900
+        nw-bg-white
+        nw-rounded-md
+        nw-shadow-md
+        nw-border
+        nw-border-gray-200
+        nw-mt-4
+      "
+    >
+      {{#each this.wort}}
+      <div class="nw-block md:nw-flex">
+        <a
+          href="#"
+          class="
+            nw-text-base
+            nw-font-medium
+            nw-text-black
+            nw-text-left
+            nw-block
+            nw-py-2
+            nw-px-4
+            nw-w-full
+            nw-border-b
+            nw-border-r-0
+            md:nw-border-r
+            nw-border-gray-200 nw-cursor-pointer
+            hover:nw-bg-gray-100
+          "
+        >
+          {{this.cell1}}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="nw-float-right nw-text-black nw-mt-0.5"
+            width="17"
+            height="17"
+            fill=" none
+                "
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="
+            nw-text-base
+            nw-font-medium
+            nw-text-black
+            nw-text-left
+            nw-block
+            nw-py-2
+            nw-px-4
+            nw-w-full
+            nw-border-b
+            nw-border-r-0
+            md:nw-border-r
+            nw-border-gray-200 nw-cursor-pointer
+            hover:nw-bg-gray-100
+          "
+        >
+          {{this.cell1}}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="nw-float-right nw-text-black nw-mt-0.5"
+            width="17"
+            height="17"
+            fill=" none
+                "
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="
+            nw-text-base
+            nw-font-medium
+            nw-text-black
+            nw-text-left
+            nw-block
+            nw-py-2
+            nw-px-4
+            nw-w-full
+            nw-border-b
+            nw-border-gray-200
+            nw-cursor-pointer
+            hover:nw-bg-gray-100
+          "
+        >
+          {{this.cell3}}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="nw-float-right nw-text-black nw-mt-0.5"
+            width="17"
+            height="17"
+            fill=" none
+                "
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
