@@ -12,6 +12,7 @@
     Themenglossar
   </span>
 </div>
+
 <!--buttons -->
 <div
   class="
@@ -61,6 +62,90 @@
       nw-text-tiny
       nw-font-normal
       nw-cursor-pointer
+    "
+  >
+    0-9
+  </a>
+</div>
+
+<br />
+
+<div
+  class="
+    nw-inline-block
+    nw-flex
+    nw-flex-row
+    nw-justify-between
+    nw-rounded-md
+    nw-shadow-sm
+    nw-overflow-x-auto
+    nw-overflow-y-hidden
+    nw-scrollbar
+    nw-scrollbar-horizontal
+    nw-whitespace-nowrap
+  "
+>
+  <a
+    type="button"
+    class="
+      nw-mb-3
+      nw-inline-flex
+      nw-items-center
+      nw-py-1
+      nw-px-2
+      nw-text-base
+      nw-font-medium
+      nw-text-black
+      nw-bg-white
+      nw-rounded-l-md
+      nw-border
+      hover:nw-bg-gray-200 hover:nw-border-gray-500
+      focus:nw-bg-gray-200 focus:nw-border-gray-500
+      nw-uppercase
+    "
+  >
+    A
+  </a>
+
+  {{#each this.buttons}}
+  <a
+    type="button"
+    class="
+      nw-mb-3
+      nw-inline-flex
+      nw-items-center
+      nw-py-1
+      nw-px-2
+      nw-text-base
+      nw-font-medium
+      nw-bg-white
+      nw-text-black
+      nw-border
+      hover:nw-bg-gray-200 hover:nw-border-gray-500
+      focus:nw-bg-gray-200 focus:nw-border-gray-500
+      nw-uppercase
+    "
+  >
+    {{this}}
+  </a>
+  {{/each}}
+  <a
+    type="button"
+    class="
+      nw-mb-3
+      nw-inline-flex
+      nw-items-center
+      nw-py-1
+      nw-px-2
+      nw-text-base
+      nw-font-medium
+      nw-bg-white
+      nw-text-black
+      nw-rounded-r-md
+      nw-border
+      hover:nw-bg-gray-200 hover:nw-border-gray-500
+      focus:nw-bg-gray-200 focus:nw-border-gray-500
+      nw-uppercase
     "
   >
     0-9
