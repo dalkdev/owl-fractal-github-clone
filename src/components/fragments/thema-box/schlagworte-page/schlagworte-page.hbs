@@ -1,93 +1,13 @@
-<div class="nw-ml-4 sm:nw-ml-0 md:nw-ml-0">
+<div class="nw-mx-0 sm:nw-ml-0 md:nw-ml-0">
   <div class="nw-mt-8 nw-mb-4 nw-text-center">
     <span class="nw-font-bold nw-font-roboto nw-text-xl nw-text-gray-500">
       ALLE SCHLAGWORTE MIT <span class="nw-text-black">A </span>
     </span>
   </div>
   <!--buttons -->
-  <div
-    class="
-      nw-inline-block
-      nw-flex
-      nw-flex-row
-      nw-justify-between
-      nw-rounded-md
-      nw-shadow-sm
-      nw-overflow-x-auto
-      nw-overflow-y-hidden
-      nw-scrollbar
-      nw-scrollbar-horizontal
-      nw-whitespace-nowrap
-    "
-  >
-    <a
-      type="button"
-      class="
-        nw-mb-3
-        nw-inline-flex
-        nw-items-center
-        nw-py-1
-        nw-px-2
-        nw-text-base
-        nw-font-medium
-        nw-text-black
-        nw-bg-white
-        nw-rounded-l-md
-        nw-border
-        hover:nw-bg-gray-200 hover:nw-border-gray-500
-        focus:nw-bg-gray-200 focus:nw-border-gray-500
-        nw-uppercase
-      "
-    >
-      A
-    </a>
-
-    {{#each this.buttons}}
-    <a
-      type="button"
-      class="
-        nw-mb-3
-        nw-inline-flex
-        nw-items-center
-        nw-py-1
-        nw-px-2
-        nw-text-base
-        nw-font-medium
-        nw-bg-white
-        nw-text-black
-        nw-border
-        hover:nw-bg-gray-200 hover:nw-border-gray-500
-        focus:nw-bg-gray-200 focus:nw-border-gray-500
-        nw-uppercase
-      "
-    >
-      {{this}}
-    </a>
-    {{/each}}
-    <a
-      type="button"
-      class="
-        nw-mb-3
-        nw-inline-flex
-        nw-items-center
-        nw-py-1
-        nw-px-2
-        nw-text-base
-        nw-font-medium
-        nw-bg-white
-        nw-text-black
-        nw-rounded-r-md
-        nw-border
-        hover:nw-bg-gray-200 hover:nw-border-gray-500
-        focus:nw-bg-gray-200 focus:nw-border-gray-500
-        nw-uppercase
-      "
-    >
-      0-9
-    </a>
-  </div>
+  {{>'@themenglossar-buttons'}}
   <!--buttons Ende -->
-  <div class="nw-px-0 md:nw-px-4 nw-grid nw-grid-1">
+  <div class="nw-mx-4 nw-px-0 sm:nw-px-0 md:nw-px-4 nw-grid nw-grid-1">
     <div
       class="
         nw-text-sm
