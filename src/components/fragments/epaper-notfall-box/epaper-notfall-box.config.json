@@ -1,4 +1,6 @@
 {
   "status": "qm",
-  "context": {}
+  "context": {
+    "label": "ZUM EPAPER"
+  }
 }
