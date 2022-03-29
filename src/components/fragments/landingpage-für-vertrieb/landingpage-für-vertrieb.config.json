@@ -1,0 +1,37 @@
+{
+  "context": {
+    "menuitems-lokal": [
+      {
+        "label": "Brackwede",
+        "active": true
+      },
+      {
+        "label": "Dornberg"
+      },
+      {
+        "label": "Gadderbaum"
+      },
+      {
+        "label": "Heepen"
+      },
+      {
+        "label": "Jöllenbeck"
+      },
+      {
+        "label": "Mitte"
+      },
+      {
+        "label": "Schildesche"
+      },
+      {
+        "label": "Senne"
+      },
+      {
+        "label": "Sennestadt"
+      },
+      {
+        "label": "Stieghorst"
+      }
+    ]
+  }
+}

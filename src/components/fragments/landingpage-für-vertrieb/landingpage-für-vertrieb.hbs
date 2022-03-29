@@ -1,0 +1,75 @@
+<div>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="nw-h-8 nw-w-8"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+    height="20"
+    width="20"
+    id="menu-button"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
+      clip-rule="evenodd"
+    />
+  </svg>
+  <div
+    class="
+      nw-place-content-center nw-hidden nw-w-full
+      md:nw-flex md:nw-items-center md:nw-w-auto
+    "
+    id="menu"
+  >
+    <ul class="nw-text-base nw-text-gray-700 md:nw-flex md:nw-justify-between">
+      <li>
+        <a class="md:nw-p-4 nw-py-2 nw-block hover:nw-text-purple-400" href="#"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a class="md:nw-p-4 nw-py-2 nw-block hover:nw-text-purple-400" href="#"
+          >Pricing</a
+        >
+      </li>
+      <li>
+        <a class="md:nw-p-4 nw-py-2 nw-block hover:nw-text-purple-400" href="#"
+          >Customers</a
+        >
+      </li>
+      <li>
+        <a class="md:nw-p-4 nw-py-2 nw-block hover:nw-text-purple-400" href="#"
+          >Blog</a
+        >
+      </li>
+      <li>
+        <a class="md:nw-p-4 nw-py-2 nw-block hover:nw-text-purple-400" href="#"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a class="md:nw-p-4 nw-py-2 nw-block hover:nw-text-purple-400" href="#"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a class="md:nw-p-4 nw-py-2 nw-block hover:nw-text-purple-400" href="#"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a class="md:nw-p-4 nw-py-2 nw-block hover:nw-text-purple-400" href="#"
+          >Features</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  const button = document.querySelector('#menu-button'); // Hamburger Icon
+  const menu = document.querySelector('#menu'); // Menu
+
+  button.addEventListener('click', () => {
+    menu.classList.toggle('nw-hidden');
+  });
+</script>
