@@ -1,14 +1,8 @@
-<div>
+<div class="nw-max-h-full md:nw-max-h-28">
   <div class="nw-my-4 nw-mx-4 nw-block md:nw-flex">
     <div class="nw-mr-0 md:nw-mr-2">
-      <div class="nw-flex nw-place-content-center md:nw-place-content-start">
-        <img
-          class="nw-mr-1"
-          src="/images/nw-wortmarke-logo.svg"
-          alt=""
-          width="30"
-          height="30"
-        />
+      <div class="nw-flex">
+        <img class="nw-mr-1" src="{{logo}}" alt="" width="30" height="30" />
 
         <span
           class="
@@ -19,22 +13,17 @@
             nw-text-center
           "
         >
-          PRODUKTIONSPROBLEME BEIM DRUCK
+          {{title}}
         </span>
       </div>
-      <div
-        class="
-          nw-mt-2 nw-text-2xl nw-text-black nw-font-bold nw-text-center
-          md:nw-text-left
-        "
-      >
-        Freier Zugang zur Herforder Ausgabe
+      <div class="nw-mt-1 nw-text-2xl nw-text-black nw-font-bold nw-text-left">
+        {{caption}}
       </div>
     </div>
-    <div class="nw-mx-auto">
+    <div>
       <img
         class="nw-mx-auto nw-mt-4 md:nw-mt-0"
-        src="/images/epaper-notfall-box/epaper-notfall-image.png"
+        src=" {{ipad-screen}}"
         alt=""
       />
     </div>
@@ -43,14 +32,14 @@
         href=""
         class="
           nw-uppercase nw-mt-0
-          md:nw-mt-10
+          md:nw-mt-9
           nw-w-full
           nw-bg-red-500
           nw-border
           nw-border-transparent
           nw-rounded-md
-          nw-py-3
-          nw-px-8
+          nw-py-2
+          nw-px-3
           nw-flex
           nw-items-center
           nw-justify-center

@@ -1,6 +1,10 @@
 {
   "status": "qm",
   "context": {
+    "title": "PRODUKTIONSPROBLEME BEIM DRUCK",
+    "caption": "Freier Zugang zur Herforder Ausgabe",
+    "logo": "/images/nw-wortmarke-logo.svg",
+    "ipad-screen": "/images/epaper-notfall-box/ipad-screen.PNG",
     "label": "ZUM EPAPER"
   }
 }
