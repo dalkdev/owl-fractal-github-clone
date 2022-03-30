@@ -1,0 +1,67 @@
+<div class="md:nw-block nw-pt-0 md:nw-pt-4">
+  <div
+    class="
+      nw-flex nw-justify-between
+      md:nw-block
+      nw-mx-4
+      md:nw-mx-0
+      nw-pt-2
+      md:nw-pt-0
+    "
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="nw-h-8 nw-w-8 nw-block md:nw-hidden"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      height="20"
+      width="20"
+      id="menu-button"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    <div>
+      <img
+        class="
+          nw-object-cover nw-mx-0 nw-h-8 nw-w-8
+          md:nw-h-24 md:nw-w-24 md:nw-mx-auto
+        "
+        src="{{nw-logo}}"
+      />
+    </div>
+  </div>
+  <div
+    class="
+      nw-place-content-center nw-hidden nw-w-full
+      md:nw-flex md:nw-items-center md:nw-w-auto
+    "
+    id="menu"
+  >
+    <ul
+      class="
+        nw-text-base nw-mt-0
+        md:nw-mt-8
+        nw-text-gray-700
+        md:nw-flex md:nw-justify-between
+      "
+    >
+      {{#each this.menu-element}}
+      <li>
+        <a
+          class="
+            md:nw-p-2
+            nw-py-2 nw-block nw-text-base nw-text-black
+            hover:nw-text-gray-400
+          "
+          href=""
+          >{{this}}</a
+        >
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
