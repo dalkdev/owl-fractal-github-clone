@@ -19,7 +19,19 @@
   >
     {{this.title}}
   </div>
-  <div><img class="nw-w-full nw-mb-4" src="{{this.box-image}}" /></div>
+  <div><img class="nw-w-full" src="{{this.box-image}}" /></div>
+  <div class="nw-w-16 nw-overflow-hidden nw-inline-block nw-mx-auto">
+    <div
+      class="
+        nw-h-11
+        nw-w-11
+        nw-bg-white
+        nw--rotate-45
+        nw-transform
+        nw-origin-top-left
+      "
+    ></div>
+  </div>
   {{#each this.elements}}
   <div class="nw-pb-4 nw-flex-1">
     <div class="nw-px-4 nw-flex">

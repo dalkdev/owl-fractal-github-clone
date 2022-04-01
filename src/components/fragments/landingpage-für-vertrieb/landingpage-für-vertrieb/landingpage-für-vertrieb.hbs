@@ -2,6 +2,7 @@
   <!--header-->
   {{>'@menu-landingpage'}}
   <!--header-Ende -->
+  <!-- absolute-foto-->
   <div class="nw-w-full nw-relative nw-px-2 md:nw-px-2">
     <div
       class="
@@ -18,7 +19,7 @@
       <div
         class="
           nw-pt-4 nw-pl-16
-          md:nw-pl-4
+          md:nw-pl-12
           nw-text-tiny
           md:nw-text-4xl
           nw-font-bold nw-uppercase nw-text-gray-800 nw-max-w-xs
@@ -36,8 +37,11 @@
       alt=""
     />
   </div>
+  <!-- absolute-foto-ende -->
   <!--lust auf digital -->
-  <div class="nw-bg-gray-100 nw-rounded-md nw-mx-2 nw-mb-4">
+  <div
+    class="sm:nw-h-96 md:nw-h-full nw-bg-gray-100 nw-rounded-md nw-mx-2 nw-mb-4"
+  >
     <div
       class="
         nw-text-4xl
@@ -66,7 +70,7 @@
       <div class="nw-hidden md:nw-block">
         <img
           class="nw-rounded-md nw-object-cover nw-w-full"
-          src="https://via.placeholder.com/150x250.png"
+          src="https://via.placeholder.com/200x400.png"
           alt=""
         />
       </div>
@@ -85,19 +89,33 @@
         </div>
         <br />
         <div class="nw-text-red-500 nw-font-normal">{{description2}}</div>
+        <img
+          class="nw-block md:nw-hidden nw-mt-8 nw-mx-auto nw-rounded-md"
+          src="https://via.placeholder.com/200x250.png"
+          alt=""
+        />
       </div>
       <div class="nw-hidden md:nw-block">
         <img
           class="nw-rounded-md nw-object-cover nw-w-full"
-          src="https://via.placeholder.com/150x250.png"
+          src="https://via.placeholder.com/200x400.png"
           alt=""
         />
       </div>
     </div>
   </div>
+  <!-- lust auf digital ende-->
   <!--paper vorteile -->
   <div>
-    <div class="nw-pt-8 nw-text-center nw-font-bold nw-text-2xl md:nw-text-6xl">
+    <div
+      class="
+        nw-pt-8 nw-mt-8
+        sm:nw-mt-36
+        md:nw-mt-8
+        nw-text-center nw-font-bold nw-text-2xl
+        md:nw-text-6xl
+      "
+    >
       <div class="nw-text-gray-600">Ihre ePaper Vorteile</div>
       <div class="nw-text-red-500">auf einen Blick</div>
     </div>
@@ -112,6 +130,7 @@
     </div>
     {{>'@button-landingpage'}}
   </div>
+  <!-- epaper vorteile ende -->
   <!-- epaper-info -->
   <div class="nw-mt-8 nw-pb-4 nw-bg-gray-100 nw-mx-2 nw-rounded-md">
     <div class="nw-pt-8 nw-text-center nw-font-bold nw-text-2xl md:nw-text-6xl">
@@ -127,10 +146,10 @@
         nw-mt-12 nw-px-4
       "
     >
-      <div>
+      <div class="nw-mb-4 md:nw-mb-0">
         <img
-          class="nw-rounded-md nw-object-cover nw-w-full"
-          src="https://via.placeholder.com/100x140.png"
+          class="nw-rounded-md nw-object-cover nw-w-full nw-h-80 md:nw-h-full"
+          src="https://via.placeholder.com/100x150.png"
           alt=""
         />
       </div>
@@ -138,6 +157,7 @@
     </div>
     {{>'@button-landingpage'}}
   </div>
+  <!-- epaper-info ende -->
   <!-- epaper-info2-->
   <div>
     <div
@@ -149,11 +169,13 @@
         nw-px-4 nw-mt-8
       "
     >
-      <div class="nw-ml-4 md:nw-ml-16">{{>'@epaper-info2-single-page'}}</div>
-      <div>
+      <div class="nw-ml-4 md:nw-ml-16 nw-order-last md:nw-order-first">
+        {{>'@epaper-info2-single-page'}}
+      </div>
+      <div class="nw-mb-4 md:nw-mb-0">
         <img
-          class="nw-rounded-md nw-object-cover nw-w-full"
-          src="https://via.placeholder.com/100x140.png"
+          class="nw-rounded-md nw-object-cover nw-w-full nw-h-80 md:nw-h-full"
+          src="https://via.placeholder.com/100x150.png"
           alt=""
         />
       </div>
@@ -164,7 +186,7 @@
   {{>'@gradient-page'}}
   <!-- -->
   <!--Fragen-page -->
-  {{>'@fragen-page'}}
+  {{>'@fragen-landingpage'}}
   <!-- -->
   <!-- footer-foto -->
   <div>
