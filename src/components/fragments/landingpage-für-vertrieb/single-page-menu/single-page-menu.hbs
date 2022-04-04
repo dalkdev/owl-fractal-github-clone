@@ -1,0 +1,65 @@
+{{#each this.box}}
+<div
+  class="
+    nw-shadow-md
+    nw-rounded-md
+    nw-bg-gray-100
+    nw-flex
+    nw-flex-col
+    nw-justify-between
+  "
+>
+  <div class="nw-bg-red-500 nw-rounded-t-md nw-h-1"></div>
+  <div
+    class="
+      nw-text-base
+      md:nw-text-xl
+      nw-text-gray-500 nw-text-center nw-font-bold nw-py-4 nw-bg-white
+    "
+  >
+    {{this.title}}
+  </div>
+  <div><img class="nw-w-full" src="{{this.box-image}}" /></div>
+  <div class="nw-w-16 nw-overflow-hidden nw-inline-block nw-mx-auto">
+    <div
+      class="
+        nw-h-11
+        nw-w-11
+        nw-bg-white
+        nw--rotate-45
+        nw-transform
+        nw-origin-top-left
+      "
+    ></div>
+  </div>
+  {{#each this.elements}}
+  <div class="nw-pb-4 nw-flex-1">
+    <div class="nw-px-4 nw-flex">
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          class="nw-mr-1 nw-text-red-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </div>
+      <div>
+        <span class="nw-font-bold nw-text-black nw-text-sm md:nw-text-base">
+          {{this.caption}}
+        </span>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{/each}}
