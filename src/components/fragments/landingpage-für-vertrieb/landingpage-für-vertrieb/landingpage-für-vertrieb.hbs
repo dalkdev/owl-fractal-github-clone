@@ -27,8 +27,8 @@
           nw-leading-6
         "
       >
-        ICH HABE DIE DIGITALE ZEITUNG DER NW GETESTET UND WAR BEGEISTERT.
-        <span class="nw-font-normal"> JETZT LESE ICH TÄGLICH DAS EPAPER.“</span>
+        {{absolute-text-part1}}
+        <span class="nw-font-normal"> {{absolute-text-part2}}</span>
       </div>
     </div>
     <img
@@ -48,8 +48,8 @@
         md:nw-text-6xl
         nw-font-bold nw-text-left
         md:nw-text-center
-        nw-pt-4 nw-mt-8 nw-px-16
-        md:nw-px-0
+        nw-pt-4 nw-mt-8 nw-px-4
+        md:nw-px-16 md:nw-px-0
       "
     >
       <span class="nw-text-gray-600"> Lust auf </span
@@ -74,16 +74,7 @@
           alt=""
         />
       </div>
-      <div
-        class="
-          nw-col-span-4
-          md:nw-col-span-2
-          nw-text-sm
-          md:nw-text-lg
-          nw-px-10
-          md:nw-px-0
-        "
-      >
+      <div class="nw-col-span-4 md:nw-col-span-2 nw-text-sm md:nw-text-lg">
         <div class="nw-mt-0 md:nw-mt-4 nw-text-black nw-font-bold">
           {{description1}}
         </div>
@@ -143,7 +134,7 @@
         md:nw-grid-cols-2
         nw-gap-0
         md:nw-gap-4
-        nw-mt-12 nw-px-4
+        nw-mt-12
       "
     >
       <div class="nw-mb-4 md:nw-mb-0">
@@ -159,14 +150,14 @@
   </div>
   <!-- epaper-info ende -->
   <!-- epaper-info2-->
-  <div>
+  <div class="nw-mx-2">
     <div
       class="
         nw-grid nw-grid-cols-1
         md:nw-grid-cols-2
         nw-gap-0
         md:nw-gap-4
-        nw-px-4 nw-mt-8
+        nw-mt-8
       "
     >
       <div class="nw-ml-4 md:nw-ml-16 nw-order-last md:nw-order-first">
