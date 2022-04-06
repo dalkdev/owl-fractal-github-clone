@@ -6,6 +6,9 @@ export function initStickymenu() {
 
   function toggleStickymenu() {
     if (stickymenu == null) return;
+
+    if (window.innerWidth < 768) return;
+
     initNavigation(true);
 
     if (originalmenu.getBoundingClientRect().y > 0) {
