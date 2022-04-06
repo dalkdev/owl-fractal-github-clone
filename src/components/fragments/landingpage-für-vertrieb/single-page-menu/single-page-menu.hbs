@@ -1,14 +1,5 @@
 {{#each this.box}}
-<div
-  class="
-    nw-shadow-md
-    nw-rounded-md
-    nw-bg-gray-100
-    nw-flex
-    nw-flex-col
-    nw-justify-between
-  "
->
+<div class="nw-shadow-md nw-rounded-md nw-bg-gray-100 nw-flex-col">
   <div class="nw-bg-red-500 nw-rounded-t-md nw-h-1"></div>
   <div
     class="
@@ -20,7 +11,7 @@
     {{this.title}}
   </div>
   <div><img class="nw-w-full" src="{{this.box-image}}" /></div>
-  <div class="nw-w-16 nw-overflow-hidden nw-inline-block nw-mx-auto">
+  <div class="nw-w-16 nw-overflow-hidden nw-block nw-mx-auto">
     <div
       class="
         nw-h-11
