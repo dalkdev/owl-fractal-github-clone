@@ -18,7 +18,7 @@
     ],
     "box": [
       {
-        "box-image": "https://via.placeholder.com/200x100.png",
+        "box-image": "/images/landingpage-für-vertrieb/Sessel_Icon.svg",
         "title": "Preisvorteil",
         "elements": [
           {
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "box-image": "https://via.placeholder.com/200x100.png",
+        "box-image": "/images/landingpage-für-vertrieb/Kaffee_Icon.svg",
         "title": "Mehr Komfort",
         "elements": [
           {
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "box-image": "https://via.placeholder.com/200x100.png",
+        "box-image": "/images/landingpage-für-vertrieb/Smartphone_Icon.svg",
         "title": "Zusätzliche Inhalte",
         "elements": [
           {
