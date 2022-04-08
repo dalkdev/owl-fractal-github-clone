@@ -13,6 +13,7 @@
 @use './modules/header';
 @use './modules/select';
 @use './modules/recobox';
+@use './modules/form-elements';
 
 // has to be at the end to override certain properties
 @use 'general/a11y';
