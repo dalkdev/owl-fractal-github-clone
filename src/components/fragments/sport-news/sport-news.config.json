@@ -1,0 +1,54 @@
+{
+  "status": "qm",
+  "context": {
+    "image-src-s": "https://via.placeholder.com/150x150",
+    "title": "Arminia Bielefeld",
+    "buttons": [
+      "Arminia News",
+      "Transfer & Gerüchte",
+      "Spielplan",
+      "Tabelle",
+      "Ergebnisse",
+      "Spiele & Kader"
+    ],
+    "time-button": [
+      {
+        "part1": "0",
+        "part2": "Tage"
+      },
+      {
+        "part1": "4",
+        "part2": "Stunden"
+      },
+      {
+        "part1": "38",
+        "part2": "Minuten"
+      },
+      {
+        "part1": "43",
+        "part2": "Sekunden"
+      }
+    ],
+    "label": "Arminia - Bayern",
+    "headline": "Wiedersehen mit Arminia. Doan in der Bundesliga",
+    "bannertext": "Transfermarkt",
+    "image-src-m": "https://via.placeholder.com/150x150",
+    "box": [
+      {
+        "img-box": "https://via.placeholder.com/300x250",
+        "title-box": "DSC Auftakt",
+        "caption-box": " Arminia Neue brauchen noch Zeit- aber nicht alle"
+      },
+      {
+        "img-box": "https://via.placeholder.com/300x250",
+        "title-box": "Bundesliga",
+        "caption-box": "Mehe Auswärtstickets für Arminia-Fans in Fürth"
+      },
+      {
+        "img-box": "https://via.placeholder.com/300x250",
+        "title-box": "Hans",
+        "caption-box": "Möbelbranche kommt glimpflicher als andere durch die Krise"
+      }
+    ]
+  }
+}

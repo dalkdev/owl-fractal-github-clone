@@ -1,0 +1,277 @@
+<div class="">
+  <div class="nw-py-2 nw-flex nw-mx-2">
+    <a href="">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        class="nw-text-gray-500"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+        />
+      </svg>
+    </a>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      class="nw-text-gray-500 nw-ml-2"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    <a href="" class="nw-text-black nw-ml-2 nw-text-sm"> Sport </a>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      class="nw-text-gray-500 nw-ml-2"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    <a href=" " class="nw-text-black nw-ml-2 nw-text-sm">
+      DSC Arminia Bielefeld
+    </a>
+  </div>
+  <!-- Arminia Bielefeld -->
+  <div
+    class="nw-bg-custom-600 nw-mx-2 nw-my-2 nw-pt-4 nw-rounded-md nw-shadow-md"
+  >
+    <div class="nw-flex-shrink-0">
+      <img
+        class="nw-w-24 nw-h-24 nw-rounded-full nw-mx-auto"
+        src="{{this.image-src-s}}"
+        alt=""
+      />
+    </div>
+    <div>
+      <p
+        class="
+          nw-text-center nw-text-xl nw-font-bold nw-pt-4 nw-pb-3 nw-text-white
+        "
+      >
+        {{title}}
+      </p>
+    </div>
+    <!--buttons -->
+    <div class="nw-pr-auto nw-max-w-lg nw-px-2">
+      {{#each buttons}}
+      <a
+        href=""
+        class="
+          button
+          nw-text-white
+          nw-inline-block
+          nw-border
+          nw-border-gray-200
+          nw-border-solid
+          nw-rounded-3xl
+          nw-pt-1.5
+          nw-pb-1.5
+          nw-px-3
+          nw-font-bold
+          nw-text-sm
+          nw-text-left
+          nw-mt-1
+        "
+      >
+        {{this}}
+      </a>
+      {{/each}}
+    </div>
+    <!-- Buttons Ende -->
+    <div class="nw-bg-white nw-pb-4 nw-rounded-b-md nw-shadow-md">
+      <div class="nw-flex nw-mt-2 nw-py-4 nw-place-content-center">
+        <div class="nw-flex-shrink-0 nw-mr-2">
+          <img
+            class="nw-w-16 nw-h-16 nw-rounded-full"
+            src="{{this.image-src-s}}"
+            alt=""
+          />
+        </div>
+        <div
+          class="
+            nw-py-1.5 nw-text-black nw-font-bold nw-text-base nw-text-center
+          "
+        >
+          17.8.2022
+          <div class="nw-font-normal nw-text-tiny">20:30 Uhr</div>
+        </div>
+        <div class="nw-flex-shrink-0 nw-ml-2">
+          <img
+            class="nw-w-16 nw-h-16 nw-rounded-full"
+            src="{{this.image-src-s}}"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="nw-text-center nw-pb-2 nw-px-16">
+        <span class="nw-font-bold">DSC Arminia Bielefeld </span>
+        <span> spielt gegen </span>
+        <span class="nw-font-bold"> FC Bayern München </span> in:
+      </div>
+      <div class="nw-flex nw-justify-around nw-px-1">
+        {{#each time-button}}
+        <a
+          class="
+            nw-py-2
+            nw-w-20
+            nw-m-0.5
+            nw-bg-gray-300
+            nw-text-center
+            nw-text-white
+            nw-inline-block
+            nw-rounded-md
+          "
+        >
+          {{this.part1}}<br />
+          {{this.part2}}</a
+        >
+        {{/each}}
+      </div>
+      <div
+        class="
+          nw-text-center nw-pb-3 nw-pt-3 nw-px-16 nw-text-black nw-font-bold
+        "
+      >
+        <div class="nw-text-tiny">Hier geht es zum</div>
+        <div class="nw-flex nw-place-content-center">
+          <div class="nw-w-3 nw-h-3 nw-rounded-full nw-bg-red-500"></div>
+          <span class="nw-ml-1 nw-text-tiny nw-uppercase">Live-Tricker</span>
+        </div>
+      </div>
+      <a
+        href=""
+        class="
+          nw-mx-auto
+          nw-w-1/2
+          nw-bg-red-500
+          nw-border
+          nw-border-transparent
+          nw-rounded-md
+          nw-py-1
+          nw-px-4
+          nw-flex
+          nw-items-center
+          nw-justify-center
+          nw-text-tiny
+          nw-font-medium
+          nw-text-white
+          hover:nw-bg-red-600
+          focus:nw-outline-none
+          focus:nw-ring-2
+          focus:nw-ring-offset-2
+          focus:nw-ring-offset-gray-800
+          focus:nw-ring-indigo-500
+        "
+      >
+        {{label}}
+      </a>
+    </div>
+  </div>
+  <!-- Arminia Bielefeld Ende -->
+  <!-- -->
+  <div class="nw-text-black nw-mx-2 nw-py-3 nw-text-xl nw-font-bold">
+    Arminia Bielefeld News
+  </div>
+
+  <div
+    class="nw-mx-2 nw-block md:nw-flex nw-grid nw-grid-cols-1 md:nw-grid-cols-1"
+  >
+    <div
+      class="
+        nw-grid nw-grid-cols-1
+        md:nw-grid-cols-2
+        nw-rounded-lg
+        nw-overflow-hidden
+        nw-bg-white
+        nw-bg-origin-padding
+        nw-bg-no-repeat
+        nw-shadow-md
+      "
+    >
+      <div>
+        <div
+          class="
+            nw-aspect-w-16 nw-aspect-h-9
+            md:nw-aspect-h-6 md:nw-aspect-w-16
+          "
+        >
+          <img
+            class="nw-object-cover md:nw-h-48 nw-w-full nw-opacity-1"
+            src="{{image-src-m}}"
+          />
+        </div>
+      </div>
+      <div class="nw-p-2">
+        {{>@banner}}
+        <div>
+          <p
+            itemprop="headline"
+            class="
+              nw-text-xl
+              md:nw-text-xl
+              nw-tracking-normal
+              nw-text-left
+              nw-font-bold
+              nw-text-black
+              nw-leading-tight
+            "
+          >
+            {{headline}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+  <!-- -->
+  <div
+    class="
+      nw-mt-2 nw-grid nw-grid-cols-1
+      sm:nw-grid-cols-2
+      md:nw-grid-cols-2
+      lg:nw-grid-cols-3
+    "
+  >
+    {{#each box}}
+    <div class="nw-mx-2 nw-my-1 nw-rounded-md nw-bg-white nw-shadow-md">
+      <a href="">
+        <div class="nw-flex nw-justify-between nw-my-2">
+          <div class="nw-ml-2 nw-text-sm nw-text-gray-500 nw-max-w-sm">
+            {{this.title-box}} <br />
+            <span class="nw-text-black nw-text-base nw-font-bold">
+              {{this.caption-box}}</span
+            >
+          </div>
+          <img
+            src=" {{this.img-box}}"
+            class="nw-p-3 nw-min-h-28 nw-max-h-28 nw-max-w-28 nw-min-w-28"
+            loading=""
+            alt=""
+          />
+        </div>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+  <!-- -->
+  <!-- -->
+
+  <!-- -->
+</div>
