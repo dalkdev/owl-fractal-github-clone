@@ -29,25 +29,97 @@
         "part2": "Sekunden"
       }
     ],
-    "label": "Arminia - Bayern",
-    "headline": "Wiedersehen mit Arminia. Doan in der Bundesliga",
-    "bannertext": "Transfermarkt",
-    "image-src-m": "https://via.placeholder.com/150x150",
+    "arminia-news-box": [
+      {
+        "label": "Arminia - Bayern",
+        "headline": "Wiedersehen mit Arminia. Doan in der Bundesliga",
+        "bannertext": "Transfermarkt",
+        "image-src-m": "https://via.placeholder.com/150x150"
+      }
+    ],
     "box": [
       {
-        "img-box": "https://via.placeholder.com/300x250",
+        "img-box": "https://via.placeholder.com/100x50",
         "title-box": "DSC Auftakt",
         "caption-box": " Arminia Neue brauchen noch Zeit- aber nicht alle"
       },
       {
-        "img-box": "https://via.placeholder.com/300x250",
+        "img-box": "https://via.placeholder.com/100x50",
         "title-box": "Bundesliga",
         "caption-box": "Mehe Auswärtstickets für Arminia-Fans in Fürth"
       },
       {
-        "img-box": "https://via.placeholder.com/300x250",
+        "img-box": "https://via.placeholder.com/100x50",
         "title-box": "Hans",
         "caption-box": "Möbelbranche kommt glimpflicher als andere durch die Krise"
+      }
+    ],
+    "spielplan": [
+      {
+        "image-team1": "https://via.placeholder.com/150x150",
+        "image-team2": "https://via.placeholder.com/150x150",
+        "team1": " FC Bayern München",
+        "team2": " DSC Arminia Bielefeld"
+      },
+      {
+        "image-team1": "https://via.placeholder.com/150x150",
+        "image-team2": "https://via.placeholder.com/150x150",
+        "team1": " FC Bayern München",
+        "team2": " DSC Arminia Bielefeld"
+      },
+      {
+        "image-team1": "https://via.placeholder.com/150x150",
+        "image-team2": "https://via.placeholder.com/150x150",
+        "team1": " FC Bayern München",
+        "team2": " DSC Arminia Bielefeld"
+      }
+    ],
+    "label": "Arminia - Bayern",
+    "transfer-geruchte-box": [
+      {
+        "headline": "Wiedersehen mit Arminia. Doan in der Bundesliga",
+        "bannertext": "Transfermarkt",
+        "image-src-m": "https://via.placeholder.com/150x150"
+      }
+    ],
+    "transfer-box": [
+      {
+        "img-box": "https://via.placeholder.com/100x50",
+        "title-box": "DSC Auftakt",
+        "caption-box": " Arminia Neue brauchen noch Zeit- aber nicht alle"
+      },
+      {
+        "img-box": "https://via.placeholder.com/100x50",
+        "title-box": "Bundesliga",
+        "caption-box": "Mehe Auswärtstickets für Arminia-Fans in Fürth"
+      },
+      {
+        "img-box": "https://via.placeholder.com/100x50",
+        "title-box": "Hans",
+        "caption-box": "Möbelbranche kommt glimpflicher als andere durch die Krise"
+      }
+    ],
+    "verein": [
+      {
+        "image": "https://via.placeholder.com/100x100",
+        "th1": "Masaya Okogawa",
+        "th2": "Offensives Mitteleld",
+        "image-verein": "https://via.placeholder.com/100x100",
+        "td": " 52,50 Mio. $"
+      },
+      {
+        "image": "https://via.placeholder.com/100x100",
+        "th1": "Masaya Okogawa",
+        "th2": "Offensives Mitteleld",
+        "image-verein": "https://via.placeholder.com/100x100",
+        "td": " 52,50 Mio. $"
+      },
+      {
+        "image": "https://via.placeholder.com/100x100",
+        "th1": "Masaya Okogawa",
+        "th2": "Offensives Mitteleld",
+        "image-verein": "https://via.placeholder.com/100x100",
+        "td": " 52,50 Mio. $"
       }
     ]
   }

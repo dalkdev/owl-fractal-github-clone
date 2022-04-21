@@ -1,0 +1,194 @@
+<div>
+  <div
+    class="
+      nw-uppercase
+      nw-text-xl
+      nw-text-black
+      nw-font-bold
+      nw-text-center
+      nw-pb-3
+      nw-pt-8
+      nw-px-8
+    "
+  >
+    Saison-Statistik <br />
+    Arminia Bielefeld
+  </div>
+  <div
+    class="
+      nw-text-tiny
+      nw-text-gray-500
+      nw-font-medium
+      nw-text-center
+      nw-pb-6
+      nw-px-12
+    "
+  >
+    Spiel-Statistik von Arminia Bielefeld für den Bundesliga Saison 2022/2023
+  </div>
+  <div class="nw-mx-2">
+    <ul
+      class="
+        nw-nav
+        nw-nav-tabs
+        nw-flex
+        nw-text-black
+        nw-flex-row
+        nw-flex-wrap
+        nw-list-none
+        nw-border-b
+        nw-border-gray-300
+        nw-pl-0
+        nw-mb-4
+        nw-place-content-center
+      "
+      id=""
+      role="tablist"
+    >
+      <li class="nw-nav-item nw-px-2" role="tab">
+        <a
+          id="Gesamt"
+          class="
+            nw-font-medium
+            nw-uppercase
+            nw-py-2
+            nw-px-auto
+            nw-inline-flex
+            nw-text-sm
+            nw-cursor-pointer
+            nw-items-center
+            nw-text-black
+            nw-border-b
+            nw-border-black
+          "
+          data-bs-toggle="pill"
+          data-bs-target="#tabs-home"
+          role="tab"
+          aria-controls="tabs-home"
+          aria-selected="true"
+        >
+          Gesamt
+        </a>
+      </li>
+      <li class="nw-nav-item nw-px-2" role="tab">
+        <a
+          id="Spiele"
+          class="
+            nw-text-gray-400
+            nw-font-medium
+            nw-uppercase
+            nw-py-2
+            nw-px-auto
+            nw-inline-flex
+            nw-text-sm
+            nw-cursor-pointer
+            nw-items-center
+          "
+          data-bs-toggle="pill"
+          data-bs-target="#tabs-contact"
+          role="tab"
+          aria-controls="tabs-contact"
+          aria-selected="false"
+        >
+          Gespielte Spiele
+        </a>
+      </li>
+      <li class="nw-nav-item nw-px-2" role="tab">
+        <a
+          id="Tore"
+          class="
+            nw-text-gray-400
+            nw-font-medium
+            nw-uppercase
+            nw-py-2
+            nw-px-auto
+            nw-inline-flex
+            nw-text-sm
+            nw-cursor-pointer
+            nw-items-center
+          "
+          data-bs-toggle="pill"
+          data-bs-target="#tabs-contact"
+          role="tab"
+          aria-controls="tabs-contact"
+          aria-selected="false"
+        >
+          Tore
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="nw-mx-2">
+    <img
+      class="nw-rounded-md nw-object-cover nw-w-full sm:nw-w-1/3 nw-mx-auto"
+      src="https://via.placeholder.com/150x150"
+      alt=""
+    />
+  </div>
+  <div
+    class="
+      nw-mx-2 nw-px-2 nw-text-sm nw-text-black nw-text-center nw-pt-4 nw-pb-2
+      md:nw-px-44
+    "
+  >
+    In der aktuellen Bundesliga Saison haben unsere Jungs von Arminia Bielefeld
+    bereits ein Spiel hinter sich. Wir drücken ganz fest die Daumen für das
+    nächste <b>Spiel am Samstag (17.08.2022) gegen Bayern München</b> und freuen
+    uns auf viele Tore beim Heimspiel in der Bielefelder Alm.
+  </div>
+  <!-- live-button-->
+  {{>'@live-button'}}
+  <!--live-button Ende -->
+</div>
+
+<script>
+  var gesamt = document.getElementById('Gesamt');
+  var spiele = document.getElementById('Spiele');
+  var tore = document.getElementById('Tore');
+
+  gesamt.addEventListener('click', mouseOver1);
+  spiele.addEventListener('click', mouseOver2);
+  tore.addEventListener('click', mouseOver3);
+
+  function mouseOver1() {
+    gesamt.classList.remove('nw-text-gray-400');
+    gesamt.classList.add('nw-text-black');
+    spiele.classList.remove('nw-text-black');
+    spiele.classList.add('nw-text-gray-400');
+    gesamt.classList.add('nw-border-b');
+    gesamt.classList.add('nw-border-gray-600');
+    gesamt.classList.add('nw-border-solid');
+    spiele.classList.remove('nw-border-b');
+    tore.classList.remove('nw-text-black');
+    tore.classList.add('nw-text-gray-400');
+    tore.classList.remove('nw-border-b');
+  }
+
+  function mouseOver2() {
+    spiele.classList.remove('nw-text-gray-400');
+    spiele.classList.add('nw-text-black');
+    gesamt.classList.remove('nw-text-black');
+    gesamt.classList.add('nw-text-gray-400');
+    spiele.classList.add('nw-border-b');
+    spiele.classList.add('nw-border-gray-600');
+    spiele.classList.add('nw-border-solid');
+    gesamt.classList.remove('nw-border-b');
+    tore.classList.remove('nw-text-black');
+    tore.classList.add('nw-text-gray-400');
+    tore.classList.remove('nw-border-b');
+  }
+
+  function mouseOver3() {
+    tore.classList.remove('nw-text-gray-400');
+    tore.classList.add('nw-text-black');
+    gesamt.classList.remove('nw-text-black');
+    gesamt.classList.add('nw-text-gray-400');
+    tore.classList.add('nw-border-b');
+    tore.classList.add('nw-border-gray-600');
+    tore.classList.add('nw-border-solid');
+    gesamt.classList.remove('nw-border-b');
+    spiele.classList.remove('nw-text-black');
+    spiele.classList.add('nw-text-gray-400');
+    spiele.classList.remove('nw-border-b');
+  }
+</script>

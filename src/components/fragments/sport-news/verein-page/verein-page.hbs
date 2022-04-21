@@ -1,0 +1,47 @@
+<div class="nw-mt-2">
+  <div class="nw-mx-2 nw-text-black nw-text-xl nw-font-bold nw-uppercase">
+    Top-Zugänge
+  </div>
+  <div class="nw-bg-white nw-mt-2">
+    <div class="nw-relative nw-overflow-x-auto nw-mx-2 nw-pt-1">
+      <table class="nw-w-full nw-text-sm nw-text-left nw-text-black">
+        <thead class="nw-text-sm nw-border-b">
+          <tr class="nw-uppercase">
+            <th scope="col" class="nw-pr-2 nw-py-2">Spieler/Position</th>
+            <th scope="col" class="nw-py-2">Verein</th>
+            <th scope="col" class="nw-text-right nw-py-2">Ablöse</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each verein}}
+          <tr class="nw-text-sm nw-font-bold">
+            <th scope="row" class="nw-py-2 nw-whitespace-nowrap nw-flex">
+              <img
+                class="nw-w-10 nw-h-10 nw-rounded-md"
+                src="{{this.image}}"
+                alt=""
+              />
+              <div class="nw-pl-1">
+                {{this.th1}}
+                <div class="nw-text-xs nw-text-gray-400 nw-font-normal">
+                  {{this.th2}}
+                </div>
+              </div>
+            </th>
+            <td class="nw-py-2">
+              <div class="nw-pl-1 nw-flex-shrink-0 nw-flex">
+                <img
+                  class="nw-w-10 nw-h-10 nw-rounded-full"
+                  src="{{this.image-verein}}"
+                  alt=""
+                />
+              </div>
+            </td>
+            <td class="nw-text-right nw-py-2">{{this.td}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
