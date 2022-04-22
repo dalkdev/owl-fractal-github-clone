@@ -55,44 +55,46 @@
     <div class="nw-flex-shrink-0">
       <img
         class="nw-w-24 nw-h-24 nw-rounded-full nw-mx-auto"
-        src="{{this.image-src-s}}"
+        src="{{this.image-src-a}}"
         alt=""
       />
     </div>
     <div>
       <p
         class="
-          nw-text-center nw-text-xl nw-font-bold nw-pt-4 nw-pb-3 nw-text-white
+          nw-text-center nw-text-xl nw-font-bold nw-pt-3 nw-pb-2 nw-text-white
         "
       >
         {{title}}
       </p>
     </div>
     <!--buttons -->
-    <div class="nw-pr-auto nw-max-w-lg nw-px-2">
-      {{#each buttons}}
-      <a
-        href=""
-        class="
-          button
-          nw-text-white
-          nw-inline-block
-          nw-border
-          nw-border-gray-200
-          nw-border-solid
-          nw-rounded-3xl
-          nw-pt-1.5
-          nw-pb-1.5
-          nw-px-3
-          nw-font-bold
-          nw-text-sm
-          nw-text-left
-          nw-mt-1
-        "
-      >
-        {{this}}
-      </a>
-      {{/each}}
+    <div class="nw-pb-4">
+      <div class="nw-pr-auto nw-max-w-lg nw-px-2">
+        {{#each buttons}}
+        <a
+          href=""
+          class="
+            button
+            nw-text-white
+            nw-inline-block
+            nw-border
+            nw-border-gray-200
+            nw-border-solid
+            nw-rounded-3xl
+            nw-pt-1.5
+            nw-pb-1.5
+            nw-px-3
+            nw-font-bold
+            nw-text-sm
+            nw-text-left
+            nw-mt-1
+          "
+        >
+          {{this}}
+        </a>
+        {{/each}}
+      </div>
     </div>
     <!-- Buttons Ende -->
     <div class="nw-bg-white nw-pb-4 nw-rounded-b-md nw-shadow-md">
@@ -100,7 +102,7 @@
         <div class="nw-flex-shrink-0 nw-mr-2">
           <img
             class="nw-w-16 nw-h-16 nw-rounded-full"
-            src="{{this.image-src-s}}"
+            src="{{this.image-src-a}}"
             alt=""
           />
         </div>
@@ -115,7 +117,7 @@
         <div class="nw-flex-shrink-0 nw-ml-2">
           <img
             class="nw-w-16 nw-h-16 nw-rounded-full"
-            src="{{this.image-src-s}}"
+            src="{{this.image-src-b}}"
             alt=""
           />
         </div>

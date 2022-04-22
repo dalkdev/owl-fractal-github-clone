@@ -1,7 +1,8 @@
 {
   "status": "qm",
   "context": {
-    "image-src-s": "https://via.placeholder.com/150x150",
+    "image-src-a": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
+    "image-src-b": "/images/sport-news/FC-Bayern.svg",
     "title": "Arminia Bielefeld",
     "buttons": [
       "Arminia News",
@@ -56,20 +57,20 @@
     ],
     "spielplan": [
       {
-        "image-team1": "https://via.placeholder.com/150x150",
-        "image-team2": "https://via.placeholder.com/150x150",
+        "image-team1": "/images/sport-news/FC-Bayern.svg",
+        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
         "team1": " FC Bayern München",
         "team2": " DSC Arminia Bielefeld"
       },
       {
-        "image-team1": "https://via.placeholder.com/150x150",
-        "image-team2": "https://via.placeholder.com/150x150",
+        "image-team1": "/images/sport-news/FC-Bayern.svg",
+        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
         "team1": " FC Bayern München",
         "team2": " DSC Arminia Bielefeld"
       },
       {
-        "image-team1": "https://via.placeholder.com/150x150",
-        "image-team2": "https://via.placeholder.com/150x150",
+        "image-team1": "/images/sport-news/FC-Bayern.svg",
+        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
         "team1": " FC Bayern München",
         "team2": " DSC Arminia Bielefeld"
       }
@@ -105,21 +106,21 @@
         "th1": "Masaya Okogawa",
         "th2": "Offensives Mitteleld",
         "image-verein": "https://via.placeholder.com/100x100",
-        "td": " 52,50 Mio. $"
+        "td": " 52,50 Mio. €"
       },
       {
         "image": "https://via.placeholder.com/100x100",
         "th1": "Masaya Okogawa",
         "th2": "Offensives Mitteleld",
         "image-verein": "https://via.placeholder.com/100x100",
-        "td": " 52,50 Mio. $"
+        "td": " 52,50 Mio. €"
       },
       {
         "image": "https://via.placeholder.com/100x100",
         "th1": "Masaya Okogawa",
         "th2": "Offensives Mitteleld",
         "image-verein": "https://via.placeholder.com/100x100",
-        "td": " 52,50 Mio. $"
+        "td": " 52,50 Mio. €"
       }
     ]
   }
