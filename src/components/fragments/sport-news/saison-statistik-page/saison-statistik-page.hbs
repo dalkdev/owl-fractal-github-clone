@@ -1,3 +1,5 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 <div>
   <div
     class="
@@ -26,118 +28,132 @@
   >
     Spiel-Statistik von Arminia Bielefeld für den Bundesliga Saison 2022/2023
   </div>
-  <div class="nw-mx-2">
-    <ul
-      class="
-        nw-nav
-        nw-nav-tabs
-        nw-flex
-        nw-text-black
-        nw-flex-row
-        nw-flex-wrap
-        nw-list-none
-        nw-border-b
-        nw-border-gray-200
-        nw-pl-0
-        nw-mb-4
-        nw-place-content-center
-      "
-      id=""
-      role="tablist"
-    >
-      <li class="nw-nav-item" onclick="openTab('gesamt')" role="tab">
+
+  <div
+    class="
+      nw-text-sm
+      nw-font-medium
+      nw-text-center
+      nw-text-black
+      nw-border-b
+      nw-border-gray-200
+      nw-mx-2
+    "
+  >
+    <ul class="nw-flex nw-flex-wrap nw--mb-px nw-place-content-center">
+      <li class="nw-mr-2">
         <a
-          id="Gesamt"
+          id="GesamtTab"
+          href="#"
           class="
-            nw-font-medium
-            nw-uppercase
-            nw-py-2
-            nw-px-4
-            nw-inline-flex
-            nw-text-sm
-            nw-cursor-pointer
-            nw-items-center
+            nw-inline-block
+            nw-p-4
             nw-text-custom-600
-            nw-border-b
+            nw-rounded-t-lg
+            nw-border-b-2
             nw-border-custom-600
           "
-          data-bs-toggle="pill"
-          data-bs-target="#tabs-home"
-          role="tab"
-          aria-controls="tabs-home"
-          aria-selected="true"
+          aria-current="page"
+          >Gesamt</a
         >
-          Gesamt
-        </a>
       </li>
-      <li class="nw-nav-item" onclick="openTab('spiele')" role="tab">
+      <li class="nw-mr-2">
         <a
-          id="Spiele"
+          id="SpieleTab"
+          href="#"
           class="
-            nw-text-black
-            nw-font-medium
-            nw-uppercase
-            nw-py-2
-            nw-px-auto
-            nw-inline-flex
-            nw-text-sm
-            nw-cursor-pointer
-            nw-items-center
+            nw-inline-block
+            nw-p-4
+            nw-rounded-t-lg
+            nw-border-b-2
+            nw-border-transparent
           "
-          data-bs-toggle="pill"
-          data-bs-target="#tabs-contact"
-          role="tab"
-          aria-controls="tabs-contact"
-          aria-selected="false"
+          >Gespielte Spiele</a
         >
-          Gespielte Spiele
-        </a>
       </li>
-      <li class="nw-nav-item" onclick="openTab('tore')" role="tab">
+      <li class="nw-mr-2">
         <a
-          id="Tore"
+          id="ToreTab"
+          href="#"
           class="
-            nw-text-black
-            nw-font-medium
-            nw-uppercase
-            nw-py-2
-            nw-px-4
-            nw-inline-flex
-            nw-text-sm
-            nw-cursor-pointer
-            nw-items-center
+            nw-inline-block
+            nw-p-4
+            nw-rounded-t-lg
+            nw-border-b-2
+            nw-border-transparent
           "
-          data-bs-toggle="pill"
-          data-bs-target="#tabs-contact"
-          role="tab"
-          aria-controls="tabs-contact"
-          aria-selected="false"
+          >Tore</a
         >
-          Tore
-        </a>
       </li>
     </ul>
   </div>
-  <html>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <body>
-      <div
-        id="gesamt"
-        class="nw-place-content-center nw-mx-auto nw-w-full"
-      ></div>
 
-      <script>
-        var xArray = ['gespielt', 'offen'];
-        var yArray = [1, 33];
+  <div class="nw-mx-2">
+    <div id="GesamtContainer">
+      <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
+        <canvas id="gesamtChart" class="nw-w-full"></canvas>
+      </div>
+    </div>
 
-        var layout = { title: 'Gesamte Spiele 34' };
+    <div id="SpieleContainer" class="nw-hidden">Spiele</div>
 
-        var data = [{ labels: xArray, values: yArray, hole: 0.7, type: 'pie' }];
+    <div id="ToreContainer" class="nw-hidden">
+      <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
+        <canvas id="toreChart" class="nw-w-full"></canvas>
+      </div>
+    </div>
+  </div>
 
-        Plotly.newPlot('gesamt', data, layout);
-      </script>
-    </body>
-  </html>
+  <script>
+    var xValues = ['Gespielt [1]', 'Offen [33]'];
+    var yValues = [1, 33];
+    var barColors = ['#D20A11', '#038ed5'];
+
+    new Chart('gesamtChart', {
+      type: 'doughnut',
+      data: {
+        labels: xValues,
+        datasets: [
+          {
+            backgroundColor: barColors,
+            data: yValues,
+          },
+        ],
+      },
+      options: {
+        cutoutPercentage: 80,
+        title: {
+          display: false,
+          text: 'World Wide Wine Production 2018',
+        },
+      },
+    });
+  </script>
+  <script>
+    var aValues = ['Tore [23]', 'Gegentore [46]'];
+    var bValues = [23, 46];
+    var cColors = ['#D20A11', '#038ed5'];
+
+    new Chart('toreChart', {
+      type: 'doughnut',
+      data: {
+        labels: aValues,
+        datasets: [
+          {
+            backgroundColor: cColors,
+            data: bValues,
+          },
+        ],
+      },
+      options: {
+        cutoutPercentage: 80,
+        title: {
+          display: false,
+          text: 'World Wide Wine Production 2018',
+        },
+      },
+    });
+  </script>
 
   <div
     class="
@@ -156,64 +172,48 @@
 </div>
 
 <script>
-  function openTab(tabName) {
-    var i;
-    var x = document.getElementsByClassName('tab');
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = 'none';
-    }
-    document.getElementById(tabName).style.display = 'block';
-  }
-</script>
+  document
+    .getElementById('GesamtTab')
+    .addEventListener('click', () => SelectTab('GesamtTab', 'GesamtContainer'));
+  document
+    .getElementById('SpieleTab')
+    .addEventListener('click', () => SelectTab('SpieleTab', 'SpieleContainer'));
+  document
+    .getElementById('ToreTab')
+    .addEventListener('click', () => SelectTab('ToreTab', 'ToreContainer'));
 
-<script>
-  var gesamt = document.getElementById('Gesamt');
-  var spiele = document.getElementById('Spiele');
-  var tore = document.getElementById('Tore');
-
-  gesamt.addEventListener('click', mouseOver1);
-  spiele.addEventListener('click', mouseOver2);
-  tore.addEventListener('click', mouseOver3);
-
-  function mouseOver1() {
-    gesamt.classList.remove('nw-text-black');
-    gesamt.classList.add('nw-text-custom-600');
-    spiele.classList.remove('nw-text-custom-600');
-    spiele.classList.add('nw-text-black');
-    gesamt.classList.add('nw-border-b');
-    gesamt.classList.add('nw-border-custom-600');
-    gesamt.classList.add('nw-border-solid');
-    spiele.classList.remove('nw-border-b');
-    tore.classList.remove('nw-text-custom-600');
-    tore.classList.add('nw-text-black');
-    tore.classList.remove('nw-border-b');
+  function SelectTab(tab, container) {
+    RemoveAllActiveClasses();
+    document
+      .getElementById(tab)
+      .classList.add('nw-text-custom-600', 'nw-border-custom-600');
+    document.getElementById(container).classList.remove('nw-hidden');
   }
 
-  function mouseOver2() {
-    spiele.classList.remove('nw-text-black');
-    spiele.classList.add('nw-text-custom-600');
-    gesamt.classList.remove('nw-text-custom-600');
-    gesamt.classList.add('nw-text-black');
-    spiele.classList.add('nw-border-b');
-    spiele.classList.add('nw-border-custom-600');
-    spiele.classList.add('nw-border-solid');
-    gesamt.classList.remove('nw-border-b');
-    tore.classList.remove('nw-text-custom-600');
-    tore.classList.add('nw-text-black');
-    tore.classList.remove('nw-border-b');
-  }
+  function RemoveAllActiveClasses() {
+    document
+      .getElementById('GesamtTab')
+      .classList.remove('nw-text-custom-600', 'nw-border-custom-600');
+    document
+      .getElementById('GesamtTab')
+      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
 
-  function mouseOver3() {
-    tore.classList.remove('nw-text-black');
-    tore.classList.add('nw-text-custom-600');
-    gesamt.classList.remove('nw-text-custom-600');
-    gesamt.classList.add('nw-text-black');
-    tore.classList.add('nw-border-b');
-    tore.classList.add('nw-border-custom-600');
-    tore.classList.add('nw-border-solid');
-    gesamt.classList.remove('nw-border-b');
-    spiele.classList.remove('nw-text-custom-600');
-    spiele.classList.add('nw-text-black');
-    spiele.classList.remove('nw-border-b');
+    document
+      .getElementById('SpieleTab')
+      .classList.remove('nw-text-custom-600', 'nw-border-custom-600');
+    document
+      .getElementById('SpieleTab')
+      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
+
+    document
+      .getElementById('ToreTab')
+      .classList.remove('nw-text-custom-600', 'nw-border-custom-600');
+    document
+      .getElementById('ToreTab')
+      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
+
+    document.getElementById('GesamtContainer').classList.add('nw-hidden');
+    document.getElementById('SpieleContainer').classList.add('nw-hidden');
+    document.getElementById('ToreContainer').classList.add('nw-hidden');
   }
 </script>
