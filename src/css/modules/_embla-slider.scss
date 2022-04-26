@@ -31,6 +31,18 @@
     }
   }
 
+  &.nw-sport-news {
+    .embla__dot {
+      width: 13px;
+      height: 13px;
+    }
+
+    .embla__dot:after {
+      height: 13px;
+      border-radius: 10px;
+    }
+  }
+
   .embla {
     position: relative;
     margin-left: auto;

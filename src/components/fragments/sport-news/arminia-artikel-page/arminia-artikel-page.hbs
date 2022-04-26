@@ -1,6 +1,17 @@
-{{#each arminia-news-box}}
-<div class="nw-text-black nw-uppercase nw-mx-2 nw-py-3 nw-text-xl nw-font-bold">
-  Arminia Bielefeld News
+{{#each artikel-box}}
+<div
+  class="
+    nw-text-black
+    nw-text-center
+    nw-uppercase
+    nw-mx-2
+    nw-py-3
+    nw-text-xl
+    nw-font-bold
+    nw-mt-6
+  "
+>
+  Weitere Arminia Artikel
 </div>
 
 <div
@@ -19,9 +30,7 @@
     "
   >
     <div>
-      <div
-        class="nw-aspect-w-16 nw-aspect-h-9 md:nw-aspect-h-6 md:nw-aspect-w-16"
-      >
+      <div class="nw-aspect-w-16 nw-aspect-h-9">
         <img
           class="nw-object-cover nw-w-full nw-opacity-1"
           src="{{this.image-src-m}}"
@@ -60,7 +69,7 @@
     lg:nw-grid-cols-3
   "
 >
-  {{#each box}}
+  {{#each artikelcontainer-box}}
   <div class="nw-mx-2 nw-my-1 nw-rounded-md nw-bg-white nw-shadow-md">
     <a href="">
       <div class="nw-flex nw-justify-between nw-my-2">

@@ -35,22 +35,22 @@
         "label": "Arminia - Bayern",
         "headline": "Wiedersehen mit Arminia. Doan in der Bundesliga",
         "bannertext": "Transfermarkt",
-        "image-src-m": "https://via.placeholder.com/150x150"
+        "image-src-m": "/images/sport-news/player1.jpg"
       }
     ],
     "box": [
       {
-        "img-box": "https://via.placeholder.com/100x50",
+        "img-box": "/images/sport-news/player2.jpg",
         "title-box": "DSC Auftakt",
         "caption-box": " Arminia Neue brauchen noch Zeit- aber nicht alle"
       },
       {
-        "img-box": "https://via.placeholder.com/100x50",
+        "img-box": "/images/sport-news/player3.jpg",
         "title-box": "Bundesliga",
         "caption-box": "Mehe Auswärtstickets für Arminia-Fans in Fürth"
       },
       {
-        "img-box": "https://via.placeholder.com/100x50",
+        "img-box": "/images/sport-news/player4.jpg",
         "title-box": "Hans",
         "caption-box": "Möbelbranche kommt glimpflicher als andere durch die Krise"
       }
@@ -80,22 +80,22 @@
       {
         "headline": "Wiedersehen mit Arminia. Doan in der Bundesliga",
         "bannertext": "Transfermarkt",
-        "image-src-m": "https://via.placeholder.com/150x150"
+        "image-src-m": "/images/sport-news/player2.jpg"
       }
     ],
     "transfer-box": [
       {
-        "img-box": "https://via.placeholder.com/100x50",
+        "img-box": "/images/sport-news/player2.jpg",
         "title-box": "DSC Auftakt",
         "caption-box": " Arminia Neue brauchen noch Zeit- aber nicht alle"
       },
       {
-        "img-box": "https://via.placeholder.com/100x50",
+        "img-box": "/images/sport-news/player3.jpg",
         "title-box": "Bundesliga",
         "caption-box": "Mehe Auswärtstickets für Arminia-Fans in Fürth"
       },
       {
-        "img-box": "https://via.placeholder.com/100x50",
+        "img-box": "/images/sport-news/player4.jpg",
         "title-box": "Hans",
         "caption-box": "Möbelbranche kommt glimpflicher als andere durch die Krise"
       }
@@ -121,6 +121,63 @@
         "th2": "Offensives Mitteleld",
         "image-verein": "https://via.placeholder.com/100x100",
         "td": " 52,50 Mio. €"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1624470807069-496787340a7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "caption1": "Fanshop Arminia",
+        "caption2": "Gartenzwerg Stehplatz Arminia",
+        "caption3": "25,90 €"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1624520262270-dda87e60b541?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "caption1": "NW-Edition",
+        "caption2": "Riesling by Regine Minges",
+        "caption3": "25,90 €"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1624514326167-7b4788f37dac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+        "caption1": "NW-Edition",
+        "caption2": "Riesling by Regine Minges",
+        "caption3": "25,90 €"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1624507943618-c63a66b438a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+        "caption1": "NW-Edition",
+        "caption2": "Riesling by Regine Minges",
+        "caption3": "25,90 €"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1624380778493-83c6e80df13f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+        "caption1": "NW-Edition",
+        "caption2": "Riesling by Regine Minges",
+        "caption3": "25,90 €"
+      }
+    ],
+    "header": "ARMINIA FANSHOP",
+    "artikel-box": [
+      {
+        "headline": "Wiedersehen mit Arminia. Doan in der Bundesliga",
+        "bannertext": "Transfermarkt",
+        "image-src-m": "/images/sport-news/player1.jpg"
+      }
+    ],
+    "artikelcontainer-box": [
+      {
+        "img-box": "/images/sport-news/player2.jpg",
+        "title-box": "DSC Auftakt",
+        "caption-box": " Arminia Neue brauchen noch Zeit- aber nicht alle"
+      },
+      {
+        "img-box": "/images/sport-news/player3.jpg",
+        "title-box": "Bundesliga",
+        "caption-box": "Mehe Auswärtstickets für Arminia-Fans in Fürth"
+      },
+      {
+        "img-box": "/images/sport-news/player4.jpg",
+        "title-box": "Hans",
+        "caption-box": "Möbelbranche kommt glimpflicher als andere durch die Krise"
       }
     ]
   }

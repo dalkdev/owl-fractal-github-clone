@@ -1,0 +1,146 @@
+<div class="nw-bg-white nw-mt-8">
+  <div
+    class="
+      nw-bg-white
+      nw-text-sm
+      nw-font-medium
+      nw-text-center
+      nw-text-black
+      nw-border-b
+      nw-border-gray-200
+      nw-mx-2
+    "
+  >
+    <ul class="nw-flex nw-flex-wrap nw--mb-px nw-place-content-center">
+      <li class="nw-mr-2">
+        <a
+          id="TabelleTab"
+          href="#"
+          class="
+            nw-inline-block
+            nw-p-4
+            nw-text-custom-600
+            nw-border-b-2
+            nw-border-custom-600
+          "
+          aria-current="page"
+          >Tabelle</a
+        >
+      </li>
+      <li class="nw-mr-2">
+        <a
+          id="KaderTab"
+          href="#"
+          class="nw-inline-block nw-p-4 nw-border-b-2 nw-border-transparent"
+          >Spiele & Kader</a
+        >
+      </li>
+      <li class="nw-mr-2">
+        <a
+          id="ErgebnisseTab"
+          href="#"
+          class="nw-inline-block nw-p-4 nw-border-b-2 nw-border-transparent"
+          >Ergebnisse</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div class="nw-pb-8">
+    <div id="TabelleContainer">
+      <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
+        Tabelle
+      </div>
+      <div class="nw-text-gray-600 nw-px-2 nw-text-base nw-font-medium">
+        DSC Arminia Bielefeld
+      </div>
+    </div>
+
+    <div id="KaderContainer" class="nw-hidden">
+      <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
+        Spiele & Kader
+      </div>
+      <div class="nw-text-gray-600 nw-px-2 nw-text-base nw-font-medium">
+        DSC Arminia Bielefeld
+      </div>
+    </div>
+
+    <div id="ErgebnisseContainer" class="nw-hidden">
+      <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
+        Ergebnisse
+      </div>
+      <div class="nw-text-gray-600 nw-px-2 nw-text-base nw-font-medium">
+        DSC Arminia Bielefeld
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="
+    nw-mx-2 nw-px-2 nw-text-sm nw-text-black nw-text-center nw-pt-4 nw-pb-2
+    md:nw-px-44
+  "
+>
+  Nach einem Spieltag belegt unsere Mannschaft von Arminia Bielefeld
+  <b>Platz 7 </b> in der Tabelle. Wir sind Stolz dabei und auf dem Weg zur
+  Meisterschaft <b>mit einem Punkt </b> und einer <b>Tordifferenz von Null</b>.
+</div>
+<div
+  class="nw-mx-2 nw-px-2 nw-text-sm nw-text-black nw-text-center md:nw-px-44"
+>
+  Mit einem Sieg über Bayern München geht's weiter nach oben in der Tabelle:
+</div>
+<!-- live-button-->
+{{>'@live-button'}}
+<!--live-button Ende -->
+<script>
+  document
+    .getElementById('TabelleTab')
+    .addEventListener('click', () =>
+      SelectTab('TabelleTab', 'TabelleContainer')
+    );
+  document
+    .getElementById('KaderTab')
+    .addEventListener('click', () => SelectTab('KaderTab', 'KaderContainer'));
+  document
+    .getElementById('ErgebnisseTab')
+    .addEventListener('click', () =>
+      SelectTab('ErgebnisseTab', 'ErgebnisseContainer')
+    );
+
+  function SelectTab(tabelletab, tabellecontainer) {
+    RemoveallActiveClasses();
+    document
+      .getElementById(tabelletab)
+      .classList.add('nw-text-custom-600', 'nw-border-custom-600');
+    document.getElementById(tabellecontainer).classList.remove('nw-hidden');
+  }
+
+  function RemoveallActiveClasses() {
+    document
+      .getElementById('TabelleTab')
+      .classList.remove('nw-text-custom-600', 'nw-border-custom-600');
+    document
+      .getElementById('TabelleTab')
+      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
+
+    document
+      .getElementById('KaderTab')
+      .classList.remove('nw-text-custom-600', 'nw-border-custom-600');
+    document
+      .getElementById('KaderTab')
+      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
+
+    document
+      .getElementById('ErgebnisseTab')
+      .classList.remove('nw-text-custom-600', 'nw-border-custom-600');
+    document
+      .getElementById('ErgebnisseTab')
+      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
+
+    document.getElementById('TabelleContainer').classList.add('nw-hidden');
+    document.getElementById('KaderContainer').classList.add('nw-hidden');
+    document.getElementById('ErgebnisseContainer').classList.add('nw-hidden');
+  }
+</script>

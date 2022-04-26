@@ -1,0 +1,103 @@
+<div class="slider nw-sport-news nw-bg-custom-600 nw-pb-4 nw-pt-6 nw-mt-12">
+  <div class="">
+    <div>
+      <p
+        class="
+          nw-text-white
+          nw-text-center
+          nw-uppercase
+          nw-text-xl
+          nw-font-bold
+          nw-pt-2
+        "
+      >
+        {{header}}
+      </p>
+    </div>
+  </div>
+  <div class="embla embla--main-carousel nw-pl-2">
+    <div class="embla__viewport relative">
+      <div class="embla__container">
+        {{#each images}}
+        <div class="embla__slide">
+          <div
+            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
+          >
+            <div class="nw-aspect-w-4 nw-aspect-h-3">
+              <img
+                class="
+                  embla__slide__img
+                  nw-h-full nw-w-full nw-object-none nw-rounded-md
+                "
+                src="{{this.src}}"
+              />
+            </div>
+            <div class="nw-pt-4 nw-text-white nw-font-medium nw-text-tiny">
+              {{this.caption1}}
+            </div>
+            <div class="nw-text-white nw-font-bold nw-text-lg">
+              {{this.caption2}}
+            </div>
+            <div class="nw-py-1 nw-text-white nw-font-medium nw-text-lg">
+              {{this.caption3}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+      <div
+        class="
+          nw-hidden
+          md:nw-block
+          slider--button-prev
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-left-2
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
+        "
+      >
+        <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
+      </div>
+
+      <div
+        class="
+          nw-hidden
+          md:nw-block
+          slider--button-next
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-right-2
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
+        "
+      >
+        <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="embla__dots nw-mt-0 sm:nw-mt-2"></div>
+
+  <script type="text/template" id="embla-dot-template">
+    <button class="embla__dot" type="button"></button>
+  </script>
+</div>
