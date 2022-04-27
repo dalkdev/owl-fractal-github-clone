@@ -4,6 +4,7 @@
     "image-src-a": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
     "image-src-b": "/images/sport-news/FC-Bayern.svg",
     "title": "Arminia Bielefeld",
+    "bannertext": "Arminia Bielefeld",
     "buttons": [
       "Arminia News",
       "Transfer & Gerüchte",
@@ -80,7 +81,7 @@
       {
         "headline": "Wiedersehen mit Arminia. Doan in der Bundesliga",
         "bannertext": "Transfermarkt",
-        "image-src-m": "/images/sport-news/player2.jpg"
+        "image-src-m": "/images/sport-news/player1.jpg"
       }
     ],
     "transfer-box": [

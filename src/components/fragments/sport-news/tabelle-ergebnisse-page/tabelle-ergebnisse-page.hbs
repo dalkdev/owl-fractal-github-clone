@@ -95,29 +95,28 @@
 {{>'@live-button'}}
 <!--live-button Ende -->
 <script>
-  document
-    .getElementById('TabelleTab')
-    .addEventListener('click', () =>
-      SelectTab('TabelleTab', 'TabelleContainer')
-    );
-  document
-    .getElementById('KaderTab')
-    .addEventListener('click', () => SelectTab('KaderTab', 'KaderContainer'));
-  document
-    .getElementById('ErgebnisseTab')
-    .addEventListener('click', () =>
-      SelectTab('ErgebnisseTab', 'ErgebnisseContainer')
-    );
+  document.getElementById('TabelleTab').addEventListener('click', e => {
+    e.preventDefault();
+    SelectTabelleTab('TabelleTab', 'TabelleContainer');
+  });
+  document.getElementById('KaderTab').addEventListener('click', e => {
+    e.preventDefault();
+    SelectTabelleTab('KaderTab', 'KaderContainer');
+  });
+  document.getElementById('ErgebnisseTab').addEventListener('click', e => {
+    e.preventDefault();
+    SelectTabelleTab('ErgebnisseTab', 'ErgebnisseContainer');
+  });
 
-  function SelectTab(tabelletab, tabellecontainer) {
-    RemoveallActiveClasses();
+  function SelectTabelleTab(tabelletab, tabellecontainer) {
+    RemoveAllActiveTabelleClasses();
     document
       .getElementById(tabelletab)
       .classList.add('nw-text-custom-600', 'nw-border-custom-600');
     document.getElementById(tabellecontainer).classList.remove('nw-hidden');
   }
 
-  function RemoveallActiveClasses() {
+  function RemoveAllActiveTabelleClasses() {
     document
       .getElementById('TabelleTab')
       .classList.remove('nw-text-custom-600', 'nw-border-custom-600');
