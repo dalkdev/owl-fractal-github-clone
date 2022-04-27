@@ -1,8 +1,9 @@
 {
   "status": "qm",
   "context": {
-    "image-src-a": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
-    "image-src-b": "/images/sport-news/FC-Bayern.svg",
+    "image-src-arminia": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
+    "image-src-a": "/images/sport-news/Logo-Arminia-Bielefeld.jpg",
+    "image-src-b": "/images/sport-news/FC-Bayern.jpg",
     "title": "Arminia Bielefeld",
     "bannertext": "Arminia Bielefeld",
     "buttons": [
@@ -58,20 +59,20 @@
     ],
     "spielplan": [
       {
-        "image-team1": "/images/sport-news/FC-Bayern.svg",
-        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
+        "image-team1": "/images/sport-news/FC-Bayern.jpg",
+        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.jpg",
         "team1": " FC Bayern München",
         "team2": " DSC Arminia Bielefeld"
       },
       {
-        "image-team1": "/images/sport-news/FC-Bayern.svg",
-        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
+        "image-team1": "/images/sport-news/FC-Bayern.jpg",
+        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.jpg",
         "team1": " FC Bayern München",
         "team2": " DSC Arminia Bielefeld"
       },
       {
-        "image-team1": "/images/sport-news/FC-Bayern.svg",
-        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.svg",
+        "image-team1": "/images/sport-news/FC-Bayern.jpg",
+        "image-team2": "/images/sport-news/Logo-Arminia-Bielefeld.jpg",
         "team1": " FC Bayern München",
         "team2": " DSC Arminia Bielefeld"
       }
