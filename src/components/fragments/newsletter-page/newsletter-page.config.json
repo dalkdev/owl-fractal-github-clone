@@ -1,0 +1,12 @@
+{
+  "status": "qm",
+  "context": {
+    "newsletter": "Newsletter",
+    "caption": "Das Update zum Mittag - die wichtigsten News des Tages um 12 Uhr direkt aus der Chefredaktion.",
+    "email": {
+      "label": "E-Mail Adresse",
+      "placeholder": "E-Mail-Adresse eingeben"
+    },
+    "label": "Anmelden"
+  }
+}
