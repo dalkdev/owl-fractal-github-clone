@@ -1,0 +1,16 @@
+{
+  "status": "qm",
+  "context": {
+    "spielerliste": [
+      {
+        "spieler": "https://via.placeholder.com/150x150.png"
+      },
+      {
+        "spieler": "https://via.placeholder.com/150x150.png"
+      },
+      {
+        "spieler": "https://via.placeholder.com/150x150.png"
+      }
+    ]
+  }
+}
