@@ -1,9 +1,18 @@
-<div class="nw-px-4">
-  <div class="nw-text-black nw-text-xl nw-font-bold nw-pt-4">Bielefeld</div>
-  <div class="nw-grid nw-grid-cols-1 sm:nw-grid-cols-2 md:nw-grid-cols-3">
+<div class="nw-px-4 nw-bg-white">
+  {{#each this.stadt}}
+  <span class="nw-text-black nw-text-xl nw-font-bold nw-pt-4 nw-pb-2"
+    >{{this.stadtname}}</span
+  >
+  <div
+    class="nw-grid nw-grid-cols-1 sm:nw-grid-cols-2 md:nw-grid-cols-3 nw-gap-2"
+  >
     {{#each this.kandidat}}
-    <div class="nw-pt-4">
-      <img class="nw-rounded-md nw-w-full nw-object-cover" src="{{this.img}}" />
+    <div class="nw-pt-2">
+      <img
+        alt=""
+        class="nw-rounded-md nw-w-full nw-object-cover"
+        src="{{this.img}}"
+      />
       <div
         class="
           nw-pt-2 nw-uppercase nw-font-medium nw-text-tiny nw-text-gray-600
@@ -15,4 +24,5 @@
     </div>
     {{/each}}
   </div>
+  {{/each}}
 </div>

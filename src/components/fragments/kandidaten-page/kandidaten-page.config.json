@@ -1,21 +1,156 @@
 {
   "status": "qm",
   "context": {
-    "kandidat": [
+    "stadt": [
       {
-        "header": "SPD",
-        "name": "Christina Kampmann",
-        "img": "https://via.placeholder.com/200x100.png"
+        "stadtname": "Bielefeld",
+        "kandidat": [
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Osei",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "DIE GRÜNEN",
+            "name": "Cim Kartal",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "DIE LINKE",
+            "name": "Florian Straetmanns",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "FDP",
+            "name": "Kai Detlefsen",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "FDP",
+            "name": "Leo Knauf",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "DIE LINKE",
+            "name": "Meike Taeubig",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Nesrettin Akay",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "DIE LINKE",
+            "name": "Onur Ocak",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "CDU",
+            "name": "Ralf Nettelstroth",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "CDU",
+            "name": "Tom Brüntrup",
+            "img": "https://via.placeholder.com/200x100.png"
+          }
+        ]
       },
       {
-        "header": "SPD",
-        "name": "Christina Kampmann",
-        "img": "https://via.placeholder.com/200x100.png"
-      },
-      {
-        "header": "SPD",
-        "name": "Christina Kampmann",
-        "img": "https://via.placeholder.com/200x100.png"
+        "stadtname": "Kreis Gütersloh",
+        "kandidat": [
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          },
+          {
+            "header": "SPD",
+            "name": "Christina Kampmann",
+            "img": "https://via.placeholder.com/200x100.png"
+          }
+        ]
       }
     ]
   }
