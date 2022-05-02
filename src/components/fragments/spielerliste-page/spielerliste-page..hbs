@@ -1,12 +1,19 @@
 <div
   class="
-    nw-bg-white nw-grid nw-grid-cols-2
-    sm:nw-grid-cols-3
+    nw-bg-white nw-grid nw-grid-cols-3
+    sm:nw-grid-cols-4
     md:nw-grid-cols-6
-    nw-gap-2 nw-px-2 nw-py-4
+    nw-gap-2 nw-py-4 nw-px-2
   "
 >
   {{#each this.spielerliste}}
-  <img class="nw-w-30 nw-h-30 nw-rounded-md" src="{{this.spieler}}" alt="" />
+  <div>
+    <img
+      class="nw-w-22 nw-h-22 nw-rounded-md nw-object-cover"
+      src="{{this.spielerimg}}"
+      alt=""
+    />
+    <div class="nw-text-sm sm:nw-text-tiny">{{this.spielername}}</div>
+  </div>
   {{/each}}
 </div>
