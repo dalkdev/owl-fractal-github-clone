@@ -8,57 +8,17 @@
           {
             "header": "SPD",
             "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Osei",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "DIE GRÜNEN",
-            "name": "Cim Kartal",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "DIE LINKE",
-            "name": "Florian Straetmanns",
-            "img": "https://via.placeholder.com/200x100.png"
+            "img": "https://www.nw.de/_em_daten/_cache/image/1xekc0SVN5N2FSQ295THpsTjdyUlVYZzBJd1RlaDZ2d3Y4VkxOTmFYN1d2YUJkaG5td1hWZ0x3NjltaVhYbkQ2dTkwVUlFV3hoOEJRdVBBQ0VYS2MxRkE9PQ/211012-1533-345880571.jpg"
           },
           {
             "header": "FDP",
             "name": "Kai Detlefsen",
-            "img": "https://via.placeholder.com/200x100.png"
+            "img": "https://www.nw.de/_em_daten/_cache/image/1xNG9HcmlmQkdwU2RLdjdRZ1JXNnFRdTlLOEt6WnVBUDcvR2t4bVNMdjc5SVZOaEEwK0plUzdYZzRISVZrMllGbGxZRDNNelNiNHVFYkNDUWFoVnYvcURZU0FHampWWFJ0U2RFM2c4UXZaNms9/181209-1826-7d7b7484c3cfc922.jpg"
           },
           {
             "header": "FDP",
             "name": "Leo Knauf",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "DIE LINKE",
-            "name": "Meike Taeubig",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Nesrettin Akay",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "DIE LINKE",
-            "name": "Onur Ocak",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "CDU",
-            "name": "Ralf Nettelstroth",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "CDU",
-            "name": "Tom Brüntrup",
-            "img": "https://via.placeholder.com/200x100.png"
+            "img": "http://dcx-app.it4media.de/device_nw_ori_09/2022/04-05/6e/c1/file7kfl9e4orif199ge1ddl.jpg"
           }
         ]
       },
@@ -67,88 +27,133 @@
         "kandidat": [
           {
             "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
+            "name": "Thosrten Klute",
+            "img": "https://www.nw.de/_em_daten/_cache/image/1xekc0SVN5N2FSQ295THpsTjdyUlVYZzhuZEZQVE9JT3pHT1A2cHpYSWg4OFI1WEhocHJSc3h1ckMrQVJCd3RIZkF6eW5yaG9mZnI0a1BmODNKeiswUGc9PQ/210701-1923-klute2.jpg"
           },
           {
             "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
+            "name": "Stefan Schneidt",
+            "img": "https://www.nw.de/_em_daten/_cache/image/1xekc0SVN5N2FSQ295THpsTjdyUlVYcDRZOHpVMnhWNWs4WGdkWE5SZmlVMktUd25sRmlVcU5OSU9CemxqSlF1TlZWUVBYRFpsZDk4OGJiMmI0bmdRaUo4N3VlbXlPT1NFajNJK2wvRlJQTDQ9/220208-1714-360102749.jpg"
           },
           {
             "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
+            "name": "Rachel Hasler",
+            "img": "https://www.nrwspd.de/wp-content/uploads/sites/2/2022/01/hasler-rachel-ltw22-900x900.png"
+          },
+          {
+            "header": "FDP",
+            "name": "Martina Schneidereit",
+            "img": "https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png"
+          },
+          {
+            "header": "FDP",
+            "name": "Daniel Loermann",
+            "img": "https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png"
+          },
+          {
+            "header": "FDP",
+            "name": "Berit Seidel",
+            "img": "https://berit-seidel.wahl.freie-demokraten.de/sites/default/files/styles/front_wide/public/2022-02/Berit_Seidel_1718.jpg?itok=qkic_uXn"
+          }
+        ]
+      },
+      {
+        "stadtname": "Kreis Lippe",
+        "kandidat": [
+          {
+            "header": "SPD",
+            "name": "Ellen Stock",
+            "img": "https://www.nrwspd.de/wp-content/uploads/sites/2/2022/01/stock-ellen-ltw22-900x900.png"
           },
           {
             "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
+            "name": "Dr. Dennis Maezler",
+            "img": "https://www.dennis-maelzer.de/files/Maelzer/1_Personen/Dennis/IMG_9180_n.jpg"
+          },
+          {
+            "header": "FDP",
+            "name": "Martina Hannen",
+            "img": "https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png"
+          },
+          {
+            "header": "FDP",
+            "name": "Dr.Elmar Thyzel",
+            "img": "http://www.fdp-detmold.de/wp-content/uploads/Thyzel-bearbeitet-800x533.jpg"
+          }
+        ]
+      },
+      {
+        "stadtname": "Kreis Herford",
+        "kandidat": [
+          {
+            "header": "SPD",
+            "name": "Alexander Bayer",
+            "img": "https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png"
           },
           {
             "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
+            "name": "Dr.Dennis Maezler",
+            "img": "https://www.dennis-maelzer.de/files/Maelzer/1_Personen/Dennis/IMG_9180_n.jpg"
+          },
+          {
+            "header": "FDP",
+            "name": "Celine Joswig",
+            "img": "https://www.nw.de/_em_daten/_cache/image/1xekc0SVN5N2FSQ295THpsTjdyUlVYaFVJaTdKMGF1ZnBPZXcxNEtwTXpDT2NKNDFoWHQvY044QlVEaktrYzNyS1doeXBROHRELzdwaFh4cnZGcVZOc1E9PQ/210118-1609-joswig.jpg"
+          },
+          {
+            "header": "FDP",
+            "name": "Sven Schäffer",
+            "img": "http://dcx-app.it4media.de/device_nw_ori_14/2021/12-11/00/5d/file7iskhcw17n7yykbyovo.jpg"
+          },
+          {
+            "header": "FDP",
+            "name": "Nils Allermeier",
+            "img": "https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png"
+          }
+        ]
+      },
+      {
+        "stadtname": "Kreis Paderborn",
+        "kandidat": [
+          {
+            "header": "SPD",
+            "name": "Michael Sprink",
+            "img": "https://www.nw.de/_em_daten/_cache/image/1xdGZ6dnFCSmFMNDFjZkMvZlNBbmVRNzJKVE9DcUZxenNNYjJva2xXMFNjOHRHNEhBS3FvdjEvUW9xbmJRakU3TlVGeG9pWUh2NktOZnB3WU1JUitVKzd2R0xVTUJVSWpGRU9qanVrcEdRNDg9/131031-1815-3fded28bb8bc371f.jpg"
           },
           {
             "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
+            "name": "Roger Voigtländer",
+            "img": "https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png"
           },
           {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
+            "header": "FDP",
+            "name": "Ankel Zillmann",
+            "img": "https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png"
+          }
+        ]
+      },
+      {
+        "stadtname": "Kreis Höxter",
+        "kandidat": [
           {
             "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
+            "name": "Nora Wieners",
+            "img": "https://www.nw.de/_em_daten/_cache/image/1xekc0SVN5N2FSQ295THpsTjdyUlVYZzBJd1RlaDZ2d3Y4VkxOTmFYN1d2Ym9xaXpnSU4vWWVSMURYOHlCZVVDeHZrNENZVVp3TWpOUGNBWTE2em5ZdHc9PQ/220207-1857-359953805.jpg"
+          }
+        ]
+      },
+      {
+        "stadtname": "Kreis Minden Lübbecke",
+        "kandidat": [
+          {
+            "header": "FDP",
+            "name": "Daniela Beihl",
+            "img": "https://www.nw.de/_em_daten/_cache/image/1xekc0SVN5N2FSQ295THpsTjdyUlVYb1lpOGlod3B3OFEyYkdKR044VmdpQ04rdWk1aHRjbHQ2WU81OTVUZk0wZ0ZTekRSMVNoYTNRSUZPZkdScVh0a2ZCMHNQd2lMQjFuQmlHV1I3T2hIc3c9/170504-1902-582ba7797f972318.jpg"
           },
           {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
-          },
-          {
-            "header": "SPD",
-            "name": "Christina Kampmann",
-            "img": "https://via.placeholder.com/200x100.png"
+            "header": "FDP",
+            "name": "Prof.Dr.Dr.Matthias König",
+            "img": "https://matthias-koenig.wahl.freie-demokraten.de/sites/default/files/styles/front_wide/public/2022-02/landing_0.png?itok=y0_BZB7G"
           }
         ]
       }
