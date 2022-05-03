@@ -31,6 +31,12 @@
     }
   }
 
+  &.nw-slider-text {
+    .embla__dot:after {
+      background-color: #4d4d4d;
+    }
+  }
+
   &.nw-sport-news {
     .embla__dot {
       width: 13px;
