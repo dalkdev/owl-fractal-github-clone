@@ -37,7 +37,9 @@
       <div class="embla__container">
         {{#each images}}
         <div class="embla__slide">
-          <div class="embla__slide__inner nw-bg-clip-padding nw-inline">
+          <div
+            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
+          >
             <div class="nw-aspect-w-4 nw-aspect-h-3">
               <img
                 class="
@@ -72,11 +74,10 @@
           nw-absolute
           nw-rounded-full
           nw-object-center
-          nw-top-1/2
-          nw-left-2
-          nw-transform
-          nw--translate-y-1/2
-          nw-cursor-pointer
+          nw-top-28
+          md:nw-top-32
+          lg:
+          nw-left-2 nw-transform nw--translate-y-1/2 nw-cursor-pointer
         "
       >
         <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
@@ -95,11 +96,10 @@
           nw-absolute
           nw-rounded-full
           nw-object-center
-          nw-top-1/2
-          nw-right-2
-          nw-transform
-          nw--translate-y-1/2
-          nw-cursor-pointer
+          nw-top-28
+          md:nw-top-32
+          lg:
+          nw-right-2 nw-transform nw--translate-y-1/2 nw-cursor-pointer
         "
       >
         <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}" />
@@ -109,7 +109,6 @@
 
   <!-- Dots -->
   <div class="embla__dots nw-mt-0 sm:nw-mt-2"></div>
-
   <script type="text/template" id="embla-dot-template">
     <button class="embla__dot" type="button"></button>
   </script>
