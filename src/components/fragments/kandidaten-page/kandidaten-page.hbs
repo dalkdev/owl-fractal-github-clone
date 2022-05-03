@@ -8,19 +8,21 @@
   >
     {{#each this.kandidat}}
     <div class="nw-pt-2">
-      <img
-        alt=""
-        class="nw-rounded-md nw-w-full nw-object-cover"
-        src="{{this.img}}"
-      />
-      <div
-        class="
-          nw-pt-2 nw-uppercase nw-font-medium nw-text-tiny nw-text-gray-600
-        "
-      >
-        {{this.header}}
-      </div>
-      <div class="nw-font-bold nw-text-base nw-text-black">{{this.name}}</div>
+      <a href="{{this.href}}" class="nw-content-center">
+        <img
+          alt=""
+          class="nw-rounded-md nw-w-full nw-object-cover"
+          src="{{this.img}}"
+        />
+        <div
+          class="
+            nw-pt-2 nw-uppercase nw-font-medium nw-text-tiny nw-text-gray-600
+          "
+        >
+          {{this.header}}
+        </div>
+        <div class="nw-font-bold nw-text-base nw-text-black">{{this.name}}</div>
+      </a>
     </div>
     {{/each}}
   </div>
