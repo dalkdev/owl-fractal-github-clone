@@ -1,0 +1,105 @@
+{
+  "status": "qm",
+  "context": {
+    "nw-logo": "/images/nw-wortmarke-logo.svg",
+    "absolute-text-part1": "ICH HABE DIE DIGITALE ZEITUNG DER NW GETESTET UND WAR BEGEISTERT.",
+    "absolute-text-part2": "JETZT LESE ICH TÄGLICH DAS EPAPER.“",
+    "description1": " Mit dem ePaper der NW bekommen Sie die digitale Version Ihrer Zeitung schon ab 3.30 Uhr in ihren elektronischen Briefkasten. Einfach Tablet,Smartphone oder PC starten starten und loslesen. Zusätzlich haben Sie Zugriff auf alle Lokalausgaben und auf alle sonst kostenpflichtigen NW+ Inhalte auf nw.de.",
+    "description2": "Testen Sie jetzt das ePaper 4 Wochen kostenlos und lernen Sie die vielen Vorteile kennen.",
+    "menu-element": [
+      "Das ePaper",
+      "Vorteile",
+      "Überblick",
+      "Bewertungen",
+      "Funktionen",
+      "Kontakt",
+      "Impressum",
+      "Datenschutz"
+    ],
+    "box": [
+      {
+        "box-image": "https://via.placeholder.com/200x100.png",
+        "title": "Preisvorteil",
+        "elements": [
+          {
+            "caption": "Sie können das ePaper 4 Wochen kostenlos testen. Anschließend kostet es im Abo nur 29,90€/Monat und ist monatlich kündbar."
+          },
+          {
+            "caption": "Für nur 5€ mehr im Monat erhalten Sie ein Samsung Galaxy Tab A8 Wifi oder ein Apple iPad 64 GB Wifi dazu. (Mindestlaufzeit 24 Monate)"
+          },
+          {
+            "caption": " NW+ Inhalte auf nw.de kostenlos"
+          },
+          {
+            "caption": " Ein Abo – auf vier Geräten gleichzeitig lesen"
+          }
+        ]
+      },
+      {
+        "box-image": "https://via.placeholder.com/200x100.png",
+        "title": "Mehr Komfort",
+        "elements": [
+          {
+            "caption": "Sie können das ePaper 4 Wochen kostenlos testen. Anschließend kostet es im Abo nur 29,90€/Monat und ist monatlich kündbar."
+          },
+          {
+            "caption": "Für nur 5€ mehr im Monat erhalten Sie ein Samsung Galaxy Tab A8 Wifi oder ein Apple iPad 64 GB Wifi dazu. (Mindestlaufzeit 24 Monate)"
+          },
+          {
+            "caption": " NW+ Inhalte auf nw.de kostenlos"
+          },
+          {
+            "caption": " Ein Abo – auf vier Geräten gleichzeitig lesen"
+          }
+        ]
+      },
+      {
+        "box-image": "https://via.placeholder.com/200x100.png",
+        "title": "Zusätzliche Inhalte",
+        "elements": [
+          {
+            "caption": "Lesen Sie die Abendausgabe ab 22 Uhr"
+          },
+          {
+            "caption": "Exklusiv eine 7. Ausgabe am Sonntag lesen"
+          },
+          {
+            "caption": "Alle 14 Tage ein digitales Magazin von Gruner + Jahr, z.B. Capital, Art oder Guido"
+          },
+          {
+            "caption": "Mit interaktiven Rätseln und Sudoku"
+          }
+        ]
+      }
+    ],
+    "button": "Jetzt das ePaper kostenlos testen",
+    "epaper-info": [
+      {
+        "title": "Was ist das ePaper? ",
+        "caption": "Das ePaper ist die digitale Zeitung Ihrer NW. Sie bekommen Ihre Zeitung damit statt auf Papier digital auf Ihr Smartphone, Tablet oder Ihren PC."
+      },
+      {
+        "title": "Unser Angebot für Sie ",
+        "caption": "Testen Sie das ePaper 4 Wochen kostenlos. Anschließend können Sie es für nur 29,90€/Monat weiternutzen. Es ist bequem monatlich kündbar."
+      },
+      {
+        "title": "Die Endgeräte",
+        "caption": "Sie wünschen ein passendes Gerät dazu? Für nur 5€ mehr im Monat, also 34,90€/Monat, erhalten Sie z.B. das Samsung Galaxy TAB A8 Wifi oder das Apple iPad 64 GB Wifi dazu. Mindestlaufzeit 24 Monate."
+      }
+    ],
+    "epaper-info2": [
+      {
+        "title": "Bequemer informieren ",
+        "caption": "Sie können das ePaper auch zusätzlich zum bereits bestehenden Printabo (Mo-Sa) nutzen. Vorteilspreis: + 5 €/mtl. ohne Gerät oder + 15 €/mtl. mit Gerät (Mindestvertragslaufzeit 24 Monate."
+      },
+      {
+        "title": "Lokales und Besonderes lesen ",
+        "caption": "Zusätzlich zu Ihrem eigenen Regionalteil haben Sie Zugriff auf alle Lokalausgaben der NW. Außerdem auf Beilagen, die Prisma und viele weitere Magazine."
+      },
+      {
+        "title": "Auch Print und ePaper möglich ",
+        "caption": "Sie können die Schriftgrößen ganz einfach an Ihre Bedürfnisse anpassen.Mindestlaufzeit 24 Monate."
+      }
+    ]
+  }
+}
