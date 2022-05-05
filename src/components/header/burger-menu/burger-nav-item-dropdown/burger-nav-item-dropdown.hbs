@@ -1,0 +1,30 @@
+<li class="nw-nav-item" id="navitem-0-0">
+  <div>
+    <a href="#" class="nw-font-bold">{{label}}</a>
+    <div class="nw-menu-seperator"></div>
+    {{>'@dropdown-indicator' (contextData '@dropdown-indicator')}}
+  </div>
+  <ul class="nw-burger-nav-2nd">
+    {{#each menus}}
+    <li class="nw-burger-nav-2nd-item nw-nav-item">
+      <div>
+        <a href="#" class="nw-font-bold">
+          {{#if this.menus}} {{this.label}} {{else}} {{this}} {{/if}}
+        </a>
+        {{#if this.menus}}
+        <div class="nw-menu-seperator"></div>
+        {{>'@dropdown-indicator' target_3rd}} {{/if}}
+      </div>
+      {{#if this.menus}}
+      <ul class="nw-burger-nav-3rd">
+        {{#each this.menus}}
+        <li class="nw-burger-nav-3rd-item">
+          <a href="#">{{this}}</a>
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+</li>

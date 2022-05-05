@@ -1,0 +1,858 @@
+<div class="nw-bg-white nw-pb-4 nw-mx-0 nw-px-4 md:nw-px-48">
+  <div>
+    <p
+      class="
+        nw-text-left
+        nw-text-base
+        nw-font-roboto
+        nw-font-bold
+        nw-opacity-100
+        nw-text-black
+        nw-pt-4
+        nw-pb-1
+        nw-tracking-normal
+      "
+    >
+      {{headline}}
+    </p>
+  </div>
+
+  <div>
+    <p
+      class="
+        nw-text-left
+        nw-text-tiny
+        nw-font-roboto
+        nw-font-medium
+        nw-opacity-100
+        nw-text-black
+        nw-py-1
+        nw-tracking-normal
+      "
+    >
+      {{caption}}
+    </p>
+  </div>
+  <div>
+    <form action="" id="myForm">
+      <!-- Anrede-->
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Anrede</label
+        >
+        <select
+          class="
+            nw-w-full
+            nw-px-1
+            nw-py-1
+            nw-mx-auto
+            nw-text-tiny
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+          id="anrede"
+          name=""
+        >
+          <option value="" disabled selected hidden>Bitte wählen</option>
+          <option value="herr">Herr</option>
+          <option value="frau">Frau</option>
+        </select>
+
+        <p
+          id="anredeT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Anrede eingeben
+        </p>
+      </div>
+      <!-- vorname-->
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Vorname</label
+        >
+        <input
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-text-tiny
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="text"
+          placeholder=""
+          name=""
+          id="vname"
+        />
+        <p
+          id="vnameT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Vorname eingeben
+        </p>
+      </div>
+
+      <!-- Nachname-->
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Nachname</label
+        >
+        <input
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-text-tiny
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="text"
+          placeholder=""
+          name=""
+          id="nname"
+        />
+        <p
+          id="nnameT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Nachname eingeben
+        </p>
+      </div>
+
+      <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 md:nw-gap-2">
+        <!-- Straße-->
+        <div class="nw-col-span-2">
+          <div class="nw-mb-4">
+            <label
+              class="
+                nw-font-roboto
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+                nw-text-black
+                nw-tracking-normal
+              "
+              for=""
+              >Straße</label
+            >
+            <input
+              class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-tiny
+                nw-box-border
+                nw-cursor-pointer
+              "
+              type="text"
+              placeholder=""
+              name=""
+              id="strasse"
+            />
+            <p
+              id="strasseT"
+              class="
+                nw-text-red-500
+                nw-text-xs
+                nw-font-medium
+                nw-tracking-normal
+                nw-font-roboto
+                nw-hidden
+              "
+            >
+              Bitte Straße eingeben
+            </p>
+          </div>
+        </div>
+        <!-- Hausnummer-->
+        <div>
+          <div class="nw-mb-4">
+            <label
+              class="
+                nw-font-roboto
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+                nw-text-black
+                nw-tracking-normal
+              "
+              for=""
+              >Hausnummer</label
+            >
+            <input
+              class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-tiny
+                nw-box-border
+                nw-cursor-pointer
+              "
+              type="text"
+              placeholder=""
+              name=""
+              id="hnummer"
+            />
+            <p
+              id="hnummerT"
+              class="
+                nw-text-red-500
+                nw-text-xs
+                nw-font-medium
+                nw-tracking-normal
+                nw-font-roboto
+                nw-hidden
+              "
+            >
+              Bitte Hausnummer eingeben
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 md:nw-gap-2">
+        <!-- PLZ-->
+        <div>
+          <div class="nw-mb-4">
+            <label
+              class="
+                nw-font-roboto
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+                nw-text-black
+                nw-tracking-normal
+              "
+              for=""
+              >PLZ</label
+            >
+            <input
+              class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-tiny
+                nw-box-border
+                nw-cursor-pointer
+              "
+              type="text"
+              placeholder=""
+              name=""
+              id="plz"
+            />
+            <p
+              id="plzT"
+              class="
+                nw-text-red-500
+                nw-text-xs
+                nw-font-medium
+                nw-tracking-normal
+                nw-font-roboto
+                nw-hidden
+              "
+            >
+              Bitte PLZ eingeben
+            </p>
+          </div>
+        </div>
+        <!-- Ort-->
+        <div class="nw-col-span-2">
+          <div class="nw-mb-4">
+            <label
+              class="
+                nw-font-roboto
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+                nw-text-black
+                nw-tracking-normal
+              "
+              for=""
+              >Ort</label
+            >
+            <input
+              class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-tiny
+                nw-box-border
+                nw-cursor-pointer
+              "
+              type="text"
+              placeholder=""
+              name=""
+              id="ort"
+            />
+            <p
+              id="ortT"
+              class="
+                nw-text-red-500
+                nw-text-xs
+                nw-font-medium
+                nw-tracking-normal
+                nw-font-roboto
+                nw-hidden
+              "
+            >
+              Bitte Ort eingeben
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--land-->
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Land</label
+        >
+        <select
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1
+            nw-mx-auto
+            nw-text-tiny
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-tiny
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="text"
+          placeholder=""
+          name=""
+          id="land1"
+        >
+          <option value="Deutschland">Deutschland</option>
+          <option value="herr">Herr</option>
+          <option value="frau">Frau</option>
+        </select>
+        <p
+          id="land1T"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Land eingeben
+        </p>
+      </div>
+
+      <!--email-->
+      <div class="nw-mb-4">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >E-Mail</label
+        >
+        <input
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-tiny
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="email"
+          placeholder=""
+          name=""
+          id="eMail"
+        />
+        <p
+          id="eMailT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte E-Mail eingeben
+        </p>
+      </div>
+
+      <!-- Passwort-->
+      <div class="nw-mb-2">
+        <label
+          class="
+            nw-font-roboto
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+          for=""
+          >Passwort</label
+        >
+        <input
+          class="
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-tiny
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="password"
+          placeholder="Ihr Passwort muss min. 6 Zeichen lang sein"
+          name=""
+          id="passwort"
+        />
+        <p
+          id="passwortT"
+          class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-font-roboto
+            nw-hidden
+          "
+        >
+          Bitte Passwort eingeben
+        </p>
+      </div>
+      <!-- Conditions-->
+      <div class="nw-mb-2 nw-mt-4 nw-flex">
+        <div>
+          <input
+            type="checkbox"
+            name="checked-demo"
+            id="checkCondition1"
+            class="
+              nw-form-tick
+              nw-border
+              nw-rounded-sm
+              nw-nw-border-gray-300
+              nw-appearance-none
+              nw-cursor-pointer
+              nw-h-3
+              nw-w-3
+              checked:nw-bg-gray-600
+              focus:outline-none
+            "
+            onclick="checkFunction()"
+          />
+        </div>
+        <div>
+          <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
+            <span
+              class="
+                nw-pr-6
+                nw-text-gray-700
+                nw-text-xs
+                nw-font-normal
+                nw-text-left
+                nw-tracking-normal
+                nw-opacity-100
+              "
+            >
+              {{condition1}}
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="nw-my-1 nw-flex">
+        <div>
+          <input
+            type="checkbox"
+            name="checked-demo"
+            id="checkCondition2"
+            class="
+              nw-form-tick
+              nw-border
+              nw-rounded-sm
+              nw-nw-border-gray-300
+              nw-appearance-none
+              nw-cursor-pointer
+              nw-h-3
+              nw-w-3
+              checked:nw-bg-gray-600
+              focus:outline-none
+            "
+            onclick="checkFunction()"
+          />
+        </div>
+        <div>
+          <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
+            <span
+              class="
+                nw-pr-6
+                nw-text-gray-700
+                nw-text-xs
+                nw-font-normal
+                nw-text-left
+                nw-tracking-normal
+                nw-opacity-100
+              "
+            >
+              {{condition2}}</span
+            >
+          </label>
+        </div>
+      </div>
+
+      <input
+        disabled
+        id="registerButton"
+        class="
+          nw-w-full
+          nw-px-8
+          nw-py-1
+          nw-mx-auto
+          nw-my-1
+          nw-inline-block
+          nw-rounded
+          nw-font-roboto
+          nw-text-tiny
+          nw-font-bold
+          nw-text-white
+          nw-cursor-pointer
+          focus:nw-bg-red-700
+          disabled:nw-bg-red-100
+        "
+        type="button"
+        value="Registrieren"
+        onclick="onClickRegistrieren(); return false;"
+      />
+    </form>
+  </div>
+</div>
+
+<script>
+  function checkFunction() {
+    var checkBox1 = document.getElementById('checkCondition1');
+    var checkBox2 = document.getElementById('checkCondition2');
+    var bRegister = document.getElementById('registerButton');
+    if (
+      checkBox1.checked == true &&
+      (checkBox2.checked == true || checkBox2.checked == false)
+    ) {
+      bRegister.disabled = false;
+      bRegister.style.backgroundColor = '#D20A11';
+    } else {
+      bRegister.disabled = true;
+      bRegister.style.backgroundColor = '#E1B9BA';
+    }
+  }
+</script>
+
+<script>
+  function onClickRegistrieren() {
+    var valid = Validator();
+    if (valid) alert('ok');
+  }
+
+  function Validator() {
+    var gender = document.getElementById('anrede');
+    var fname = document.getElementById('vname');
+    var lname = document.getElementById('nname');
+    var street = document.getElementById('strasse');
+    var hnumber = document.getElementById('hnummer');
+    var zip = document.getElementById('plz');
+    var place = document.getElementById('ort');
+    var land = document.getElementById('land1');
+    var email = document.getElementById('eMail');
+    var password = document.getElementById('passwort');
+
+    var hide1 = document.getElementById('anredeT');
+    var hide2 = document.getElementById('vnameT');
+    var hide3 = document.getElementById('nnameT');
+    var hide4 = document.getElementById('strasseT');
+    var hide5 = document.getElementById('hnummerT');
+    var hide6 = document.getElementById('plzT');
+    var hide7 = document.getElementById('ortT');
+    var hide71 = document.getElementById('land1T');
+    var hide8 = document.getElementById('eMailT');
+    var hide9 = document.getElementById('passwortT');
+
+    var valid = true;
+
+    if (gender.value == '') {
+      valid = false;
+      gender.classList.add('nw-border-red-500');
+      hide1.style.display = 'block';
+    } else {
+      gender.classList.remove('nw-border-red-500');
+      hide1.style.display = 'none';
+    }
+
+    if (fname.value == '') {
+      valid = false;
+      fname.classList.add('nw-border-red-500');
+      hide2.style.display = 'block';
+    } else {
+      fname.classList.remove('nw-border-red-500');
+      hide2.style.display = 'none';
+    }
+
+    if (lname.value == '') {
+      valid = false;
+      lname.classList.add('nw-border-red-500');
+      hide3.style.display = 'block';
+    } else {
+      lname.classList.remove('nw-border-red-500');
+      hide3.style.display = 'none';
+    }
+    if (street.value == '') {
+      valid = false;
+      street.classList.add('nw-border-red-500');
+      hide4.style.display = 'block';
+    } else {
+      street.classList.remove('nw-border-red-500');
+      hide4.style.display = 'none';
+    }
+
+    if (hnumber.value == '') {
+      valid = false;
+      hnumber.classList.add('nw-border-red-500');
+      hide5.style.display = 'block';
+    } else {
+      hnumber.classList.remove('nw-border-red-500');
+      hide5.style.display = 'none';
+    }
+    if (zip.value == '') {
+      valid = false;
+      zip.classList.add('nw-border-red-500');
+      hide6.style.display = 'block';
+    } else {
+      zip.classList.remove('nw-border-red-500');
+      hide6.style.display = 'none';
+    }
+    if (place.value == '') {
+      valid = false;
+      place.classList.add('nw-border-red-500');
+      hide7.style.display = 'block';
+    } else {
+      place.classList.remove('nw-border-red-500');
+      hide7.style.display = 'none';
+    }
+    if (land.value == '') {
+      valid = false;
+      land.classList.add('nw-border-red-500');
+      hide71.style.display = 'block';
+    } else {
+      land.classList.remove('nw-border-red-500');
+      hide71.style.display = 'none';
+    }
+    if (email.value == '') {
+      valid = false;
+      email.classList.add('nw-border-red-500');
+      hide8.style.display = 'block';
+    } else {
+      email.classList.remove('nw-border-red-500');
+      hide8.style.display = 'none';
+    }
+    if (password.value == '') {
+      valid = false;
+      password.classList.add('nw-border-red-500');
+      hide9.style.display = 'block';
+    } else {
+      password.classList.remove('nw-border-red-500');
+      hide9.style.display = 'none';
+    }
+    return valid;
+  }
+</script>
+
+<script>
+  document.getElementById('anrede').addEventListener('change', alertAnrede);
+  document.getElementById('vname').addEventListener('change', alertVorname);
+  document.getElementById('nname').addEventListener('change', alertNachname);
+  document.getElementById('strasse').addEventListener('change', alertStrasse);
+  document.getElementById('hnummer').addEventListener('change', alertHnummer);
+  document.getElementById('plz').addEventListener('change', alertPlz);
+  document.getElementById('ort').addEventListener('change', alertOrt);
+  document.getElementById('land1').addEventListener('change', alertLand1);
+  document.getElementById('eMail').addEventListener('change', alertEmail);
+  document.getElementById('passwort').addEventListener('change', alertPasswort);
+
+  var hide1 = document.getElementById('anredeT');
+  var hide2 = document.getElementById('vnameT');
+  var hide3 = document.getElementById('nnameT');
+  var hide4 = document.getElementById('strasseT');
+  var hide5 = document.getElementById('hnummerT');
+  var hide6 = document.getElementById('plzT');
+  var hide7 = document.getElementById('ortT');
+  var hide71 = document.getElementById('land1T');
+  var hide8 = document.getElementById('eMailT');
+  var hide9 = document.getElementById('passwortT');
+
+  function alertAnrede() {
+    var x = document.getElementById('anrede');
+    x.classList.remove('nw-border-red-500');
+    hide1.style.display = 'none';
+  }
+
+  function alertVorname() {
+    var x = document.getElementById('vname');
+    x.classList.remove('nw-border-red-500');
+    hide2.style.display = 'none';
+  }
+
+  function alertNachname() {
+    var x = document.getElementById('nname');
+    x.classList.remove('nw-border-red-500');
+    hide3.style.display = 'none';
+  }
+
+  function alertStrasse() {
+    var x = document.getElementById('strasse');
+    x.classList.remove('nw-border-red-500');
+    hide4.style.display = 'none';
+  }
+
+  function alertHnummer() {
+    var x = document.getElementById('hnummer');
+    x.classList.remove('nw-border-red-500');
+    hide5.style.display = 'none';
+  }
+
+  function alertPlz() {
+    var x = document.getElementById('plz');
+    x.classList.remove('nw-border-red-500');
+    hide6.style.display = 'none';
+  }
+
+  function alertOrt() {
+    var x = document.getElementById('ort');
+    x.classList.remove('nw-border-red-500');
+    hide7.style.display = 'none';
+  }
+
+  function alertLand1() {
+    var x = document.getElementById('land1');
+    x.classList.remove('nw-border-red-500');
+    hide71.style.display = 'none';
+  }
+
+  function alertEmail() {
+    var x = document.getElementById('eMail');
+    x.classList.remove('nw-border-red-500');
+    hide8.style.display = 'none';
+  }
+
+  function alertPasswort() {
+    var x = document.getElementById('passwort');
+    x.classList.remove('nw-border-red-500');
+    hide9.style.display = 'none';
+  }
+</script>

@@ -24,5 +24,9 @@
     hyphens: auto;
     line-height: 24px;
     @apply nw-no-underline nw-text-black nw-mt-0 md:nw-mt-2 nw-ml-2 md:nw-ml-0 nw-w-full md:nw-max-w-full;
+
+    img {
+      display: inline-block;
+    }
   }
 }

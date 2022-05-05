@@ -1,0 +1,101 @@
+{
+  "status": "qm",
+  "context": {
+    "image-src-banner": "/images/nw-plus-landingpage/banner-women-notebook.jpg",
+    "image-src-nw": "/images/nw-plus-landingpage/480x480-banner-nw+_smartphone.jpg",
+    "image-src-ipad-interaction": "/images/nw-plus-landingpage/ipad-interaction.png",
+    "image-src-ipad-ipad": "/images/nw-plus-landingpage/480x480-banner-nw+_ipad+ipad.jpg",
+    "image-src-ipad": "/images/nw-plus-landingpage/480x480-banner-nw+_ipad.jpg",
+    "caption": "",
+    "head": [
+      {
+        "header": "NW+ Webabo",
+        "title": "Rund um die Uhr top informiert",
+        "button": "Zum Angebot",
+        "items": [
+          {
+            "item1": "Unbegrenzt",
+            "item2": " alle Artikel ohne Einschränkungen auf NW.de lesen"
+          },
+          {
+            "item1": "Ständig aktuell:",
+            "item2": " Eilmeldungen, Nachrichten, Liveticker und Kommentare"
+          },
+          {
+            "item1": "News-App",
+            "item2": " kostenlos für Android und iPhone"
+          },
+          {
+            "item1": "Nützliche Funktionen:",
+            "item2": " Push-Nachrichten erhalten, Artikel kommentieren, merken und teilen"
+          }
+        ]
+      }
+    ],
+    "nwepaper": [
+      {
+        "header": "NW ePaper",
+        "title": "Ihre gewohnte Zeitung in digitaler Form",
+        "button": "Zum Angebot",
+        "items": [
+          {
+            "item1": "Vollständiger Zugang ",
+            "item2": "zu allen Inhalten der NW per Browser oder App"
+          },
+          {
+            "item1": "Wissensvorsprung:",
+            "item2": "schon am Vorabend die neue Ausgabe lesen"
+          },
+          {
+            "item1": "Bequem:",
+            "item2": "einfach ausgewählte Artikel vorlesen lassen"
+          },
+          {
+            "item1": "Ohne Risiko: ",
+            "item2": "Nach Mindestlaufzeit monatlich kündbar"
+          }
+        ]
+      }
+    ],
+    "nwbundle": [
+      {
+        "header": "NW Bundle",
+        "title": "Sie wünschen sich ein Tablet oder Smartphone?",
+        "button": "Jetzt Gerät wählen",
+        "items": [
+          {
+            "item1": "Bestellen Sie das ePaper-Abo in Kombination mit einem Gerät Ihrer Wahl"
+          },
+          {
+            "item1": "Attraktive Auswahl verschiedener Geräte im iOS und Android Bereich"
+          },
+          {
+            "item1": "Besonders preisattraktives Komplett- paket"
+          }
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Luisa-Michelle Bergmann"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Lars Hofmann"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Hermann Keller"
+      },
+      {
+        "image-src-s": "https://via.placeholder.com/150x150",
+        "caption": "Lorem ipsum dolor sit amet, conse tetur sadipscing elitr, sed dolas sana colad de asof dolas.",
+        "name": "Hilde Feldhammer"
+      }
+    ]
+  }
+}

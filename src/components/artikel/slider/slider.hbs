@@ -1,0 +1,140 @@
+<div class="slider nw-bg-custom-1-700 nw-pb-4 nw-pt-6">
+  <div class="nw-pl-4 md:nw-pl-20">
+    <div>
+      <p
+        class="
+          nw-text-white
+          nw-inline
+          nw-text-xl
+          nw-uppercase
+          nw-font-bold
+          nw-text-roboto
+          nw-border-solid
+          nw-border-red-500
+          nw-border-b-2
+          nw-pt-6
+        "
+      >
+        {{title}}
+      </p>
+    </div>
+    <div>
+      <p
+        class="
+          nw-text-white nw-text-left nw-text-base nw-tracking-normal
+          md:nw-text-xl
+          nw-font-normal nw-pt-2
+          md:nw-pb-1
+          nw-pr-1
+        "
+      >
+        {{caption}}
+      </p>
+    </div>
+  </div>
+  <div class="embla embla--main-carousel nw-pl-0.5 md:nw-pl-0">
+    <div class="embla__viewport relative">
+      <div class="embla__container">
+        {{#each images}}
+        <div class="embla__slide">
+          <div
+            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
+          >
+            <a href="" class="nw-cursor-pointer">
+              <div class="nw-aspect-w-4 nw-aspect-h-3">
+                <img
+                  class="
+                    embla__slide__img
+                    nw-h-full nw-w-full nw-object-none nw-rounded-md
+                  "
+                  src="{{src}}"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+      <div
+        class="
+          nw-hidden
+          md:nw-block
+          slider--button-prev
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-left-2
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
+        "
+      >
+        <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
+      </div>
+
+      <div
+        class="
+          nw-hidden
+          md:nw-block
+          slider--button-next
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-right-2
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
+        "
+      >
+        <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="embla__dots nw-mt-0 sm:nw-mt-2"></div>
+
+  <script type="text/template" id="embla-dot-template">
+    <button class="embla__dot" type="button"></button>
+  </script>
+
+  <!-- <div class="nw-px-4 nw-py-2">
+            <p class="nw-text-xs nw-text-grey-400">
+              Bild <span class="slider--counter-current">1</span> von
+              <span class="slider--counter-total"></span>
+            </p>
+          </div>-->
+
+  <!-- Thumbs -->
+  <!--<div class="embla embla--thumb">
+    <div class="embla__viewport px-4">
+      <div class="embla__container embla__container--thumb">
+        {{#each images}}
+        <div class="embla__slide embla__slide--thumb">
+          <div class="nw-aspect-w-3 nw-aspect-h-2">
+            <button
+              class="embla__slide__inner embla__slide__inner--thumb"
+              type="button"
+            >
+              <img class="embla__slide__thumbnail" src="{{src}}" />
+            </button>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>-->
+</div>

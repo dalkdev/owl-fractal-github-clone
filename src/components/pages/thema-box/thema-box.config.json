@@ -1,0 +1,492 @@
+{
+  "status": "qm",
+  "context": {
+    "buttons": [
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "glossar": [
+      {
+        "label": "Bielefeld",
+        "items": [
+          "1 Wetter Bielefeld",
+          "2 Polizei Bielefeld",
+          "3 Resturants Bielefeld",
+          "4 Inzidenzwert Bielefeld"
+        ]
+      },
+      {
+        "label": "Kreis Gütersloh",
+        "items": [
+          "1 Tim Kähler",
+          "2 Pit Clausen",
+          "3 Michael Dreier",
+          "4 Christian Haase"
+        ]
+      },
+      {
+        "label": "Kreis Herford",
+        "items": [
+          "1 Christian Haase",
+          "2 Wiehengebirge",
+          "3 Lippesee",
+          "4 Schloss Corvey"
+        ]
+      },
+      {
+        "label": "Kreis Höxter",
+        "items": [
+          "1 Polizei Gütersloh",
+          "2 Polizei Höxter",
+          "3 Feuerwehr Paderborn",
+          "4 Feuerwehr Höxter"
+        ]
+      },
+      {
+        "label": "Kreis Minden-Lübbecke",
+        "items": [
+          "1 Polizei Gütersloh",
+          "2 Polizei Höxter",
+          "3 Feuerwehr Paderborn",
+          "4 Feuerwehr Höxter"
+        ]
+      },
+      {
+        "label": "Kreis Paderborn",
+        "items": [
+          "1 Polizei Gütersloh",
+          "2 Polizei Höxter",
+          "3 Feuerwehr Paderborn",
+          "4 Feuerwehr Höxter"
+        ]
+      }
+    ],
+    "themabox": [
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Die Russische Invasion",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": " Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      },
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Corona Deutschland 2022",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      },
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Schwerster Kampf",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      }
+    ],
+    "row": [
+      {
+        "cell1": "Wetter Bielefeld",
+        "cell2": "Wetter Bielefeld"
+      },
+      {
+        "cell1": "Polizei Bielefeld",
+        "cell2": "Polizei Bielefeld"
+      },
+      {
+        "cell1": "Resturants Bielefeld",
+        "cell2": "Resturants Bielefeld"
+      },
+      {
+        "cell1": "Inzidenzwert Bielefeld",
+        "cell2": "Inzidenzwert Bielefeld"
+      },
+      {
+        "cell1": "Wetter Bielefeld",
+        "cell2": "Wetter Bielefeld"
+      },
+      {
+        "cell1": "Polizei Bielefeld",
+        "cell2": "Polizei Bielefeld"
+      },
+      {
+        "cell1": "Resturants Bielefeld",
+        "cell2": "Resturants Bielefeld"
+      },
+      {
+        "cell1": "Inzidenzwert Bielefeld",
+        "cell2": "Inzidenzwert Bielefeld"
+      },
+      {
+        "cell1": "Wetter Bielefeld",
+        "cell2": "Wetter Bielefeld"
+      },
+      {
+        "cell1": "Polizei Bielefeld",
+        "cell2": "Polizei Bielefeld"
+      },
+      {
+        "cell1": "Resturants Bielefeld",
+        "cell2": "Resturants Bielefeld"
+      },
+      {
+        "cell1": "Inzidenzwert Bielefeld",
+        "cell2": "Inzidenzwert Bielefeld"
+      },
+      {
+        "cell1": "Wetter Bielefeld",
+        "cell2": "Wetter Bielefeld"
+      },
+      {
+        "cell1": "Polizei Bielefeld",
+        "cell2": "Polizei Bielefeld"
+      },
+      {
+        "cell1": "Resturants Bielefeld",
+        "cell2": "Resturants Bielefeld"
+      },
+      {
+        "cell1": "Inzidenzwert Bielefeld",
+        "cell2": "Inzidenzwert Bielefeld"
+      }
+    ],
+    "lokal": [
+      {
+        "label": "Lokal",
+        "items": [
+          "Kreis Gütersloh",
+          "Kreis Herford",
+          "Kreis Höxter",
+          "Kreis Lippe",
+          "Kreis Minden-Lübbecke",
+          "Kreis Paderborn"
+        ]
+      }
+    ],
+    "stadt": [
+      {
+        "label": "Brackwede",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Dornberg",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Gadderbaum",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Heepen",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Jöllenbeck",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Mitte",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Schildesche",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Senne",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Sennestadt",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      },
+      {
+        "label": "Stieghorst",
+        "items": [
+          {
+            "cell1": "Wetter Bielefeld",
+            "cell2": "Wetter Bielefeld"
+          },
+          {
+            "cell1": "Polizei Bielefeld",
+            "cell2": "Polizei Bielefeld"
+          },
+          {
+            "cell1": "Resturants Bielefeld",
+            "cell2": "Resturants Bielefeld"
+          }
+        ]
+      }
+    ],
+    "wort": [
+      {
+        "cell1": "Aachen",
+        "cell2": "Aachen",
+        "cell3": "Aachen"
+      },
+      {
+        "cell1": "Aalen",
+        "cell2": "Aalen ",
+        "cell3": "Aalen"
+      },
+      {
+        "cell1": "Anton",
+        "cell2": "Anton",
+        "cell3": "Anton"
+      },
+      {
+        "cell1": "Ahlen",
+        "cell2": "Ahlen",
+        "cell3": "Ahlen"
+      },
+      {
+        "cell1": "Arnsberg",
+        "cell2": "Arnsberg",
+        "cell3": "Arnsberg"
+      },
+      {
+        "cell1": "Abenteuer",
+        "cell2": "Abenteuer",
+        "cell3": "Abenteuer"
+      },
+      {
+        "cell1": "Andreas Gossi",
+        "cell2": "Andreas Gossi",
+        "cell3": "Andreas Gossi"
+      },
+      {
+        "cell1": "Abendzeitung",
+        "cell2": "Abendzeitung",
+        "cell3": "Abendzeitung"
+      },
+      {
+        "cell1": "Abitur",
+        "cell2": "Abitur",
+        "cell3": "Abitur"
+      },
+      {
+        "cell1": "Abschiebung",
+        "cell2": "Abschiebung",
+        "cell3": "Abschiebung"
+      },
+      {
+        "cell1": "Abholung",
+        "cell2": "Abholung",
+        "cell3": "Abholung"
+      },
+      {
+        "cell1": "Abstieg",
+        "cell2": "Abstieg",
+        "cell3": "Abstieg"
+      },
+      {
+        "cell1": "Arminia",
+        "cell2": "Arminia",
+        "cell3": "Arminia"
+      },
+      {
+        "cell1": "Acapulco",
+        "cell2": "Acapulco",
+        "cell3": "Acapulco"
+      },
+      {
+        "cell1": "Achim",
+        "cell2": "Achim",
+        "cell3": "Achim"
+      },
+      {
+        "cell1": "ADAC",
+        "cell2": "ADAC",
+        "cell3": "ADAC"
+      },
+      {
+        "cell1": "ADHS",
+        "cell2": "ADHS",
+        "cell3": "ADHS"
+      },
+      {
+        "cell1": "Adidas",
+        "cell2": "Adidas",
+        "cell3": "Adidas"
+      },
+      {
+        "cell1": "Adolf Eichmann",
+        "cell2": "Adolf Eichmann",
+        "cell3": "Adolf Eichmann"
+      }
+    ]
+  }
+}

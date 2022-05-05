@@ -1,0 +1,26 @@
+{
+  "status": "qm",
+  "context": {
+    "email": {
+      "label": "E-Mail Adresse",
+      "placeholder": "E-Mail"
+    },
+    "password": {
+      "label": "Passwort",
+      "placeholder": "Passwort"
+    },
+    "buttontext": "Anmelden",
+
+    "link": "Hier kostenlos registrieren",
+
+    "buttontext-login": {
+      "label": "Anmelden"
+    },
+
+    "buttontext-profile": {
+      "label": "Mein Konto"
+    },
+
+    "buttontext-signout": "Abmelden"
+  }
+}

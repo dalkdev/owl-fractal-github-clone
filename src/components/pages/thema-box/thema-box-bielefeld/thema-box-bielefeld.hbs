@@ -1,0 +1,140 @@
+<div class="nw-mx-0">
+  <div
+    class="
+      nw-pt-12
+      nw-pb-6
+      nw-text-center
+      nw-font-roboto
+      nw-font-bold
+      nw-text-black
+      nw-text-2xl
+      nw-tracking-normal
+      nw-leading-6
+      nw-uppercase
+    "
+  >
+    Bielefeld
+  </div>
+  <!-- grid -->
+  <div
+    class="
+      nw-mx-4
+      sm:nw-mx-0
+      md:nw-mx-0
+      nw-grid nw-grid-cols-1
+      md:nw-grid-cols-3
+      nw-gap-4 nw-pt-6 nw-flex nw-flex-col nw-flex-row nw-justify-between
+    "
+  >
+    <!-- box1 -->
+    {{>'@single-thema-box'}}
+    <!-- box1 Ende -->
+  </div>
+  <div class="nw-mx-4 sm:nw-mx-0 md:nw-mx-0 nw-mt-8 nw-mb-4 nw-text-left">
+    <span class="nw-font-bold nw-text-xl nw-text-black"> Themenglossar </span>
+  </div>
+  <!-- buttons -->
+  {{>'@themenglossar-buttons'}}
+  <!-- buttons Ende -->
+  <div
+    class="
+      nw-mx-4
+      sm:nw-mx-0
+      md:nw-mx-0
+      nw-mt-8 nw-grid nw-grid-cols-1
+      md:nw-grid-cols-3
+      nw-gap-0
+      md:nw-gap-4
+    "
+  >
+    <!-- Bielefeld div -->
+    <div class="nw-col-span-2">{{>'@glossar-box-bielefeld'}}</div>
+    <!-- Bielefeld div Ende -->
+    <!-- ads mit lokal-div -->
+    <div>
+      <div></div>
+      <div class="nw-mt-72">
+        {{#each this.lokal}}
+        <div
+          class="
+            nw-text-sm
+            nw-font-medium
+            nw-text-gray-900
+            nw-bg-white
+            nw-rounded-md
+            nw-shadow-md
+            nw-border
+            nw-border-gray-200
+          "
+        >
+          <div
+            aria-current="true"
+            class="
+              nw-block
+              nw-py-2
+              nw-px-4
+              nw-w-full
+              nw-text-white
+              nw-bg-custom-1-700
+              nw-rounded-t-md
+              nw-border-b
+              nw-border-gray-200
+              nw-cursor-pointer
+              nw-text-base
+              nw-text-left
+              nw-font-bold
+            "
+          >
+            {{this.label}}
+          </div>
+          {{#each this.items}}
+          <a
+            href="#"
+            class="
+              nw-text-base
+              nw-font-medium
+              nw-text-black
+              nw-text-left
+              nw-block
+              nw-py-2
+              nw-px-4
+              nw-w-full
+              nw-border-b
+              nw-border-gray-200
+              nw-cursor-pointer
+              hover:nw-bg-gray-100
+            "
+          >
+            {{this}}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nw-float-right nw-text-black nw-mt-0.5"
+              width="17"
+              height="17"
+              fill=" none
+                "
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          {{/each}}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    <!-- ads mit lokal-div Ende -->
+  </div>
+  <!-- städte -->
+  <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4">
+    <div class="nw-col-span-2">{{>'@glossar-box-stadt'}}</div>
+    <div></div>
+  </div>
+  <!-- städte Ende -->
+</div>

@@ -1,0 +1,11 @@
+{
+  "context": {
+    "class-prefix": "embla-navigation",
+    "default": {
+      "class-prefix": "embla-navigation"
+    },
+    "sticky": {
+      "class-prefix": "embla-navigation-sticky"
+    }
+  }
+}

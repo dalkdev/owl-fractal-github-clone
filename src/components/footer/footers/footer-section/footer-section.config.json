@@ -1,0 +1,22 @@
+{
+  "status": "qm",
+  "headline": "NW-Portale",
+  "menuitem": "Stellen",
+  "menuitems": [
+    {
+      "menuitem": "Stellen"
+    },
+    {
+      "menuitem": "Immobilien"
+    },
+    {
+      "menuitem": "Erwins Date"
+    },
+    {
+      "menuitem": "Trauer"
+    },
+    {
+      "menuitem": "Ausbildung"
+    }
+  ]
+}
