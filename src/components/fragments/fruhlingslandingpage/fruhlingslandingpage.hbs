@@ -1,72 +1,90 @@
-<div class="nw-p-8 nw-bg-white">
-  <div class="nw-bg-custom-1-700 nw-p-4 nw-rounded-md">
+<div class="nw-p-0 md:nw-p-8 nw-bg-white">
+  <div class="nw-bg-custom-1-700 nw-p-4 nw-rounded-none md:nw-rounded-md">
     <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3">
-      <div class="">
-        <div class="nw-pl-4 nw-pb-2 nw-bg-white nw-rounded-md">
-          <div class="nw-pt-2 nw-flex">
-            <img class="nw-w-10" src="/images/nw-plus_icon.svg" />
-            <p class="nw-px-1 nw-text-tiny nw-font-medium nw-uppercase">
-              Jahres Angebot
-            </p>
-          </div>
-          <div class="nw-text-2xl nw-font-bold">nur 5 € im Monat</div>
-          <div class="nw-text-sm nw-font-bold nw-text-gray-500">
-            statt <span class="nw-line-through"> 9,90 €/mtl.</span> für ein Jahr
-            *
-          </div>
+      <div class="nw-px-2 md:nw-pl-4 nw-pb-4 nw-bg-white nw-rounded-md">
+        <div class="nw-pt-2 nw-flex">
+          <img class="nw-w-10" src="/images/nw-plus_icon.svg" alt="" />
+          <p class="nw-px-1 nw-text-tiny nw-font-medium nw-uppercase">
+            Jahres Angebot
+          </p>
+        </div>
+        <div class="nw-text-2xl nw-font-bold nw-pr-2">nur 5 € im Monat</div>
+        <div class="nw-text-sm nw-font-bold nw-text-gray-500 nw-pr-2">
+          statt <span class="nw-line-through"> 9,90 €/mtl.</span> für ein Jahr *
+        </div>
+        <!-- form für Desktop -->
+        <div class="nw-hidden md:nw-block">
           <div class="nw-uppercase nw-text-tiny nw-pt-2 nw-font-medium">
             IHR GUTSCHEINCODE:
           </div>
-          <div action="" id="" class="nw-flex nw-py-2 nw-gap-2">
-            <input
-              class="nw-text-center nw-block nw-rounded nw-bg-gray-100 nw-w-1/4"
-              value="OWL"
-              type="text"
-              name=""
-              required
-            />
+          <form action="" id="">
+            <div class="nw-flex nw-py-2 nw-gap-2">
+              <input
+                class="
+                  nw-text-center
+                  nw-font-bold
+                  nw-text-sm
+                  nw-block
+                  nw-rounded
+                  nw-bg-gray-100
+                  nw-w-1/4
+                "
+                value="OWL"
+                type="text"
+                name=""
+                required
+              />
 
-            <input
-              class="nw-text-center nw-block nw-rounded nw-bg-gray-100 nw-w-1/4"
-              value="2022"
-              type="text"
-              name=""
-              required
-            />
-          </div>
-          <div>
-            <button
-              type="submit"
-              class="
-                nw-uppercase
-                nw-mt-1
-                nw-bg-red-500
-                nw-border
-                nw-border-transparent
-                nw-rounded
-                nw-py-1
-                nw-px-4
-                nw-flex
-                nw-items-center
-                nw-justify-center
-                nw-text-sm
-                nw-font-bold
-                nw-text-white
-                hover:nw-bg-red-600
-                focus:nw-outline-none
-                focus:nw-ring-2
-                focus:nw-ring-offset-2
-                focus:nw-ring-offset-gray-800
-                focus:nw-ring-indigo-500
-              "
-            >
-              Jetzt sparen
-            </button>
-          </div>
+              <input
+                class="
+                  nw-text-center
+                  nw-font-bold
+                  nw-text-sm
+                  nw-block
+                  nw-rounded
+                  nw-bg-gray-100
+                  nw-w-1/4
+                "
+                value="2022"
+                type="text"
+                name=""
+                required
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="
+                  nw-uppercase
+                  nw-mt-1
+                  nw-bg-red-500
+                  nw-border
+                  nw-border-transparent
+                  nw-rounded
+                  nw-py-1
+                  nw-px-4
+                  nw-flex
+                  nw-items-center
+                  nw-justify-center
+                  nw-text-sm
+                  nw-font-bold
+                  nw-text-white
+                  hover:nw-bg-red-600
+                  focus:nw-outline-none
+                  focus:nw-ring-2
+                  focus:nw-ring-offset-2
+                  focus:nw-ring-offset-gray-800
+                  focus:nw-ring-indigo-500
+                "
+              >
+                Jetzt sparen
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="nw-col-span-2 nw-mx-auto">
-        <div class="nw-pl-6 nw-pt-2">
+      <div class="nw-col-span-2 nw-mx-0 md:nw-mx-auto">
+        <div class="nw-pl-0 md:nw-pl-6 nw-pt-4 md:nw-pt-2">
           <div class="nw-text-base nw-font-bold nw-text-white">
             Alle Artikel lesen – jetzt mit Frühlingsrabatt
           </div>
@@ -81,7 +99,7 @@
             class="
               nw-text-gray-300
               md:nw-text-gray-200
-              nw-text-sm nw-max-w-sm nw-pt-3
+              nw-text-xs nw-max-w-sm nw-pt-3
             "
           >
             * Die Mindestvertragslaufzeit für dieses preisreduzierte Angebot
@@ -89,12 +107,88 @@
             Euro weiter. Ab dem 13. Monat flexibel monatlich kündbar.
           </div>
         </div>
+        <!-- form für Mobile -->
+        <div class="nw-block md:nw-hidden">
+          <div
+            class="
+              nw-uppercase nw-text-tiny nw-pt-2 nw-font-medium nw-text-white
+            "
+          >
+            IHR GUTSCHEINCODE:
+          </div>
+          <form action="" id="">
+            <div class="nw-flex nw-py-2 nw-gap-2">
+              <input
+                class="
+                  nw-text-center
+                  nw-font-bold
+                  nw-text-sm
+                  nw-block
+                  nw-rounded
+                  nw-bg-gray-100
+                  nw-w-1/4
+                  nw-max-w-md
+                "
+                value="OWL"
+                type="text"
+                name=""
+                required
+              />
+
+              <input
+                class="
+                  nw-text-center
+                  nw-font-bold
+                  nw-text-sm
+                  nw-block
+                  nw-rounded
+                  nw-bg-gray-100
+                  nw-w-1/4
+                "
+                value="2022"
+                type="text"
+                name=""
+                required
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="
+                  nw-uppercase
+                  nw-mt-1
+                  nw-bg-red-500
+                  nw-border
+                  nw-border-transparent
+                  nw-rounded
+                  nw-py-1
+                  nw-px-4
+                  nw-flex
+                  nw-w-full
+                  nw-items-center
+                  nw-justify-center
+                  nw-text-sm
+                  nw-font-bold
+                  nw-text-white
+                  hover:nw-bg-red-600
+                  focus:nw-outline-none
+                  focus:nw-ring-2
+                  focus:nw-ring-offset-2
+                  focus:nw-ring-offset-gray-800
+                  focus:nw-ring-indigo-500
+                "
+              >
+                Jetzt sparen
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
 <div>
-  <div class="nw-text-center nw-text-2xl nw-font-bold nw-py-4">
+  <div class="nw-text-center nw-text-2xl md:nw-text-3xl nw-font-bold nw-p-4">
     Immer auf dem Laufenden
   </div>
   <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3">
@@ -102,9 +196,10 @@
       <div class="nw-px-4">
         <img
           class="nw-w-full nw-object-cover"
-          src="https://via.placeholder.com/100x100"
+          src="/images/fruhlingslandingpage/aktuell.png"
+          alt=""
         />
-        <div class="nw-text-sm nw-pt-8 nw-text-black">
+        <div class="nw-text-tiny nw-pt-8 nw-text-black">
           <b
             >Aktuelle Nachrichten, exklusive Berichte und Interviews aus
             Ostwestfalen-Lippe,</b
@@ -120,16 +215,17 @@
           class="
             nw-block
             md:nw-hidden
-            nw-font-bold nw-text-2xl nw-text-center nw-py-4
+            nw-font-bold nw-text-2xl nw-text-center nw-p-4
           "
         >
           Unsere NW-App inklusive
         </div>
         <img
           class="nw-w-full nw-object-cover"
-          src="https://via.placeholder.com/100x100"
+          src="/images/fruhlingslandingpage/appbild.png"
+          alt=""
         />
-        <div class="nw-text-sm nw-pt-8 nw-text-black">
+        <div class="nw-text-tiny nw-pt-8 nw-text-black">
           <b>Flexibler Zugang wann und wo Sie wollen:</b>
           Die News-App der NW ist unterwegs oder zu Hause immer topaktuell und
           beinhaltet alle Informationen aus der Region Ostwestfalen-Lippe in
@@ -143,16 +239,17 @@
           class="
             nw-block
             md:nw-hidden
-            nw-font-bold nw-text-2xl nw-text-center nw-py-4
+            nw-font-bold nw-text-2xl nw-text-center nw-p-4
           "
         >
           Exklusiven Zugang zur NW-Karte
         </div>
         <img
           class="nw-w-full nw-object-cover"
-          src="https://via.placeholder.com/100x100"
+          src="/images/fruhlingslandingpage/nw-karte.png"
+          alt=""
         />
-        <div class="nw-text-sm nw-pt-8 nw-text-black">
+        <div class="nw-text-tiny nw-pt-8 nw-text-black">
           <b>Als Abonnent erhalten Sie exklusiven Zugang zur NW-Karte, </b>
           die Ihnen diverse Vorteile bei Einkauf, beim Restaurant-besuch oder
           bei Reisen und Events ermöglicht. Sammeln Sie ab sofort Ihr Guthaben.
