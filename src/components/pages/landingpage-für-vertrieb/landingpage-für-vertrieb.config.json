@@ -18,7 +18,7 @@
     ],
     "box": [
       {
-        "box-image": "/images/landingpage-für-vertrieb/Sessel_Icon.svg",
+        "box-image": "/images/landingpage-fuer-vertrieb/Sessel_Icon.svg",
         "title": "Preisvorteil",
         "elements": [
           {
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "box-image": "/images/landingpage-für-vertrieb/Kaffee_Icon.svg",
+        "box-image": "/images/landingpage-fuer-vertrieb/Kaffee_Icon.svg",
         "title": "Mehr Komfort",
         "elements": [
           {
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "box-image": "/images/landingpage-für-vertrieb/Smartphone_Icon.svg",
+        "box-image": "/images/landingpage-fuer-vertrieb/Smartphone_Icon.svg",
         "title": "Zusätzliche Inhalte",
         "elements": [
           {
@@ -103,17 +103,17 @@
     ],
     "fragen-page": [
       {
-        "icon": "/images/landingpage-für-vertrieb/Icon_rund_Smartphone.svg",
+        "icon": "/images/landingpage-fuer-vertrieb/Icon_rund_Smartphone.svg",
         "title": "0521 / 555-999",
         "caption": "  Unser Kundenservice berät Sie freundlich und ausführlich am Telefon."
       },
       {
-        "icon": "/images/landingpage-für-vertrieb/Icon_rund_Laptop.svg ",
+        "icon": "/images/landingpage-fuer-vertrieb/Icon_rund_Laptop.svg ",
         "title": "kundenservice@nw.de",
         "caption": "Sie können uns Ihre Fragen gern rund um die Uhr mailen und wir melden\n        uns schnellstmöglich beiIhnen zurück."
       },
       {
-        "icon": "/images/landingpage-für-vertrieb/Icon_rund_Standort.svg",
+        "icon": "/images/landingpage-fuer-vertrieb/Icon_rund_Standort.svg",
         "title": "NW-Geschäftsstelle ",
         "caption": "Besuchen Sie uns gern vor Ort in einer unserer Geschäftsstellen."
       }
