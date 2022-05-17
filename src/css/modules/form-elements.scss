@@ -1,0 +1,16 @@
+.nw-landingpage-button {
+  @apply nw-mt-2 nw-mb-4 nw-w-full
+  md:nw-w-1/2
+  nw-text-white
+  nw-bg-red-500
+  nw-border
+  hover:nw-bg-white
+  hover:nw-text-red-500
+  nw-border-red-500
+  nw-rounded-md
+  nw-text-center
+  nw-text-base
+  nw-font-medium
+  md:nw-font-bold
+  nw-cursor-pointer nw-py-2;
+}
