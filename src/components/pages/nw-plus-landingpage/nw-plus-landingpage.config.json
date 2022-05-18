@@ -22,6 +22,7 @@
             "item2": " Eilmeldungen, Nachrichten, Liveticker und Kommentare"
           },
           {
+            "href": "https://www.nw.de/service/app",
             "item1": "News-App",
             "item2": " kostenlos für Android und iPhone"
           },
@@ -39,20 +40,28 @@
         "button": "Zum Angebot",
         "items": [
           {
-            "item1": "Vollständiger Zugang ",
-            "item2": "zu allen Inhalten der NW per Browser oder App"
+            "item1": "Digitales Komplettpaket:",
+            "item2": "Vollständiger Zugang zu allen digitalen Inhalten der NW"
           },
           {
-            "item1": "Wissensvorsprung:",
-            "item2": "schon am Vorabend die neue Ausgabe lesen"
+            "item1": "Vollumfänglicher Zugriff",
+            "item2": "auf alle NW-Lokalausgaben ab 3:30 Uhr"
           },
           {
-            "item1": "Bequem:",
-            "item2": "einfach ausgewählte Artikel vorlesen lassen"
+            "item1": "Inkl. NW+ Webabo:",
+            "item2": "unbegrenzt alle Artikel ohne Einschränkung auf NW.de lesen"
           },
           {
             "item1": "Ohne Risiko: ",
             "item2": "Nach Mindestlaufzeit monatlich kündbar"
+          },
+          {
+            "item1": "Exklusiv ",
+            "item2": "im ePaper die Abendausgabe und die NW am Sonntag"
+          },
+          {
+            "item1": "Zusätzliche Inhalte:",
+            "item2": "Alle 14 Tage neu ein spannendes Magazin, wie z.B. Brigitte, 11 Freunde, GEO u.v.m."
           }
         ]
       }
