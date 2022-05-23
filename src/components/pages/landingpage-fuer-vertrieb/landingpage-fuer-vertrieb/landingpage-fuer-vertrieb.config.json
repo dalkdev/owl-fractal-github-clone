@@ -1,5 +1,5 @@
 {
-  "status": "qmxxx",
+  "status": "qmaaa",
   "context": {
     "nw-logo": "/images/nw-wortmarke-logo.svg",
     "absolute-text-part1": "ICH HABE DIE DIGITALE ZEITUNG DER NW GETESTET UND WAR BEGEISTERT.",
@@ -8,10 +8,9 @@
     "description2": "Testen Sie jetzt das ePaper 4 Wochen kostenlos und lernen Sie die vielen Vorteile kennen.",
     "menu-element": [
       "Das ePaper",
-      "Vorteile",
+      "Vorteile Negativ",
       "Überblick",
       "Bewertungen",
-      "Funktionen",
       "Kontakt",
       "Impressum",
       "Datenschutz"
