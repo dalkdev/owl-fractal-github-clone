@@ -20,7 +20,7 @@
     </div>
     <!-- First block -->
     <div class="nw-mb-2 nw-rounded-md nw-bg-white nw-p-2">
-      <button class="accordion nw-text-left nw-w-full" onclick="arrow1();">
+      <button class="accordion1 nw-text-left nw-w-full" onclick="arrow1();">
         <div class="nw-flex nw-text-base nw-font-bold">
           <div class="nw-block md:nw-flex nw-flex-grow">
             <div class="nw-flex-grow">Frühlings-Angebot</div>
@@ -41,9 +41,9 @@
             <svg
               id="svg1"
               xmlns="http://www.w3.org/2000/svg"
-              class="nw-float-right nw-text-gray-500 nw-ml-1 nw-cursor-pointer"
               width="20"
               height="20"
+              class="nw-float-right nw-text-gray-500 nw-ml-1 nw-cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -52,13 +52,13 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M19 9l-7 7-7-7"
+                d="M5 15l7-7 7 7"
               />
             </svg>
           </div>
         </div>
       </button>
-      <div class="nw-hidden">
+      <div>
         <div class="nw-pb-2">
           <p class="nw-pb-1 nw-pt-1 md:nw-pt-0">
             Alle Artikel unbegrenzt lesen
@@ -289,7 +289,7 @@
       </button>
       <div class="nw-hidden">
         <div>
-          <div class="nw-pb-2" id="panelAngebot">
+          <div class="nw-pb-2">
             <p class="nw-pb-1 nw-pt-1 md:nw-pt-0">
               Alle Artikel unbegrenzt lesen
             </p>
@@ -362,6 +362,19 @@
         panel.style.display = 'none';
       } else {
         panel.style.display = 'block';
+      }
+    });
+  }
+  var accord1 = document.getElementsByClassName('accordion1');
+  var j;
+  for (j = 0; j < accord.length; j++) {
+    accord1[j].addEventListener('click', function () {
+      this.classList.toggle('active');
+      var panel1 = this.nextElementSibling;
+      if (panel1.style.display === 'none') {
+        panel1.style.display = 'block';
+      } else {
+        panel1.style.display = 'none';
       }
     });
   }
