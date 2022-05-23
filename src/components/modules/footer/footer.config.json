@@ -5,7 +5,7 @@
     "menuitem": "Menüpunkt",
     "copyright": "© Zeitungsverlag Neue Westfälische GmbH & Co. KG",
     "submitButton": {
-      "buttontext": "Abonnieren"
+      "label": "Abonnieren"
     },
     "socialmedia": {
       "facebook": {
