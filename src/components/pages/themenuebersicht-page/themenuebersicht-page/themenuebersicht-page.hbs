@@ -1,0 +1,34 @@
+<div class="nw-bg-white nw-py-6">
+  <div class="nw-py-6 nw-text-center nw-text-2xl nw-leading-6 nw-uppercase">
+    Was gerade wichtig ist
+  </div>
+  <!-- grid -->
+  <div
+    class="
+      nw-mx-4 nw-grid nw-grid-cols-1
+      md:nw-grid-cols-3
+      nw-gap-4 nw-pt-6 nw-flex nw-flex-col nw-flex-row nw-justify-between
+    "
+  >
+    <!-- box1 -->
+    {{>'@single-box'}}
+    <!-- box1 Ende -->
+  </div>
+  <div class="nw-mx-4 nw-mt-8 nw-mb-4 nw-text-left">
+    <span class="nw-text-xl"> Themenglossar </span>
+  </div>
+  <!-- buttons -->
+  <div class="nw-px-0 md:nw-mx-4">{{>'@glossar-buttons'}}</div>
+  <!-- buttons Ende -->
+  <div
+    class="
+      nw-mx-4 nw-grid nw-grid-cols-1
+      md:nw-grid-cols-2
+      nw-gap-4 nw-mt-6 nw-mb-4
+    "
+  >
+    <!-- box1-->
+    {{>'@glossar-boxes' }}
+    <!-- box1 Ende-->
+  </div>
+</div>
