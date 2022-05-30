@@ -16,3 +16,17 @@
   md:nw-font-bold
   nw-cursor-pointer nw-py-2;
 }
+
+.header-hr:before,
+.header-hr:after {
+  display: block;
+  content: '';
+  height: 2px;
+  border-top: 1px dashed;
+  border-top-color: #3d3d3d;
+  flex-grow: 2;
+}
+
+.heading {
+  max-width: 90%;
+}
