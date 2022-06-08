@@ -9,30 +9,39 @@
     "
   >
     <div class="nw-flex nw-justify-between">
-      <img
-        class="nw-w-12 md:nw-w-16 nw--mt-2"
-        src="/images/nw-plus_icon.svg"
-        alt=""
-      />
+      <p
+        class="
+          nw-text-3xl
+          nw-uppercase
+          nw-text-white
+          nw-bg-custom-1-800
+          nw-max-h-8
+          nw-px-0.5
+        "
+      >
+        HK+
+      </p>
       <div class="nw-text-white nw-text-sm md:nw-text-md">
         <p>Bereits Abonnent? <br /></p>
 
         <p class="nw-float-right">Zum Login</p>
       </div>
     </div>
-    <div class="nw-pb-2 nw-text-center md:nw-text-left">
+    <div class="nw-pb-2">
       <p class="nw-text-3xl nw-font-bold nw-text-white">Jetzt weiterlesen</p>
     </div>
     <!-- First block -->
     <div class="nw-mb-2 nw-rounded-md nw-bg-white nw-p-2">
       <button class="accordion1 nw-text-left nw-w-full" onclick="arrow1();">
-        <div class="nw-flex nw-text-base nw-text-center md:nw-text-left">
+        <div class="nw-flex nw-text-base">
           <div class="nw-block md:nw-flex nw-flex-grow">
             <div class="nw-flex-grow nw-text-custom-1-800 nw-font-bold">
               Schnupper-Angebot
             </div>
             <div>
-              <span class="nw-text-lg md:nw-float-right"> 1 € / Monat </span>
+              <span class="md:nw-float-right nw-font-medium">
+                1 € / Monat
+              </span>
               <br />
               <span class="nw-text-sm md:nw-float-right">
                 im 1.Monat,danach 9,90 € / Monat
@@ -63,9 +72,7 @@
       <div>
         <div class="nw-pt-4">
           <ul>
-            <li
-              class="nw-flex nw-place-content-center md:nw-place-content-start"
-            >
+            <li class="nw-flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -83,9 +90,7 @@
               </svg>
               <p class="nw-px-1 nw-base nw-font-medium">alle Artikel frei</p>
             </li>
-            <li
-              class="nw-flex nw-place-content-center md:nw-place-content-start"
-            >
+            <li class="nw-flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -106,40 +111,33 @@
               </p>
             </li>
           </ul>
-          <div class="nw-mt-4 md:nw-mt-0 nw-text-center md:nw-text-left">
-            <button
-              type="submit"
-              class="
-                nw-uppercase
-                nw-border
-                nw-border-gray-200
-                nw-rounded
-                nw-py-1
-                nw-px-4
-                nw-inline-flex
-                nw-items-center
-                nw-justify-center
-                nw-float-none
-                md:nw-float-right
-                nw--mt-0
-                md:nw--mt-8
-                nw-text-sm nw-font-bold nw-text-black
-                hover:nw-bg-gray-100
-                focus:nw-outline-none
-                focus:nw-ring-2
-                focus:nw-ring-offset-2
-                focus:nw-ring-offset-gray-800
-                focus:nw-ring-indigo-500
-              "
-            >
-              Jetzt bestellen
-            </button>
-          </div>
+          <button
+            class="
+              nw-uppercase
+              nw-mt-4
+              nw-border
+              nw-border-black
+              nw-rounded
+              nw-py-1
+              nw-px-4
+              nw-w-full
+              nw-items-center
+              nw-justify-center
+              nw-text-sm
+              nw-font-bold
+              hover:nw-bg-gray-100
+              focus:nw-outline-none
+              focus:nw-ring-2
+              focus:nw-ring-offset-2
+              focus:nw-ring-offset-gray-800
+              focus:nw-ring-indigo-500
+            "
+          >
+            Jetzt bestellen
+          </button>
           <a
             href
             class="
-              nw-place-content-center
-              md:nw-place-content-start
               nw-text-xs
               md:nw-text-sm
               nw-text-gray-500
@@ -172,13 +170,37 @@
     <!-- second block -->
     <div class="nw-mb-2 nw-rounded-md nw-bg-white nw-p-2">
       <button class="accordion nw-text-left nw-w-full" onclick="arrow2();">
-        <div class="nw-flex nw-text-base nw-font-bold">
+        <div
+          class="
+            nw-place-content-center
+            nw-mx-auto
+            nw-content-center
+            nw-text-center
+            nw-my-2
+          "
+        >
+          <span
+            class="
+              nw-uppercase
+              nw-text-tiny
+              nw-text-white
+              nw-bg-custom-2-300
+              nw-rounded-3xl
+              nw-px-1
+              nw-py-1
+            "
+          >
+            Nur für kürze Zeit</span
+          >
+        </div>
+        <div class="nw-flex nw-text-base">
           <div class="nw-block md:nw-flex nw-flex-grow">
-            <div class="nw-flex-grow">Schnupper-Abo</div>
-            <div>
-              <span class="nw-text-lg md:nw-text-base nw-font-bold">
-                1,00 €
-              </span>
+            <div class="nw-flex-grow nw-text-custom-1-800 nw-font-bold">
+              Spar-Angebot
+            </div>
+            <div class="nw-font-medium">
+              <span class="nw-line-through nw-mr-1"> 9,90 € </span>
+              <span> 5,00 € / Monat </span>
             </div>
           </div>
           <div class="nw-flex-none">
@@ -205,154 +227,50 @@
 
       <div class="nw-hidden">
         <div class="nw-pb-2">
-          <p class="nw-pb-1 nw-pt-1 md:nw-pt-0">
-            Alle Artikel unbegrenzt lesen
-          </p>
-          <ul>
-            <li class="nw-flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                class="nw-text-custom-2-300"
-                height="20"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <p class="nw-px-1 nw-base nw-font-medium">
-                Danach nur 9,99 € mtl.
-              </p>
-            </li>
-            <li class="nw-flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                class="nw-text-custom-2-300"
-                height="20"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <p class="nw-px-1 nw-base nw-font-medium">
-                Flexibel monatlich kündbar
-              </p>
-            </li>
-          </ul>
-          <div class="nw-py-4 nw-text-xs nw-text-gray-400">
-            Monatspreis nach 4 Wochen: 9,99 €
+          <div class="nw-text-tiny nw-pt-2 nw-font-medium">
+            Mit diesem Gutschein zwölf Monate sparen
           </div>
-          <button
-            type="submit"
-            class="
-              nw-uppercase
-              nw-bg-gray-600
-              nw-border
-              nw-border-transparent
-              nw-rounded
-              nw-py-1
-              nw-px-4
-              nw-w-full
-              nw-items-center
-              nw-justify-center
-              nw-text-sm
-              nw-font-bold
-              nw-text-white
-              hover:nw-bg-gray-500
-              focus:nw-outline-none
-              focus:nw-ring-2
-              focus:nw-ring-offset-2
-              focus:nw-ring-offset-gray-800
-              focus:nw-ring-indigo-500
-            "
-          >
-            Angebot sichern
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Second block E -->
-    <!-- third block  -->
-    <div class="nw-mb-2 nw-rounded-md nw-bg-white nw-p-2">
-      <button class="accordion nw-text-left nw-w-full" onclick="arrow3();">
-        <div class="nw-flex nw-text-base nw-font-bold">
-          <div class="nw-block md:nw-flex nw-flex-grow">
-            <div class="nw-flex-grow">Angebot Sichern</div>
-            <div>
-              <span class="nw-font-bold nw-text-lg md:nw-text-base">
-                99 €
-              </span>
-            </div>
-          </div>
-          <div class="nw-flex-none">
-            <svg
-              id="svg3"
-              xmlns="http://www.w3.org/2000/svg"
-              class="nw-float-right nw-text-gray-500 nw-ml-1 nw-cursor-pointer"
-              width="20"
-              height="20"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19 9l-7 7-7-7"
+          <form action="" id="">
+            <div class="nw-flex nw-py-2 nw-gap-2">
+              <input
+                class="
+                  nw-py-1
+                  nw-text-center
+                  nw-font-bold
+                  nw-text-sm
+                  nw-block
+                  nw-rounded
+                  nw-bg-gray-100
+                  nw-w-1/4
+                "
+                value="OWL"
+                type="text"
+                name=""
+                required
               />
-            </svg>
-          </div>
-        </div>
-      </button>
-      <div class="nw-hidden">
-        <div>
-          <div class="nw-pb-2">
-            <p class="nw-pb-1 nw-pt-1 md:nw-pt-0">
-              Alle Artikel unbegrenzt lesen
-            </p>
-            <ul>
-              <li class="nw-flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  class="nw-text-custom-2-300"
-                  height="20"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <p class="nw-px-1 nw-base nw-font-medium">
-                  einmalig für 24 Monate
-                </p>
-              </li>
-            </ul>
+
+              <input
+                class="
+                  nw-py-1
+                  nw-text-center
+                  nw-font-bold
+                  nw-text-sm
+                  nw-block
+                  nw-rounded
+                  nw-bg-gray-100
+                  nw-w-1/4
+                "
+                value="2022"
+                type="text"
+                name=""
+                required
+              />
+            </div>
             <button
               type="submit"
               class="
                 nw-uppercase
-                nw-mt-4
-                nw-bg-gray-600
+                nw-bg-red-500
                 nw-border
                 nw-border-transparent
                 nw-rounded
@@ -364,21 +282,21 @@
                 nw-text-sm
                 nw-font-bold
                 nw-text-white
-                hover:nw-bg-gray-500
+                hover:nw-bg-red-600
                 focus:nw-outline-none
                 focus:nw-ring-2
                 focus:nw-ring-offset-2
-                focus:nw-ring-offset-gray-800
+                focus:nw-ring-offset-red-800
                 focus:nw-ring-indigo-500
               "
             >
-              Angebot sichern
+              Code einlösen
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
-    <!-- third block E -->
+    <!-- Second block E -->
   </div>
 </div>
 <script>
@@ -422,15 +340,6 @@
 
   function arrow2() {
     var x = document.getElementById('svg2');
-    if (x.classList.contains('nw-transform')) {
-      x.classList.remove('nw-transform', 'nw-rotate-180');
-    } else {
-      x.classList.add('nw-transform', 'nw-rotate-180');
-    }
-  }
-
-  function arrow3() {
-    var x = document.getElementById('svg3');
     if (x.classList.contains('nw-transform')) {
       x.classList.remove('nw-transform', 'nw-rotate-180');
     } else {
