@@ -35,6 +35,9 @@ module.exports = {
         },
 
         blue: '#41B7CC',
+        hk: {
+          'nw-blue-100': '#00B4D1',
+        },
       },
       fontFamily: {
         body: ['Roboto', 'sans-serif'],
