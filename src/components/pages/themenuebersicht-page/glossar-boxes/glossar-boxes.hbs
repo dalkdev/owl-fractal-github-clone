@@ -1,0 +1,83 @@
+<!-- box1-->
+{{#each this.glossar}}
+<div
+  class="
+    nw-text-sm
+    nw-text-gray-900
+    nw-bg-white
+    nw-shadow-md
+    nw-border
+    nw-border-gray-200
+  "
+>
+  <a
+    href="#"
+    aria-current="true"
+    class="
+      nw-block
+      nw-py-2
+      nw-px-4
+      nw-w-full
+      nw-text-white
+      nw-bg-custom-1-800
+      nw-border-b
+      nw-border-gray-200
+      nw-cursor-pointer
+      nw-text-base
+      nw-text-left
+    "
+  >
+    {{this.label}}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="nw-float-right nw-text-white nw-mt-0.5"
+      width="20"
+      height="20"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+  {{#each this.items}}
+  <a
+    href="#"
+    class="
+      nw-text-base
+      nw-text-left
+      nw-block
+      nw-py-2
+      nw-px-4
+      nw-w-full
+      nw-border-b
+      nw-border-gray-200
+      nw-cursor-pointer
+      hover:nw-bg-gray-100
+      focus:nw-outline-none
+      focus:nw-ring-2
+      focus:nw-ring-gray-200
+      focus:nw-text-custom-1-700
+      hover:nw-bg-gray-200 hover:nw-nw-text-white
+      focus:nw-ring-gray-500 focus:nw-text-white
+    "
+  >
+    {{this}}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="nw-float-right nw-text-black nw-mt-0.5"
+      width="17"
+      height="17"
+      fill=" none
+                "
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+  {{/each}}
+</div>
+{{/each}}
