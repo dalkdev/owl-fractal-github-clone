@@ -164,7 +164,7 @@
     >
       {{>'@single-page-menu'}}
     </div>
-    {{>'@button-landingpage'}}
+    {{>'@link-button'}}
   </div>
   <!-- epaper vorteile ende -->
   <!-- epaper-info -->
@@ -192,9 +192,20 @@
           alt=""
         />
       </div>
-      <div>{{>'@epaper-info-single-page'}}</div>
+      <div
+        class="
+          nw-mx-8
+          md:nw-mx-0
+          nw-pr-0
+          md:nw-pr-8
+          nw-font-bold nw-text-base
+          md:nw-text-lg
+        "
+      >
+        {{>'@absatz-mit-roter-ueberschrift' epaper-info}}
+      </div>
     </div>
-    {{>'@button-landingpage'}}
+    {{>'@link-button'}}
   </div>
   <!-- epaper-info ende -->
   <!-- epaper-info2-->
@@ -208,8 +219,19 @@
         nw-mt-8
       "
     >
-      <div class="nw-ml-4 md:nw-ml-16 nw-order-last md:nw-order-first">
-        {{>'@epaper-info2-single-page'}}
+      <div
+        class="
+          nw-pl-0
+          md:nw-pl-8
+          nw-font-bold nw-text-base
+          md:nw-text-lg
+          nw-ml-4
+          md:nw-ml-16
+          nw-order-last
+          md:nw-order-first
+        "
+      >
+        {{>'@absatz-mit-roter-ueberschrift' epaper-info2}}
       </div>
       <div class="nw-mb-4 md:nw-mb-0">
         <img
@@ -219,13 +241,13 @@
         />
       </div>
     </div>
-    {{>'@button-landingpage'}}
+    {{>'@link-button'}}
   </div>
   <!-- gradient-page -->
-  {{>'@gradient-page'}}
+  {{>'@gradient'}}
   <!-- -->
   <!--Fragen-page -->
-  {{>'@fragen-landingpage'}}
+  {{>'@support'}}
   <!-- -->
 </div>
 <script>
