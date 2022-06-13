@@ -1,0 +1,101 @@
+{{#each this.themabox}}
+<div class="nw-bg-gray-100 nw-flex nw-flex-col nw-justify-between nw-shadow-md">
+  <!-- Head -->
+  <div class="nw-w-full nw-relative">
+    <div
+      class="
+        nw-w-full
+        nw-h-full
+        nw-bg-gray-600
+        nw-top-0
+        nw-left-0
+        nw-absolute
+        nw-opacity-80
+      "
+    ></div>
+    <div
+      class="
+        nw-w-full
+        nw-h-full
+        nw-flex
+        nw-flex-col
+        nw-absolute
+        nw-top-0
+        nw-left-0
+        nw-justify-center
+        nw-items-center
+        nw-z-30
+      "
+    >
+      <div
+        class="
+          nw-text-tiny
+          nw-font-medium
+          nw-font-roboto
+          nw-tracking-normal
+          nw-uppercase
+          nw-text-gray-200
+        "
+      >
+        Thema
+      </div>
+      <div
+        class="
+          nw-text-base
+          nw-tracking-normal
+          nw-font-roboto
+          nw-font-bold
+          nw-text-white
+        "
+      >
+        {{this.title}}
+      </div>
+    </div>
+    <img class="nw-object-cover nw-w-full nw-h-24" src="{{this.image-src-s}}" />
+  </div>
+  <!-- Head1 Ende -->
+  <!-- Liste 1 -->
+  {{#each this.images}}
+  <div class="nw-border-b-2 nw-flex-1">
+    <a href="" class="nw-cursor-pointer nw-flex">
+      <img
+        class="
+          nw-p-3 nw-min-h-20 nw-max-h-20 nw-max-w-24 nw-min-w-24
+          sm:nw-min-h-24 sm:nw-max-h-24 sm:nw-max-w-28 sm:nw-min-w-28
+          md:nw-min-h-20 md:nw-max-h-20 md:nw-max-w-24 md:nw-min-w-24
+        "
+        src="{{this.src}}"
+      />
+      <span class="nw-pt-2 nw-pr-2 nw-text-sm nw-text-left nw-mb-2">
+        {{this.caption}}
+      </span>
+    </a>
+  </div>
+  {{/each}}
+  <div>
+    <a
+      href=""
+      class="nw-py-3 nw-flex nw-text-tiny nw-place-content-center nw-mx-auto"
+    >
+      Mehr zum Thema
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="nw-cursor-pointer nw-text-gray-600 nw-pl-1"
+        width="30"
+        height="25"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17 8l4 4m0 0l-4 4m4-4H3"
+        />
+      </svg>
+    </a>
+  </div>
+  <!-- Liste1 Ende -->
+</div>
+{{/each}}

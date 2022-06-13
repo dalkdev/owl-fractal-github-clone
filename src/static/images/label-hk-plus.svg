@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="639" height="268" viewBox="0 0 639 268">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_4" data-name="Rechteck 4" width="639" height="268"/>
+    </clipPath>
+  </defs>
+  <g id="label-hk_plus" clip-path="url(#clip-path)">
+    <rect width="639" height="268" fill="#fff"/>
+    <g id="label-hk_plus-2" data-name="label-hk_plus" clip-path="url(#clip-path)">
+      <g id="Gruppe_1965" data-name="Gruppe 1965">
+        <rect id="BG" width="639" height="268" fill="#00b4d1"/>
+      </g>
+      <path id="Pfad_157" data-name="Pfad 157" d="M181.887,0H130.711V-76.828H71.543V0H20.367V-188.461H71.543v69.867h59.168v-69.867h51.176ZM374.913,0H317.421L280.167-72.059l-15.082,9.023V0H213.909V-188.461h51.176v81.855q3.867-7.6,15.6-24.105l39.574-57.75h55.688l-59.426,84.434Z" transform="translate(20 229)" fill="#fff"/>
+      <path id="Pfad_158" data-name="Pfad 158" d="M445.871-37.5H375.482V-88.21h70.389v-69.443h50.9V-88.21H567.16V-37.5H496.771V30.809h-50.9Z" transform="translate(31.452 198.191)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

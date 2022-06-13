@@ -1,0 +1,223 @@
+{
+  "status": "qm",
+  "context": {
+    "buttons": [
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "themabox": [
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Die Russische Invasion",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": " Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      },
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Corona Deutschland 2022",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      },
+      {
+        "image-src-s": "https://images.unsplash.com/photo-1535105138126-2085cdbc0768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=60",
+        "title": "Schwerster Kampf",
+        "images": [
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-MaßnahDmen: So verschärfen die Ampel-Partner ihre Gesetzespläne."
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Bielefelder Intensivpfleger spricht offen von Triage in den Kliniken"
+          },
+          {
+            "src": "https://via.placeholder.com/495x294",
+            "caption": "Corona-Krise Inzidenz Bielefeld: Aktuelle Corona-Zahlen für Montag"
+          }
+        ]
+      }
+    ],
+    "glossar": [
+      {
+        "label": "Minden",
+        "items": [
+          "1 Wetter Minden",
+          "2 Polizei Minden",
+          "3 Resturants Minden",
+          "4 Inzidenzwert Minden"
+        ]
+      },
+      {
+        "label": "Porta Westfalica",
+        "items": [
+          "1 Tim Kähler",
+          "2 Pit Clausen",
+          "3 Michael Dreier",
+          "4 Christian Haase"
+        ]
+      },
+      {
+        "label": "Peterhagen",
+        "items": [
+          "1 Bahnhof Petershagen",
+          "2 Wiehengebirge",
+          "3 Lippesee",
+          "4 Schloss Corvey"
+        ]
+      },
+      {
+        "label": "Hille",
+        "items": [
+          "1 Polizei Hille",
+          "2 Polizei Hille",
+          "3 Feuerwehr Hille",
+          "4 Feuerwehr Hille"
+        ]
+      }
+    ],
+    "wort": [
+      {
+        "cell1": "Aachen",
+        "cell2": "Aachen",
+        "cell3": "Aachen"
+      },
+      {
+        "cell1": "Aalen",
+        "cell2": "Aalen ",
+        "cell3": "Aalen"
+      },
+      {
+        "cell1": "Anton",
+        "cell2": "Anton",
+        "cell3": "Anton"
+      },
+      {
+        "cell1": "Ahlen",
+        "cell2": "Ahlen",
+        "cell3": "Ahlen"
+      },
+      {
+        "cell1": "Arnsberg",
+        "cell2": "Arnsberg",
+        "cell3": "Arnsberg"
+      },
+      {
+        "cell1": "Abenteuer",
+        "cell2": "Abenteuer",
+        "cell3": "Abenteuer"
+      },
+      {
+        "cell1": "Andreas Gossi",
+        "cell2": "Andreas Gossi",
+        "cell3": "Andreas Gossi"
+      },
+      {
+        "cell1": "Abendzeitung",
+        "cell2": "Abendzeitung",
+        "cell3": "Abendzeitung"
+      },
+      {
+        "cell1": "Abitur",
+        "cell2": "Abitur",
+        "cell3": "Abitur"
+      },
+      {
+        "cell1": "Abschiebung",
+        "cell2": "Abschiebung",
+        "cell3": "Abschiebung"
+      },
+      {
+        "cell1": "Abholung",
+        "cell2": "Abholung",
+        "cell3": "Abholung"
+      },
+      {
+        "cell1": "Abstieg",
+        "cell2": "Abstieg",
+        "cell3": "Abstieg"
+      },
+      {
+        "cell1": "Arminia",
+        "cell2": "Arminia",
+        "cell3": "Arminia"
+      },
+      {
+        "cell1": "Acapulco",
+        "cell2": "Acapulco",
+        "cell3": "Acapulco"
+      },
+      {
+        "cell1": "Achim",
+        "cell2": "Achim",
+        "cell3": "Achim"
+      },
+      {
+        "cell1": "ADAC",
+        "cell2": "ADAC",
+        "cell3": "ADAC"
+      },
+      {
+        "cell1": "ADHS",
+        "cell2": "ADHS",
+        "cell3": "ADHS"
+      },
+      {
+        "cell1": "Adidas",
+        "cell2": "Adidas",
+        "cell3": "Adidas"
+      },
+      {
+        "cell1": "Adolf Eichmann",
+        "cell2": "Adolf Eichmann",
+        "cell3": "Adolf Eichmann"
+      }
+    ]
+  }
+}

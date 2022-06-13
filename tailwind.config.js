@@ -27,6 +27,7 @@ module.exports = {
           700: '#8C070B',
         },
         custom: {
+          '1-800': '#0063AF',
           '1-700': '#4A5568',
           '1-600': '#038ed5',
           '1-500': '#1F90D1',
@@ -35,6 +36,9 @@ module.exports = {
         },
 
         blue: '#41B7CC',
+        hk: {
+          'nw-blue-100': '#00B4D1',
+        },
       },
       fontFamily: {
         body: ['Roboto', 'sans-serif'],
