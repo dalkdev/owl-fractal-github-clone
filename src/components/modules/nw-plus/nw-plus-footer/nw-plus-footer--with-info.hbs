@@ -1,0 +1,48 @@
+<div>
+  <div
+    class="
+      nw-text-white nw-justify-center
+      sm:nw-justify-start
+      nw-font-bold nw-flex nw-items-center nw-py-1
+      sm:nw-pl-2
+    "
+    style="background-color: rgb(0, 175, 203)"
+  >
+    <div class="nw-inline-block nw-mr-1">{{>'@nw-plus-icon'}}</div>
+    <div class="nw-inline-block nw-text-md">{{caption}}</div>
+  </div>
+  <div
+    class="
+      nw-grid
+      sm:nw-grid-cols-2
+      nw-px-1
+      nw-py-1
+      nw-bg-white
+      nw-pl-2
+      nw-flex
+      nw-justify-center
+      nw-items-center
+    "
+  >
+    <div class="nw-font-bold nw-text-md nw-my-1">
+      <div class="nw-list-none nw-text-center sm:nw-text-left">
+        {{#each footeritems}}
+        <li>{{this}}</li>
+        {{/each}}
+      </div>
+    </div>
+    <div
+      class="
+        nw-flex nw-items-center nw-justify-center
+        sm:nw-justify-end sm:nw-mt-1
+      "
+    >
+      <div>
+        <div class="nw-mb-1">{{>'@nw-plus-cta'}}</div>
+        <p class="nw-mb-2 sm:nw-mb-0 nw-text-gray-200 nw-text-center">
+          Jederzeit kündbar
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

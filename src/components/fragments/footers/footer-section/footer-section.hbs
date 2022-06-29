@@ -1,4 +1,9 @@
-{{>'@footer-headline' headline}}
 <ul role="list" class="nw-mt-4 nw-space-y-2">
-  {{#each menuitems}} {{>@footer-section-link this}} {{/each}}
+  {{#each menuitems}}
+  <li>
+    <a href="#" class="nw-text-sm nw-text-gray-100 hover:nw-text-white">
+      {{menuitem}}
+    </a>
+  </li>
+  {{/each}}
 </ul>
