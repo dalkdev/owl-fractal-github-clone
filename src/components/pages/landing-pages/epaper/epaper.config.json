@@ -71,7 +71,9 @@
         ]
       }
     ],
-    "button": "Jetzt das ePaper kostenlos testen",
+    "button": {
+      "label": "Jetzt das ePaper kostenlos testen"
+    },
     "epaper-info": [
       {
         "title": "Das NW ePaper",
