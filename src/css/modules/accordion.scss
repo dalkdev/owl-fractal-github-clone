@@ -1,0 +1,13 @@
+.faq-opener {
+  display: block;
+  &:after {
+    content: '\276F';
+    margin-top: -1.25rem;
+    float: right;
+    font-size: 0.75rem;
+  }
+
+  &.nw-show-accordion-item:after {
+    transform: rotate(90deg);
+  }
+}
