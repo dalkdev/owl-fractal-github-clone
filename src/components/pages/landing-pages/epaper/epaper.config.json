@@ -2,7 +2,7 @@
   "status": "qm",
   "context": {
     "nw-logo": "/images/nw-wortmarke-logo.svg",
-    "absolute-text": " ” ICH HABE DIE DIGITALE ZEITUNG DER NW GETESTET UND WAR BEGEISTERT. JETZT LESE ICH TÄGLICH DAS EPAPER.“",
+    "absolute-text": " ”Ich habe die digitale Zeitung der NW getestet und war begeistert. Jetzt lese ich täglich das Epaper.“",
     "description1": " Mit dem ePaper der NW bekommen Sie die digitale Version Ihrer Zeitung schon ab 3.30 Uhr in Ihren elektronischen Briefkasten. Einfach Tablet, Smartphone oder PC starten und loslesen. Zusätzlich haben Sie Zugriff auf alle Lokalausgaben und auf NW.de.",
     "description2": "Testen Sie jetzt das ePaper vier Wochen kostenlos und lernen Sie die vielen Vorteile kennen.",
     "menu-element": [
@@ -24,13 +24,13 @@
             "caption": "Sie können das ePaper vier Wochen kostenlos testen. Anschließend kostet es im Abo nur 29,90€/Monat und ist monatlich kündbar."
           },
           {
-            "caption": "Für nur 5€ mehr im Monat erhalten Sie ein Samsung Galaxy Tab A8 Wifi oder ein Apple iPad 64 GB Wifi dazu. (Mindestlaufzeit 24 Monate)"
+            "caption": "Für nur 5€ mehr im Monat erhalten Sie ein Samsung Galaxy Tab A8 Wifi oder ein Apple iPad 64 GB Wifi dazu. (Mindestvertragslaufzeit 24 Monate)"
           },
           {
             "caption": " NW+ Inhalte auf nw.de inklusiv"
           },
           {
-            "caption": " Ein Abo – auf vier Geräten gleichzeitig lesen"
+            "caption": "Ein Abo – auf bis zu vier Geräten in einem Haushalt gleichzeitig nutzen"
           }
         ]
       },
@@ -39,16 +39,16 @@
         "title": "Mehr Komfort",
         "elements": [
           {
-            "caption": "Zoom-Funktion für leichtes lesen"
+            "caption": "Zoom-Funktion für leichtes Lesen"
           },
           {
             "caption": "Einfache & übersichtliche Navigation auf allen Seiten"
           },
           {
-            "caption": " Zu Hause laden und unterwegs auch ohne Internet lesen (Offline-Funktion)"
+            "caption": " Offline-Funktion – zu Hause Laden und unterwegs ohne Internet lesen"
           },
           {
-            "caption": " Vorlesefunktion möglich"
+            "caption": " In der App mit Vorlesefunktion"
           }
         ]
       },
@@ -77,29 +77,29 @@
     "epaper-info": [
       {
         "title": "Das NW ePaper",
-        "caption": "Das ePaper ist die digitale Zeitung Ihrer NW. Sie bekommen Ihre Zeitung damit statt auf Papier digital auf Ihr Smartphone, Tablet oder Ihren PC."
+        "caption": "Das ePaper ist die digitale Ausgabe Ihrer NW. Sie lesen Ihre Zeitung digital auf Smartphone, Tablet oder PC statt auf Papier."
       },
       {
         "title": "Unser Angebot für Sie ",
-        "caption": "Testen Sie das ePaper vier Wochen kostenlos. Anschließend können Sie es für nur 29,90€/Monat weiternutzen. Es ist bequem monatlich kündbar."
+        "caption": "Testen Sie das ePaper vier Wochen kostenlos. Anschließend können Sie es für nur 29,90€/Monat weiternutzen. Es ist einfach jederzeit monatlich kündbar."
       },
       {
         "title": "Die Geräte",
-        "caption": "Sie wünschen ein passendes Gerät dazu? Für nur 5€ mehr im Monat, also 34,90€/Monat, erhalten Sie z.B. das Samsung Galaxy TAB A8 Wifi oder das Apple iPad 64 GB Wifi dazu. Vertragslaufzeit 24 Monate."
+        "caption": "Sie wünschen ein passendes Gerät dazu? Für nur 5€ mehr im Monat, also 34,90€/Monat, erhalten Sie z.B. das Samsung Galaxy TAB A8 Wifi oder das Apple iPad 64 GB Wifi dazu. (Mindestvertragslaufzeit 24 Monate)"
       }
     ],
     "epaper-info2": [
       {
         "title": "Rundum informiert",
-        "caption": "Sie können das ePaper auch zusätzlich zum bereits bestehenden Printabo für nur 5 € im Monat zu Ihrem Vollabopreis nutzen. Auch können Sie ihr Printabo mit einem Wunschgerät für zusätzliche 15 € im Monat zum Vollabopreis erweitern."
+        "caption": "Buchen Sie das ePaper zu Ihrem bestehenden Abonnement der gedruckten Ausgabe für nur 5 € /Monat – mit Wunschgerät für nur 15 € / Monat – zusätzlich dazu (nur für Abonnenten im Abonnement montags-samstags)."
       },
       {
-        "title": "Komfortables lesen ",
-        "caption": "Zusätzlich zu Ihrem eigenen Regionalteil haben Sie Zugriff auf alle Lokalausgaben der NW. Außerdem auf Beilagen, die Prisma und viele weitere Magazine."
+        "title": "Mehr Inhalte",
+        "caption": "Mit dem ePaper der NW haben Sie Zugriff auf alle Lokalausgaben, Beilagen, Magazine sowie die Prisma, Ihre wöchentliche TV-Beilage."
       },
       {
-        "title": "Auch Print und ePaper möglich ",
-        "caption": "Sie können die Schriftgrößen ganz einfach an Ihre Bedürfnisse anpassen."
+        "title": "Komfortables Lesen",
+        "caption": "Passen Sie die Schriftgrößen ganz einfach Ihren Bedürfnissen an."
       }
     ],
     "fragen-page": [
