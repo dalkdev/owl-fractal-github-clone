@@ -38,6 +38,7 @@
           id="GesamtTab"
           href="#"
           class="
+            tabs
             nw-inline-block
             nw-p-4
             nw-text-custom-1-600
@@ -54,6 +55,7 @@
           id="SpieleTab"
           href="#"
           class="
+            tabs
             nw-inline-block
             nw-p-4
             nw-rounded-t-lg
@@ -68,6 +70,7 @@
           id="ToreTab"
           href="#"
           class="
+            tabs
             nw-inline-block
             nw-p-4
             nw-rounded-t-lg
@@ -81,15 +84,15 @@
   </div>
 
   <div class="nw-mx-2">
-    <div id="GesamtContainer">
+    <div id="GesamtContainer" class="container">
       <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
         <canvas id="gesamtChart" class="nw-w-full"></canvas>
       </div>
     </div>
 
-    <div id="SpieleContainer" class="nw-hidden">Spiele</div>
+    <div id="SpieleContainer" class="nw-hidden container">Spiele</div>
 
-    <div id="ToreContainer" class="nw-hidden">
+    <div id="ToreContainer" class="nw-hidden container">
       <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
         <canvas id="toreChart" class="nw-w-full"></canvas>
       </div>
@@ -168,51 +171,79 @@
 </div>
 
 <script>
-  document.getElementById('GesamtTab').addEventListener('click', e => {
+  let array_tabs = document.getElementsByClassName('tabs');
+  Array.prototype.forEach.call(array_tabs, (x, i) => {
+    x.addEventListener('click', e => {
+      Array.prototype.forEach.call(array_tabs, x => {
+        x.classList.remove(
+          'nw-text-custom-1-600',
+          'nw-border-b-2',
+          'nw-border-custom-1-600'
+        );
+        x.classList.add('nw-text-black', 'nw-border-transparent');
+      });
+      x.classList.remove('nw-text-black', 'nw-border-transparent');
+      x.classList.add(
+        'nw-text-custom-1-600',
+        'nw-border-b-2',
+        'nw-border-custom-1-600'
+      );
+      let array_container = document.getElementsByClassName('container');
+      Array.prototype.forEach.call(array_container, x => {
+        x.classList.add('nw-hidden');
+      });
+      array_container[i].classList.remove('nw-hidden');
+    });
+  });
+</script>
+<script>
+  /*  document.getElementById('GesamtTab').addEventListener('click', e => {
     e.preventDefault();
     SelectSpieleTab('GesamtTab', 'GesamtContainer');
-  });
-  document.getElementById('SpieleTab').addEventListener('click', e => {
+    });
+    document.getElementById('SpieleTab').addEventListener('click', e => {
     e.preventDefault();
     SelectSpieleTab('SpieleTab', 'SpieleContainer');
-  });
-  document.getElementById('ToreTab').addEventListener('click', e => {
+    });
+    document.getElementById('ToreTab').addEventListener('click', e => {
     e.preventDefault();
     SelectSpieleTab('ToreTab', 'ToreContainer');
-  });
-
-  function SelectSpieleTab(tab, container) {
+    }); */
+  /*
+    function SelectSpieleTab(tab, container) {
     RemoveAllActiveSpieleClasses();
     document
-      .getElementById(tab)
-      .classList.add('nw-text-custom-1-600', 'nw-border-custom-1-600');
+    .getElementById(tab)
+    .classList.add('nw-text-custom-1-600', 'nw-border-custom-1-600');
     document.getElementById(container).classList.remove('nw-hidden');
-  }
+    }
 
-  function RemoveAllActiveSpieleClasses() {
+    function RemoveAllActiveSpieleClasses() {
     document
-      .getElementById('GesamtTab')
-      .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
+    .getElementById('GesamtTab')
+    .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
     document
-      .getElementById('GesamtTab')
-      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
-
-    document
-      .getElementById('SpieleTab')
-      .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
-    document
-      .getElementById('SpieleTab')
-      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
+    .getElementById('GesamtTab')
+    .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
 
     document
-      .getElementById('ToreTab')
-      .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
+    .getElementById('SpieleTab')
+    .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
     document
-      .getElementById('ToreTab')
-      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
+    .getElementById('SpieleTab')
+    .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
+
+    document
+    .getElementById('ToreTab')
+    .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
+    document
+    .getElementById('ToreTab')
+    .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
 
     document.getElementById('GesamtContainer').classList.add('nw-hidden');
     document.getElementById('SpieleContainer').classList.add('nw-hidden');
     document.getElementById('ToreContainer').classList.add('nw-hidden');
-  }
+    }
+
+    */
 </script>
