@@ -2,7 +2,7 @@
   "status": "qm",
   "context": {
     "nw-logo": "/images/nw-wortmarke-logo.svg",
-    "absolute-text": " ”Ich habe die digitale Zeitung der NW getestet und war begeistert. Jetzt lese ich täglich das Epaper.“",
+    "absolute-text": " ”Ich habe die digitale Zeitung der NW getestet und war begeistert. Jetzt lese ich täglich das epaper.“",
     "description1": " Mit dem ePaper der NW bekommen Sie die digitale Version Ihrer Zeitung schon ab 3.30 Uhr in Ihren elektronischen Briefkasten. Einfach Tablet, Smartphone oder PC starten und loslesen. Zusätzlich haben Sie Zugriff auf alle Lokalausgaben und auf NW.de.",
     "description2": "Testen Sie jetzt das ePaper vier Wochen kostenlos und lernen Sie die vielen Vorteile kennen.",
     "menu-element": [
@@ -25,9 +25,6 @@
           },
           {
             "caption": "Für nur 5€ mehr im Monat erhalten Sie ein Samsung Galaxy Tab A8 Wifi oder ein Apple iPad 64 GB Wifi dazu. (Mindestvertragslaufzeit 24 Monate)"
-          },
-          {
-            "caption": " NW+ Inhalte auf nw.de inklusiv"
           },
           {
             "caption": "Ein Abo – auf bis zu vier Geräten in einem Haushalt gleichzeitig nutzen"
@@ -67,6 +64,9 @@
           },
           {
             "caption": "Mit interaktiven Rätseln und Sudoku"
+          },
+          {
+            "caption": " NW+ Inhalte auf nw.de inklusiv"
           }
         ]
       }
