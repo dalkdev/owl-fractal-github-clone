@@ -48,6 +48,7 @@
         >
         <select
           class="
+            nw-formfield
             nw-w-full
             nw-px-1
             nw-py-1
@@ -96,6 +97,7 @@
         >
         <input
           class="
+            nw-formfield
             nw-w-full
             nw-px-2
             nw-py-1.5
@@ -142,6 +144,7 @@
         >
         <input
           class="
+            nw-formfield
             nw-w-full
             nw-px-2
             nw-py-1.5
@@ -190,6 +193,7 @@
             >
             <input
               class="
+                nw-formfield
                 nw-w-full
                 nw-px-2
                 nw-py-1.5
@@ -237,6 +241,7 @@
             >
             <input
               class="
+                nw-formfield
                 nw-w-full
                 nw-px-2
                 nw-py-1.5
@@ -286,6 +291,7 @@
             >
             <input
               class="
+                nw-formfield
                 nw-w-full
                 nw-px-2
                 nw-py-1.5
@@ -333,6 +339,7 @@
             >
             <input
               class="
+                nw-formfield
                 nw-w-full
                 nw-px-2
                 nw-py-1.5
@@ -381,6 +388,7 @@
         >
         <select
           class="
+            nw-formfield
             nw-w-full
             nw-px-2
             nw-py-1
@@ -432,6 +440,7 @@
         >
         <input
           class="
+            nw-formfield
             nw-w-full
             nw-px-2
             nw-py-1.5
@@ -478,6 +487,7 @@
         >
         <input
           class="
+            nw-formfield
             nw-w-full
             nw-px-2
             nw-py-1.5
@@ -630,206 +640,33 @@
       bRegister.style.backgroundColor = '#E1B9BA';
     }
   }
-</script>
 
-<script>
   function onClickRegistrieren() {
     var valid = Validator();
     if (valid) alert('ok');
   }
 
+  let array_input = document.getElementsByClassName('nw-formfield');
+
   function Validator() {
-    var gender = document.getElementById('anrede');
-    var fname = document.getElementById('vname');
-    var lname = document.getElementById('nname');
-    var street = document.getElementById('strasse');
-    var hnumber = document.getElementById('hnummer');
-    var zip = document.getElementById('plz');
-    var place = document.getElementById('ort');
-    var land = document.getElementById('land1');
-    var email = document.getElementById('eMail');
-    var password = document.getElementById('passwort');
-
-    var hide1 = document.getElementById('anredeT');
-    var hide2 = document.getElementById('vnameT');
-    var hide3 = document.getElementById('nnameT');
-    var hide4 = document.getElementById('strasseT');
-    var hide5 = document.getElementById('hnummerT');
-    var hide6 = document.getElementById('plzT');
-    var hide7 = document.getElementById('ortT');
-    var hide71 = document.getElementById('land1T');
-    var hide8 = document.getElementById('eMailT');
-    var hide9 = document.getElementById('passwortT');
-
     var valid = true;
-
-    if (gender.value == '') {
-      valid = false;
-      gender.classList.add('nw-border-red-500');
-      hide1.style.display = 'block';
-    } else {
-      gender.classList.remove('nw-border-red-500');
-      hide1.style.display = 'none';
-    }
-
-    if (fname.value == '') {
-      valid = false;
-      fname.classList.add('nw-border-red-500');
-      hide2.style.display = 'block';
-    } else {
-      fname.classList.remove('nw-border-red-500');
-      hide2.style.display = 'none';
-    }
-
-    if (lname.value == '') {
-      valid = false;
-      lname.classList.add('nw-border-red-500');
-      hide3.style.display = 'block';
-    } else {
-      lname.classList.remove('nw-border-red-500');
-      hide3.style.display = 'none';
-    }
-    if (street.value == '') {
-      valid = false;
-      street.classList.add('nw-border-red-500');
-      hide4.style.display = 'block';
-    } else {
-      street.classList.remove('nw-border-red-500');
-      hide4.style.display = 'none';
-    }
-
-    if (hnumber.value == '') {
-      valid = false;
-      hnumber.classList.add('nw-border-red-500');
-      hide5.style.display = 'block';
-    } else {
-      hnumber.classList.remove('nw-border-red-500');
-      hide5.style.display = 'none';
-    }
-    if (zip.value == '') {
-      valid = false;
-      zip.classList.add('nw-border-red-500');
-      hide6.style.display = 'block';
-    } else {
-      zip.classList.remove('nw-border-red-500');
-      hide6.style.display = 'none';
-    }
-    if (place.value == '') {
-      valid = false;
-      place.classList.add('nw-border-red-500');
-      hide7.style.display = 'block';
-    } else {
-      place.classList.remove('nw-border-red-500');
-      hide7.style.display = 'none';
-    }
-    if (land.value == '') {
-      valid = false;
-      land.classList.add('nw-border-red-500');
-      hide71.style.display = 'block';
-    } else {
-      land.classList.remove('nw-border-red-500');
-      hide71.style.display = 'none';
-    }
-    if (email.value == '') {
-      valid = false;
-      email.classList.add('nw-border-red-500');
-      hide8.style.display = 'block';
-    } else {
-      email.classList.remove('nw-border-red-500');
-      hide8.style.display = 'none';
-    }
-    if (password.value == '') {
-      valid = false;
-      password.classList.add('nw-border-red-500');
-      hide9.style.display = 'block';
-    } else {
-      password.classList.remove('nw-border-red-500');
-      hide9.style.display = 'none';
-    }
+    Array.prototype.forEach.call(array_input, x => {
+      if (x.value == '') {
+        valid = false;
+        x.classList.add('nw-border-red-500');
+        x.nextElementSibling.style.display = 'block';
+      } else {
+        x.classList.remove('nw-border-red-500');
+        x.nextElementSibling.style.display = 'none';
+      }
+    });
     return valid;
   }
-</script>
 
-<script>
-  document.getElementById('anrede').addEventListener('change', alertAnrede);
-  document.getElementById('vname').addEventListener('change', alertVorname);
-  document.getElementById('nname').addEventListener('change', alertNachname);
-  document.getElementById('strasse').addEventListener('change', alertStrasse);
-  document.getElementById('hnummer').addEventListener('change', alertHnummer);
-  document.getElementById('plz').addEventListener('change', alertPlz);
-  document.getElementById('ort').addEventListener('change', alertOrt);
-  document.getElementById('land1').addEventListener('change', alertLand1);
-  document.getElementById('eMail').addEventListener('change', alertEmail);
-  document.getElementById('passwort').addEventListener('change', alertPasswort);
-
-  var hide1 = document.getElementById('anredeT');
-  var hide2 = document.getElementById('vnameT');
-  var hide3 = document.getElementById('nnameT');
-  var hide4 = document.getElementById('strasseT');
-  var hide5 = document.getElementById('hnummerT');
-  var hide6 = document.getElementById('plzT');
-  var hide7 = document.getElementById('ortT');
-  var hide71 = document.getElementById('land1T');
-  var hide8 = document.getElementById('eMailT');
-  var hide9 = document.getElementById('passwortT');
-
-  function alertAnrede() {
-    var x = document.getElementById('anrede');
-    x.classList.remove('nw-border-red-500');
-    hide1.style.display = 'none';
-  }
-
-  function alertVorname() {
-    var x = document.getElementById('vname');
-    x.classList.remove('nw-border-red-500');
-    hide2.style.display = 'none';
-  }
-
-  function alertNachname() {
-    var x = document.getElementById('nname');
-    x.classList.remove('nw-border-red-500');
-    hide3.style.display = 'none';
-  }
-
-  function alertStrasse() {
-    var x = document.getElementById('strasse');
-    x.classList.remove('nw-border-red-500');
-    hide4.style.display = 'none';
-  }
-
-  function alertHnummer() {
-    var x = document.getElementById('hnummer');
-    x.classList.remove('nw-border-red-500');
-    hide5.style.display = 'none';
-  }
-
-  function alertPlz() {
-    var x = document.getElementById('plz');
-    x.classList.remove('nw-border-red-500');
-    hide6.style.display = 'none';
-  }
-
-  function alertOrt() {
-    var x = document.getElementById('ort');
-    x.classList.remove('nw-border-red-500');
-    hide7.style.display = 'none';
-  }
-
-  function alertLand1() {
-    var x = document.getElementById('land1');
-    x.classList.remove('nw-border-red-500');
-    hide71.style.display = 'none';
-  }
-
-  function alertEmail() {
-    var x = document.getElementById('eMail');
-    x.classList.remove('nw-border-red-500');
-    hide8.style.display = 'none';
-  }
-
-  function alertPasswort() {
-    var x = document.getElementById('passwort');
-    x.classList.remove('nw-border-red-500');
-    hide9.style.display = 'none';
-  }
+  Array.prototype.forEach.call(array_input, x => {
+    x.onclick = function () {
+      x.classList.remove('nw-border-red-500');
+      x.nextElementSibling.style.display = 'none';
+    };
+  });
 </script>
