@@ -14,9 +14,9 @@
     <ul class="nw-flex nw-flex-wrap nw--mb-px nw-place-content-center">
       <li class="nw-mr-2">
         <a
-          id="TabelleTab"
           href="#"
           class="
+            tabs
             nw-inline-block
             nw-p-4
             nw-text-custom-1-600
@@ -29,17 +29,21 @@
       </li>
       <li class="nw-mr-2">
         <a
-          id="KaderTab"
           href="#"
-          class="nw-inline-block nw-p-4 nw-border-b-2 nw-border-transparent"
+          class="
+            tabs
+            nw-inline-block nw-p-4 nw-border-b-2 nw-border-transparent
+          "
           >Spiele & Kader</a
         >
       </li>
       <li class="nw-mr-2">
         <a
-          id="ErgebnisseTab"
           href="#"
-          class="nw-inline-block nw-p-4 nw-border-b-2 nw-border-transparent"
+          class="
+            tabs
+            nw-inline-block nw-p-4 nw-border-b-2 nw-border-transparent
+          "
           >Ergebnisse</a
         >
       </li>
@@ -47,7 +51,7 @@
   </div>
 
   <div class="nw-pb-8">
-    <div id="TabelleContainer">
+    <div class="container">
       <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
         Tabelle
       </div>
@@ -56,7 +60,7 @@
       </div>
     </div>
 
-    <div id="KaderContainer" class="nw-hidden">
+    <div class="nw-hidden container">
       <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
         Spiele & Kader
       </div>
@@ -65,7 +69,7 @@
       </div>
     </div>
 
-    <div id="ErgebnisseContainer" class="nw-hidden">
+    <div class="nw-hidden container">
       <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
         Ergebnisse
       </div>
@@ -94,52 +98,30 @@
 <!-- live-button-->
 {{>'@live-button'}}
 <!--live-button Ende -->
+
 <script>
-  document.getElementById('TabelleTab').addEventListener('click', e => {
-    e.preventDefault();
-    SelectTabelleTab('TabelleTab', 'TabelleContainer');
+  let array_tabs = document.getElementsByClassName('tabs');
+  Array.prototype.forEach.call(array_tabs, (x, i) => {
+    x.addEventListener('click', e => {
+      Array.prototype.forEach.call(array_tabs, x => {
+        x.classList.remove(
+          'nw-text-custom-1-600',
+          'nw-border-b-2',
+          'nw-border-custom-1-600'
+        );
+        x.classList.add('nw-text-black', 'nw-border-transparent');
+      });
+      x.classList.remove('nw-text-black', 'nw-border-transparent');
+      x.classList.add(
+        'nw-text-custom-1-600',
+        'nw-border-b-2',
+        'nw-border-custom-1-600'
+      );
+      let array_container = document.getElementsByClassName('container');
+      Array.prototype.forEach.call(array_container, x => {
+        x.classList.add('nw-hidden');
+      });
+      array_container[i].classList.remove('nw-hidden');
+    });
   });
-  document.getElementById('KaderTab').addEventListener('click', e => {
-    e.preventDefault();
-    SelectTabelleTab('KaderTab', 'KaderContainer');
-  });
-  document.getElementById('ErgebnisseTab').addEventListener('click', e => {
-    e.preventDefault();
-    SelectTabelleTab('ErgebnisseTab', 'ErgebnisseContainer');
-  });
-
-  function SelectTabelleTab(tabelletab, tabellecontainer) {
-    RemoveAllActiveTabelleClasses();
-    document
-      .getElementById(tabelletab)
-      .classList.add('nw-text-custom-1-600', 'nw-border-custom-1-600');
-    document.getElementById(tabellecontainer).classList.remove('nw-hidden');
-  }
-
-  function RemoveAllActiveTabelleClasses() {
-    document
-      .getElementById('TabelleTab')
-      .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
-    document
-      .getElementById('TabelleTab')
-      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
-
-    document
-      .getElementById('KaderTab')
-      .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
-    document
-      .getElementById('KaderTab')
-      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
-
-    document
-      .getElementById('ErgebnisseTab')
-      .classList.remove('nw-text-custom-1-600', 'nw-border-custom-1-600');
-    document
-      .getElementById('ErgebnisseTab')
-      .classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-transparent');
-
-    document.getElementById('TabelleContainer').classList.add('nw-hidden');
-    document.getElementById('KaderContainer').classList.add('nw-hidden');
-    document.getElementById('ErgebnisseContainer').classList.add('nw-hidden');
-  }
 </script>
