@@ -1,0 +1,110 @@
+<style>
+  .nw-angebot-bg {
+    background-color: #72adcf;
+  }
+</style>
+
+<div class="nw-bg-white nw-p-0 md:nw-p-4">
+  <div class="nw-angebot-bg nw-p-4">
+    <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3">
+      <div
+        class="
+          nw-px-4 nw-py-4
+          md:nw-py-8
+          nw-bg-white nw-rounded-sm nw-ml-0
+          lg:nw-ml-8
+        "
+      >
+        <div class="nw-flex">
+          <img class="nw-w-12" src="/images/nw-plus_icon.svg" alt="" />
+          <p class="nw-px-1 nw-text-tiny nw-font-medium nw-uppercase">
+            WEBABO-Aktion
+          </p>
+        </div>
+        <span class="nw-text-2xl nw-font-bold">3 Monate je 4,95 € </span>
+        <div class="nw-text-sm">
+          statt <span class="nw-strike-through nw-text-gray-400"> 9,90 €</span>
+          *
+        </div>
+        <a
+          class="
+            nw-uppercase
+            nw-inline-flex
+            nw-mt-4
+            nw-bg-red-500
+            nw-border
+            nw-border-transparent
+            nw-rounded-full
+            nw-py-1
+            nw-px-4
+            nw-flex
+            nw-items-center
+            nw-justify-center
+            nw-text-sm
+            nw-font-bold
+            nw-text-white
+            hover:nw-bg-red-600
+            focus:nw-outline-none
+            focus:nw-ring-2
+            focus:nw-ring-offset-2
+            focus:nw-ring-offset-gray-800
+            focus:nw-ring-indigo-500
+          "
+        >
+          Jetzt sparen
+        </a>
+      </div>
+      <div class="nw-col-span-2 nw-mx-0 md:nw-mx-auto">
+        <div class="nw-pl-0 md:nw-pl-6 nw-pt-4 md:nw-pt-2">
+          <div class="nw-text-base nw-font-bold nw-text-white">
+            Alle Artikel unbegrenzt lesen
+          </div>
+          <div class="nw-pl-3 nw-pt-2">
+            <ul class="nw-text-white nw-list-disc nw-text-sm">
+              <li>rund um die Uhr top informiert sein</li>
+              <li>voller Zugriff auf die News-App der NW</li>
+              <li>drei Monate lang fast 50% sparen</li>
+            </ul>
+          </div>
+          <div class="nw-text-xs nw-max-w-sm nw-py-3 nw-text-white">
+            * Die Mindestvertragslaufzeit für dieses preisreduzierte Angebot
+            beträgt drei Monate. Anschließend nutzen Sie es für monatlich 9,90
+            Euro weiter. Ab dem vierten Monat flexibel monatlich kündbar.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nw-mt-0 md:nw-mt-4 nw-bg-gray-100">
+    <div
+      class="
+        nw-text-center nw-text-2xl
+        md:nw-text-3xl
+        nw-font-bold nw-px-8 nw-pt-12
+      "
+    >
+      Top informiert durch den Sommer
+    </div>
+    <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3">
+      {{#each box}}
+      <div class="nw-p-4">
+        <img
+          class="nw-w-full nw-object-cover nw-p-2"
+          src="{{this.src}}"
+          alt=""
+        />
+        <div
+          class="nw-text-center md:nw-text-left nw-font-bold nw-text-lg nw-py-2"
+        >
+          {{this.title}}
+        </div>
+        <div class="nw-text-center md:nw-text-left nw-text-tiny">
+          {{this.caption1}}
+          <a href="" class="nw-text-red-500"> {{this.href}}</a>
+          {{this.caption2}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
