@@ -105,7 +105,7 @@ const myCustomisedTheme = mandelbrot({
     '/themes/mandelbrot/css/default.css',
     ENV_DEV
       ? `http://${HMR_URL}:${HMR_PORT}/src/css/fractal-custom.css`
-      : '/fractal-custom.css',
+      : '/fractal-custom.scss',
   ],
   skin: {
     name: 'default',

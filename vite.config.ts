@@ -11,7 +11,7 @@ export default defineConfig({
         'src/js/app.ts',
         'src/css/app.scss',
         'src/css/fonts.scss',
-        'src/css/fractal-custom.css',
+        'src/css/fractal-custom.scss',
       ],
       output: {
         entryFileNames: `[name].js`,
