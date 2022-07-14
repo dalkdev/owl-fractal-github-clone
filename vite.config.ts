@@ -7,12 +7,7 @@ export default defineConfig({
   build: {
     manifest: false,
     rollupOptions: {
-      input: [
-        'src/js/app.ts',
-        'src/css/app.scss',
-        'src/css/fonts.scss',
-        'src/css/fractal-custom.scss',
-      ],
+      input: ['src/js/app.ts', 'src/css/app.scss', 'src/css/fonts.scss'],
       output: {
         entryFileNames: `[name].js`,
         chunkFileNames: `[name].js`,
