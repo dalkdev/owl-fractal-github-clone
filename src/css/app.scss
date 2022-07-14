@@ -15,6 +15,7 @@
 @use './modules/recobox';
 @use './modules/form-elements';
 @use './modules/accordion';
+@use './modules/landingpage';
 
 // has to be at the end to override certain properties
 @use 'general/a11y';

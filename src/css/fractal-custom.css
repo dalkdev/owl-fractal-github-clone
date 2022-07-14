@@ -1,3 +1,29 @@
-.Status-dot {
-  border-width: 2px;
+.header-hr:before,
+.header-hr:after {
+  display: block;
+  content: '';
+  height: 2px;
+  border-top: 1px dashed;
+  border-top-color: #3d3d3d;
+  flex-grow: 2;
+}
+
+.heading {
+  max-width: 90%;
+}
+
+.nw-strike-through {
+  position: relative;
+  display: inline-block;
+  font-size: 100%;
+}
+
+.nw-strike-through::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: 1px solid red;
+  width: 100%;
+  transform: rotate(355deg);
 }
