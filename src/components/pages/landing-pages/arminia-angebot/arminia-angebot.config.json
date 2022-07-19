@@ -1,0 +1,37 @@
+{
+  "status": "qm",
+  "context": {
+    "elements": [
+      {
+        "caption": "Alle Artikel freischalten"
+      },
+      {
+        "caption": "Live-Ticker und Spielberichte"
+      },
+      {
+        "caption": "Analysen und Taktik-Checks"
+      },
+      {
+        "caption": " Alle aktuellen Transfergerüchte"
+      }
+    ],
+
+    "box": [
+      {
+        "src": "/images/arminia-angebot/img-live-ticker.jpg",
+        "title": "Live-Ticker und Spielberichte",
+        "caption": "Immer aktuell zum Spielstand informiert bleiben mit dem Live-Ticker auf NW.de und den Berichten nach den Spielen."
+      },
+      {
+        "src": "/images/arminia-angebot/img-analysen.jpg",
+        "title": "Analysen und Taktik-Checks",
+        "caption": "Exklusive Analysen zu allen Spielen und Taktik-Checks für eine tiefergehende Berichterstattung."
+      },
+      {
+        "src": "/images/arminia-angebot/img-transfer.jpg",
+        "title": "Alle aktuellen Transfergerüchte",
+        "caption": "Ob Gerücht, Neuverpflichtung oder Vertragsverlängerung - die Sportredaktion ist ganz nah dran."
+      }
+    ]
+  }
+}
