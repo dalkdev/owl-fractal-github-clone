@@ -63,8 +63,9 @@
 
   <!-- Für Desktop-->
   <div class="nw-hidden md:nw-block">
-    <ul
-      class="
+    <!--
+        <ul
+            class="
         nw-nav nw-nav-tabs nw-flex nw-flex-col nw-text-gray-400
         md:nw-flex-row
         nw-flex-wrap
@@ -75,13 +76,13 @@
         nw-pb-
         nw-mb-4
       "
-      id=""
-      role="tablist"
-    >
-      <li class="nw-nav-item nw-flex-auto nw-text-right nw-mx-2" role="tab">
-        <a
-          id="aErstellen"
-          class="
+            id=""
+            role="tablist"
+        >
+            <li class="nw-nav-item nw-flex-auto nw-text-right nw-mx-2" role="tab">
+                <a
+                    id="aErstellen"
+                    class="
             nw-font-medium
             nw-uppercase
             nw-tracking-normal
@@ -95,6 +96,111 @@
             nw-border-b-2
             nw-border-gray-600
           "
+                    id="tabs-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tabs-home"
+                    role="tab"
+                    aria-controls="tabs-home"
+                    aria-selected="true"
+                >
+                    <svg
+                        id="svgErstellen"
+                        class="nw-mr-1.5 nw-cursor-pointer nw-text-custom-1-700"
+                        width="25"
+                        height="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                    </svg>
+                    <span> Anzeigen erstellen</span></a
+                >
+            </li>
+            <li class="nw-nav-item nw-flex-auto nw-text-left" role="tab">
+                <a
+                    id="aVerwalten"
+                    class="
+            nw-font-medium
+            nw-uppercase
+            nw-tracking-normal
+            nw-py-2
+            nw-px-auto
+            nw-inline-flex
+            nw-text-sm
+            nw-cursor-pointer
+            nw-items-center
+          "
+                    id="tabs-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tabs-contact"
+                    role="tab"
+                    aria-controls="tabs-contact"
+                    aria-selected="false"
+                >
+                    <svg
+                        id="svgVerwalten"
+                        class="nw-mr-1.5 nw-cursor-pointer nw-text-gray-400"
+                        width="25"
+                        height="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                        />
+                    </svg>
+                    <span>Anzeigen verwalten </span>
+                </a>
+            </li>
+        </ul> -->
+    <ul
+      class="
+        nw-flex
+        nw-flex-wrap
+        nw--mb-px
+        nw-place-content-center
+        nw-nav
+        nw-nav-tabs
+        nw-flex
+        nw-flex-col
+        nw-text-gray-400
+        md:nw-flex-row
+        nw-flex-wrap
+        nw-list-none
+        nw-border-b
+        nw-border-gray-200
+        nw-pl-0
+        nw-pb-
+        nw-mb-4
+      "
+    >
+      <li class="nw-mr-2">
+        <a
+          href="#"
+          class="
+            nw-tab
+            nw-p-4
+            nw-font-medium
+            nw-uppercase
+            nw-inline-flex
+            nw-text-sm
+            nw-cursor-pointer
+            nw-text-black
+            nw-border-b-2
+            nw-border-gray-600
+          "
           id="tabs-home-tab"
           data-bs-toggle="pill"
           data-bs-target="#tabs-home"
@@ -103,7 +209,6 @@
           aria-selected="true"
         >
           <svg
-            id="svgErstellen"
             class="nw-mr-1.5 nw-cursor-pointer nw-text-custom-1-700"
             width="25"
             height="25"
@@ -119,32 +224,32 @@
               d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <span> Anzeigen erstellen</span></a
-        >
+          Anzeigen erstellen
+        </a>
       </li>
-      <li class="nw-nav-item nw-flex-auto nw-text-left" role="tab">
+      <li class="nw-mr-2">
         <a
-          id="aVerwalten"
+          href="#"
           class="
+            nw-tab
+            nw-p-4
+            nw-text-gray-400
+            nw-rounded-t-lg
             nw-font-medium
             nw-uppercase
-            nw-tracking-normal
-            nw-py-2
-            nw-px-auto
             nw-inline-flex
             nw-text-sm
             nw-cursor-pointer
             nw-items-center
           "
-          id="tabs-contact-tab"
           data-bs-toggle="pill"
           data-bs-target="#tabs-contact"
           role="tab"
           aria-controls="tabs-contact"
           aria-selected="false"
+          aria-current="page"
         >
           <svg
-            id="svgVerwalten"
             class="nw-mr-1.5 nw-cursor-pointer nw-text-gray-400"
             width="25"
             height="25"
@@ -160,8 +265,8 @@
               d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
             />
           </svg>
-          <span>Anzeigen verwalten </span>
-        </a>
+          Anzeigen verwalten</a
+        >
       </li>
     </ul>
   </div>
@@ -171,37 +276,79 @@
 <!-- Script für das Desktop-Design -->
 
 <script>
-  var iconerstellen = document.getElementById('aErstellen');
-  var iconverwalten = document.getElementById('aVerwalten');
-  var svg1 = document.getElementById('svgErstellen');
-  var svg2 = document.getElementById('svgVerwalten');
+  /*
+    var iconerstellen = document.getElementById('aErstellen');
+    var iconverwalten = document.getElementById('aVerwalten');
+    var svg1 = document.getElementById('svgErstellen');
+    var svg2 = document.getElementById('svgVerwalten');
 
-  iconerstellen.addEventListener('click', mouseOver1);
-  iconverwalten.addEventListener('click', mouseOver2);
+    iconerstellen.addEventListener('click', mouseOver1);
+    iconverwalten.addEventListener('click', mouseOver2);
 
-  function mouseOver1() {
-    svg1.classList.add('nw-text-custom-1-700');
-    svg2.classList.remove('nw-text-custom-1-700');
-    svg2.classList.add('nw-text-gray-400');
-    iconerstellen.classList.add('nw-text-black');
-    iconverwalten.classList.remove('nw-text-black');
-    iconverwalten.classList.add('nw-text-gray-400');
-    iconerstellen.classList.add('nw-border-b-2');
-    iconerstellen.classList.add('nw-border-gray-600');
-    iconerstellen.classList.add('nw-border-solid');
-    iconverwalten.classList.remove('nw-border-b-2');
-  }
+    function mouseOver1() {
+        svg1.classList.add('nw-text-custom-1-700');
+        svg2.classList.remove('nw-text-custom-1-700');
+        svg2.classList.add('nw-text-gray-400');
+        iconerstellen.classList.add('nw-text-black');
+        iconverwalten.classList.remove('nw-text-black');
+        iconverwalten.classList.add('nw-text-gray-400');
+        iconerstellen.classList.add('nw-border-b-2');
+        iconerstellen.classList.add('nw-border-gray-600');
+        iconerstellen.classList.add('nw-border-solid');
+        iconverwalten.classList.remove('nw-border-b-2');
+    }
 
-  function mouseOver2() {
-    svg2.classList.add('nw-text-custom-1-700');
-    svg1.classList.remove('nw-text-custom-1-700');
-    svg1.classList.add('nw-text-gray-400');
-    iconverwalten.classList.add('nw-text-black');
-    iconerstellen.classList.remove('nw-text-black');
-    iconerstellen.classList.add('nw-text-gray-400');
-    iconverwalten.classList.add('nw-border-b-2');
-    iconverwalten.classList.add('nw-border-gray-600');
-    iconverwalten.classList.add('nw-border-solid');
-    iconerstellen.classList.remove('nw-border-b-2');
+    function mouseOver2() {
+        svg2.classList.add('nw-text-custom-1-700');
+        svg1.classList.remove('nw-text-custom-1-700');
+        svg1.classList.add('nw-text-gray-400');
+        iconverwalten.classList.add('nw-text-black');
+        iconerstellen.classList.remove('nw-text-black');
+        iconerstellen.classList.add('nw-text-gray-400');
+        iconverwalten.classList.add('nw-border-b-2');
+        iconverwalten.classList.add('nw-border-gray-600');
+        iconverwalten.classList.add('nw-border-solid');
+        iconerstellen.classList.remove('nw-border-b-2');
+    } */
+
+  let nw_tabs = document.getElementsByClassName('nw-tab');
+  Array.prototype.forEach.call(nw_tabs, x => {
+    /*
+       x.addEventListener('click', (e) => {
+           RemoveAllActiveClasses();
+           x.classList.remove('nw-text-gray-400');
+           x.classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-gray-600', 'nw-border-solid');
+           x.firstElementChild.classList.remove('nw-text-gray-400');
+           x.firstElementChild.classList.add('nw-text-custom-1-700');
+
+       });*/
+
+    x.onclick = function () {
+      RemoveAllActiveClasses();
+      x.classList.remove('nw-text-gray-400');
+      x.classList.add(
+        'nw-text-black',
+        'nw-border-b-2',
+        'nw-border-gray-600',
+        'nw-border-solid'
+      );
+      x.firstElementChild.classList.remove('nw-text-gray-400');
+      x.firstElementChild.classList.add('nw-text-custom-1-700');
+    };
+  });
+
+  function RemoveAllActiveClasses() {
+    let nw_tabs = document.getElementsByClassName('nw-tab');
+    Array.prototype.forEach.call(nw_tabs, x => {
+      x.classList.remove(
+        'nw-text-black',
+        'nw-border-b-2',
+        'nw-border-gray-600',
+        'nw-border-solid'
+      );
+      x.classList.add('nw-text-gray-400');
+      x.firstElementChild.classList.remove('nw-text-custom-1-700');
+      x.firstElementChild.classList.add('nw-text-gray-400');
+    });
   }
 </script>
