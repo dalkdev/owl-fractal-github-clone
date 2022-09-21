@@ -1,12 +1,11 @@
 <div
-  class="
-    nw-bg-gray-100 nw-flex nw-flex-col
-    md:nw-flex-row md:nw-justify-between
-  "
+  class="nw-bg-gray-100 nw-flex nw-flex-row nw-justify-between nw-px-4 nw-py-4"
 >
-  <div class="nw-px-4 nw-py-4">
+  <div>
     <div><img src="{{logo}}" alt="" width="50" height="50" /></div>
-    <div class="nw-font-bold nw-text-2xl nw-pb-2 nw-pt-1">{{caption}}</div>
+    <div class="nw-font-bold nw-text-xl sm:nw-text-2xl nw-pb-2 nw-pt-1">
+      {{caption}}
+    </div>
     <div>
       <a
         href=""
@@ -22,7 +21,8 @@
           nw-flex
           nw-items-center
           nw-justify-center
-          nw-text-sm
+          nw-text-xs
+          sm:nw-text-sm
           md:nw-text-tiny
           nw-shadow-md nw-font-bold nw-text-white
           hover:nw-bg-red-600
@@ -37,7 +37,7 @@
       </a>
     </div>
   </div>
-  <div class="nw-overflow-hidden">
+  <div class="nw-overflow-hidden nw-pl-2">
     <img class="nw-mx-auto nw-object-cover" src=" {{smartphone-foto}}" alt="" />
   </div>
 </div>
