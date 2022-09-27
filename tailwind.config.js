@@ -33,6 +33,8 @@ module.exports = {
           '1-500': '#1F90D1',
           '2-400': '#495467',
           '2-300': '#41BCA7',
+          'erwinteaser-bg': '#1f114c',
+          'erwinteaser-font-big': '#9dcde3',
         },
 
         blue: '#41B7CC',
