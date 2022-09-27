@@ -3,8 +3,17 @@
 >
   <div>
     <div><img src="{{logo}}" alt="" width="50" height="50" /></div>
-    <div class="nw-font-bold nw-text-xl sm:nw-text-2xl nw-pb-2 nw-pt-1">
+    <div
+      class="nw-font-bold nw-text-lg sm:nw-text-2xl nw-pb-0 sm:nw-pb-2 nw-pt-1"
+    >
       {{caption}}
+    </div>
+    <div class="nw-overflow-hidden nw-pl-2 block nw-mt-4 nw-mb-8 sm:nw-hidden">
+      <img
+        class="nw-mx-auto nw-object-cover"
+        src=" {{smartphone-foto}}"
+        alt=""
+      />
     </div>
     <div>
       <a
@@ -37,7 +46,11 @@
       </a>
     </div>
   </div>
-  <div class="nw-overflow-hidden nw-pl-2">
-    <img class="nw-mx-auto nw-object-cover" src=" {{smartphone-foto}}" alt="" />
+  <div class="nw-overflow-hidden nw-pl-2 nw-hidden sm:nw-block">
+    <img
+      class="nw-mx-auto nw-object-cover nw-h-32"
+      src=" {{smartphone-foto}}"
+      alt=""
+    />
   </div>
 </div>
