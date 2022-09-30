@@ -1,58 +1,8 @@
-<!-- <div class="nw-p-4">
-    <div
-        class="
-      nw-bg-custom-erwinteaser-bg nw-flex nw-flex-col
-      md:nw-flex-row
-      nw-justify-between
-      nw-rounded nw-p-4
-    "
-    >
-        <div>
-            <p
-                class="
-          nw-text-3xl
-          sm:nw-text-6xl
-          md:nw-text-7xl
-          nw-pb-4
-          md:nw-pb-12
-          nw-font-bold nw-uppercase nw-text-custom-erwinteaser-font-big
-        "
-            >
-                {{title}}
-            </p>
-            <p
-                class="
-          nw-hidden
-          md:nw-block
-          nw-text-white nw-pt-0
-          md:nw-pt-8
-          nw-text-tiny
-          sm:nw-text-xl
-        "
-            >
-                {{caption}}
-            </p>
-        </div>
-        <div class="nw-hidden md:nw-block md:nw-flex md:nw-items-center">
-            <img class="nw-object-cover  md:nw-w-auto md:nw-h-auto"
-                 src=" {{event-portal-augen-image}}"/>
-        </div>
-
-        <div class="nw-block md:nw-hidden nw-flex">
-            <p class="nw-text-white nw-pt-0 md:nw-pt-8 nw-text-tiny sm:nw-text-xl">
-                {{caption}}
-            </p>
-            <div>
-                <img
-                    class="md:nw-h-auto md:nw-w-auto sm:nw--mt-12"
-                    src=" {{event-portal-augen-image}}"
-                />
-            </div>
-        </div>
-    </div>
-</div>
--->
 <style>
+  .nw-erwint-title {
+    max-width: 70%;
+  }
+
   .nw-event-portal-bg {
     background-image: url('/images/event-portal-augen-img.svg');
     background-repeat: no-repeat;
@@ -64,10 +14,6 @@
       max-width: 90%;
     }
 
-    .nw-erwint-title {
-      max-width: 70%;
-    }
-
     .nw-event-portal-bg {
       background-position-y: 1rem;
     }
@@ -77,19 +23,11 @@
     .nw-erwint-text {
       max-width: 61%;
     }
-
-    .nw-erwint-title {
-      max-width: 70%;
-    }
   }
 
   @media only screen and (min-width: 768px) {
     .nw-erwint-text {
       max-width: 60%;
-    }
-
-    .nw-erwint-title {
-      max-width: 70%;
     }
   }
 
@@ -97,18 +35,10 @@
     .nw-erwint-text {
       max-width: 60%;
     }
-
-    .nw-erwint-title {
-      max-width: 70%;
-    }
   }
 
   @media only screen and (min-width: 1200px) {
     .nw-erwint-text {
-      max-width: 70%;
-    }
-
-    .nw-erwint-title {
       max-width: 70%;
     }
 
@@ -123,7 +53,6 @@
     class="
       nw-bg-custom-erwinteaser-bg nw-rounded nw-p-4 nw-bg-right-top
       sm:nw-bg-right-bottom
-      md:nw-bg-right-bottom
       lg:nw-bg-right
       nw-event-portal-bg
     "
@@ -131,8 +60,9 @@
     <div>
       <div class="nw-erwint-title">
         <img
-          class="nw-mb-1 md:nw-mb-2 nw-w-16 sm:nw-w-20 md:nw-w-auto"
+          class="nw-mb-1 md:nw-mb-2 nw-h-auto nw-w-14 sm:nw-w-20 md:nw-w-auto"
           src="/images/erwin-Logo-white-blue.svg"
+          alt="Erwin Events - Logo"
         />
         <p
           class="
