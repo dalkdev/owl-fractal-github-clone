@@ -17,6 +17,7 @@
 @use './modules/accordion';
 @use './modules/landingpage';
 @use './modules/fractal-custom';
+@use './modules/misc';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 
