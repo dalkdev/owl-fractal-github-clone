@@ -18,3 +18,8 @@
   md:nw-font-bold
   nw-cursor-pointer nw-py-2;
 }
+
+.nw-info-text {
+  @apply nw-text-xs
+  nw-text-gray-500;
+}
