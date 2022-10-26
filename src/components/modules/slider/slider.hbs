@@ -1,43 +1,38 @@
 <div class="slider nw-bg-custom-1-700 nw-pb-4 nw-pt-6">
-  <div class="nw-pl-4 md:nw-pl-20">
+  <div class="nw-pl-2 md:nw-pl-20">
     <div>
-      <p
-        class="
-          nw-text-white
-          nw-inline
-          nw-text-xl
-          nw-uppercase
-          nw-font-bold
-          nw-border-solid
-          nw-border-red-500
-          nw-border-b-2
-        "
-      >
+      <p class="nw-text-white nw-inline nw-text-xl nw-uppercase nw-font-bold">
         {{title}}
       </p>
+      <hr class="nw-red-line" />
     </div>
     <div>
       <p
         class="
           nw-text-white nw-text-left nw-text-base
           md:nw-text-xl
-          nw-pt-2
-          md:nw-pb-1
-          nw-pr-1
+          nw-pt-2 nw-pb-1 nw-pr-1
         "
       >
         {{caption}}
       </p>
     </div>
   </div>
-  <div class="embla embla--main-carousel nw-pl-0.5 md:nw-pl-0">
+  <div class="embla embla--main-carousel nw-pl-2 md:nw-pl-20">
     <div class="embla__viewport relative">
       <div class="embla__container">
         {{#each images}}
-        <div class="embla__slide">
-          <div
-            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
-          >
+        <div
+          class="
+            embla__slide
+            nw-min-w-8/10
+            sm:min-w-7/10
+            md:nw-min-w-6/10
+            lg:nw-min-w-4/10
+            xl:nw-min-w-3/10
+          "
+        >
+          <div class="embla__slide__inner nw-bg-clip-padding nw-block">
             <a href="" class="nw-cursor-pointer">
               <div class="nw-aspect-w-4 nw-aspect-h-3">
                 <img
@@ -68,7 +63,7 @@
           nw-rounded-full
           nw-object-center
           nw-top-1/2
-          nw-left-2
+          nw-left-24
           nw-transform
           nw--translate-y-1/2
           nw-cursor-pointer
@@ -76,7 +71,6 @@
       >
         <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
       </div>
-
       <div
         class="
           nw-hidden
@@ -108,31 +102,4 @@
   <script type="text/template" id="embla-dot-template">
     <button class="embla__dot" type="button"></button>
   </script>
-
-  <!-- <div class="nw-px-4 nw-py-2">
-                <p class="nw-text-xs nw-text-grey-400">
-                  Bild <span class="slider--counter-current">1</span> von
-                  <span class="slider--counter-total"></span>
-                </p>
-              </div>-->
-
-  <!-- Thumbs -->
-  <!--<div class="embla embla--thumb">
-    <div class="embla__viewport px-4">
-      <div class="embla__container embla__container--thumb">
-        {{#each images}}
-        <div class="embla__slide embla__slide--thumb">
-          <div class="nw-aspect-w-3 nw-aspect-h-2">
-            <button
-              class="embla__slide__inner embla__slide__inner--thumb"
-              type="button"
-            >
-              <img class="embla__slide__thumbnail" src="{{src}}" />
-            </button>
-          </div>
-        </div>
-        {{/each}}
-      </div>
-    </div>
-  </div>-->
 </div>

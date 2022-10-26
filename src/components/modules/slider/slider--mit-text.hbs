@@ -1,25 +1,15 @@
-<div class="slider nw-slider-text nw-bg-gray-200 nw-pb-4 nw-pt-6">
+<div class="slider nw-bg-custom-1-700 nw-pb-4 nw-pt-6">
   <div class="nw-pl-4 md:nw-pl-20">
     <div>
-      <p
-        class="
-          nw-text-gray-600
-          nw-inline
-          nw-text-xl
-          nw-uppercase
-          nw-font-bold
-          nw-border-solid
-          nw-border-red-500
-          nw-border-b-2
-        "
-      >
+      <p class="nw-text-white nw-inline nw-text-xl nw-uppercase nw-font-bold">
         {{title}}
       </p>
+      <hr class="nw-red-line" />
     </div>
     <div>
       <p
         class="
-          nw-text-gray-600 nw-text-left nw-text-base
+          nw-text-white nw-text-left nw-text-base
           md:nw-text-xl
           nw-pt-2
           md:nw-pb-1
@@ -30,11 +20,11 @@
       </p>
     </div>
   </div>
-  <div class="embla embla--main-carousel nw-pl-0.5 md:nw-pl-0">
+  <div class="embla embla--main-carousel nw-pl-4 md:nw-pl-20">
     <div class="embla__viewport relative">
       <div class="embla__container">
         {{#each images}}
-        <div class="embla__slide">
+        <div class="embla__slide nw-min-w-8/10 sm:min-w-7/10">
           <div
             class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
           >
@@ -49,11 +39,7 @@
                 />
               </div>
             </a>
-            <div
-              class="
-                nw-pt-2 nw-px-1 nw-text-gray-600 nw-font-medium nw-text-tiny
-              "
-            >
+            <div class="nw-pt-2 nw-text-white nw-text-tiny">
               {{this.caption}}
             </div>
           </div>
@@ -74,9 +60,12 @@
           nw-absolute
           nw-rounded-full
           nw-object-center
-          nw-top-28
-          md:nw-top-32
-          nw-left-2 nw-transform nw--translate-y-1/2 nw-cursor-pointer
+          md:
+          nw-top-1/2
+          nw-left-24
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
         "
       >
         <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
@@ -95,9 +84,11 @@
           nw-absolute
           nw-rounded-full
           nw-object-center
-          nw-top-28
-          md:nw-top-32
-          nw-right-2 nw-transform nw--translate-y-1/2 nw-cursor-pointer
+          nw-top-1/2
+          nw-right-2
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
         "
       >
         <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}" />
