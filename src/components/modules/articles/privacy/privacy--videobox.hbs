@@ -1,4 +1,14 @@
-<div class="nw-mx-4 nw-my-4 nw-flex-col nw-space-y-2">
+<div
+  class="
+    nw-my-2 nw-p-4
+    md:nw-p-2
+    nw-flex nw-flex-col
+    md:nw-flex-row
+    nw-justify-between nw-space-y-2
+    md:nw-space-y-0
+    nw-bg-custom-1-200 nw-rounded-md
+  "
+>
   <div>
     <div
       class="
@@ -25,7 +35,7 @@
           nw-h-6
           nw-rounded-full
           nw-bg-white
-          nw-border-4
+          nw-border-2
           nw-appearance-none
           nw-cursor-pointer
         "
@@ -38,33 +48,35 @@
           nw-overflow-hidden
           nw-h-6
           nw-rounded-full
-          nw-bg-gray-300
+          nw-bg-gray-200
           nw-cursor-pointer
         "
       ></label>
     </div>
-    <label for="toggle" class="nw-text-black nw-text-tiny nw-font-regular"
-      >Externe Inhalte deaktivieren</label
-    >
+
+    <label for="toggle" class="nw-text-white nw-text-tiny"
+      >Externe Inhalte
+    </label>
   </div>
-  <p class="nw-text-sm nw-font-regular">
-    Weitere Hinweise dazu finden Sie in unserer
-    <em class="nw-not-italic nw-text-red-500 nw-underline"
-      >Datenschutzerklärung.</em
+  <p class="nw-text-sm">
+    <a
+      href=""
+      class="nw-not-italic nw-text-white nw-underline nw-cursor-pointer"
+      >Zur Datenschutzerklärung</a
     >
   </p>
 </div>
-
 <style>
   /* CHECKBOX TOGGLE SWITCH */
   /* @apply rules for documentation, these do not work as inline style */
   .nw-toggle-checkbox:checked {
-    @apply: nw-right-0 nw-border-green-400;
+    @apply: nw-right-0 nw-border-green-500;
     right: 0;
-    border-color: #68d391;
+    border-color: #6eb783;
   }
+
   .nw-toggle-checkbox:checked + .nw-toggle-label {
-    @apply: nw-bg-green-400;
-    background-color: #68d391;
+    @apply: nw-bg-green-500;
+    background-color: #6eb783;
   }
 </style>

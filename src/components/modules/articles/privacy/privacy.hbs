@@ -1,12 +1,31 @@
-<div class="nw-mx-4 nw-my-2 nw-bg-gray-100">
+<div class="nw-bg-gray-100 nw-rounded-md md:nw-max-w-2xl">
   <div class="nw-p-4">
-    <p class="nw-text-tiny nw-font-bold">Empfohlener redaktioneller Inhalt</p>
-    <p class="nw-text-sm nw-font-regular">
-      Wir bieten an dieser Stelle weitere externe Informationen zu dem Artikel
-      an. Mit einem Klick können Sie sich diese anzeigen lassen und auch wieder
-      ausblenden.
+    <p class="nw-pb-2 nw-text-base md:nw-text-lg nw-font-bold">
+      Empfohlener redaktioneller Inhalt
     </p>
-    <div class="nw-my-4">
+    <hr />
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-justify-between">
+      <p class="nw-pt-2 nw-text-sm nw-max-w-lg">
+        Wir bieten an dieser Stelle weitere externe Informationen zu dem Artikel
+        von Facebook an. Mit einem Klick können Sie sich diese anzeigen lassen
+        und auch wieder ausblenden.
+      </p>
+      <img
+        class="
+          nw-bg-white
+          nw-w-14
+          nw-h-14
+          nw-mt-2
+          nw-p-2
+          nw-border
+          nw-border-white
+          nw-rounded-md
+        "
+        alt=""
+        src="/images/icon-socialmedia-facebook.svg"
+      />
+    </div>
+    <div class="nw-my-2">
       <div
         class="
           nw-relative
@@ -32,7 +51,7 @@
             nw-h-6
             nw-rounded-full
             nw-bg-white
-            nw-border-4
+            nw-border-2
             nw-appearance-none
             nw-cursor-pointer
           "
@@ -45,23 +64,21 @@
             nw-overflow-hidden
             nw-h-6
             nw-rounded-full
-            nw-bg-gray-300
+            nw-bg-gray-200
             nw-cursor-pointer
           "
         ></label>
       </div>
-      <label for="toggle" class="nw-text-black nw-text-tiny nw-font-regular"
-        >Externe Inhalte aktivieren</label
-      >
+      <label for="toggle" class="nw-text-tiny">Externe Inhalte</label>
     </div>
-    <p class="nw-text-sm nw-font-regular">
+    <p class="nw-text-sm nw-text-gray-400">
       Wenn Sie sich externe Inhalte anzeigen lassen, erklären Sie sich damit
-      einverstanden, dass personenbezogene Daten an Drittplattformen übermittelt
-      werden.
-      <em class="nw-not-italic nw-text-red-500"
-        >Weitere Hinweise dazu finden Sie in unserer Datenschutzerklärung.</em
-      >
+      ein-verstanden, dass personenbezogene Daten an Drittplattformen
+      übermittelt werden.
     </p>
+    <a href="" class="nw-text-sm nw-text-red-500">
+      Weitere Hinweise dazu finden Sie in unserer Datenschutzerklärung.</a
+    >
   </div>
 </div>
 
@@ -69,12 +86,13 @@
   /* CHECKBOX TOGGLE SWITCH */
   /* @apply rules for documentation, these do not work as inline style */
   .nw-toggle-checkbox:checked {
-    @apply: nw-right-0 nw-border-green-400;
+    @apply: nw-right-0 nw-border-green-500;
     right: 0;
-    border-color: #68d391;
+    border-color: #6eb783;
   }
+
   .nw-toggle-checkbox:checked + .nw-toggle-label {
-    @apply: nw-bg-green-400;
-    background-color: #68d391;
+    @apply: nw-bg-green-500;
+    background-color: #6eb783;
   }
 </style>
