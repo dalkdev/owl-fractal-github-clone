@@ -39,10 +39,12 @@ module.exports = {
           'erwinteaser-bg': '#1f114c',
           'erwinteaser-font-big': '#9dcde3',
         },
-
         blue: '#41B7CC',
         hk: {
           'nw-blue-100': '#00B4D1',
+        },
+        lz: {
+          'nw-yellow-100': '#FFDC09',
         },
       },
       fontFamily: {
