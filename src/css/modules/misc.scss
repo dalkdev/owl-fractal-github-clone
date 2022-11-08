@@ -66,3 +66,14 @@
   border-bottom: 2px solid #d20a11;
   border-top-width: 0;
 }
+
+.margin-text {
+  position: relative;
+  margin-top: -3rem;
+  margin-bottom: 0;
+  margin-right: 3.5rem;
+  margin-left: 0;
+  padding: 1rem 2rem 1.5625rem 2rem;
+  background-color: white;
+  border-top-right-radius: 0.25rem;
+}
