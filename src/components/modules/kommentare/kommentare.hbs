@@ -1,0 +1,92 @@
+<div class="nw-p-4 nw-bg-white">
+  <hr />
+  <div>
+    <p class="nw-py-1 nw-uppercase nw-text-xl nw-font-bold">KOMMENTARE</p>
+  </div>
+  <hr />
+  <div class="nw-p-4 nw-text-center">
+    <p class="nw-text-base nw-font-bold">Guten Tag, Hansfranz1999</p>
+    <p class="nw-text-tiny nw-py-1">
+      Als NW+ Abonnent können Sie hier exklusiv Kommentare verfassen und sich
+      mit Autoren und Lesern austauschen.
+    </p>
+    <div
+      class="
+        nw-flex
+        nw-place-content-center
+        nw-text-xs
+        nw-text-custom-1-700
+        nw-font-bold
+        hover:nw-text-gray-700
+        nw-cursor-pointer
+      "
+    >
+      <a> FAQ </a>
+      <p class="nw-px-1">|</p>
+      <a> NUTZUNGSREGELN </a>
+    </div>
+  </div>
+  <div class="nw-mb-2">
+    <p class="nw-text-base nw-font-bold">Ihr Kommentar</p>
+  </div>
+  <form>
+    <div
+      class="
+        nw-py-1
+        nw-px-2
+        nw-mb-1
+        nw-bg-white
+        nw-rounded-md
+        nw-border
+        nw-border-black
+      "
+    >
+      <textarea
+        id="comment"
+        rows="6"
+        maxlength="3000"
+        onkeyup="changeButton()"
+        class="
+          nw-px-0 nw-w-full nw-text-sm nw-border-0
+          focus:nw-ring-0 focus:nw-outline-none
+          nw-overflow-hidden
+        "
+        placeholder="Diskutieren Sie mit …"
+        required
+      ></textarea>
+    </div>
+    <p id="result" class="nw-text-xs nw-text-gray-500"></p>
+    <button
+      type="submit"
+      id="commentButton"
+      class="
+        nw-float-right
+        nw-inline-flex
+        nw-bg-red-500
+        nw-mt-1
+        nw-py-2
+        nw-px-4
+        nw-text-tiny
+        nw-font-bold
+        nw-text-center
+        nw-text-white
+        nw-rounded-md
+        disabled:nw-bg-red-100 disabled:nw-opacity-25
+      "
+      disabled
+    >
+      Kommentar abschicken
+    </button>
+  </form>
+</div>
+<script>
+  let comment = document.getElementById('comment');
+  let result = document.getElementById('result');
+  let commentButton = document.getElementById('commentButton');
+  let limit = 3000;
+  result.textContent = 0 + ' / ' + limit;
+  comment.addEventListener('input', function () {
+    const Textlength = comment.value.length;
+    result.textContent = Textlength + ' / ' + limit;
+  });
+</script>
