@@ -63,7 +63,6 @@
         nw-float-right
         nw-inline-flex
         nw-bg-red-500
-        nw-mt-1
         nw-py-2
         nw-px-4
         nw-text-tiny
@@ -78,6 +77,69 @@
       Kommentar abschicken
     </button>
   </form>
+  <div class="nw-clear-both"></div>
+  <!-- div: weil es ein Problem in float:right im Button gibt -->
+  <div class="nw-flex nw-float-right nw-mt-4">
+    <div class="nw-flex nw-flex-col">
+      <label class="nw-text-xs nw-text-custom-1-700 nw-pb-1" for=""
+        >Kommentare anzeigen</label
+      >
+      <select
+        class="
+          nw-mr-4
+          nw-inline-flex
+          nw-w-28
+          nw-px-2
+          nw-py-1
+          nw-mx-auto
+          nw-text-xs
+          nw-border
+          nw-rounded
+          nw-font-medium
+          nw-box-border
+          nw-cursor-pointer
+        "
+        type="text"
+        placeholder=""
+        name=""
+        id=""
+      >
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+    <div class="nw-flex nw-flex-col">
+      <label class="nw-text-xs nw-text-custom-1-700 nw-pb-1" for=""
+        >Sortieren nach</label
+      >
+      <select
+        class="
+          nw-inline-flex
+          nw-w-28
+          nw-px-2
+          nw-py-1
+          nw-mx-auto
+          nw-border
+          nw-rounded
+          nw-font-medium
+          nw-text-xs
+          nw-box-border
+          nw-cursor-pointer
+        "
+        type="text"
+        placeholder=""
+        name=""
+        id=""
+      >
+        <option value="Neuste">Neuste</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  </div>
+  <div class="nw-clear-both"></div>
+  <!-- div: weil es ein Problem in float:right im Button gibt -->
 </div>
 <script>
   let comment = document.getElementById('comment');
@@ -89,4 +151,22 @@
     const Textlength = comment.value.length;
     result.textContent = Textlength + ' / ' + limit;
   });
+  document.addEventListener('DOMContentLoaded', function (event) {
+    let commentButton = document.getElementById('commentButton');
+    commentButton.disabled = true;
+    commentButton.style.backgroundColor = '#E1B9BA';
+  });
+
+  function changeButton() {
+    let comment = document.getElementById('comment');
+    let commentButton = document.getElementById('commentButton');
+
+    if (comment.value === '') {
+      commentButton.disabled = true;
+      commentButton.style.backgroundColor = '#E1B9BA';
+    } else {
+      commentButton.disabled = false;
+      commentButton.style.backgroundColor = '#D20A11';
+    }
+  }
 </script>
