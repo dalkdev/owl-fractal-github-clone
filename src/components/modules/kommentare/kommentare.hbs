@@ -1,10 +1,8 @@
-<div class="nw-p-4 nw-bg-white">
-  <hr />
+<div class="nw-bg-white">
   <div>
-    <p class="nw-py-1 nw-uppercase nw-text-xl nw-font-bold">KOMMENTARE</p>
+    <p class="nw-uppercase nw-text-xl nw-font-bold">KOMMENTARE</p>
   </div>
-  <hr />
-  <div class="nw-p-4 nw-text-center">
+  <div class="nw-py-4 nw-text-center md:nw-text-left">
     <p class="nw-text-base nw-font-bold">Guten Tag, Hansfranz1999</p>
     <p class="nw-text-tiny nw-py-1">
       Als NW+ Abonnent können Sie hier exklusiv Kommentare verfassen und sich
@@ -26,120 +24,316 @@
       <a> NUTZUNGSREGELN </a>
     </div>
   </div>
-  <div class="nw-mb-2">
-    <p class="nw-text-base nw-font-bold">Ihr Kommentar</p>
-  </div>
-  <form>
-    <div
-      class="
-        nw-py-1
-        nw-px-2
-        nw-mb-1
-        nw-bg-white
-        nw-rounded-md
-        nw-border
-        nw-border-black
-      "
-    >
-      <textarea
-        id="comment"
-        rows="6"
-        maxlength="3000"
-        onkeyup="changeButton()"
-        class="
-          nw-px-0 nw-w-full nw-text-sm nw-border-0
-          focus:nw-ring-0 focus:nw-outline-none
-          nw-overflow-hidden
-        "
-        placeholder="Diskutieren Sie mit …"
-        required
-      ></textarea>
-    </div>
-    <p id="result" class="nw-text-xs nw-text-gray-500"></p>
-    <button
-      type="submit"
-      id="commentButton"
-      class="
-        nw-float-right
-        nw-inline-flex
-        nw-bg-red-500
-        nw-py-2
-        nw-px-4
-        nw-text-tiny
-        nw-font-bold
-        nw-text-center
-        nw-text-white
-        nw-rounded-md
-        disabled:nw-bg-red-100 disabled:nw-opacity-25
-      "
-      disabled
-    >
-      Kommentar abschicken
-    </button>
-  </form>
-  <div class="nw-clear-both"></div>
-  <!-- div: weil es ein Problem in float:right im Button gibt -->
-  <div class="nw-flex nw-float-right nw-mt-4">
-    <div class="nw-flex nw-flex-col">
-      <label class="nw-text-xs nw-text-custom-1-700 nw-pb-1" for=""
-        >Kommentare anzeigen</label
-      >
-      <select
-        class="
-          nw-mr-4
-          nw-inline-flex
-          nw-w-28
-          nw-px-2
-          nw-py-1
-          nw-mx-auto
-          nw-text-xs
-          nw-border
-          nw-rounded
-          nw-font-medium
-          nw-box-border
-          nw-cursor-pointer
-        "
-        type="text"
-        placeholder=""
-        name=""
-        id=""
-      >
-        <option value="10">10</option>
-        <option value="20">20</option>
-        <option value="30">30</option>
-      </select>
-    </div>
-    <div class="nw-flex nw-flex-col">
-      <label class="nw-text-xs nw-text-custom-1-700 nw-pb-1" for=""
-        >Sortieren nach</label
-      >
-      <select
-        class="
-          nw-inline-flex
-          nw-w-28
-          nw-px-2
-          nw-py-1
-          nw-mx-auto
-          nw-border
-          nw-rounded
-          nw-font-medium
-          nw-text-xs
-          nw-box-border
-          nw-cursor-pointer
-        "
-        type="text"
-        placeholder=""
-        name=""
-        id=""
-      >
-        <option value="Neuste">Neuste</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
+  <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-4 nw-mb-4">
+    {{>@ads}}
+    <div class="nw-flex-1 md:nw-order-first">
+      <div class="nw-mb-3">
+        <p class="nw-text-base nw-font-bold">Ihr Kommentar</p>
+      </div>
+      <form>
+        <div
+          class="
+            nw-py-1
+            nw-px-2
+            nw-mb-1
+            nw-bg-white
+            nw-rounded-md
+            nw-border
+            nw-border-black
+          "
+        >
+          <textarea
+            id="comment"
+            rows="6"
+            maxlength="3000"
+            onkeyup="changeButton()"
+            class="
+              comment
+              nw-px-0 nw-w-full nw-text-sm nw-border-0
+              focus:nw-ring-0 focus:nw-outline-none
+              nw-overflow-hidden
+            "
+            placeholder="Diskutieren Sie mit …"
+            required
+          ></textarea>
+        </div>
+        <p id="result" class="result nw-text-xs nw-text-gray-500"></p>
+        <div class="nw-text-right">
+          <button
+            type="submit"
+            id="commentButton"
+            class="
+              commentButton
+              nw-inline-flex
+              nw-bg-red-500
+              nw-py-2
+              nw-px-4
+              nw-text-tiny
+              nw-font-bold
+              nw-text-center
+              nw-text-white
+              nw-rounded
+              disabled:nw-bg-red-100 disabled:nw-opacity-25
+            "
+            disabled
+          >
+            Kommentar abschicken
+          </button>
+        </div>
+      </form>
     </div>
   </div>
-  <div class="nw-clear-both"></div>
-  <!-- div: weil es ein Problem in float:right im Button gibt -->
+  <div class="nw-py-4">{{>@ads}}</div>
+  <div>
+    <div class="nw-flex nw-justify-end nw-mt-4">
+      <div class="nw-flex nw-flex-col">
+        <label class="nw-text-xs nw-text-custom-1-700 nw-pb-1" for=""
+          >Kommentare anzeigen</label
+        >
+        <select
+          class="
+            nw-mr-4
+            nw-inline-flex
+            nw-w-28
+            nw-px-2
+            nw-py-1
+            nw-mx-auto
+            nw-text-xs
+            nw-border
+            nw-rounded
+            nw-font-medium
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="text"
+          placeholder=""
+          name=""
+          id=""
+        >
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+        </select>
+      </div>
+      <div class="nw-flex nw-flex-col">
+        <label class="nw-text-xs nw-text-custom-1-700 nw-pb-1" for=""
+          >Sortieren nach</label
+        >
+        <select
+          class="
+            nw-inline-flex
+            nw-w-28
+            nw-px-2
+            nw-py-1
+            nw-mx-auto
+            nw-border
+            nw-rounded
+            nw-font-medium
+            nw-text-xs
+            nw-box-border
+            nw-cursor-pointer
+          "
+          type="text"
+          placeholder=""
+          name=""
+          id=""
+        >
+          <option value="Neuste">Neuste</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+    </div>
+    <div class="nw-bg-gray-100 nw-rounded nw-my-4 nw-shadow-md">
+      <div class="nw-p-4">
+        <div class="nw-flex">
+          <div
+            class="
+              nw-mr-1
+              nw-bg-gray-600
+              nw-relative
+              nw-text-white
+              nw-text-center
+              nw-w-7
+              nw-h-7
+              nw-rounded-full
+              nw-flex
+              nw-content-center
+              nw-justify-center
+            "
+          >
+            <span
+              style="transform: translateY(-50%)"
+              class="nw-absolute nw-text-sm nw-top-2/4"
+              >FW
+            </span>
+          </div>
+          <p class="nw-text-tiny nw-font-bold nw-leading-loose">Futuremen</p>
+        </div>
+        <span class="nw-text-xs nw-text-custom-1-700 nw-font-medium"
+          >Vor 5 Minuten
+        </span>
+        <p class="nw-text-tiny nw-py-1">
+          Das Problem ist, wer sich nicht in der Gastronomie trifft, quetscht
+          sich Daheim mit Freunden in der oft sehr kleinen „GutenStube“
+          zusammen, natürlich ohne MundNasenschutz, geschweige FFP2 Standard!
+          #Nachdenken!
+        </p>
+      </div>
+      <hr class="md:nw-hidden" />
+      <div class="nw-text-sm nw-font-medium nw-text-center nw-text-black">
+        <ul
+          class="
+            nw-flex nw--mb-px nw-place-content-center
+            md:nw-place-content-end
+          "
+        >
+          <li class="nw-mr-2">
+            <a
+              href="#"
+              class="
+                tabs
+                nw-flex nw-inline-block nw-leading-tight nw-p-2 nw-border-r
+                md:nw-border-r-0
+                nw-text-custom-1-700
+              "
+              aria-current="page"
+            >
+              <svg
+                class="nw-w-3 nw-h-3 nw-mr-0.5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+                />
+              </svg>
+              Antworten</a
+            >
+          </li>
+          <li class="nw-mr-2">
+            <a
+              href="#"
+              class="
+                tabs
+                nw-flex nw-inline-block nw-leading-tight nw-p-2 nw-border-r
+                md:nw-border-r-0
+                nw-text-custom-1-700
+              "
+            >
+              <svg
+                class="nw-w-3 nw-h-3 nw-mr-0.5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+                />
+              </svg>
+              Melden</a
+            >
+          </li>
+          <li class="nw-mr-2">
+            <a
+              href="#"
+              class="
+                tabs
+                nw-flex
+                nw-inline-block
+                nw-leading-tight
+                nw-p-2
+                nw-text-custom-1-700
+              "
+            >
+              <svg
+                class="nw-w-3 nw-h-3 nw-mr-0.5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+              24
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="container md:nw-ml-12">
+        <div class="nw-mb-3">
+          <p class="nw-text-base nw-font-bold">Ihre Antwort</p>
+        </div>
+        <form>
+          <div
+            class="
+              nw-py-1
+              nw-px-2
+              nw-mb-1
+              nw-bg-white
+              nw-rounded-md
+              nw-border
+              nw-border-black
+            "
+          >
+            <textarea
+              id="comment"
+              rows="6"
+              maxlength="3000"
+              onkeyup="changeButton()"
+              class="
+                comment
+                nw-px-0 nw-w-full nw-text-sm nw-border-0
+                focus:nw-ring-0 focus:nw-outline-none
+                nw-overflow-hidden
+              "
+              placeholder="Diskutieren Sie mit …"
+              required
+            ></textarea>
+          </div>
+          <p id="result" class="result nw-text-xs nw-text-gray-500"></p>
+          <div class="nw-text-right">
+            <button
+              type="submit"
+              id="commentButton"
+              class="
+                commentButton
+                nw-inline-flex
+                nw-bg-red-500
+                nw-py-2
+                nw-px-4
+                nw-text-tiny
+                nw-font-bold
+                nw-text-center
+                nw-text-white
+                nw-rounded
+                disabled:nw-bg-red-100 disabled:nw-opacity-25
+              "
+              disabled
+            >
+              Kommentar abschicken
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 <script>
   let comment = document.getElementById('comment');
@@ -151,6 +345,9 @@
     const Textlength = comment.value.length;
     result.textContent = Textlength + ' / ' + limit;
   });
+</script>
+
+<script>
   document.addEventListener('DOMContentLoaded', function (event) {
     let commentButton = document.getElementById('commentButton');
     commentButton.disabled = true;
@@ -169,4 +366,22 @@
       commentButton.style.backgroundColor = '#D20A11';
     }
   }
+</script>
+<script>
+  let array_tabs = document.getElementsByClassName('tabs');
+  Array.prototype.forEach.call(array_tabs, (x, i) => {
+    x.addEventListener('click', e => {
+      Array.prototype.forEach.call(array_tabs, x => {
+        x.classList.remove('nw-text-gray-300');
+        x.classList.add('nw-text-custom-1-700');
+      });
+      x.classList.remove('nw-text-custom-1-700');
+      x.classList.add('nw-text-gray-300');
+      let array_container = document.getElementsByClassName('container');
+      Array.prototype.forEach.call(array_container, x => {
+        x.classList.add('nw-hidden');
+      });
+      array_container[i].classList.remove('nw-hidden');
+    });
+  });
 </script>
