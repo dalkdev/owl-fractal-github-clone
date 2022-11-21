@@ -1,0 +1,95 @@
+<div class="nw-mb-3">
+  <p class="nw-text-base nw-font-bold">Ihre Antwort</p>
+</div>
+<form>
+  <div>
+    <textarea
+      id="comment"
+      rows="8"
+      maxlength="3000"
+      class="
+        comment
+        nw-w-full nw-text-sm
+        focus:nw-ring-0 focus:nw-outline-none
+        nw-overflow-hidden
+        nw-py-1
+        nw-px-2
+        nw-mb-1
+        nw-bg-white
+        nw-rounded-md
+        nw-border
+        nw-border-black
+      "
+      placeholder="Diskutieren Sie mit …"
+      required
+    ></textarea>
+    <p class="result nw-text-xs nw-text-gray-500">0/3000</p>
+  </div>
+  <div class="nw-text-right">
+    <button
+      type="submit"
+      class="
+        nw-inline-flex
+        nw-bg-red-100
+        nw-py-2
+        nw-px-4
+        nw-text-tiny
+        nw-font-bold
+        nw-text-center
+        nw-text-white
+        nw-rounded
+      "
+      disabled
+    >
+      Antworten
+    </button>
+  </div>
+</form>
+<script>
+  var inputs = document.querySelectorAll('.comment');
+  inputs.forEach(function (input) {
+    input.addEventListener('keyup', function (e) {
+      var s = this.closest('p');
+      var counter = this.value.length;
+      input.nextElementSibling.innerHTML = counter + '/3000';
+      var parent = input.parentNode;
+      var btn = parent.nextElementSibling.childNodes[1];
+      if (counter == 0) {
+        btn.style.backgroundColor = '#E1B9BA';
+      } else {
+        btn.disabled = false;
+        btn.style.backgroundColor = '#D20A11';
+      }
+    });
+  });
+</script>
+<!--
+<script>
+    let comment = document.getElementById('comment');
+    let result = document.getElementById('result');
+    let commentButton = document.getElementById('commentButton');
+    let limit = 3000;
+    result.textContent = 0 + ' / ' + limit;
+    comment.addEventListener('input', function () {
+        const Textlength = comment.value.length;
+        result.textContent = Textlength + ' / ' + limit;
+    });
+    document.addEventListener('DOMContentLoaded', function (event) {
+        let commentButton = document.getElementById('commentButton');
+        commentButton.disabled = true;
+        commentButton.style.backgroundColor = '#E1B9BA';
+    });
+
+    function changeButton() {
+        let comment = document.getElementById('comment');
+        let commentButton = document.getElementById('commentButton');
+
+        if (comment.value === '') {
+            commentButton.disabled = true;
+            commentButton.style.backgroundColor = '#E1B9BA';
+        } else {
+            commentButton.disabled = false;
+            commentButton.style.backgroundColor = '#D20A11';
+        }
+    }
+</script> -->
