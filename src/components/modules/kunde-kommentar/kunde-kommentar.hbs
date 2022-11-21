@@ -425,62 +425,7 @@
       <div>
         <div class="nw-hidden container md:nw-ml-12"></div>
       </div>
-      <div>
-        <div class="nw-mb-3">
-          <p class="nw-text-base nw-font-bold">Ihre Antwort</p>
-        </div>
-        <form>
-          <div
-            class="
-              nw-py-1
-              nw-px-2
-              nw-mb-1
-              nw-bg-white
-              nw-rounded-md
-              nw-border
-              nw-border-black
-            "
-          >
-            <textarea
-              id="comment"
-              rows="6"
-              maxlength="3000"
-              onkeyup="changeButton()"
-              class="
-                comment
-                nw-px-0 nw-w-full nw-text-sm nw-border-0
-                focus:nw-ring-0 focus:nw-outline-none
-                nw-overflow-hidden
-              "
-              placeholder="Diskutieren Sie mit …"
-              required
-            ></textarea>
-          </div>
-          <p id="result" class="result nw-text-xs nw-text-gray-500"></p>
-          <div class="nw-text-right">
-            <button
-              type="submit"
-              id="commentButton"
-              class="
-                commentButton
-                nw-inline-flex
-                nw-bg-red-500
-                nw-py-2
-                nw-px-4
-                nw-text-tiny
-                nw-font-bold
-                nw-text-center
-                nw-text-white
-                nw-rounded
-                disabled:nw-bg-red-100 disabled:nw-opacity-25
-              "
-              disabled
-            >
-              Antworten
-            </button>
-          </div>
-        </form>
-      </div>
+      {{>@kommentar-box}}
     </div>
   </div>
   <div class="nw-my-4">
@@ -549,34 +494,6 @@
       array_container[i].classList.remove('nw-hidden');
     });
   });
-
-  let comment = document.getElementById('comment');
-  let result = document.getElementById('result');
-  let commentButton = document.getElementById('commentButton');
-  let limit = 3000;
-  result.textContent = 0 + ' / ' + limit;
-  comment.addEventListener('input', function () {
-    const Textlength = comment.value.length;
-    result.textContent = Textlength + ' / ' + limit;
-  });
-  document.addEventListener('DOMContentLoaded', function (event) {
-    let commentButton = document.getElementById('commentButton');
-    commentButton.disabled = true;
-    commentButton.style.backgroundColor = '#E1B9BA';
-  });
-
-  function changeButton() {
-    let comment = document.getElementById('comment');
-    let commentButton = document.getElementById('commentButton');
-
-    if (comment.value === '') {
-      commentButton.disabled = true;
-      commentButton.style.backgroundColor = '#E1B9BA';
-    } else {
-      commentButton.disabled = false;
-      commentButton.style.backgroundColor = '#D20A11';
-    }
-  }
 
   function ausblehnden() {
     var x = document.getElementById('box');

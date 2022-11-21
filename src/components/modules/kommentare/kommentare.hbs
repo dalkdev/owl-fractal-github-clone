@@ -31,41 +31,35 @@
         <p class="nw-text-base nw-font-bold">Ihr Kommentar</p>
       </div>
       <form>
-        <div
-          class="
-            nw-py-1
-            nw-px-2
-            nw-mb-1
-            nw-bg-white
-            nw-rounded-md
-            nw-border
-            nw-border-black
-          "
-        >
+        <div>
           <textarea
             id="comment"
-            rows="6"
+            rows="8"
             maxlength="3000"
-            onkeyup="changeButton()"
             class="
               comment
-              nw-px-0 nw-w-full nw-text-sm nw-border-0
+              nw-w-full nw-text-sm
               focus:nw-ring-0 focus:nw-outline-none
               nw-overflow-hidden
+              nw-py-1
+              nw-px-2
+              nw-mb-1
+              nw-bg-white
+              nw-rounded-md
+              nw-border
+              nw-border-black
             "
             placeholder="Diskutieren Sie mit …"
             required
           ></textarea>
+          <p class="result nw-text-xs nw-text-gray-500">0/3000</p>
         </div>
-        <p id="result" class="result nw-text-xs nw-text-gray-500"></p>
         <div class="nw-text-right">
           <button
             type="submit"
-            id="commentButton"
             class="
-              commentButton
               nw-inline-flex
-              nw-bg-red-500
+              nw-bg-red-100
               nw-py-2
               nw-px-4
               nw-text-tiny
@@ -73,11 +67,10 @@
               nw-text-center
               nw-text-white
               nw-rounded
-              disabled:nw-bg-red-100 disabled:nw-opacity-25
             "
             disabled
           >
-            Kommentar abschicken
+            Kommentar Abschicken
           </button>
         </div>
       </form>
@@ -276,82 +269,17 @@
       </div>
     </div>
     <div>
-      <div class="container md:nw-ml-12">
-        <div class="nw-mb-3">
-          <p class="nw-text-base nw-font-bold">Ihre Antwort</p>
-        </div>
-        <form>
-          <div
-            class="
-              nw-py-1
-              nw-px-2
-              nw-mb-1
-              nw-bg-white
-              nw-rounded-md
-              nw-border
-              nw-border-black
-            "
-          >
-            <textarea
-              id="comment"
-              rows="6"
-              maxlength="3000"
-              onkeyup="changeButton()"
-              class="
-                comment
-                nw-px-0 nw-w-full nw-text-sm nw-border-0
-                focus:nw-ring-0 focus:nw-outline-none
-                nw-overflow-hidden
-              "
-              placeholder="Diskutieren Sie mit …"
-              required
-            ></textarea>
-          </div>
-          <p id="result" class="result nw-text-xs nw-text-gray-500"></p>
-          <div class="nw-text-right">
-            <button
-              type="submit"
-              id="commentButton"
-              class="
-                commentButton
-                nw-inline-flex
-                nw-bg-red-500
-                nw-py-2
-                nw-px-4
-                nw-text-tiny
-                nw-font-bold
-                nw-text-center
-                nw-text-white
-                nw-rounded
-                disabled:nw-bg-red-100 disabled:nw-opacity-25
-              "
-              disabled
-            >
-              Kommentar abschicken
-            </button>
-          </div>
-        </form>
-      </div>
+      <div class="container md:nw-ml-12">{{>@kommentar-box}}</div>
     </div>
   </div>
 </div>
 <script>
-  let comment = document.getElementById('comment');
-  let result = document.getElementById('result');
-  let commentButton = document.getElementById('commentButton');
-  let limit = 3000;
-  result.textContent = 0 + ' / ' + limit;
-  comment.addEventListener('input', function () {
-    const Textlength = comment.value.length;
-    result.textContent = Textlength + ' / ' + limit;
-  });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function (event) {
-    let commentButton = document.getElementById('commentButton');
-    commentButton.disabled = true;
-    commentButton.style.backgroundColor = '#E1B9BA';
+  limit = 3000;
+  var inputs = document.querySelectorAll('.comment');
+  inputs.forEach(function (input) {
+    input.addEventListener('keyup', function (e) {
+      console.log(this.value.length);
+    });
   });
 
   function changeButton() {
