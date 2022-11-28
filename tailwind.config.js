@@ -60,6 +60,7 @@ module.exports = {
         lg: '1.25rem',
         xl: '1.5rem',
         '2xl': '1.75rem',
+        '3xl': '2rem',
       },
       spacing: {
         1: '0.5rem',

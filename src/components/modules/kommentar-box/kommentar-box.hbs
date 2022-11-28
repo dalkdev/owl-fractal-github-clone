@@ -4,8 +4,7 @@
 <form>
   <div>
     <textarea
-      id="comment"
-      rows="8"
+      rows="7"
       maxlength="3000"
       class="
         comment
@@ -14,7 +13,6 @@
         nw-overflow-hidden
         nw-py-1
         nw-px-2
-        nw-mb-1
         nw-bg-white
         nw-rounded-md
         nw-border
@@ -30,7 +28,7 @@
       type="submit"
       class="
         nw-inline-flex
-        nw-bg-red-100
+        nw-bg-red-500
         nw-py-2
         nw-px-4
         nw-text-tiny
@@ -49,16 +47,14 @@
   var inputs = document.querySelectorAll('.comment');
   inputs.forEach(function (input) {
     input.addEventListener('keyup', function (e) {
-      var s = this.closest('p');
       var counter = this.value.length;
       input.nextElementSibling.innerHTML = counter + '/3000';
       var parent = input.parentNode;
       var btn = parent.nextElementSibling.childNodes[1];
       if (counter == 0) {
-        btn.style.backgroundColor = '#E1B9BA';
+        btn.disabled = true;
       } else {
         btn.disabled = false;
-        btn.style.backgroundColor = '#D20A11';
       }
     });
   });
