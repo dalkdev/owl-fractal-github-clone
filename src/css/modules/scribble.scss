@@ -1,0 +1,49 @@
+#nw-liveticker-box {
+  .nw-liveticker-head {
+    .nw-liveticker-dot {
+      @apply nw-absolute nw-w-2 nw-h-2 nw-bg-red-400 nw-rounded-full nw-border-2 nw-border-white;
+      margin-top: 0.4rem;
+      margin-left: -0.25rem;
+    }
+
+    .nw-liveticker-head-text {
+      @apply nw-text-base nw-ml-2 nw-font-bold;
+    }
+  }
+
+  ol {
+    @apply nw-relative nw-border-l-2 nw-border-gray-200 nw-mt-4;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      left: -3rem;
+      right: 0;
+      bottom: 0.125rem;
+      height: 8rem;
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 15%,
+        rgba(0, 212, 255, 0) 100%
+      );
+    }
+
+    li {
+      &:first-child {
+        .nw-liveticker-dot {
+          @apply nw-absolute nw-w-2 nw-h-2 nw-bg-red-400 nw-rounded-full nw-border-2 nw-border-white;
+          left: -0.425rem;
+        }
+      }
+
+      &:last-child {
+      }
+
+      .nw-liveticker-dot {
+        @apply nw-absolute nw-w-2 nw-h-2 nw-bg-gray-400 nw-rounded-full nw-border-2 nw-border-white;
+        left: -0.425rem;
+      }
+    }
+  }
+}
