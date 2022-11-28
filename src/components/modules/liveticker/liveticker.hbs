@@ -1,0 +1,307 @@
+<div class="nw-bg-white nw-p-4">
+  <!-- ab hier kopieren, oberes DIV ignorieren -->
+  <div class="nw-px-8" id="nw-liveticker-box">
+    <div class="nw-liveticker-head">
+      <div class="nw-flex nw-flex-row nw-content-center">
+        <div class="nw-liveticker-dot"></div>
+        <div class="nw-liveticker-head-text">Live-Ticker</div>
+      </div>
+    </div>
+    <h2 class="nw-text-xl nw-font-bold">Corona-News aus dem Kreis Herford</h2>
+    <div>
+      <ol>
+        <li class="nw-mb-10 nw-ml-4">
+          <div class="nw-liveticker-dot"></div>
+          <time
+            class="
+              nw-mb-1
+              nw-text-base
+              nw-font-normal
+              nw-leading-none
+              nw-flex
+              nw-flex-row
+              nw-align-center
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="nw-w-3 nw-h-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <div class="nw-pl-1 align-middle">20.10.2022, 14:23</div>
+          </time>
+          <h3 class="nw-text-lg nw-font-semibold nw-text-gray-900">
+            Warum auf der Herforder Kirmes so viel Polizei war
+          </h3>
+          <p class="nw-mb-4 nw-text-base nw-font-normal nw-text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+            malesuada ex. Nulla faucibus semper lobortis. Donec nec vestibulum
+            sem. Pellentesque nec porta eros, mollis porta purus. Morbi dictum
+            velit ac posuere fermentum. Aenean laoreet, tellus sed dictum
+            varius, diam sem scelerisque nunc, in accumsan purus velit non
+            tortor.
+          </p>
+        </li>
+        <li class="nw-mb-10 nw-ml-4">
+          <div class="nw-liveticker-dot"></div>
+          <time
+            class="
+              nw-mb-1
+              nw-text-base
+              nw-font-normal
+              nw-leading-none
+              nw-flex
+              nw-flex-row
+              nw-align-center
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="nw-w-3 nw-h-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <div class="nw-pl-1 align-middle">20.10.2022, 14:23</div>
+          </time>
+          <h3 class="nw-text-lg nw-font-semibold nw-text-gray-900">
+            Marketing UI design in Figma
+          </h3>
+          <p class="text-base font-normal text-gray-500">
+            Nullam aliquam augue a lectus pretium, eget hendrerit urna egestas.
+            Aliquam a ex ut dolor vehicula porta. Sed condimentum congue purus,
+            ac dignissim enim iaculis ac.
+          </p>
+        </li>
+        <li class="nw-ml-4">
+          <div class="nw-liveticker-dot"></div>
+          <time
+            class="
+              nw-mb-1
+              nw-text-base
+              nw-font-normal
+              nw-leading-none
+              nw-flex
+              nw-flex-row
+              nw-align-center
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="nw-w-3 nw-h-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <div class="nw-pl-1 align-middle">20.10.2022, 14:23</div>
+          </time>
+          <h3 class="nw-text-lg nw-font-semibold nw-text-gray-900">
+            E-Commerce UI code in Tailwind CSS
+          </h3>
+          <p class="nw-text-base nw-font-normal nw-text-gray-500">
+            Nulla facilisi. Donec dapibus quam mi. Ut felis ligula, hendrerit
+            vel arcu et, dictum finibus tellus. Pellentesque sit amet lectus
+            mauris. Class aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos.
+          </p>
+        </li>
+      </ol>
+    </div>
+    <div class="nw-pt-1">{{>'@link-button--no-padding' button}}</div>
+  </div>
+</div>
+<script type="text/javascript">
+  let event_id = 0;
+  let max_pages = 0;
+  let current_page = 0;
+  let timer_id = null;
+  let update_enabled = false;
+  let is_live = true;
+  let last_timestamp = 0;
+  let last_timestamp_update = 0;
+
+  (function () {
+    initlivetickerBox();
+    autoUpdateStream();
+    getTimeStamp();
+  })();
+
+  function initlivetickerBox() {
+    let livetickers = document.getElementsByClassName('liveticker-box');
+    Array.from(livetickers).forEach(function (liveticker) {
+      if ((liveticker.tagName = 'DIV')) {
+        event_id = liveticker.dataset.event;
+        max_pages = parseInt(liveticker.dataset.maxpages);
+        is_live = parseInt(liveticker.dataset.live);
+        current_page = liveticker.dataset.startpage;
+      }
+    });
+
+    return event_id;
+  }
+
+  function autoUpdateStream() {
+    timer_id = setInterval(function () {
+      getlivetickerUpdates(event_id, 0, true);
+    }, 15 * 1000);
+  }
+
+  function clearAutoUpdateStream() {
+    clearInterval(timer_id);
+  }
+
+  function nextlivetickerPage() {
+    document.getElementById('next_page').disabled = true;
+    document.getElementById('next_page').data = 'Bitte warten...';
+    current_page = parseInt(current_page);
+    current_page += 1;
+    getliveticker(event_id, current_page);
+  }
+
+  function changeUpdate() {
+    let checkBox = document.getElementById('auto-update');
+
+    if (checkBox.checked === true) {
+      getliveticker(event_id, 0, true);
+      autoUpdateStream();
+      getTimeStamp();
+    } else {
+      clearAutoUpdateStream();
+    }
+  }
+
+  function jump(h) {
+    var url = location.href; //Save down the URL without hash.
+    location.href = '#' + h; //Go to the target element.
+    history.replaceState(null, null, url); //Don't like hashes. Changing it back.
+  }
+
+  function getTimeStamp() {
+    let r = new XMLHttpRequest();
+    r.open(
+      'POST',
+      '/_em_daten/locals/module/nw/_includes/scripts/liveticker_ajax.php',
+      true
+    );
+    r.setRequestHeader('Content-Type', 'application/json');
+    r.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let response = JSON.parse(this.responseText);
+        if (response.TimeMs > last_timestamp_update) {
+          last_timestamp_update = Math.floor(response.TimeMs / 1000);
+          if (last_timestamp == 0) {
+            last_timestamp = last_timestamp_update;
+          }
+        }
+      }
+    };
+
+    let data = {
+      event: event_id,
+      method: 'getLastModifiedTimestamp',
+      params: [],
+    };
+    r.send(JSON.stringify(data));
+  }
+
+  function getlivetickerUpdates(event_id) {
+    getTimeStamp();
+
+    if (last_timestamp < last_timestamp_update) {
+      let r = new XMLHttpRequest();
+      r.open(
+        'POST',
+        '/_em_daten/locals/module/nw/_includes/scripts/liveticker_ajax.php',
+        true
+      );
+      r.setRequestHeader('Content-Type', 'application/json');
+      r.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          let response = JSON.parse(this.responseText);
+          document.getElementById('liveticker-content-posts').innerHTML =
+            response.content +
+            document.getElementById('liveticker-content-posts').innerHTML;
+          last_timestamp = last_timestamp_update;
+        }
+      };
+
+      let data = {
+        event: event_id,
+        method: 'getPostsSinceTimestamp',
+        params: {
+          timestamp:
+            last_timestamp > 0 ? last_timestamp + 1 : last_timestamp_update + 1,
+        },
+      };
+      r.send(JSON.stringify(data));
+    }
+  }
+
+  function getliveticker(event_id, page = current_page, clear_stream = false) {
+    let r = new XMLHttpRequest();
+    r.open(
+      'POST',
+      '/_em_daten/locals/module/nw/_includes/scripts/liveticker_ajax.php',
+      true
+    );
+    r.setRequestHeader('Content-Type', 'application/json');
+    r.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let response = JSON.parse(this.responseText);
+
+        if (clear_stream === true) {
+          document.getElementById('liveticker-content-posts').innerHTML = '';
+        }
+
+        current_page = response.page--;
+        event_id = response.event_id;
+        max_pages = response.max_pages;
+        is_live = response.is_live;
+        document.getElementById('liveticker-content-posts').innerHTML +=
+          response.content;
+        var refreshAllSlots = function () {
+          googletag.cmd.push(function () {
+            googletag.pubads().refresh();
+          });
+        };
+        if (current_page !== max_pages - 1) {
+          document.getElementById('next_page').disabled = false;
+        }
+      }
+    };
+
+    let data = {
+      event: event_id,
+      method: 'getPage',
+      type: '$replacer_type',
+      params: {
+        page_size: 20,
+        page: current_page,
+      },
+    };
+    r.send(JSON.stringify(data));
+  }
+</script>
