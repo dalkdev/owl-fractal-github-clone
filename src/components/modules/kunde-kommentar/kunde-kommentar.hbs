@@ -1,4 +1,4 @@
-<div class="nw-bg-white">
+<div class="nw-bg-white nw-max-w-3xl">
   <div class="nw-bg-gray-100 nw-rounded nw-my-4 nw-shadow-md">
     <div class="nw-p-4">
       <div class="nw-flex">
@@ -28,7 +28,7 @@
       <span class="nw-text-xs nw-text-custom-1-700 nw-font-medium"
         >Vor 5 Minuten
       </span>
-      <p class="nw-text-tiny nw-py-1">
+      <p class="nw-text-base nw-py-1">
         Das Problem ist, wer sich nicht in der Gastronomie trifft, quetscht sich
         Daheim mit Freunden in der oft sehr kleinen „GutenStube“ zusammen,
         natürlich ohne MundNasenschutz, geschweige FFP2 Standard! #Nachdenken!
@@ -186,7 +186,7 @@
           <span class="nw-text-xs nw-text-custom-1-700 nw-font-medium"
             >Vor 5 Minuten
           </span>
-          <p class="nw-text-tiny nw-py-1">
+          <p class="nw-text-base nw-py-1">
             Das Problem ist, wer sich nicht in der Gastronomie trifft, quetscht
             sich Daheim mit Freunden in der oft sehr kleinen „GutenStube“
             zusammen, natürlich ohne MundNasenschutz, geschweige FFP2 Standard!
@@ -320,7 +320,7 @@
           <span class="nw-text-xs nw-text-custom-1-700 nw-font-medium"
             >Vor 5 Minuten
           </span>
-          <p class="nw-text-tiny nw-py-1">
+          <p class="nw-text-base nw-py-1">
             Das Problem ist, wer sich nicht in der Gastronomie trifft, quetscht
             sich Daheim mit Freunden in der oft sehr kleinen „GutenStube“
             zusammen, natürlich ohne MundNasenschutz, geschweige FFP2 Standard!
@@ -453,7 +453,7 @@
   </div>
   <div class="nw-pt-2 nw-pb-4 nw-text-center">
     <p class="nw-text-base nw-font-bold">Guten Tag, Hansfranz1999</p>
-    <p class="nw-text-tiny nw-pt-1 nw-py-4 md:nw-max-w-md nw-mx-auto">
+    <p class="nw-text-base nw-pt-1 nw-py-4 md:nw-max-w-md nw-mx-auto">
       Als NW+ Abonnent können Sie hier exklusiv Kommentare verfassen und sich
       mit Autoren und Lesern austauschen.
     </p>
@@ -478,6 +478,21 @@
   </div>
 </div>
 <script>
+  function ausblehnden() {
+    var x = document.getElementById('box');
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
+    var y = document.getElementById('arrowSvg');
+    if (y.classList.contains('nw-transform')) {
+      y.classList.remove('nw-transform', 'nw-rotate-180');
+    } else {
+      y.classList.add('nw-transform', 'nw-rotate-180');
+    }
+  }
+
   let array_tabs = document.getElementsByClassName('tabs');
   Array.prototype.forEach.call(array_tabs, (x, i) => {
     x.addEventListener('click', e => {
@@ -494,15 +509,16 @@
       array_container[i].classList.remove('nw-hidden');
     });
   });
-
-  function ausblehnden() {
-    var x = document.getElementById('box');
+</script>
+<script>
+  function toggleCommentsVisibility() {
+    var x = document.getElementById('kommentarBlock');
     if (x.style.display === 'none') {
       x.style.display = 'block';
     } else {
       x.style.display = 'none';
     }
-    var y = document.getElementById('arrowSvg');
+    var y = document.getElementById('ausKlappen');
     if (y.classList.contains('nw-transform')) {
       y.classList.remove('nw-transform', 'nw-rotate-180');
     } else {
