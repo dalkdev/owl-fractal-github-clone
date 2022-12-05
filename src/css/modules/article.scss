@@ -1,4 +1,10 @@
-.nw-red-line {
+.nw-red-line-m {
+  width: 40px;
+  border-bottom: 2px solid #d20a11;
+  border-top-width: 0;
+}
+
+.nw-red-line-l {
   width: 64px;
   border-bottom: 2px solid #d20a11;
   border-top-width: 0;
@@ -10,9 +16,12 @@
   margin-bottom: 0;
   margin-right: 3.5rem;
   margin-left: 0;
-  padding: 1rem 2rem 1.5625rem 2rem;
   background-color: white;
   border-top-right-radius: 0.25rem;
+}
+
+.padding-text {
+  padding: 1rem 2rem 1.5625rem 2rem;
 }
 
 .nw-ads-height-width {
