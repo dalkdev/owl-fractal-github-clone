@@ -1,11 +1,28 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <div class="nw-bg-white md:nw-p-4">
   <div class="nw-relative">
     <div class="nw-aspect-w-16 nw-aspect-h-9">
-      <img
-        class="nw-object-cover nw-h-full nw-w-full md:nw-rounded-md"
-        src="/images/arminia-angebot/img-live-ticker.jpg"
-      />
+      <picture>
+        <source
+          media="(max-width: 575px)"
+          srcset="/images/arminia-angebot/img-analysen.jpg 575w"
+          alt="image-new1"
+        />
+        <source
+          media="(max-width: 768px)"
+          srcset="/images/arminia-angebot/img-live-ticker.jpg 768w"
+          alt="image-new2"
+        />
+        <source
+          media="(max-width: 1399px)"
+          srcset="/images/arminia-angebot/img-transfer.jpg 1200w"
+          alt="image-new3"
+        />
+        <img
+          srcset="/images/arminia-angebot/img-live-ticker.jpg 1200w"
+          class="nw-object-cover nw-h-full nw-w-full md:nw-rounded-md"
+          alt="image-new"
+        />
+      </picture>
     </div>
     <button
       class="
@@ -38,22 +55,43 @@
       </svg>
     </button>
   </div>
-  <div id="paragraph" class="nw-text-sm nw-hidden margin-text">
-    Per Handy verbunden: Mehr als 120 Menschen haben sich in einer
-    Telegram-Gruppe vernetzt, die von einer Bünderin administriert wird. | ©
-    Florian Weyand
+  <div id="paragraph" class="transs margin-text">
+    <p class="nw-text-sm padding-text">
+      Per Handy verbunden: Mehr als 120 Menschen haben sich in einer
+      Telegram-Gruppe vernetzt, die von einer Bünderin administriert wird. | ©
+      Florian Weyand
+    </p>
   </div>
 </div>
+<style>
+  .transs {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
+  .trans {
+    max-height: 400px;
+    transition: max-height 0.8s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+</style>
 <script>
   function arrow() {
-    $('#paragraph').slideToggle(500);
-    // var x = document.getElementById("paragraph");
-    var arrow = $('#svg').toggleClass('nw-rotate-180');
-    if (arrow.hasClass('nw-transform')) {
-      arrow.removeClass('nw-transform');
+    var x = document.getElementById('paragraph');
+    var y = document.getElementById('svg');
+    if (x.classList.contains('transs')) {
+      x.classList.remove('transs');
+      x.classList.add('trans');
     } else {
-      arrow.addClass('nw-transform');
+      x.classList.remove('trans');
+      x.classList.add('transs');
+    }
+    if (y.classList.contains('nw-transform')) {
+      y.classList.remove('nw-transform', 'nw-rotate-180');
+    } else {
+      y.classList.add('nw-transform', 'nw-rotate-180');
     }
   }
 </script>
