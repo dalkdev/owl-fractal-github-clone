@@ -4,7 +4,7 @@
   <div class="sm:nw-pt-4">{{>@ads--header}}</div>
   <!-- ads-header ende -->
   <!-- banner author social icons -->
-  <div class="nw-py-8 nw-px-4 nw-max-w-4xl nw-mx-auto">
+  <div class="nw-pt-8 nw-px-4 nw-max-w-4xl nw-mx-auto">
     {{>'@banner'}}
     <div>
       <p
@@ -22,9 +22,9 @@
   </div>
   <!-- banner author social icons ende-->
   <!-- image mit button -->
-  <div class="nw-mb-4">{{>'@image--with-button'}}</div>
+  {{>'@image--with-button'}}
   <!-- image mit button ende -->
-  <!-- Text / ads/ Text -->
+  <!-- Text / ads/ Text /empfehlungen module and image rounded module mit Texte-->
   <div class="nw-px-4 nw-py-4 nw-text-base nw-max-w-4xl nw-mx-auto">
     <div
       class="
@@ -81,10 +81,6 @@
       Ort, an dem der Übergang von Falsch-informationen zu rechtsextremen
       Inhalten fließend ist.
     </p>
-  </div>
-  <!-- Text / ads/ Text ende -->
-  <!--empfehlungen module and image rounded module mit Texte -->
-  <div class="nw-px-4 nw-py-4 nw-text-base nw-max-w-4xl nw-mx-auto">
     {{>@empfehlungen}}
     <div
       class="
@@ -122,11 +118,11 @@
       </p>
     </div>
   </div>
-  <!--empfehlungen module ende and image rounded module mit Texte ende-->
+  <!-- Text / ads/ Text ende /empfehlungen module and image rounded module mit Texte ende-->
   <!-- Slider -->
   <div class="nw-mt-8 nw-mb-4">{{>@slider}}</div>
   <!-- Slider ende -->
-  <!-- Text/ ads/ Text -->
+  <!-- Text/ ads/ Text /Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module-->
   <div class="nw-px-4 nw-py-4 nw-text-base nw-max-w-4xl nw-mx-auto">
     <div
       class="
@@ -201,12 +197,8 @@
         </span>
       </p>
     </div>
-  </div>
-  <!-- Text/ ads/ Text ende -->
-  <!-- Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module-->
-  <div class="nw-max-w-4xl nw-mx-auto nw-px-4 nw-mb-4">
     <div class="md:nw-w-5/6 nw-text-base">
-      {{>@privacy}}
+      <div class="nw-my-4">{{>@privacy}}</div>
       <p class="nw-py-4">
         Welches Weltbild der Mann im Kopf hat, zeigt sich nur drei Tage später.
         Am 13. Dezember teilt er den Mitgliedern mit, dass das „3. Reich niemals
@@ -293,6 +285,6 @@
       {{>@link-liste}} {{>@download}} {{>@kommentare}}
     </div>
   </div>
-  <!-- Privacy Module mit Text Section ende  und Info-box / Link-liste/ download-liste/ Kommentare Module ende-->
+  <!-- Text/ ads/ Text ende/ Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module ende -->
 </div>
 {{>@footer (contextData '@footer') }}
