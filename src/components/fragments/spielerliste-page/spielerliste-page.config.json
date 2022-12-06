@@ -1,0 +1,91 @@
+{
+  "status": "qm",
+  "context": {
+    "spielerliste": [
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Lionel Messi"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Robert Lewando"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Neymar"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Kylian Mbappé"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Gerd Müller"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Manuel Neuer"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Stefan Ortega Moreno"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Amos Pieper"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Manuel Prietl"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Fabian Klosi"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Patrick Wimmer"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Masaya Okugawa"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Cédric Brunner"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Joakim Nilsson"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Janni Serra"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Alessandro Schöpf"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Gonzalo Castro"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Andrés Andrade"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "George Bello"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Florian Krüger"
+      },
+      {
+        "spielerimg": "https://via.placeholder.com/150x150.png",
+        "spielername": "Fabian Kunze"
+      }
+    ]
+  }
+}
