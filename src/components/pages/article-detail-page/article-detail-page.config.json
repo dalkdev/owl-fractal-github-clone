@@ -76,6 +76,71 @@
     "fifthColumn": {
       "headline": "Newsletter abonnieren"
     },
-    "menuitem": "Menüpunkt 1"
+    "menuitem": "Menüpunkt 1",
+    "glossar": [
+      {
+        "label": "Bielefeld",
+        "items": [
+          "1 Wetter Bielefeld",
+          "2 Polizei Bielefeld",
+          "3 Resturants Bielefeld",
+          "4 Inzidenzwert Bielefeld"
+        ]
+      },
+      {
+        "label": "Kreis Gütersloh",
+        "items": [
+          "1 Tim Kähler",
+          "2 Pit Clausen",
+          "3 Michael Dreier",
+          "4 Christian Haase"
+        ]
+      },
+      {
+        "label": "Kreis Herford",
+        "items": [
+          "1 Christian Haase",
+          "2 Wiehengebirge",
+          "3 Lippesee",
+          "4 Schloss Corvey"
+        ]
+      },
+      {
+        "label": "Kreis Höxter",
+        "items": [
+          "1 Polizei Gütersloh",
+          "2 Polizei Höxter",
+          "3 Feuerwehr Paderborn",
+          "4 Feuerwehr Höxter"
+        ]
+      }
+    ],
+    "buttons": [
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ]
   }
 }
