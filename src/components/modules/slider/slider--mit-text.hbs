@@ -1,10 +1,18 @@
-<div class="slider nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-mb-4 md:nw-mb-2">
+<div
+  id="gradient"
+  class="
+    slider
+    fisrt-slide
+    nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-mb-4
+    md:nw-mb-2
+  "
+>
   <div class="nw-pl-4 md:nw-pl-20">
     <div>
       <p class="nw-text-white nw-inline nw-text-xl nw-uppercase nw-font-bold">
         {{title}}
       </p>
-      <hr class="nw-red-line" />
+      <hr class="nw-red-line-l nw-mt-0.5" />
     </div>
     <div>
       <p
@@ -20,7 +28,7 @@
       </p>
     </div>
   </div>
-  <div class="embla embla--main-carousel nw-pl-4 md:nw-pl-20">
+  <div class="embla embla--main-carousel">
     <div class="embla__viewport relative">
       <div class="embla__container">
         {{#each images}}
@@ -33,7 +41,7 @@
                 <img
                   class="
                     embla__slide__img
-                    nw-h-full nw-w-full nw-object-none nw-rounded-md
+                    nw-h-full nw-w-full nw-object-cover nw-rounded-md
                   "
                   src="{{src}}"
                 />
@@ -46,7 +54,6 @@
         </div>
         {{/each}}
       </div>
-
       <div
         class="
           nw-hidden
@@ -62,7 +69,7 @@
           nw-object-center
           md:
           nw-top-1/2
-          nw-left-24
+          nw-left-2
           nw-transform
           nw--translate-y-1/2
           nw-cursor-pointer

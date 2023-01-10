@@ -1,4 +1,15 @@
 <style>
+  #test::before {
+    display: block;
+    content: ' ';
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='40' fill='white'/%3E%3C/svg%3E%0A");
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 250px;
+  }
+
   .clip {
     clip-path: circle(farthest-side);
   }
@@ -18,34 +29,13 @@
 <!-- Mobile Design -->
 <div
   class="
-    nw-py-4 nw-flex nw-items-center nw-justify-center nw-bg-gray-100
+    nw-pb-4 nw-flex nw-items-center nw-justify-center
     md:nw-hidden
+    nw-bg-gray-200
   "
 >
-  <div
-    class="
-      nw-relative
-      nw-w-52
-      nw-h-52
-      nw-bg-white
-      nw-rounded-full
-      nw-flex
-      nw-justify-center
-      nw-items-center
-      nw-ext-center
-      nw-p-4
-      nw-shadow-xl
-    "
-  ></div>
-  <div
-    class="
-      close
-      nw-text-gray-700 nw-absolute nw-cursor-pointer nw-tracking-tighter
-    "
-  >
-    ×
-  </div>
-  <div class="nw-absolute nw-max-w-sm nw-mx-auto">
+  <div id="test" class="nw-relative nw--mt-12"></div>
+  <div class="nw-absolute nw-mt-12 nw-max-w-sm nw-mx-auto">
     <div class="nw-flex nw-justify-center nw-mb-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -356,7 +346,7 @@
         4 Wochen für <span class="nw-line-through">9,90 €</span> 1 €
       </p>
     </div>
-    <div class="">
+    <div>
       <div class="nw-flex nw-justify-center">
         <a
           style="background-color: #fb8c20"
@@ -385,9 +375,21 @@
       </p>
     </div>
   </div>
+  <div
+    class="
+      nw-absolute
+      nw-top-1
+      nw-right-8
+      nw-text-gray-700
+      nw-cursor-pointer
+      nw-tracking-tighter
+    "
+  >
+    ×
+  </div>
 </div>
 <!-- Desktop Design -->
-<div class="nw-bg-gray-100 nw-hidden md:nw-block nw-rounded-md">
+<div class="nw-bg-gray-200 nw-hidden md:nw-block nw-rounded-md">
   <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4">
     <div class="nw-p-4">
       <svg
@@ -691,7 +693,7 @@
         </g>
       </svg>
     </div>
-    <div class="clip nw-bg-white nw-text-base nw-p-4">
+    <div class="clip nw-bg-white nw-text-tiny lg:nw-text-base nw-p-4">
       <p class="nw-pb-1 nw-leading-tight">
         Unbegrenzter Zugriff auf alle NW+ Inhalte auf NW.de und in der NW-App
       </p>

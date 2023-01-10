@@ -55,10 +55,28 @@
     .embla__viewport {
       -webkit-mask-image: linear-gradient(
         to right,
-        white 90%,
-        transparent 100%
+        transparent 0.5%,
+        #fff 5% 90%,
+        transparent 99.9%
       );
-      mask-image: linear-gradient(to right, white 90%, transparent 100%);
+      mask-image: linear-gradient(
+        to right,
+        transparent 0.5%,
+        #fff 5% 90%,
+        transparent 99.9%
+      );
+    }
+  }
+
+  &.fisrt-slide {
+    .embla__container {
+      &:first-child {
+        @apply nw-ml-0 md:nw-ml-20;
+      }
+
+      &:last-child {
+        padding-right: 0 !important;
+      }
     }
   }
 
@@ -74,7 +92,6 @@
   }
 
   .embla__viewport.is-draggable {
-    cursor: move;
     cursor: grab;
   }
 
@@ -92,7 +109,7 @@
   }
 
   .embla__slide {
-    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
   }
 

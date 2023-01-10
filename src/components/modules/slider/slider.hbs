@@ -1,6 +1,11 @@
 <div
   id="gradient"
-  class="slider nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-mb-4 md:nw-mb-2"
+  class="
+    slider
+    fisrt-slide
+    nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-mb-4
+    md:nw-mb-2
+  "
 >
   <div class="nw-pl-2 md:nw-pl-20">
     <div>
@@ -21,7 +26,7 @@
       </p>
     </div>
   </div>
-  <div class="embla embla--main-carousel nw-pl-2 md:nw-pl-20">
+  <div class="embla embla--main-carousel">
     <div class="embla__viewport relative">
       <div class="embla__container">
         {{#each images}}
@@ -41,7 +46,7 @@
                 <img
                   class="
                     embla__slide__img
-                    nw-h-full nw-w-full nw-object-none nw-rounded-md
+                    nw-h-full nw-w-full nw-object-cover nw-rounded-md
                   "
                   src="{{src}}"
                 />
@@ -66,7 +71,7 @@
           nw-rounded-full
           nw-object-center
           nw-top-1/2
-          nw-left-24
+          nw-left-2
           nw-transform
           nw--translate-y-1/2
           nw-cursor-pointer
@@ -98,10 +103,8 @@
       </div>
     </div>
   </div>
-
   <!-- Dots -->
   <div class="embla__dots nw-mt-2"></div>
-
   <script type="text/template" id="embla-dot-template">
     <button class="embla__dot" type="button"></button>
   </script>
