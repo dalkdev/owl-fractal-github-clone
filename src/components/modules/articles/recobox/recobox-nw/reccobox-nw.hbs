@@ -1,10 +1,11 @@
 <h3 class="nw-mb-3 nw-text-2xl nw-uppercase nw-font-bold">Mehr zum Thema</h3>
 <div id="nw-reco-box">
+  {{#each box}}
   <a href="#" class="nw-reco-link" data-event-value="retresco-reco">
     <div class="nw-reco-item">
       <div class="nw-reco-image-container">
         <img
-          src="https://via.placeholder.com/304x176"
+          src="{{this.img}}"
           class="nw-reco-image"
           loading="lazy"
           width="304"
@@ -12,135 +13,8 @@
           alt="Bild zu blabla"
         />
       </div>
-      <div class="nw-reco-title">
-        <img
-          src="https://www.nw.de/_apps/nw/plus.svg"
-          height="14"
-          width="36"
-          alt=""
-        />
-        „Wir schaffen das”: NRW stellt sich auf viele Geflüchtete ein
-      </div>
+      <div class="nw-reco-title">{{>'@nw-plus-icon'}} {{this.caption}}</div>
     </div>
   </a>
-
-  <a href="#" class="nw-reco-link" data-event-value="retresco-reco">
-    <div class="nw-reco-item">
-      <div class="nw-reco-image-container">
-        <img
-          src="https://via.placeholder.com/304x176"
-          class="nw-reco-image"
-          loading="lazy"
-          width="304"
-          height="176"
-          alt="Bild zu blabla"
-        />
-      </div>
-      <div class="nw-reco-title">
-        <img
-          src="https://www.nw.de/_apps/nw/plus.svg"
-          height="14"
-          width="36"
-          alt=""
-        />
-        Pit Clausen fordert mehr Landeshilfe bei Flüchtlingsunterbringung
-      </div>
-    </div>
-  </a>
-
-  <a href="#" class="nw-reco-link" data-event-value="retresco-reco">
-    <div class="nw-reco-item">
-      <div class="nw-reco-image-container">
-        <img
-          src="https://via.placeholder.com/304x176"
-          class="nw-reco-image"
-          loading="lazy"
-          width="304"
-          height="176"
-          alt="Bild zu blabla"
-        />
-      </div>
-      <div class="nw-reco-title">
-        <img
-          src="https://www.nw.de/_apps/nw/plus.svg"
-          height="14"
-          width="36"
-          alt=""
-        />
-        Flucht aus Ukraine nach Deutschland hält an
-      </div>
-    </div>
-  </a>
-
-  <a href="#" class="nw-reco-link" data-event-value="retresco-reco">
-    <div class="nw-reco-item">
-      <div class="nw-reco-image-container">
-        <img
-          src="https://via.placeholder.com/304x176"
-          class="nw-reco-image"
-          loading="lazy"
-          width="304"
-          height="176"
-          alt="Bild zu blabla"
-        />
-      </div>
-      <div class="nw-reco-title">
-        <img
-          src="https://www.nw.de/_apps/nw/plus.svg"
-          height="14"
-          width="36"
-          alt=""
-        />
-        Baerbock: EU muss mit acht Millionen Flüchtlingen rechnen
-      </div>
-    </div>
-  </a>
-
-  <a href="#" class="nw-reco-link" data-event-value="retresco-reco">
-    <div class="nw-reco-item">
-      <div class="nw-reco-image-container">
-        <img
-          src="https://via.placeholder.com/304x176"
-          class="nw-reco-image"
-          loading="lazy"
-          width="304"
-          height="176"
-          alt="Bild zu blabla"
-        />
-      </div>
-      <div class="nw-reco-title">
-        <img
-          src="https://www.nw.de/_apps/nw/plus.svg"
-          height="14"
-          width="36"
-          alt=""
-        />
-        Union pocht auf Flüchtlingsgipfel im Kanzleramt
-      </div>
-    </div>
-  </a>
-
-  <a href="#" class="nw-reco-link" data-event-value="retresco-reco">
-    <div class="nw-reco-item">
-      <div class="nw-reco-image-container">
-        <img
-          src="https://via.placeholder.com/304x176"
-          class="nw-reco-image"
-          loading="lazy"
-          width="304"
-          height="176"
-          alt="Bild zu blabla"
-        />
-      </div>
-      <div class="nw-reco-title">
-        <img
-          src="https://www.nw.de/_apps/nw/plus.svg"
-          height="14"
-          width="36"
-          alt=""
-        />
-        EU muss mit acht Millionen Flüchtlingen rechnen
-      </div>
-    </div>
-  </a>
+  {{/each}}
 </div>
