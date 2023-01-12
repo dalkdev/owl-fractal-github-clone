@@ -18,8 +18,8 @@
 @use './modules/landingpage';
 @use './modules/fractal-custom';
 @use './modules/misc';
-@use 'modules/article';
-@use 'modules/liveticker';
+@use './modules/article';
+@use './modules/liveticker';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 

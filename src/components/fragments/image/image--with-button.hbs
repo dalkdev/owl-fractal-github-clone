@@ -1,4 +1,4 @@
-<div class="nw-bg-white nw-pt-4 md:nw-p-4">
+<div class="nw-bg-white nw-mt-8 nw-mb-16">
   <div class="nw-relative">
     <div class="nw-aspect-w-16 nw-aspect-h-9">
       <picture>
@@ -68,31 +68,31 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: ease-out;
   }
 
   .trans {
     max-height: 100vh;
     overflow: hidden;
     transition: max-height 0.8s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: ease-in;
   }
 </style>
 <script>
   function arrow() {
-    var x = document.getElementById('paragraph');
-    var y = document.getElementById('svg');
-    if (x.classList.contains('transs')) {
-      x.classList.remove('transs');
-      x.classList.add('trans');
+    var paragraph = document.getElementById('paragraph');
+    var svg = document.getElementById('svg');
+    if (paragraph.classList.contains('transs')) {
+      paragraph.classList.remove('transs');
+      paragraph.classList.add('trans');
     } else {
-      x.classList.remove('trans');
-      x.classList.add('transs');
+      paragraph.classList.remove('trans');
+      paragraph.classList.add('transs');
     }
-    if (y.classList.contains('nw-transform')) {
-      y.classList.remove('nw-transform', 'nw-rotate-180');
+    if (svg.classList.contains('nw-transform')) {
+      svg.classList.remove('nw-transform', 'nw-rotate-180');
     } else {
-      y.classList.add('nw-transform', 'nw-rotate-180');
+      svg.classList.add('nw-transform', 'nw-rotate-180');
     }
   }
 </script>
