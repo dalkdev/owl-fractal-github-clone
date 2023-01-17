@@ -1,4 +1,12 @@
 {
   "status": "qm",
-  "context": {}
+  "context": {
+    "header": "GRUNDSTÜCKSBESITZER",
+    "caption": "Frist für Grundsteuererklärung läuft ab - was passiert bei verspäteter Abgabe?",
+    "button": "Zum Thema",
+    "text1": "PODCAST OSTWESTFÄLLE",
+    "text2": "Der Augustdorfer Mord ohne Leiche: Das Rätsel um die vermisste Bianca F. ",
+    "text3": "An den Externsteinen",
+    "text4": "Dieser Wanderweg in OWL kann Nummer eins in Deutschland werden"
+  }
 }
