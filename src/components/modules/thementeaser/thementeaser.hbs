@@ -1,0 +1,117 @@
+<style>
+  .nw-theme-teaser-bg {
+    background-image: url('https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg');
+  }
+</style>
+
+<div
+  class="
+    nw-bg-black nw-rounded nw-p-4 nw-theme-teaser-bg nw-h-auto
+    sm:nw-h-96
+    nw-w-full nw-bg-cover nw-bg-center nw-bg-no-repeat nw-flex nw-items-end
+  "
+>
+  <div class="nw-flex nw-flex-col md:nw-flex-row nw-justify-between">
+    <div class="md:nw-flex-1 nw-pr-4">
+      <p class="nw-uppercase nw-text-tiny sm:nw-text-base nw-text-white">
+        {{header}}
+      </p>
+      <p
+        class="
+          nw-text-white nw-pb-2 nw-font-medium nw-text-lg
+          sm:nw-text-xl
+          nw-leading-tight
+        "
+      >
+        {{caption}}
+      </p>
+      <a
+        href="#"
+        class="
+          nw-inline nw-mb-3
+          md:nw-mb-0
+          nw-px-2 nw-py-1 nw-text-white nw-bg-red-500
+          hover:nw-bg-red-600
+          nw-rounded
+          nw-text-center
+          nw-inline-block
+          nw-text-tiny
+          nw-font-bold
+          nw-cursor-pointer
+        "
+        type="button"
+      >
+        {{button}}
+      </a>
+    </div>
+    <div class="nw-hidden md:nw-block nw-border-l"></div>
+    <hr />
+    <div class="nw-text-white nw-flex-1 md:nw-pl-4 nw-mt-2 md:nw-mt-0">
+      <p class="nw-uppercase nw-font-medium nw-pb-0.5">{{text1}}</p>
+      <p class="nw-pb-2">{{text2}}</p>
+      <p class="nw-uppercase nw-font-medium nw-pb-0.5">{{text3}}</p>
+      <p>{{text4}}</p>
+    </div>
+  </div>
+</div>
+<!-- Andere Design -->
+<div class="nw-relative nw-mt-4">
+  <img
+    class="nw-rounded-md nw-h-auto nw-w-full"
+    alt="Theme-Teaser"
+    src="https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg"
+  />
+
+  <div class="nw-absolute nw-bottom-2 sm:nw-bottom-5 nw-left-0 nw-px-4">
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-mt-8">
+      <div class="nw-flex-1 md:nw-pr-4">
+        <p class="nw-uppercase nw-text-sm sm:nw-text-base nw-text-white">
+          {{header}}
+        </p>
+        <p
+          class="
+            nw-text-white nw-pb-2 nw-font-medium nw-text-tiny
+            sm:nw-text-lg
+            md:nw-text-xl
+            nw-leading-tight
+          "
+        >
+          {{caption}}
+        </p>
+        <a
+          href="#"
+          class="
+            nw-inline nw-mb-0
+            sm:nw-mb-2
+            md:nw-mb-0
+            nw-px-2 nw-py-1 nw-text-white nw-bg-red-500
+            hover:nw-bg-red-600
+            nw-rounded nw-text-center nw-inline-block nw-text-sm
+            sm:nw-text-tiny
+            nw-font-bold nw-cursor-pointer
+          "
+          type="button"
+        >
+          {{button}}
+        </a>
+      </div>
+      <div class="nw-hidden md:nw-block nw-border-white nw-border-l"></div>
+      <hr class="nw-hidden sm:nw-block" />
+      <div
+        class="
+          nw-hidden
+          sm:nw-block
+          nw-text-white nw-flex-1
+          md:nw-pl-4
+          nw-mt-2
+          md:nw-mt-0
+        "
+      >
+        <p class="nw-uppercase nw-font-medium nw-pb-0.5">{{text1}}</p>
+        <p class="nw-pb-2">{{text2}}</p>
+        <p class="nw-uppercase nw-font-medium nw-pb-0.5">{{text3}}</p>
+        <p>{{text4}}</p>
+      </div>
+    </div>
+  </div>
+</div>
