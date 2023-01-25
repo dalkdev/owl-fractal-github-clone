@@ -20,6 +20,7 @@
 @use './modules/misc';
 @use './modules/article';
 @use './modules/liveticker';
+@use './modules/download';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 
