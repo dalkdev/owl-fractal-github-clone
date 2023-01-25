@@ -1,22 +1,10 @@
 <div class="nw-mb-4 nw-bg-white">
   <p class="nw-text-base nw-uppercase nw-font-bold nw-pb-2">DOWNLOAD</p>
-  {{#each download}}
-  <a href="{{link-target}}" class="nw-text-red-500 nw-flex nw-pb-1" download>
-    <svg
-      class="nw-w-5 nw-h-5 nw-mr-1 nw-text-custom-1-700"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
-      />
-    </svg>
-    {{this}}
-  </a>
-  {{/each}}
+  <ol class="nw-article-detail-download">
+    {{#each download}}
+    <li>
+      <a href="{{link-target}}" target="_blank"> {{this}} </a>
+    </li>
+    {{/each}}
+  </ol>
 </div>

@@ -1,0 +1,150 @@
+<style>
+  .carmen {
+    height: 800px;
+  }
+</style>
+<style>
+  @media (min-width: 1063px) {
+    #nw-width-header,
+    #element {
+      width: 1062px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+<div class="nw-font-bold">
+  <div class="carmen nw-mb-8 nw-bg-gray-400">Carmen</div>
+  <div class="carmen nw-bg-black nw-text-white">carmen</div>
+</div>
+
+<div class="nw-z-10 nw-w-full nw-left-0 nw-bottom-0 nw-fixed">
+  <div id="bodys" style="background-color: rgb(0, 175, 203)">
+    <div
+      id="nw-width-header"
+      class="
+        nw-flex
+        sm:nw-flex-row
+        nw-justify-between
+        nw-items-center
+        nw-text-white
+        nw-font-bold
+        nw-py-1
+        nw-pl-2
+      "
+      style="background-color: rgb(0, 175, 203)"
+    >
+      <div>
+        <div class="nw-inline-block nw-align-middle nw-mr-1">
+          {{>'@nw-plus-icon'}}
+        </div>
+        <div class="nw-inline-block nw-text-md">{{caption}}</div>
+      </div>
+
+      <div
+        class="
+          nw-bg-gray-200 nw-cursor-pointer nw-border nw-rounded-full nw--mt-10
+        "
+        onclick="closefooter()"
+      >
+        <svg
+          id="arrowSvg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          class="nw-text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </div>
+
+      <div
+        id="close"
+        class="
+          nw-text-gray-200 nw-flex nw-justify-end nw-cursor-pointer nw-px-2
+        "
+      >
+        ×
+      </div>
+    </div>
+  </div>
+  <div class="nw-bg-white">
+    <div
+      id="element"
+      class="
+        nw-flex nw-flex-col
+        sm:nw-flex-row
+        nw-justify-between
+        nw-p-1
+        nw-bg-white
+        nw-pl-2
+        nw-justify-center
+        nw-items-center
+      "
+    >
+      <div class="nw-font-bold nw-text-md nw-my-1">
+        <div class="nw-list-none nw-text-center sm:nw-text-left">
+          {{#each footeritems}}
+          <li>{{this}}</li>
+          {{/each}}
+        </div>
+      </div>
+      <div
+        class="nw-flex nw-justify-center sm:nw-justify-end nw-mb-2 sm:nw-mb-0"
+      >
+        {{>'@nw-plus-cta'}}
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  var x = document.getElementById('element');
+
+  var y = document.getElementById('arrowSvg');
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      if (x.style.display === 'flex') {
+        x.style.display = 'none';
+      }
+    } else {
+      x.style.display = 'flex';
+    }
+  }
+
+  function closefooter() {
+    if (x.style.display === 'none') {
+      x.style.display = 'flex';
+    } else {
+      x.style.display = 'none';
+    }
+    if (y.classList.contains('nw-transform')) {
+      y.classList.remove('nw-transform', 'nw-rotate-180');
+    } else {
+      y.classList.add('nw-transform', 'nw-rotate-180');
+    }
+  }
+
+  var closebtns = document.getElementById('close');
+  var bodyall = document.getElementById('bodys');
+  var element = document.getElementById('element');
+
+  closebtns.addEventListener('click', function () {
+    bodyall.parentElement.style.display = 'none';
+    element.parentElement.style.display = 'none';
+  });
+</script>
