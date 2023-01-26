@@ -2,8 +2,8 @@
   @apply nw-text-red-500;
   li {
     padding: 5px 5px 5px 25px;
-    background: transparent url('/images/download.svg') no-repeat;
+    background: transparent url('images/download.svg') no-repeat;
     background-size: 16px;
-    background-position-y: 6px;
+    background-position: center left;
   }
 }
