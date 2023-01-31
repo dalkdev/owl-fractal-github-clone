@@ -72,21 +72,24 @@
               placeholder="Diskutieren Sie mit …"
               required
             ></textarea>
-            <p class="result nw-text-xs nw-text-gray-500">0/3000</p>
+            <div class="nw-flex nw-justify-between">
+              <p class="result nw-text-xs nw-text-gray-500">0/3000</p>
+              <div
+                class="
+                  nw-flex nw-justify-end nw-mb-2 nw-hidden
+                  md:nw-flex
+                  nw-text-xs nw-text-custom-1-700 nw-font-bold
+                  hover:nw-text-gray-700
+                  nw-cursor-pointer
+                "
+              >
+                <a> FAQ </a>
+                <p class="nw-px-1">|</p>
+                <a> NUTZUNGSREGELN </a>
+              </div>
+            </div>
           </div>
-          <div
-            class="
-              nw--mt-3 nw-flex nw-justify-end nw-mb-2 nw-hidden
-              md:nw-flex
-              nw-text-xs nw-text-custom-1-700 nw-font-bold
-              hover:nw-text-gray-700
-              nw-cursor-pointer
-            "
-          >
-            <a> FAQ </a>
-            <p class="nw-px-1">|</p>
-            <a> NUTZUNGSREGELN </a>
-          </div>
+
           <div class="nw-text-right">
             <button
               type="submit"
