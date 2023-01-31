@@ -4,12 +4,22 @@
   }
 </style>
 <style>
-  @media (min-width: 1063px) {
+  @media (min-width: 1082px) {
     #nw-width-header,
     #element {
       width: 1062px;
       margin: 0 auto;
     }
+  }
+
+  .transition-oppening {
+    transition: max-height 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-closing {
+    transition: max-height 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 </style>
 
@@ -19,7 +29,42 @@
 </div>
 
 <div class="nw-z-10 nw-w-full nw-left-0 nw-bottom-0 nw-fixed">
-  <div id="bodys" style="background-color: rgb(0, 175, 203)">
+  <div
+    id="bodys"
+    class="nw-py-1 sm:nw-py-0"
+    style="background-color: rgb(0, 175, 203)"
+  >
+    <div class="nw-absolute nw-w-full nw-flex nw-justify-center">
+      <div
+        style="background-color: rgb(0, 175, 203)"
+        class="
+          nw-inline-flex nw-cursor-pointer nw--mt-4
+          sm:nw--mt-5
+          nw-rounded-full
+        "
+        onclick="closefooter()"
+      >
+        <button class="nw-flex nw-items-center">
+          <svg
+            id="arrowSvg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            class="nw-text-white nw-m-1 sm:nw-m-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 15l7-7 7 7"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
     <div
       id="nw-width-header"
       class="
@@ -42,31 +87,6 @@
       </div>
 
       <div
-        class="
-          nw-bg-gray-200 nw-cursor-pointer nw-border nw-rounded-full nw--mt-10
-        "
-        onclick="closefooter()"
-      >
-        <svg
-          id="arrowSvg"
-          xmlns="http://www.w3.org/2000/svg"
-          width="15"
-          height="15"
-          class="nw-text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M5 15l7-7 7 7"
-          />
-        </svg>
-      </div>
-
-      <div
         id="close"
         class="
           nw-text-gray-200 nw-flex nw-justify-end nw-cursor-pointer nw-px-2
@@ -76,31 +96,36 @@
       </div>
     </div>
   </div>
+
   <div class="nw-bg-white">
     <div
       id="element"
-      class="
-        nw-flex nw-flex-col
-        sm:nw-flex-row
-        nw-justify-between
-        nw-p-1
-        nw-bg-white
-        nw-pl-2
-        nw-justify-center
-        nw-items-center
-      "
+      class="transition-closing transition-oppening nw-overflow-hidden"
     >
-      <div class="nw-font-bold nw-text-md nw-my-1">
-        <div class="nw-list-none nw-text-center sm:nw-text-left">
-          {{#each footeritems}}
-          <li>{{this}}</li>
-          {{/each}}
-        </div>
-      </div>
       <div
-        class="nw-flex nw-justify-center sm:nw-justify-end nw-mb-2 sm:nw-mb-0"
+        class="
+          nw-flex nw-flex-col
+          sm:nw-flex-row
+          nw-justify-between
+          nw-bg-white
+          nw-p-1
+          nw-pl-2
+          nw-justify-center
+          nw-items-center
+        "
       >
-        {{>'@nw-plus-cta'}}
+        <div class="nw-font-bold nw-text-md nw-my-1">
+          <div class="nw-list-none nw-text-center sm:nw-text-left">
+            {{#each footeritems}}
+            <li>{{this}}</li>
+            {{/each}}
+          </div>
+        </div>
+        <div
+          class="nw-flex nw-justify-center sm:nw-justify-end nw-mb-2 sm:nw-mb-0"
+        >
+          {{>'@nw-plus-cta'}}
+        </div>
       </div>
     </div>
   </div>
@@ -109,39 +134,50 @@
   window.onscroll = function () {
     scrollFunction();
   };
-  var x = document.getElementById('element');
-
-  var y = document.getElementById('arrowSvg');
+  var element = document.getElementById('element');
+  var svg = document.getElementById('arrowSvg');
 
   function scrollFunction() {
     if (
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
     ) {
-      if (x.style.display === 'flex') {
-        x.style.display = 'none';
+      if (element.style.maxHeight === '10rem') {
+        element.style.maxHeight = '0px';
+        element.classList.remove('transition-oppening');
+        element.classList.add('transition-closing');
       }
     } else {
-      x.style.display = 'flex';
+      element.style.maxHeight = '10rem';
+      element.classList.remove('transition-closing');
+      element.classList.add('transition-oppening');
     }
   }
 
+  document.addEventListener('DOMContentLoaded', function (event) {
+    element.style.maxHeight = '10rem';
+  });
+
   function closefooter() {
-    if (x.style.display === 'none') {
-      x.style.display = 'flex';
+    if (element.style.maxHeight === '10rem') {
+      element.style.maxHeight = '0px';
+      element.classList.remove('transition-oppening');
+      element.classList.add('transition-closing');
     } else {
-      x.style.display = 'none';
+      element.style.maxHeight = '10rem';
+      element.classList.remove('transition-closing');
+      element.classList.add('transition-oppening');
     }
-    if (y.classList.contains('nw-transform')) {
-      y.classList.remove('nw-transform', 'nw-rotate-180');
+
+    if (svg.classList.contains('nw-transform')) {
+      svg.classList.remove('nw-transform', 'nw-rotate-180');
     } else {
-      y.classList.add('nw-transform', 'nw-rotate-180');
+      svg.classList.add('nw-transform', 'nw-rotate-180');
     }
   }
 
   var closebtns = document.getElementById('close');
   var bodyall = document.getElementById('bodys');
-  var element = document.getElementById('element');
 
   closebtns.addEventListener('click', function () {
     bodyall.parentElement.style.display = 'none';
