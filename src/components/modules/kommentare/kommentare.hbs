@@ -1,3 +1,4 @@
+<button onclick="testFunction()" class="nw-px-2 nw-bg-gray-300">carmen</button>
 <div class="nw-bg-white nw-max-w-3xl">
   <div class="nw-flex nw-flex-grow nw-py-0.5">
     <div class="nw-flex-grow nw-font-bold nw-text-xl nw-uppercase">
@@ -73,7 +74,9 @@
               required
             ></textarea>
             <div class="nw-flex nw-justify-between">
-              <p class="result nw-text-xs nw-text-gray-500">0/3000</p>
+              <p id="result" class="result nw-text-xs nw-text-gray-500">
+                0/3000
+              </p>
               <div
                 class="
                   nw-flex nw-justify-end nw-mb-2 nw-hidden
@@ -310,22 +313,22 @@
   </div>
 </div>
 <script>
-  var inputs = document.querySelectorAll('.comment');
-  inputs.forEach(function (input) {
-    input.addEventListener('keyup', function (e) {
-      var counter = this.value.length;
-      input.nextElementSibling.innerHTML = counter + '/3000';
-      var parent = input.parentNode;
-      var btn = parent.nextElementSibling.childNodes[1];
-      if (counter == 0) {
-        btn.disabled = true;
-      } else {
-        btn.disabled = false;
-      }
+  var inputs = document.getElementsByClassName('comment');
+  var results = document.getElementsByClassName('result');
+
+  function printNumberOfCommentsLettersInResultLabels() {
+    for (var i = 0; i < inputs.length; i++) {
+      var counter = inputs[i].value.length + '/3000';
+      results[i].innerHTML = counter;
+    }
+  }
+
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('keyup', event => {
+      printNumberOfCommentsLettersInResultLabels();
     });
-  });
-</script>
-<script>
+  }
+
   function toggleCommentsVisibility() {
     var x = document.getElementById('kommentarBlock');
     if (x.style.display === 'none') {

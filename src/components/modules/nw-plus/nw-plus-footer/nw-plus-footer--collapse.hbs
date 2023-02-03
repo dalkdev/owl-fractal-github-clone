@@ -1,37 +1,7 @@
-<style>
-  .carmen {
-    height: 800px;
-  }
-</style>
-<style>
-  @media (min-width: 1082px) {
-    #nw-width-header,
-    #element {
-      width: 1062px;
-      margin: 0 auto;
-    }
-  }
-
-  .transition-oppening {
-    transition: max-height 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .transition-closing {
-    transition: max-height 0.2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-</style>
-
-<div class="nw-font-bold">
-  <div class="carmen nw-mb-8 nw-bg-gray-400">Carmen</div>
-  <div class="carmen nw-bg-black nw-text-white">carmen</div>
-</div>
-
+{{>'@simple-loream'}}
 <div class="nw-z-10 nw-w-full nw-left-0 nw-bottom-0 nw-fixed">
   <div
-    id="bodys"
-    class="nw-py-1 sm:nw-py-0"
+    class="nw-py-1 sm:nw-py-0 nw-plus-footer"
     style="background-color: rgb(0, 175, 203)"
   >
     <div class="nw-absolute nw-w-full nw-flex nw-justify-center">
@@ -46,11 +16,10 @@
       >
         <button class="nw-flex nw-items-center">
           <svg
-            id="arrowSvg"
             xmlns="http://www.w3.org/2000/svg"
             width="15"
             height="15"
-            class="nw-text-white nw-m-1 sm:nw-m-2"
+            class="nw-text-white nw-m-1 sm:nw-m-2 nw-arrow-svg-footer"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -59,16 +28,15 @@
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M5 15l7-7 7 7"
+              d="M19 9l-7 7-7-7"
             />
           </svg>
         </button>
       </div>
     </div>
     <div
-      id="nw-width-header"
       class="
-        nw-flex
+        nw-width-header nw-flex
         sm:nw-flex-row
         nw-justify-between
         nw-items-center
@@ -85,11 +53,14 @@
         </div>
         <div class="nw-inline-block nw-text-md">{{caption}}</div>
       </div>
-
       <div
-        id="close"
         class="
-          nw-text-gray-200 nw-flex nw-justify-end nw-cursor-pointer nw-px-2
+          nw-text-gray-200
+          nw-flex
+          nw-justify-end
+          nw-cursor-pointer
+          nw-px-2
+          nw-close-footer
         "
       >
         ×
@@ -99,8 +70,9 @@
 
   <div class="nw-bg-white">
     <div
-      id="element"
-      class="transition-closing transition-oppening nw-overflow-hidden"
+      class="
+        nw-transition-close nw-transition-open nw-overflow-hidden nw-body-footer
+      "
     >
       <div
         class="
@@ -131,56 +103,56 @@
   </div>
 </div>
 <script>
-  window.onscroll = function () {
-    scrollFunction();
-  };
-  var element = document.getElementById('element');
-  var svg = document.getElementById('arrowSvg');
+  let bodyFooter = document.getElementsByClassName('nw-body-footer')[0];
+  let svgFooter = document.getElementsByClassName('nw-arrow-svg-footer')[0];
+  let closeFooter = document.getElementsByClassName('nw-close-footer')[0];
+  let plusFooter = document.getElementsByClassName('nw-plus-footer')[0];
 
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      if (element.style.maxHeight === '10rem') {
-        element.style.maxHeight = '0px';
-        element.classList.remove('transition-oppening');
-        element.classList.add('transition-closing');
-      }
+  let scroll = false;
+  window.onscroll = function () {
+    if (window.pageYOffset === 0 && scroll === true) {
+      bodyFooter.style.maxHeight = '10rem';
+      svgFooter.classList.remove('nw-transform', 'nw-rotate-180');
+      toggletransition('nw-transition-open', 'nw-transition-close');
+      scroll = false;
+    } else if (window.pageYOffset !== 0 && scroll === false) {
+      bodyFooter.style.maxHeight = '0px';
+      svgFooter.classList.add('nw-transform', 'nw-rotate-180');
+      toggletransition('nw-transition-close', 'nw-transition-open');
+      scroll = true;
+    }
+  };
+
+  function toggletransition(removetrans, addtrans) {
+    bodyFooter.classList.remove(removetrans);
+    bodyFooter.classList.add(addtrans);
+  }
+
+  function nwTransitionFooter() {
+    if (bodyFooter.style.maxHeight === '10rem') {
+      bodyFooter.style.maxHeight = '0px';
+      toggletransition('nw-transition-close', 'nw-transition-open');
     } else {
-      element.style.maxHeight = '10rem';
-      element.classList.remove('transition-closing');
-      element.classList.add('transition-oppening');
+      bodyFooter.style.maxHeight = '10rem';
+      toggletransition('nw-transition-open', 'nw-transition-close');
+    }
+  }
+
+  function closefooter() {
+    nwTransitionFooter();
+    if (svgFooter.classList.contains('nw-transform')) {
+      svgFooter.classList.remove('nw-transform', 'nw-rotate-180');
+    } else {
+      svgFooter.classList.add('nw-transform', 'nw-rotate-180');
     }
   }
 
   document.addEventListener('DOMContentLoaded', function (event) {
-    element.style.maxHeight = '10rem';
+    bodyFooter.style.maxHeight = '10rem';
   });
 
-  function closefooter() {
-    if (element.style.maxHeight === '10rem') {
-      element.style.maxHeight = '0px';
-      element.classList.remove('transition-oppening');
-      element.classList.add('transition-closing');
-    } else {
-      element.style.maxHeight = '10rem';
-      element.classList.remove('transition-closing');
-      element.classList.add('transition-oppening');
-    }
-
-    if (svg.classList.contains('nw-transform')) {
-      svg.classList.remove('nw-transform', 'nw-rotate-180');
-    } else {
-      svg.classList.add('nw-transform', 'nw-rotate-180');
-    }
-  }
-
-  var closebtns = document.getElementById('close');
-  var bodyall = document.getElementById('bodys');
-
-  closebtns.addEventListener('click', function () {
-    bodyall.parentElement.style.display = 'none';
-    element.parentElement.style.display = 'none';
+  closeFooter.addEventListener('click', function () {
+    plusFooter.parentElement.style.display = 'none';
+    bodyFooter.parentElement.style.display = 'none';
   });
 </script>

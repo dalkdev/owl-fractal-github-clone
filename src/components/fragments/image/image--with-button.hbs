@@ -36,12 +36,11 @@
         nw-rounded
         nw-bg-black
       "
-      onclick="arrow()"
+      onclick="toggleTransitionOfTheCaptionInImage()"
     >
       <svg
-        id="svg"
         xmlns="http://www.w3.org/2000/svg"
-        class="nw-text-white nw-m-1 nw-cursor-pointer"
+        class="nw-caption-button nw-text-white nw-m-1 nw-cursor-pointer"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -55,8 +54,8 @@
       </svg>
     </button>
   </div>
-  <div id="paragraph" class="transs margin-text">
-    <p class="nw-text-sm padding-text">
+  <div class="nw-caption-image nw-caption-close nw-margin-text">
+    <p class="nw-text-sm nw-padding-text">
       Per Handy verbunden: Mehr als 120 Menschen haben sich in einer
       Telegram-Gruppe vernetzt, die von einer Bünderin administriert wird. | ©
       Florian Weyand
@@ -64,14 +63,14 @@
   </div>
 </div>
 <style>
-  .transs {
+  .nw-caption-close {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s;
     transition-timing-function: ease-out;
   }
 
-  .trans {
+  .nw-caption-open {
     max-height: 100vh;
     overflow: hidden;
     transition: max-height 0.8s;
@@ -79,20 +78,20 @@
   }
 </style>
 <script>
-  function arrow() {
-    var paragraph = document.getElementById('paragraph');
-    var svg = document.getElementById('svg');
-    if (paragraph.classList.contains('transs')) {
-      paragraph.classList.remove('transs');
-      paragraph.classList.add('trans');
+  function toggleTransitionOfTheCaptionInImage() {
+    var captionImage = document.querySelector('.nw-caption-image');
+    var captionButton = document.querySelector('.nw-caption-button');
+    if (captionImage.classList.contains('nw-caption-close')) {
+      captionImage.classList.remove('nw-caption-close');
+      captionImage.classList.add('nw-caption-open');
     } else {
-      paragraph.classList.remove('trans');
-      paragraph.classList.add('transs');
+      captionImage.classList.remove('nw-caption-open');
+      captionImage.classList.add('nw-caption-close');
     }
-    if (svg.classList.contains('nw-transform')) {
-      svg.classList.remove('nw-transform', 'nw-rotate-180');
+    if (captionButton.classList.contains('nw-transform')) {
+      captionButton.classList.remove('nw-transform', 'nw-rotate-180');
     } else {
-      svg.classList.add('nw-transform', 'nw-rotate-180');
+      captionButton.classList.add('nw-transform', 'nw-rotate-180');
     }
   }
 </script>

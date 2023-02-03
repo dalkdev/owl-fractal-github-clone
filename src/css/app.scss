@@ -22,6 +22,7 @@
 @use './modules/liveticker';
 @use './modules/download';
 @use './modules/link';
+@use './modules/nw-plus-footer-collapse';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 
