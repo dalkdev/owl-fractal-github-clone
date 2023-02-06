@@ -1,0 +1,17 @@
+@media (min-width: 1082px) {
+  .nw-width-header,
+  .nw-body-footer {
+    width: 1062px;
+    margin: 0 auto;
+  }
+}
+
+.nw-transition-close {
+  transition: max-height 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nw-transition-open {
+  transition: max-height 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
