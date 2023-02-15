@@ -36,7 +36,6 @@
         nw-rounded
         nw-bg-black
       "
-      onclick="toggleTransitionOfTheCaptionInImage()"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -77,6 +76,21 @@
     transition-timing-function: ease-in;
   }
 </style>
+
+<script>
+  let captionImage = document.querySelector('.nw-caption-image');
+  let captionButton = document.querySelector('.nw-caption-button');
+  captionButton.addEventListener('click', function () {
+    captionImage.classList.toggle('nw-caption-open');
+    captionImage.classList.toggle('nw-caption-close');
+    if (captionButton.classList.contains('nw-transform')) {
+      captionButton.classList.remove('nw-transform', 'nw-rotate-180');
+    } else {
+      captionButton.classList.add('nw-transform', 'nw-rotate-180');
+    }
+  });
+</script>
+<!--
 <script>
   function toggleTransitionOfTheCaptionInImage() {
     var captionImage = document.querySelector('.nw-caption-image');
@@ -95,3 +109,4 @@
     }
   }
 </script>
+-->
