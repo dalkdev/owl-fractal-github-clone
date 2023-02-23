@@ -1,4 +1,3 @@
-<button onclick="testFunction()" class="nw-px-2 nw-bg-gray-300">carmen</button>
 <div class="nw-bg-white nw-max-w-3xl">
   <div class="nw-flex nw-flex-grow nw-py-0.5">
     <div class="nw-flex-grow nw-font-bold nw-text-xl nw-uppercase">
@@ -6,16 +5,15 @@
     </div>
     <div class="nw-flex-none">
       <svg
-        id="ausKlappen"
-        onclick="toggleCommentsVisibility()"
         xmlns="http://www.w3.org/2000/svg"
         width="20"
         height="20"
-        class="nw-float-right nw-text-red-500 nw-cursor-pointer"
+        class="hideSvg nw-float-right nw-text-red-500 nw-cursor-pointer"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
         stroke-width="2"
+        data-target="commentBlock-1"
       >
         <path
           stroke-linecap="round"
@@ -26,94 +24,19 @@
     </div>
   </div>
   <hr class="nw-border nw-border-gray-100" />
-  <div id="kommentarBlock">
+  <div class="commentBlock-1">
     <div class="nw-py-4 nw-text-center md:nw-text-left">
       <p class="nw-text-base nw-font-bold">Guten Tag, Hansfranz1999</p>
       <p class="nw-text-base nw-py-1">
         Als NW+ Abonnent können Sie hier exklusiv Kommentare verfassen und sich
         mit Autoren und Lesern austauschen.
       </p>
-      <div
-        class="
-          nw-flex nw-place-content-center
-          md:nw-hidden
-          nw-text-xs nw-text-custom-1-700 nw-font-bold
-          hover:nw-text-gray-700
-          nw-cursor-pointer
-        "
-      >
-        <a> FAQ </a>
-        <p class="nw-px-1">|</p>
-        <a> NUTZUNGSREGELN </a>
-      </div>
     </div>
     <div class="nw-flex nw-flex-col md:nw-flex-row gap-4 md:nw-gap-12">
-      <div class="nw-mx-auto md:nw-items-end">{{>@ads}}</div>
-      <div class="nw-flex-1 md:nw-order-first nw-mt-4 md:nw-mt-0">
-        <div class="nw-mb-3">
-          <p class="nw-text-base nw-font-bold">Ihr Kommentar</p>
-        </div>
-        <form>
-          <div>
-            <textarea
-              rows="7"
-              maxlength="3000"
-              class="
-                comment
-                nw-w-full nw-text-sm
-                focus:nw-ring-0 focus:nw-outline-none
-                nw-overflow-hidden
-                nw-py-1
-                nw-px-2
-                nw-bg-white
-                nw-rounded-md
-                nw-border
-                nw-border-black
-              "
-              placeholder="Diskutieren Sie mit …"
-              required
-            ></textarea>
-            <div class="nw-flex nw-justify-between">
-              <p id="result" class="result nw-text-xs nw-text-gray-500">
-                0/3000
-              </p>
-              <div
-                class="
-                  nw-flex nw-justify-end nw-mb-2 nw-hidden
-                  md:nw-flex
-                  nw-text-xs nw-text-custom-1-700 nw-font-bold
-                  hover:nw-text-gray-700
-                  nw-cursor-pointer
-                "
-              >
-                <a> FAQ </a>
-                <p class="nw-px-1">|</p>
-                <a> NUTZUNGSREGELN </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="nw-text-right">
-            <button
-              type="submit"
-              class="
-                nw-inline-flex
-                nw-bg-red-500
-                nw-py-2
-                nw-px-4
-                nw-text-tiny
-                nw-font-bold
-                nw-text-center
-                nw-text-white
-                nw-rounded
-              "
-              disabled
-            >
-              Kommentar abschicken
-            </button>
-          </div>
-        </form>
+      <div class="nw-flex-1 md:nw-order-first md:nw-mt-0">
+        {{>@kommentar-box--with-notification}}
       </div>
+      <div class="nw-mx-auto md:nw-items-end nw-mt-4">{{>@ads}}</div>
     </div>
     <div class="nw-py-4">{{>@ads--header}}</div>
     <div>
@@ -139,7 +62,6 @@
             type="text"
             placeholder=""
             name=""
-            id=""
           >
             <option value="10">10</option>
             <option value="20">20</option>
@@ -167,7 +89,6 @@
             type="text"
             placeholder=""
             name=""
-            id=""
           >
             <option value="Neuste">Neuste</option>
             <option value="2">2</option>
@@ -177,33 +98,17 @@
       </div>
       <div class="nw-bg-gray-100 nw-rounded nw-my-4 nw-shadow-md">
         <div class="nw-p-4">
-          <div class="nw-flex">
-            <div
-              class="
-                nw-mr-1
-                nw-bg-gray-600
-                nw-relative
-                nw-text-white
-                nw-text-center
-                nw-w-7
-                nw-h-7
-                nw-rounded-full
-                nw-flex
-                nw-content-center
-                nw-justify-center
-              "
-            >
-              <span
-                style="transform: translateY(-50%)"
-                class="nw-absolute nw-text-sm nw-top-2/4"
-                >FW
-              </span>
-            </div>
-            <p class="nw-text-tiny nw-font-bold nw-leading-loose">Futuremen</p>
+          <div class="nw-flex nw-items-center">
+            <img
+              class="nw-w-6 nw-h-6 nw-rounded-full nw-mr-1"
+              src="/images/arminia-angebot/img-transfer.jpg"
+              alt="Rounded avatar"
+            />
+            <p class="nw-text-tiny nw-font-bold">Futuremen</p>
           </div>
           <span class="nw-text-xs nw-text-custom-1-700 nw-font-medium"
-            >Vor 5 Minuten
-          </span>
+            >Vor 5 Minuten</span
+          >
           <p class="nw-text-base nw-py-1">
             Das Problem ist, wer sich nicht in der Gastronomie trifft, quetscht
             sich Daheim mit Freunden in der oft sehr kleinen „GutenStube“
@@ -241,8 +146,8 @@
                     d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
                   />
                 </svg>
-                Antworten</a
-              >
+                Antworten
+              </a>
             </li>
             <li class="nw-border-r md:nw-border-r-0 nw-w-1/3 md:nw-w-auto">
               <a
@@ -270,8 +175,8 @@
                     d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
                   />
                 </svg>
-                Melden</a
-              >
+                Melden
+              </a>
             </li>
             <li class="nw-w-1/3 md:nw-w-auto">
               <a
@@ -312,35 +217,3 @@
     {{>@kunde-kommentar}}
   </div>
 </div>
-<script>
-  var inputs = document.getElementsByClassName('comment');
-  var results = document.getElementsByClassName('result');
-
-  function printNumberOfCommentsLettersInResultLabels() {
-    for (var i = 0; i < inputs.length; i++) {
-      var counter = inputs[i].value.length + '/3000';
-      results[i].innerHTML = counter;
-    }
-  }
-
-  for (var i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('keyup', event => {
-      printNumberOfCommentsLettersInResultLabels();
-    });
-  }
-
-  function toggleCommentsVisibility() {
-    var x = document.getElementById('kommentarBlock');
-    if (x.style.display === 'none') {
-      x.style.display = 'block';
-    } else {
-      x.style.display = 'none';
-    }
-    var y = document.getElementById('ausKlappen');
-    if (y.classList.contains('nw-transform')) {
-      y.classList.remove('nw-transform', 'nw-rotate-180');
-    } else {
-      y.classList.add('nw-transform', 'nw-rotate-180');
-    }
-  }
-</script>

@@ -6,6 +6,7 @@ import { initNewsticker } from './modules/embla-newsticker';
 import { initBurgermenu } from './modules/burger-menu';
 import { initStickymenu } from './modules/sticky-menu';
 import { initFAQ } from './modules/faqElement';
+import { initTransform } from './modules/kommentare';
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
@@ -18,6 +19,7 @@ const initializationFunctions: Array<() => void> = [
   initBurgermenu,
   initStickymenu,
   initFAQ,
+  initTransform,
 ];
 
 preloadFunctions.forEach(initializationFunction => {
