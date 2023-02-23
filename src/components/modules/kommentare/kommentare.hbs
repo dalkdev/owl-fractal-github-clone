@@ -31,87 +31,12 @@
         Als NW+ Abonnent können Sie hier exklusiv Kommentare verfassen und sich
         mit Autoren und Lesern austauschen.
       </p>
-      <div
-        class="
-          nw-flex nw-place-content-center
-          md:nw-hidden
-          nw-text-xs nw-text-custom-1-700 nw-font-bold
-          hover:nw-text-gray-700
-          nw-cursor-pointer
-        "
-      >
-        <a> FAQ </a>
-        <p class="nw-px-1">|</p>
-        <a> NUTZUNGSREGELN </a>
-      </div>
     </div>
     <div class="nw-flex nw-flex-col md:nw-flex-row gap-4 md:nw-gap-12">
-      <div class="nw-mx-auto md:nw-items-end">{{>@ads}}</div>
-      <div class="nw-flex-1 md:nw-order-first nw-mt-4 md:nw-mt-0">
-        <div class="nw-mb-3">
-          <p class="nw-text-base nw-font-bold">Ihr Kommentar</p>
-        </div>
-        <form>
-          <div>
-            <textarea
-              rows="7"
-              maxlength="3000"
-              class="
-                comment
-                nw-w-full nw-text-sm
-                focus:nw-ring-0 focus:nw-outline-none
-                nw-overflow-hidden
-                nw-py-1
-                nw-px-2
-                nw-bg-white
-                nw-rounded-md
-                nw-border
-                nw-border-black
-              "
-              placeholder="Diskutieren Sie mit …"
-              required
-            ></textarea>
-            <div class="nw-flex nw-justify-between">
-              <p id="result" class="result nw-text-xs nw-text-gray-500">
-                0/3000
-              </p>
-              <div
-                class="
-                  nw-flex nw-justify-end nw-mb-2 nw-hidden
-                  md:nw-flex
-                  nw-text-xs nw-text-custom-1-700 nw-font-bold
-                  hover:nw-text-gray-700
-                  nw-cursor-pointer
-                "
-              >
-                <a> FAQ </a>
-                <p class="nw-px-1">|</p>
-                <a> NUTZUNGSREGELN </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="nw-text-right">
-            <button
-              type="submit"
-              class="
-                nw-inline-flex
-                nw-bg-red-500
-                nw-py-2
-                nw-px-4
-                nw-text-tiny
-                nw-font-bold
-                nw-text-center
-                nw-text-white
-                nw-rounded
-              "
-              disabled
-            >
-              Kommentar abschicken
-            </button>
-          </div>
-        </form>
+      <div class="nw-flex-1 md:nw-order-first md:nw-mt-0">
+        {{>@kommentar-box--with-notification}}
       </div>
+      <div class="nw-mx-auto md:nw-items-end nw-mt-4">{{>@ads}}</div>
     </div>
     <div class="nw-py-4">{{>@ads--header}}</div>
     <div>
@@ -173,26 +98,13 @@
       </div>
       <div class="nw-bg-gray-100 nw-rounded nw-my-4 nw-shadow-md">
         <div class="nw-p-4">
-          <div class="nw-flex">
-            <div
-              class="
-                nw-mr-1
-                nw-bg-gray-600
-                nw-relative
-                nw-text-white
-                nw-text-center
-                nw-w-7
-                nw-h-7
-                nw-rounded-full
-                nw-flex
-                nw-place-content-center
-                nw-place-items-center
-                nw-text-sm
-              "
-            >
-              <span>FW </span>
-            </div>
-            <p class="nw-text-tiny nw-font-bold nw-leading-loose">Futuremen</p>
+          <div class="nw-flex nw-items-center">
+            <img
+              class="nw-w-6 nw-h-6 nw-rounded-full nw-mr-1"
+              src="/images/arminia-angebot/img-transfer.jpg"
+              alt="Rounded avatar"
+            />
+            <p class="nw-text-tiny nw-font-bold">Futuremen</p>
           </div>
           <span class="nw-text-xs nw-text-custom-1-700 nw-font-medium"
             >Vor 5 Minuten</span
