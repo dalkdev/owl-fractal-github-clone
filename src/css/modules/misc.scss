@@ -60,3 +60,18 @@
   line-clamp: 8;
   -webkit-box-orient: vertical;
 }
+
+/* CHECKBOX TOGGLE SWITCH */
+/* @apply rules for documentation, these do not work as inline style */
+.nw-toggle-checkbox {
+  &:checked {
+    @apply nw-right-0 nw-border-green-500;
+    right: 0;
+    border-color: #6eb783;
+
+    + .nw-toggle-label {
+      @apply nw-bg-green-500;
+      background-color: #6eb783;
+    }
+  }
+}

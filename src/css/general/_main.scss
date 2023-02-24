@@ -14,3 +14,20 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+main#nw-container
+{
+  @apply nw-mx-auto nw-pb-7;
+}
+
+div.nw-container {
+  max-width: 1062px;
+  @apply nw-mx-auto nw-bg-white nw-mb-4 nw-pb-4 nw-rounded-b-md nw-shadow-md;
+}
+
+@media (min-width: 768px) {
+  div.nw-container
+  {
+    padding: 0 28px;
+  }
+}
