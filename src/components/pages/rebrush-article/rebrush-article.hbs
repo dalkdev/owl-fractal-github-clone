@@ -1,12 +1,14 @@
 <div
   class="nw-container"
 >
-  {{>@header-full--lokal}}
+  <div class="nw-remove-padding-border">
+    {{>@header-full--lokal}}
+  </div>
   <!-- ads-header-->
   <div class="sm:nw-pt-4">{{>@ads--header}}</div>
   <!-- ads-header ende -->
   <!-- banner author social icons -->
-  <div class="nw-pt-8 nw-px-4 nw-max-w-4xl nw-mx-auto">
+  <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
     {{>'@dachzeile'}}
     <div>
       <p
@@ -117,7 +119,7 @@
   </div>
   <!-- Text / ads/ Text ende /empfehlungen module and image rounded module mit Texte ende-->
   <!-- Slider -->
-  <div class="md:nw--ml-8 md:nw--mr-8">{{>@slider}}</div>
+  <div class="nw-remove-padding-border">{{>@slider}}</div>
   <!-- Slider ende -->
   <!-- Text/ ads/ Text /Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module-->
   <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
