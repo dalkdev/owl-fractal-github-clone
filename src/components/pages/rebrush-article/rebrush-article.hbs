@@ -1,170 +1,169 @@
 <div
-  class="nw-container"
+    class="nw-container"
 >
-  <div class="nw-remove-padding-border">
-    {{>@header-full--lokal}}
-  </div>
-  <!-- ads-header-->
-  <div class="sm:nw-pt-4">{{>@ads--header}}</div>
-  <!-- ads-header ende -->
-  <!-- banner author social icons -->
-  <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
-    {{>'@dachzeile'}}
-    <div>
-      <p
-        class="
+    <div class="nw-remove-padding-border">
+        {{>@header-full--lokal}}
+    </div>
+    <!-- ads-header-->
+    <div class="sm:nw-pt-4">{{>@ads--header}}</div>
+    <!-- ads-header ende -->
+    <!-- banner author social icons -->
+    <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
+        {{>'@dachzeile'}}
+        <div>
+            <p
+                class="
           nw-font-bold nw-text-2xl
           md:nw-text-3xl
           nw-text-black nw-pb-2 nw-leading-tight
         "
-      >
-        {{article-title}}
-      </p>
-      <p class="nw-text-base nw-text-black nw-w-5/6 nw-mb-4">{{text}}</p>
+            >
+                {{article-title}}
+            </p>
+            <p class="nw-text-base nw-text-black nw-w-5/6 nw-mb-4">{{text}}</p>
+        </div>
+        {{>'@author'}} {{>'@social-icons'}}
     </div>
-    {{>'@author'}} {{>'@social-icons'}}
-  </div>
-  <!-- banner author social icons ende-->
-  <!-- image mit button -->
-  <div class="nw-my-8">{{>'@image--with-button'}}</div>
-  <!-- image mit button ende -->
-  <!-- Text / ads/ Text /empfehlungen module and image rounded module mit Texte-->
-  <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
-    <div
-      class="
+    <!-- banner author social icons ende-->
+    <!-- image mit button -->
+    <div class="nw-my-8">{{>'@image--with-button'}}</div>
+    <!-- image mit button ende -->
+    <!-- Text / ads/ Text /empfehlungen module and image rounded module mit Texte-->
+    <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
+        <div
+            class="
         nw-flex
         md:nw-flex-wrap
         nw-flex-col
         md:nw-flex-row
         nw-justify-between nw-gap-8
       "
-    >
-      <div class="article-detail-entry-content">
-        <div class="md:nw-float-right md:nw-max-w-xs nw-ml-4 nw-mb-4">
-          {{>@ads}}
+        >
+            <div class="article-detail-entry-content">
+                <div class="md:nw-float-right md:nw-max-w-xs nw-ml-4 nw-mb-4">
+                    {{>@ads}}
+                </div>
+                <p class="em_text">
+                    <span class="nw-text-gray-600"> Bünde. </span> Sie wettern gegen
+                    Geimpfte, leugnen den Holocaust und möchten Politiker vor
+                    Militär-gerichten sehen. Mehr als 120 Menschen, viele aus dem Bünder
+                    Land, haben sich seit einigen Monaten mit Hilfe des Programms
+                    „Telegram" in einer geschlossenen Gruppe vernetzt.
+                </p>
+                <p class="em_text">
+                    Alle Schichten und viele Berufszweige sind vertreten:
+                    <a href="#" class="nw-underline nw-text-red-500">
+                        Darunter sind Fotografen, Heilpraktiker, Unternehmer und auch
+                        medizinische Angestellte.
+                    </a>
+                    Die Neue Westfälische hat über mehrere Wochen Einblicke in eine Szene
+                    bekommen, die nicht nur die Corona-Politik ablehnt, sondern sich
+                    offenbar immer mehr radikalisiert – bis hin zu Mordfantasien.
+                </p>
+            </div>
+            {{>@ads--body}}
+            <div class="article-detail-entry-content">
+                <p class="em_text">
+                    Den Kontakt hält die Gruppe über den Messenger-Dienst „Telegram".
+                    Erfunden von einem russischen Programmierer hat das Unternehmen heute
+                    seinen Sitz in den Vereinigten Arabischen Emiraten. Nutzer können sich
+                    anonym austauschen – vor der deutschen Justiz in der Regel gut
+                    geschützt. Das wird ausgenutzt. Tausende Nachrichten ploppten in den
+                    vergangenen<a href="#" class="nw-underline nw-text-red-500">
+                    Monaten auf den Handys der Gruppenmitglieder auf.</a
+                >
+                    Hauptsächlich werden Beiträge von prominenten Coronaleugnern und
+                    anderen Gruppen aus der Szene geteilt.
+                </p>
+                <p class="em_text">
+                    Dort finden sich eine<a href="#" class="nw-underline nw-text-red-500">
+                    Menge Falschinformationen
+                </a>
+                    zur aktuellen Pandemie.<a
+                    href="#"
+                    class="nw-underline nw-text-red-500"
+                >
+                    Bedient wird die ganze Palette der Corona-Leugner:
+                </a>
+                    Es ist ein Einblick in eine seltsame Parallelwelt, in der Geimpfte die
+                    Ansteckenden sind und in großen Zahlen versterben. Aber auch ein
+                    digitaler Ort, an dem der Übergang von Falsch-informationen zu
+                    rechtsextremen Inhalten fließend ist.
+                </p>
+                {{>@empfehlungen}}
+                <div class="md:nw-float-left md:nw-max-w-xs nw-mr-4 nw-mb-4">
+                    {{>@image--rounded}}
+                </div>
+                <h2 class="Zwischenzeile">Seltsame Parallelwelt</h2>
+                <p class="em_text">
+                    Ein Mitglied teilte zuletzt historische Fotos, die angeblich beweisen
+                    sollen, dass Konzentrationslager nicht echt seien, weil dort
+                    abgemagerte Deutsche in „angebliche KZ Kleidung gesteckt und in den
+                    angeblichen KZs fotografiert" worden seien, weil dort abgemagerte
+                    Deutsche in „angebliche KZ Kleidung gesteckt und in den angeblichen
+                    KZs fotografiert" worden seien. Die Botschaft: Den Deutschen sei der
+                    Holocaust eingeredet worden. In einem anderen Beitrag teilt die
+                    Administratorin der Gruppe, eine Tierschützerin aus Bünde, ein Video
+                    von der verurteilten.
+                </p>
+                <p class="em_text">
+                    In dem Begleittext steht, dass deutsche Gerichte entschieden hätten,
+                    dass „der Film ’Holocaust’ die Wahrheit ist." Die Anführungsstriche
+                    beim Begriff Holocaust stehen auch im Original. Ein Gespräch mit der
+                    NW lehnt die Tierschützerin ab. Die Begründung: „Ich muss mich
+                    momentan um meine kranke Katze kümmern und habe gerade keinen Kopf für
+                    ein Interview", sagt sie.
+                </p>
+            </div>
         </div>
-        <p class="em_text">
-          <span class="nw-text-gray-600"> Bünde. </span> Sie wettern gegen
-          Geimpfte, leugnen den Holocaust und möchten Politiker vor
-          Militär-gerichten sehen. Mehr als 120 Menschen, viele aus dem Bünder
-          Land, haben sich seit einigen Monaten mit Hilfe des Programms
-          „Telegram" in einer geschlossenen Gruppe vernetzt.
-        </p>
-        <p class="em_text">
-          Alle Schichten und viele Berufszweige sind vertreten:
-          <a href="#" class="nw-underline nw-text-red-500">
-            Darunter sind Fotografen, Heilpraktiker, Unternehmer und auch
-            medizinische Angestellte.
-          </a>
-          Die Neue Westfälische hat über mehrere Wochen Einblicke in eine Szene
-          bekommen, die nicht nur die Corona-Politik ablehnt, sondern sich
-          offenbar immer mehr radikalisiert – bis hin zu Mordfantasien.
-        </p>
-      </div>
-      {{>@ads--body}}
-      <div class="article-detail-entry-content">
-        <p class="em_text">
-          Den Kontakt hält die Gruppe über den Messenger-Dienst „Telegram".
-          Erfunden von einem russischen Programmierer hat das Unternehmen heute
-          seinen Sitz in den Vereinigten Arabischen Emiraten. Nutzer können sich
-          anonym austauschen – vor der deutschen Justiz in der Regel gut
-          geschützt. Das wird ausgenutzt. Tausende Nachrichten ploppten in den
-          vergangenen<a href="#" class="nw-underline nw-text-red-500">
-            Monaten auf den Handys der Gruppenmitglieder auf.</a
-          >
-          Hauptsächlich werden Beiträge von prominenten Coronaleugnern und
-          anderen Gruppen aus der Szene geteilt.
-        </p>
-        <p class="em_text">
-          Dort finden sich eine<a href="#" class="nw-underline nw-text-red-500">
-            Menge Falschinformationen
-          </a>
-          zur aktuellen Pandemie.<a
-            href="#"
-            class="nw-underline nw-text-red-500"
-          >
-            Bedient wird die ganze Palette der Corona-Leugner:
-          </a>
-          Es ist ein Einblick in eine seltsame Parallelwelt, in der Geimpfte die
-          Ansteckenden sind und in großen Zahlen versterben. Aber auch ein
-          digitaler Ort, an dem der Übergang von Falsch-informationen zu
-          rechtsextremen Inhalten fließend ist.
-        </p>
-        {{>@empfehlungen}}
-        <div class="md:nw-float-left md:nw-max-w-xs nw-mr-4 nw-mb-4">
-          {{>@image--rounded}}
+    </div>
+    <!-- Text / ads/ Text ende /empfehlungen module and image rounded module mit Texte ende-->
+    <!-- Slider -->
+    <div class="nw-remove-padding-border">{{>@slider}}
+    </div>
+    <!-- Slider ende -->
+    <!-- Text/ ads/ Text /Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module-->
+    <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
+        <div class=" nw-flex nw-flex-col
+                    md:nw-flex-row
+                    nw-justify-between
+                    md:nw-space-x-12">
+            <div class="article-detail-entry-content">
+                <div class="nw-flex-1 md:nw-pr-12">
+                    <h2 class="Zwischenzeile">
+                        Kaum ein Mitglied will sprechen
+                    </h2>
+                    <p class="em_text">
+                        Sie informiere sich seit 20 Jahren dagegen in alternativen Medien.
+                        Dass dort auch, wie im Fall der Bünder Telegram-Gruppe,
+                        Holocaust-leugnung betrieben wird, sieht sie offenbar gelassen. „Ich
+                        habe nicht die Zeit, um alle abonnierten Kanäle zu kontrollieren."
+                    </p>
+                    <p class="em_text">
+                        Deutlich offener als gegenüber der NW ist man dagegen im anonymen
+                        Chat. Hier fühlt man sich unbeobachtet. Wie weit sich die Szene
+                        mittlerweile radikalisiert hat, zeigen.
+                    </p>
+                </div>
+            </div>
+            <div class="nw-mx-auto md:nw-items-end nw-mt-4 md:nw-mt-0">{{>@ads}}</div>
         </div>
-        <p class="nw-text-base nw-font-bold nw-pb-2">Seltsame Parallelwelt</p>
-        <p class="em_text">
-          Ein Mitglied teilte zuletzt historische Fotos, die angeblich beweisen
-          sollen, dass Konzentrationslager nicht echt seien, weil dort
-          abgemagerte Deutsche in „angebliche KZ Kleidung gesteckt und in den
-          angeblichen KZs fotografiert" worden seien, weil dort abgemagerte
-          Deutsche in „angebliche KZ Kleidung gesteckt und in den angeblichen
-          KZs fotografiert" worden seien. Die Botschaft: Den Deutschen sei der
-          Holocaust eingeredet worden. In einem anderen Beitrag teilt die
-          Administratorin der Gruppe, eine Tierschützerin aus Bünde, ein Video
-          von der verurteilten.
-        </p>
-        <p class="em_text">
-          In dem Begleittext steht, dass deutsche Gerichte entschieden hätten,
-          dass „der Film ’Holocaust’ die Wahrheit ist." Die Anführungsstriche
-          beim Begriff Holocaust stehen auch im Original. Ein Gespräch mit der
-          NW lehnt die Tierschützerin ab. Die Begründung: „Ich muss mich
-          momentan um meine kranke Katze kümmern und habe gerade keinen Kopf für
-          ein Interview", sagt sie.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Text / ads/ Text ende /empfehlungen module and image rounded module mit Texte ende-->
-  <!-- Slider -->
-  <div class="nw-remove-padding-border">{{>@slider}}</div>
-  <!-- Slider ende -->
-  <!-- Text/ ads/ Text /Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module-->
-  <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
-    <div
-      class="
-        nw-flex nw-flex-col
-        md:nw-flex-row
-        nw-justify-between
-        md:nw-space-x-12
-      "
-    >
-      <div class="nw-flex-1 md:nw-pr-12">
-        <p class="nw-text-xl nw-font-bold nw-pb-2 nw-leading-tight">
-          Kaum ein Mitglied will sprechen
-        </p>
-        <p class="nw-pb-2">
-          Sie informiere sich seit 20 Jahren dagegen in alternativen Medien.
-          Dass dort auch, wie im Fall der Bünder Telegram-Gruppe,
-          Holocaust-leugnung betrieben wird, sieht sie offenbar gelassen. „Ich
-          habe nicht die Zeit, um alle abonnierten Kanäle zu kontrollieren."
-        </p>
-        <p>
-          Deutlich offener als gegenüber der NW ist man dagegen im anonymen
-          Chat. Hier fühlt man sich unbeobachtet. Wie weit sich die Szene
-          mittlerweile radikalisiert hat, zeigen.
-        </p>
-      </div>
-      <div class="nw-mx-auto md:nw-items-end nw-mt-4 md:nw-mt-0">{{>@ads}}</div>
-    </div>
-    <div class="nw-py-4 nw-mb-2">
-      <p class="nw-text-xl nw-font-bold nw-pb-2 nw-leading-tight">
-        Krudes Weltbild
-      </p>
-      <p class="md:nw-w-5/6">
-        Welches Weltbild der Mann im Kopf hat, zeigt sich nur drei Tage später.
-        Am 13. Dezember teilt er den Mitgliedern mit, dass das „3. Reich niemals
-        untergegangen" und Corona „nur ein Ablenkungsmanöver" sei. Zuvor
-        schreibt er schon, dass Politiker sich künftig vor einem
-        „Militärgericht" verantworten müssen. Vor einem ordentlichen Gericht
-        könnten dagegen einige Beiträge mit strafrechtlicher Relevanz das sagt:
-        <span class="nw-inline-block">
+        <div class="nw-py-4 nw-mb-2 article-detail-entry-content">
+            <h2 class="Zwischenzeile">
+                Krudes Weltbild
+            </h2>
+            <p class="em_text">
+                Welches Weltbild der Mann im Kopf hat, zeigt sich nur drei Tage später.
+                Am 13. Dezember teilt er den Mitgliedern mit, dass das „3. Reich niemals
+                untergegangen" und Corona „nur ein Ablenkungsmanöver" sei. Zuvor
+                schreibt er schon, dass Politiker sich künftig vor einem
+                „Militärgericht" verantworten müssen. Vor einem ordentlichen Gericht
+                könnten dagegen einige Beiträge mit strafrechtlicher Relevanz das sagt:
+                <span class="nw-inline-block">
           <a
-            href="#"
-            target="_blank"
-            class="
+              href="#"
+              target="_blank"
+              class="
               nw-text-base
               nw-font-bold
               nw-flex
@@ -176,114 +175,121 @@
           >
             Guardian
             <svg
-              class="nw-ml-0.5 nw-w-5 nw-h-5 nw-text-red-500"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
+                class="nw-ml-0.5 nw-w-5 nw-h-5 nw-text-red-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
             >
               <path
-                fill-rule="evenodd"
-                d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
-                clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+                  clip-rule="evenodd"
               />
               <path
-                fill-rule="evenodd"
-                d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
-                clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+                  clip-rule="evenodd"
               />
             </svg>
           </a>
         </span>
-      </p>
+            </p>
+        </div>
+        <div class="nw-text-base article-detail-entry-content">
+            <div class="nw-my-4 nw-w-5/6">{{>@privacy}}</div>
+            <p class="em_text">
+                Welches Weltbild der Mann im Kopf hat, zeigt sich nur drei Tage später.
+                Am 13. Dezember teilt er den Mitgliedern mit, dass das „3. Reich niemals
+                untergegangen" und Corona „nur ein Ablenkungsmanöver" sei. Zuvor
+                schreibt er schon, dass Politiker sich künftig vor einem
+                „Militärgericht" verantworten müssen. Vor einem ordentlichen Gericht
+                könnten dagegen einige Beiträge mit strafrechtlicher Relevanz das sagt:
+            </p>
+            <h2 class="Zwischenzeile">
+                Kaum ein Mitglied will öffentlich sprechen
+            </h2>
+            <p class="em_text nw-pb-2">
+                Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
+                dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
+                betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
+                um alle abonnierten Kanäle zu kontrollieren."
+            </p>
+        </div>
     </div>
-    <div class="md:nw-w-5/6 nw-text-base">
-      <div class="nw-my-4">{{>@privacy}}</div>
-      <p class="nw-py-4">
-        Welches Weltbild der Mann im Kopf hat, zeigt sich nur drei Tage später.
-        Am 13. Dezember teilt er den Mitgliedern mit, dass das „3. Reich niemals
-        untergegangen" und Corona „nur ein Ablenkungsmanöver" sei. Zuvor
-        schreibt er schon, dass Politiker sich künftig vor einem
-        „Militärgericht" verantworten müssen. Vor einem ordentlichen Gericht
-        könnten dagegen einige Beiträge mit strafrechtlicher Relevanz das sagt:
-      </p>
-      <p class="nw-text-xl nw-font-bold nw-leading-tight nw-pb-2">
-        Kaum ein Mitglied will öffentlich sprechen
-      </p>
-      <p class="nw-pb-2">
-        Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
-        dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
-        betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
-        um alle abonnierten Kanäle zu kontrollieren."
-      </p>
-      <p>
-        Deutlich offener als gegenüber der NW ist man dagegen im anonymen Chat.
-        Hier fühlt man sich unbeobachtet. Wie weit sich die Szene mittlerweile
-        radikalisiert hat, zeigen Nachrichten vom 10. Dezember. Ein Beitrag
-        bringt einen Nutzer mit dem Namen „Erich" offenbar so in Rage, dass er
-        eine Morddrohung in sein Handy tippt und abschickt. „Es werden Köpfe
-        rollen", schreibt er. Wenig später antwortet ihm ein Mann aus Bünde:
-        „Ich denke, es werden Kugeln sein".
-      </p>
-      <br />
-      <p class="nw-text-xl nw-font-bold nw-leading-tight nw-pb-2">
-        Kaum ein Mitglied will öffentlich sprechen
-      </p>
-      <p>
-        Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
-        dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
-        betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
-        um alle abonnierten Kanäle zu kontrollieren."
-      </p>
-      <br />
-      <p class="nw-text-lg nw-font-bold nw-leading-tight">
-        Wo kann ich die dollas olas beantragen?
-      </p>
-      <br />
-      <p class="nw-text-base nw-font-bold nw-leading-tight nw-pb-2">
-        In Steinhagen bei Florian
-      </p>
-      <p>
-        Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
-        dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
-        betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
-        um alle abonnierten Kanäle zu kontrollieren."
-      </p>
-      <br />
-      <p class="nw-text-base nw-font-bold nw-leading-tight nw-pb-2">
-        In Steinhagen bei Florian
-      </p>
-      <p>
-        Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
-        dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
-        betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
-        um alle abonnierten Kanäle zu kontrollieren."
-      </p>
-      <br />
-      <p class="nw-text-base nw-font-bold nw-leading-tight nw-pb-2">
-        In Steinhagen bei Florian
-      </p>
-      <p>
-        Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
-        dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
-        betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
-        um alle abonnierten Kanäle zu kontrollieren."
-      </p>
-      <br />
-      <p>
-        Deutlich offener als gegenüber der NW ist man dagegen im anonymen Chat.
-        Hier fühlt man sich unbeobachtet. Wie weit sich die Szene mittlerweile
-        radikalisiert hat, zeigen Nachrichten vom 10. Dezember. Ein Beitrag
-        bringt einen Nutzer mit dem Namen „Erich" offenbar so in Rage, dass er
-        eine Morddrohung in sein Handy tippt und abschickt. „Es werden Köpfe
-        rollen", schreibt er. Wenig später antwortet ihm ein Mann aus Bünde:
-        „Ich denke, es werden Kugeln sein".
-      </p>
+    <div class="nw-remove-padding-border nw-mb-4">
+        {{>@video-box}}
     </div>
-    <div class="md:nw-w-5/6">
-      <div class="nw-mt-8 nw-mb-2">{{>@info-box}}</div>
-      {{>@link-liste}} {{>@download}} {{>@kommentare}}
+    <div class="nw-px-4 nw-py-4 nw-text-base nw-w-5/6 nw-mx-auto">
+        <div class="article-detail-entry-content">
+            <p class="em_text">
+                Deutlich offener als gegenüber der NW ist man dagegen im anonymen Chat.
+                Hier fühlt man sich unbeobachtet. Wie weit sich die Szene mittlerweile
+                radikalisiert hat, zeigen Nachrichten vom 10. Dezember. Ein Beitrag
+                bringt einen Nutzer mit dem Namen „Erich" offenbar so in Rage, dass er
+                eine Morddrohung in sein Handy tippt und abschickt. „Es werden Köpfe
+                rollen", schreibt er. Wenig später antwortet ihm ein Mann aus Bünde:
+                „Ich denke, es werden Kugeln sein".
+            </p>
+            <br/>
+            <h2 class="Zwischenzeile">
+                Kaum ein Mitglied will öffentlich sprechen
+            </h2>
+            <p class="em_text">
+                Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
+                dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
+                betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
+                um alle abonnierten Kanäle zu kontrollieren."
+            </p>
+            <br/>
+            <h2 class="Zwischenzeile">
+                Wo kann ich die dollas olas beantragen?
+            </h2>
+            <br/>
+            <p class="nw-text-base nw-font-bold nw-leading-tight nw-pb-2">
+                In Steinhagen bei Florian
+            </p>
+            <p class="em_text">
+                Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
+                dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
+                betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
+                um alle abonnierten Kanäle zu kontrollieren."
+            </p>
+            <br/>
+            <p class="nw-text-base nw-font-bold nw-leading-tight nw-pb-2">
+                In Steinhagen bei Florian
+            </p>
+            <p class="em_text">
+                Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
+                dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
+                betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
+                um alle abonnierten Kanäle zu kontrollieren."
+            </p>
+            <br/>
+            <p class="nw-text-base nw-font-bold nw-leading-tight nw-pb-2">
+                In Steinhagen bei Florian
+            </p>
+            <p class="em_text">
+                Sie informiere sich seit 20 Jahren dagegen in alternativen Medien. Dass
+                dort auch, wie im Fall der Bünder Telegram-Gruppe, Holocaustleugnung
+                betrieben wird, sieht sie offenbar gelassen. „Ich habe nicht die Zeit,
+                um alle abonnierten Kanäle zu kontrollieren."
+            </p>
+            <br/>
+            <p class="em_text">
+                Deutlich offener als gegenüber der NW ist man dagegen im anonymen Chat.
+                Hier fühlt man sich unbeobachtet. Wie weit sich die Szene mittlerweile
+                radikalisiert hat, zeigen Nachrichten vom 10. Dezember. Ein Beitrag
+                bringt einen Nutzer mit dem Namen „Erich" offenbar so in Rage, dass er
+                eine Morddrohung in sein Handy tippt und abschickt. „Es werden Köpfe
+                rollen", schreibt er. Wenig später antwortet ihm ein Mann aus Bünde:
+                „Ich denke, es werden Kugeln sein".
+            </p>
+        </div>
+        <div class="md:nw-w-5/6">
+            <div class="nw-mt-8 nw-mb-2">{{>@info-box}}</div>
+            {{>@link-liste}} {{>@download}} {{>@kommentare}}
+        </div>
     </div>
-  </div>
-  <!-- Text/ ads/ Text ende/ Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module ende -->
+    <!-- Text/ ads/ Text ende/ Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module ende -->
 </div>
 {{>@footer (contextData '@footer') }}
