@@ -1,9 +1,9 @@
 <div
-  class="slider nw-leseempfehlung nw-bg-custom-1-700 nw-pb-2 nw-pt-1 nw-pl-2"
+    class="slider nw-leseempfehlung nw-bg-custom-1-700 nw-pb-2 nw-pt-1 nw-pl-2"
 >
-  <div>
-    <p
-      class="
+    <div>
+        <p
+            class="
         nw-text-white
         nw-text-xl
         nw-font-bold
@@ -12,16 +12,16 @@
         nw-tracking-normal
         nw-text-opacity-100
       "
-    >
-      {{title}}
-    </p>
-  </div>
-  <div>
-    <p
-      class="
+        >
+            {{title}}
+        </p>
+    </div>
+    <div>
+        <p
+            class="
         nw-text-white
         nw-text-center
-        nw-text-base
+        nw-text-md
         nw-font-normal
         nw-tracking-normal
         nw-pb-8
@@ -29,18 +29,18 @@
         md:nw-pb-3
         nw-pr-1
       "
-    >
-      {{caption}}
-    </p>
-  </div>
+        >
+            {{caption}}
+        </p>
+    </div>
 
-  <div class="embla embla--main-carousel nw-mt-1">
-    <div class="embla__viewport relative">
-      <div class="embla__container">
-        {{#each images}}
+    <div class="embla embla--main-carousel nw-mt-1">
+        <div class="embla__viewport relative">
+            <div class="embla__container">
+                {{#each images}}
 
-        <div
-          class="
+                    <div
+                        class="
             embla__slide
             nw-min-w-8/10
             sm:min-w-7/10
@@ -48,20 +48,20 @@
             lg:nw-min-w-4/10
             xl:nw-min-w-3/10
           "
-        >
-          <a href="" class="embla__slide__inner nw-rounded-md nw-block">
-            <div class="nw-aspect-w-16 nw-aspect-h-9">
-              <img
-                class="
+                    >
+                        <a href="" class="embla__slide__inner nw-rounded-md nw-block">
+                            <div class="nw-aspect-w-16 nw-aspect-h-9">
+                                <img
+                                    class="
                   embla__slide__img
                   nw-h-full nw-w-full nw-object-none nw-rounded-t
                 "
-                src="{{src}}"
-              />
-            </div>
+                                    src="{{src}}"
+                                />
+                            </div>
 
-            <div
-              class="
+                            <div
+                                class="
                 nw-h-4/7
                 nw-bg-white
                 nw-pr-8
@@ -71,9 +71,9 @@
                 nw-text-opacity-100
                 nw-rounded-b
               "
-            >
-              <div
-                class="
+                            >
+                                <div
+                                    class="
                   nw-pt-4
                   nw-text-xs
                   nw-uppercase
@@ -83,11 +83,11 @@
                   nw-pr-4
                   nw-text-opacity-100
                 "
-              >
-                {{heading}}
-              </div>
-              <div
-                class="
+                                >
+                                    {{heading}}
+                                </div>
+                                <div
+                                    class="
                   nw-pt-1
                   nw-text-lg
                   nw-text-black
@@ -96,11 +96,11 @@
                   nw-pr-4
                   nw-text-opacity-100
                 "
-              >
-                {{title}}
-              </div>
-              <div
-                class="
+                                >
+                                    {{title}}
+                                </div>
+                                <div
+                                    class="
                   nw-pt-1
                   nw-text-sm
                   nw-font-normal
@@ -109,11 +109,11 @@
                   nw-pr-4
                   nw-text-opacity-100
                 "
-              >
-                {{description}}
-              </div>
-              <div
-                class="
+                                >
+                                    {{description}}
+                                </div>
+                                <div
+                                    class="
                   nw-pt-3
                   nw-text-xs
                   nw-uppercase
@@ -123,33 +123,32 @@
                   nw-pr-4
                   nw-text-opacity-100
                 "
-              >
-                {{autor}}
-              </div>
-              <div
-                class="
-                  nw-text-tiny
-                  nw-text-tiny
+                                >
+                                    {{autor}}
+                                </div>
+                                <div
+                                    class="
+                  nw-text-base
                   nw-text-gray-700
                   nw-font-normal
                   nw-font-medium
                   nw-pr-4
                   nw-text-opacity-100
                 "
-              >
-                {{name}}
-              </div>
+                                >
+                                    {{name}}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {{/each}}
             </div>
-          </a>
-        </div>
-        {{/each}}
-      </div>
 
-      <!-- Dots -->
-      <div class="embla__dots"></div>
-      <script type="text/template" id="embla-dot-template">
-        <button class="embla__dot" type="button"></button>
-      </script>
+            <!-- Dots -->
+            <div class="embla__dots"></div>
+            <script type="text/template" id="embla-dot-template">
+                <button class="embla__dot" type="button"></button>
+            </script>
+        </div>
     </div>
-  </div>
 </div>

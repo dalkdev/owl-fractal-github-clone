@@ -1,35 +1,35 @@
 <div class="nw-bg-custom-1-600 nw-mt-8 nw-pb-4 nw-mb-1">
-  <div class="nw-text-xl nw-text-center nw-text-white nw-font-bold nw-py-4">
-    Spielplan Arminia Bielefeld
-  </div>
-  {{#each spielplan}}
-  <div class="nw-mx-2 nw-my-2 nw-bg-white nw-rounded-md nw-grid nw-grid-cols-3">
-    <div class="nw-col-span-2 nw-border-r-2">
-      <div class="nw-flex-shrink-0 nw-px-2 nw-pt-2 nw-flex">
-        <img
-          class="nw-w-7 nw-h-7 nw-rounded-full"
-          src="{{this.image-team1}}"
-          alt=""
-        />
-        <span class="nw-text-tiny nw-text-black nw-font-bold nw-px-2 nw-pt-0.5">
-          {{this.team1}}</span
-        >
-      </div>
-      <div class="nw-flex-shrink-0 nw-px-2 nw-mt-1 nw-pb-2 nw-flex">
-        <img
-          class="nw-w-7 nw-h-7 nw-rounded-full"
-          src="{{this.image-team2}}"
-          alt=""
-        />
-        <span class="nw-text-tiny nw-text-black nw-font-bold nw-px-2 nw-pt-0.5">
-          {{this.team2}}</span
-        >
-      </div>
+    <div class="nw-text-xl nw-text-center nw-text-white nw-font-bold nw-py-4">
+        Spielplan Arminia Bielefeld
     </div>
-    <div class="nw-text-tiny nw-text-black nw-font-bold nw-text-center nw-mt-2">
-      <div>Sa.21.08</div>
-      <div>15:30 Uhr</div>
-    </div>
-  </div>
-  {{/each}}
+    {{#each spielplan}}
+        <div class="nw-mx-2 nw-my-2 nw-bg-white nw-rounded-md nw-grid nw-grid-cols-3">
+            <div class="nw-col-span-2 nw-border-r-2">
+                <div class="nw-flex-shrink-0 nw-px-2 nw-pt-2 nw-flex">
+                    <img
+                        class="nw-w-7 nw-h-7 nw-rounded-full"
+                        src="{{this.image-team1}}"
+                        alt=""
+                    />
+                    <span class="nw-text-base nw-text-black nw-font-bold nw-px-2 nw-pt-0.5">
+                        {{this.team1}}</span
+                    >
+                </div>
+                <div class="nw-flex-shrink-0 nw-px-2 nw-mt-1 nw-pb-2 nw-flex">
+                    <img
+                        class="nw-w-7 nw-h-7 nw-rounded-full"
+                        src="{{this.image-team2}}"
+                        alt=""
+                    />
+                    <span class="nw-text-base nw-text-black nw-font-bold nw-px-2 nw-pt-0.5">
+                        {{this.team2}}</span
+                    >
+                </div>
+            </div>
+            <div class="nw-text-base nw-text-black nw-font-bold nw-text-center nw-mt-2">
+                <div>Sa.21.08</div>
+                <div>15:30 Uhr</div>
+            </div>
+        </div>
+    {{/each}}
 </div>

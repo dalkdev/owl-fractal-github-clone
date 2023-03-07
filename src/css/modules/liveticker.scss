@@ -7,7 +7,7 @@
     }
 
     .nw-liveticker-head-text {
-      @apply nw-text-base nw-ml-2 nw-font-bold;
+      @apply nw-text-md nw-ml-2 nw-font-bold;
     }
   }
 
@@ -22,10 +22,10 @@
       bottom: 0.125rem;
       height: 8rem;
       background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 15%,
-        rgba(0, 212, 255, 0) 100%
+                      0deg,
+                      rgba(255, 255, 255, 1) 0%,
+                      rgba(255, 255, 255, 1) 15%,
+                      rgba(0, 212, 255, 0) 100%
       );
     }
 

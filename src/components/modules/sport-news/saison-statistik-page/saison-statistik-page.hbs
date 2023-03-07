@@ -1,7 +1,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <div>
-  <div
-    class="
+    <div
+        class="
       nw-uppercase
       nw-text-xl
       nw-text-black
@@ -11,18 +11,18 @@
       nw-pt-8
       nw-px-8
     "
-  >
-    Saison-Statistik <br />
-    Arminia Bielefeld
-  </div>
-  <div
-    class="nw-text-tiny nw-text-gray-500 nw-font-medium nw-text-center nw-px-12"
-  >
-    Spiel-Statistik von Arminia Bielefeld für den Bundesliga Saison 2022/2023
-  </div>
+    >
+        Saison-Statistik <br/>
+        Arminia Bielefeld
+    </div>
+    <div
+        class="nw-text-base nw-text-gray-500 nw-font-medium nw-text-center nw-px-12"
+    >
+        Spiel-Statistik von Arminia Bielefeld für den Bundesliga Saison 2022/2023
+    </div>
 
-  <div
-    class="
+    <div
+        class="
       nw-text-sm
       nw-font-medium
       nw-text-center
@@ -31,12 +31,12 @@
       nw-border-gray-200
       nw-mx-2
     "
-  >
-    <ul class="nw-flex nw-flex-wrap nw--mb-px nw-place-content-center">
-      <li class="nw-mr-2">
-        <a
-          href="#"
-          class="
+    >
+        <ul class="nw-flex nw-flex-wrap nw--mb-px nw-place-content-center">
+            <li class="nw-mr-2">
+                <a
+                    href="#"
+                    class="
             tabs
             nw-inline-block
             nw-p-4
@@ -45,14 +45,14 @@
             nw-border-b-2
             nw-border-custom-1-600
           "
-          aria-current="page"
-          >Gesamt</a
-        >
-      </li>
-      <li class="nw-mr-2">
-        <a
-          href="#"
-          class="
+                    aria-current="page"
+                >Gesamt</a
+                >
+            </li>
+            <li class="nw-mr-2">
+                <a
+                    href="#"
+                    class="
             tabs
             nw-inline-block
             nw-p-4
@@ -60,13 +60,13 @@
             nw-border-b-2
             nw-border-transparent
           "
-          >Gespielte Spiele</a
-        >
-      </li>
-      <li class="nw-mr-2">
-        <a
-          href="#"
-          class="
+                >Gespielte Spiele</a
+                >
+            </li>
+            <li class="nw-mr-2">
+                <a
+                    href="#"
+                    class="
             tabs
             nw-inline-block
             nw-p-4
@@ -74,122 +74,122 @@
             nw-border-b-2
             nw-border-transparent
           "
-          >Tore</a
-        >
-      </li>
-    </ul>
-  </div>
-
-  <div class="nw-mx-2">
-    <div class="container">
-      <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
-        <canvas id="gesamtChart" class="nw-w-full"></canvas>
-      </div>
+                >Tore</a
+                >
+            </li>
+        </ul>
     </div>
 
-    <div class="nw-hidden container">Spiele</div>
+    <div class="nw-mx-2">
+        <div class="container">
+            <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
+                <canvas id="gesamtChart" class="nw-w-full"></canvas>
+            </div>
+        </div>
 
-    <div class="nw-hidden container">
-      <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
-        <canvas id="toreChart" class="nw-w-full"></canvas>
-      </div>
+        <div class="nw-hidden container">Spiele</div>
+
+        <div class="nw-hidden container">
+            <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
+                <canvas id="toreChart" class="nw-w-full"></canvas>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script>
-    var xValues = ['Gespielt [1]', 'Offen [33]'];
-    var yValues = [1, 33];
-    var barColors = ['#D20A11', '#038ed5'];
+    <script>
+        var xValues = ['Gespielt [1]', 'Offen [33]'];
+        var yValues = [1, 33];
+        var barColors = ['#D20A11', '#038ed5'];
 
-    new Chart('gesamtChart', {
-      type: 'doughnut',
-      data: {
-        labels: xValues,
-        datasets: [
-          {
-            backgroundColor: barColors,
-            data: yValues,
-          },
-        ],
-      },
-      options: {
-        cutoutPercentage: 80,
-        tooltips: { enabled: false },
-        hover: { mode: null },
-        title: {
-          display: false,
-          text: 'World Wide Wine Production 2018',
-        },
-      },
-    });
-  </script>
-  <script>
-    var aValues = ['Tore [23]', 'Gegentore [46]'];
-    var bValues = [23, 46];
-    var cColors = ['#D20A11', '#038ed5'];
+        new Chart('gesamtChart', {
+            type: 'doughnut',
+            data: {
+                labels: xValues,
+                datasets: [
+                    {
+                        backgroundColor: barColors,
+                        data: yValues,
+                    },
+                ],
+            },
+            options: {
+                cutoutPercentage: 80,
+                tooltips: {enabled: false},
+                hover: {mode: null},
+                title: {
+                    display: false,
+                    text: 'World Wide Wine Production 2018',
+                },
+            },
+        });
+    </script>
+    <script>
+        var aValues = ['Tore [23]', 'Gegentore [46]'];
+        var bValues = [23, 46];
+        var cColors = ['#D20A11', '#038ed5'];
 
-    new Chart('toreChart', {
-      type: 'doughnut',
-      data: {
-        labels: aValues,
-        datasets: [
-          {
-            backgroundColor: cColors,
-            data: bValues,
-          },
-        ],
-      },
-      options: {
-        cutoutPercentage: 80,
-        tooltips: { enabled: false },
-        hover: { mode: null },
-        title: {
-          display: false,
-          text: 'World Wide Wine Production 2018',
-        },
-      },
-    });
-  </script>
+        new Chart('toreChart', {
+            type: 'doughnut',
+            data: {
+                labels: aValues,
+                datasets: [
+                    {
+                        backgroundColor: cColors,
+                        data: bValues,
+                    },
+                ],
+            },
+            options: {
+                cutoutPercentage: 80,
+                tooltips: {enabled: false},
+                hover: {mode: null},
+                title: {
+                    display: false,
+                    text: 'World Wide Wine Production 2018',
+                },
+            },
+        });
+    </script>
 
-  <div
-    class="
+    <div
+        class="
       nw-mx-2 nw-px-2 nw-text-sm nw-text-black nw-text-center nw-pt-4 nw-pb-2
       md:nw-px-44
     "
-  >
-    In der aktuellen Bundesliga Saison haben unsere Jungs von Arminia Bielefeld
-    bereits ein Spiel hinter sich. Wir drücken ganz fest die Daumen für das
-    nächste <b>Spiel am Samstag (17.08.2022) gegen Bayern München</b> und freuen
-    uns auf viele Tore beim Heimspiel in der Bielefelder Alm.
-  </div>
-  <!-- live-button-->
-  {{>'@live-button'}}
-  <!--live-button Ende -->
+    >
+        In der aktuellen Bundesliga Saison haben unsere Jungs von Arminia Bielefeld
+        bereits ein Spiel hinter sich. Wir drücken ganz fest die Daumen für das
+        nächste <b>Spiel am Samstag (17.08.2022) gegen Bayern München</b> und freuen
+        uns auf viele Tore beim Heimspiel in der Bielefelder Alm.
+    </div>
+    <!-- live-button-->
+    {{>'@live-button'}}
+    <!--live-button Ende -->
 </div>
 
 <script>
-  let array_tabs = document.getElementsByClassName('tabs');
-  Array.prototype.forEach.call(array_tabs, (x, i) => {
-    x.addEventListener('click', e => {
-      Array.prototype.forEach.call(array_tabs, x => {
-        x.classList.remove(
-          'nw-text-custom-1-600',
-          'nw-border-b-2',
-          'nw-border-custom-1-600'
-        );
-        x.classList.add('nw-text-black', 'nw-border-transparent');
-      });
-      x.classList.remove('nw-text-black', 'nw-border-transparent');
-      x.classList.add(
-        'nw-text-custom-1-600',
-        'nw-border-b-2',
-        'nw-border-custom-1-600'
-      );
-      let array_container = document.getElementsByClassName('container');
-      Array.prototype.forEach.call(array_container, x => {
-        x.classList.add('nw-hidden');
-      });
-      array_container[i].classList.remove('nw-hidden');
+    let array_tabs = document.getElementsByClassName('tabs');
+    Array.prototype.forEach.call(array_tabs, (x, i) => {
+        x.addEventListener('click', e => {
+            Array.prototype.forEach.call(array_tabs, x => {
+                x.classList.remove(
+                    'nw-text-custom-1-600',
+                    'nw-border-b-2',
+                    'nw-border-custom-1-600'
+                );
+                x.classList.add('nw-text-black', 'nw-border-transparent');
+            });
+            x.classList.remove('nw-text-black', 'nw-border-transparent');
+            x.classList.add(
+                'nw-text-custom-1-600',
+                'nw-border-b-2',
+                'nw-border-custom-1-600'
+            );
+            let array_container = document.getElementsByClassName('container');
+            Array.prototype.forEach.call(array_container, x => {
+                x.classList.add('nw-hidden');
+            });
+            array_container[i].classList.remove('nw-hidden');
+        });
     });
-  });
 </script>

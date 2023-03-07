@@ -1,61 +1,61 @@
 <div
-  id="nw-embla-gradient"
-  class="
+    id="nw-embla-gradient"
+    class="
     slider
     first-slide
     nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-mb-4
     md:nw-mb-2
   "
 >
-  <div class="nw-pl-4 md:nw-pl-20">
-    <div>
-      <p class="nw-text-white nw-inline nw-text-xl nw-uppercase nw-font-bold">
-        {{title}}
-      </p>
-      <hr class="nw-red-line-l nw-mt-0.5" />
-    </div>
-    <div>
-      <p
-        class="
-          nw-text-white nw-text-left nw-text-base
+    <div class="nw-pl-4 md:nw-pl-20">
+        <div>
+            <p class="nw-text-white nw-inline nw-text-xl nw-uppercase nw-font-bold">
+                {{title}}
+            </p>
+            <hr class="nw-red-line-l nw-mt-0.5"/>
+        </div>
+        <div>
+            <p
+                class="
+          nw-text-white nw-text-left nw-text-md
           md:nw-text-xl
           nw-pt-2
           md:nw-pb-1
           nw-pr-1
         "
-      >
-        {{caption}}
-      </p>
+            >
+                {{caption}}
+            </p>
+        </div>
     </div>
-  </div>
-  <div class="embla embla--main-carousel">
-    <div class="embla__viewport relative">
-      <div class="embla__container">
-        {{#each images}}
-        <div class="embla__slide nw-min-w-8/10 sm:min-w-7/10">
-          <div
-            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
-          >
-            <a href="" class="nw-cursor-pointer">
-              <div class="nw-aspect-w-4 nw-aspect-h-3">
-                <img
-                  class="
+    <div class="embla embla--main-carousel">
+        <div class="embla__viewport relative">
+            <div class="embla__container">
+                {{#each images}}
+                    <div class="embla__slide nw-min-w-8/10 sm:min-w-7/10">
+                        <div
+                            class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
+                        >
+                            <a href="" class="nw-cursor-pointer">
+                                <div class="nw-aspect-w-4 nw-aspect-h-3">
+                                    <img
+                                        class="
                     embla__slide__img
                     nw-h-full nw-w-full nw-object-cover nw-rounded-md
                   "
-                  src="{{src}}"
-                />
-              </div>
-            </a>
-            <div class="nw-pt-2 nw-text-white nw-text-tiny">
-              {{this.caption}}
+                                        src="{{src}}"
+                                    />
+                                </div>
+                            </a>
+                            <div class="nw-pt-2 nw-text-white nw-text-base">
+                                {{this.caption}}
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
             </div>
-          </div>
-        </div>
-        {{/each}}
-      </div>
-      <div
-        class="
+            <div
+                class="
           nw-hidden
           md:nw-block
           slider--button-prev
@@ -74,12 +74,12 @@
           nw--translate-y-1/2
           nw-cursor-pointer
         "
-      >
-        <img class="w-full" src="{{path '/images/arrow-left.svg'}}" />
-      </div>
+            >
+                <img class="w-full" src="{{path '/images/arrow-left.svg'}}"/>
+            </div>
 
-      <div
-        class="
+            <div
+                class="
           nw-hidden
           md:nw-block
           slider--button-next
@@ -97,15 +97,15 @@
           nw--translate-y-1/2
           nw-cursor-pointer
         "
-      >
-        <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}" />
-      </div>
+            >
+                <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}"/>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Dots -->
-  <div class="embla__dots nw-mt-0 sm:nw-mt-2"></div>
-  <script type="text/template" id="embla-dot-template">
-    <button class="embla__dot" type="button"></button>
-  </script>
+    <!-- Dots -->
+    <div class="embla__dots nw-mt-0 sm:nw-mt-2"></div>
+    <script type="text/template" id="embla-dot-template">
+        <button class="embla__dot" type="button"></button>
+    </script>
 </div>

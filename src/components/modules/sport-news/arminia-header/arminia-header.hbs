@@ -1,24 +1,24 @@
 <div
-  class="nw-bg-custom-1-600 nw-mx-2 nw-my-2 nw-pt-4 nw-rounded-md nw-shadow-md"
+    class="nw-bg-custom-1-600 nw-mx-2 nw-my-2 nw-pt-4 nw-rounded-md nw-shadow-md"
 >
-  <div class="nw-flex-shrink-0">
-    <img
-      class="nw-w-24 nw-h-24 nw-rounded-full nw-mx-auto"
-      src="{{this.image-src-arminia}}"
-      alt=""
-    />
-  </div>
-  <div class="nw-text-center nw-text-white">
-    <p class="nw-text-tiny nw-pt-1">{{title}}</p>
-    <p class="nw-text-2xl nw-font-bold nw-pb-2">{{team}}</p>
-  </div>
-  <!--buttons -->
-  <div class="nw-pb-4">
-    <div class="nw-pr-auto nw-max-w-lg nw-px-2">
-      {{#each buttons}}
-      <a
-        href=""
-        class="
+    <div class="nw-flex-shrink-0">
+        <img
+            class="nw-w-24 nw-h-24 nw-rounded-full nw-mx-auto"
+            src="{{this.image-src-arminia}}"
+            alt=""
+        />
+    </div>
+    <div class="nw-text-center nw-text-white">
+        <p class="nw-text-base nw-pt-1">{{title}}</p>
+        <p class="nw-text-2xl nw-font-bold nw-pb-2">{{team}}</p>
+    </div>
+    <!--buttons -->
+    <div class="nw-pb-4">
+        <div class="nw-pr-auto nw-max-w-lg nw-px-2">
+            {{#each buttons}}
+                <a
+                    href=""
+                    class="
           button
           nw-text-white
           nw-inline-block
@@ -34,45 +34,45 @@
           nw-text-left
           nw-mt-1
         "
-      >
-        {{this}}
-      </a>
-      {{/each}}
+                >
+                    {{this}}
+                </a>
+            {{/each}}
+        </div>
     </div>
-  </div>
-  <!-- Buttons Ende -->
-  <div class="nw-bg-white nw-pb-4 nw-rounded-b-md nw-shadow-md">
-    <div class="nw-flex nw-mt-2 nw-py-4 nw-place-content-center">
-      <div class="nw-flex-shrink-0 nw-mr-2">
-        <img
-          class="nw-w-16 nw-h-16 nw-rounded-full"
-          src="{{this.image-src-a}}"
-          alt=""
-        />
-      </div>
-      <div
-        class="nw-py-1.5 nw-text-black nw-font-bold nw-text-base nw-text-center"
-      >
-        17.8.2022
-        <div class="nw-font-normal nw-text-tiny">20:30 Uhr</div>
-      </div>
-      <div class="nw-flex-shrink-0 nw-ml-2">
-        <img
-          class="nw-w-16 nw-h-16 nw-rounded-full"
-          src="{{this.image-src-b}}"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="nw-text-center nw-pb-2 nw-px-16">
-      <span class="nw-font-bold">DSC Arminia Bielefeld </span>
-      <span> spielt gegen </span>
-      <span class="nw-font-bold"> FC Bayern München </span> in:
-    </div>
-    <div class="nw-flex nw-justify-around nw-px-1">
-      {{#each time-button}}
-      <a
-        class="
+    <!-- Buttons Ende -->
+    <div class="nw-bg-white nw-pb-4 nw-rounded-b-md nw-shadow-md">
+        <div class="nw-flex nw-mt-2 nw-py-4 nw-place-content-center">
+            <div class="nw-flex-shrink-0 nw-mr-2">
+                <img
+                    class="nw-w-16 nw-h-16 nw-rounded-full"
+                    src="{{this.image-src-a}}"
+                    alt=""
+                />
+            </div>
+            <div
+                class="nw-py-1.5 nw-text-black nw-font-bold nw-text-md nw-text-center"
+            >
+                17.8.2022
+                <div class="nw-font-normal nw-text-base">20:30 Uhr</div>
+            </div>
+            <div class="nw-flex-shrink-0 nw-ml-2">
+                <img
+                    class="nw-w-16 nw-h-16 nw-rounded-full"
+                    src="{{this.image-src-b}}"
+                    alt=""
+                />
+            </div>
+        </div>
+        <div class="nw-text-center nw-pb-2 nw-px-16">
+            <span class="nw-font-bold">DSC Arminia Bielefeld </span>
+            <span> spielt gegen </span>
+            <span class="nw-font-bold"> FC Bayern München </span> in:
+        </div>
+        <div class="nw-flex nw-justify-around nw-px-1">
+            {{#each time-button}}
+                <a
+                    class="
           nw-py-2
           nw-w-20
           nw-m-0.5
@@ -82,14 +82,14 @@
           nw-inline-block
           nw-rounded-md
         "
-      >
-        {{this.part1}}<br />
-        {{this.part2}}</a
-      >
-      {{/each}}
+                >
+                    {{this.part1}}<br/>
+                    {{this.part2}}</a
+                >
+            {{/each}}
+        </div>
+        <!--live-button -->
+        {{>'@live-button'}}
+        <!--live-button Ende -->
     </div>
-    <!--live-button -->
-    {{>'@live-button'}}
-    <!--live-button Ende -->
-  </div>
 </div>

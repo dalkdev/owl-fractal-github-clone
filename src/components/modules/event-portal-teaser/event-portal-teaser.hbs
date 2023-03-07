@@ -1,71 +1,71 @@
 <style>
-  .nw-erwint-title {
-    max-width: 70%;
-  }
-
-  .nw-event-portal-bg {
-    background-image: url('/images/event-portal-augen-img.svg');
-    background-repeat: no-repeat;
-    background-size: 40%;
-  }
-
-  @media only screen and (max-width: 550px) {
-    .nw-erwint-text {
-      max-width: 90%;
+    .nw-erwint-title {
+        max-width: 70%;
     }
 
     .nw-event-portal-bg {
-      background-position-y: 1rem;
-    }
-  }
-
-  @media only screen and (min-width: 550px) {
-    .nw-erwint-text {
-      max-width: 61%;
-    }
-  }
-
-  @media only screen and (min-width: 768px) {
-    .nw-erwint-text {
-      max-width: 60%;
-    }
-  }
-
-  @media only screen and (min-width: 992px) {
-    .nw-erwint-text {
-      max-width: 60%;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-    .nw-erwint-text {
-      max-width: 70%;
+        background-image: url('/images/event-portal-augen-img.svg');
+        background-repeat: no-repeat;
+        background-size: 40%;
     }
 
-    .nw-event-portal-bg {
-      background-size: 30%;
+    @media only screen and (max-width: 550px) {
+        .nw-erwint-text {
+            max-width: 90%;
+        }
+
+        .nw-event-portal-bg {
+            background-position-y: 1rem;
+        }
     }
-  }
+
+    @media only screen and (min-width: 550px) {
+        .nw-erwint-text {
+            max-width: 61%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .nw-erwint-text {
+            max-width: 60%;
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        .nw-erwint-text {
+            max-width: 60%;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .nw-erwint-text {
+            max-width: 70%;
+        }
+
+        .nw-event-portal-bg {
+            background-size: 30%;
+        }
+    }
 </style>
 
 <div class="nw-p-4">
-  <div
-    class="
+    <div
+        class="
       nw-bg-custom-erwinteaser-bg nw-rounded nw-p-4 nw-bg-right-top
       sm:nw-bg-right-bottom
       lg:nw-bg-right
       nw-event-portal-bg
     "
-  >
-    <div>
-      <div class="nw-erwint-title">
-        <img
-          class="nw-mb-1 md:nw-mb-2 nw-h-auto nw-w-14 sm:nw-w-20 md:nw-w-auto"
-          src="/images/erwin-Logo-white-blue.svg"
-          alt="Erwin Events - Logo"
-        />
-        <p
-          class="
+    >
+        <div>
+            <div class="nw-erwint-title">
+                <img
+                    class="nw-mb-1 md:nw-mb-2 nw-h-auto nw-w-14 sm:nw-w-20 md:nw-w-auto"
+                    src="/images/erwin-Logo-white-blue.svg"
+                    alt="Erwin Events - Logo"
+                />
+                <p
+                    class="
             nw-text-3xl
             sm:nw-text-5xl
             lg:nw-text-7xl
@@ -73,25 +73,25 @@
             md:nw-mb-12
             nw-font-bold nw-uppercase nw-text-custom-erwinteaser-font-big
           "
-        >
-          Was? WO? <br class="md:nw-hidden" />
-          Wann? <br class="md:nw-hidden" />
-          FRAG&nbsp;ERWIN!
-        </p>
-      </div>
-      <div class="nw-erwint-text">
-        <p
-          class="
+                >
+                    Was? WO? <br class="md:nw-hidden"/>
+                    Wann? <br class="md:nw-hidden"/>
+                    FRAG&nbsp;ERWIN!
+                </p>
+            </div>
+            <div class="nw-erwint-text">
+                <p
+                    class="
             nw-text-white nw-mt-0
             md:nw-mt-8
-            nw-text-tiny
+            nw-text-base
             sm:nw-text-l
             md:nw-text-xl
           "
-        >
-          {{caption}}
-        </p>
-      </div>
+                >
+                    {{caption}}
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

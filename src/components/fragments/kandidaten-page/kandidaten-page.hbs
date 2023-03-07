@@ -1,30 +1,30 @@
 <div class="nw-px-4 nw-bg-white nw-pb-4">
-  {{#each this.stadt}}
-  <div class="nw-text-black nw-text-xl nw-font-bold nw-pt-4 nw-pb-1">
-    {{this.stadtname}}
-  </div>
-  <div
-    class="nw-grid nw-grid-cols-1 sm:nw-grid-cols-2 md:nw-grid-cols-3 nw-gap-2"
-  >
-    {{#each this.kandidat}}
-    <div class="nw-pt-2">
-      <a href="{{this.href}}" class="nw-content-center">
-        <img
-          alt=""
-          class="nw-rounded-md nw-w-full nw-object-cover"
-          src="{{this.img}}"
-        />
-        <div
-          class="
-            nw-pt-2 nw-uppercase nw-font-medium nw-text-tiny nw-text-gray-600
-          "
-        >
-          {{this.header}}
+    {{#each this.stadt}}
+        <div class="nw-text-black nw-text-xl nw-font-bold nw-pt-4 nw-pb-1">
+            {{this.stadtname}}
         </div>
-        <div class="nw-font-bold nw-text-base nw-text-black">{{this.name}}</div>
-      </a>
-    </div>
+        <div
+            class="nw-grid nw-grid-cols-1 sm:nw-grid-cols-2 md:nw-grid-cols-3 nw-gap-2"
+        >
+            {{#each this.kandidat}}
+                <div class="nw-pt-2">
+                    <a href="{{this.href}}" class="nw-content-center">
+                        <img
+                            alt=""
+                            class="nw-rounded-md nw-w-full nw-object-cover"
+                            src="{{this.img}}"
+                        />
+                        <div
+                            class="
+            nw-pt-2 nw-uppercase nw-font-medium nw-text-base nw-text-gray-600
+          "
+                        >
+                            {{this.header}}
+                        </div>
+                        <div class="nw-font-bold nw-text-md nw-text-black">{{this.name}}</div>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
     {{/each}}
-  </div>
-  {{/each}}
 </div>

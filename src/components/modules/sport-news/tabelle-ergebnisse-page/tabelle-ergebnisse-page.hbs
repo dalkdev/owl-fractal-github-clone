@@ -1,6 +1,6 @@
 <div class="nw-bg-white nw-mt-8">
-  <div
-    class="
+    <div
+        class="
       nw-bg-white
       nw-text-sm
       nw-font-medium
@@ -10,12 +10,12 @@
       nw-border-gray-200
       nw-mx-2
     "
-  >
-    <ul class="nw-flex nw-flex-wrap nw--mb-px nw-place-content-center">
-      <li class="nw-mr-2">
-        <a
-          href="#"
-          class="
+    >
+        <ul class="nw-flex nw-flex-wrap nw--mb-px nw-place-content-center">
+            <li class="nw-mr-2">
+                <a
+                    href="#"
+                    class="
             tabs
             nw-inline-block
             nw-p-4
@@ -23,105 +23,105 @@
             nw-border-b-2
             nw-border-custom-1-600
           "
-          aria-current="page"
-          >Tabelle</a
-        >
-      </li>
-      <li class="nw-mr-2">
-        <a
-          href="#"
-          class="
+                    aria-current="page"
+                >Tabelle</a
+                >
+            </li>
+            <li class="nw-mr-2">
+                <a
+                    href="#"
+                    class="
             tabs
             nw-inline-block nw-p-4 nw-border-b-2 nw-border-transparent
           "
-          >Spiele & Kader</a
-        >
-      </li>
-      <li class="nw-mr-2">
-        <a
-          href="#"
-          class="
+                >Spiele & Kader</a
+                >
+            </li>
+            <li class="nw-mr-2">
+                <a
+                    href="#"
+                    class="
             tabs
             nw-inline-block nw-p-4 nw-border-b-2 nw-border-transparent
           "
-          >Ergebnisse</a
-        >
-      </li>
-    </ul>
-  </div>
-
-  <div class="nw-pb-8">
-    <div class="container">
-      <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
-        Tabelle
-      </div>
-      <div class="nw-text-gray-600 nw-px-2 nw-text-base nw-font-medium">
-        DSC Arminia Bielefeld
-      </div>
+                >Ergebnisse</a
+                >
+            </li>
+        </ul>
     </div>
 
-    <div class="nw-hidden container">
-      <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
-        Spiele & Kader
-      </div>
-      <div class="nw-text-gray-600 nw-px-2 nw-text-base nw-font-medium">
-        DSC Arminia Bielefeld
-      </div>
-    </div>
+    <div class="nw-pb-8">
+        <div class="container">
+            <div class="nw-pt-4 nw-px-2 nw-text-md nw-text-black nw-font-bold">
+                Tabelle
+            </div>
+            <div class="nw-text-gray-600 nw-px-2 nw-text-md nw-font-medium">
+                DSC Arminia Bielefeld
+            </div>
+        </div>
 
-    <div class="nw-hidden container">
-      <div class="nw-pt-4 nw-px-2 nw-text-base nw-text-black nw-font-bold">
-        Ergebnisse
-      </div>
-      <div class="nw-text-gray-600 nw-px-2 nw-text-base nw-font-medium">
-        DSC Arminia Bielefeld
-      </div>
+        <div class="nw-hidden container">
+            <div class="nw-pt-4 nw-px-2 nw-text-md nw-text-black nw-font-bold">
+                Spiele & Kader
+            </div>
+            <div class="nw-text-gray-600 nw-px-2 nw-text-md nw-font-medium">
+                DSC Arminia Bielefeld
+            </div>
+        </div>
+
+        <div class="nw-hidden container">
+            <div class="nw-pt-4 nw-px-2 nw-text-md nw-text-black nw-font-bold">
+                Ergebnisse
+            </div>
+            <div class="nw-text-gray-600 nw-px-2 nw-text-md nw-font-medium">
+                DSC Arminia Bielefeld
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div
-  class="
+    class="
     nw-mx-2 nw-px-2 nw-text-sm nw-text-black nw-text-center nw-pt-4 nw-pb-2
     md:nw-px-44
   "
 >
-  Nach einem Spieltag belegt unsere Mannschaft von Arminia Bielefeld
-  <b>Platz 7 </b> in der Tabelle. Wir sind Stolz dabei und auf dem Weg zur
-  Meisterschaft <b>mit einem Punkt </b> und einer <b>Tordifferenz von Null</b>.
+    Nach einem Spieltag belegt unsere Mannschaft von Arminia Bielefeld
+    <b>Platz 7 </b> in der Tabelle. Wir sind Stolz dabei und auf dem Weg zur
+    Meisterschaft <b>mit einem Punkt </b> und einer <b>Tordifferenz von Null</b>.
 </div>
 <div
-  class="nw-mx-2 nw-px-2 nw-text-sm nw-text-black nw-text-center md:nw-px-44"
+    class="nw-mx-2 nw-px-2 nw-text-sm nw-text-black nw-text-center md:nw-px-44"
 >
-  Mit einem Sieg über Bayern München geht's weiter nach oben in der Tabelle:
+    Mit einem Sieg über Bayern München geht's weiter nach oben in der Tabelle:
 </div>
 <!-- live-button-->
 {{>'@live-button'}}
 <!--live-button Ende -->
 
 <script>
-  let array_tabs = document.getElementsByClassName('tabs');
-  Array.prototype.forEach.call(array_tabs, (x, i) => {
-    x.addEventListener('click', e => {
-      Array.prototype.forEach.call(array_tabs, x => {
-        x.classList.remove(
-          'nw-text-custom-1-600',
-          'nw-border-b-2',
-          'nw-border-custom-1-600'
-        );
-        x.classList.add('nw-text-black', 'nw-border-transparent');
-      });
-      x.classList.remove('nw-text-black', 'nw-border-transparent');
-      x.classList.add(
-        'nw-text-custom-1-600',
-        'nw-border-b-2',
-        'nw-border-custom-1-600'
-      );
-      let array_container = document.getElementsByClassName('container');
-      Array.prototype.forEach.call(array_container, x => {
-        x.classList.add('nw-hidden');
-      });
-      array_container[i].classList.remove('nw-hidden');
+    let array_tabs = document.getElementsByClassName('tabs');
+    Array.prototype.forEach.call(array_tabs, (x, i) => {
+        x.addEventListener('click', e => {
+            Array.prototype.forEach.call(array_tabs, x => {
+                x.classList.remove(
+                    'nw-text-custom-1-600',
+                    'nw-border-b-2',
+                    'nw-border-custom-1-600'
+                );
+                x.classList.add('nw-text-black', 'nw-border-transparent');
+            });
+            x.classList.remove('nw-text-black', 'nw-border-transparent');
+            x.classList.add(
+                'nw-text-custom-1-600',
+                'nw-border-b-2',
+                'nw-border-custom-1-600'
+            );
+            let array_container = document.getElementsByClassName('container');
+            Array.prototype.forEach.call(array_container, x => {
+                x.classList.add('nw-hidden');
+            });
+            array_container[i].classList.remove('nw-hidden');
+        });
     });
-  });
 </script>
