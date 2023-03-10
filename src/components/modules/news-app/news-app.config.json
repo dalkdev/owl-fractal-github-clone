@@ -1,4 +1,47 @@
 {
   "status": "qm",
-  "context": {}
+  "context": {
+    "items": [
+      {
+        "headline": "Ist die NW News-App kostenlos oder muss ich dafür bezahlen?",
+        "content": "  NW News ist kostenlos. Alle Artikel, die Sie auf NW.de lesen können, stehen Ihnen auch in der App zur Verfügung. Um die mit dem NW+ Symbol gekennzeichneten Artikel zu lesen, benötigen Sie ein Webabo oder In-App-Abo."
+      },
+      {
+        "headline": "Was ist der Unterschied zwischen Webabo und In-App-Abo?",
+        "content": "Mit dem Webabo greifen Sie auf alle Inhalte auf NW.de und die mit NW+ gekennzeichneten Artikel zu. Sie können es bequem in wenigen Schritten in unserem Aboshop bestellen. Mit dem In-App-Abo haben Sie nur in der App Zugang zu den NW+ Artikeln, es lässt sich in der App bestellen"
+      },
+      {
+        "headline": "Was ist der Unterschied zwischen NW News und der ePaper-App?",
+        "content": "Unsere neue App ist eine optimale Ergänzung zum digitalen Angebot auf NW.de und der gedruckten Zeitung. NW News beinhaltet alle Artikel, die auch auf der Webseite verfügbar sind – allerdings an Ihre individuellen Lesebedürfnisse und Interessen angepasst. Die ePaper-App ist unsere digitale NW in der klassischen Zeitungsoptik."
+      },
+      {
+        "headline": "Was ist der Unterschied zwischen NW.de und der App NW News?",
+        "content": "Die Webseite nw.de ist das über den Webbrowser erreichbare Nachrichtenangebot der Neuen Westfälischen. Leser finden hier – laufend aktualisiert – Nachrichten aus ihrer Region und der Welt. Alle auf nw.de verfügbaren Nachrichten sind auch in der NW-News-App zu finden. Die App dient als mobil optimierte Version des Webangebotes und bietet dem Smartphone-Nutzer einige Vorteile."
+      },
+      {
+        "headline": "Was ist NW+?",
+        "content": "In unserem digitalen Nachrichtenangebot sind einige Artikel nur zugänglich, wenn Sie bereits ein Abonnement (z.B. Webabo NW+) abgeschlossen haben. Plus-Inhalte erkennen Sie am roten NW+ Symbol."
+      },
+      {
+        "headline": "Warum muss man für NW+-Inhalte zahlen?",
+        "content": "Unser Online-Angebot ist, genau wie unsere Tageszeitung, ein Produkt von engagiertem und hochwertigem lokalem und regionalem Journalismus. Mit mehr als 140 Redakteuren, Reportern und Fotografen halten wir Sie jeden Tag aufs Neue kritisch über lokale, regionale und globale Geschehen informiert. Unser digitales Angebot wird laufend aktualisiert. Analog zur gedruckten Zeitung ist auch unser Online-Angebot nur über Einnahmen aus Werbung und Abonnements finanzierbar."
+      },
+      {
+        "headline": "Wo kann ich mir die App herunterladen?",
+        "content": "NW News ist für alle Smartphones verfügbar, die mit den gängigen Betriebssystemen Android oder iOS ausgestattet sind. Sie finden unsere App über die Suchfunktion im Google Play Store (Android) oder – wenn Sie ein Apple-Gerät nutzen – im App Store (iOS)."
+      },
+      {
+        "headline": "Was bringen mir die Push-Mitteilungen?",
+        "content": "Push-Mitteilungen sind kurze Textnachrichten, die Ihnen auf dem Bildschirm Ihres Smartphones oder Tablets eingeblendet werden. Egal ob DSC Arminia Bielefeld, Kreis Gütersloh oder Ostwestfalen & die Welt, mit der praktischen Push-Funktion unserer App werden Sie umgehend über aktuelle Meldungen zu den von Ihnen festgelegten Themen informiert. Sie können Ihre gewählten Sofort-Benachrichtigungen jederzeit in den App-Einstellungen unter “Push-Mitteilungen” bearbeiten."
+      },
+      {
+        "headline": "Welche Vorteile bietet mir die Nutzung von NW News?",
+        "content": "Unsere App ist perfekt für alle geeignet, die viel unterwegs sind und ihre Nachrichten immer griffbereit dabeihaben möchten. NW News wird laufend aktualisiert und bietet praktische Einstellungsmöglichkeiten. Mit Hilfe der personalisierbaren Push-Mitteilungen können Sie als Leser selbst festlegen, über welche Ereignisse und Themen Sie auch auf Ihrem Handy umgehend informiert werden möchten."
+      },
+      {
+        "headline": "Was mache ich, wenn ich Probleme mit der App habe?",
+        "content": "Bei Problemen mit der App wenden Sie sich gerne an unseren Kundenservice. Sie erreichen uns jederzeit per Mail unter nwplus@nw.de. In der Regel können wir Ihnen schnell weiterhelfen!"
+      }
+    ]
+  }
 }
