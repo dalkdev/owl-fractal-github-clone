@@ -5,28 +5,21 @@ export function initPrivacybox() {
     function privacyButtonHandler() {
         const socialCookieStatus = getCookie("social-accept");
         if (socialCookieStatus === "accept") {
-            document.querySelector(".nw-small-privacy-box").style.display = "block";
-            document.querySelector(".nw-big-privacy-box").style.display = "none";
+            displayAndHideClassInPrivacy(".nw-small-privacy-box", ".nw-big-privacy-box");
             document.querySelector(".togBtn").checked = true;
             acceptSocialMedia();
         } else {
-            document.querySelector(".nw-small-privacy-box").style.display = "none";
-            document.querySelector(".nw-big-privacy-box").style.display = "block";
+            displayAndHideClassInPrivacy(".nw-big-privacy-box", ".nw-small-privacy-box");
         }
 
         document.querySelector(".togBtn").addEventListener("change", function (e) {
-            if (this.checked) {
-                acceptSocialMedia();
-            } else {
-                declineSocialMedia();
-            }
+            this.checked === true ? acceptSocialMedia() : declineSocialMedia();
         });
     }
 
     function acceptSocialMedia() {
-        document.querySelector(".nw-small-privacy-box").style.display = "block";
-        document.querySelector(".nw-big-privacy-box").style.display = "none";
         document.querySelector(".togBtn").checked = true;
+        displayAndHideClassInPrivacy(".nw-small-privacy-box", ".nw-big-privacy-box");
         const privacySocialReplacers = document.querySelectorAll(".privacy-social-replacer");
         privacySocialReplacers.forEach(function (replacer) {
             const replacerContent = replacer.getAttribute("data-content");
@@ -67,6 +60,11 @@ export function initPrivacybox() {
         }
 
         setCookie("social-accept", "accept", 365);
+    }
+
+    function displayAndHideClassInPrivacy(displayClass, hideClass) {
+        document.querySelector(displayClass).style.display = "block";
+        document.querySelector(hideClass).style.display = "none";
     }
 
     function loadScript(url, callback) {
