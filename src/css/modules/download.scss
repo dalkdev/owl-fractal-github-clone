@@ -1,9 +1,29 @@
 .nw-article-detail-download {
   @apply nw-text-red-500;
   li {
+    @apply nw-pb-2;
+  }
+
+  li > a {
     padding: 5px 5px 5px 25px;
-    background: transparent url('../images/download.svg') no-repeat;
-    background-size: 16px;
+  }
+
+  li > a[href$=".pdf"] {
+    background: transparent url('/images/download/icon-pdf.svg') no-repeat;
+    background-size: 18px;
+    background-position: center left;
+  }
+
+  li > a[href$=".zip"] {
+    background: transparent url('/images/download/icon-zip.svg') no-repeat;
+    background-size: 18px;
+    background-position: center left;
+  }
+
+  li > a[href$=".doc"] {
+    background: transparent url('/images/download/icon-doc.svg') no-repeat;
+    background-size: 18px;
     background-position: center left;
   }
 }
+

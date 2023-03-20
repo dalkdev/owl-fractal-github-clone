@@ -15,8 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-main#nw-container
-{
+main#nw-container {
   @apply nw-mx-auto nw-pb-7;
 }
 
@@ -25,15 +24,18 @@ div.nw-container {
   @apply nw-mx-auto nw-bg-white nw-mb-4 nw-pb-4 nw-rounded-b-md nw-shadow-md;
 }
 
+.nw-remove-padding-border {
+  margin-left: -60px;
+  margin-right: -60px;
+}
+
 @media (min-width: 768px) {
-  div.nw-container
-  {
+  div.nw-container {
     padding: 0 28px;
   }
 
-  .nw-remove-padding-border
-  {
-    margin-left: -28px;
-    margin-right: -28px;
+  .nw-remove-padding-border {
+    margin-left: -136px;
+    margin-right: -136px;
   }
 }
