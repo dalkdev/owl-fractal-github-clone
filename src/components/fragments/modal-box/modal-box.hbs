@@ -1,0 +1,211 @@
+<div class="nw-bg-gray-100 nw-rounded nw-my-6 nw-shadow-md">
+    <div class="nw-p-6">
+        <div class="nw-flex nw-items-center">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="nw-w-7 nw-h-7 nw-rounded-full nw-mr-2"
+            >
+                <path
+                    fillRule="evenodd"
+                    d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    clipRule="evenodd"
+                />
+            </svg>
+            <p class="nw-text-base nw-font-bold nw-leading-loose">Futuremen</p>
+        </div>
+        <span class="nw-text-xs nw-text-custom-1-700 nw-font-medium">Vor 5 Minuten
+            </span>
+        <p class="nw-text-md nw-py-2">
+            Das Problem ist, wer sich nicht in der Gastronomie trifft, quetscht sich
+            Daheim mit Freunden in der oft sehr kleinen „GutenStube“ zusammen,
+            natürlich ohne MundNasenschutz, geschweige FFP2 Standard! #Nachdenken!
+        </p>
+    </div>
+    <hr class="md:nw-hidden"/>
+    <div class="nw-text-sm nw-font-medium nw-text-center nw-text-black">
+        <ul class="nw-text-center nw-flex md:nw-place-content-end">
+            <li class="nw-border-r md:nw-border-r-0 nw-w-1/3 md:nw-w-auto">
+                <a
+                    href="#"
+                    class=" kommentare-tabs nw-flex nw-leading-tight
+                            nw-p-3 nw-justify-center nw-text-custom-1-700" aria-current="page">
+                    <svg
+                        class="nw-w-4 nw-h-4 nw-mr-0.5 nw-text-center"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+                        />
+                    </svg>
+                    Antworten
+                </a>
+            </li>
+            <li class="nw-border-r md:nw-border-r-0 nw-w-1/3 md:nw-w-auto">
+                <a
+                    href="#" id="meldenButton"
+                    class=" kommentare-tabs nw-flex nw-leading-tight nw-p-3 nw-text-custom-1-700 nw-justify-center">
+                    <svg
+                        class="nw-w-4 nw-h-4 nw-mr-0.5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+                        />
+                    </svg>
+                    Melden
+                </a>
+            </li>
+            <li class="nw-w-1/3 md:nw-w-auto">
+                <a
+                    href="#"
+                    class=" kommentare-tabs nw-flex nw-leading-tight
+                            nw-p-3 nw-text-custom-1-700 nw-justify-center">
+                    <svg
+                        class="nw-w-4 nw-h-4 nw-mr-0.5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                        />
+                    </svg>
+                    24
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="nw-mx-2">
+    <div class="container nw-hidden">
+        Antworten
+    </div>
+
+    <!-- Main modal -->
+    <div id="modal-box" class="modal nw-hidden container ">
+        <div class="modal-content nw-fixed nw-top-0 nw-left-0 nw-right-0 nw-z-50
+                    nw-w-full nw-p-4 nw-overflow-x-hidden nw-overflow-y-auto md:nw-inset-0 nw-h-[calc(100%-1rem)] md:nw-h-full">
+            <div class="nw-relative nw-w-full nw-h-full nw-max-w-2xl md:nw-h-auto">
+                <!-- Modal content -->
+                <div class="nw-relative nw-bg-white nw-rounded-lg nw-shadow">
+                    <!-- Modal header -->
+                    <div class="nw-flex nw-items-center nw-justify-between nw-p-4 nw-border-b nw-rounded-t">
+                        <svg class=" nw-h-7 nw-w-7 nw-text-custom-1-700 nw-mr-1" xmlns="http://www.w3.org/2000/svg"
+                             fill="none"
+                             viewBox="0 0 24 24"
+                             stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+                        </svg>
+                        <span class="nw-text-xl nw-font-bold">Verstoß melden</span>
+                        <button type="button" class="closeButton nw-text-gray-400 nw-bg-transparent hover:nw-bg-gray-200 hover:nw-text-gray-900 nw-rounded-lg nw-text-sm nw-p-1.5
+                                                        nw-ml-auto nw-inline-flex nw-items-center">
+                            <svg aria-hidden="true" class="nw-w-5 nw-h-5" fill="currentColor"
+                                 viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="nw-p-4 nw-space-y-4">
+                        <p class="nw-text-base nw-leading-relaxed">
+                            Geben Sie bitte Ihre Meldung ein.
+                        </p>
+                        <form>
+                            <div>
+                                <textarea
+                                    rows="5"
+                                    maxlength="3000"
+                                    class="
+                                    comment
+                                    nw-w-full nw-text-sm
+                                    focus:nw-ring-0 focus:nw-outline-none
+                                    nw-overflow-hidden
+                                    nw-py-2
+                                    nw-px-3
+                                    nw-bg-white
+                                    nw-rounded-md
+                                    nw-border
+                                    nw-border-black"
+                                    placeholder="Diskutieren Sie mit …"
+                                    required></textarea>
+                                <p class="result nw-text-xs nw-text-gray-500">0/1500</p>
+                            </div>
+                            <div class="nw-mt-4 nw-flex nw-flex-col sm:nw-flex-row nw-gap-4">
+                                <button type="button"
+                                        class=" closeButton nw-text-gray-500 nw-bg-white hover:nw-bg-gray-100
+                                       nw-rounded-lg nw-border nw-border-gray-200 nw-text-base
+                                       nw-font-medium nw-px-5 nw-py-2 hover:nw-text-gray-900">
+                                    Schließen
+                                </button>
+                                <button data-modal-hide="defaultModal" type="submit"
+                                        class=" buttondis nw-text-white nw-bg-red-100
+                                       nw-font-medium nw-rounded-lg nw-text-base nw-px-5 nw-py-2
+                                       nw-text-center" disabled>
+                                    Melden
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nw-hidden container">Gefällt mir</div>
+</div>
+<script>
+    var modal = document.getElementById("modal-box");
+    var meldenButton = document.getElementById("meldenButton");
+    var closeButton = document.getElementsByClassName("closeButton");
+
+    meldenButton.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    for (var i = 0; i < closeButton.length; i++) {
+        closeButton[i].onclick = function () {
+            modal.style.display = "none";
+        }
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+    let array_tabs = document.getElementsByClassName('kommentare-tabs');
+    Array.prototype.forEach.call(array_tabs, (x, i) => {
+        x.addEventListener('click', e => {
+            Array.prototype.forEach.call(array_tabs, x => {
+                x.classList.add('nw-text-black', 'nw-border-transparent');
+            });
+            x.classList.remove('nw-text-black', 'nw-border-transparent');
+            let array_container = document.getElementsByClassName('container');
+            Array.prototype.forEach.call(array_container, x => {
+                x.classList.add('nw-hidden');
+            });
+            array_container[i].classList.remove('nw-hidden');
+        });
+    });
+</script>

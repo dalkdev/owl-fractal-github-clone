@@ -1,4 +1,4 @@
-<div class="nw-bg-white nw-mt-8 nw-mb-16">
+<div>
     <div class="nw-relative">
         <div class="nw-aspect-w-16 nw-aspect-h-9">
             <picture>
@@ -34,8 +34,7 @@
         nw-border
         nw-border-white
         nw-rounded
-        nw-bg-black
-      "
+        nw-bg-black"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +61,7 @@
     </div>
 </div>
 <style>
-    .nw-caption-close {
+    /*.nw-caption-close {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.8s;
@@ -74,7 +73,28 @@
         overflow: hidden;
         transition: max-height 0.8s;
         transition-timing-function: ease-in;
+    }*/
+    /*.nw-caption-close {
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-in-out;
     }
+
+    .nw-caption-image:hover .nw-caption-close {
+        opacity: 1;
+        transform: translateY(0%);
+    }*/
+    .nw-caption-open {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateY(100%);
+    }
+
+    .nw-caption-close {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+
 </style>
 
 <script>
