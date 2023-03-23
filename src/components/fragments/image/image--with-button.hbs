@@ -1,4 +1,4 @@
-<div>
+<div class="nw-bg-white nw-mt-8 nw-mb-16">
     <div class="nw-relative">
         <div class="nw-aspect-w-16 nw-aspect-h-9">
             <picture>
@@ -26,6 +26,7 @@
         </div>
         <button
             class="
+            nw-caption-button
         nw-absolute
         nw-bottom-3
         nw-right-3
@@ -34,11 +35,11 @@
         nw-border
         nw-border-white
         nw-rounded
-        nw-bg-black"
+        nw-bg-gray-600"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="nw-caption-button nw-text-white nw-m-2 nw-cursor-pointer"
+                class=" nw-text-white nw-m-2 nw-cursor-pointer"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -61,7 +62,8 @@
     </div>
 </div>
 <style>
-    /*.nw-caption-close {
+    /*
+    .nw-caption-close {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.8s;
@@ -73,31 +75,40 @@
         overflow: hidden;
         transition: max-height 0.8s;
         transition-timing-function: ease-in;
-    }*/
-    /*.nw-caption-close {
-        opacity: 0;
-        transform: translateY(-50%);
-        transition: all 0.3s ease-in-out;
     }
+    */
 
-    .nw-caption-image:hover .nw-caption-close {
-        opacity: 1;
-        transform: translateY(0%);
-    }*/
-    .nw-caption-open {
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* .nw-caption-close {
+         opacity: 0;
+         transform: translateY(-50%);
+         transition: all 0.3s ease-in-out;
+     }
+
+     .nw-caption-image:hover .nw-caption-close {
+         opacity: 1;
+         transform: translateY(0%);
+     }
+ */
+    .nw-caption-close {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s, transform 0.8s;
+        transition-timing-function: ease-out;
         transform: translateY(100%);
     }
 
-    .nw-caption-close {
-        opacity: 0;
+    .nw-caption-open {
+        max-height: 100vh;
+        overflow: hidden;
+        transition: max-height 0.8s, transform 0.8s;
+        transition-timing-function: ease-in;
         transform: translateY(0%);
     }
 
+
 </style>
 
-<script>
+<!--<script>
     let captionImage = document.querySelector('.nw-caption-image');
     let captionButton = document.querySelector('.nw-caption-button');
     captionButton.addEventListener('click', function () {
@@ -109,7 +120,7 @@
             captionButton.classList.add('nw-transform', 'nw-rotate-180');
         }
     });
-</script>
+</script>-->
 <!--
 <script>
   function toggleTransitionOfTheCaptionInImage() {
@@ -130,3 +141,19 @@
   }
 </script>
 -->
+<script>
+    let captionImage = document.querySelector('.nw-caption-image');
+    let captionButton = document.querySelector('.nw-caption-button');
+
+    captionButton.addEventListener('click', function () {
+
+        captionImage.classList.toggle('nw-caption-open');
+        captionImage.classList.toggle('nw-caption-close');
+
+        if (captionButton.classList.contains('nw-transform')) {
+            captionButton.classList.remove('nw-transform', 'nw-rotate-180');
+        } else {
+            captionButton.classList.add('nw-transform', 'nw-rotate-180');
+        }
+    });
+</script>

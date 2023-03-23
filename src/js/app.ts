@@ -8,6 +8,7 @@ import {initStickymenu} from './modules/sticky-menu';
 import {initFAQ} from './modules/faqElement';
 import {initTransform} from './modules/kommentare';
 import {initPrivacybox} from "./modules/privacy-box";
+import {initModalbox} from "./modules/modal-box";
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
@@ -22,6 +23,7 @@ const initializationFunctions: Array<() => void> = [
     initFAQ,
     initTransform,
     initPrivacybox,
+    initModalbox,
 ];
 
 preloadFunctions.forEach(initializationFunction => {
