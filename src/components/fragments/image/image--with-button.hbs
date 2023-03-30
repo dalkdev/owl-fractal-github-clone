@@ -1,5 +1,5 @@
 <div class="nw-bg-white nw-mt-8 nw-mb-16">
-    <div class="nw-relative">
+    <div class="nw-bg-white nw-relative">
         <div class="nw-aspect-w-16 nw-aspect-h-9">
             <picture>
                 <source
@@ -52,104 +52,48 @@
                 />
             </svg>
         </button>
+        <div class="nw-caption-image nw-caption-close nw-margin-text">
+            <p class="nw-text-sm nw-px-4 nw-pt-4">
+                Per Handy verbunden: Mehr als 120 Menschen haben sich in einer
+                Telegram-Gruppe vernetzt, die von einer Bünderin administriert wird. | ©
+                Florian Weyand
+            </p>
+        </div>
     </div>
-    <div class="nw-caption-image nw-caption-close nw-margin-text">
-        <p class="nw-text-sm nw-padding-text">
-            Per Handy verbunden: Mehr als 120 Menschen haben sich in einer
-            Telegram-Gruppe vernetzt, die von einer Bünderin administriert wird. | ©
-            Florian Weyand
-        </p>
-    </div>
+
 </div>
 <style>
-    /*
+
+
     .nw-caption-close {
-        max-height: 0;
+        position: absolute;
         overflow: hidden;
-        transition: max-height 0.8s;
+        bottom: 0;
+        left: 0;
+        transform: translateY(10%);
+        opacity: 0;
+        transition: transform 0.8s, opacity 0.8s;
         transition-timing-function: ease-out;
     }
 
     .nw-caption-open {
-        max-height: 100vh;
+        position: absolute;
         overflow: hidden;
-        transition: max-height 0.8s;
+        bottom: 0;
+        left: 0;
+        transform: translateY(0);
+        opacity: 1;
+        transition: transform 0.8s, opacity 0.8s;
         transition-timing-function: ease-in;
     }
-    */
-
-    /* .nw-caption-close {
-         opacity: 0;
-         transform: translateY(-50%);
-         transition: all 0.3s ease-in-out;
-     }
-
-     .nw-caption-image:hover .nw-caption-close {
-         opacity: 1;
-         transform: translateY(0%);
-     }
- */
-    .nw-caption-close {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.8s, transform 0.8s;
-        transition-timing-function: ease-out;
-        transform: translateY(100%);
-    }
-
-    .nw-caption-open {
-        max-height: 100vh;
-        overflow: hidden;
-        transition: max-height 0.8s, transform 0.8s;
-        transition-timing-function: ease-in;
-        transform: translateY(0%);
-    }
-
-
 </style>
 
-<!--<script>
+<script>
     let captionImage = document.querySelector('.nw-caption-image');
     let captionButton = document.querySelector('.nw-caption-button');
     captionButton.addEventListener('click', function () {
         captionImage.classList.toggle('nw-caption-open');
         captionImage.classList.toggle('nw-caption-close');
-        if (captionButton.classList.contains('nw-transform')) {
-            captionButton.classList.remove('nw-transform', 'nw-rotate-180');
-        } else {
-            captionButton.classList.add('nw-transform', 'nw-rotate-180');
-        }
-    });
-</script>-->
-<!--
-<script>
-  function toggleTransitionOfTheCaptionInImage() {
-    var captionImage = document.querySelector('.nw-caption-image');
-    var captionButton = document.querySelector('.nw-caption-button');
-    if (captionImage.classList.contains('nw-caption-close')) {
-      captionImage.classList.remove('nw-caption-close');
-      captionImage.classList.add('nw-caption-open');
-    } else {
-      captionImage.classList.remove('nw-caption-open');
-      captionImage.classList.add('nw-caption-close');
-    }
-    if (captionButton.classList.contains('nw-transform')) {
-      captionButton.classList.remove('nw-transform', 'nw-rotate-180');
-    } else {
-      captionButton.classList.add('nw-transform', 'nw-rotate-180');
-    }
-  }
-</script>
--->
-<script>
-    let captionImage = document.querySelector('.nw-caption-image');
-    let captionButton = document.querySelector('.nw-caption-button');
-
-    captionButton.addEventListener('click', function () {
-
-        captionImage.classList.toggle('nw-caption-open');
-        captionImage.classList.toggle('nw-caption-close');
-
         if (captionButton.classList.contains('nw-transform')) {
             captionButton.classList.remove('nw-transform', 'nw-rotate-180');
         } else {

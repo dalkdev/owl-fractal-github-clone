@@ -1,3 +1,11 @@
+<style>
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
 <div class="nw-bg-gray-100 nw-rounded nw-my-6 nw-shadow-md">
     <div class="nw-p-6">
         <div class="nw-flex nw-items-center">
@@ -86,7 +94,7 @@
                             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
                         />
                     </svg>
-                    24
+                    24 Gefällt mir
                 </a>
             </li>
         </ul>
@@ -96,14 +104,11 @@
     <div class="container nw-hidden">
         Antworten
     </div>
-    <!-- Main modal -->
     <div id="modal-box" class="modal nw-hidden container ">
-        <div class="modal-content nw-fixed nw-top-0 nw-left-0 nw-right-0 nw-z-50
-                    nw-w-full nw-p-4 nw-overflow-x-hidden nw-overflow-y-auto md:nw-inset-0 nw-h-[calc(100%-1rem)] md:nw-h-full">
-            <div class="nw-relative nw-w-full nw-h-full nw-max-w-2xl md:nw-h-auto">
-                <!-- Modal content -->
+        <div class="modal-content  nw-z-50
+                    nw-w-full nw-p-4 nw-overflow-x-hidden nw-overflow-y-auto nw-inset-0 nw-h-[calc(100%-1rem)]">
+            <div class="nw-relative nw-w-full nw-mx-auto nw-h-full nw-max-w-2xl md:nw-h-auto md:nw-h-auto">
                 <div class="nw-relative nw-bg-white nw-rounded-lg nw-shadow">
-                    <!-- Modal header -->
                     <div
                         class="nw-flex nw-items-center nw-px-4 nw-pt-4 sm:nw-px-6 sm:nw-pt-6 nw-rounded-t">
                         <svg class=" nw-h-7 nw-w-7 nw-text-custom-1-700 nw-mr-1" xmlns="http://www.w3.org/2000/svg"
@@ -114,18 +119,7 @@
                                   d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
                         </svg>
                         <span class="nw-text-xl nw-font-bold">Verstoß melden</span>
-                        <!-- <button type="button" class="closeButton nw-text-gray-400 nw-bg-transparent hover:nw-bg-gray-200 hover:nw-text-gray-900 nw-rounded-lg nw-text-sm nw-p-1.5
-                                                         nw-ml-auto nw-inline-flex nw-items-center">
-                             <svg aria-hidden="true" class="nw-w-5 nw-h-5" fill="currentColor"
-                                  viewBox="0 0 20 20"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                 <path fill-rule="evenodd"
-                                       d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                       clip-rule="evenodd"></path>
-                             </svg>
-                         </button>-->
                     </div>
-                    <!-- Modal body -->
                     <div class="nw-px-4 sm:nw-px-6 nw-pb-8">
                         <p class="nw-text-base nw-leading-relaxed nw-pb-4">
                             Geben Sie bitte Ihre Meldung ein.
@@ -148,7 +142,7 @@
                                     nw-border-black"
                                     placeholder="Diskutieren Sie mit …"
                                     required></textarea>
-                                <p class="result nw-text-xs nw-text-gray-500">0/1500</p>
+                                <p class="result nw-text-xs nw-text-gray-500">0/1500 Zeichen</p>
                             </div>
                             <div class="nw-mt-4 nw-flex nw-flex-col sm:nw-flex-row nw-gap-2 sm:nw-gap-4 nw-justify-end">
                                 <button type="button"
