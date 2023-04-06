@@ -1,22 +1,6 @@
-/*
-    First step:
-    sliderImages.forEach( sliderImage => {
-        sliderImage.addEventListener('click' => {
-            console.log(idx);
-        }
-    })
-
-    Next step:
-    sliderImages.forEach( sliderImage => {
-        sliderImage.addEventListener('click' => {
-            openModal(idx);
-        }
-    })
-
- */
-
-
 import EmblaCarousel from 'embla-carousel';
+
+let isScrolling = false;
 
 export function initSliders() {
     const sliderWrapperNodes = document.querySelectorAll('.slider');
@@ -25,9 +9,71 @@ export function initSliders() {
     sliderWrapperNodes.forEach(sliderWrapperNode => {
         initSlider(sliderWrapperNode as HTMLElement);
     });
-
 }
 
+export function initLightBox() {
+    const sliderImages = document.querySelectorAll('.slider .embla__slide__img');
+    const closeButton = document.querySelector('.close-lightbox') as HTMLElement;
+    const prevButton = document.querySelector('.prevButton') as HTMLElement;
+    const nextButton = document.querySelector('.nextButton') as HTMLElement;
+    Array.from(sliderImages).forEach((sliderImage) => {
+        sliderImage.addEventListener('click', () => {
+            console.log(isScrolling);
+            if (isScrolling === true) return;
+            const idx = Array.from(sliderImages).indexOf(sliderImage);
+            currentSlide(idx + 1);
+            showLightBox('light1');
+        });
+    });
+    closeButton.addEventListener('click', () => {
+        closeLightbox('light1');
+    });
+    prevButton.addEventListener('click', () => {
+        showSlides(slideIndex -= 1);
+    });
+
+    nextButton.addEventListener('click', () => {
+        showSlides(slideIndex += 1);
+    });
+}
+
+function showLightBox(id: string) {
+    const modal = document.getElementById(id);
+    if (modal) {
+        modal.style.display = 'block';
+    }
+}
+
+function closeLightbox(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.style.display = 'none';
+    }
+}
+
+function currentSlide(n: number) {
+    showSlides(slideIndex = n);
+}
+
+let slideIndex = 1;
+
+function showSlides(n: number) {
+    const slides = document.querySelectorAll('.mySlides');
+    if (n < 1) {
+        slideIndex = slides.length;
+    } else if (n > slides.length) {
+        slideIndex = 1;
+    } else {
+        slideIndex = n;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        (slides[i] as HTMLElement).style.display = 'none';
+    }
+
+
+    (slides[slideIndex - 1] as HTMLElement).style.display = 'block';
+}
 
 function initSlider(wrapperNode: HTMLElement) {
     const counterCurrent = wrapperNode.querySelector('.slider--counter-current');
@@ -42,38 +88,16 @@ function initSlider(wrapperNode: HTMLElement) {
         dragFree: true,
         containScroll: 'trimSnaps',
     })
-    /* const sliderImages = document.getElementsByClassName('slider-Image'); */
-
-    /*  Array.from(sliderImages).forEach((sliderImage, idx) => {
-         sliderImage.addEventListener('click', () => {
-             console.log(idx);
-         });
-     }); */
-    /*  function openModal(id: string) {
-         const modal = document.getElementById(id);
-         if (modal) {
-             modal.style.display = 'block';
-         }
-     }
-
-     Array.from(sliderImages).forEach((sliderImage) => {
-         sliderImage.addEventListener('click', () => {
-             const id = sliderImage.dataset.id;
-             openModal(id);
-         });
-     }); */
-    /*     let isScrolling = false;
 
 
-        mainCarousel.on('scroll', () => {
-            isScrolling = true;
-        })
+    mainCarousel.on('scroll', () => {
+        isScrolling = true;
+    });
 
-        mainCarousel.on('settle', () => {
-            isScrolling = false;
-        });
+    mainCarousel.on('settle', () => {
+        isScrolling = false;
+    });
 
-        console.log("isScrolling: " + isScrolling); */
 
     mainCarousel.on('init', () => {
         if (counterCurrent) {
