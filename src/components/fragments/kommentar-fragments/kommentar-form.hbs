@@ -1,5 +1,5 @@
 <div class="nw-mb-4">
-    <p class="nw-text-md nw-font-bold">Ihr Kommentar</p>
+    <p class="nw-text-md nw-font-bold">Ihre Antwort</p>
 </div>
 <form>
     <div class="nw-mb-6">
@@ -60,13 +60,12 @@
             </p>
         </div>
     </div>
-    <div>
+    <div class="nw-flex nw-flex-col nw-justify-end nw-content-end nw-place-content-end nw-items-end nw-place-items-end">
         <button
             type="submit"
             class="
         buttondis
-        nw-inline-block
-        nw-w-full
+        nw-whitespace-nowrap
         nw-bg-red-100
         nw-py-3
         nw-px-6
@@ -78,14 +77,16 @@
       "
             disabled
         >
-            Kommentar abschicken
+            {{ buttontext }}
         </button>
+
+        <div
+            class="nw-text-black nw-text-xs nw-py-4">
+            Mit dem Absenden des Kommentars erkennen Sie unsere
+            <a href="" class="nw-text-red-500 hover:nw-underline">
+                Nutzungsbedingungen für Kommentare
+            </a>
+            an.
+        </div>
     </div>
 </form>
-<div class="nw-text-black nw-text-xs nw-py-4">
-    Mit dem Absenden des Kommentars erkennen Sie unsere
-    <a href="" class="nw-text-red-500 hover:nw-underline">
-        Nutzungsbedingungen für Kommentare
-    </a>
-    an.
-</div>
