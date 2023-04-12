@@ -1,0 +1,29 @@
+<div class="nw-bg-white nw-max-w-3xl">
+    <div class="nw-py-6">{{>@ads--header}}</div>
+    {{>'@kommentar-toggle-button'}}
+    <div class="commentBlock-1">
+        {{>'@kommentar-header'}}
+        <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-6 md:nw-gap-12">
+            <div class="nw-flex-1 md:nw-order-first md:nw-mt-0">
+                    {{>"@kommentar-form" form.buttons.kommentar-abschicken}}
+            </div>
+            <div class="nw-mx-auto md:nw-items-end nw-mt-4 md:nw-w-1/2">{{>@ads}}</div>
+        </div>
+        {{>'@kommentar-kommentar'}}
+        {{>'@kommentar-kommentar'}}
+        {{>'@kommentar-kommentar'}}
+            <div class="nw-ml-3 md:nw-ml-12 nw-bg-white">
+                {{>'@kommentar-form' form.buttons.antworten}}
+            </div>
+            {{>'@kommentar-antwort'}}
+            {{>'@kommentar-mehr-antworten-button'}}
+            {{>'@kommentar-antwort'}}
+            {{>'@kommentar-antwort'}}
+        {{>'@kommentar-kommentar'}}
+        {{>'@kommentar-kommentar'}}
+        {{>'@kommentar-kommentar'}}
+        {{>'@kommentar-mehr-kommentare-button'}}
+        {{>'@kommentar-footer'}}
+    </div>
+</div>
+{{>'@modal-box'}}

@@ -1,13 +1,13 @@
 #nw-liveticker-box {
   .nw-liveticker-head {
     .nw-liveticker-dot {
-      @apply nw-absolute nw-w-2 nw-h-2 nw-bg-red-400 nw-rounded-full nw-border-2 nw-border-white;
-      margin-top: 0.4rem;
+      @apply nw-absolute nw-w-4 nw-h-4 nw-bg-red-400 nw-rounded-full nw-border-2 nw-border-white;
+      margin-top: 0.3rem;
       margin-left: -0.25rem;
     }
 
     .nw-liveticker-head-text {
-      @apply nw-text-md nw-ml-2 nw-font-bold;
+      @apply nw-text-md nw-ml-4 nw-font-bold;
     }
   }
 
@@ -32,8 +32,8 @@
     li {
       &:first-child {
         .nw-liveticker-dot {
-          @apply nw-absolute nw-w-2 nw-h-2 nw-bg-red-400 nw-rounded-full nw-border-2 nw-border-white;
-          left: -0.425rem;
+          @apply nw-absolute nw-w-3 nw-h-3 nw-bg-red-400 nw-rounded-full nw-border-2 nw-border-white;
+          left: -0.45rem;
         }
       }
 
@@ -41,8 +41,8 @@
       }
 
       .nw-liveticker-dot {
-        @apply nw-absolute nw-w-2 nw-h-2 nw-bg-gray-400 nw-rounded-full nw-border-2 nw-border-white;
-        left: -0.425rem;
+        @apply nw-absolute nw-w-3 nw-h-3 nw-bg-gray-400 nw-rounded-full nw-border-2 nw-border-white;
+        left: -0.45rem;
       }
     }
   }

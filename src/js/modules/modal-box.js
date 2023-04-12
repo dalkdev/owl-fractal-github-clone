@@ -1,9 +1,17 @@
 export function initModalbox() {
     var modal = document.getElementById("modal-box");
-    var meldenButton = document.getElementById("meldenButton");
+    var openModalBtns = document.getElementsByClassName("nw-open-modal");
     var closeButton = document.getElementsByClassName("closeButton");
 
-    meldenButton.onclick = function () {
+    console.log(openModalBtns.length);
+
+    for (let i = 0; i < openModalBtns.length; i++)
+    {
+        openModalBtns[i].addEventListener('click', () => openModal());
+    }
+
+    function openModal()
+    {
         modal.style.display = "block";
     }
 

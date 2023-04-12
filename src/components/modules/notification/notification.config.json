@@ -1,0 +1,26 @@
+{
+  "status": "qm",
+  "context": {
+    "info": {
+      "bgcolor": "nw-bg-gray-100",
+      "textcolor": "",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"nw-w-6 nw-h-6 nw-flex nw-mr-1 nw-text-red-500\">\n                <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z\"></path>\n            </svg>",
+      "title" : "Allgemeine Information",
+      "text"  : "Diese Notification enthält allgemeine Information."
+    },
+    "error": {
+      "bgcolor": "nw-bg-red-500",
+      "textcolor": "nw-text-white",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"nw-w-6 nw-h-6 nw-mr-1\"> <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z\"\n            />\n        </svg>",
+      "title" : "Eine Fehlermeldung",
+      "text"  : "In dieser Notification werden Fehler oder Warnmeldungen angezeigt."
+    },
+    "success": {
+      "bgcolor": "nw-bg-green-500",
+      "textcolor": "nw-text-white",
+      "icon": "<svg\n            xmlns=\"http://www.w3.org/2000/svg\"\n            fill=\"none\"\n            viewBox=\"0 0 24 24\"\n            stroke-width=\"1.5\"\n            stroke=\"currentColor\"\n            class=\"nw-w-6 nw-h-6 nw-mr-1\"\n        >\n            <path\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n                d=\"M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"\n            />\n        </svg>",
+      "title" : "Erfolgreiche Notification",
+      "text"  : "Eine Aktion war erfolgreich und daher gibt es diese Notification."
+    }
+  }
+}

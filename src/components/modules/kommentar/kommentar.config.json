@@ -1,0 +1,59 @@
+{
+  "status": "qm",
+  "context": {
+    "form": {
+      "buttons": {
+        "kommentar-abschicken": {
+          "buttontext": "Kommentar abschicken"
+        },
+        "antworten": {
+          "buttontext": "Antworten"
+        }
+      }
+    },
+    "notifications": {
+      "zeitlich-begrenzt": {
+        "bgcolor": "nw-bg-gray-100",
+        "textcolor": "",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"nw-w-6 nw-h-6 nw-flex nw-mr-1 nw-text-red-500\">\n                <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z\"></path>\n            </svg>",
+        "title" : "Kommentarfunktion deaktiviert\n\n",
+        "text"  : "Das weitere Kommentieren zu diesem Artikel ist nicht mehr möglich. Die Funktion war nur zeitlich begrenzt verfügbar."
+      },
+      "deaktiviert": {
+        "bgcolor": "nw-bg-gray-100",
+        "textcolor": "",
+        "icon": "<svg\n            xmlns=\"http://www.w3.org/2000/svg\"\n            width=\"21.827\"\n            height=\"20.827\"\n            viewBox=\"0 0 21.827 20.827\"\n            class=\"nw-mr-1 nw-w-6 nw-h-6 \"\n        >\n            <g id=\"icon-no_comment\" transform=\"translate(-14.086 -15.086)\">\n                <path\n                    id=\"Pfad_206\"\n                    data-name=\"Pfad 206\"\n                    d=\"M2.25,11.276a2.73,2.73,0,0,0,2.3,2.736q1.383.2,2.792.313v3.938l3.456-3.456a1.294,1.294,0,0,1,.879-.376,40.943,40.943,0,0,0,4.817-.419,2.729,2.729,0,0,0,2.3-2.737v-5.1a2.729,2.729,0,0,0-2.3-2.737,41.215,41.215,0,0,0-11.945,0,2.73,2.73,0,0,0-2.3,2.737v5.1Z\"\n                    transform=\"translate(14.482 15.867)\"\n                    fill=\"none\"\n                    stroke=\"#999\"\n                    stroke-linecap=\"round\"\n                    stroke-linejoin=\"round\"\n                    stroke-width=\"1.5\"\n                />\n                <line\n                    id=\"Linie_92\"\n                    data-name=\"Linie 92\"\n                    y1=\"18\"\n                    x2=\"19\"\n                    transform=\"translate(15.5 16.5)\"\n                    fill=\"none\"\n                    stroke=\"#d20a11\"\n                    stroke-linecap=\"round\"\n                    stroke-width=\"2\"\n                />\n            </g>\n        </svg>",
+        "title" : "Kommentarfunktion deaktiviert",
+        "text"  : "Kommentare zu diesem Artikel sind nicht möglich."
+      },
+      "fehler": {
+        "bgcolor": "nw-bg-red-500",
+        "textcolor": "nw-text-white",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"nw-w-6 nw-h-6 nw-mr-1\"> <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z\"\n            />\n        </svg>",
+        "title" : "Es ist ein Fehler aufgetreten",
+        "text"  : "Bitte geben Sie einen Kommentar ein."
+      },
+      "kommentar-wird-geprueft": {
+        "bgcolor": "nw-bg-green-500",
+        "textcolor": "nw-text-white",
+        "icon": "<svg\n            xmlns=\"http://www.w3.org/2000/svg\"\n            fill=\"none\"\n            viewBox=\"0 0 24 24\"\n            stroke-width=\"1.5\"\n            stroke=\"currentColor\"\n            class=\"nw-w-6 nw-h-6 nw-mr-1\"\n        >\n            <path\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n                d=\"M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"\n            />\n        </svg>",
+        "title" : "Vielen Dank für Ihren Kommentar",
+        "text"  : "Ihr Beitrag wurde gespeichert und wird vor der Freischaltung redaktionell geprüft."
+      },
+      "erfolgreicher-kommentar": {
+        "bgcolor": "nw-bg-green-500",
+        "textcolor": "nw-text-white",
+        "icon": "<svg\n            xmlns=\"http://www.w3.org/2000/svg\"\n            fill=\"none\"\n            viewBox=\"0 0 24 24\"\n            stroke-width=\"1.5\"\n            stroke=\"currentColor\"\n            class=\"nw-w-6 nw-h-6 nw-mr-1\"\n        >\n            <path\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n                d=\"M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"\n            />\n        </svg>",
+        "title" : "Vielen Dank für Ihren Kommentar",
+        "text"  : "Ihr Beitrag wird in Kürze veröffentlicht."
+      },
+      "konto-gesperrt": {
+        "bgcolor": "nw-bg-gray-100",
+        "textcolor": "",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"nw-w-6 nw-h-6 nw-mr-1 nw-text-red-500\">\n                <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path>\n            </svg>",
+        "title" : "Konto für Kommentare gesperrt",
+        "text"  : "<p class=\"nw-pb-2\">\n            Sie haben zuvor gegen unsere <a href=\"\" class=\"nw-text-red-500 hover:nw-underline\"> Nutzungsbedingungen </a>\n            oder die\n            <a href=\"\" class=\"nw-text-red-500 hover:nw-underline\"> Allgemeinen Geschäftsbedingungen </a>\n            der Neuen Westfälischen verstoßen.\n        </p>\n        <p>\n            Bei Fragen wenden Sie sich bitte an <a href=\"\" class=\"nw-text-gray-600 hover:nw-underline\">digitalredaktion@nw.de</a>\n        </p>"
+      }
+    }
+  }
+}
