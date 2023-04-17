@@ -9,19 +9,19 @@
   }
 
   li > a[href$=".pdf"] {
-    background: transparent url('/images/download/icon-pdf.svg') no-repeat;
+    background: transparent url('../images/download/icon-pdf.svg') no-repeat;
     background-size: 18px;
     background-position: center left;
   }
 
   li > a[href$=".zip"] {
-    background: transparent url('/images/download/icon-zip.svg') no-repeat;
+    background: transparent url('../images/download/icon-zip.svg') no-repeat;
     background-size: 18px;
     background-position: center left;
   }
 
   li > a[href$=".doc"] {
-    background: transparent url('/images/download/icon-doc.svg') no-repeat;
+    background: transparent url('../images/download/icon-doc.svg') no-repeat;
     background-size: 18px;
     background-position: center left;
   }
