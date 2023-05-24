@@ -88,7 +88,14 @@ function initSlider(wrapperNode: HTMLElement) {
         dragFree: true,
         containScroll: 'trimSnaps',
     })
+    // Count the number of slides
+    const BilderCount = mainCarousel.slideNodes().length;
 
+    // Update the content of the slide count element
+    const photoCount = wrapperNode.querySelector('.photoCount');
+    if (photoCount) {
+        photoCount.textContent = BilderCount.toString();
+    }
 
     mainCarousel.on('scroll', () => {
         isScrolling = true;
