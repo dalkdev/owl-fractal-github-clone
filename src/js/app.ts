@@ -1,5 +1,5 @@
 import {initPolyfills} from './global/polyfills';
-import {initLightBox, initSliders} from './modules/embla-slider';
+import {initSliders} from './modules/embla-slider';
 // eslint-disable-next-line no-unused-vars
 import {initNavigation} from './modules/embla-navigation';
 import {initNewsticker} from './modules/embla-newsticker';
@@ -24,7 +24,7 @@ const initializationFunctions: Array<() => void> = [
     initTransform,
     initPrivacybox,
     initModalbox,
-    initLightBox,
+//    initLightBox,
 ];
 
 preloadFunctions.forEach(initializationFunction => {
