@@ -45,7 +45,7 @@
 }
 
 .article-detail-entry-content {
-  @apply nw-text-md nw-p-0;
+  @apply nw-text-md nw-p-0 nw-w-5/6 nw-mx-auto;
 
   h2 {
     @apply nw-font-bold nw-pb-2;

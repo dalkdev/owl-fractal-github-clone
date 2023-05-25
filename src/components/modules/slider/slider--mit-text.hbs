@@ -3,26 +3,29 @@
     class="
     slider
     first-slide
-    nw-bg-custom-1-700 nw-pb-4 nw-pt-6 nw-mb-4
-    md:nw-mb-2
+    nw-bg-custom-1-700 nw-pb-6 nw-pt-6 nw-mb-6
+    md:nw-mb-3
   "
 >
-    <div class="nw-pl-4 md:nw-pl-20">
-        <div>
-            <p class="nw-text-white nw-inline nw-text-xl nw-uppercase nw-font-bold">
-                {{title}}
-            </p>
-            <hr class="nw-red-line-l nw-mt-0.5"/>
+    <div class="nw-px-3 md:nw-px-20">
+        <div class="nw-flex nw-flex-row nw-justify-between nw-items-end ">
+            <div>
+                <p class="nw-text-white nw-inline nw-text-xl nw-uppercase nw-font-bold">
+                    {{title}}
+                </p>
+                <hr class="nw-red-line-l nw-mt-0.5"/>
+            </div>
+            <div class="nw-text-gray-300 nw-text-sm nw-pl-3"><span class="photoCount"></span>
+                Bilder
+            </div>
         </div>
         <div>
             <p
                 class="
-          nw-text-white nw-text-left nw-text-md
-          md:nw-text-xl
-          nw-pt-2
-          md:nw-pb-1
-          nw-pr-1
-        "
+             nw-text-white nw-text-left nw-text-md
+             nw-font-bol
+             nw-pt-6 nw-pb-2 nw-pr-2
+             "
             >
                 {{caption}}
             </p>
@@ -32,11 +35,16 @@
         <div class="embla__viewport relative">
             <div class="embla__container">
                 {{#each images}}
-                    <div class="embla__slide nw-min-w-8/10 sm:min-w-7/10">
+                    <div class="
+                        embla__slide nw-min-w-8/10
+                        sm:min-w-8/10
+                        md:nw-min-w-6/10
+                        lg:nw-min-w-6/10
+                        xl:nw-min-w-6/10">
                         <div
                             class="embla__slide__inner nw-bg-clip-padding nw-inline md:nw-block"
                         >
-                            <a href="" class="nw-cursor-pointer">
+                            <a href="#" class="nw-cursor-pointer">
                                 <div class="nw-aspect-w-4 nw-aspect-h-3">
                                     <img
                                         class="
@@ -67,7 +75,6 @@
           nw-absolute
           nw-rounded-full
           nw-object-center
-          md:
           nw-top-1/2
           nw-left-2
           nw-transform
