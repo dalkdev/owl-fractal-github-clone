@@ -4,7 +4,6 @@ module.exports = {
             './src/components/**/*.json'
     ],
     darkMode: 'media', // or 'media' or 'class'
-    separator: '_',
     prefix: 'nw-',
     theme: {
         extend: {

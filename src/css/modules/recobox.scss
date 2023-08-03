@@ -18,13 +18,12 @@
 
   .nw-reco-title {
     color: #333;
-    font-size: 18px;
     font-weight: 600;
     hyphens: auto;
     line-height: 24px;
     max-width: 304px;
     max-height: 176px;
-    @apply nw-no-underline nw-text-black nw-mt-0 md:nw-mt-2 nw-ml-2 md:nw-ml-0;
+    @apply nw-no-underline nw-text-black nw-mt-0 md:nw-mt-2 nw-ml-2 md:nw-ml-0 nw-text-base md:nw-text-lg;
 
     img {
       display: inline-block;
@@ -53,5 +52,5 @@
 }
 
 .nw-reco-caption-rebrush {
-  @apply nw-font-bold nw-text-md md:nw-text-lg nw-tracking-tighter nw-leading-tight;
+  @apply nw-font-bold nw-text-md md:nw-text-lg nw-leading-tight nw-text-base md:nw-text-lg;
 }
