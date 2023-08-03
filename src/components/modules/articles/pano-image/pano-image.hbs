@@ -1,0 +1,104 @@
+<div class="nw-bg-white nw-mt-8">
+    <div class="nw-bg-white nw-relative">
+        <div class="nw-aspect-w-16 nw-aspect-h-9">
+            <picture>
+                <source
+                    media="(max-width: 575px)"
+                    srcset="/images/arminia-angebot/img-analysen.jpg 575w"
+                    alt="image-new1"
+                />
+                <source
+                    media="(max-width: 768px)"
+                    srcset="/images/arminia-angebot/img-live-ticker.jpg 768w"
+                    alt="image-new2"
+                />
+                <source
+                    media="(max-width: 1399px)"
+                    srcset="/images/arminia-angebot/img-transfer.jpg 1200w"
+                    alt="image-new3"
+                />
+                <img
+                    srcset="/images/arminia-angebot/img-live-ticker.jpg 1200w"
+                    class="nw-object-cover nw-h-full nw-w-full md:nw-rounded-md"
+                    alt="image-new"
+                />
+            </picture>
+        </div>
+        <button
+            class="
+            nw-caption-button
+        nw-absolute
+        nw-bottom-3
+        nw-right-3
+        nw-w-8
+        nw-h-8
+        nw-border
+        nw-border-white
+        nw-rounded
+        nw-opacity-50
+        nw-bg-black"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class=" nw-text-white nw-m-2 nw-cursor-pointer"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                />
+            </svg>
+        </button>
+        <div class="nw-caption-image nw-caption-close nw-margin-text">
+            <p class="nw-text-sm nw-px-4 nw-pt-4">
+                Per Handy verbunden: Mehr als 120 Menschen haben sich in einer
+                Telegram-Gruppe vernetzt, die von einer Bünderin administriert wird. | ©
+                Florian Weyand
+            </p>
+        </div>
+    </div>
+
+</div>
+<style>
+
+
+    .nw-caption-close {
+        position: absolute;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+        transform: translateY(10%);
+        opacity: 0;
+        transition: transform 0.8s, opacity 0.8s;
+        transition-timing-function: ease-out;
+    }
+
+    .nw-caption-open {
+        position: absolute;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+        transform: translateY(0);
+        opacity: 1;
+        transition: transform 0.8s, opacity 0.8s;
+        transition-timing-function: ease-in;
+    }
+</style>
+
+<script>
+    let captionImage = document.querySelector('.nw-caption-image');
+    let captionButton = document.querySelector('.nw-caption-button');
+    captionButton.addEventListener('click', function () {
+        captionImage.classList.toggle('nw-caption-open');
+        captionImage.classList.toggle('nw-caption-close');
+        if (captionButton.classList.contains('nw-transform')) {
+            captionButton.classList.remove('nw-transform', 'nw-rotate-180');
+        } else {
+            captionButton.classList.add('nw-transform', 'nw-rotate-180');
+        }
+    });
+</script>
