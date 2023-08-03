@@ -12,9 +12,14 @@ export function initPrivacybox() {
             displayAndHideClassInPrivacy(".nw-big-privacy-box", ".nw-small-privacy-box");
         }
 
-        document.querySelector(".togBtn").addEventListener("change", function (e) {
-            this.checked === true ? acceptSocialMedia() : declineSocialMedia();
-        });
+        let _tb = document.querySelector(".togBtn");
+
+        if (_tb !== null)
+        {
+            _tb.addEventListener("change", function (e) {
+                this.checked === true ? acceptSocialMedia() : declineSocialMedia();
+            });
+        }
     }
 
     function acceptSocialMedia() {
@@ -41,20 +46,6 @@ export function initPrivacybox() {
             loadScript("https://public.flourish.studio/resources/embedded.js");
         }
 
-        if (document.querySelectorAll(".scrbbl-embed").length) {
-            loadScript("https://embed.scribblelive.com/widgets/embed.js", function () {
-                (function (d, s, id) {
-                    var js,
-                        ijs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "//embed.scribblelive.com/widgets/embed.js";
-                    ijs.parentNode.insertBefore(js, ijs);
-                })(document, "script", "scrbbl-js");
-            });
-        }
-
         if (document.querySelectorAll("div[data-type='AwesomeTableView']").length) {
             loadScript("https://awesome-table.com/AwesomeTableInclude.js");
         }
@@ -63,8 +54,12 @@ export function initPrivacybox() {
     }
 
     function displayAndHideClassInPrivacy(displayClass, hideClass) {
-        document.querySelector(displayClass).style.display = "block";
-        document.querySelector(hideClass).style.display = "none";
+        let _dc = document.querySelector(displayClass);
+        if (_dc !== null)
+            _dc.style.display = "block";
+        let _hc = document.querySelector(hideClass)
+        if (_hc !== null)
+            _hc.style.display = "none";
     }
 
     function loadScript(url, callback) {
@@ -79,13 +74,19 @@ export function initPrivacybox() {
 
 
     function declineSocialMedia() {
-        document.querySelector(".nw-small-privacy-box").style.display = "none";
-        document.querySelector(".nw-big-privacy-box").style.display = "block";
-        document.querySelector(".togBtn").checked = false;
-        document.querySelectorAll(".social-media-added").forEach(function (added) {
-            added.remove();
-        });
-        setCookie("social-accept", "decline", 365);
+        let _spb = document.querySelector(".nw-small-privacy-box");
+        let _bpb = document.querySelector(".nw-big-privacy-box");
+        let _btn = document.querySelector(".togBtn")
+        if (_spb !== null || _bpb !== null || _btn !== null)
+        {
+            _spb.style.display = "none";
+            _bpb.style.display = "block";
+            _btn.checked = false;
+            document.querySelectorAll(".social-media-added").forEach(function (added) {
+                added.remove();
+            });
+            setCookie("social-accept", "decline", 365);
+        }
     }
 
     function setCookie(cname, cvalue, exdays) {

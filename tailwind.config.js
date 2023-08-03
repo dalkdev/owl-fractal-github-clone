@@ -1,6 +1,10 @@
 module.exports = {
-    purge: {layers: ['utilities'], content: ['./src/components/**/*.hbs']},
-    darkMode: false, // or 'media' or 'class'
+    content: [
+            './src/components/**/*.hbs',
+            './src/components/**/*.json'
+    ],
+    darkMode: 'media', // or 'media' or 'class'
+    separator: '_',
     prefix: 'nw-',
     theme: {
         extend: {
@@ -78,6 +82,10 @@ module.exports = {
             },
         },
     },
+    safelist: [
+        'bg-green-500',
+        'nw-bg-green-500'
+    ],
     variants: {
         extend: {
             backgroundColor: ['checked'],
