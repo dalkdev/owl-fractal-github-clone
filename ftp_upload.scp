@@ -1,0 +1,3 @@
+open ftp://frctl@10.128.10.100
+synchronize remote build/ /
+exit

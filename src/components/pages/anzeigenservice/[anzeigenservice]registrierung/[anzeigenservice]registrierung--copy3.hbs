@@ -1,0 +1,679 @@
+<style>
+
+    input[type=text] {
+        -webkit-appearance: none;
+    }
+
+</style>
+<div class="nw-bg-custom-1-700 nw-p-4 md:nw-p-8">
+    <div class="nw-bg-white nw-p-4 nw-mx-0 md:nw-max-w-md nw-mx-auto nw-rounded-md">
+        <div>
+            <p
+                class="
+        nw-text-left
+        nw-text-lg
+        nw-font-bold
+        nw-opacity-100
+        nw-pb-1
+      "
+            >
+                Registrierung
+            </p>
+        </div>
+
+        <div>
+            <p
+                class="
+        nw-text-left
+        nw-text-base
+        nw-font-medium
+        nw-opacity-100
+        nw-text-black
+        nw-py-1
+        nw-tracking-normal
+      "
+            >
+                Ihre Vorteile
+            </p>
+        </div>
+        <ul role="list" class="nw-mb-6 nw-text-left nw-font-medium nw-text-base">
+            <li class="nw-flex nw-items-center nw-space-x-2">
+                <svg class="nw-flex-shrink-0 nw-w-5 nw-h-5 nw-text-green-500" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                </svg>
+                <span>Artikel freischalten (außer NW+)</span>
+            </li>
+            <li class="nw-flex nw-items-center nw-space-x-2">
+                <svg class="nw-w-5 h-5 nw-text-green-500" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                </svg>
+                <span>redaktioneller Newsletter</span>
+            </li>
+            <li class="nw-flex nw-items-center nw-space-x-2 ">
+                <svg class="nw-w-5 nw-h-5 nw-text-green-500" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                </svg>
+                <span>Kommentarfunktion</span>
+            </li>
+        </ul>
+        <p id="dangerAlert" class="nw-bg-red-100 nw-text-red-700 nw-px-2
+            nw-py-2 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie biite den roten Felder aus</p>
+        <div>
+            <form action="" id="myForm">
+                <div class="nw-mb-4">
+                    <label
+                        class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+          "
+                        for="eMail"
+                    >E-Mail*</label
+                    >
+                    <input required
+                           class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-base
+            nw-box-border
+            nw-cursor-pointer
+          "
+                           pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                           type="email"
+                           placeholder=""
+                           name=""
+                           id="eMail"
+                    />
+                </div>
+                <div class="nw-mb-4">
+                    <label class="nw-font-medium nw-text-xs nw-uppercase" for="passwort" id="passwortLabel">
+                        Passwort*
+                    </label>
+                    <div class="nw-relative">
+                        <div class="nw-absolute nw-right-2 nw-top-3 nw-cursor-pointer nw-z-999 nw-m-auto">
+                            <div class="nw-relative">
+                        <span id="eye-icon" class="nw-mr-2" onclick="passwordToggle();">
+                            <img id="eye-img" class="nw-w-4 nw-h-4 nw-overflow-clip-margin-content-box nw-overflow-clip"
+                                 src="/images/eye.svg">
+                        </span>
+                            </div>
+                        </div>
+                        <input
+                            class=" nw-formfield
+                                nw-w-full
+                                nw-px-2
+                                nw-py-1.5
+                                nw-mx-auto
+                                nw-inline-block
+                                nw-border-2
+                                nw-border-solid
+                                nw-rounded
+                                nw-text-base
+                                nw-box-border
+                                nw-cursor-pointer"
+                            type="password"
+                            placeholder="Mindestlänge 6 Zeichen"
+                            name=""
+                            id="passwort"
+                        />
+                    </div>
+                </div>
+
+                <div class="nw-mb-4">
+                    <label
+                        class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+          "
+                        for="anrede"
+                    >Anrede*</label
+                    >
+                    <select
+                        class="
+            nw-formfield
+            nw-w-full
+            nw-px-1
+            nw-py-1
+            nw-mx-auto
+            nw-text-base
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+                        id="anrede"
+                        name=""
+                    >
+                        <option value="" disabled selected hidden>Bitte wählen</option>
+                        <option value="herr">Herr</option>
+                        <option value="frau">Frau</option>
+                    </select>
+                </div>
+                <div class="nw-mb-4">
+                    <label
+                        class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+          "
+                        for="vname"
+                    >Vorname*</label
+                    >
+                    <input
+                        class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-text-base
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+                        type="text"
+                        placeholder=""
+                        name=""
+                        id="vname"
+                    />
+                </div>
+
+                <div class="nw-mb-4">
+                    <label
+                        class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+          "
+                        for="nname"
+                    >Nachname*</label
+                    >
+                    <input
+                        class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-text-base
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+                        type="text"
+                        placeholder=""
+                        name=""
+                        id="nname"
+                    />
+                </div>
+
+                <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 md:nw-gap-2">
+                    <div class="nw-col-span-2">
+                        <div class="nw-mb-4">
+                            <label
+                                class="
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+              "
+                                for="strasse"
+                            >Straße</label
+                            >
+                            <input
+                                class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-base
+                nw-box-border
+                nw-cursor-pointer
+              "
+                                type="text"
+                                placeholder=""
+                                name=""
+                                id="strasse"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="nw-mb-4">
+                            <label
+                                class="
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+              "
+                                for="hnummer"
+                            >Hausnummer</label
+                            >
+                            <input
+                                class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-base
+                nw-box-border
+                nw-cursor-pointer
+              "
+                                type="text"
+                                placeholder=""
+                                name=""
+                                id="hnummer"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 md:nw-gap-2">
+                    <div>
+                        <div class="nw-mb-4">
+                            <label
+                                class="
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+              "
+                                for="plz"
+                            >PLZ*</label
+                            >
+                            <input
+                                class="
+                nw-formfield
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-base
+                nw-box-border
+                nw-cursor-pointer
+              "
+                                type="text"
+                                placeholder=""
+                                name=""
+                                id="plz"
+                            />
+                        </div>
+                    </div>
+                    <div class="nw-col-span-2">
+                        <div class="nw-mb-4">
+                            <label
+                                class="
+                nw-font-medium
+                nw-text-xs
+                nw-uppercase
+              "
+                                for="ort"
+                            >Ort</label
+                            >
+                            <input
+                                class="
+                nw-w-full
+                nw-px-2
+                nw-py-1.5
+                nw-mx-auto
+                nw-inline-block
+                nw-border-2
+                nw-border-solid
+                nw-rounded
+                nw-text-base
+                nw-box-border
+                nw-cursor-pointer
+              "
+                                type="text"
+                                placeholder=""
+                                name=""
+                                id="ort"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="nw-mb-6">
+                    <label
+                        class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+          "
+                        for="land1"
+                    >Land</label
+                    >
+                    <select
+                        class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-1
+            nw-mx-auto
+            nw-text-base
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-base
+            nw-box-border
+            nw-cursor-pointer
+          "
+                        type="text"
+                        placeholder=""
+                        name=""
+                        id="land1"
+                    >
+                        <option value="Deutschland">Deutschland</option>
+                        <option value="herr">Herr</option>
+                        <option value="frau">Frau</option>
+                    </select>
+                </div>
+
+
+                <div class="nw-text-xs nw-mb-6">
+                    <div class="nw-uppercase nw-font-medium nw-mb-6">*PFLICHTFELDER</div>
+                    <div class="nw-font-bold">Ich erhalte durch die Registrierung die oben beschriebenen Vorteile.</div>
+                    <div>Im Gegenzug stelle ich dem Zeitungsverlag Neue Westfälische GmbH & Co. KG meine E-Mail-Adresse
+                        zum Versand redaktioneller
+                        Newsletter und zur Information über ihre interessanten NW-Verlagsprodukte und -angebote
+                        (Zeitungen, Zeitschriften, Abo, Leserreisen, Leservorteile,
+                        NW-Karte, Gewinnspiele) auch durch ihre Dienstleister zur Verfügung. Dies wird ausdrücklich als
+                        vertragliche Gegenleistung für das
+                        zur Verfügung gestellte Angebot vereinbart. Eine Weitergabe Ihrer personenbezogenen Daten an
+                        Dritte findet nicht statt. Rechtsgrundlage
+                        für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO. Ich habe jederzeit ohne Angabe von
+                        Gründen per E-Mail an datenschutz@nw.de oder in
+                        Textform an Zeitungsverlag Neue Westfälische GmbH & Co. KG, Abteilung Datenschutz, Niedernstraße
+                        21-27, 33602 Bielefeld die Möglichkeit,
+                        diesen Vertrag zu beenden, sodass damit die oben beschriebene Leistung,
+                        als auch die Gegenleistung (werbliche Ansprache per E-Mail) entfällt.
+                    </div>
+                </div>
+                <div class="nw-mb-2 nw-flex">
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="checked-demo"
+                            id="checkCondition1"
+                            class="
+              nw-form-tick
+              nw-border
+              nw-rounded-sm
+              nw-nw-border-gray-300
+              nw-appearance-none
+              nw-cursor-pointer
+              nw-h-3
+              nw-w-3
+              checked:nw-bg-gray-600
+              focus:outline-none
+            "
+                            onclick="checkFunction()"
+                        />
+                    </div>
+                    <div>
+                        <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1 nw-mb-3">
+            <span
+                class="
+                nw-pr-6
+                nw-text-gray-700
+                nw-text-xs
+                nw-text-left
+                nw-opacity-100
+              "
+            >
+                 Ich stimme den   <a href="#" class="nw-text-red-500 hover:nw-underline">Allgemeinen Geschäftsbedingungen</a> der Neuen Westfälischen zu.
+            </span>
+                        </label>
+                    </div>
+                </div>
+                <label class="class=nw-text-gray-500 nw-taxt-base nw-font-bold" for="answer">Sicherheitsabfrage
+                </label>
+                <input class=" nw-mb-4 nw-mt-2 nw-appearance-none nw-bg-transparent nw-border nw-text-base nw-text-center
+                     nw-text-gray-900 nw-rounded nw-px-2 nw-py-1 nw-leading-tight focus:nw-outline-none"
+                       id="answer"
+                       name="answer" placeholder="Ergebnis Sicherheitsabfrage" required>
+                <div class="nw-text-xs nw-font-medium nw-mb-2">
+                    Bitte beachten Sie unsere <a href="#"
+                                                 class="nw-text-red-500 hover:nw-underline">Datenschutzhinweise</a>.
+                </div>
+
+                <input
+                    disabled
+                    id="registerButton"
+                    class="
+          nw-w-full
+          nw-px-8
+          nw-py-1
+          nw-mx-auto
+          nw-my-1
+          nw-inline-block
+          nw-rounded
+          nw-text-base
+          nw-font-bold
+          nw-text-white
+          nw-cursor-pointer
+          focus:nw-bg-red-700
+          disabled:nw-bg-red-100
+        "
+                    type="button"
+                    value="Registrieren"
+                    onclick="onClickRegistrieren(); return false;"
+                />
+            </form>
+        </div>
+    </div>
+    <div class="nw-p-6 nw-rounded-md nw-bg-white md:nw-max-w-md nw-mx-auto nw-mt-4">
+        <p class="nw-font-bold nw-text-md nw-pb-6">Sie haben Fragen zu Ihrer Anmeldung oder Registrierung?</p>
+        <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-4">
+            <div class="nw-font-medium">
+                <p class="nw-text-gray-600 nw-uppercase nw-font-bold">KONTAKT</p>
+                <p>Tel.: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-600">(0521) 555 800</a>
+                </p>
+                <p>E-Mail: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-600 nw-underline">nwplus@nw.de</a>
+                </p>
+            </div>
+            <div class="nw-font-medium">
+                <p class="nw-text-gray-600 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
+                <p>Mo - Fr: 6 - 10 Uhr <br>
+                    Sa: 6 - 13 Uhr <br>
+                    an Feiertagen: 7 - 13 Uhr<br>
+                    (außer Weihnachten und Ostern)</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    function checkFunction() {
+        var checkBox1 = document.getElementById('checkCondition1');
+        var bRegister = document.getElementById('registerButton');
+
+        if (
+            checkBox1.checked == true) {
+            bRegister.disabled = false;
+            bRegister.style.backgroundColor = '#D20A11';
+        } else {
+            bRegister.disabled = true;
+            bRegister.style.backgroundColor = '#E1B9BA';
+        }
+    }
+
+    var answerInput = document.getElementById('answer');
+    var registerButton = document.getElementById('registerButton');
+
+    var number1 = Math.floor(Math.random() * 10) + 1;
+    var number2 = Math.floor(Math.random() * 10) + 1;
+    var sumOfTheNumbers = number1 + number2;
+    var questionLabel = document.querySelector('label[for="answer"]');
+    questionLabel.innerHTML = "<span class='nw-text-gray-500 nw-taxt-base nw-font-bold' >Sicherheitsabfrage </span> <span class='nw-text-red-500'>*</span> <br> " + number1 + " + " + number2 + " = ";
+
+    answerInput.addEventListener('input', checkSecurityAnswer);
+
+    function checkSecurityAnswer() {
+        var securityAnswer = parseInt(answerInput.value);
+
+        if (securityAnswer === sumOfTheNumbers) {
+            registerButton.disabled = false;
+        } else {
+            registerButton.disabled = true;
+        }
+    }
+
+    function onClickRegistrieren() {
+        var valid = Validator();
+        var securityAnswer = parseInt(answerInput.value);
+
+        if (valid && securityAnswer === sumOfTheNumbers) {
+            alert('ok');
+        }
+    }
+
+    let array_input = document.getElementsByClassName('nw-formfield');
+
+    /*     function Validator() {
+            var valid = true;
+            Array.prototype.forEach.call(array_input, x => {
+                let label = x.previousElementSibling;
+                if (x.value === '') {
+                    valid = false;
+                    x.classList.add('nw-border-red-500');
+                    label.classList.add('nw-text-red-500');
+                } else {
+                    x.classList.remove('nw-border-red-500');
+                    label.classList.remove('nw-text-red-500');
+                }
+            });
+
+            return valid;
+        }
+
+        Array.prototype.forEach.call(array_input, x => {
+            x.onclick = function () {
+                x.classList.remove('nw-border-red-500');
+                x.previousElementSibling.classList.remove('nw-text-red-500');
+            };
+        }); */
+    /*
+        function Validator() {
+            var valid = true;
+            Array.prototype.forEach.call(array_input, x => {
+                const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
+                if (x.value === '') {
+                    valid = false;
+                    x.classList.add('nw-border-red-500');
+                    label.classList.add('nw-text-red-500');
+                } else {
+                    x.classList.remove('nw-border-red-500');
+                    label.classList.remove('nw-text-red-500');
+                }
+            });
+
+            var dangerAlert = document.getElementById('dangerAlert');
+            if (valid) {
+                dangerAlert.classList.add('nw-hidden');
+            } else {
+                dangerAlert.classList.remove('nw-hidden');
+            }
+
+            return valid;
+        }
+
+        Array.prototype.forEach.call(array_input, x => {
+            x.onclick = function () {
+                x.classList.remove('nw-border-red-500');
+                const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
+                label.classList.remove('nw-text-red-500');
+
+                var dangerAlert = document.getElementById('dangerAlert');
+                dangerAlert.classList.add('nw-hidden');
+            };
+        }); */
+
+
+    function Validator() {
+        var eyeIcon = document.querySelector("#eye-img");
+        var passwordInput = document.getElementById("passwort");
+
+        passwordInput.setAttribute("type", "password");
+        eyeIcon.setAttribute("src", "/images/eye.svg");
+        var valid = true;
+        Array.prototype.forEach.call(array_input, x => {
+            const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
+            if (x.value === '') {
+                valid = false;
+                x.classList.add('nw-border-red-500');
+                label.classList.add('nw-text-red-500');
+            } else {
+                x.classList.remove('nw-border-red-500');
+                label.classList.remove('nw-text-red-500');
+            }
+        });
+
+        var dangerAlert = document.getElementById('dangerAlert');
+        if (valid) {
+            dangerAlert.classList.add('nw-hidden');
+        } else {
+            dangerAlert.classList.remove('nw-hidden');
+            dangerAlert.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+
+        return valid;
+    }
+
+    Array.prototype.forEach.call(array_input, x => {
+        x.onclick = function () {
+            x.classList.remove('nw-border-red-500');
+            const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
+            label.classList.remove('nw-text-red-500');
+
+            var dangerAlert = document.getElementById('dangerAlert');
+            dangerAlert.classList.add('nw-hidden');
+        };
+    });
+
+
+    function passwordToggle() {
+        var passwordField = document.getElementById("passwort");
+        var eyeIcon = document.getElementById("eye-img");
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            eyeIcon.src = '/images/eye-slash.svg';
+        } else {
+            passwordField.type = "password";
+            eyeIcon.src = '/images/eye.svg';
+        }
+    }
+</script>

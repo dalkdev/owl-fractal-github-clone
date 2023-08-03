@@ -1,0 +1,420 @@
+<div class="nw-bg-white nw-pb-4 nw-mx-0 nw-px-4 md:nw-px-48">
+    <div>
+        <p
+            class="
+        nw-text-left
+        nw-text-md
+        nw-font-bold
+        nw-opacity-100
+        nw-text-black
+        nw-pt-4
+        nw-pb-1
+        nw-tracking-normal
+      "
+        >
+            Zugang für den Anzeigen-Service erstellen
+        </p>
+    </div>
+
+    <div>
+        <p
+            class="
+        nw-text-left
+        nw-text-base
+        nw-font-medium
+        nw-opacity-100
+        nw-text-black
+        nw-py-1
+        nw-tracking-normal
+      "
+        >
+            Ihre Daten
+        </p>
+    </div>
+    <div>
+        <form action="" id="myForm">
+            <!-- vorname-->
+            <div class="nw-mb-4">
+                <label
+                    class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+                    for=""
+                >Vorname</label
+                >
+                <input
+                    class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-text-base
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+                    type="text"
+                    placeholder=""
+                    name=""
+                    id="vname"
+                />
+                <p
+                    id="vnameT"
+                    class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-hidden
+          "
+                >
+                    Bitte Vorname eingeben
+                </p>
+            </div>
+
+            <!-- Nachname-->
+            <div class="nw-mb-4">
+                <label
+                    class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+                    for=""
+                >Nachname</label
+                >
+                <input
+                    class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-text-base
+            nw-border-solid
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+                    type="text"
+                    placeholder=""
+                    name=""
+                    id="nname"
+                />
+                <p
+                    id="nnameT"
+                    class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-hidden
+          "
+                >
+                    Bitte Nachname eingeben
+                </p>
+            </div>
+            <!--email-->
+            <div class="nw-mb-4">
+                <label
+                    class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+                    for=""
+                >E-Mail</label
+                >
+                <input
+                    class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-base
+            nw-box-border
+            nw-cursor-pointer
+          "
+                    type="email"
+                    placeholder=""
+                    name=""
+                    id="eMail"
+                />
+                <p
+                    id="eMailT"
+                    class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-hidden
+          "
+                >
+                    Bitte E-Mail eingeben
+                </p>
+            </div>
+
+            <!-- Passwort-->
+            <div class="nw-mb-2">
+                <label
+                    class="
+            nw-font-medium
+            nw-text-xs
+            nw-uppercase
+            nw-text-black
+            nw-tracking-normal
+          "
+                    for=""
+                >Passwort</label
+                >
+                <input
+                    class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-1.5
+            nw-mx-auto
+            nw-inline-block
+            nw-border-2
+            nw-border-solid
+            nw-rounded
+            nw-text-base
+            nw-box-border
+            nw-cursor-pointer
+          "
+                    type="password"
+                    placeholder="Ihr Passwort muss min. 6 Zeichen lang sein"
+                    name=""
+                    id="passwort"
+                />
+                <p
+                    id="passwortT"
+                    class="
+            nw-text-red-500
+            nw-text-xs
+            nw-font-medium
+            nw-tracking-normal
+            nw-hidden
+          "
+                >
+                    Bitte Passwort eingeben
+                </p>
+            </div>
+            <!-- Conditions-->
+            <div class="nw-mb-2 nw-mt-4 nw-flex">
+                <div>
+                    <input
+                        type="checkbox"
+                        name="checked-demo"
+                        id="checkCondition1"
+                        class="
+              nw-form-tick
+              nw-border
+              nw-rounded-sm
+              nw-nw-border-gray-300
+              nw-appearance-none
+              nw-cursor-pointer
+              nw-h-3
+              nw-w-3
+              checked:nw-bg-gray-600
+              focus:outline-none
+            "
+                        onclick="checkFunction()"
+                    />
+                </div>
+                <div>
+                    <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
+            <span
+                class="
+                nw-pr-6
+                nw-text-gray-700
+                nw-text-xs
+                nw-font-normal
+                nw-text-left
+                nw-tracking-normal
+                nw-opacity-100
+              "
+            >
+                {{condition1}}
+            </span>
+                    </label>
+                </div>
+            </div>
+            <div class="nw-mt-1 nw-mb-4 nw-flex">
+                <div>
+                    <input
+                        type="checkbox"
+                        name="checked-demo"
+                        id="checkCondition2"
+                        class="
+              nw-form-tick
+              nw-border
+              nw-rounded-sm
+              nw-nw-border-gray-300
+              nw-appearance-none
+              nw-cursor-pointer
+              nw-h-3
+              nw-w-3
+              checked:nw-bg-gray-600
+              focus:outline-none
+            "
+                        onclick="checkFunction()"
+                    />
+                </div>
+                <div>
+                    <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
+            <span
+                class="
+                nw-pr-6
+                nw-text-gray-700
+                nw-text-xs
+                nw-font-normal
+                nw-text-left
+                nw-tracking-normal
+                nw-opacity-100
+              "
+            >
+                {{condition2}}</span
+            >
+                    </label>
+                </div>
+            </div>
+            <label class="class='nw-text-gray-500 nw-taxt-base nw-font-bold'" for="answer">Sicherheitsabfrage <span
+                class="nw-text-red-500">*</span>
+            </label>
+            <input class=" nw-mb-4 nw-appearance-none nw-bg-transparent nw-border-b-2 nw-text-base nw-text-center
+            nw-text-gray-900 nw-mr-3  nw-px-2 nw-leading-tight focus:nw-outline-none"
+                   id="answer"
+                   name="answer" placeholder="Ergebnis" required>
+            <div class=" nw-text-sm nw-mb-4">
+                Bitte beachten Sie unsere <a class="hover:nw-text-red-500" href="#">Datenschutzhinweise</a>.
+            </div>
+            <input
+                type="submit"
+                disabled
+                id="registerButton"
+                class="
+          nw-w-full
+          nw-px-8
+          nw-py-1
+          nw-mx-auto
+          nw-my-1
+          nw-inline-block
+          nw-rounded
+          nw-text-base
+          nw-font-bold
+          nw-text-white
+          nw-cursor-pointer
+          focus:nw-bg-red-700
+          disabled:nw-bg-red-100
+        "
+                type="button"
+                value="Registrieren"
+                onclick="onClickRegistrieren(); return false;"
+            />
+        </form>
+    </div>
+</div>
+
+<script>
+    function checkFunction() {
+        var checkBox1 = document.getElementById('checkCondition1');
+        var checkBox2 = document.getElementById('checkCondition2');
+        var bRegister = document.getElementById('registerButton');
+
+        if (
+            checkBox1.checked == true &&
+            (checkBox2.checked == true || checkBox2.checked == false)
+        ) {
+            bRegister.disabled = false;
+            bRegister.style.backgroundColor = '#D20A11';
+        } else {
+            bRegister.disabled = true;
+            bRegister.style.backgroundColor = '#E1B9BA';
+        }
+    }
+
+    var answerInput = document.getElementById('answer');
+    var registerButton = document.getElementById('registerButton');
+
+    var number1 = Math.floor(Math.random() * 10) + 1;
+    var number2 = Math.floor(Math.random() * 10) + 1;
+    var sumOfTheNumbers = number1 + number2;
+    var questionLabel = document.querySelector('label[for="answer"]');
+    questionLabel.innerHTML = "<span class='nw-text-gray-500 nw-taxt-base nw-font-bold' >Sicherheitsabfrage </span> <span class='nw-text-red-500'>*</span>  " + number1 + " + " + number2 + " = ";
+
+    answerInput.addEventListener('input', checkSecurityAnswer);
+
+    function checkSecurityAnswer() {
+        var securityAnswer = parseInt(answerInput.value);
+
+        if (securityAnswer === sumOfTheNumbers) {
+            registerButton.disabled = false;
+        } else {
+            registerButton.disabled = true;
+        }
+    }
+
+    function onClickRegistrieren() {
+        var valid = Validator();
+        var securityAnswer = parseInt(answerInput.value);
+
+        if (valid && securityAnswer === sumOfTheNumbers) {
+            alert('ok');
+        }
+    }
+
+    let array_input = document.getElementsByClassName('nw-formfield');
+
+    function Validator() {
+        var valid = true;
+        Array.prototype.forEach.call(array_input, x => {
+            if (x.value == '') {
+                valid = false;
+                x.classList.add('nw-border-red-500');
+                x.nextElementSibling.style.display = 'block';
+            } else {
+                x.classList.remove('nw-border-red-500');
+                x.nextElementSibling.style.display = 'none';
+            }
+        });
+        return valid;
+    }
+
+    Array.prototype.forEach.call(array_input, x => {
+        x.onclick = function () {
+            x.classList.remove('nw-border-red-500');
+            x.nextElementSibling.style.display = 'none';
+        };
+    });
+    /* var form = document.querySelector('form');
+    var answerInput = document.getElementById('answer');
+    var sum = document.getElementById('registerButton');
+
+    var number1 = Math.floor(Math.random() * 10) + 1;
+    var number2 = Math.floor(Math.random() * 10) + 1;
+    var sumOfTheNumbers = number1 + number2;
+    var questionLabel = document.querySelector('label[for="answer"]');
+    questionLabel.textContent = "Sicherheitsabfrage* " + number1 + " + " + number2 + " = ";
+ */
+</script>
+

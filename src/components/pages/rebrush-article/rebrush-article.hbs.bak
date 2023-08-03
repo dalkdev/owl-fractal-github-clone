@@ -1,0 +1,31 @@
+<div
+    class="nw-container"
+>
+    <div>
+        {{>@header-full--lokal}}
+    </div>
+    <!-- ads-header-->
+    <div class="sm:nw-pt-6">{{>@ads--header}}</div>
+    <!-- ads-header ende -->
+    <!-- banner author social icons -->
+    {{>@articleheader}}
+    <!-- banner author social icons ende-->
+    <!-- image mit button -->
+    <div class="nw-my-8">{{>@image--with-button}}</div>
+    {{>'@author'}}
+
+    <!-- image mit button ende -->
+    <!-- Text / ads/ Text /empfehlungen module and image rounded module mit Texte-->
+    <div class="article-detail-entry-content">
+        <div>
+            {{>@articletext}}
+        </div>
+    </div>
+    <div class="nw-px-6 nw-py-6 nw-text-md nw-w-5/6 nw-mx-auto">
+        <div class="md:nw-w-5/6">
+            {{>@kommentar (contextData "@kommentar")}}
+        </div>
+    </div>
+    <!-- Text/ ads/ Text ende/ Privacy Module mit Text Section , und Info-box / Link-liste/ download-liste/ Kommentare Module ende -->
+</div>
+{{>@footer (contextData '@footer') }}

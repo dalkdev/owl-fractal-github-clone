@@ -87,3 +87,26 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var submit = document.querySelector("button[type=submit]");
+        submit.addEventListener("click", function (event) {
+            event.preventDefault();
+            var email = document.getElementById("email-address").value;
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                if (request.readyState === XMLHttpRequest.DONE) {
+                    if (request.status === 200) {
+                        var response = request.responseText;
+                        console.log(response);
+                    } else {
+                        console.log("An error occurred.");
+                    }
+                }
+            };
+            console.log(email);
+        });
+    });
+</script>
