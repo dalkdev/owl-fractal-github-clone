@@ -56,14 +56,14 @@ module.exports = {
                 montserrat: ['Montserrat', 'sans-serif'],
             },
             fontSize: {
-                xs: '0.75rem',
-                sm: '0.875rem',
-                base: '1rem',
-                md: '1.125rem',
-                lg: '1.25rem',
-                xl: '1.5rem',
-                '2xl': '1.75rem',
-                '3xl': '2rem',
+            //     xs: '0.75rem',
+            //     sm: '0.875rem',
+            //     base: '1rem',
+                 md: '1.125rem'
+            //     lg: '1.25rem',
+            //     xl: '1.5rem',
+            //     '2xl': '1.75rem',
+            //     '3xl': '2rem',
             },
             width: {
                 '200px': '12.5rem',

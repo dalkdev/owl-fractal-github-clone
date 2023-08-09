@@ -9,6 +9,7 @@
 
     .nw-reco-image {
       @apply nw-object-cover nw-object-left;
+      min-width: 116px;
     }
   }
 
