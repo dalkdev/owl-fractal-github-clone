@@ -1,15 +1,15 @@
 #nw-reco-box {
-  @apply nw-grid nw-grid-cols-1 md:nw-grid-cols-2 lg:nw-grid-cols-3 nw-gap-2 md:nw-gap-0;
+  @apply nw-grid nw-grid-cols-1 sm:nw-grid-cols-2 md:nw-grid-cols-3 nw-gap-2 md:nw-gap-0;
   .nw-reco-item {
     @apply nw-flex nw-flex-row md:nw-flex-col nw-max-w-full lg:nw-max-w-full nw-max-h-full;
   }
 
   .nw-reco-image-container {
-    @apply nw-w-44 md:nw-w-full;
 
     .nw-reco-image {
-      @apply nw-object-cover nw-object-left;
-      min-width: 116px;
+      @apply nw-object-cover nw-object-left nw-w-28 md:nw-w-72 lg:nw-w-80 nw-aspect-video;
+      min-width: 7rem;
+
     }
   }
 
@@ -21,10 +21,7 @@
     color: #333;
     font-weight: 600;
     hyphens: auto;
-    line-height: 24px;
-    max-width: 304px;
-    max-height: 176px;
-    @apply nw-no-underline nw-text-black nw-mt-0 md:nw-mt-2 nw-ml-2 md:nw-ml-0 nw-text-base md:nw-text-lg;
+    @apply nw-no-underline nw-text-black nw-mt-0 md:nw-mt-2 nw-ml-2 md:nw-ml-0 nw-text-lg md:nw-text-2xl;
 
     img {
       display: inline-block;
@@ -53,5 +50,5 @@
 }
 
 .nw-reco-caption-rebrush {
-  @apply nw-font-bold nw-text-md md:nw-text-lg nw-leading-tight nw-text-base md:nw-text-lg;
+  @apply nw-font-bold nw-text-md md:nw-text-lg nw-leading-tight nw-text-lg md:nw-text-2xl;
 }

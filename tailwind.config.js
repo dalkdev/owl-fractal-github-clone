@@ -91,5 +91,5 @@ module.exports = {
             borderColor: ['checked'],
         },
     },
-    plugins: [require('@tailwindcss/aspect-ratio')],
+    //plugins: [require('@tailwindcss/aspect-ratio')],
 };
