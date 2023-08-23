@@ -1,21 +1,22 @@
 <div id="newarticle">
+    <div class="nw-header-container">
+        {{>@header-full--lokal}}
+    </div>
+    {{>@breadcrumb}}
+    </div>
     <div class="nw-container">
         <div>
-            {{>@header-full--lokal}}
-        </div>
-        <!-- ads-header-->
-        <div class="sm:nw-pt-6">{{>@ads--header}}</div>
-        <!-- ads-header ende -->
-        <!-- banner author social icons -->
-        {{>@articleheader}}
-        <!-- banner author social icons ende-->
-        <!-- image mit button -->
-        <div class="nw-my-8">{{>@pano-image}}</div>
-        <!-- image mit button ende -->
-        <!-- Text / ads/ Text /empfehlungen module and image rounded module mit Texte-->
-        <div class="article-detail-entry-content">
-            <div>
-                {{>@articletext}}
+            <!-- banner author social icons -->
+            {{>@articleheader}}
+            <!-- banner author social icons ende-->
+            <!-- image mit button -->
+            <div class="nw-my-8">{{>@pano-image}}</div>
+            <!-- image mit button ende -->
+            <!-- Text / ads/ Text /empfehlungen module and image rounded module mit Texte-->
+            <div class="article-detail-entry-content">
+                <div>
+                    {{>@articletext}}
+                </div>
             </div>
         </div>
     </div>
