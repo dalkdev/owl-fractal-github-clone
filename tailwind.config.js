@@ -56,14 +56,7 @@ module.exports = {
                 montserrat: ['Montserrat', 'sans-serif'],
             },
             fontSize: {
-            //     xs: '0.75rem',
-            //     sm: '0.875rem',
-            //     base: '1rem',
                  md: '1.125rem'
-            //     lg: '1.25rem',
-            //     xl: '1.5rem',
-            //     '2xl': '1.75rem',
-            //     '3xl': '2rem',
             },
             width: {
                 '200px': '12.5rem',
@@ -72,7 +65,7 @@ module.exports = {
                 '1/10': '10%',
                 '2/10': '20%',
                 '3/10': '30%',
-                '4/10': '40%',
+                   '4/10': '40%',
                 '5/10': '50%',
                 '6/10': '60%',
                 '7/10': '70%',
@@ -91,5 +84,5 @@ module.exports = {
             borderColor: ['checked'],
         },
     },
-    //plugins: [require('@tailwindcss/aspect-ratio')],
+    plugins: [require('@tailwindcss/aspect-ratio')],
 };

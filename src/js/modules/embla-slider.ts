@@ -16,10 +16,12 @@ export function initLightBox() {
     const closeButton = document.querySelector('.close-lightbox') as HTMLElement;
     const prevButton = document.querySelector('.prevButton') as HTMLElement;
     const nextButton = document.querySelector('.nextButton') as HTMLElement;
+    const stickyMenu = document.querySelector('#nw-sticky-container') as HTMLElement;
     Array.from(sliderImages).forEach((sliderImage) => {
         sliderImage.addEventListener('click', () => {
-            console.log(isScrolling);
             if (isScrolling === true) return;
+            stickyMenu.style.display = 'none';
+            document.body.style.overflow = 'hidden';
             const idx = Array.from(sliderImages).indexOf(sliderImage);
             currentSlide(idx + 1);
             showLightBox('light1');
@@ -27,6 +29,8 @@ export function initLightBox() {
     });
     closeButton.addEventListener('click', () => {
         closeLightbox('light1');
+        stickyMenu.style.display = 'inline-block';
+        document.body.style.overflow = 'visible';
     });
     prevButton.addEventListener('click', () => {
         showSlides(slideIndex -= 1);
