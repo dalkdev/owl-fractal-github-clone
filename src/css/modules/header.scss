@@ -1,3 +1,19 @@
+#nw-menu {
+  @apply  nw-mb-0 md:nw-mb-4;
+}
+
+#nw-logo-section {
+  @apply nw-shadow-md;
+  background-color: white!important;
+}
+
+#nw-menu-section {
+  @apply nw-shadow-md;
+  border-radius: 0 0 .375rem .375rem;
+  background-color: white!important;
+
+}
+
 .nw-newsticker-chevron {
   position: relative;
   top: 18px;

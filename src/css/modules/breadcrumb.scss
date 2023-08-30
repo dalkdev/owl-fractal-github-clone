@@ -1,18 +1,15 @@
 .nw-breadcrumb-container {
-  @apply nw-px-4 nw-py-4 md:nw-py-8 nw-flex nw-flex-row nw-overflow-x-scroll nw-overflow-y-hidden md:nw-overflow-x-hidden nw-whitespace-nowrap;
+  @apply nw-px-4 nw-py-4 md:nw-pb-8 md:nw-pt-4 nw-flex nw-flex-row nw-overflow-x-scroll nw-overflow-y-hidden md:nw-overflow-x-hidden nw-whitespace-nowrap;
 
   ol {
     li {
-      @apply nw-pl-8;
+      @apply nw-pl-8 nw-text-gray-600 nw-text-sm;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%234d4d4d' class='nw-w-4 nw-h-4'%3E%3Cpath fill-rule='evenodd' d='M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z' clip-rule='evenodd' /%3E%3C/svg%3E%0A");
       background-repeat: no-repeat;
       background-position: 8px center;
       background-size: 16px;
       display: inline-block;
 
-      a {
-        @apply nw-text-gray-600 nw-text-sm;
-      }
     }
   }
 }
