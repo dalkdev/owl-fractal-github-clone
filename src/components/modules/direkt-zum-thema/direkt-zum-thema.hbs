@@ -1,0 +1,98 @@
+<style>
+    .content {
+        min-width: 140px;
+    }
+
+    .dropdown:hover .content {
+        display: block;
+    }
+</style>
+<div class="nw-px-6 nw-bg-white nw-py-9 nw-rounded-md ">
+    <div>
+        <p
+            class="
+        nw-text-left
+        nw-uppercase
+        nw-text-3xl
+        nw-font-bold
+        nw-pb-4">
+            {{themen-title}}
+        </p>
+    </div>
+    <div class=" nw-mt-1">
+        <a
+            href="#"
+            class=" nw-inline-block nw-border nw-border-gray-200
+            nw-bg-gray-100 nw-border-solid nw-rounded-3xl
+            nw-pt-1.5 nw-pb-1.5 nw-px-3 nw-font-bold
+            nw-text-sm nw-text-left nw-mt-1 hover:nw-border-teal-500">
+            Regionalliga
+        </a>
+        <a
+            href="#"
+            class=" nw-inline-block nw-border nw-border-gray-200
+                    nw-bg-gray-100 nw-border-solid nw-rounded-3xl
+                    nw-pt-1.5 nw-pb-1.5 nw-px-3 nw-font-bold
+                    nw-text-sm nw-text-left nw-mt-1 hover:nw-border-teal-500">
+            Oberliga
+        </a>
+        <a href="#"
+           class=" nw-inline-block nw-border nw-border-gray-200
+            nw-bg-gray-100 nw-border-solid nw-rounded-3xl
+            nw-pt-1.5 nw-pb-1.5 nw-px-3 nw-font-bold
+            nw-text-sm nw-text-left nw-mt-1 hover:nw-border-teal-500">
+            Landesliga
+        </a>
+        <a href="#"
+           class=" nw-inline-block nw-border nw-border-gray-200
+            nw-bg-gray-100 nw-border-solid nw-rounded-3xl
+            nw-pt-1.5 nw-pb-1.5 nw-px-3 nw-font-bold
+            nw-text-sm nw-text-left nw-mt-1 hover:nw-border-teal-500">
+            Westfalenliga
+        </a>
+        <div class="dropdown nw-inline-block nw-relative">
+            <button class="
+                    nw-flex nw-border nw-border-gray-200
+                    nw-bg-gray-100  nw-border-solid nw-rounded-3xl
+                    nw-pt-1.5 nw-pb-1.5 nw-px-3 nw-font-bold nw-text-sm
+                    nw-text-black nw-text-left nw-mt-1 hover:nw-border-teal-500">
+                Bizirksliga
+                <svg class="fill-current nw-h-4 nw-w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+            </button>
+            <div class="content nw-absolute nw-hidden hover:nw-block nw-shadow-md nw-z-10 nw-bg-gray-200 nw-rounded-md">
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Staffel 1</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Staffel 2</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Staffel 3</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Staffel 13</a>
+            </div>
+        </div>
+        <div class="dropdown nw-inline-block nw-relative">
+            <button class="
+                    nw-flex nw-border nw-border-gray-200 nw-bg-gray-100
+                    nw-border-solid nw-rounded-3xl nw-pt-1.5 nw-pb-1.5
+                    nw-px-3 nw-font-bold nw-text-sm nw-text-black nw-text-left
+                    nw-mt-1 hover:nw-border-teal-500">
+                Kreisfußball
+                <svg class="fill-current nw-h-4 nw-w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+            </button>
+            <div class="content nw-absolute nw-hidden
+                        hover:nw-block nw-shadow-md nw-z-10
+                        nw-bg-gray-200 nw-rounded-md">
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Herford</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Minden</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Höxter</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Lemgo</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Detmold</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Paderborn</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Bielefeld</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Lübbecke</a>
+                <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Gütersloh</a>
+            </div>
+        </div>
+    </div>
+
+</div>

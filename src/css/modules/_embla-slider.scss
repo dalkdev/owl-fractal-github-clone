@@ -25,6 +25,43 @@
     }
   }
 
+  &.nw-lesepaten {
+    .embla__slide {
+      padding-right: 24px;
+    }
+
+    .embla__slide__inner {
+      border-style: none;
+    }
+
+    .embla__dot {
+      width: 12px;
+      height: 12px;
+    }
+
+    .embla__dot:after {
+      height: 12px;
+      border-radius: 8px;
+    }
+
+    .embla__dot.is-selected:after {
+      background-color: #4D4D4D;
+      opacity: 1;
+    }
+
+    .embla__dots {
+      padding-top: 24px;
+    }
+  }
+
+  &.first-lesepaten-slide {
+    .embla__slide {
+      &:last-child {
+        padding-right: 0 !important;
+      }
+    }
+  }
+
   &.nw-sport-news {
     .embla__dot {
       width: 13px;

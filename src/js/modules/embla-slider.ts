@@ -1,11 +1,11 @@
 import EmblaCarousel from 'embla-carousel';
+import {setupDotBtns, generateDotBtns, selectDotBtn} from './dotButtons';
 
 let isScrolling = false;
 
 export function initSliders() {
     const sliderWrapperNodes = document.querySelectorAll('.slider');
-
-
+    
     sliderWrapperNodes.forEach(sliderWrapperNode => {
         initSlider(sliderWrapperNode as HTMLElement);
     });
@@ -80,6 +80,7 @@ function initSlider(wrapperNode: HTMLElement) {
     const counterTotal = wrapperNode.querySelector('.slider--counter-total');
     const btnNext = wrapperNode.querySelector('.slider--button-next');
     const btnPrev = wrapperNode.querySelector('.slider--button-prev');
+    const dots = wrapperNode.querySelector('.embla__dots');
 
 
     const mainCarouselWrap = wrapperNode.querySelector('.embla--main-carousel');
@@ -87,7 +88,12 @@ function initSlider(wrapperNode: HTMLElement) {
     const mainCarousel = EmblaCarousel(mainCarouselView as HTMLElement, {
         dragFree: true,
         containScroll: 'trimSnaps',
-    })
+    });
+    const dotsArray = generateDotBtns(dots, mainCarousel);
+    const setSelectedDotBtn = selectDotBtn(dotsArray, mainCarousel);
+    setupDotBtns(dotsArray, mainCarousel);
+    mainCarousel.on('select', setSelectedDotBtn);
+    mainCarousel.on('init', setSelectedDotBtn);
     // Count the number of slides
     const BilderCount = mainCarousel.slideNodes().length;
 

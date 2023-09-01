@@ -1,7 +1,7 @@
 module.exports = {
     content: [
-            './src/components/**/*.hbs',
-            './src/components/**/*.json'
+        './src/components/**/*.hbs',
+        './src/components/**/*.json'
     ],
     darkMode: 'media', // or 'media' or 'class'
     prefix: 'nw-',
@@ -41,6 +41,7 @@ module.exports = {
                     '1-200': '#414B5C',
                     'erwinteaser-bg': '#1f114c',
                     'erwinteaser-font-big': '#9dcde3',
+                    'lesepaten-bg': '#F1F2F8',
                 },
                 blue: '#41B7CC',
                 hk: {
@@ -56,14 +57,8 @@ module.exports = {
                 montserrat: ['Montserrat', 'sans-serif'],
             },
             fontSize: {
-            //     xs: '0.75rem',
-            //     sm: '0.875rem',
-            //     base: '1rem',
-                 md: '1.125rem'
-            //     lg: '1.25rem',
-            //     xl: '1.5rem',
-            //     '2xl': '1.75rem',
-            //     '3xl': '2rem',
+                md: '1.125rem',
+                '2.5xl': '1.75rem',
             },
             width: {
                 '200px': '12.5rem',
@@ -78,6 +73,18 @@ module.exports = {
                 '7/10': '70%',
                 '8/10': '80%',
                 '9/10': '90%',
+                '1/12': '8.333333%',
+                '2/12': '16.666667%',
+                '3/12': '25%;',
+                '4/12': '33.333333%',
+                '5/12': '41.666667',
+                '6/12': '50%',
+                '7/12': '58.333333%',
+                '8/12': '66.666667',
+                '9/12': '75%',
+                '10/12': '83.333333%',
+                '11/12': '91.666667%',
+
             },
         },
     },

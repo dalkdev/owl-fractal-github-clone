@@ -23,7 +23,6 @@
 @use './modules/download';
 @use './modules/link';
 @use './modules/nw-plus-footer-collapse';
-@use './modules/news-app';
 @use './modules/lightbox';
 // has to be at the end to override certain properties
 @use 'general/a11y';
@@ -69,6 +68,12 @@ html {
 
     &::-webkit-scrollbar-thumb {
       background: #000000;
+    }
+  }
+
+  &-horizontal-lesepaten {
+    &::-webkit-scrollbar-thumb {
+      background: #999999;
     }
   }
 
