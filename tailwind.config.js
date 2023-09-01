@@ -57,12 +57,8 @@ module.exports = {
                 montserrat: ['Montserrat', 'sans-serif'],
             },
             fontSize: {
-<<<<<<< HEAD
-                 md: '1.125rem'
-=======
                 md: '1.125rem',
                 '2.5xl': '1.75rem',
->>>>>>> lesepaten_seite
             },
             width: {
                 '200px': '12.5rem',
@@ -71,7 +67,7 @@ module.exports = {
                 '1/10': '10%',
                 '2/10': '20%',
                 '3/10': '30%',
-                   '4/10': '40%',
+                '4/10': '40%',
                 '5/10': '50%',
                 '6/10': '60%',
                 '7/10': '70%',
