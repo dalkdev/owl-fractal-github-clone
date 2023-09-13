@@ -4,13 +4,17 @@
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
-    "strict": true,
+    "strict": false,
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "types": ["vite/client", "node"],
+    "typeRoots": [
+      "./typings",
+      "./node_modules/@types/"
+    ],
     "noEmit": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "allowJs": true

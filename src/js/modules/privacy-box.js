@@ -3,10 +3,15 @@ export function initPrivacybox() {
     privacyButtonHandler();
 
     function privacyButtonHandler() {
+        const togBtn = document.querySelector(".togBtn");
+
+        if (togBtn == undefined)
+            return;
+
         const socialCookieStatus = getCookie("social-accept");
         if (socialCookieStatus === "accept") {
             displayAndHideClassInPrivacy(".nw-small-privacy-box", ".nw-big-privacy-box");
-            document.querySelector(".togBtn").checked = true;
+            togBtn.checked = true;
             acceptSocialMedia();
         } else {
             displayAndHideClassInPrivacy(".nw-big-privacy-box", ".nw-small-privacy-box");
@@ -23,7 +28,12 @@ export function initPrivacybox() {
     }
 
     function acceptSocialMedia() {
-        document.querySelector(".togBtn").checked = true;
+        const togBtn = document.querySelector(".togBtn");
+
+        if (togBtn == undefined)
+            return;
+
+        togBtn.checked = true;
         displayAndHideClassInPrivacy(".nw-small-privacy-box", ".nw-big-privacy-box");
         const privacySocialReplacers = document.querySelectorAll(".privacy-social-replacer");
         privacySocialReplacers.forEach(function (replacer) {

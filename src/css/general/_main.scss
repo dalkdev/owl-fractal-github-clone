@@ -21,13 +21,18 @@ main#nw-container {
 
 div.nw-header-container,
 div.nw-breadcrumb-container,
-div.nw-container {
+div.nw-container,
+div.nw-footer-container {
   max-width: 1062px;
   @apply nw-mx-auto nw-rounded-b-md;
 }
 
+div.nw-footer-container {
+  @apply nw-rounded-b-none nw-rounded-t-md;
+}
+
 div.nw-container {
-  @apply nw-mb-4 nw-pb-4 nw-bg-white nw-shadow-md nw-rounded-md;
+  @apply nw-pb-4 nw-bg-white nw-shadow-md nw-rounded-md;
 }
 
 

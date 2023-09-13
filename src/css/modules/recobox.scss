@@ -1,5 +1,5 @@
 #nw-reco-box {
-  @apply nw-grid nw-grid-cols-1 sm:nw-grid-cols-2 md:nw-grid-cols-3 nw-gap-2 md:nw-gap-1;
+  @apply nw-grid nw-grid-cols-1 sm:nw-grid-cols-2 md:nw-grid-cols-3 nw-gap-2 md:nw-gap-5;
   .nw-reco-item {
     @apply nw-flex nw-flex-row md:nw-flex-col nw-max-w-full lg:nw-max-w-full nw-max-h-full;
   }
@@ -21,12 +21,16 @@
     color: #333;
     font-weight: 600;
     hyphens: auto;
-    @apply nw-no-underline nw-text-black nw-mt-0 md:nw-mt-2 nw-ml-2 md:nw-ml-0 nw-text-lg md:nw-text-2xl;
+    @apply nw-no-underline nw-text-black nw-pt-0 md:nw-pt-4 nw-ml-2 md:nw-ml-0 nw-text-lg md:nw-text-2xl;
 
     img {
       display: inline-block;
     }
   }
+}
+
+.nw-reco-headline {
+  @apply nw-flex nw-flex-row nw-justify-between md:nw-pt-4;
 }
 
 #nw-reco-box-rebrush {

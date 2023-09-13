@@ -3,8 +3,6 @@ export function initModalbox() {
     var openModalBtns = document.getElementsByClassName("nw-open-modal");
     var closeButton = document.getElementsByClassName("closeButton");
 
-    console.log(openModalBtns.length);
-
     for (let i = 0; i < openModalBtns.length; i++)
     {
         openModalBtns[i].addEventListener('click', () => openModal());

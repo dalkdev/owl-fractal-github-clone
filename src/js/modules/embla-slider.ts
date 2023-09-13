@@ -11,54 +11,6 @@ export function initSliders() {
     });
 }
 
-export function initLightBox() {
-    const sliderImages = document.querySelectorAll('.slider .embla__slide__img');
-    const closeButton = document.querySelector('.close-lightbox') as HTMLElement;
-    const prevButton = document.querySelector('.prevButton') as HTMLElement;
-    const nextButton = document.querySelector('.nextButton') as HTMLElement;
-    const stickyMenu = document.querySelector('#nw-sticky-container') as HTMLElement;
-    Array.from(sliderImages).forEach((sliderImage) => {
-        sliderImage.addEventListener('click', () => {
-            if (isScrolling === true) return;
-            stickyMenu.style.display = 'none';
-            document.body.style.overflow = 'hidden';
-            const idx = Array.from(sliderImages).indexOf(sliderImage);
-            currentSlide(idx + 1);
-            showLightBox('light1');
-        });
-    });
-    closeButton.addEventListener('click', () => {
-        closeLightbox('light1');
-        stickyMenu.style.display = 'inline-block';
-        document.body.style.overflow = 'visible';
-    });
-    prevButton.addEventListener('click', () => {
-        showSlides(slideIndex -= 1);
-    });
-
-    nextButton.addEventListener('click', () => {
-        showSlides(slideIndex += 1);
-    });
-}
-
-function showLightBox(id: string) {
-    const modal = document.getElementById(id);
-    if (modal) {
-        modal.style.display = 'block';
-    }
-}
-
-function closeLightbox(id: string) {
-    const element = document.getElementById(id);
-    if (element) {
-        element.style.display = 'none';
-    }
-}
-
-function currentSlide(n: number) {
-    showSlides(slideIndex = n);
-}
-
 let slideIndex = 1;
 
 function showSlides(n: number) {

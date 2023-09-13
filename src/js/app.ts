@@ -1,6 +1,5 @@
 import {initPolyfills} from './global/polyfills';
 import {initSliders} from './modules/embla-slider';
-import {initLightBox} from './modules/embla-slider';
 // eslint-disable-next-line no-unused-vars
 import {initNavigation} from './modules/embla-navigation';
 import {initNewsticker} from './modules/embla-newsticker';
@@ -10,6 +9,7 @@ import {initFAQ} from './modules/faqElement';
 import {initTransform} from './modules/kommentare';
 import {initPrivacybox} from "./modules/privacy-box";
 import {initModalbox} from "./modules/modal-box";
+import {initGLightBox} from "./modules/glightbox";
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
@@ -17,7 +17,6 @@ const preloadFunctions: Array<() => void> = [initPolyfills];
 // These will be called after DOMContentLoaded event
 const initializationFunctions: Array<() => void> = [
     initSliders,
-    initLightBox,
     initNavigation,
     initNewsticker,
     initBurgermenu,
@@ -26,6 +25,7 @@ const initializationFunctions: Array<() => void> = [
     initTransform,
     initPrivacybox,
     initModalbox,
+    initGLightBox
 ];
 
 preloadFunctions.forEach(initializationFunction => {

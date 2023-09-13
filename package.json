@@ -7,9 +7,10 @@
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "embla-carousel": "^4.5.3",
     "global-prefix": "*",
+    "install-with-types": "^0.1.2",
     "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^7.2.0",
-    "yarn": "*"
+    "yarn": "^1.22.19"
   },
   "engines": {
     "node": ">=14 < 15"
@@ -47,6 +48,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "glightbox": "^3.2.0",
     "husky": "^6.0.0",
     "lint-staged": ">=10",
     "moment": "^2.29.1",

@@ -3,12 +3,12 @@
 }
 
 #nw-logo-section {
-  @apply nw-shadow-md;
+  @apply md:nw-shadow-md;
   background-color: white!important;
 }
 
 #nw-menu-section {
-  @apply nw-shadow-md;
+  @apply md:nw-shadow-md;
   border-radius: 0 0 .375rem .375rem;
   background-color: white!important;
 
