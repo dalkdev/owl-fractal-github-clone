@@ -9,6 +9,7 @@ import {initFAQ} from './modules/faqElement';
 import {initTransform} from './modules/kommentare';
 import {initPrivacybox} from "./modules/privacy-box";
 import {initModalbox} from "./modules/modal-box";
+import {initDirektZumThema} from "./modules/direkt-zum-thema";
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
@@ -24,6 +25,7 @@ const initializationFunctions: Array<() => void> = [
     initTransform,
     initPrivacybox,
     initModalbox,
+    initDirektZumThema,
 //    initLightBox,
 ];
 
