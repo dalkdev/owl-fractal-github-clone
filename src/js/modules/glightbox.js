@@ -6,7 +6,6 @@ export function initGLightBox()
         selector: '.nw-gallery-lightbox',
         touchNavigation: true,
         loop: true,
-        autoplayVideos: true,
     });
 
     const articleImage = GLightbox({

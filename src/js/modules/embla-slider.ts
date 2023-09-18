@@ -1,8 +1,6 @@
 import EmblaCarousel from 'embla-carousel';
 import {setupDotBtns, generateDotBtns, selectDotBtn} from './dotButtons';
 
-let isScrolling = false;
-
 export function initSliders() {
     const sliderWrapperNodes = document.querySelectorAll('.slider');
     
@@ -37,7 +35,7 @@ function initSlider(wrapperNode: HTMLElement) {
     const btnNext = wrapperNode.querySelector('.slider--button-next');
     const btnPrev = wrapperNode.querySelector('.slider--button-prev');
     const dots = wrapperNode.querySelector('.embla__dots');
-
+    const gallery = document.querySelectorAll(".nw-gallery-lightbox");
 
     const mainCarouselWrap = wrapperNode.querySelector('.embla--main-carousel');
     const mainCarouselView = mainCarouselWrap?.querySelector('.embla__viewport');
@@ -60,13 +58,15 @@ function initSlider(wrapperNode: HTMLElement) {
     }
 
     mainCarousel.on('scroll', () => {
-        isScrolling = true;
+        gallery.forEach(function(el)  {
+            el.removeEventListener("click", preventClick);
+        })
     });
 
-    mainCarousel.on('settle', () => {
-        isScrolling = false;
-    });
-
+    function preventClick(e)
+    {
+        e.preventDefault();
+    }
 
     mainCarousel.on('init', () => {
         if (counterCurrent) {
