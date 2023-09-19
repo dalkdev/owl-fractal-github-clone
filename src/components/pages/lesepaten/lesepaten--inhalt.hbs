@@ -75,8 +75,6 @@
     <!-- -->
     <div
         class="
-        custom-overflow
-        custom-overflow
         nw-text-sm
         nw-font-medium
         nw-text-center
@@ -98,7 +96,7 @@
             <li class="nw-pr-2">
                 <a
                     href="#"
-                    class=" tabs
+                    class=" lesepatenTabs
                             nw-inline-block
                             nw-font-bold
                             nw-border-b-2
@@ -112,7 +110,7 @@
             <li class=" nw-px-2">
                 <a
                     href="#"
-                    class=" tabs
+                    class=" lesepatenTabs
                             nw-inline-block
                             nw-pt-2
                             nw-pb-2
@@ -125,7 +123,7 @@
             <li class=" nw-px-2">
                 <a
                     href="#"
-                    class=" tabs
+                    class=" lesepatenTabs
                             nw-inline-block
                             nw-pt-2
                             nw-pb-2
@@ -138,7 +136,7 @@
             <li class=" nw-pl-2">
                 <a
                     href="#"
-                    class=" tabs
+                    class=" lesepatenTabs
                             nw-inline-block
                             nw-pt-2
                             nw-pb-2
@@ -152,23 +150,23 @@
     </div>
 
     <div>
-        <div class="container ">
+        <div class="lesepatenContainer ">
             {{>@lesepaten--eubersicht}}
         </div>
         <!-- Second Container -->
-        <div class="nw-hidden container">
+        <div class="nw-hidden lesepatenContainer">
             <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
                 UNSERE LESEPATEN
             </div>
         </div>
         <!-- Third Container -->
-        <div class="nw-hidden container">
+        <div class="nw-hidden lesepatenContainer">
             <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
                 SCHULEN
             </div>
         </div>
         <!-- Fourth Container -->
-        <div class="nw-hidden container">
+        <div class="nw-hidden lesepatenContainer">
             <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
                 PATE WERDEN
             </div>
@@ -275,70 +273,3 @@
         </div>
     </div>
 </div>
-
-
-<script>
-    let array_tabs = document.getElementsByClassName('tabs');
-    const tabsContainer = document.querySelector('.custom-overflow');
-    Array.prototype.forEach.call(array_tabs, (x, i) => {
-        x.addEventListener('click', e => {
-            e.preventDefault();
-            Array.prototype.forEach.call(array_tabs, x => {
-                x.classList.remove(
-                    'nw-text-black',
-                    'nw-border-b-2',
-                    'nw-font-bold',
-                    'nw-border-black'
-                );
-                x.classList.add('nw-text-black', 'nw-border-transparent');
-            });
-            x.classList.remove('nw-text-black', 'nw-border-transparent');
-            x.classList.add(
-                'nw-text-black',
-                'nw-border-b-2',
-                'nw-font-bold',
-                'nw-border-black'
-            );
-            let array_container = document.getElementsByClassName('container');
-            Array.prototype.forEach.call(array_container, x => {
-                x.classList.add('nw-hidden');
-            });
-            array_container[i].classList.remove('nw-hidden');
-        });
-    });
-    // accordion machen
-    var accord = document.getElementsByClassName('accordion');
-    var i;
-    for (i = 0; i < accord.length; i++) {
-        accord[i].addEventListener('click', function () {
-            this.classList.toggle('active');
-            var panel = this.nextElementSibling;
-            if (panel.style.display === 'block') {
-                panel.style.display = 'none';
-            } else {
-                panel.style.display = 'block';
-            }
-        });
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-        var buttons = document.querySelectorAll(".accordion");
-        buttons.forEach(function (button) {
-            button.addEventListener("click", function () {
-                var svg = button.querySelector("svg");
-                var state = svg.getAttribute("data-state");
-
-                if (state === "expanded") {
-                    svg.setAttribute("data-state", "collapsed");
-                    svg.innerHTML = `
-                        <path d="M10.75 6.75a.75.75 0 00-1.5 0v2.5h-2.5a.75.75 0 000 1.5h2.5v2.5a.75.75 0 001.5 0v-2.5h2.5a.75.75 0 000-1.5h-2.5v-2.5z"/>
-                    `;
-                } else {
-                    svg.setAttribute("data-state", "expanded");
-                    svg.innerHTML = `
-                        <path d="M6.75 9.25a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5z"/>
-                    `;
-                }
-            });
-        });
-    });
-</script>
