@@ -10,7 +10,7 @@ export function initGLightBox()
 
     const articleImage = GLightbox({
         selector: '.nw-article-image',
-        touchNavigation: false,
+        touchNavigation: true,
         loop: false
     });
 }
