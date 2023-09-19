@@ -1,0 +1,21 @@
+
+.accord-opener {
+  display: block;
+  position: relative;
+
+  &:after {
+    content: '\002B';
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &.nw-show-lesepaten-accordion-item:after {
+    content: '\02D7';
+  }
+}
+
+.accord-opener .nw-flex {
+  padding-right: 16px;
+}

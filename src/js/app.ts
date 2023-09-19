@@ -10,6 +10,8 @@ import {initTransform} from './modules/kommentare';
 import {initPrivacybox} from "./modules/privacy-box";
 import {initModalbox} from "./modules/modal-box";
 import {initDirektZumThema} from "./modules/direkt-zum-thema";
+import {initLesepaten} from "./modules/lesepaten";
+import {initLesepatenAccordion} from "./modules/lesepaten-accordion";
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
@@ -26,6 +28,8 @@ const initializationFunctions: Array<() => void> = [
     initPrivacybox,
     initModalbox,
     initDirektZumThema,
+    initLesepaten,
+    initLesepatenAccordion,
 //    initLightBox,
 ];
 
