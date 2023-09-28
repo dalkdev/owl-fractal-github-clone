@@ -12,7 +12,6 @@ import {initModalbox} from "./modules/modal-box";
 import {initGLightBox} from "./modules/glightbox";
 import {initDirektZumThema} from "./modules/direkt-zum-thema";
 import {initLesepaten} from "./modules/lesepaten";
-import {initLesepatenAccordion} from "./modules/lesepaten-accordion";
 
 // These will be immediately called
 const preloadFunctions: Array<() => void> = [initPolyfills];
@@ -31,7 +30,6 @@ const initializationFunctions: Array<() => void> = [
     initGLightBox,
     initDirektZumThema,
     initLesepaten,
-    initLesepatenAccordion,
 //    initLightBox,
 
 ];
