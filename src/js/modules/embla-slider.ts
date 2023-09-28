@@ -25,7 +25,6 @@ function showSlides(n: number) {
         (slides[i] as HTMLElement).style.display = 'none';
     }
 
-
     (slides[slideIndex - 1] as HTMLElement).style.display = 'block';
 }
 
