@@ -90,134 +90,68 @@
             </div>
         </div>
     </div>
-    <table class="nw-table-auto nw-w-full nw-text-sm">
+    <!-- Table -->
+    <table class="nw-table-fixed nw-w-full nw-text-sm nw-mb-10 nw-whitespace-nowrap">
         <thead>
         <tr class="nw-border-b nw-font-medium nw-text-left">
-            <th class="nw-pl-0 nw-p-2 ">Lesepaten</th>
-            <th class="nw-pl-4 nw-p-2 ">Stadt</th>
+            <th class="nw-pl-0 nw-p-2">Lesepaten</th>
+            <th class="nw-pl-4 nw-p-2">Stadt</th>
         </tr>
         </thead>
         <tbody>
-        <tr class="nw-border-b nw-text-left">
-            <td class="nw-pl-0 nw-p-4   nw-flex nw-items-center nw-w-1/2">
-                <img
-                    class="nw-w-8 nw-h-8 nw-mr-2 nw-rounded-full"
-                    src="/images/sport-news/FC-Bayern.jpg"
-                    alt=""
-                />
-                <span class="nw-truncate">Allianz Hauptvertretung Tobias Köhler</span>
-            </td>
-            <td class="nw-p-4 nw-align-middle nw-w-1/2">Paderborn</td>
-        </tr>
-        <tr class="nw-border-b nw-text-left">
-            <td class="nw-pl-0 nw-p-4 nw-flex nw-items-center nw-w-1/2">
-                <img
-                    class="nw-w-8 nw-h-8 nw-mr-2 nw-rounded-full"
-                    src="/images/sport-news/FC-Bayern.jpg"
-                    alt=""
-                />
-                <span class="nw-truncate">Allianz Hegemann OHG</span>
-            </td>
-            <td class="nw-p-4 nw-align-middle nw-w-1/2">Höxter</td>
-        </tr>
-        <tr class="nw-border-b nw-text-left">
-            <td class="nw-pl-0 nw-p-4 nw-flex nw-items-center nw-w-1/2">
-                <img
-                    class="nw-w-8 nw-h-8 nw-mr-2 nw-rounded-full"
-                    src="/images/sport-news/FC-Bayern.jpg"
-                    alt=""
-                />
-                <span class="nw-truncate">André Kuper MdL</span>
-            </td>
-            <td class="nw-p-4 nw-align-middle nw-w-1/2">Gütersloh</td>
-        </tr>
-        <tr class="nw-border-b nw-text-left">
-            <td class="nw-pl-0 nw-p-4 nw-flex nw-items-center nw-w-1/2">
-                <img
-                    class="nw-w-8 nw-h-8 nw-mr-2 nw-rounded-full"
-                    src="/images/sport-news/FC-Bayern.jpg"
-                    alt=""
-                />
-                <span class="nw-truncate">Apotheke am Mühlenhof</span>
-            </td>
-            <td class="nw-p-4 nw-align-middle nw-w-1/2">Paderborn</td>
-        </tr>
-        <tr class="nw-border-b nw-text-left">
-            <td class="nw-pl-0 nw-p-4 nw-flex nw-items-center nw-w-1/2">
-                <img
-                    class="nw-w-8 nw-h-8 nw-mr-2 nw-rounded-full"
-                    src="/images/sport-news/FC-Bayern.jpg"
-                    alt=""
-                />
-                <span class="nw-truncate">Apotheke Wilhelmshöhe in Paderborn</span>
-            </td>
-            <td class="nw-p-4 nw-align-middle nw-w-1/2">Paderborn</td>
-        </tr>
-        <tr class="nw-border-b nw-text-left">
-            <td class="nw-pl-0 nw-p-4 nw-flex nw-items-center nw-w-1/2">
-                <img
-                    class="nw-w-8 nw-h-8 nw-mr-2 nw-rounded-full"
-                    src="/images/sport-news/FC-Bayern.jpg"
-                    alt=""
-                />
-                <span class="nw-truncate">Architekten Bökamp</span>
-            </td>
-            <td class="nw-p-4 nw-align-middle nw-w-1/2">Bad Oyenhausen</td>
-        </tr>
-        </tbody>
-    </table>
-    <table class="nw-border-collapse nw-table-auto nw-w-full nw-text-sm">
-        <thead>
-        <tr>
-            <th class="nw-border-b nw-pl-0 nw-p-4 nw-text-left nw-w-1/2">Lesepaten</th>
-            <th class="nw-border-b  nw-p-4 nw-text-left nw-w-1/2">Stadt</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td class="nw-border-b nw-pl-0 nw-p-4 nw-text-left nw-w-1/2 ">
-                <div class="nw-flex nw-items-center">
+        {{#each this.lesepaten-row}}
+            <tr class="nw-border-b nw-text-left">
+                <td class="nw-pl-0 nw-p-4 nw-flex nw-items-center">
                     <img
                         class="nw-w-8 nw-h-8 nw-mr-2 nw-rounded-full"
-                        src="/images/sport-news/FC-Bayern.jpg"
-                        alt=""
+                        src="{{first-cell-src}}"
+                        alt="{{first-cell-alt}}"
                     />
-                    <span class="">Allianz Hauptvertretung Tobias Köhler</span>
-                </div>
-            </td>
-            <td class="nw-border-b nw-align-middle nw-p-4 nw-text-left nw-w-1/2">Malcolm Lockyer</td>
-        </tr>
+                    <span class="nw-overflow-hidden nw-text-ellipsis">{{first-cell}}</span>
+                </td>
+                <td class="nw-p-4 nw-align-middle">{{second-cell}}</td>
+            </tr>
+        {{/each}}
         </tbody>
     </table>
+    <!-- Table Ende -->
     <div
         class=" nw-mt-10 lg:nw-mt-16 nw-mb-8 lg:nw-mb-12 nw-flex nw-justify-start nw-border-t nw-border-gray-200 nw-bg-white nw-py-4 ">
         <div>
             <nav class="nw-isolate nw-inline-flex nw-rounded-md nw-shadow-sm"
                  aria-label="Pagination">
-                <a href="#" class="nw-relative nw-inline-flex nw-items-center nw-rounded-l-md nw-px-4 nw-py-3 nw-text-custom-1-700 nw-ring-1
-                 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-z-20 focus:nw-outline-offset-0">
+                <a href="#" class=" nw-relative nw-inline-flex nw-items-center nw-rounded-l-md nw-px-4 nw-py-3 nw-text-custom-1-700
+                                    nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700
+                                    focus:nw-z-20 focus:nw-outline-offset-0">
                     <svg class="nw-h-5 nw-w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd"
                               d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
                               clip-rule="evenodd"/>
                     </svg>
                 </a>
-                <a href="#" class="nw-relative nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-base
-                nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-z-20 focus:nw-outline-offset-0">1</a>
-                <a href="#" class="nw-relative nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-base
-                nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-z-20 focus:nw-outline-offset-0">2</a>
-                <a href="#" class="nw-relative nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-base
-                nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-z-20 focus:nw-outline-offset-0">3</a>
-                <span class="nw-relative nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-sm nw-font-bold nw-text-gray-700
-                nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-outline-offset-0">...</span>
-                <a href="#" class="nw-relative nw-inline-flex nw-items-center nw-px-4 py-3 nw-text-base
-                nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-z-20 focus:nw-outline-offset-0">8</a>
-                <a href="#" class="nw-relative nw-inline-flex nw-items-center nw-px-4 py-3 nw-text-base
-                nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-z-20 focus:nw-outline-offset-0">9</a>
-                <a href="#" class="nw-relative nw-hidden lg:nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-base
-                 nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-z-20 focus:nw-outline-offset-0">10</a>
-                <a href="#" class="nw-relative nw-inline-flex nw-items-center nw-rounded-r-md nw-px-4 nw-py-3 nw-text-custom-1-700
-                nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-black focus:nw-z-20 focus:nw-outline-offset-0">
+                <a href="#" class=" nw-relative nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-base
+                                    nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700 focus:nw-z-20
+                                    focus:nw-outline-offset-0"> 1 </a>
+                <a href="#" class=" nw-relative nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-base
+                                    nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700 focus:nw-z-20
+                                    focus:nw-outline-offset-0"> 2 </a>
+                <a href="#" class=" nw-relative nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-base
+                                    nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700 focus:nw-z-20
+                                    focus:nw-outline-offset-0"> 3 </a>
+                <span class=" nw-relative nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-sm nw-font-bold nw-text-gray-700
+                              nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700 focus:nw-outline-offset-0">...</span>
+                <a href="#" class=" nw-relative nw-inline-flex nw-items-center nw-px-4 py-3 nw-text-base
+                                    nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700 focus:nw-z-20
+                                    focus:nw-outline-offset-0"> 8 </a>
+                <a href="#" class=" nw-relative nw-inline-flex nw-items-center nw-px-4 py-3 nw-text-base
+                                    nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700 focus:nw-z-20
+                                    focus:nw-outline-offset-0"> 9 </a>
+                <a href="#" class=" nw-relative nw-hidden lg:nw-inline-flex nw-items-center nw-px-4 nw-py-3 nw-text-base
+                                    nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700 focus:nw-z-20
+                                    focus:nw-outline-offset-0"> 10 </a>
+                <a href="#" class=" nw-relative nw-inline-flex nw-items-center nw-rounded-r-md nw-px-4 nw-py-3 nw-text-custom-1-700
+                                    nw-ring-1 nw-ring-inset nw-ring-gray-200 hover:nw-ring-custom-1-700
+                                    focus:nw-z-20 focus:nw-outline-offset-0">
                     <svg class="nw-h-5 nw-w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd"
                               d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
