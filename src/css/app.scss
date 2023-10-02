@@ -27,6 +27,7 @@
 @use './modules/breadcrumb';
 @use './modules/glightbox';
 @use './modules/lesepaten-accordion';
+@use './modules/bookmark';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 

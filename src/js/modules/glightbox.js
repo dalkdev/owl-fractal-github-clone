@@ -6,11 +6,13 @@ export function initGLightBox()
         selector: '.nw-gallery-lightbox',
         touchNavigation: true,
         loop: true,
+        moreText: 'mehr...'
     });
 
     const articleImage = GLightbox({
         selector: '.nw-article-image',
         touchNavigation: true,
-        loop: false
+        loop: false,
+        moreText: 'mehr...'
     });
 }
