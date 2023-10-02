@@ -4,9 +4,20 @@
         -webkit-appearance: none;
     }
 
+
+    select {
+        padding-right: 30px;
+        font-size: 14px;
+        position: relative;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: url("data:image/svg+xml;utf8,<svg width='20' height='20' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%234A5568' ><path fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z' clip-rule='evenodd' /></svg>") no-repeat;
+        background-position: right 5px top 50%;
+    }
 </style>
-<div class="nw-bg-custom-1-700 nw-p-4 md:nw-p-8">
-    <div class="nw-bg-white nw-p-4 nw-mx-0 md:nw-max-w-md nw-mx-auto nw-rounded-md">
+<div class="nw-bg-custom-1-700 nw-p-4 sm:nw-p-8">
+    <div class="nw-bg-white nw-p-4 nw-pb-6 md:nw-p-6 nw-mx-0 md:nw-max-w-md nw-mx-auto nw-rounded-md">
         <div>
             <p
                 class="
@@ -131,8 +142,8 @@
                         />
                     </div>
                 </div>
-
-                <div class="nw-mb-4">
+                <!-- example -1- -->
+                <!--<div class="nw-mb-4">
                     <label
                         class="
             nw-font-medium
@@ -147,6 +158,62 @@
             nw-formfield
             nw-w-full
             nw-px-1
+            nw-py-3.5
+            nw-mx-auto
+            nw-text-base
+            nw-inline-block
+            nw-border
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+                        id="anrede"
+                        name=""
+                    >
+                        <option value="" disabled selected hidden>Bitte wählen</option>
+                        <option value="herr">Herr</option>
+                        <option value="frau">Frau</option>
+                        <option value="firma">Firma</option>
+                        <option value="divers">Divers</option>
+                    </select>
+                </div>-->
+                <!-- example -2- -->
+                <!--<div class="dropdown nw-relative nw-mb-4">
+                    <button class=" dropdown-button nw-w-full
+                    nw-flex nw-justify-between nw-border nw-border-gray-200
+                    nw-rounded nw-py-3.5
+                    nw-px-2 nw-text-base nw-text-left
+                     ">
+                        Bitte wählen
+                        <svg class="fill-current nw-h-4 nw-w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                        </svg>
+                    </button>
+                    <div class=" nw-absolute nw-w-full nw-hidden
+                      nw-shadow-md nw-z-10
+                        nw-bg-gray-200 nw-rounded-md">
+                        <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Herford</a>
+                        <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Minden</a>
+                        <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Höxter</a>
+                        <a href="#" class="nw-p-2 nw-block hover:nw-bg-gray-100">Lemgo</a>
+                    </div>
+                </div>-->
+                <!-- example -3- -->
+                <div class="nw-mb-4">
+                    <label
+                        class="
+                        nw-font-medium
+                        nw-text-xs
+                        nw-uppercase
+                        "
+                        for="anrede"
+                    >Anrede*</label
+                    >
+                    <select
+                        class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
             nw-py-3.5
             nw-mx-auto
             nw-text-base
@@ -456,7 +523,7 @@
                      nw-text-gray-900 nw-rounded nw-px-2 nw-py-3 nw-leading-tight focus:nw-outline-none"
                        id="answer"
                        name="answer" placeholder="Ergebnis Sicherheitsabfrage" required>
-                <div class="nw-text-xs nw-font-medium nw-mb-2">
+                <div class="nw-text-xs nw-font-medium nw-mb-8 sm:nw-mb-4">
                     Bitte beachten Sie unsere <a href="#"
                                                  class="nw-text-red-500 hover:nw-underline">Datenschutzhinweise</a>.
                 </div>
@@ -469,7 +536,6 @@
           nw-px-8
           nw-py-3
           nw-mx-auto
-          nw-my-1
           nw-inline-block
           nw-rounded
           nw-text-base
@@ -529,7 +595,7 @@
     var number2 = Math.floor(Math.random() * 10) + 1;
     var sumOfTheNumbers = number1 + number2;
     var questionLabel = document.querySelector('label[for="answer"]');
-    questionLabel.innerHTML = "<span class='nw-text-gray-500 nw-taxt-base nw-font-bold' >Sicherheitsabfrage </span> <span class='nw-text-red-500'>*</span> <br> " + number1 + " + " + number2 + " = ";
+    questionLabel.innerHTML = "<span class='nw-text-gray-500 nw-taxt-base nw-font-bold' >Sicherheitsabfrage </span><br> " + number1 + " + " + number2 + " = ";
 
     answerInput.addEventListener('input', checkSecurityAnswer);
 
