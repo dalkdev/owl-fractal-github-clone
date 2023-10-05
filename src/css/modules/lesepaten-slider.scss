@@ -1,0 +1,40 @@
+.lesepaten {
+  .embla__slide {
+    padding-right: 24px;
+  }
+
+  .embla__slide__inner {
+    border-style: none;
+  }
+
+  .embla__container {
+    display: flex;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .embla__dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .embla__dot:after {
+    height: 10px;
+    border-radius: 8px;
+  }
+
+  .embla__dot.is-selected:after {
+    background-color: #4D4D4D;
+    opacity: 1;
+  }
+
+  .embla__dots {
+    padding-top: 24px;
+  }
+}
+
+
+
+

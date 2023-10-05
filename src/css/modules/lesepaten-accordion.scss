@@ -1,0 +1,23 @@
+.lesepaten-accordion {
+  .faq-opener {
+    position: relative;
+
+    &:after {
+      content: '\002B';
+      font-size: 1.5rem;
+      margin-top: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &.nw-show-accordion-item:after {
+      content: '\2212';
+      transform: none;
+    }
+  }
+
+  .faq-opener .nw-flex {
+    padding-right: 16px;
+  }
+}
