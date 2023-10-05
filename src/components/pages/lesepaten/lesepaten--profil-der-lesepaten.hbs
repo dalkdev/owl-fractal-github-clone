@@ -1,0 +1,224 @@
+<style>
+    @media (min-width: 768px) {
+        .icon-container {
+            width: 248px;
+        }
+    }
+
+    /*
+        @media (min-width: 768px) {
+            .article-detail-image-container.pull-left {
+                margin-left: 0;
+                width: 248px;
+                margin-right: 30px;
+                margin-bottom: 30px;
+                margin-top: 5px;
+                clear: left;
+            }
+
+            .article-detail-image-container {
+                position: relative;
+            }
+
+            .pull-left {
+                float: left !important;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .article-detail-entry-content {
+                position: relative;
+                z-index: 0;
+            }
+
+            .article-detail-image-container.pull-left {
+                width: 248px;
+            }
+        }*/
+</style>
+<div id="newarticle">
+    <div class="nw-container">
+        <div>
+            {{>@header-full--lokal}}
+        </div>
+        <div class="nw-bg-white nw-py-4">
+            <div class="sm:nw-w-5/6 nw-mx-auto nw-px-4 lg:nw-px-0 nw-bg-white">
+                <a href="#"
+                   class="nw-py-3 nw-px-4 nw-bg-gray-100 nw-inline-flex nw-items-center nw-font-bold nw-text-base nw-leading-6 nw-rounded-md nw-mb-10 nw-mt-4">
+                    <svg class="nw-h-5 nw-w-5 nw-mr-1" xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"/>
+                    </svg>
+                    Zurück zu den Lesepaten
+                </a>
+                <div class="nw-flex nw-flex-col md:nw-flex-row">
+                    <div class="nw-mt-6 md:nw-mt-0">
+                        <img class="nw-rounded-md nw-mb-6 md:nw-mb-4 nw-w-full" width="248" height="310"
+                             src="https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png">
+                        <div
+                            class=" icon-container
+                        nw-text-sm nw-font-medium
+                        nw-flex  nw-flex-col
+                        nw-p-4 nw-rounded-md
+                        nw-border nw-bg-gray-100
+                        nw-w-full nw-text-center nw-leading-6">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 class="nw-h-12 nw-w-12 nw-mx-auto nw-my-6 nw-text-gray-600"
+                                 fill="none"
+                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+                            </svg>
+                            <p class="nw-text-center">Besuchen Sie uns unter:</p>
+                            <a href="#" class="nw-text-red-500 nw-underline">
+                                Zum Formular
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" nw-ml-4 nw-order-first md:nw-order-last">
+                        <div class="nw-font-medium nw-text-gray-600 nw-text-md nw-leading-6 nw-mb-2">
+                            Daniel Einhäuser
+                        </div>
+                        <div class="nw-font-bold nw-text-2xl nw-mb-4">
+                            Gehring-Bunte Getränkeindustrie GmbH & Co. KG Bielefeld
+                        </div>
+                        <div class="nw-text-base nw-leading-6 nw-mb-4">
+                            „Ich habe meinen Kindern immer Kinderbücher vorgelesen und das hat vermutlich dazu
+                            beigetragen, dass
+                            alle drei gerne lesen. So ist es doch auch beim Zeitunglesen: das Angebot schafft die
+                            Nachfrage und
+                            führt im besten Fall dazu,
+                            junge Menschen für das Medium zu begeistern. Natürlich machen wir bei den Lesepaten sehr
+                            gerne mit,
+                            denn sich breit zu informieren und zu bilden, ist die beste Versicherung dagegen, Populisten
+                            und
+                            Falschmeldungen auf den Leim zu gehen."
+                            <br>
+                            <br>Daniel Einhäuser, März 2023
+                        </div>
+                        <div class="nw-font-medium nw-text-md">
+                            <p class="nw-leading-6">Diese Schule wird gefördert:</p>
+                            <p class="nw-text-red-500 nw-underline"> Gesamtschule Friedenstal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- -->
+<!--<div class="article-detail-entry-content article-margin clearfix nw-mt-8">
+    <div class="article-detail-image-container media-item pull-left">
+        <img class="nw-rounded-md nw-mb-6 md:nw-mb-4 nw-border nw-border-gray-200" width="248" height="310"
+             src="https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png">
+        <div
+            class="
+                        nw-text-sm nw-font-medium
+                        nw-flex  nw-flex-col
+                        nw-p-4 nw-rounded-md
+                        nw-border nw-bg-gray-100
+                        nw-w-full nw-text-center nw-leading-6">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="nw-h-12 nw-w-12 nw-mx-auto nw-my-6 nw-text-gray-600"
+                 fill="none"
+                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+            </svg>
+            <p class="nw-text-center">Besuchen Sie uns unter:</p>
+            <a href="#" class="nw-text-red-500 nw-underline">
+                Zum Formular
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <p class="nw-font-medium nw-text-gray-600 nw-text-md nw-leading-6 nw-mb-2">
+            Daniel Einhäuser
+        </p>
+        <p class="nw-font-bold nw-text-2xl nw-mb-4">
+            Gehring-Bunte Getränkeindustrie GmbH & Co. KG Bielefeld
+        </p>
+        <p class="nw-text-base nw-leading-6 nw-mb-4">
+            „Ich habe meinen Kindern immer Kinderbücher vorgelesen und das hat vermutlich dazu beigetragen, dass
+            alle drei gerne lesen. So ist es doch auch beim Zeitunglesen: das Angebot schafft die Nachfrage und
+            führt im besten Fall dazu,
+            junge Menschen für das Medium zu begeistern. Natürlich machen wir bei den Lesepaten sehr gerne mit,
+            denn sich breit zu informieren und zu bilden, ist die beste Versicherung dagegen, Populisten und
+            Falschmeldungen auf den Leim zu gehen."
+            <br>
+            <br>Daniel Einhäuser, März 2023
+        </p>
+        <div class="nw-font-medium nw-text-md">
+            <p class="nw-leading-6">Diese Schule wird gefördert:</p>
+            <p class="nw-text-red-500 nw-underline"> Gesamtschule Friedenstal</p>
+        </div>
+    </div>
+</div>-->
+<!-- -->
+<!--
+<div class="nw-bg-white nw-py-4">
+    <div class="sm:nw-w-5/6 nw-mx-auto nw-px-4 lg:nw-px-0 nw-bg-white">
+        <a href="#"
+           class="nw-py-3 nw-px-4 nw-bg-gray-100 nw-inline-flex nw-items-center nw-font-bold nw-text-base nw-leading-6 nw-rounded-md nw-mb-10 nw-mt-4">
+            <svg class="nw-h-5 nw-w-5 nw-mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"/>
+            </svg>
+            Zurück zu den Lesepaten
+        </a>
+        <div class="nw-grid nw-grid-rows-1 md:nw-grid-cols-3 md:nw-gap-6">
+            <div>
+                <img class="nw-rounded-md nw-mb-6 md:nw-mb-4"
+                     src="https://www.nw.de/_em_daten/_nw/2022/04/21/220421_1110_bild_folgt.png">
+                <div
+                    class="
+                        nw-text-sm nw-font-medium
+                        nw-flex  nw-flex-col
+                        nw-p-4 nw-rounded-md
+                        nw-border nw-bg-gray-100
+                        nw-w-full nw-text-center nw-leading-6">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="nw-h-12 nw-w-12 nw-mx-auto nw-my-6 nw-text-gray-600"
+                         fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+                    </svg>
+                    <p class="nw-text-center">Besuchen Sie uns unter:</p>
+                    <a href="#" class="nw-text-red-500 nw-underline">
+                        Zum Formular
+                    </a>
+                </div>
+            </div>
+            <div class="md:nw-col-span-2 nw-order-first md:nw-order-last nw-mb-8 md:nw-mb-0">
+                <div class="nw-font-medium nw-text-gray-600 nw-text-md nw-leading-6 nw-mb-2">
+                    Daniel Einhäuser
+                </div>
+                <div class="nw-font-bold nw-text-2xl nw-mb-4 nw-max-w-sm">
+                    Gehring-Bunte Getränkeindustrie GmbH & Co. KG Bielefeld
+                </div>
+                <div class="nw-text-base nw-leading-6 nw-mb-4">
+                    „Ich habe meinen Kindern immer Kinderbücher vorgelesen und das hat vermutlich dazu beigetragen, dass
+                    alle drei gerne lesen. So ist es doch auch beim Zeitunglesen: das Angebot schafft die Nachfrage und
+                    führt im besten Fall dazu,
+                    junge Menschen für das Medium zu begeistern. Natürlich machen wir bei den Lesepaten sehr gerne mit,
+                    denn sich breit zu informieren und zu bilden, ist die beste Versicherung dagegen, Populisten und
+                    Falschmeldungen auf den Leim zu gehen."
+                    <br>
+                    <br>Daniel Einhäuser, März 2023
+                </div>
+                <div class="nw-font-medium nw-text-md">
+                    <p class=" nw-leading-6">Diese Schule wird gefördert:</p>
+                    <p
+                        class="nw-text-red-500 nw-underline"> Gesamtschule Friedenstal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->

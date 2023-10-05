@@ -1,40 +1,16 @@
-
-.faq-opener {
-  display: block;
-
-  &:after {
-    content: '\276F';
-    margin-top: -1.25rem;
-    float: right;
-    font-size: 0.75rem;
-  }
-
-  &.nw-show-accordion-item:after {
-    transform: rotate(90deg);
-  }
-}
-
-.lesepation-arrcodion {
+.accordion {
   .faq-opener {
     display: block;
-    position: relative;
 
     &:after {
-      content: '\002B';
-      font-size: 1.5rem;
-      margin-top: 0;
-      position: absolute;
-      top: 0;
-      right: 0;
+      content: '\276F';
+      margin-top: -1.25rem;
+      float: right;
+      font-size: 0.75rem;
     }
 
     &.nw-show-accordion-item:after {
-      content: '\02D7';
-      transform: none;
+      transform: rotate(90deg);
     }
-  }
-
-  .faq-opener .nw-flex {
-    padding-right: 16px;
   }
 }
