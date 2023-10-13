@@ -1,0 +1,107 @@
+{
+  "status": "qm",
+  "context": {
+    "images-slider": [
+      {
+        "src": "/images/lesepaten/spakasse-logo.svg"
+      },
+      {
+        "src": "/images/lesepaten/spakasse-logo.svg"
+      },
+      {
+        "src": "/images/lesepaten/spakasse-logo.svg"
+      },
+      {
+        "src": "/images/lesepaten/spakasse-logo.svg"
+      },
+      {
+        "src": "/images/lesepaten/spakasse-logo.svg"
+      },
+      {
+        "src": "/images/lesepaten/spakasse-logo.svg"
+      },
+      {
+        "src": "/images/lesepaten/spakasse-logo.svg"
+      },
+      {
+        "src": "/images/lesepaten/spakasse-logo.svg"
+      }
+    ],
+    "lesepaten-row": [
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Allianz",
+        "first-cell": "Allianz Hauptvertretung Tobias Köhler",
+        "second-cell": "Paderborn"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Allianz",
+        "first-cell": "Allianz Hegemann OHG",
+        "second-cell": "Höxter"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "André",
+        "first-cell": "André Kuper MdL",
+        "second-cell": "Gütersloh"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Apotheke",
+        "first-cell": "Apotheke am Mühlenhof",
+        "second-cell": "Paderborn"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Apotheke",
+        "first-cell": "Apotheke Wilhelmshöhe in Paderborn",
+        "second-cell": "Paderborn"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Architekten",
+        "first-cell": "Architekten Bökamp",
+        "second-cell": "Bad Oyenhausen"
+      }
+    ],
+    "schulen-row": [
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Gesamtschule",
+        "first-cell": "Gesamtschule Gütersloh",
+        "second-cell": "Gütersloh"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Anne-Frank-Schule",
+        "first-cell": "Anne-Frank-Schule",
+        "second-cell": "Gütersloh"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "August-Griese-Berufskolleg",
+        "first-cell": "August-Griese-Berufskolleg Löhne",
+        "second-cell": "Heford"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Bertolt-Brecht-Gesamtschule",
+        "first-cell": "Bertolt-Brecht-Gesamtschule der Stadt Löhne",
+        "second-cell": "Herford"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Berufskolleg",
+        "first-cell": "Berufskolleg Kreis Höxter",
+        "second-cell": "Höxter"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Berufskolleg",
+        "first-cell": "Berufskolleg Schloß Neuhaus",
+        "second-cell": "Paderborn"
+      }
+    ]
+  }
+}
