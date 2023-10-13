@@ -1,0 +1,43 @@
+{
+  "status": "qm",
+  "context": {
+    "schulen-row": [
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Gesamtschule",
+        "first-cell": "Gesamtschule Gütersloh",
+        "second-cell": "Gütersloh"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Anne-Frank-Schule",
+        "first-cell": "Anne-Frank-Schule",
+        "second-cell": "Gütersloh"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "August-Griese-Berufskolleg",
+        "first-cell": "August-Griese-Berufskolleg Löhne",
+        "second-cell": "Heford"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Bertolt-Brecht-Gesamtschule",
+        "first-cell": "Bertolt-Brecht-Gesamtschule der Stadt Löhne",
+        "second-cell": "Herford"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Berufskolleg",
+        "first-cell": "Berufskolleg Kreis Höxter",
+        "second-cell": "Höxter"
+      },
+      {
+        "first-cell-src": "/images/sport-news/FC-Bayern.jpg",
+        "first-cell-alt": "Berufskolleg",
+        "first-cell": "Berufskolleg Schloß Neuhaus",
+        "second-cell": "Paderborn"
+      }
+    ]
+  }
+}

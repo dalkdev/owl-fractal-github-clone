@@ -1,6 +1,6 @@
 <style>
 
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
         .nw-remove-padding {
             margin-left: -28px;
             margin-right: -28px;
@@ -12,10 +12,10 @@
     }
 
 </style>
-<div class="nw-max-w-sm lg:nw-max-w-none nw-mx-auto nw-bg-white nw-pb-8 lg:nw-pb-6">
+<div class="nw-max-w-sm md:nw-max-w-none nw-mx-auto nw-bg-white nw-pb-8 md:nw-pb-6">
     <!-- Mobile Design -->
-    <div class="nw-p-4 nw-pt-0 sm:nw-pt-6 lg:nw-hidden ">
-        <div class="nw-relative lg:nw-hidden nw-mb-2">
+    <div class="nw-p-4 nw-pt-0 sm:nw-pt-6 md:nw-hidden ">
+        <div class="nw-relative md:nw-hidden nw-mb-2">
             <img
                 class="nw-rounded-md nw-h-auto nw-w-full nw-object-fill"
                 alt="img-teaser-mobil"
@@ -36,23 +36,25 @@
             </div>
         </div>
     </div>
-    <!-- Desktop Design -->
-    <div class="nw-py-6 nw-hidden lg:nw-block ">
+    <!-- Tablet und Desktop Design -->
+    <div class="nw-py-6 nw-hidden md:nw-block ">
         <div class="nw-relative">
             <img
                 class="nw-rounded-md nw-h-auto nw-w-full nw-object-cover"
                 alt="Theme-Teaser"
                 src="/images/lesepaten/img-teaser.jpg"
             />
-            <div class="nw-absolute nw-left-0 nw-top-0 nw-p-6 nw-max-w-lg h-full nw-text-white">
-                <p class="nw-text-2.5xl nw-leading-9 nw-font-bold nw-pb-3">Lesepate werden und den
+            <div
+                class="nw-absolute nw-left-0 nw-top-0 nw-p-4 lg:nw-p-6 nw-max-w-md lg:nw-max-w-lg h-full nw-text-white">
+                <p class="nw-text-2xl lg:nw-text-2.5xl nw-leading-9 nw-font-bold nw-pb-1 lg:nw-pb-3">Lesepate werden und
+                    den
                     Nachwunchs in der Region fördern</p>
-                <p class="nw-text-md nw-leading-6 "> Helfen Sie mit, dass Schülerinnen und Schüler
+                <p class="nw-text-base lg:nw-text-md nw-leading-6 "> Helfen Sie mit, dass Schülerinnen und Schüler
                     täglich Zugang zur Tageszeitung
                     haben.</p>
                 <a
                     href="#"
-                    class=" nw-mt-6
+                    class=" nw-mt-4 lg:nw-mt-6
                             nw-text-white
                             nw-bg-red-500
                             hover:nw-bg-red-600
@@ -80,7 +82,7 @@
         nw-text-center
         nw-text-black
         nw-pt-0
-        lg:nw-pt-4
+        md:nw-pt-4
         nw-ml-4
         nw-overflow-x-auto
         nw-overflow-y-hidden
@@ -88,11 +90,11 @@
         nw-scrollbar-horizontal
         nw-scrollbar-horizontal-lesepaten
         nw-whitespace-nowrap
-        lg:nw-overflow-x-visible lg:nw-overflow-y-visible
-        nw-mb-10 lg:nw-mb-6 no-scrollbar
+        md:nw-overflow-x-visible md:nw-overflow-y-visible
+        nw-mb-10 md:nw-mb-6 no-scrollbar
         "
     >
-        <ul class="lg:nw-h-auto nw-inline-flex nw--mb-px nw-place-content-center nw-uppercase nw-text-md nw-leading-6 nw-border-b nw-border-gray-200">
+        <ul class="md:nw-h-auto nw-inline-flex nw--mb-px nw-place-content-center nw-uppercase nw-text-md nw-leading-6 nw-border-b nw-border-gray-200">
             <li class="nw-pr-2">
                 <a
                     href="#"
@@ -102,7 +104,7 @@
                             nw-border-b-2
                             nw-pt-2
                             nw-pb-2
-                            lg:nw-pb-4
+                            md:nw-pb-4
                             nw-border-black"
                     aria-current="page">
                     ÜBERSICHT</a>
@@ -114,7 +116,7 @@
                             nw-inline-block
                             nw-pt-2
                             nw-pb-2
-                            lg:nw-pb-4
+                            md:nw-pb-4
                             nw-border-b-2
                             nw-border-transparent">
                     UNSERE LESEPATEN
@@ -127,7 +129,7 @@
                             nw-inline-block
                             nw-pt-2
                             nw-pb-2
-                            lg:nw-pb-4
+                            md:nw-pb-4
                             nw-border-b-2
                             nw-border-transparent">
                     SCHULEN
@@ -140,7 +142,7 @@
                             nw-inline-block
                             nw-pt-2
                             nw-pb-2
-                            lg:nw-pb-4
+                            md:nw-pb-4
                             nw-border-b-2
                             nw-border-transparent">
                     PATE WERDEN
@@ -151,23 +153,19 @@
 
     <div>
         <div class="lesepatenContainer ">
-            {{>@lesepaten--eubersicht}}
+            {{>@uebersichtselement}}
         </div>
         <!-- Second Container -->
         <div class="nw-hidden lesepatenContainer">
-            {{>@lesepaten--unsere-lesepaten}}
+            {{>@unsere-lesepaten}}
         </div>
         <!-- Third Container -->
         <div class="nw-hidden lesepatenContainer">
-            <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
-                SCHULEN
-            </div>
+            {{>@schulenelement}}
         </div>
         <!-- Fourth Container -->
         <div class="nw-hidden lesepatenContainer">
-            <div class="nw-bg-white nw-rounded-md nw-mt-4 nw-py-6">
-                PATE WERDEN
-            </div>
+            PATE WERDEN
         </div>
         <!-- -->
     </div>
@@ -178,7 +176,7 @@
         </div>
         <div
             class=" nw-flex nw-flex-col
-                    lg:nw-flex-row
+                    md:nw-flex-row
                     nw-items-start
                     nw-justify-center
                     nw-gap-4
@@ -193,7 +191,7 @@
                         nw-rounded-md
                         nw-border
                         nw-w-full
-                        lg:nw-w-1/3
+                        md:nw-w-1/3
                         nw-text-black
                         nw-text-center">
                 <svg
@@ -224,7 +222,7 @@
                         nw-rounded-md
                         nw-border
                         nw-w-full
-                        lg:nw-w-1/3
+                        md:nw-w-1/3
                         nw-text-black nw-text-center">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -252,7 +250,7 @@
                         nw-rounded-md
                         nw-border
                         nw-w-full
-                        lg:nw-w-1/3
+                        md:nw-w-1/3
                         nw-text-black nw-text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="nw-h-8 nw-w-8 nw-mx-auto nw-mb-3 nw-text-gray-600"
                      fill="none"
