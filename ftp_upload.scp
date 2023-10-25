@@ -1,3 +1,4 @@
 open ftp://frctl:Dn0094fz#@10.128.10.100
+rm components
 synchronize remote build/ /
 exit
