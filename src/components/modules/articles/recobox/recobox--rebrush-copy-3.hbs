@@ -1,3 +1,9 @@
+<style>
+    .nw-anzeige {
+        width: 300px;
+        height: 600px;
+    }
+</style>
 <div class="nw-p-2 nw-bg-white">
     <div class="nw-pb-4">
         <p class="nw-inline nw-text-md md:nw-text-xl nw-uppercase nw-font-bold">
@@ -6,113 +12,14 @@
         <hr class="nw-red-line-l nw-mt-0.5"/>
     </div>
     <div id="nw-reco-box-rebrush-copy3">
-        <div class="nw-basis-2/3">
+        <div class="nw-basis-2/3 nw-mb-8">
             <div class="nw-flex nw-grid nw-grid-col-1 md:nw-grid-cols-2 nw-gap-4">
-                <a href="#" data-event-value="retresco-reco">
-                    <div class="nw-reco-item-rebrush">
-                        <img
-                            src="https://via.placeholder.com/304x176"
-                            class="nw-reco-image-rebrush"
-                            loading="lazy"
-                            alt="Bild zu blabla"
-                        />
-
-                        <div>
-                            <div class="nw-reco-banner-rebrush">
-                                <p class="nw-reco-bannertext-rebrush">Temperatursturz</p>
-                                <div>{{>'@nw-plus-icon'}}</div>
-                            </div>
-                            <div class="nw-reco-caption-rebrush">Wie Sturmtief Ignatz Ostwest falen-Lippe treffen wird
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" data-event-value="retresco-reco">
-                    <div class="nw-reco-item-rebrush">
-                        <img
-                            src="https://via.placeholder.com/304x176"
-                            class="nw-reco-image-rebrush"
-                            loading="lazy"
-                            alt="Bild zu blabla"
-                        />
-
-                        <div>
-                            <div class="nw-reco-banner-rebrush">
-                                <p class="nw-reco-bannertext-rebrush">Temperatursturz</p>
-                                <div>{{>'@nw-plus-icon'}}</div>
-                            </div>
-                            <div class="nw-reco-caption-rebrush">Wie Sturmtief Ignatz Ostwest falen-Lippe treffen wird
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <div class="nw-bg-gray-200 nw-h-44 nw-w-full md:nw-hidden">Anzeige</div>
-
-                <a href="#" data-event-value="retresco-reco">
-                    <div class="nw-reco-item-rebrush">
-                        <img
-                            src="https://via.placeholder.com/304x176"
-                            class="nw-reco-image-rebrush"
-                            loading="lazy"
-                            alt="Bild zu blabla"
-                        />
-
-                        <div>
-                            <div class="nw-reco-banner-rebrush">
-                                <p class="nw-reco-bannertext-rebrush">Temperatursturz</p>
-                                <div>{{>'@nw-plus-icon'}}</div>
-                            </div>
-                            <div class="nw-reco-caption-rebrush">Wie Sturmtief Ignatz Ostwest falen-Lippe treffen wird
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" data-event-value="retresco-reco">
-                    <div class="nw-reco-item-rebrush">
-                        <img
-                            src="https://via.placeholder.com/304x176"
-                            class="nw-reco-image-rebrush"
-                            loading="lazy"
-                            alt="Bild zu blabla"
-                        />
-
-                        <div>
-                            <div class="nw-reco-banner-rebrush">
-                                <p class="nw-reco-bannertext-rebrush">Temperatursturz</p>
-                                <div>{{>'@nw-plus-icon'}}</div>
-                            </div>
-                            <div class="nw-reco-caption-rebrush">Wie Sturmtief Ignatz Ostwest falen-Lippe treffen wird
-                            </div>
-                        </div>
-                    </div>
-                </a>
+                {{#each box-copy3}} {{>'@recobox-item'}} {{/each}}
             </div>
         </div>
-        <div class="nw-basis-1/3 nw-order-first md:nw-order-last nw-hidden md:nw-block">
-            <!-- Annzeige -->
-            <div class="nw-bg-gray-200 nw-h-44 nw-w-full">Anzeige</div>
-        </div>
-    </div>
-</div>
-
-<div class="nw-p-2 nw-bg-white">
-    <div class="nw-pb-4">
-        <p class="nw-inline nw-text-md md:nw-text-xl nw-uppercase nw-font-bold">
-            {{header}}
-        </p>
-        <hr class="nw-red-line-l nw-mt-0.5"/>
-    </div>
-    <div id="nw-reco-box-rebrush-copy3">
-        <div class="nw-basis-2/3">
-            <div class="nw-flex nw-grid nw-grid-col-1 md:nw-grid-cols-2 nw-gap-4">
-                {{#each box}} {{>'@recobox-item'}} {{/each}}
-            </div>
-        </div>
-        <div class="nw-basis-1/3 nw-order-first md:nw-order-last">
-            <!-- Annzeige -->
-            <div class="nw-bg-gray-200 nw-h-44 nw-w-full">Anzeige</div>
+        <div class="nw-basis-1/3 nw-mb-8 nw-flex nw-justify-center">
+            <!-- Anzeige -->
+            <div class="nw-bg-gray-200 nw-anzeige ">Anzeige</div>
         </div>
     </div>
 </div>
