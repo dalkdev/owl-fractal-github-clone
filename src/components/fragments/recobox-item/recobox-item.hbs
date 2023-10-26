@@ -1,18 +1,18 @@
 <a href="#" data-event-value="retresco-reco">
-  <div class="nw-reco-item-rebrush">
-    <img
-      src="{{this.img}}"
-      class="nw-reco-image-rebrush"
-      loading="lazy"
-      alt="Bild zu blabla"
-    />
+    <div class="nw-flex nw-flex-row md:nw-flex-col nw-space-x-2 md:nw-space-x-0">
+        <img
+            src="{{this.img}}"
+            class="nw-w-32 sm:nw-w-44 md:nw-w-full nw-object-cover nw-rounded-md md:nw-mb-1"
+            loading="lazy"
+            alt="Bild zu blabla"
+        />
 
-    <div>
-      <div class="nw-reco-banner-rebrush">
-        <p class="nw-reco-bannertext-rebrush">{{this.bannertext}}</p>
-        <div>{{>'@nw-plus-icon'}}</div>
-      </div>
-      <div class="nw-reco-caption-rebrush">{{this.caption}}</div>
+        <div>
+            <div class="nw-flex nw-justify-between nw-h-5">
+                <p class="nw-text-xs md:nw-text-sm nw-text-left nw-text-gray-600 nw-font-medium nw-leading-tight">{{this.bannertext}}</p>
+                <div>{{>'@nw-plus-icon'}}</div>
+            </div>
+            <div class="nw-font-bold nw-text-base md:nw-text-md nw-leading-tight">{{this.caption}}</div>
+        </div>
     </div>
-  </div>
 </a>
