@@ -37,6 +37,10 @@
   @apply nw-grid nw-grid-cols-1 md:nw-grid-cols-2 lg:nw-grid-cols-3 nw-gap-2 md:nw-gap-4;
 }
 
+#nw-reco-box-rebrush-copy3 {
+  @apply nw-flex nw-flex-col md:nw-flex-row nw-gap-2 md:nw-gap-4;
+}
+
 .nw-reco-item-rebrush {
   @apply nw-flex nw-flex-row md:nw-flex-col nw-space-x-2 md:nw-space-x-0;
 }

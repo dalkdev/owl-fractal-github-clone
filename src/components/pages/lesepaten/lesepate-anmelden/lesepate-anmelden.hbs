@@ -86,7 +86,7 @@
         <hr>
         <div>
             <p id="dangerAlert" class="nw-bg-red-100 nw-text-red-700 nw-px-2
-            nw-py-2 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie biite den roten Felder aus</p>
+            nw-py-3 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie biite den roten Felder aus</p>
             <p class=" nw-text-left nw-text-base nw-leading-8 nw-font-bold nw-mt-8 md:nw-mt-6 nw-mb-2">Ihre
                 Daten</p>
         </div>
@@ -220,7 +220,7 @@
                     id="checkCondition1"
                     class=" nw-form-tick nw-border nw-rounded-sm  nw-nw-border-gray-300 nw-appearance-none
                                     nw-cursor-pointer nw-h-3 nw-w-3 checked:nw-bg-gray-600 focus:outline-none"
-                    onclick="checkFunction()"/>
+                />
             </div>
             <div>
                 <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
@@ -239,7 +239,7 @@
                     id="checkCondition2"
                     class=" nw-form-tick nw-border nw-rounded-sm nw-nw-border-gray-300 nw-appearance-none
                                     nw-cursor-pointer nw-h-3 nw-w-3  checked:nw-bg-gray-600 focus:outline-none"
-                    onclick="checkFunction()"/>
+                >
             </div>
             <div>
                 <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
@@ -257,58 +257,10 @@
                                                             nw-cursor-pointer"
                type="button"
                value="Jetzt beantragen"
-               onclick="onClickRegistrieren();"
+
         />
     </form>
 </div>
 <script>
-    function checkFunction() {
-        var checkBox1 = document.getElementById('checkCondition1');
-        var checkBox2 = document.getElementById('checkCondition2');
-        var bRegister = document.getElementById('registerButton');
-        if (
-            checkBox1.checked == true &&
-            (checkBox2.checked == true || checkBox2.checked == false)
-        ) {
-            bRegister.disabled = false;
-            bRegister.style.backgroundColor = '#D20A11';
-        } else {
-            bRegister.disabled = true;
-            bRegister.style.backgroundColor = '#E1B9BA';
-        }
-    }
 
-
-    function onClickRegistrieren() {
-        var valid = Validator();
-        if (valid) alert('ok');
-
-    }
-
-    let array_input = document.getElementsByClassName('nw-lesepaten-form');
-
-    function Validator() {
-        var valid = true;
-        Array.prototype.forEach.call(array_input, x => {
-            const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
-            if (x.value === '') {
-                valid = false;
-                x.classList.add('nw-border-red-500');
-                label.classList.add('nw-text-red-500');
-            } else {
-                x.classList.remove('nw-border-red-500');
-                label.classList.remove('nw-text-red-500');
-            }
-        });
-
-        var dangerAlert = document.getElementById('dangerAlert');
-        if (valid) {
-            dangerAlert.classList.add('nw-hidden');
-        } else {
-            dangerAlert.classList.remove('nw-hidden');
-            dangerAlert.scrollIntoView({behavior: 'smooth', block: 'start'});
-        }
-
-        return valid;
-    }
 </script>
