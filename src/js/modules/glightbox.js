@@ -6,7 +6,8 @@ export function initGLightBox()
     const galleryLightbox = GLightbox({
         touchNavigation: true,
         loop: true,
-        moreText: 'mehr...'
+        moreText: 'mehr...',
+        moreLength: 0
     });
 
 
@@ -49,6 +50,7 @@ export function initGLightBox()
         selector: '.nw-article-image',
         touchNavigation: true,
         loop: false,
-        moreText: 'mehr...'
+        moreText: 'mehr...',
+        moreLength: 0
     });
 }
