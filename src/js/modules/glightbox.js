@@ -34,7 +34,7 @@ export function initGLightBox()
 
 
     galleryLightbox.setElements(elements);
-
+/*
     for(let i = 0; i < galleryLightbox.elements.length; i++)
     {
         if (i % 5 == 0 && i > 0)
@@ -45,7 +45,7 @@ export function initGLightBox()
             }, i);
         }
     }
-
+*/
     const articleImage = GLightbox({
         selector: '.nw-article-image',
         touchNavigation: true,
