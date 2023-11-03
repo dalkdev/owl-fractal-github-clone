@@ -80,6 +80,9 @@
   }
 }
 
-.nw-infobox {
+.nw-infobox,
+.nw-editorial-comment {
+  @apply nw-p-4 nw-rounded-md nw-mt-2.5;
   max-width: 656px;
+  background-color: #F2F5F9;
 }
