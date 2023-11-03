@@ -1,18 +1,19 @@
 <div
-    id="nw-embla-gradient nw-mt-6 nw-mb-10"
+    id="nw-embla-gradient"
     class="
     slider
     first-slide
-    nw-bg-custom-1-700 nw-pb-6 nw-pt-6 nw-mb-6
+    nw-bg-custom-1-700 nw-pb-8 nw-pt-10
+    nw-mt-6 nw-mb-10
     md:nw-mb-3
   "
 >
     <div class="nw-px-3 md:nw-px-7">
         <div class="nw-flex nw-flex-row nw-justify-between nw-items-end">
             <div>
-                <p class="nw-text-white nw-inline nw-text-xl nw-uppercase nw-font-bold">
+                <div class="nw-text-white nw-inline text-lg md:nw-text-2xl nw-uppercase nw-font-bold">
                     {{title}}
-                </p>
+                </div>
                 <hr class="nw-red-line-l nw-mt-0.5"/>
             </div>
             <div class="nw-text-gray-300 nw-text-sm nw-pl-3"><span class="photoCount" id="photoCount"></span>
@@ -20,14 +21,14 @@
             </div>
         </div>
         <div>
-            <p
+            <div
                 class="
           nw-text-white nw-text-left nw-text-md nw-font-bol
           nw-pt-6 nw-pb-2 nw-pr-2
         "
             >
                 {{caption}}
-            </p>
+            </div>
         </div>
     </div>
     <div class="embla embla--main-carousel">
@@ -60,7 +61,9 @@
                     </div>
                 {{/each}}
             </div>
-
+            <div class="nw-mt-8 nw-mx-auto nw-hidden md:nw-block" style="width: 96rem; height: 90px; max-width: 720px; max-height: 90px; background-color: #ccc;">
+                Hier könnte Ihre Werbung stehen.
+            </div>
             <div
                 class="
           nw-hidden

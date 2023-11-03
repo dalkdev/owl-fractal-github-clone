@@ -43,7 +43,8 @@ div.nw-container {
 
 @media (min-width: 768px) {
   div.nw-container {
-    padding: 0 28px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
   .nw-remove-padding-border {
     max-width: 1062px;
