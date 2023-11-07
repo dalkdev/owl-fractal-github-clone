@@ -25,7 +25,7 @@ const initializationFunctions: Array<() => void> = [
     initStickymenu,
     initFAQ,
     initTransform,
-    initPrivacybox,
+    //initPrivacybox,
     initModalbox,
     initGLightBox,
     initDirektZumThema,

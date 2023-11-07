@@ -1,6 +1,4 @@
 .nw-breadcrumb-container {
-  @apply nw-px-4 nw-py-4 md:nw-pb-8 md:nw-pt-4 nw-flex nw-flex-row nw-overflow-x-scroll nw-overflow-y-hidden md:nw-overflow-x-hidden nw-whitespace-nowrap;
-
   ol {
     li {
       @apply nw-pl-8 nw-text-gray-600 nw-text-sm;

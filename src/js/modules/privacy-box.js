@@ -19,8 +19,17 @@ export function initPrivacybox() {
 
         let _tb = document.querySelector(".togBtn");
 
-        if (_tb !== null)
-        {
+        /*
+        _tb.forEach(function() {
+            _tb.addEventListener("change", function (e) {
+                _tb.checked === true ? acceptSocialMedia() : declineSocialMedia();
+            });
+
+        });
+
+         */
+
+        if (_tb !== null) {
             _tb.addEventListener("change", function (e) {
                 this.checked === true ? acceptSocialMedia() : declineSocialMedia();
             });
