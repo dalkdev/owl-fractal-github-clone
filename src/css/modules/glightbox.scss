@@ -304,6 +304,7 @@
 .gslide-description.description-top {
     margin: 0 auto;
     width: 100%;
+    background: white;
 }
 
 .gslide-description p {
@@ -519,6 +520,8 @@ iframe.wait-autoplay {
     font-size: 0.86em;
     margin-bottom: 0;
     line-height: 1.4em;
+    color:black;
+    padding: 1rem;
 }
 
 .glightbox-clean .gslide-video {

@@ -16,23 +16,23 @@ export function initGLightBox()
     const adcontent = document.querySelector('#nw_ad');
     let elements = [];
 
-    lightboxes.forEach((lightbox, index) => {
-        let el = {
-            'href': lightbox.href,
-            'type': 'image',
-            'caption': lightbox.title
-        }
-
-        elements.push(el);
-
-        lightbox.onclick = function(e)
-        {
-            e.preventDefault();
-            galleryLightbox.openAt(index);
-        };
+    // lightboxes.forEach((lightbox, index) => {
+    //     let el = {
+    //         'href': lightbox.href,
+    //         'caption': lightbox.title
+    //     }
+    //
+    //     elements.push(el);
+    //
+    //     lightbox.onclick = function(e)
+    //     {
+    //         e.preventDefault();
+    //         galleryLightbox.openAt(index);
+    //     };
+    // });
+    var lightboxDescription = GLightbox({
+        selector: '.nw-gallery-lightbox'
     });
-
-
     galleryLightbox.setElements(elements);
 /*
     for(let i = 0; i < galleryLightbox.elements.length; i++)
