@@ -31,7 +31,7 @@ export function initGLightBox()
     //     };
     // });
     var lightboxDescription = GLightbox({
-        selector: '.nw-gallery-lightbox'
+        selector: '.nw-gallery-lightbox',
     });
     galleryLightbox.setElements(elements);
 /*

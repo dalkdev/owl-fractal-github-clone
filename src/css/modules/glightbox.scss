@@ -573,7 +573,9 @@ iframe.wait-autoplay {
 .glightbox-clean .gclose:hover {
     opacity: 1;
 }
-
+.glightbox-mobile.gdesc-open .gloader.visible{
+    display:none !important;
+}
 
 /*CSS Animations*/
 
