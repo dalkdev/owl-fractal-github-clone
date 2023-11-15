@@ -3,17 +3,19 @@
         werden
     </div>
     <form>
+        <p id="dangerAlert" class="nw-bg-red-100 nw-text-red-700 nw-px-2
+            nw-py-3 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie biite den roten Felder aus</p>
         <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-4">
             <div class="nw-basis-1/2">
                 <div class=" nw-pb-2">
-                    <label for=""
+                    <label for="art"
                            class="nw-text-xs nw-font-medium nw-leading-6">
-                        ART DES PATENABOS
+                        ART DES PATENABOS*
                     </label>
                 </div>
                 <div class="nw-relative nw-flex nw-w-full">
                     <select type="text"
-                            class=" nw-w-full nw-px-2
+                            class="nw-lesepaten-form nw-w-full nw-px-2
                                 nw-py-3.5
                                 nw-mx-auto
                                 nw-text-sm
@@ -28,24 +30,20 @@
                             ePaper /
                             Printzeitung
                         </option>
-                        <option value="a">A</option>
-                        <option value="b">B</option>
-                        <option value="c">C</option>
-                        <option value="d">D</option>
-                        <option value="e">E</option>
+                        <option value="epaper"> ePaper</option>
+                        <option value="printzeitung">Printzeitung</option>
                     </select>
                 </div>
             </div>
             <div class="nw-basis-1/2">
                 <div class=" nw-pb-2">
-                    <label for=""
+                    <label for="anzahl"
                            class="nw-text-xs nw-font-medium nw-leading-6">
                         ANZAHL DER PATENABOS*
                     </label>
-
                 </div>
                 <div class="nw-relative nw-mb-4 nw-flex nw-w-full">
-                    <select class=" nw-w-full nw-px-2
+                    <select class="nw-lesepaten-form nw-w-full nw-px-2
                                 nw-py-3.5
                                 nw-mx-auto
                                 nw-text-sm
@@ -54,7 +52,7 @@
                                 nw-rounded
                                 nw-box-border
                                 nw-cursor-pointer"
-                            id="art"
+                            id="anzahl"
                             name="">
                         <option value="1" selected>1</option>
                         <option value="2">2</option>
@@ -67,26 +65,24 @@
         </div>
         <div class="nw-mb-8 md:nw-mb-6">
             <div class="nw-pb-2">
-                <label for=""
+                <label for="dateinput"
                        class="nw-text-xs nw-font-medium  nw-leading-6">
-                    LIEFERBEGINN
+                    LIEFERBEGINN*
                 </label>
             </div>
             <div class="nw-hide-date nw-relative nw-mb-4 nw-flex nw-w-full nw-items-stretch">
                 <input
                     type="date"
-                    class="nw-block nw-min-w-0 nw-flex-auto nw-rounded nw-border nw-border-solid nw-border-gray-200 nw-bg-transparent
+                    class="nw-lesepaten-form nw-block nw-min-w-0 nw-flex-auto nw-rounded nw-border nw-border-solid nw-border-gray-200 nw-bg-transparent
                     nw-bg-clip-padding nw-pl-2 nw-py-3 nw-text-sm nw-leading-6 focus:nw-outline-none nw-cursor-pointer"
                     aria-label="datum"
                     aria-describedby=""
-                    id="dateInput"
+                    id="dateinput"
                 />
             </div>
         </div>
         <hr>
         <div>
-            <p id="dangerAlert" class="nw-bg-red-100 nw-text-red-700 nw-px-2
-            nw-py-3 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie biite den roten Felder aus</p>
             <p class=" nw-text-left nw-text-base nw-leading-8 nw-font-bold nw-mt-8 md:nw-mt-6 nw-mb-2">Ihre
                 Daten</p>
         </div>
