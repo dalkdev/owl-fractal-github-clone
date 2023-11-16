@@ -32,6 +32,7 @@ export function initGLightBox()
     // });
     var lightboxDescription = GLightbox({
         selector: '.nw-gallery-lightbox',
+        moreText: 'mehr...',
     });
     galleryLightbox.setElements(elements);
 /*
