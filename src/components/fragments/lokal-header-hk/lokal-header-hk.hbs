@@ -1,0 +1,74 @@
+<style>
+    @media (max-width: 767px) {
+        .sep-text-before {
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+
+        .sep-text-after {
+            display: none;
+        }
+
+        .sep-text {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .sep-text .content {
+            padding-right: 0;
+            padding-left: 0;
+
+        }
+    }
+
+    @media (min-width: 768px) {
+        .sep-text-before, .sep-text-after {
+            width: 50%;
+        }
+
+        .sep-text {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .sep-text .content {
+            padding-right: 20px;
+            padding-left: 20px;
+
+        }
+
+        .sep-text .sep-text-before, .sep-text .sep-text-after {
+            display: table-cell;
+        }
+    }
+
+    .sep-text {
+        margin: 0 0 20px 0;
+        padding: 0;
+        clear: both;
+    }
+
+    .sep-text .content {
+        line-height: 1.1;
+        word-wrap: break-word;
+    }
+
+    .sep-text .sep-text-line {
+        color: rgb(217, 217, 217);
+    }
+
+
+</style>
+<div class="sep-text nw-uppercase nw-text-2.5xl nw-text-center nw-relative ">
+    <span class="article-landingpage-galerie sep-text-before nw-w-full nw-align-middle"><span
+        class="sep-text-line nw-inline-block nw-w-full nw-border-b nw-align-middle nw-h-px nw-overflow-hidden"></span></span>
+    <div
+        class="content nw-font-medium nw-text-2.5xl nw-whitespace-nowrap nw-align-baseline nw-table-cell text-inherit">
+        <h1 class="nw-text-2xl nw-font-medium">
+            Lokal
+        </h1>
+    </div>
+    <span class="sep-text-after nw-w-full nw-align-middle"><span
+        class="sep-text-line nw-inline-block nw-w-full nw-border-b nw-align-middle nw-h-px nw-overflow-hidden"></span></span>
+</div>
