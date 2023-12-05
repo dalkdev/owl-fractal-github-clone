@@ -68,6 +68,8 @@ export function initLesepaten() {
     var checkBox2 = document.getElementById('checkCondition2');
     var bRegister = document.getElementById('registerButton');
 
+    if (checkBox1 == null || checkBox2 == null || bRegister == null) return;
+
     checkBox1.addEventListener('change', checkFunction);
     checkBox2.addEventListener('change', checkFunction);
     bRegister.addEventListener('click', onClickRegistrieren);
