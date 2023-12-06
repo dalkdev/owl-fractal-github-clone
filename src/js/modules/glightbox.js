@@ -14,8 +14,6 @@ export function initGLightBox()
     const lightboxes = document.querySelectorAll('.nw-gallery-lightbox');
     const lightboxes_amount = lightboxes.length;
 
-    if (lightboxes_amount == 0) return;
-
     const adcontent = document.querySelector('#nw_ad');
     let elements = [];
 
