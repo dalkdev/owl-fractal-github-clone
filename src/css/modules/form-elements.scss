@@ -23,3 +23,8 @@
   @apply nw-text-xs
   nw-text-gray-500;
 }
+
+button,
+input {
+  @apply nw-h-10 nw-py-px;
+}

@@ -98,3 +98,16 @@ p.druck-text {
 h2.druck-text {
   @apply nw-text-2xl nw-font-bold nw-w-10/12 nw-mb-4 nw-mt-6 nw-leading-7;
 }
+
+.article-detail-entry-content ol {
+  @apply nw-list-decimal;
+}
+
+.article-detail-entry-content ul {
+  @apply nw-list-disc;
+}
+
+.article-detail-entry-content ul,
+.article-detail-entry-content ol {
+  @apply md:nw-w-5/6 nw-ml-5 nw-mb-8;
+}
