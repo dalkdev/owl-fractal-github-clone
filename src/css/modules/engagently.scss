@@ -1,0 +1,316 @@
+/* ############################### Engagently CSS Start ############################### */
+#appEgy {
+  position: fixed;
+  top: 0;
+  right: -550px;
+  width: 100vw;
+  max-width: 520px;
+  height: 100%;
+  overflow-y: auto;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  padding-top: 24px;
+  background-color: #FFF;
+}
+
+#appEgy.active {
+  right: 0;
+  z-index: 9999;
+}
+
+:root {
+  --bg-color-comment-text: rgb(241, 240, 240);
+  --font-family-default: Roboto, sans-serif;
+  --egy-palette-primary: rgb(201, 39, 30);;
+}
+
+[data-egy-color-scheme='dark'] {
+  --bg-color-comment-text: rgb(52, 52, 52);
+}
+
+::part(egy-button) {
+  text-transform: none;
+}
+
+egy-discussion::part(commentary) {
+  background-color: var(--bg-color-comment-text);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+egy-discussion::part(commentary commentary--level-1) {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(212, 212, 212);
+  margin-top: 10px;
+
+}
+
+egy-discussion::part(egy-avatar commentary__header__avatar) {
+  height: 25px;
+  width: 25px;
+  font-size: 10px;
+}
+
+egy-discussion::part(commentary__header__details) {
+  margin: 3px 0 0;
+}
+
+egy-discussion::part(commentary__body) {
+  padding-left: 2.7rem;
+}
+
+egy-discussion::part(commentary__content),
+egy-discussion::part(commentary-author__disabled),
+egy-discussion::part(view-controller__action--comments),
+egy-discussion::part(view-controller__action-count--comments),
+egy-discussion::part(replies-toggle),
+.egy-alerts {
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+}
+
+egy-discussion::part(view-controller__action--comments), egy-discussion::part(view-controller__action-count--comments), egy-discussion::part(replies-toggle) {
+  background: transparent;
+  color: #000;
+  font: normal normal bold 16px/20px var(--font-family-default);
+  margin: 0;
+
+}
+
+egy-discussion::part(commentary commentary--level-2) {
+  margin-top: 1rem;
+}
+
+egy-discussion::part(reply-form)::before,
+egy-discussion::part(replies-thread)::before,
+egy-discussion::part(commentary-row commentary-row--level-1)::before,
+egy-discussion::part(egy-avatar)::before,
+egy-discussion::part(load-more load-more--level-1)::before,
+egy-discussion::part(commentary-input__wrapper)::before,
+egy-discussion::part(comment-list__row)::before {
+  content: unset;
+}
+
+egy-discussion::part(egy-stack__horizontal commentary__footer) {
+  display: block;
+  text-align: right;
+}
+
+egy-discussion::part(commentary-reaction), egy-discussion::part(commentary-action commentary__reply) {
+  font: normal normal bold 10px/16px var(--font-family-default);
+  color: #4A5568;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+egy-discussion::part(egy-button__content commentary-author__link) {
+  color: #000;
+  font: normal normal bold 16px/20px var(--font-family-default);
+}
+
+egy-discussion::part(egy-separator commentary-row__separator),
+egy-discussion::part(view-controller__comments-modifiers),
+egy-discussion::part(egy-alert egy-alert--color-default state-message state-message--user) {
+  display: none;
+}
+
+egy-discussion::part(preamble) {
+  padding: 24px 0;
+  margin-top: 0px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  font: normal normal normal 16px/24px var(--font-family-default);
+}
+
+egy-discussion::part(view-controller) {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+egy-discussion::part(egy-stack__horizontal comment-author comment-form) {
+  padding-bottom: 24px;
+}
+
+egy-discussion::part(commentary__header__author),
+egy-discussion::part(view-controller__action--comments),
+egy-discussion::part(egy-stack__horizontal commentary__header__actions) {
+  padding: 0;
+}
+
+egy-discussion::part(egy-avatar comment-author__avatar commentary__header__author) {
+  font: normal normal normal 16 var(--font-family-default);
+}
+
+egy-discussion::part(egy-stack__horizontal comment-author__name commentary__header__author) {
+  margin-top: 4px;
+  font: normal normal bold 16px/26px var(--font-family-default);
+
+}
+
+egy-discussion::part(commentary__content-wrapper) {
+  padding-top: 16px;
+}
+
+egy-discussion::part(egy-span) {
+  margin-top: 4px;
+  font: normal normal normal 12px/26px var(--font-family-default);
+  color: #4A5568;
+}
+
+egy-discussion::part(commentary__content-text) {
+  font: normal normal normal 16px/24px var(--font-family-default);
+}
+
+egy-discussion::part(commentary-input commentary-input--level-0) {
+  margin-bottom: 20px;
+}
+
+egy-discussion::part(load-more load-more--level-1) {
+  text-align: center;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+egy-discussion::part(load-more__button load-more__button--level-1) {
+  padding: 0;
+  font: normal normal 420 12px/20px Roboto;
+  color: #4B5568;
+}
+
+.drawer-header .text-container, .close-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.drawer-header-content {
+  border-top: 1px solid #eeeeee;
+  padding: 24px 24px 0;
+  margin-top: 24px;
+
+}
+
+.drawer-header .text-container {
+  justify-content: flex-start;
+}
+
+.drawer-header .close-container {
+  justify-content: flex-end;
+}
+
+.drawer-header .text {
+  font: normal normal bold 24px/32px var(--font-family-default);
+}
+
+.drawer-header .close {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  opacity: 1;
+  border-radius: 50%;
+  font-family: Roboto, sans-serif;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.drawer-header .close.scrolled {
+  background: #F2F2F2 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  z-index: 9;
+}
+
+.drawer-header .close svg {
+  height: 17px;
+  pointer-events: none;
+}
+
+.discussion-content {
+  padding: 24px 24px 0px;
+  font-family: var(--font-family-default);
+}
+
+.nw-landingpage-button.engagently-load-button:hover {
+  color: #d20a11
+}
+
+.nw-landingpage-button.engagently-load-button {
+  color: #fff;
+  display: inline-flex;
+  width: auto;
+  font: normal normal 420 16px/24px var(--font-family-default);
+  padding-right: 0.6rem;
+}
+
+.nw-landingpage-button.engagently-load-button svg {
+  height: 23px;
+}
+
+.egy-alerts {
+  background-color: rgb(238, 238, 238);
+  border-color: rgb(110, 110, 110);
+  border-radius: 8px;
+  padding: 24px 16px;
+  margin-top: 16px;
+  font: normal normal 450 18px/32px var(--font-family-default);
+}
+
+#background-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  opacity: .2;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.loader-container .loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #a11f18;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-container {
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 250px);
+  text-align: center;
+}
+
+/* ############################### Engagently CSS End ################################ */
