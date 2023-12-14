@@ -1,4 +1,4 @@
-<div class="nw-engagently">
+<div class="relative nw-engagently">
     <button class="nw-landingpage-button engagently-load-button" onclick="renderEngagentlyDiscussion(event)">
         Diskutieren Sie mit <span data-egy-dsc="article-23033163"></span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -7,4 +7,16 @@
                   clip-rule="evenodd"></path>
         </svg>
     </button>
+    
+    <div
+        class="nw-hidden engagently-menu nw-absolute nw-top-0 nw-right-0 nw-bg-gray-100 nw-p-4 nw-border nw-border-gray-300"
+        id="engagentlyMenu">Kommentare
+    </div>
 </div>
+<script>
+    function renderEngagentlyDiscussion(event) {
+        var menu = document.getElementById('engagentlyMenu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        event.preventDefault();
+    }
+</script>
