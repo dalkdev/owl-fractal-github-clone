@@ -17,9 +17,8 @@ export function initPrivacybox() {
             displayAndHideClassInPrivacy(".nw-big-privacy-box", ".nw-small-privacy-box");
         }
 
-        let _tb = document.querySelector(".togBtn");
+        let _tb = document.querySelectorAll(".togBtn");
 
-        /*
         _tb.forEach(function() {
             _tb.addEventListener("change", function (e) {
                 _tb.checked === true ? acceptSocialMedia() : declineSocialMedia();
@@ -27,13 +26,13 @@ export function initPrivacybox() {
 
         });
 
-         */
-
+        /*
         if (_tb !== null) {
             _tb.addEventListener("change", function (e) {
                 this.checked === true ? acceptSocialMedia() : declineSocialMedia();
             });
         }
+        */
     }
 
     function acceptSocialMedia() {
