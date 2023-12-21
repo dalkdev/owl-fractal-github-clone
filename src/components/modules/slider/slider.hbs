@@ -55,6 +55,9 @@
                   "
                                         src="{{src}}"
                                     alt="image">
+                                    <div class="em_ads_box_dynamic_remove">
+                                        <div id="nw.de_mr_6" class="nw-ad-element"></div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -111,3 +114,16 @@
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const mainCarouselWrap = document.querySelector('.slider').querySelector('.embla--main-carousel');
+        const mainCarouselView = mainCarouselWrap?.querySelector('.embla__viewport');
+        options = {
+            dragFree: true,
+            containScroll: 'trimSnaps'
+        };
+        const mainCarousel = EmblaCarousel(mainCarouselView as HTMLElement);
+
+        console.log(mainCarousel.slides);
+    });
+</script>

@@ -62,6 +62,28 @@ function initSlider(wrapperNode: HTMLElement) {
         })
     });
 
+    let adIsTriggered = -1;
+
+    const onAdSlideInView = (mainCarousel) => {
+        mainCarousel.slidesInView().forEach(function(el){
+            if ((el !== 0 || el === 5 || el % 5 === .2) && adIsTriggered === -1) {
+                const check = mainCarousel.slideNodes()[el].querySelector('.em_ads_box_dynamic_remove > div');
+                if (check) {
+                    // @ts-ignore
+                    googletag.cmd.push(function() { googletag.display('/248415179,13052567/nw.de_mr_6'); });
+                    adIsTriggered = el;
+                }
+            }
+        })
+
+        if (mainCarousel.slidesNotInView().includes(adIsTriggered))
+        {
+            adIsTriggered = -1;
+        }
+    }
+
+    mainCarousel.on('scroll', onAdSlideInView)
+
     function preventClick(e)
     {
         e.preventDefault();
