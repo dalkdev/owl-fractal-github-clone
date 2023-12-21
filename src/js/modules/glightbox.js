@@ -17,37 +17,12 @@ export function initGLightBox()
     const adcontent = document.querySelector('#nw_ad');
     let elements = [];
 
-    // lightboxes.forEach((lightbox, index) => {
-    //     let el = {
-    //         'href': lightbox.href,
-    //         'caption': lightbox.title
-    //     }
-    //
-    //     elements.push(el);
-    //
-    //     lightbox.onclick = function(e)
-    //     {
-    //         e.preventDefault();
-    //         galleryLightbox.openAt(index);
-    //     };
-    // });
     var lightboxDescription = GLightbox({
         selector: '.nw-gallery-lightbox',
         moreText: 'mehr...',
     });
     galleryLightbox.setElements(elements);
-/*
-    for(let i = 0; i < galleryLightbox.elements.length; i++)
-    {
-        if (i % 5 == 0 && i > 0)
-        {
-            galleryLightbox.insertSlide({
-                content: '<p>Hier könnte Ihre Werbung stehen',
-                width: '90vw'
-            }, i);
-        }
-    }
-*/
+
     const articleImage = GLightbox({
         selector: '.nw-article-image',
         touchNavigation: true,
