@@ -1,24 +1,247 @@
-<!--
-<div class="relative nw-engagently">
+<div class="nw-engagently">
     <button class="nw-landingpage-button engagently-load-button" onclick="renderEngagentlyDiscussion(event)">
-        Diskutieren Sie mit <span data-egy-dsc="article-23033163"></span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+        Diskutieren Sie mit
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="nw-w-5 nw-h-5">
             <path fill-rule="evenodd"
                   d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                   clip-rule="evenodd"></path>
         </svg>
     </button>
+    <template id="egy-template">
+        <div class="drawer-header">
+            <div class="logo-nw">
+                <a href="/" class="nw-flex nw-justify-center nw-items-center nw-mx-1"
+                   onclick="_paq.push(['trackEvent', 'Menü', device + ' Head', 'Startseite']);">
+                    <img src="/images/nw-plus_icon.svg" alt=""
+                         width="40" height="40">
+                    <span class="nw-font-bold nw-text-xl"></span>
+                </a>
+            </div>
+            <div class="drawer-header-content">
+                <div class="text-container">
+                    <span class="text">TEILEN SIE IHRE MEINUNG</span>
+                </div>
+                <div class="close-container">
+                    <button id="closeEngagently" onclick="closeEngagentlyDrawer(event)" class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path
+                                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="egy-alerts nw-text-md nw-hidden"><span
+                    part="egy-alert__content egy-alert__content--color-default state-message state-message--user"
+                    class="egy-discussion-7ok580-content">Melden Sie sich bitte an um zu kommentieren </span>
+                    <div class="nw-pt-6 ">
+                        <button onclick="userLogin(event)" class="nw-landingpage-button engagently-load-button nw-mb-0"
+                                id="userLoginButton">
+                            Anmelden
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 class="w-5 h-5">
+                                <path fill-rule="evenodd"
+                                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discussion-content">
+            <div data-setup="0" class="loader-container nw-flex nw-hidden">
+                <div class="loader"></div>
+            </div>
+            <egy-discussion discussion-id="article-23033163"
+                            discussion-title="Studienbeginn: In OWL sind die Wohnheimplätze knapp"
+                            signature="776633ac9ccb643c456bc4b41dbc2dae221a9a8709e5e7ec965df4314a2e043b">
+            </egy-discussion>
+        </div>
+    </template>
+    <div id="appEgy" class="">
+        <div class="drawer-header">
+            <div class="logo-nw">
+                <a href="/" class="nw-flex nw-justify-center nw-items-center nw-mx-1"
+                   onclick="_paq.push(['trackEvent', 'Menü', device + ' Head', 'Startseite']);">
+                    <img src="/images/nw-wortmarke-logo.svg" alt=""
+                         width="40" height="40">
+                    <span class="nw-font-bold nw-text-xl"></span>
+                </a>
+            </div>
+            <div class="drawer-header-content">
+                <div class="text-container">
+                    <span class="text">TEILEN SIE IHRE MEINUNG</span>
+                </div>
+                <div class="close-container">
+                    <button id="closeEngagently" onclick="closeEngagentlyDrawer(event)" class="close"
+                            style="display: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path
+                                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="egy-alerts nw-text-md"><span
+                    part="egy-alert__content egy-alert__content--color-default state-message state-message--user"
+                    class="egy-discussion-7ok580-content">Melden Sie sich bitte an um zu kommentieren </span>
+                    <div class="nw-pt-6 ">
+                        <button onclick="userLogin(event)" class="nw-landingpage-button engagently-load-button nw-mb-0"
+                                id="userLoginButton">
+                            Anmelden
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 class="w-5 h-5">
+                                <path fill-rule="evenodd"
+                                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discussion-content">
+            <div data-setup="1" class="loader-container nw-flex nw-hidden">
+                <div class="loader"></div>
+            </div>
+            <egy-discussion discussion-id="article-23033163"
+                            discussion-title="Studienbeginn: In OWL sind die Wohnheimplätze knapp"
+                            signature="776633ac9ccb643c456bc4b41dbc2dae221a9a8709e5e7ec965df4314a2e043b">
 
-    <div
-        class="nw-hidden engagently-menu nw-absolute nw-top-0 nw-right-0 nw-bg-gray-100 nw-p-4 nw-border nw-border-gray-300"
-        id="engagentlyMenu">Kommentare
+            </egy-discussion>
+        </div>
     </div>
+    <div id="background-overlay" class="nw-hidden"></div>
 </div>
-<script>
-    function renderEngagentlyDiscussion(event) {
-        var menu = document.getElementById('engagentlyMenu');
-        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-        event.preventDefault();
-    }
-</script>-->
+<script
+    defer
+    type="module"
+    src="{{ engagently_frontend }}/engagently.js"
+    data-engagently="initEngagently"
+>
 
+</script>
+<script>
+
+    const welcomeMessageHTML = `<div slot="welcome" class="welcome-message">
+
+                            <p class="nw-text-lg nw-text-lgs nw-text-black nw-pb-6">Liebe Community,</p>
+                            <p class="nw-text-lg nw-text-lgs nw-text-black nw-pb-6">
+                                wir moderieren die Diskussionen auf unseren Seiten, um einen respektvollen Austausch zu gewährleisten.
+                                Wie wir genau miteinander umgehen und welche Regeln gelten, können Sie in unserer <a href="https://www.nw.de/service/formales/20263106_Nutzungsbedingungen-fuer-die-Kommentarfunktion-Nettiquette.html" target="_blank">Netiquette</a> nachlesen.
+                                Wenn Sie sich fragen, warum ein Beitrag möglicherweise erst mit Verzögerung erscheint, finden Sie die Antwort ebenfalls in der Netiquette.
+                            </p>
+                            <p class="nw-text-lg nw-text-lgs nw-text-black nw-pb-6">
+                                Vielen Dank für Ihr Verständnis und Ihre aktive Mitarbeit.
+                            </p>
+                            <p class="nw-text-lg nw-text-lgs nw-text-black nw-pb-6">
+                                Mit freundlichen Grüßen<br>
+
+                                Ihr Moderationsteam von NW.de.
+                            </p>
+                        </div>`;
+
+    /*   function initEngagently() {
+          engagently.Configuration({
+              communityId: '{{ community_id }}',
+            defaultLanguage: 'de',
+            translations: {
+                de: {
+                    interpolation: {
+                        'messages': '<a href="#">link</a>'
+                    },
+                    messages: {
+                        "log-in-to-comment": "Melden Sie sich bitte an um zu kommentieren {{ messages }}",
+                        "discussion-preamble": welcomeMessageHTML
+                    }
+                }
+            },
+            events: {
+                onSetup: function (data) {
+                    let loader_container = document.querySelector('.loader-container');
+                    loader_container.classList.add('nw-hidden');
+                    loader_container.setAttribute('data-setup', '1')
+                }
+            }
+        });
+    } */
+
+    function renderEngagentlyDiscussion(event) {
+        if (event) event.preventDefault();
+
+        const template = document.querySelector('#egy-template');
+        const app = document.querySelector('#appEgy');
+        if (app.innerHTML.trim() === "") {
+            app.innerHTML = template.innerHTML;
+        }
+
+        if (!app.classList.contains('active')) {
+            // add to end of event loop (after event listener callback)
+            setTimeout(() => {
+                document.getElementById("closeEngagently").style.display = "flex";
+                document.querySelector('.loader-container').classList.remove('nw-hidden');
+                /*  reinitEngagently(); */
+                app.classList.add('active');
+                document.getElementById('background-overlay').classList.remove('nw-hidden');
+            }, 0)
+        }
+    }
+
+    // Button clicked
+    document.addEventListener('click', closeEngagentlyDrawer);
+
+    // Check if 'egy_cid' is present in the URL on page load for shared links
+    document.addEventListener('DOMContentLoaded', function () {
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('egy_cid')) {
+            const app = document.querySelector('#appEgy');
+            app.classList.add('active');
+            document.getElementById("closeEngagently").style.display = "flex"
+            renderEngagentlyDiscussion();
+        }
+    });
+    document.addEventListener("click", function (event) {
+        const app = document.querySelector('#logoutButton');
+        if (app && app.contains(event.target)) {
+            signOut();
+        }
+    });
+
+    async function signOut() {
+        await window.engagently?.signOut();
+        await window.engagently?.reinit({token: null});
+    }
+
+    function closeEngagentlyDrawer(event) {
+        const app = document.querySelector('#appEgy');
+        if (!app.contains(event.target) && app.classList.contains('active')) {
+            document.getElementById("closeEngagently").style.display = "none";
+            app.classList.remove('active');
+            document.getElementById('background-overlay').classList.add('nw-hidden');
+        } else if (event.target.id == 'closeEngagently' || event.target.id == 'userLoginButton') {
+            document.getElementById("closeEngagently").style.display = "none"
+            app.classList.remove('active');
+            document.getElementById('background-overlay').classList.add('nw-hidden');
+        }
+    }
+
+    function userLogin(event) {
+        window.scrollTo(0, 0);
+        const button = document.querySelector('#nw-login-button');
+        button.click();
+    }
+
+    function handleEngagentlyScroll() {
+        var close_button = document.querySelector('.drawer-header .close');
+        var engagently_div = document.getElementById('appEgy');
+        if (engagently_div.scrollTop > 100) {
+            close_button.classList.add('scrolled');
+        } else {
+            close_button.classList.remove('scrolled');
+        }
+    }
+
+    var engagently_div = document.getElementById('appEgy');
+    if (engagently_div) {
+        // Listen for the scroll event on the div
+        engagently_div.addEventListener('scroll', handleEngagentlyScroll);
+    }
+</script>
