@@ -118,7 +118,7 @@
                         <div class="nw-absolute nw-right-2 nw-top-3 nw-cursor-pointer nw-z-999 nw-m-auto">
                             <div class="nw-relative">
                         <span id="eye-icon" class="nw-mr-2" onclick="passwordToggle();">
-                            <img id="eye-img" class="nw-w-6 nw-h-6 nw-overflow-clip-margin-content-box nw-overflow-clip"
+                            <img id="eye-img" class="nw-w-5 nw-h-5 nw-overflow-clip-margin-content-box nw-overflow-clip"
                                  src="/images/eye.svg">
                         </span>
                             </div>
@@ -142,6 +142,44 @@
                         />
                     </div>
                 </div>
+                <!-- -->
+                <div class="nw-mb-4">
+                    <label
+                        class="
+                        nw-font-medium
+                        nw-text-xs
+                        nw-uppercase
+                        "
+                        for="region"
+                    >Meine Lieblingsregion*</label
+                    >
+                    <select
+                        class="
+            nw-formfield
+            nw-w-full
+            nw-px-2
+            nw-py-2
+            nw-mx-auto
+            nw-text-base
+            nw-inline-block
+            nw-border
+            nw-rounded
+            nw-box-border
+            nw-cursor-pointer
+          "
+                        id="region"
+                        name="" onchange="setNLID(this.value)"
+                    >
+                        <option value="" disabled selected hidden>Bitte wählen</option>
+                        <option value="bielefeld">Bielefeld</option>
+                        <option value="guetersloh">Gütersloh</option>
+                        <option value="herford">Herford</option>
+                        <option value="hoexter">Höxter</option>
+                        <option value="minden">Minden-Lübbecke</option>
+                        <option value="paderborn">Paderborn</option>
+                    </select>
+                </div>
+                <!-- -->
                 <div class="nw-mb-4">
                     <label
                         class="
@@ -157,7 +195,7 @@
             nw-formfield
             nw-w-full
             nw-px-2
-            nw-py-3.5
+            nw-py-2
             nw-mx-auto
             nw-text-base
             nw-inline-block
@@ -382,7 +420,7 @@
             nw-formfield
             nw-w-full
             nw-px-2
-            nw-py-3.5
+            nw-py-2
             nw-mx-auto
             nw-text-base
             nw-inline-block
@@ -674,6 +712,19 @@
         } else {
             passwordField.type = "password";
             eyeIcon.src = '/images/eye.svg';
+        }
+    }
+
+    //
+    function setNLID(selectedValue) {
+        const nl_id = selectedValue === "bielefeld" ? 14 :
+            selectedValue === "guetersloh" ? 15 :
+                selectedValue === "herford" ? 16 :
+                    selectedValue === "hoexter" ? 17 :
+                        selectedValue === "minden" ? 18 :
+                            selectedValue === "paderborn" ? 19 : null;
+        if (nl_id !== null) {
+            console.log("nl_id =", nl_id);
         }
     }
 </script>
