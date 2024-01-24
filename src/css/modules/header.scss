@@ -2,9 +2,16 @@
   @apply  nw-mb-0 md:nw-mb-4;
 }
 
+@media (orientation: landscape) {
+  #nw-logo-section {
+    left:10px;
+  }
+}
+
 #nw-logo-section {
   @apply md:nw-shadow-md;
   background-color: white!important;
+  z-index: 99999999;
 }
 
 #nw-menu-section {
@@ -63,6 +70,7 @@
 
 #nw-loginbox {
   @apply nw-w-80 nw-p-2 nw-bg-white nw-rounded
+    nw-right-0
     nw-z-50
     nw-border
     nw-border-gray-200
