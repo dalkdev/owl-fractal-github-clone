@@ -52,21 +52,13 @@
   @apply nw-text-md nw-px-4 nw-w-full md:nw-w-5/6 nw-mx-auto;
 
   h2 {
-    @apply nw-font-bold nw-pb-2 nw-leading-relaxed;
+    @apply nw-w-full md:nw-w-5/6 nw-font-bold nw-pb-2 nw-leading-relaxed;
   }
 
   li,
-  p.western,
-  p.em_text,
-  p#absatz1 {
-    @apply nw-w-full md:nw-w-5/6 nw-pb-4 nw-text-black nw-text-lg #{!important};
-  }
+  p {
+    @apply nw-w-full md:nw-w-5/6 nw-pb-4 nw-text-black nw-text-lg;
 
-  li,
-  p.em_text,
-  p.western,
-  p#absatz1.em_text,
-  p#absatz1 {
     a {
       @apply nw-text-red-500 nw-underline nw-leading-tight nw-cursor-pointer;
     }
