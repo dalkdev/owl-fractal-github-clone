@@ -11,17 +11,25 @@ export function initModalbox() {
     function openModal()
     {
         modal.style.display = "block";
+        const htmlTag = document.querySelector('html');
+        htmlTag.style.overflowY =
+            htmlTag.style.overflowY === 'hidden' ? '' : 'hidden';
+
     }
 
     for (var i = 0; i < closeButton.length; i++) {
         closeButton[i].onclick = function () {
             modal.style.display = "none";
+            const htmlTag = document.querySelector('html');
+            htmlTag.style.overflowY = '';
         }
     }
 
     window.onclick = function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
+            const htmlTag = document.querySelector('html');
+            htmlTag.style.overflowY = '';
         }
     }
 
