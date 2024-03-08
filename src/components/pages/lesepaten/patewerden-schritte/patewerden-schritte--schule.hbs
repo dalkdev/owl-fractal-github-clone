@@ -1,0 +1,240 @@
+<form id="step2Form" class="nw-bg-white nw-pb-8">
+    <div>
+        <p id="dangerAlert2" class="nw-bg-red-100 nw-text-red-700 nw-px-2
+            nw-py-3 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie bitte die roten Felder aus</p>
+
+    </div>
+
+    <div class="nw-mb-4">
+        <p class=" nw-text-left nw-text-md nw-leading-6 nw-font-bold nw-pb-8 md:nw-pb-7">Patenschaft und Schule</p>
+        <p class=" nw-text-left nw-text-base nw-leading-6 nw-font-medium">Bitte wählen Sie ein Produkt</p>
+    </div>
+    <!-- -->
+    <div class="nw-flex nw-flex-row nw-justify-between nw-uppercase nw-mb-2">
+        <div>
+            <p class="nw-text-xs nw-font-medium nw-leading-6">
+                ART DES PATENABOS*
+            </p>
+        </div>
+        <div>
+            <p class="nw-text-xs nw-font-medium nw-leading-6">
+                MENGE DER PATENABOS*
+            </p>
+        </div>
+    </div>
+    <div class="nw-p-2 nw-border nw-border-gray-200 nw-flex nw-flex-row nw-gap-4 nw-bg-white nw-mb-2 nw-rounded carmen"
+         id="block1">
+        <div class="nw-relative nw-flex nw-items-center nw-basis-1/2">
+            <div class="nw-flex nw-items-center nw-h-5">
+                <input id="checkbox1" name="" type="checkbox"
+                       class="nw-shrink-0 nw-w-4 nw-h-4 nw-border-gray-200 nw-rounded-full nw-text-blue-600 focus:nw-ring-blue-500"
+                >
+            </div>
+            <label for="" class="nw-ms-2">
+                <span class="nw-block nw-text-sm nw-font-bold nw-text-gray-800">ePaper</span>
+            </label>
+        </div>
+        <div
+            class="nw-relative nw-flex nw-justify-end nw-basis-1/2">
+            <select class="nw-p-1
+                                    nw-text-sm
+                                    nw-bg-gray-100
+                                    nw-inline-block
+                                    nw-border
+                                    nw-rounded
+                                    nw-box-border
+                                    nw-cursor-pointer beshara"
+                    id="anzahl1"
+                    name="">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="nw-p-2 nw-border nw-border-gray-200 nw-flex nw-flex-row nw-gap-4 nw-bg-white nw-mb-8 nw-rounded carmen"
+         id="block2">
+        <div class="nw-relative nw-flex nw-items-center nw-basis-1/2">
+            <div class="nw-flex nw-items-center nw-h-5">
+                <input id="checkbox2" name="" type="checkbox"
+                       class="nw-shrink-0 nw-w-4 nw-h-4 nw-border-gray-200 nw-rounded-full nw-text-blue-600 focus:nw-ring-blue-500"
+                >
+            </div>
+            <label for="" class="nw-ms-2">
+                <span class="nw-block nw-text-sm nw-font-bold nw-text-gray-800">Printzeitung</span>
+            </label>
+        </div>
+        <div
+            class="nw-relative nw-flex nw-justify-end nw-basis-1/2">
+            <select class=" nw-p-1
+                                    nw-text-sm
+                                    nw-bg-gray-100
+                                    nw-inline-block
+                                    nw-border
+                                    nw-rounded
+                                    nw-box-border
+                                    nw-cursor-pointer beshara"
+                    id="anzahl2"
+                    name="">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <!-- -->
+    <div class="nw-mb-4">
+        <div class="nw-pb-2">
+            <label for="dateinput"
+                   class="nw-text-xs nw-font-medium  nw-leading-6">
+                LIEFERBEGINN*
+            </label>
+        </div>
+        <div class="nw-hide-date nw-relative nw-mb-4 nw-flex nw-w-full nw-items-stretch">
+            <input
+                type="date"
+                class="nw-block nw-min-w-0 nw-flex-auto nw-rounded nw-border nw-border-solid nw-border-gray-200 nw-bg-transparent
+                        nw-bg-clip-padding nw-pl-2 nw-py-3 nw-text-sm nw-leading-6 focus:nw-outline-none nw-cursor-pointer"
+                aria-label="datum"
+                aria-describedby=""
+                id="dateinput"
+            />
+        </div>
+    </div>
+    <div class="nw-mb-4">
+        <div class="nw-mb-2">
+            <label class="nw-font-medium nw-text-xs nw-uppercase nw-leading-5"
+                   for="schule">WUNSCH-SCHULE(N)</label>
+        </div>
+        <input class="nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                nw-border nw-rounded nw-box-border nw-cursor-pointer"
+               type="text"
+               name=""
+               id="schule"
+        />
+    </div>
+    <div class="nw-mb-6">
+        <div class="nw-mb-2">
+            <label for="comment"
+                   class="nw-font-medium nw-text-xs nw-uppercase nw-leading-5">Anmerkung</label>
+        </div>
+        <textarea id="comment" rows="4"
+                  class="nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"></textarea>
+    </div>
+    <div class="nw-text-xs nw-text-green-600 nw-leading-6 nw-pb-6"><p>* Ein Klassensatz hat bis zu 30
+        Leseberechtigungen </p>
+    </div>
+    <!--   <div class="nw-mb-2 nw-flex">
+           <div>
+               <input
+                   type="checkbox"
+                   name=""
+                   id="checkCondition1"
+                   class=" nw-form-tick nw-border nw-rounded-sm  nw-nw-border-gray-300 nw-appearance-none
+                                       nw-cursor-pointer nw-h-4 nw-w-4 checked:nw-bg-gray-600 focus:outline-none"
+               />
+           </div>
+           <div>
+               <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
+                               <span class=" nw-pr-6 nw-text-gray-700 nw-text-xs nw-font-normal nw-text-left">
+                                   Die Bestimmungen zum Widerrufsrecht und die <a href="#"
+                                                                                  class="nw-text-red-500 nw-underline nw-font-medium">Allgemeinen Geschäftsbedingungen </a> habe ich
+                                   gelesen und ich erkläre mich mit Ihnen einverstanden.
+                               </span>
+               </label>
+           </div>
+       </div>-->
+    <!--   <div class="nw-mb-6 nw-flex">
+           <div>
+               <input
+                   type="checkbox"
+                   name=""
+                   id="checkCondition2"
+                   class=" nw-form-tick nw-border nw-rounded-sm nw-nw-border-gray-300 nw-appearance-none
+                                       nw-cursor-pointer nw-h-4 nw-w-4  checked:nw-bg-gray-600 focus:outline-none"
+               >
+           </div>
+           <div>
+               <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
+                               <span
+                                   class=" nw-pr-6 nw-text-gray-700 nw-text-xs nw-font-normal nw-text-left nw-tracking-normal nw-opacity-100">
+                                   Ich bin damit einverstanden, dass die Neue Westfälische GmbH & Co. KG mich über Verlagsprodukte,
+                                   Lesevorteile, Leserreisen und Gewinnspiele per Telefon oder E-Mail informieren darf.
+                                   Meine Einwilligung kann ich jederzeit widerrufen.
+                               </span>
+               </label>
+           </div>
+       </div>-->
+    <hr>
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-x-4 nw-mb-8 nw-mt-6 ">
+        <div class="nw-w-full">
+            <button id="" class=" nw-w-full nw-mx-auto nw-block
+                                                            nw-rounded nw-text-base nw-font-bold nw-bg-white
+                                                            nw-cursor-pointer nw-mb-4 nw-border">
+                Zurück
+            </button>
+        </div>
+        <div class="nw-w-full">
+            <button id="" class=" nw-w-full nw-mx-auto nw-block
+                                                            nw-rounded nw-text-base nw-font-bold nw-text-white nw-bg-red-500
+                                                            nw-cursor-pointer">
+                Weiter
+            </button>
+        </div>
+    </div>
+</form>
+<!--
+<script>
+    const checkbox = document.getElementById('checkbox');
+    const carmenDiv = document.querySelector('.carmen');
+    const besharaSelect = document.querySelector('.beshara');
+
+    checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+            carmenDiv.classList.remove('nw-bg-white');
+            carmenDiv.classList.add('nw-bg-gray-100');
+            besharaSelect.classList.remove('nw-bg-gray-100');
+            besharaSelect.classList.add('nw-bg-white');
+        } else {
+            carmenDiv.classList.remove('nw-bg-gray-100');
+            carmenDiv.classList.add('nw-bg-white');
+
+            besharaSelect.classList.remove('nw-bg-white');
+            besharaSelect.classList.add('nw-bg-gray-100');
+        }
+    });
+</script>-->
+<script>
+    function toggleBackgroundColor(checkboxId, blockId, selectId) {
+        const checkbox = document.getElementById(checkboxId);
+        const block = document.getElementById(blockId);
+        const select = document.getElementById(selectId);
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                block.classList.remove('nw-bg-white');
+                block.classList.add('nw-bg-gray-150');
+                select.classList.remove('nw-bg-gray-100');
+                select.classList.add('nw-bg-white');
+            } else {
+                block.classList.remove('nw-bg-gray-150');
+                block.classList.add('nw-bg-white');
+
+                select.classList.remove('nw-bg-white');
+                select.classList.add('nw-bg-gray-100');
+            }
+        });
+    }
+
+    // Apply the function to each block
+    toggleBackgroundColor('checkbox1', 'block1', 'anzahl1');
+    toggleBackgroundColor('checkbox2', 'block2', 'anzahl2');
+    // Add more blocks as needed
+
+</script>

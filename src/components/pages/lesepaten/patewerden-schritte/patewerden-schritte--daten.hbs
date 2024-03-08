@@ -1,0 +1,167 @@
+<form id="step1Form" class="nw-bg-white">
+    <div>
+        <p id="dangerAlert" class="nw-bg-red-100 nw-text-red-700 nw-px-2
+            nw-py-3 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie bitte die roten Felder aus</p>
+
+    </div>
+    <!-- 1 -->
+
+
+    <div>
+        <p class=" nw-text-left nw-text-base nw-leading-6 nw-font-bold nw-mb-4">Ihre
+            Daten</p>
+    </div>
+    <div class="nw-mb-4">
+        <div class="nw-mb-2">
+            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5" for="vname">Vorname*</label>
+        </div>
+        <input class=" nw-lesepaten-form nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"
+               type="text"
+               name=""
+               id="vname"
+        />
+    </div>
+    <div class="nw-mb-4">
+        <div class="nw-mb-2">
+            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5"
+                   for="nname">Nachname*</label>
+        </div>
+        <input class=" nw-lesepaten-form nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"
+               type="text"
+               name=""
+               id="nname"
+        />
+    </div>
+    <div class="nw-mb-4">
+        <div class="nw-mb-2">
+            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5 " for="eMail">E-Mail
+                Adresse*</label>
+        </div>
+        <input required class=" nw-lesepaten-form nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                            nw-border nw-rounded nw-box-border nw-cursor-pointer"
+
+               type="email"
+               name=""
+               id="eMail"
+        />
+    </div>
+    <div class="nw-mb-4  nw-arrow-in-numberfield-hidden">
+        <div class="nw-mb-2">
+            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5"
+                   for="telefon">Telefon*</label>
+        </div>
+        <input class="nw-lesepaten-form nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"
+               type="number"
+               name=""
+               id="telefon"
+        />
+    </div>
+    <div class="nw-mb-4">
+        <div class="nw-mb-2">
+            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5" for="firma">UNTERNEHMEN /
+                INSTITUTION*</label>
+        </div>
+        <input class="nw-lesepaten-form nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"
+               type="text"
+               name=""
+               id="firma"
+        />
+    </div>
+    <div class="nw-mb-4">
+        <div class="nw-mb-2">
+            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5" for="strasse">Straße /
+                Hausnummer*</label>
+        </div>
+        <input class="nw-lesepaten-form nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"
+               type="text"
+               name=""
+               id="strasse"
+        />
+    </div>
+    <div class="nw-flex nw-gap-2">
+        <div class="nw-basis-1/3">
+            <div class="nw-mb-8">
+                <div class="nw-mb-2">
+                    <label class="nw-font-medium nw-text-xs nw-uppercase nw-leading-5"
+                           for="plz">PLZ*</label>
+                </div>
+                <input class="nw-lesepaten-form  nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"
+                       type="text"
+                       name=""
+                       id="plz"/>
+            </div>
+        </div>
+        <div class="nw-basis-2/3">
+            <div class="nw-mb-8">
+                <div class="nw-mb-2">
+                    <label class="nw-font-medium nw-text-xs nw-uppercase nw-leading-5"
+                           for="stadt">Stadt*</label>
+                </div>
+                <input class="nw-lesepaten-form  nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"
+                       type="text"
+                       name=""
+                       id="stadt"
+                />
+            </div>
+        </div>
+    </div>
+    <hr>
+    <button onclick="onClickweiterRegistrieren(); return false;" id="" class=" nw-w-full md:nw-w-1/2 nw-mb-8 nw-mx-auto nw-inline-block
+                                                            nw-rounded nw-text-base nw-font-bold nw-text-white nw-bg-red-500
+                                                            nw-cursor-pointer nw-mt-6"
+            value="Weiter"
+
+    > Weiter
+    </button>
+</form>
+
+<!-- -->
+
+<script>
+    function onClickweiterRegistrieren() {
+        var valid = Validator();
+        if (valid) {
+            // If validation is successful, proceed to the next step (Step 2)
+            alert('ok')
+        }
+    }
+
+    const arrayInput = document.getElementsByClassName('nw-lesepaten-form');
+
+    function Validator() {
+        var valid = true;
+        Array.prototype.forEach.call(arrayInput, x => {
+            const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
+            if (x.value === '') {
+                valid = false;
+                x.classList.add('nw-border-red-500');
+                label.classList.add('nw-text-red-500');
+            } else {
+                x.classList.remove('nw-border-red-500');
+                label.classList.remove('nw-text-red-500');
+            }
+        });
+
+        var dangerAlert = document.getElementById('dangerAlert');
+        if (valid) {
+            dangerAlert.classList.add('nw-hidden');
+        } else {
+            dangerAlert.classList.remove('nw-hidden');
+            dangerAlert.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return valid;
+    }
+
+    // Function to proceed to the next step
+    function proceedToStep(nextStep) {
+        document.getElementById('step1Form').style.display = 'none'; // Hide Step 1
+        document.getElementById(`step${nextStep}Form`).style.display = 'block'; // Show next step
+    }
+</script>
