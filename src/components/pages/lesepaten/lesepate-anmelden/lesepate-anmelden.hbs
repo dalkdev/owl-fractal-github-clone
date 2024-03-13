@@ -22,8 +22,8 @@
                 <span class="nw-block nw-text-xs nw-font-bold nw-text-black textChange">Daten</span>
             </div>
         </li>
-        <!-- End Item -->
 
+        <!-- Item -->
         <li class="nw-shrink nw-basis-0 nw-flex-1 nw-group patewerdenTabs">
             <div
                 class="nw-min-w-7 nw-min-h-7 nw-w-full nw-inline-flex nw-items-center nw-text-xs nw-align-middle">
@@ -37,7 +37,6 @@
                 <span class="nw-block nw-text-xs nw-text-gray-300 textChange">Schule</span>
             </div>
         </li>
-        <!-- End Item -->
 
         <!-- Item -->
         <li class="nw-shrink nw-basis-0 nw-flex-1 nw-group patewerdenTabs">
@@ -53,108 +52,173 @@
                 <span class="nw-block nw-text-xs nw-text-gray-300 textChange">Profil</span>
             </div>
         </li>
+        <!-- Item -->
         <li class="patewerdenTabs nw-rounded-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="5"
                  stroke="currentColor"
                  class="nw-w-7 nw-h-7 nw-text-white nw-bg-gray-200 nw-rounded-full nw-p-2 bgChange">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/>
             </svg>
-            <!-- <div>
-                  <span
-                      class="nw-min-w-7 nw-min-h-7 nw-w-full nw-inline-flex nw-items-center nw-text-xs nw-align-middle ">
-                      <svg class="nw-w-7 nw-h-7 nw-me-2.5 nw-text-gray-200 bgChange" aria-hidden="true"
-                           xmlns="http://www.w3.org/2000/svg"
-                           fill="currentColor" viewBox="0 0 20 20">
-                       <path
-                           d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                      </svg>
-                  </span>
-             </div>-->
-
             <div class="nw-mt-3">
                 <span class="nw-block nw-text-xs nw-text-gray-300 textChange ">Fertig</span>
             </div>
         </li>
-        <!-- End Item -->
     </ul>
     <!-- End Stepper -->
 
     <!-- Pages Container ( Schritte ) -->
-    <div>
-        <div class="patewerdenContainer ">
+
+    <form class="patewerdenContainer ">
+        <div class="">
             {{>@patewerden-schritte--daten}}
         </div>
         <!-- Second Container -->
-        <div class="nw-hidden patewerdenContainer">
+        <div class="nw-hidden">
             {{>@patewerden-schritte--schule}}
         </div>
         <!-- Third Container -->
-        <div class="nw-hidden patewerdenContainer">
+        <div class="nw-hidden">
             {{>@patewerden-schritte--profil}}
         </div>
         <!-- Fourth Container -->
-        <div class="nw-hidden patewerdenContainer">
+        <div class="nw-hidden">
             {{>@patewerden-schritte--fertig}}
         </div>
+        <div class="nw-hidden">
+            {{>@patewerden-schritte--profile-erfolgreich}}
+        </div>
         <!-- -->
+    </form>
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-x-4 nw-mb-8 ">
+        <div class="nw-w-full first-page-buttons ">
+            <button id="zurueckButton" class=" nw-w-full nw-mx-auto nw-block
+                                                            nw-rounded nw-text-base nw-font-bold nw-bg-white
+                                                            nw-cursor-pointer nw-mb-4 nw-border nw-hidden">
+                Zurück
+            </button>
+            <button id="weiterButton" class="  nw-w-full nw-mx-auto nw-block nw-bg-red-500
+                                                            nw-rounded nw-text-base nw-font-bold  nw-text-white
+                                                            nw-cursor-pointer nw-mb-4 nw-border nw-mt-4"
+                    value="Weiter"
+
+            > Weiter
+            </button>
+        </div>
+        <div class="nw-w-full nw-hidden other-pages-buttons">
+            <button id="zurueckButton2" class=" nw-w-full nw-mx-auto nw-block
+                                                            nw-rounded nw-text-base nw-font-bold nw-bg-white
+                                                            nw-cursor-pointer nw-border nw-hidden">
+                Zurück
+            </button>
+
+            <input type="submit" value="Jetzt beantragen" id="beantragenButton" class=" nw-w-full nw-mx-auto nw-block nw-mb-4 nw-px-4
+                                                            nw-rounded nw-text-base nw-font-bold nw-text-white nw-bg-red-500
+                                                            nw-cursor-pointer nw-mb-4 nw-border nw-mt-4 ">
+        </div>
     </div>
-    <!-- -->
 </div>
 
-
-<!--
 <script>
-    // patewerden Tabs
+    function goToTheNextStep() {
+        var steps = document.querySelectorAll('.patewerdenContainer > div');
+        var tabs = document.querySelectorAll('.patewerdenTabs');
+        var zurueckButton = document.getElementById('zurueckButton');
+        var zurueckButton2 = document.getElementById('zurueckButton2');
 
-    // Tabs clicken
-    var arrayPatenwerdenTabs = document.getElementsByClassName('patewerdenTabs');
-    Array.prototype.forEach.call(arrayPatenwerdenTabs, (x, i) => {
-        x.addEventListener('click', e => {
-            e.preventDefault();
-            Array.prototype.forEach.call(arrayPatenwerdenTabs, x => {
-                x.classList.remove(
-                    'nw-text-black',
-                    'nw-font-bold'
-                );
-                x.classList.add('nw-text-black');
-            });
-            x.classList.remove('nw-text-black');
-            x.classList.add(
-                'nw-text-black',
-                'nw-font-bold'
-            );
-            var arrayPatenwerdenContainer = document.getElementsByClassName('patewerdenContainer');
-            Array.prototype.forEach.call(arrayPatenwerdenContainer, x => {
-                x.classList.add('nw-hidden');
-            });
-            arrayPatenwerdenContainer[i].classList.remove('nw-hidden');
-        });
-    });
-</script>-->
-<script>
-    // patewerden Tabs
+        for (var i = 0; i < steps.length; i++) {
 
-    // Tabs clicken
-    var arrayPatenwerdenTabs = document.getElementsByClassName('patewerdenTabs');
-    Array.prototype.forEach.call(arrayPatenwerdenTabs, (x, i) => {
-        x.addEventListener('click', e => {
-            e.preventDefault();
-            Array.prototype.forEach.call(arrayPatenwerdenTabs, x => {
-                x.querySelector('.bgChange').classList.remove('nw-bg-green-600');
-                x.querySelector('.bgChange').classList.add('nw-bg-gray-200');
-                x.querySelector('.textChange').classList.remove('text-black');
-                x.querySelector('.textChange').classList.add('nw-text-gray-300');
-            });
-            x.querySelector('.bgChange').classList.remove('nw-bg-gray-200');
-            x.querySelector('.bgChange').classList.add('nw-bg-green-600');
-            x.querySelector('.textChange').classList.remove('nw-text-gray-300');
-            x.querySelector('.textChange').classList.add('text-black');
-            var arrayPatenwerdenContainer = document.getElementsByClassName('patewerdenContainer');
-            Array.prototype.forEach.call(arrayPatenwerdenContainer, x => {
-                x.classList.add('nw-hidden');
-            });
-            arrayPatenwerdenContainer[i].classList.remove('nw-hidden');
-        });
-    });
+            if (!steps[i].classList.contains('nw-hidden')) {
+                steps[i].classList.add('nw-hidden');
+                tabs[i].querySelector('.bgChange').classList.remove('nw-bg-green-600');
+                tabs[i].querySelector('.bgChange').classList.add('nw-bg-gray-200');
+                tabs[i].querySelector('.textChange').classList.remove('nw-text-black');
+                tabs[i].querySelector('.textChange').classList.add('nw-text-gray-300');
+                if (i >= 0) {
+                    zurueckButton.classList.remove('nw-hidden');
+                    zurueckButton2.classList.remove('nw-hidden');
+                } else {
+                    zurueckButton.classList.add('nw-hidden');
+                    zurueckButton2.classList.add('nw-hidden');
+                }
+
+                if (i + 1 < steps.length) {
+                    steps[i + 1].classList.remove('nw-hidden');
+                    tabs[i + 1].querySelector('.bgChange').classList.remove('nw-bg-gray-200');
+                    tabs[i + 1].querySelector('.bgChange').classList.add('nw-bg-green-600');
+                    tabs[i + 1].querySelector('.textChange').classList.remove('nw-text-gray-300');
+                    tabs[i + 1].querySelector('.textChange').classList.add('nw-text-black');
+
+                    if (i + 1 === steps.length - 2) {
+                        document.querySelector('.first-page-buttons').classList.add('nw-hidden');
+                        document.querySelector('.other-pages-buttons').classList.remove('nw-hidden');
+                        document.querySelector('.other-pages-buttons').classList.add('nw-block');
+                    }
+
+                }
+
+                break;
+            }
+        }
+    }
+
+    var weiterButton = document.getElementById('weiterButton');
+    if (weiterButton) {
+        weiterButton.addEventListener('click', goToTheNextStep);
+    }
+
+
+    function goToPreviousStep() {
+        var steps = document.querySelectorAll('.patewerdenContainer > div');
+        var tabs = document.querySelectorAll('.patewerdenTabs');
+        var zurueckButton = document.getElementById('zurueckButton');
+        var zurueckButton2 = document.getElementById('zurueckButton2');
+        for (var i = 0; i < steps.length; i++) {
+            if (!steps[i].classList.contains('nw-hidden')) {
+                steps[i].classList.add('nw-hidden');
+                tabs[i].querySelector('.bgChange').classList.remove('nw-bg-green-600');
+                tabs[i].querySelector('.bgChange').classList.add('nw-bg-gray-200');
+                tabs[i].querySelector('.textChange').classList.remove('nw-text-black');
+                tabs[i].querySelector('.textChange').classList.add('nw-text-gray-300');
+                if (i >= 0) {
+                    zurueckButton.classList.remove('nw-hidden');
+                    zurueckButton2.classList.remove('nw-hidden');
+                } else {
+                    zurueckButton.classList.add('nw-hidden');
+                    zurueckButton2.classList.add('nw-hidden');
+                }
+                if (i - 1 >= 0) {
+                    steps[i - 1].classList.remove('nw-hidden');
+                    tabs[i - 1].querySelector('.bgChange').classList.remove('nw-bg-gray-200');
+                    tabs[i - 1].querySelector('.bgChange').classList.add('nw-bg-green-600');
+                    tabs[i - 1].querySelector('.textChange').classList.remove('nw-text-gray-300');
+                    tabs[i - 1].querySelector('.textChange').classList.add('nw-text-black');
+                    document.querySelector('.first-page-buttons').classList.remove('nw-hidden');
+                    document.querySelector('.other-pages-buttons').classList.add('nw-hidden');
+                    document.querySelector('.other-pages-buttons').classList.remove('nw-block');
+
+                    if (i === 1) {
+                        zurueckButton.classList.add('nw-hidden');
+                        zurueckButton2.classList.add('nw-hidden');
+
+                    }
+                }
+
+                break;
+            }
+        }
+    }
+
+    var zurueckButton = document.getElementById('zurueckButton');
+    if (zurueckButton) {
+        zurueckButton.addEventListener('click', goToPreviousStep);
+    }
+
+    var zurueckButton2 = document.getElementById('zurueckButton2');
+    if (zurueckButton2) {
+        zurueckButton2.addEventListener('click', goToPreviousStep);
+    }
+
 </script>
+
+
 

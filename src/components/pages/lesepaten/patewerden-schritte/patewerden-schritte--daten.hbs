@@ -1,4 +1,4 @@
-<form id="step1Form" class="nw-bg-white">
+<div class="nw-bg-white nw-pb-4">
     <div>
         <p id="dangerAlert" class="nw-bg-red-100 nw-text-red-700 nw-px-2
             nw-py-3 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie bitte die roten Felder aus</p>
@@ -113,17 +113,12 @@
         </div>
     </div>
     <hr>
-    <button onclick="onClickweiterRegistrieren(); return false;" id="" class=" nw-w-full md:nw-w-1/2 nw-mb-8 nw-mx-auto nw-inline-block
-                                                            nw-rounded nw-text-base nw-font-bold nw-text-white nw-bg-red-500
-                                                            nw-cursor-pointer nw-mt-6"
-            value="Weiter"
 
-    > Weiter
-    </button>
-</form>
+</div>
 
 <!-- -->
 
+<!--
 <script>
     function onClickweiterRegistrieren() {
         var valid = Validator();
@@ -164,4 +159,4 @@
         document.getElementById('step1Form').style.display = 'none'; // Hide Step 1
         document.getElementById(`step${nextStep}Form`).style.display = 'block'; // Show next step
     }
-</script>
+</script>-->
