@@ -22,12 +22,12 @@
             </p>
         </div>
     </div>
-    <div class="nw-p-2 nw-border nw-border-gray-200 nw-flex nw-flex-row nw-gap-4 nw-bg-white nw-mb-2 nw-rounded carmen"
+    <div class="nw-p-2 nw-border nw-border-gray-200 nw-flex nw-flex-row nw-gap-4 nw-bg-white nw-mb-2 nw-rounded"
          id="block1">
         <div class="nw-relative nw-flex nw-items-center nw-basis-1/2">
             <div class="nw-flex nw-items-center nw-h-5">
                 <input id="checkbox1" name="" type="checkbox"
-                       class="nw-shrink-0 nw-w-4 nw-h-4 nw-border-gray-200 nw-rounded-full nw-text-blue-600 focus:nw-ring-blue-500"
+                       class="nw-shrink-0 nw-w-4 nw-border-gray-200 nw-rounded-full nw-cursor-pointer"
                 >
             </div>
             <label for="" class="nw-ms-2">
@@ -36,31 +36,26 @@
         </div>
         <div
             class="nw-relative nw-flex nw-justify-end nw-basis-1/2">
-            <select class="nw-p-1
+
+            <input type="number" id="anzahl1"
+                   class=" nw-p-1 nw-w-12 nw-h-7 placeholder:nw-text-black
                                     nw-text-sm
                                     nw-bg-gray-100
                                     nw-inline-block
                                     nw-border
                                     nw-rounded
                                     nw-box-border
-                                    nw-cursor-pointer beshara"
-                    id="anzahl1"
-                    name="">
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+                                    nw-cursor-pointer"
+                   placeholder="100" required/>
         </div>
     </div>
 
-    <div class="nw-p-2 nw-border nw-border-gray-200 nw-flex nw-flex-row nw-gap-4 nw-bg-white nw-mb-8 nw-rounded carmen"
+    <div class="nw-p-2 nw-border nw-border-gray-200 nw-flex nw-flex-row nw-gap-4 nw-bg-white nw-mb-8 nw-rounded"
          id="block2">
         <div class="nw-relative nw-flex nw-items-center nw-basis-1/2">
             <div class="nw-flex nw-items-center nw-h-5">
                 <input id="checkbox2" name="" type="checkbox"
-                       class="nw-shrink-0 nw-w-4 nw-h-4 nw-border-gray-200 nw-rounded-full nw-text-blue-600 focus:nw-ring-blue-500"
+                       class="nw-shrink-0 nw-w-4 nw-h-4 nw-border-gray-200 nw-rounded-full nw-cursor-pointer"
                 >
             </div>
             <label for="" class="nw-ms-2">
@@ -69,22 +64,16 @@
         </div>
         <div
             class="nw-relative nw-flex nw-justify-end nw-basis-1/2">
-            <select class=" nw-p-1
-                                    nw-text-sm
+            <input type="number" id="anzahl2"
+                   class=" nw-p-1 nw-w-12 nw-h-7
+                                    nw-text-sm placeholder:nw-text-black
                                     nw-bg-gray-100
                                     nw-inline-block
                                     nw-border
                                     nw-rounded
                                     nw-box-border
-                                    nw-cursor-pointer beshara"
-                    id="anzahl2"
-                    name="">
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+                                    nw-cursor-pointer"
+                   placeholder="100" required/>
         </div>
     </div>
     <!-- -->
@@ -109,14 +98,11 @@
     <div class="nw-mb-4">
         <div class="nw-mb-2">
             <label class="nw-font-medium nw-text-xs nw-uppercase nw-leading-5"
-                   for="schule">WUNSCH-SCHULE(N)</label>
+                   for="schule">WUNSCH-SCHULE(N), ORT</label>
         </div>
-        <input class="nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
-                                nw-border nw-rounded nw-box-border nw-cursor-pointer"
-               type="text"
-               name=""
-               id="schule"
-        />
+        <textarea id="schule" rows="1"
+                  class="nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
+                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"></textarea>
     </div>
     <div class="nw-mb-6">
         <div class="nw-mb-2">
@@ -142,16 +128,11 @@
 
         checkbox.addEventListener('change', function () {
             if (checkbox.checked) {
-                block.classList.remove('nw-bg-white');
-                block.classList.add('nw-bg-gray-150');
-                select.classList.remove('nw-bg-gray-100');
-                select.classList.add('nw-bg-white');
+                block.classList.replace('nw-bg-white', 'nw-bg-gray-150');
+                select.classList.replace('nw-bg-gray-100', 'nw-bg-white');
             } else {
-                block.classList.remove('nw-bg-gray-150');
-                block.classList.add('nw-bg-white');
-
-                select.classList.remove('nw-bg-white');
-                select.classList.add('nw-bg-gray-100');
+                block.classList.replace('nw-bg-gray-150', 'nw-bg-white');
+                select.classList.replace('nw-bg-white', 'nw-bg-gray-100');
             }
         });
     }
