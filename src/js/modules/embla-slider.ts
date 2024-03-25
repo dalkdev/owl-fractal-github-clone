@@ -69,7 +69,7 @@ function initSlider(wrapperNode: HTMLElement) {
             if ((el !== 0 || el === 5 || el % 5 === .2) && adIsTriggered === -1) {
                 const check = mainCarousel.slideNodes()[el].querySelector('.em_ads_box_dynamic_remove > div');
                 try {
-                    if (check) {
+                    if (check) { // @ts-ignore
                         if (typeof googletag !== 'undefined') {
                             // @ts-ignore
                             googletag.cmd.push(function() { googletag.display('/248415179,13052567/nw.de_mr_6'); });
