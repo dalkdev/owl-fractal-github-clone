@@ -1,19 +1,29 @@
-<div class="nw-bg-white nw-pb-4">
+<div class="nw-bg-white nw-pb-6">
     <div>
         <p id="dangerAlert" class="nw-bg-red-100 nw-text-red-700 nw-px-2
             nw-py-3 nw-mb-4 nw-rounded nw-hidden"> Füllen Sie bitte die roten Felder aus</p>
 
     </div>
     <!-- 1 -->
-
-
     <div>
         <p class=" nw-text-left nw-text-base nw-leading-6 nw-font-bold nw-mb-4">Ihre
             Daten</p>
     </div>
+     <div class="nw-mb-4">
+             <div class="nw-mb-2">
+                        <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5" for="anrede">Anrede*</label>
+                    </div>
+                <select class=" nw-lesepaten-form nw-w-full nw-px-2 nw-py-2.5 nw-mx-auto nw-text-base nw-inline-block
+                                  nw-border nw-rounded nw-box-border nw-cursor-pointer nw-placeholder-gray-400" id="anrede" name="anrede">
+                            <option value="" disabled selected hidden class="">Anrede auswählen</option>
+                            <option value="">Herr</option>
+                            <option value="">Frau</option>
+                            <option value="">Divers</option>
+                </select>
+            </div>
     <div class="nw-mb-4">
         <div class="nw-mb-2">
-            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5" for="vname">Vorname*</label>
+            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5" for="vname">Vorname und Nachname*</label>
         </div>
         <input class=" nw-lesepaten-form nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
                                    nw-border nw-rounded nw-box-border nw-cursor-pointer"
@@ -22,18 +32,7 @@
                id="vname"
         />
     </div>
-    <div class="nw-mb-4">
-        <div class="nw-mb-2">
-            <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5"
-                   for="nname">Nachname*</label>
-        </div>
-        <input class=" nw-lesepaten-form nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
-                                   nw-border nw-rounded nw-box-border nw-cursor-pointer"
-               type="text"
-               name=""
-               id="nname"
-        />
-    </div>
+
     <div class="nw-mb-4">
         <div class="nw-mb-2">
             <label class=" nw-font-medium nw-text-xs nw-uppercase nw-leading-5 " for="eMail">E-Mail
