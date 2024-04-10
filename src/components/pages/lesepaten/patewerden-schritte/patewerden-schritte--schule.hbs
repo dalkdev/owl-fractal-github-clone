@@ -28,7 +28,7 @@
             <p class=" nw-text-sm nw-font-bold nw-text-gray-800">ePaper-Klassensatz</p>
         </div>
         <div class="nw-relative nw-flex nw-justify-end nw-basis-1/2">
-            <input type="number" id="anzahl1"
+            <input type="number" id="anzahl1" min="0" max="30" name="pate_epaper_amount"
             class=" nw-p-1 nw-w-12 nw-h-7 placeholder:nw-text-black
                                     nw-text-sm
                                     nw-bg-gray-100
@@ -37,7 +37,7 @@
                                     nw-rounded
                                     nw-box-border
                                     nw-cursor-pointer"
-                   placeholder="100" required/>
+                   placeholder="0" />
         </div>
     </div>
  <div class="nw-text-xs nw-text-green-600 nw-leading-6 nw-pb-4"><p>* Ein Klassensatz hat bis zu 30
@@ -51,7 +51,7 @@
         </div>
         <div
             class="nw-relative nw-flex nw-justify-end nw-basis-1/2">
-            <input type="number" id="anzahl2"
+            <input type="number" id="anzahl2" min="0" max="100" name="pate_print_amount"
                    class=" nw-p-1 nw-w-12 nw-h-7
                                     nw-text-sm placeholder:nw-text-black
                                     nw-bg-gray-100
@@ -60,7 +60,7 @@
                                     nw-rounded
                                     nw-box-border
                                     nw-cursor-pointer"
-                   placeholder="100" required/>
+                   placeholder="0" />
         </div>
     </div>
     <!-- -->
@@ -71,7 +71,7 @@
             </label>
         </div>
         <input class="nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block nw-border  nw-rounded nw-box-border nw-cursor-pointer"
-        type="text" name="" id="schule"
+        type="text" name="pate_wunschschulen[]" id="schule"
         />
     </div>
     <div class="nw-mb-6">
@@ -79,31 +79,9 @@
             <label for="comment"
                    class="nw-font-medium nw-text-xs nw-uppercase nw-leading-5">Anmerkung</label>
         </div>
-        <textarea id="comment" rows="4"
+        <textarea id="comment" rows="4" name="pate_anmerkung"
                   class="nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-text-base nw-inline-block
                                    nw-border nw-rounded nw-box-border nw-cursor-pointer"></textarea>
     </div>
     <hr>
 </div>
-
-<script>
-    function toggleBackgroundColor(checkboxId, blockId, selectId) {
-        const checkbox = document.getElementById(checkboxId);
-        const block = document.getElementById(blockId);
-        const select = document.getElementById(selectId);
-
-        checkbox.addEventListener('change', function () {
-            if (checkbox.checked) {
-                block.classList.replace('nw-bg-white', 'nw-bg-gray-150');
-                select.classList.replace('nw-bg-gray-100', 'nw-bg-white');
-            } else {
-                block.classList.replace('nw-bg-gray-150', 'nw-bg-white');
-                select.classList.replace('nw-bg-white', 'nw-bg-gray-100');
-            }
-        });
-    }
-
-    toggleBackgroundColor('checkbox1', 'block1', 'anzahl1');
-    toggleBackgroundColor('checkbox2', 'block2', 'anzahl2');
-
-</script>

@@ -64,58 +64,27 @@ export function initLesepaten() {
             });
         });
     });
-    // FORM LESEPATEN WERDEN
-    /*   var checkBox1 = document.getElementById('checkCondition1');
-      var checkBox2 = document.getElementById('checkCondition2');
-      var bRegister = document.getElementById('registerButton');
+    // FORM LESEPATEN WERDEN ( Checkbox)
+    var lesepatenCheckBox1 = document.getElementById('lesepatenCheckCondition1');
+    var lesepatenCheckBox2 = document.getElementById('lesepatenCheckCondition2');
+    var bBeantragen = document.getElementById('beantragenButton');
 
-      if (checkBox1 == null || checkBox2 == null || bRegister == null) return;
+    if (lesepatenCheckBox1 == null || lesepatenCheckBox2 == null || bBeantragen == null) return;
 
-      checkBox1.addEventListener('change', checkFunction);
-      checkBox2.addEventListener('change', checkFunction);
-      bRegister.addEventListener('click', onClickRegistrieren);
+    lesepatenCheckBox1.addEventListener('change', checkFunction);
+    lesepatenCheckBox2.addEventListener('change', checkFunction);
 
-      function checkFunction() {
-          if (
-              checkBox1.checked === true &&
-              (checkBox2.checked === true || checkBox2.checked === false)
-          ) {
-              bRegister.disabled = false;
-              bRegister.style.backgroundColor = '#D20A11';
-          } else {
-              bRegister.disabled = true;
-              bRegister.style.backgroundColor = '#E1B9BA';
-          }
-      }
+    function checkFunction() {
+        if (
+          lesepatenCheckBox1.checked === true &&
+          (lesepatenCheckBox2.checked === true || lesepatenCheckBox2.checked === false)
+        ) {
+            bBeantragen.disabled = false;
+            bBeantragen.style.backgroundColor = '#D20A11';
+        } else {
+            bBeantragen.disabled = true;
+            bBeantragen.style.backgroundColor = '#E1B9BA';
+        }
+    }
 
-      function onClickRegistrieren() {
-          var valid = Validator();
-          if (valid) alert('ok');
-      }
-
-      const arrayInput = document.getElementsByClassName('nw-lesepaten-form');
-
-      function Validator() {
-          var valid = true;
-          Array.prototype.forEach.call(arrayInput, x => {
-              const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
-              if (x.value === '') {
-                  valid = false;
-                  x.classList.add('nw-border-red-500');
-                  label.classList.add('nw-text-red-500');
-              } else {
-                  x.classList.remove('nw-border-red-500');
-                  label.classList.remove('nw-text-red-500');
-              }
-          });
-
-          var dangerAlert = document.getElementById('dangerAlert');
-          if (valid) {
-              dangerAlert.classList.add('nw-hidden');
-          } else {
-              dangerAlert.classList.remove('nw-hidden');
-              dangerAlert.scrollIntoView({behavior: 'smooth', block: 'start'});
-          }
-          return valid;
-      } */
 }

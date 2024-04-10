@@ -53,55 +53,58 @@
 
     <!-- Pages Container ( Schritte ) -->
 
-    <form class="patewerdenContainer ">
-        <!-- First Container -->
-        <div id="page-0" class="page" data-page="0">
-            {{>@patewerden-schritte--daten}}
-        </div>
-        <!-- Second Container -->
-        <div id="page-1" class="page nw-hidden" data-page="1">
-            {{>@patewerden-schritte--schule}}
-        </div>
-        <!-- Third Container-->
-        <div id="page-3" class="page nw-hidden" data-page="3">
-            {{>@patewerden-schritte--fertig}}
-        </div>
+    <div id="formularContainer">
+        <form class="patewerdenContainer " id="lesepatenFormular" method="POST">
+            <!-- First Container -->
+            <div id="page-0" class="page" data-page="0">
+                {{>@patewerden-schritte--daten}}
+            </div>
+            <!-- Second Container -->
+            <div id="page-1" class="page nw-hidden" data-page="1">
+                {{>@patewerden-schritte--schule}}
+            </div>
+            <!-- Third Container-->
+            <div id="page-3" class="page nw-hidden" data-page="3">
+                {{>@patewerden-schritte--fertig}}
+            </div>
 
-        <!-- -->
-    </form>
-    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-x-4 nw-mb-8 ">
-        <div class="nw-flex nw-flex-col md:nw-flex-row nw-w-full nw-gap-4 page-buttons nw-mb-4 ">
-            <button class="zurueckButton nw-w-full md:nw-w-1/2 nw-block
+            <!-- -->
+            <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-x-4 nw-mb-8 ">
+                <div class="nw-flex nw-flex-col md:nw-flex-row nw-w-full nw-gap-4 page-buttons nw-mb-4 ">
+                    <button type="button" class="zurueckButton nw-w-full md:nw-w-1/2 nw-block
                                                             nw-rounded nw-text-base nw-font-bold nw-bg-white
                                                             nw-cursor-pointer nw-border nw-hidden">
-                Zurück
-            </button>
-            <button id="weiterButton" class="  nw-w-full md:nw-w-1/2 nw-block nw-bg-red-500
+                        Zurück
+                    </button>
+                    <button type="button"id="weiterButton" class="  nw-w-full md:nw-w-1/2 nw-block nw-bg-red-500
                                                             nw-rounded nw-text-base nw-font-bold  nw-text-white
-                                                            nw-cursor-pointer nw-border"
-                    value="Weiter"
-
-            > Weiter
-            </button>
-        </div>
-        <div class="nw-flex nw-flex-col md:nw-flex-row nw-w-full nw-gap-4 nw-hidden final-page-buttons nw-mb-4">
-         <button class="zurueckButton nw-w-full md:nw-w-1/2 nw-block
+                                                            nw-cursor-pointer nw-border">
+                        Weiter
+                    </button>
+                </div>
+                <div class="nw-flex nw-flex-col md:nw-flex-row nw-w-full nw-gap-4 nw-hidden final-page-buttons nw-mb-4">
+                    <button type="button" class="zurueckButton nw-w-full md:nw-w-1/2 nw-block
                                                                     nw-rounded nw-text-base nw-font-bold nw-bg-white
                                                                     nw-cursor-pointer nw-border nw-hidden">
                         Zurück
                     </button>
-            <input type="submit" value="Jetzt beantragen" id="beantragenButton" class=" nw-w-full md:nw-w-1/2 nw-mx-auto nw-block nw-px-4
-                                                            nw-rounded nw-text-base nw-font-bold nw-text-white nw-bg-red-500
-                                                            nw-cursor-pointer nw-border">
-
-        </div>
+                    <input type="submit" value="Jetzt beantragen" id="beantragenButton" class=" nw-w-full md:nw-w-1/2 nw-mx-auto nw-block nw-px-4
+                                                            nw-rounded nw-text-base nw-font-bold nw-text-white nw-bg-red-100
+                                                           nw-cursor-pointer nw-border" disabled>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="dankeSeite" class="nw-bg-white nw-pb-20" style="display: none;">
+         {{>@patewerden-schritte--profile-erfolgreich}}
     </div>
 </div>
-
 <script>
     const zurueckButtons = document.querySelectorAll('.zurueckButton');
     const weiterButtons = document.getElementById('weiterButton');
     const pages = document.querySelectorAll('.page');
+    const formInputs = document.querySelectorAll('.nw-lesepaten-form');
+
     let index = 0;
 
     zurueckButtons.forEach(button => {
@@ -114,9 +117,31 @@
         gotoPage(index);
     }
 
+
+    formInputs.forEach(formInput => {
+        formInput.addEventListener('change', (event) => {
+            if (formInput.value === '') {
+                formInput.setCustomValidity('Bitte füllen Sie die leeren Felder aus!');
+            } else {
+                formInput.setCustomValidity('');
+            }
+        });
+    });
     function weiterButton() {
-        index = Math.min(pages.length - 1, index + 1);
-        gotoPage(index);
+        let isValid = true;
+
+        for (let i = 0; i < formInputs.length; i++) {
+            if (!formInputs[i].checkValidity()) {
+                isValid = false;
+                formInputs[i].reportValidity();
+                break;
+            }
+        }
+
+        if (isValid) {
+            index = Math.min(pages.length - 1, index + 1);
+            gotoPage(index);
+        }
     }
 
     function gotoPage(index) {
@@ -157,8 +182,15 @@
             finalPagesButton.classList.replace('nw-block', 'nw-hidden');
         }
     }
-</script>
 
+
+    // Wenn ich submit mache, wird Danke-Seite angezeigt
+    document.getElementById("lesepatenFormular").addEventListener("submit", function(e) {
+        e.preventDefault();
+        document.getElementById("formularContainer").style.display = "none";
+        document.getElementById("dankeSeite").style.display = "block";
+    });
+</script>
 
 
 
