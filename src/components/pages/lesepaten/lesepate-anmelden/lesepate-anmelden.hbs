@@ -4,6 +4,7 @@
     }
 </style>
 <div class="nw-lesepaten-anmelden nw-max-w-sm nw-mx-auto nw-px-4 nw-bg-white">
+    <div id="lesepatenSchritte">
     <div class="nw-text-2xl nw-leading-6 nw-font-bold nw-text-center nw-pb-8 nw-pt-4 md:nw-pt-2"> Ich möchte Lesepate
         werden
     </div>
@@ -34,7 +35,7 @@
                 <div class=" nw-w-full nw-h-px nw-flex-1 nw-bg-gray-200 group-last:nw-hidden"></div>
             </div>
             <div class="nw-mt-3">
-                <span class="nw-block nw-text-xs nw-text-gray-300 nw-font-normal textChange">Schule</span>
+                <span class="nw-block nw-text-xs nw-text-gray-300 nw-font-normal textChange nw--ml-4">Patenschaft</span>
             </div>
         </li>
         <!-- Item -->
@@ -49,6 +50,7 @@
             </div>
         </li>
     </ul>
+    </div>
     <!-- End Stepper -->
 
     <!-- Pages Container ( Schritte ) -->
@@ -95,7 +97,7 @@
             </div>
         </form>
     </div>
-    <div id="dankeSeite" class="nw-bg-white nw-pb-20" style="display: none;">
+    <div id="dankeSeite" class="nw-bg-white nw-pb-20 nw-pt-12" style="display: none;">
          {{>@patewerden-schritte--profile-erfolgreich}}
     </div>
 </div>
@@ -150,6 +152,40 @@
         });
         pages[index].classList.remove('nw-hidden');
         lesepatenChangeTabs(index);
+
+        if (index === pages.length - 1) {
+             const inputNames = [
+                document.querySelector('input[name="pate_name_zusatz"]'),
+                document.querySelector('input[name="pate_email"]'),
+                document.querySelector('input[name="pate_phone"]'),
+                document.querySelector('input[name="pate_name"]'),
+                document.querySelector('input[name="pate_strasse"]'),
+                document.querySelector('input[name="pate_plz"]'),
+                document.querySelector('input[name="pate_ort"]'),
+                document.querySelector('input[name="pate_epaper_amount"]'),
+                document.querySelector('input[name="pate_print_amount"]'),
+                document.querySelector('input[name="pate_wunschschulen[]"]'),
+                document.querySelector('textarea[name="pate_anmerkung"]')
+             ];
+
+             const outputValues = [
+                document.getElementById('angezeigterName'),
+                document.getElementById('angezeigteEmail'),
+                document.getElementById('angezeigtesTelefon'),
+                document.getElementById('angezeigteInstitution'),
+                document.getElementById('angezeigteStrasse'),
+                document.getElementById('angezeigtePLZ'),
+                document.getElementById('angezeigteStadt'),
+                document.getElementById('angezeigterEPaper'),
+                document.getElementById('angezeigterPrint'),
+                document.getElementById('angezeigteWunschschulen'),
+                document.getElementById('angezeigteAnmerkung')
+             ];
+
+             inputNames.forEach((input, ind) => {
+                outputValues[ind].textContent = input.value;
+             });
+        }
     }
 
     function lesepatenChangeTabs(index) {
@@ -183,10 +219,10 @@
         }
     }
 
-
     // Wenn ich submit mache, wird Danke-Seite angezeigt
     document.getElementById("lesepatenFormular").addEventListener("submit", function(e) {
         e.preventDefault();
+        document.getElementById("lesepatenSchritte").style.display = "none";
         document.getElementById("formularContainer").style.display = "none";
         document.getElementById("dankeSeite").style.display = "block";
     });

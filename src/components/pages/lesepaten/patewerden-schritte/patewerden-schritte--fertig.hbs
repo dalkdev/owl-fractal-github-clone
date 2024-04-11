@@ -3,7 +3,7 @@
         max-width: 8rem; /* 128px */
     }
 </style>
-<div class="nw-bg-white nw-pb-4">
+<div id="angezeigteDaten" class="nw-bg-white nw-pb-4">
     <div>
         <p class=" nw-text-md nw-leading-6 nw-font-bold nw-mb-4">Bitte überprüfen Sie Ihre Daten</p>
     </div>
@@ -19,13 +19,15 @@
             </div>
         </div>
         <div class="nw-text-sm">
-            <p>Heinrich</p>
-            <p>Schulte</p>
-            <p class="nw-pb-4">heinrichschulte@schueco.de</p>
-            <p>+49 15890 4455</p>
-            <p>Schueco GmbH Co. & KG</p>
-            <p>Bielefelderstr. 99</p>
-            <p>33356 Bielefeld</p>
+            <div id="angezeigterName"> </div>
+            <div class="nw-pb-4" id="angezeigteEmail" ></div>
+            <div id="angezeigtesTelefon"></div>
+            <div id="angezeigteInstitution"></div>
+            <div id="angezeigteStrasse"></div>
+            <div class="nw-flex nw-gap-1">
+                   <p id="angezeigtePLZ"></p>
+                   <p id="angezeigteStadt"></p>
+            </div>
         </div>
     </div>
     <div class="nw-mb-6">
@@ -41,22 +43,19 @@
         </div>
         <div>
             <div class="nw-mb-3">
-                <p class="nw-uppercase nw-text-gray-300 nw-text-xs">ART DES ABOS</p>
-                <p class="nw-text-sm">ePaper-Klassensatz</p>
+                <p class="nw-uppercase nw-text-gray-300 nw-text-xs">ePaper-Klassensatz: <span id="angezeigterEPaper" class="nw-text-sm nw-text-black">0</p>
             </div>
             <div class="nw-mb-3">
-                <p class="nw-uppercase nw-text-gray-300 nw-text-xs">ANZAHL DER PATENABOS</p>
-                <p class="nw-text-sm">3</p>
+               <p class="nw-uppercase nw-text-gray-300 nw-text-xs">  Printzeitung: <span id="angezeigterPrint" class="nw-text-sm nw-text-black">0 </p>
             </div>
 
             <div class="nw-mb-3">
                 <p class="nw-uppercase nw-text-gray-300 nw-text-xs">WUNSCH-SCHULE(N)</p>
-                <p class="nw-text-sm">Matthias-Klaudius von Gutenberg Zwiebel Schule</p>
-                <p class="nw-text-sm">Einstein-Grundschule von Helmann Bielefeld</p>
+                <p id="angezeigteWunschschulen" class="nw-text-sm"></p>
             </div>
             <div class="nw-mb-3">
                 <p class="nw-uppercase nw-text-gray-300 nw-text-xs">ANMERKUNG</p>
-                <p class="nw-text-sm">Keine Anmerkung</p>
+                <p id="angezeigteAnmerkung" class="nw-text-sm"></p>
             </div>
         </div>
         <hr>
