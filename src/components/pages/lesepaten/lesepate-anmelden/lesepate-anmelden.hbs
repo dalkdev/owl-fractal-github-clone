@@ -78,7 +78,7 @@
                                                             nw-cursor-pointer nw-border nw-hidden">
                         Zurück
                     </button>
-                    <button type="button"id="weiterButton" class="  nw-w-full md:nw-w-1/2 nw-block nw-bg-red-500
+                    <button type="button"id="weiterButton" class="nw-w-full md:nw-w-1/2 nw-block nw-bg-red-500
                                                             nw-rounded nw-text-base nw-font-bold  nw-text-white
                                                             nw-cursor-pointer nw-border">
                         Weiter
@@ -97,7 +97,7 @@
             </div>
         </form>
     </div>
-    <div id="dankeSeite" class="nw-bg-white nw-pb-20 nw-pt-12" style="display: none;">
+    <div id="dankeSeite" class="nw-bg-white nw-pb-20 nw-pt-12 nw-hidden">
          {{>@patewerden-schritte--profile-erfolgreich}}
     </div>
 </div>
@@ -130,6 +130,8 @@
         });
     });
     function weiterButton() {
+
+      // Formular-Validierung
         let isValid = true;
 
         for (let i = 0; i < formInputs.length; i++) {
@@ -153,6 +155,7 @@
         pages[index].classList.remove('nw-hidden');
         lesepatenChangeTabs(index);
 
+           // Die Werten von der Namen nemen und anzeigen
         if (index === pages.length - 1) {
              const inputNames = [
                 document.querySelector('input[name="pate_name_zusatz"]'),
@@ -169,22 +172,28 @@
              ];
 
              const outputValues = [
-                document.getElementById('angezeigterName'),
-                document.getElementById('angezeigteEmail'),
-                document.getElementById('angezeigtesTelefon'),
-                document.getElementById('angezeigteInstitution'),
-                document.getElementById('angezeigteStrasse'),
-                document.getElementById('angezeigtePLZ'),
-                document.getElementById('angezeigteStadt'),
-                document.getElementById('angezeigterEPaper'),
-                document.getElementById('angezeigterPrint'),
-                document.getElementById('angezeigteWunschschulen'),
-                document.getElementById('angezeigteAnmerkung')
+                document.getElementById('shownName'),
+                document.getElementById('shownEmail'),
+                document.getElementById('shownTelefon'),
+                document.getElementById('shownInstitution'),
+                document.getElementById('shownStrasse'),
+                document.getElementById('shownPLZ'),
+                document.getElementById('shownOrt'),
+                document.getElementById('shownEPaperAmount'),
+                document.getElementById('shownPrintAmount'),
+                document.getElementById('shownWunschschulen'),
+                document.getElementById('shownAnmerkung')
              ];
 
-             inputNames.forEach((input, ind) => {
-                outputValues[ind].textContent = input.value;
-             });
+            inputNames.forEach((input, ind) => {
+                if (input.name === "pate_epaper_amount" || input.name === "pate_print_amount") {
+                    outputValues[ind].textContent = input.value === '' || input.value === "0" ? "0" : input.value;
+                } else if (input.name === "pate_wunschschulen[]" || input.name === "pate_anmerkung") {
+                    outputValues[ind].textContent = input.value === '' ? '---' : input.value;
+                } else {
+                    outputValues[ind].textContent = input.value;
+                }
+            });
         }
     }
 
@@ -199,6 +208,7 @@
         tabs[index].querySelector('.textChange').classList.replace('nw-text-gray-300', 'nw-text-black');
         tabs[index].querySelector('.textChange').classList.replace('nw-font-normal', 'nw-font-bold');
 
+        // Zurück button in erster Seite hidden
         const zurueckButtons = document.querySelectorAll('.zurueckButton');
         zurueckButtons.forEach(button => {
             if (index === 0) {
@@ -207,7 +217,7 @@
                 button.classList.remove('nw-hidden');
             }
         });
-
+      // Buttons in pages hidden
         const pageButtons = document.querySelector('.page-buttons');
         const finalPagesButton = document.querySelector('.final-page-buttons');
         if (index === pages.length - 1) {
@@ -224,8 +234,21 @@
         e.preventDefault();
         document.getElementById("lesepatenSchritte").style.display = "none";
         document.getElementById("formularContainer").style.display = "none";
-        document.getElementById("dankeSeite").style.display = "block";
+        document.getElementById("dankeSeite").classList.replace('nw-hidden', 'nw-block');
+        document.getElementById("deleteAtTheEnd").classList.replace('nw-block', 'nw-hidden');
+        document.getElementById("showAtTheEnd").classList.replace('nw-hidden', 'nw-block');
     });
+
+    //zur Seiten springen
+        document.getElementById('datenPage').addEventListener('click', function() {
+            // Springe zur Seite 0 (Daten)
+            gotoPage(0);
+        });
+
+        document.getElementById('patenschaftPage').addEventListener('click', function() {
+            // Springe zur Seite 1 (Patenschaft)
+            gotoPage(1);
+        });
 </script>
 
 

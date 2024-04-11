@@ -10,7 +10,7 @@
     <div class="nw-mb-6">
         <div class="nw-pb-2 nw-border-b nw-flex nw-flex-row nw-justify-between nw-mb-4">
             <div class="nw-uppercase nw-font-medium nw-text-xs nw-leading-5"> IHRE DATEN</div>
-            <div>
+            <div id="datenPage">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="nw-w-4 nw-h-4">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -19,21 +19,21 @@
             </div>
         </div>
         <div class="nw-text-sm">
-            <div id="angezeigterName"> </div>
-            <div class="nw-pb-4" id="angezeigteEmail" ></div>
-            <div id="angezeigtesTelefon"></div>
-            <div id="angezeigteInstitution"></div>
-            <div id="angezeigteStrasse"></div>
+            <div id="shownName"> </div>
+            <div class="nw-pb-4" id="shownEmail" ></div>
+            <div id="shownTelefon"></div>
+            <div id="shownInstitution"></div>
+            <div id="shownStrasse"></div>
             <div class="nw-flex nw-gap-1">
-                   <p id="angezeigtePLZ"></p>
-                   <p id="angezeigteStadt"></p>
+                   <p id="shownPLZ"></p>
+                   <p id="shownOrt"></p>
             </div>
         </div>
     </div>
     <div class="nw-mb-6">
         <div class="nw-pb-2 nw-border-b nw-flex nw-flex-row nw-justify-between nw-mb-4">
             <div class="nw-uppercase nw-font-medium nw-text-xs nw-leading-5"> PATENSCHAFT UND SCHULE</div>
-            <div>
+            <div  id="patenschaftPage">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="nw-w-4 nw-h-4">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -43,19 +43,19 @@
         </div>
         <div>
             <div class="nw-mb-3">
-                <p class="nw-uppercase nw-text-gray-300 nw-text-xs">ePaper-Klassensatz: <span id="angezeigterEPaper" class="nw-text-sm nw-text-black">0</p>
+                <p class="nw-uppercase nw-text-gray-300 nw-text-xs">ePaper-Klassensatz: <span id="shownEPaperAmount" class="nw-text-sm nw-text-black">0</p>
             </div>
             <div class="nw-mb-3">
-               <p class="nw-uppercase nw-text-gray-300 nw-text-xs">  Printzeitung: <span id="angezeigterPrint" class="nw-text-sm nw-text-black">0 </p>
+               <p class="nw-uppercase nw-text-gray-300 nw-text-xs">  Printzeitung: <span id="shownPrintAmount" class="nw-text-sm nw-text-black">0 </p>
             </div>
 
             <div class="nw-mb-3">
                 <p class="nw-uppercase nw-text-gray-300 nw-text-xs">WUNSCH-SCHULE(N)</p>
-                <p id="angezeigteWunschschulen" class="nw-text-sm"></p>
+                <p id="shownWunschschulen" class="nw-text-sm"></p>
             </div>
             <div class="nw-mb-3">
                 <p class="nw-uppercase nw-text-gray-300 nw-text-xs">ANMERKUNG</p>
-                <p id="angezeigteAnmerkung" class="nw-text-sm"></p>
+                <p id="shownAnmerkung" class="nw-text-sm"></p>
             </div>
         </div>
         <hr>
