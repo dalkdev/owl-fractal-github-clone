@@ -64,27 +64,5 @@ export function initLesepaten() {
             });
         });
     });
-    // FORM LESEPATEN WERDEN ( Checkbox)
-    var lesepatenCheckBox1 = document.getElementById('lesepatenCheckCondition1');
-    var lesepatenCheckBox2 = document.getElementById('lesepatenCheckCondition2');
-    var bBeantragen = document.getElementById('beantragenButton');
-
-    if (lesepatenCheckBox1 == null || lesepatenCheckBox2 == null || bBeantragen == null) return;
-
-    lesepatenCheckBox1.addEventListener('change', checkFunction);
-    lesepatenCheckBox2.addEventListener('change', checkFunction);
-
-    function checkFunction() {
-        if (
-          lesepatenCheckBox1.checked === true &&
-          (lesepatenCheckBox2.checked === true || lesepatenCheckBox2.checked === false)
-        ) {
-            bBeantragen.disabled = false;
-            bBeantragen.style.backgroundColor = '#D20A11';
-        } else {
-            bBeantragen.disabled = true;
-            bBeantragen.style.backgroundColor = '#E1B9BA';
-        }
-    }
 
 }
