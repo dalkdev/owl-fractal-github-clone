@@ -33,7 +33,6 @@ const initializationFunctions: Array<() => void> = [
     initGLightBox,
     initDirektZumThema,
     initLesepaten,
-    initCheckOpenLogin,
 //    initLightBox,
 
 ];
