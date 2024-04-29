@@ -1,0 +1,180 @@
+@media (max-width: 767px)
+{
+  #nw-sticky-container {
+    position: absolute;
+    top: -36px;
+  }
+  .feedback-form{
+    justify-content: left;
+  }
+  span.article-comments span span{
+    line-height: 1;
+  }
+  span.article-comments span svg{
+    margin-top: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  #nw-logo-section {
+    left:10px;
+  }
+}
+
+
+.nw-pt-0\.5 {
+  padding-top: 1px;
+}
+
+.nw-mpt-7 {
+  padding-top: 1.75rem;
+}
+
+#nw-loginbox {
+  right: 0;
+}
+
+.article-detail-entry-content ul,
+.article-detail-entry-content ol {
+  padding-bottom: 1rem;
+  max-width: 83.33333333%;
+}
+
+.article-detail-entry-content ul li,
+.article-detail-entry-content ol li {
+  padding-bottom: 0.5rem;
+}
+
+p#absatz1.em_text {
+  padding-bottom: 1.5rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(0,0,0,var(--tw-text-opacity));
+}
+
+.article-detail-comment {
+  border: none;
+  padding: 0;
+  position: inherit;
+  margin-bottom: 0;
+  min-height: auto;
+}
+
+.article-detail-comment span {
+  font-size: initial;
+  line-height: initial;
+  font-style: normal;
+}
+
+p#absatz1.em_text > span {
+  display: block;
+}
+
+.nw-aspect-video{
+  aspect-ratio: 16 / 9;
+
+}
+
+.paywall-overlay-rebrush-2023 p{
+  width:auto;
+  margin-bottom: inherit;
+}
+.paywall-overlay-rebrush-2023 p a{
+  color:inherit!important;
+  text-decoration: none!important;
+}
+.paywall-overlay-rebrush-2023 a.nw-text-white{
+  color:#fff!important;
+}
+
+/** START HOTFIX photo gallery **/
+.site-source-index .flexslider article.article.media{
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.site-source-index .flexslider article.article.media .article-headline{
+  font-size: 20px;
+}
+
+.site-source-index .flexslider article.article.media img{
+  width: 128px;
+  max-width: none;
+}
+span.regular-title-wrapper{
+  padding-left: 10px;
+}
+.content-block-full-width{
+  margin: auto;
+  width: 100%;
+}
+.flexslider-container .flex-direction-nav a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.media, .media .article-image-container, .media-body{
+  overflow: unset;
+}
+.site-source-index .content-block-full-width .flexslider-container .flex-direction-nav .flex-prev{
+  left:10px;
+}
+.site-source-index .content-block-full-width .flexslider-container .flex-direction-nav .flex-next{
+  right:10px;
+}
+.site-source-index .flexslider-container .flex-direction-nav a{
+  margin-top: 0;
+  transform: translateY(-50%);
+  background: #fff;
+}
+@media (min-width: 767px){
+  .site-source-index .content-block-full-width .flexslider-container .flex-direction-nav .flex-prev{
+    left:-51px;
+  }
+  .site-source-index .content-block-full-width .flexslider-container .flex-direction-nav .flex-next{
+    right:-51px;
+  }
+  .site-source-index .flexslider-container .flex-direction-nav a{
+    background: transparent;
+  }
+  .site-source-index .flexslider-container .flex-direction-nav a:hover{
+    background: #d20a11;
+  }
+  .site-source-index .flexslider article.article.media{
+    padding: 5px;
+  }
+}
+/* END HOTFIX photo gallery **/
+
+/** START HOTFIX Article Image **/
+@media (min-width: 1024px) {
+  .xl\:nw-max-w-xs {
+    max-width: 20rem;
+  }
+}
+
+/** END HOTFIX Article Image **/
+
+/** EILMELDUNG QUICK FIX **/
+
+.eilmeldung{
+  border-top: 15px solid #fff;
+}
+.eilmeldung p , .eilmeldung .head{
+  text-align: center;
+}
+
+/* Hotfix pinpoll on articles*/
+@media (min-width: 768px) {
+  .article-detail-entry-content iframe[id^="pinpoll"] {
+    width: 83.3%;
+  }
+}
+/* Hotfix pinpoll end*/
+
+/**HOTFIX Login Box **/
+#nw-logo-section{
+  z-index: 99999!important;
+}
