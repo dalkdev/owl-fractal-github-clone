@@ -36,6 +36,7 @@
 @use './modules/engagently';
 @use './modules/winter-angebot';
 @use './modules/bookmark';
+@use './modules/patch';
 @use './modules/eng';
 // has to be at the end to override certain properties
 @use 'general/a11y';
