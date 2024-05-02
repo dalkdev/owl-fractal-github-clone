@@ -1,48 +1,9 @@
-@media (max-width: 767px)
-{
-  #nw-sticky-container {
-    position: absolute;
-    top: -36px;
-  }
-  .feedback-form{
-    justify-content: left;
-  }
-  span.article-comments span span{
-    line-height: 1;
-  }
-  span.article-comments span svg{
-    margin-top: 0;
-  }
-}
-
-@media (orientation: landscape) {
-  #nw-logo-section {
-    left:10px;
-  }
-}
-
-
 .nw-pt-0\.5 {
   padding-top: 1px;
 }
 
 .nw-mpt-7 {
   padding-top: 1.75rem;
-}
-
-#nw-loginbox {
-  right: 0;
-}
-
-.article-detail-entry-content ul,
-.article-detail-entry-content ol {
-  padding-bottom: 1rem;
-  max-width: 83.33333333%;
-}
-
-.article-detail-entry-content ul li,
-.article-detail-entry-content ol li {
-  padding-bottom: 0.5rem;
 }
 
 p#absatz1.em_text {
@@ -164,17 +125,4 @@ span.regular-title-wrapper{
 }
 .eilmeldung p , .eilmeldung .head{
   text-align: center;
-}
-
-/* Hotfix pinpoll on articles*/
-@media (min-width: 768px) {
-  .article-detail-entry-content iframe[id^="pinpoll"] {
-    width: 83.3%;
-  }
-}
-/* Hotfix pinpoll end*/
-
-/**HOTFIX Login Box **/
-#nw-logo-section{
-  z-index: 99999!important;
 }

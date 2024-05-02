@@ -2,6 +2,7 @@
   @apply  nw-mb-0 md:nw-mb-4;
 }
 
+// #nw-logo-section auch im app-patch.css
 @media (orientation: landscape) {
   #nw-logo-section {
     left:10px;
@@ -11,6 +12,8 @@
 #nw-logo-section {
   @apply md:nw-shadow-md;
   background-color: white!important;
+  // von app-patch.css
+  z-index: 99999!important;
 }
 
 #nw-menu-section {
@@ -67,6 +70,11 @@
   }
 }
 
+// von app-patch.css
+#nw-loginbox {
+  right: 0;
+}
+
 #nw-loginbox {
   @apply nw-w-80 nw-p-2 nw-bg-white nw-rounded
     nw-right-0
@@ -113,4 +121,22 @@
 
 #nw-login-button {
   @apply nw-text-custom-1-700 nw-cursor-pointer;
+}
+
+// von app-patch.css
+@media (max-width: 767px)
+{
+  #nw-sticky-container {
+    position: absolute;
+    top: -36px;
+  }
+  .feedback-form{
+    justify-content: left;
+  }
+  span.article-comments span span{
+    line-height: 1;
+  }
+  span.article-comments span svg{
+    margin-top: 0;
+  }
 }
