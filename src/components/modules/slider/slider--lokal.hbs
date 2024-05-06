@@ -1,0 +1,115 @@
+<style>
+  .img-lokal-artikel{
+   width: 304px;
+    height: 176px;
+  }
+</style>
+<div
+  id="nw-embla-gradient"
+  class="
+    slider
+    first-slide
+    nw-bg-custom-1-700 nw-pb-8 nw-pt-10
+    nw-mt-6 nw-mb-10
+    md:nw-mb-3
+  "
+>
+  <div class="nw-px-3 md:nw-px-7 nw-mb-6">
+    <div class="nw-flex nw-flex-row nw-justify-between nw-items-end">
+      <div>
+        <div class="nw-text-white nw-inline text-lg md:nw-text-2xl nw-uppercase nw-font-bold">
+          {{title}}
+        </div>
+        <hr class="nw-red-line-l nw-mt-0.5"/>
+      </div>
+      <div class="nw-text-gray-300 nw-text-sm nw-pl-3"><span class="photoCount" id="photoCount"></span>
+        Bilder
+      </div>
+    </div>
+  </div>
+  <div class="embla embla--main-carousel">
+    <div class="embla__viewport relative">
+      <div class="embla__container ">
+        {{#each images}}
+          <div
+            class="
+            embla__slide
+            nw-min-w-8/10
+            sm:min-w-6/10
+            md:nw-min-w-5/10
+            lg:nw-min-w-3/10
+            xl:nw-min-w-3/10
+          "
+          >
+            <div class="embla__slide__inner nw-bg-clip-padding nw-block nw-text-white">
+              <a href="#" data-event-value="retresco-reco">
+                <div class="nw-flex nw-flex-row md:nw-flex-col nw-space-x-2 md:nw-space-x-0">
+                  <img
+                    src="{{img}}"
+                    class=" nw-h-auto nw-w-auto nw-min-w-20 nw-max-w-20 nw-min-h-20 nw-max-h-20
+                    sm:nw-min-w-32 sm:nw-max-w-32 sm:nw-min-h-32 sm:nw-max-h-32
+
+                    md:nw-min-h-44 md:nw-max-h-44 md:nw-min-w-full md:nw-max-w-full nw-object-cover nw-rounded-md md:nw-mb-1"
+                    loading="lazy"
+                    alt="Bild zu blabla"
+                  />
+                  <div>
+                    <div class="nw-flex nw-justify-between nw-h-5">
+                      <p class="nw-text-xs md:nw-text-sm nw-text-left nw-font-medium nw-leading-tight">{{this.bannertext}}</p>
+                      <div>{{>'@nw-plus-icon'}}</div>
+                    </div>
+                    <div class="nw-font-bold nw-text-base md:nw-text-md nw-leading-tight">{{this.caption2}}</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      <div
+        class="
+          nw-hidden
+          md:nw-block
+          slider--button-prev
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-left-8
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
+        "
+      >
+        <img class="w-full" src="{{path '/images/arrow-left.svg'}}"/>
+      </div>
+      <div
+        class="
+          nw-hidden
+          md:nw-block
+          slider--button-next
+          nw-flex
+          nw-bg-black
+          nw-text-white
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-right-8
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer
+        "
+      >
+        <img class="nw-w-full" src="{{path '/images/arrow-right.svg'}}"/>
+      </div>
+    </div>
+  </div>
+</div>
