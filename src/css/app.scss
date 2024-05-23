@@ -39,6 +39,7 @@
 @use './modules/patch';
 @use './modules/eng';
 @use './modules/werbung-cms-adverts';
+@use './modules/print';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 
