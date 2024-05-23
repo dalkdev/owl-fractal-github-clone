@@ -4,7 +4,8 @@
   /*height: 90px;
   position: absolute;
   top: 0px;*/
-  margin-left: -31px;
+  /*    margin-left: -31px; */
+  background: rgb(232, 232, 232);
   position: relative;
 }
 
@@ -423,6 +424,7 @@
     position: relative;
     margin: 0 auto;
     z-index: 1;
+    min-height:150px;
   }
 }
 
@@ -518,7 +520,9 @@
   margin-bottom: 80px !important;
 }
 
-
+div#nw\.de_ticker_1 {
+  display: grid;
+}
 
 
 /* =============================================================================
@@ -527,4 +531,30 @@
 
 #nativendo-nw-infeed .article-divider {
   display: none;
+}
+
+/* =============================================================================
+   Adplatzierung Artikel
+   ========================================================================== */
+
+
+@media (min-width: 1024px) {
+  .listicle-image-text {
+    width: 83.3%;
+  }
+  .article-detail-entry-content .em_ads_box_dynamic_remove {
+    margin-right: -130px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .article-detail-entry-content .em_ads_box_dynamic_remove {
+    margin-right: -120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-detail-entry-content .em_ads_box_dynamic_remove {
+    margin-right: 0px;
+  }
 }
