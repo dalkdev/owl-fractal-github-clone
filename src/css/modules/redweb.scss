@@ -1,0 +1,101 @@
+// Es gibt das nur im Test-System
+
+@media (min-width: 1024px) {
+  .article-detail-entry-content .em_ads_box_dynamic_remove {
+    margin-right: -135px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .article-detail-entry-content .em_ads_box_dynamic_remove {
+    margin-right: -120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-detail-entry-content .em_ads_box_dynamic_remove {
+  }
+}
+
+// Nur im Live-System
+
+p.Frage {
+  max-width: 83.33333333%;
+  font-weight:bold;
+  margin-bottom: 0px;
+}
+
+//  Nur im Live-System
+
+p.Antwort {
+  max-width: 83.33333333%;
+  padding-bottom: 1rem;
+}
+
+// Nur im Live-System
+
+/*Iframe in Artikel*/
+.article-detail-entry-content iframe {
+  max-width: 100%;
+  margin-bottom: 1.75rem;
+}
+
+
+// h2 im Test- und Live-System , h3 nur im Live-System
+
+h2.Rubrizierung, h3.Rubrizierung {
+  font-weight:bold;
+  margin-bottom:0px;
+  font-size: 17px;
+}
+
+/*Bullet-Liste aus EO*/
+// im Test- und Live-System
+
+p.Liste  {
+  margin-bottom:10px;
+}
+
+p.Liste::before {
+  content: '';
+  background-image:url(/_apps/nw/assets/article_list/circle_black.svg);
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 5px;
+  margin-bottom: 0.2rem;
+  background-size: 8px 8px;
+}
+
+// nur im Live-System
+
+/* ticker pulse */
+.ticker {
+  background: rgba(220, 10, 17, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  margin: 3px 6px 0px 10px;
+  height: 15px;
+  width: 15px;
+  float:left;
+  transform: scale(1);
+  animation: pulse-red 2s infinite;
+  display: inline;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.55);
+    box-shadow: 0 0 0 0 rgba(210, 10, 17, 0.7);
+  }
+
+  70% {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 10px rgba(210, 10, 17, 0);
+  }
+
+  100% {
+    transform: scale(0.55);
+    box-shadow: 0 0 0 0 rgba(210, 10, 17, 0);
+  }
+}
