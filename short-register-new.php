@@ -36,6 +36,23 @@ $tpl_text .= '
     #breadcrumb-wrapper {
         display: none;
     }
+    
+    .form-control {
+    font-size: 13px;
+    color: #000;
+    background-color: #ffffff;
+    border: none !important;
+    border-bottom: 1px solid #757575 !important;
+    font-style: italic;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    }
+  
+    .form-header {
+    font-size: 18px;
+    color: #8d8d8d;
+    }
 
     #header-logo img {
         visibility: visible;
