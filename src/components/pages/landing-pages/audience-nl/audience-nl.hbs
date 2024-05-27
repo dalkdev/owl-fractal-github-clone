@@ -6,7 +6,7 @@
     />
       <div class=" nw-w-full nw-px-4 nw-mt-8 md_nw-mt-0 nw-absolute nw-top-1/4 md:nw-top-1/3 nw-left-1/2 nw-transform -nw-translate-x-1/2 -nw-translate-y-1/2 nw-text-white nw-text-center">
         <h2 class="nw-text-lg nw-font-bold">NEWSLETTER</h2>
-        <h2 class="nw-text-3xl nw-font-bold"> Wöchentlich <br> erstklassige News.</h2>
+        <h2 class="nw-text-2xl sm:nw-text-3xl nw-font-bold"> Wöchentliche Gastro- &  <br> Event-Highlights.</h2>
       </div>
   </section>
 
@@ -18,13 +18,28 @@
             <div class="nw-mb-4">
               <p class="nw-uppercase nw-text-md nw-leading-6 nw-font-bold nw-text-center nw-pb-8">Foodie-NEWSLETTER <br>ABONNIEREN</p>
             </div>
-            <div class="nw-mb-6 nw-w-full">
-              <label class="input-label email-label nw-font-medium nw-text-xs nw-uppercase"
-                   for="email">E-Mail</label>
+            <div class="nw-mb-3 nw-w-full">
+              <label class="email-label nw-font-medium nw-text-xs nw-uppercase"
+                   for="email">E-Mail-Adresse</label>
               <input required
-                class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border nw-rounded nw-text-tiny nw-box-border nw-cursor-pointer"
+                class="nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border nw-rounded nw-text-base nw-box-border
+                nw-cursor-pointer"
                 type="email" placeholder="" name="email" id="email"
                 value="">
+            </div>
+            <div class="nw-mb-6">
+              <label class="region-label nw-font-medium nw-text-xs nw-uppercase" for="my_region">MEINE REGION*</label>
+              <select class="nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-text-base nw-inline-block nw-border
+                  nw-rounded nw-box-border nw-cursor-pointer" id="my_region" name="nl_id" required>
+                <option value="" disabled selected hidden>Bitte wählen</option>
+                <option value="14">Bielefeld</option>
+                <option value="15">Kreis Gütersloh</option>
+                <option value="16">Kreis Herford</option>
+                <option value="17">Kreis Höxter</option>
+                <option value="18">Kreis Minden-Lübbecke</option>
+                <option value="19">Kreis Paderborn</option>
+
+              </select>
             </div>
             <div class="nw-mb-4">
               <p class="nw-text-xs nw-leading-4">Mit meiner Anmeldung zum Newsletter stimme ich der  <a href="https://www.nw.de/service/formales/23036205_Werbevereinbarung.html" class="nw-underline nw-text-red-500">Werbevereinbarung</a> zu. Weitere Informationen finden Sie in der
