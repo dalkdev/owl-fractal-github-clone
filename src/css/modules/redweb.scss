@@ -48,6 +48,20 @@ p.Liste::before {
   margin-bottom: 0.2rem;
   background-size: 8px 8px;
 }
+/*p.Liste > span {
+    display: block;
+}
+
+p.Liste > span:before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #000;
+    margin-right: 5px;
+    margin-bottom: 0.2rem;
+}*/
 
 // nur im Live-System
 
