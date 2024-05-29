@@ -41,6 +41,7 @@
 @use './modules/werbung-live';
 @use './modules/print-live';
 @use './modules/redweb';
+@use './modules/fonts';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 
