@@ -1,15 +1,14 @@
 {{>'@simple-loream'}}
-<div class="nw-z-10 nw-w-full nw-left-0 nw-bottom-0 nw-fixed">
+<div class="nw-z-20 nw-w-full nw-left-0 nw-bottom-0 nw-fixed">
   <div
     class="nw-py-1 sm:nw-py-0 nw-plus-footer"
     style="background-color: rgb(0, 175, 203)"
   >
-    <div class="nw-absolute nw-w-full nw-flex nw-justify-center">
+    <div class="nw-z-0 nw-absolute nw-w-full nw-flex nw-justify-center">
       <div
         style="background-color: rgb(0, 175, 203)"
         class="
-          nw-inline-flex nw-cursor-pointer nw--mt-4
-          sm:nw--mt-5
+          nw-inline-flex nw-cursor-pointer nw--mt-6
           nw-rounded-full
         "
         onclick="closefooter()"
@@ -17,9 +16,9 @@
         <button class="nw-flex nw-items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-            class="nw-text-white nw-m-1 sm:nw-m-2 nw-arrow-svg-footer"
+            width="16"
+            height="16"
+            class="nw-text-white nw-mx-3 nw-arrow-svg-footer"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -47,20 +46,20 @@
       "
       style="background-color: rgb(0, 175, 203)"
     >
-      <div>
+      <div class="nw-z-10">
         <div class="nw-inline-block nw-align-middle nw-mr-1">
           {{>'@nw-plus-icon'}}
         </div>
-        <div class="nw-inline-block nw-text-md">{{caption}}</div>
+        <div class="nw-inline-block nw-leading-loose nw-text-md ">{{caption}}</div>
       </div>
       <div
         class="
           nw-text-gray-200
-          nw-flex
-          nw-justify-end
+          nw-flex nw-items-start nw-font-bold
+          nw-justify-end nw-text-xl
           nw-cursor-pointer
           nw-px-2
-          nw-close-footer
+          nw-close-footer nw-self-start
         "
       >
         ×
