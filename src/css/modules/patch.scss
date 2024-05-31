@@ -126,3 +126,17 @@ span.regular-title-wrapper{
 .eilmeldung p , .eilmeldung .head{
   text-align: center;
 }
+
+/**  **/
+@media only screen and (max-width: 767px) {
+  body > .container {
+    // margin-top: 64px;
+  }
+  #leaderboard-wrapper {
+    margin-top:78px;
+    min-height: 50px;
+    background-image: url(/_em_daten/_nw/2021/07/09/210709_1334_leaderboard_ad_350.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
