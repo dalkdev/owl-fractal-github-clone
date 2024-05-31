@@ -1,0 +1,42 @@
+/** 404 **/
+.flex-wrap{
+  display:flex;
+  justify-content:center;
+}
+.error-content{
+  padding:40px 0 0;
+}
+@media (min-width: 767px) {
+  .error-content{
+    padding:40px 0 60px;
+  }
+  .meistgelesen-box-wrapper{
+    margin-right: -135px;
+    width: 300px;
+  }
+
+}
+.error-content .grey-img-border{
+  margin:0 auto;
+  background: #eee;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.error-content img{
+  display:block;
+  margin: 0 auto;
+}
+.error-content .content h2{
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.error-content .content p{
+  margin-bottom:30px;
+  font-size:18px;
+}
