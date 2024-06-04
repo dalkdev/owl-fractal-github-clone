@@ -10,11 +10,11 @@
       </div>
   </section>
 
-  <section class="nw-relative nw-max-w-sm nw-mx-auto nw-px-6 md:nw-px-0 ">
+  <section id="form-section" class="nw-relative nw-max-w-sm nw-mx-auto nw-px-6 md:nw-px-0 ">
     <div class="nw-relative nw-flex nw-flex-col nw-min-w-0 nw-break-words nw-bg-white nw-w-full nw-mb-8 nw-shadow-xl nw-rounded-lg nw--mt-16 md:nw--mt-8">
       <div>
         <div class="nw-flex nw-flex-col nw-justify-center nw-items-center nw-p-4">
-          <form>
+          <form id="newsletter-form">
             <div class="nw-mb-4">
               <p class="nw-uppercase nw-text-md nw-leading-6 nw-font-bold nw-text-center nw-pb-8">Foodie-NEWSLETTER <br>ABONNIEREN</p>
               <p class="nw-text-sm ">Keine Highlights Ihrer Region mehr verpassen! Entdecken Sie wöchentlich die neusten Updates zu Gastro, Shopping und Veranstaltungen – alles kompakt in unserem Newsletter.</p>
@@ -56,10 +56,37 @@
               </button>
             </div>
           </form>
+
         </div>
       </div>
     </div>
   </section>
+  <!-- -->
+  <div id="success-message" class="nw-my-6 nw-bg-custom-1-700 nw-p-4 nw-rounded-md nw-text-white nw-max-w-sm nw-mx-auto" style="display: none">
+
+    <div class="nw-flex nw-justify-between nw-mb-3">
+      <p class="nw-text-lg nw-font-bold nw-leading-6"> Newsletter <br> abonnieren</p>
+      <a href="#" class="nw-text-sm hover:nw-underline"> Alle <br>Newletter</a>
+    </div>
+    <hr class="nw-mb-3">
+    <div class="nw-text-base ">
+      <a href="#" class="nw-font-bold nw-pb-1 hover:nw-underline"> Update zum Mittag</a>
+      <p class="nw-pb-3"> Das News-Update zum Mittag - die wichtigsten News des Tages aus OWL, Deutschland und der Welt um 12 Uhr
+        direkt aus der Chefredaktion.
+      </p>
+      <p class="nw-pb-6"> Mit meiner Anmeldung zum Newsletter stimme ich der <a href="#" class="nw-underline">Werbevereinbarung</a> zu.
+        Weitere Informationen finden Sle in der <a href="#" class="nw-underline">Datenschutzerklärung</a>.</p>
+    </div>
+    <div class="nw-flex nw-items-center">
+      <p class="nw-text-xl nw-font-bold">Ihre Anmeldung war erfolgreich </p>
+      <svg class="nw-flex-shrink-0 nw-w-12 nw-h-12 nw-text-green-500 svg-green" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+      </svg>
+    </div>
+
+  </div>
+
+  <!-- -->
   <div class="nw-bg-white nw-rounded-md nw-py-4 md:nw-mx-6">
     <div class="nw-pb-8 nw-text-center nw-leading-6 nw-block">
       <p class="nw-text-2xl nw-font-bold">Benötigen Sie Hilfe?</p>
@@ -136,3 +163,19 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  document.querySelector('form#newsletter-form button[type="submit"]').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    var email = document.getElementById('email').value;
+    var region = document.getElementById('my_region').value;
+
+    document.getElementById('newsletter-form').style.display = 'none';
+    document.getElementById('form-section').style.display = 'none';
+    document.getElementById('success-message').style.display = 'block';
+    document.getElementById('newsletter-form').reset();
+  });
+
+</script>
