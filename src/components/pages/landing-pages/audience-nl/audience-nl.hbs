@@ -150,16 +150,36 @@
 
 
 <script>
-  document.querySelector('form#newsletter-form button[type="submit"]').addEventListener('click', function(event) {
-    event.preventDefault();
+    document.addEventListener('DOMContentLoaded', function() {
+      var newletterFormInputs = document.querySelectorAll('#newsletter-form input, #newsletter-form select');
 
-    var email = document.getElementById('email').value;
-    var region = document.getElementById('my_region').value;
+      newletterFormInputs.forEach(nLFormInput => {
+          nLFormInput.addEventListener('change', (event) => {
+            nLFormInput.setCustomValidity(nLFormInput.value.trim() === '' ? 'Bitte füllen Sie die leeren Felder aus!' : '');
+            nLFormInput.reportValidity();
+      });
+        nLFormInput.addEventListener('input', (event) => {
+          nLFormInput.setCustomValidity('');
+      });
+    });
 
-    document.getElementById('newsletter-form').style.display = 'none';
-    document.getElementById('form-section').style.display = 'none';
-    document.getElementById('success-message').style.display = 'block';
-    document.getElementById('newsletter-form').reset();
+      document.querySelector('form#newsletter-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var nlEmail = document.getElementById('email').value.trim();
+      var nlRegion = document.getElementById('my_region').value.trim();
+
+      if (nlEmail !== "" && nlRegion !== "") {
+        document.getElementById('newsletter-form').style.display = 'none';
+        document.getElementById('form-section').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+      } else {
+        newletterFormInputs.forEach(nLFormInput => {
+          if (nLFormInput.value.trim() === '') {
+            nLFormInput.reportValidity();
+          }
+        });
+      }
+    });
   });
-
 </script>
