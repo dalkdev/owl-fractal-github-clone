@@ -2,10 +2,13 @@
   position: relative;
   background-color: white;
 
+
+
   .embla-newsticker__viewport {
     overflow: hidden;
     width: 100%;
     background-color: white;
+    mask-image: linear-gradient(to right, black 70%, transparent 100%);
 
     @media (max-width: 639px) {
       -webkit-mask-image: linear-gradient(
