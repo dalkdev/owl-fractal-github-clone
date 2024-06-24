@@ -1,0 +1,79 @@
+<div class="nw-bg-custom-1-700 nw-p-4 md:nw-p-8">
+  <div class="nw-bg-white nw-py-4 nw-mx-0 nw-px-4 md:nw-max-w-md nw-mx-auto nw-rounded-md">
+    <div>
+      <p
+        class="
+        nw-text-left
+        nw-text-xl
+        nw-font-bold
+        nw-pb-1
+      "
+      >
+        Passwort zurücksetzen
+      </p>
+    </div>
+    <div>
+      <div>
+        <form action="" id="myForm" method="post">
+          <div class="nw-mb-4">
+            <label
+              class="
+              nw-font-medium
+              nw-text-xs
+              nw-uppercase
+              "
+              for="my_email"
+            >E-Mail Adresse*</label>
+            <input required
+                 class="
+              nw-formfield
+              nw-w-full
+              nw-px-2
+              nw-py-3
+              nw-mx-auto
+              nw-inline-block
+              nw-border
+              nw-rounded
+              nw-text-base
+              nw-box-border
+              nw-cursor-pointer
+              "
+                 pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                 type="email"
+                 placeholder=""
+                 name="my_email"
+                 id="my_email"
+            />
+          </div>
+          <div class=" nw-flex nw-justify-start nw-items-center">
+            <label class="nw-mb-5 nw-mt-2 nw-text-base nw-col-sm-4 nw-col-md-3 nw-control-label">
+              Sicherheitsabfrage <span class="nw-text-red-500">*</span>
+            </label>
+            <div class="nw-mb-2">
+              <img src="/_em_cms/locals/nw/captcha.php" id="captchaImage" alt="Captcha Image">
+            </div>
+            <div class="nw-mb-2 nw-w-14">
+              <label for="captchaAnswer" class="nw-sr-only">Captcha Antwort</label>
+              <input type="text" class="nw-p-0 nw-w-14 nw-h-auto nw-font-bold nw-text-base placeholder:nw-text-xs placeholder:nw-font-medium" id="captchaAnswer" name="check" placeholder="Ergebnis" autocomplete="off">
+            </div>
+          </div>
+          <div class="nw-mt-4">
+            <button type="button" class="nw-mb-4 nw-py-2 nw-px-4 nw-flex nw-justify-center
+              nw-items-center nw-rounded-lg nw-border nw-text-white nw-bg-red-500 nw-border-red-500
+              nw-w-full hover:nw-bg-white hover:nw-text-red-500">
+              Absenden
+            </button>
+
+            <a href="#" class="nw-flex nw-justify-center
+              nw-items-center nw-text-center nw-rounded-lg nw-border nw-text-white
+              nw-bg-gray-500 nw-border-gray-500 nw-w-full nw-py-2 nw-px-4
+              hover:nw-bg-white hover:nw-text-black">
+              zurück zur Anmeldung
+            </a>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
