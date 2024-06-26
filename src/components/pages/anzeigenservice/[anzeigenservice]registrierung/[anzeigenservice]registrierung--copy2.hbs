@@ -1,15 +1,13 @@
-<div class="nw-bg-white nw-pb-4 nw-mx-0 nw-px-4 md:nw-px-48">
+<div class="nw-bg-white nw-pb-4 nw-mx-auto nw-px-4 nw-max-w-md">
     <div>
         <p
             class="
         nw-text-left
         nw-text-md
         nw-font-bold
-        nw-opacity-100
         nw-text-black
         nw-pt-4
         nw-pb-1
-        nw-tracking-normal
       "
         >
             Zugang für den Anzeigen-Service erstellen
@@ -22,10 +20,8 @@
         nw-text-left
         nw-text-base
         nw-font-medium
-        nw-opacity-100
         nw-text-black
         nw-py-1
-        nw-tracking-normal
       "
         >
             Ihre Daten
@@ -41,7 +37,6 @@
             nw-text-xs
             nw-uppercase
             nw-text-black
-            nw-tracking-normal
           "
                     for=""
                 >Vorname</label
@@ -55,8 +50,7 @@
             nw-mx-auto
             nw-text-base
             nw-inline-block
-            nw-border-2
-            nw-border-solid
+            nw-border
             nw-rounded
             nw-box-border
             nw-cursor-pointer
@@ -72,7 +66,6 @@
             nw-text-red-500
             nw-text-xs
             nw-font-medium
-            nw-tracking-normal
             nw-hidden
           "
                 >
@@ -88,7 +81,6 @@
             nw-text-xs
             nw-uppercase
             nw-text-black
-            nw-tracking-normal
           "
                     for=""
                 >Nachname</label
@@ -101,9 +93,8 @@
             nw-py-1.5
             nw-mx-auto
             nw-inline-block
-            nw-border-2
+            nw-border
             nw-text-base
-            nw-border-solid
             nw-rounded
             nw-box-border
             nw-cursor-pointer
@@ -119,7 +110,6 @@
             nw-text-red-500
             nw-text-xs
             nw-font-medium
-            nw-tracking-normal
             nw-hidden
           "
                 >
@@ -134,7 +124,6 @@
             nw-text-xs
             nw-uppercase
             nw-text-black
-            nw-tracking-normal
           "
                     for=""
                 >E-Mail</label
@@ -147,8 +136,7 @@
             nw-py-1.5
             nw-mx-auto
             nw-inline-block
-            nw-border-2
-            nw-border-solid
+            nw-border
             nw-rounded
             nw-text-base
             nw-box-border
@@ -165,7 +153,6 @@
             nw-text-red-500
             nw-text-xs
             nw-font-medium
-            nw-tracking-normal
             nw-hidden
           "
                 >
@@ -174,14 +161,13 @@
             </div>
 
             <!-- Passwort-->
-            <div class="nw-mb-2">
+            <div class="nw-mb-6">
                 <label
                     class="
             nw-font-medium
             nw-text-xs
             nw-uppercase
             nw-text-black
-            nw-tracking-normal
           "
                     for=""
                 >Passwort</label
@@ -194,8 +180,7 @@
             nw-py-1.5
             nw-mx-auto
             nw-inline-block
-            nw-border-2
-            nw-border-solid
+            nw-border
             nw-rounded
             nw-text-base
             nw-box-border
@@ -212,7 +197,6 @@
             nw-text-red-500
             nw-text-xs
             nw-font-medium
-            nw-tracking-normal
             nw-hidden
           "
                 >
@@ -220,7 +204,7 @@
                 </p>
             </div>
             <!-- Conditions-->
-            <div class="nw-mb-2 nw-mt-4 nw-flex">
+            <div class="nw-mb-2 nw-flex">
                 <div>
                     <input
                         type="checkbox"
@@ -241,17 +225,13 @@
                         onclick="checkFunction()"
                     />
                 </div>
-                <div>
+                <div class="nw-mb-1">
                     <label class="nw-flex nw-pl-2 nw-items-center nw-space-x-1">
             <span
                 class="
                 nw-pr-6
                 nw-text-gray-700
                 nw-text-xs
-                nw-font-normal
-                nw-text-left
-                nw-tracking-normal
-                nw-opacity-100
               "
             >
                 {{condition1}}
@@ -259,7 +239,7 @@
                     </label>
                 </div>
             </div>
-            <div class="nw-mt-1 nw-mb-4 nw-flex">
+            <div class="nw-mb-4 nw-flex">
                 <div>
                     <input
                         type="checkbox"
@@ -287,10 +267,6 @@
                 nw-pr-6
                 nw-text-gray-700
                 nw-text-xs
-                nw-font-normal
-                nw-text-left
-                nw-tracking-normal
-                nw-opacity-100
               "
             >
                 {{condition2}}</span
@@ -298,7 +274,7 @@
                     </label>
                 </div>
             </div>
-            <label class="class='nw-text-gray-500 nw-taxt-base nw-font-bold'" for="answer">Sicherheitsabfrage <span
+            <label class="class='nw-text-gray-500 nw-text-base nw-font-bold'" for="answer">Sicherheitsabfrage <span
                 class="nw-text-red-500">*</span>
             </label>
             <input class=" nw-mb-4 nw-appearance-none nw-bg-transparent nw-border-b-2 nw-text-base nw-text-center
