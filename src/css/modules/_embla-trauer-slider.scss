@@ -1,0 +1,38 @@
+
+.nw-trauer-slider {
+  &.first-slide {
+    .embla__container {
+      &:first-child {
+        @apply nw-ml-0 md:nw-ml-0;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .embla__viewport {
+      margin-left: 56px;
+    }
+  }
+  @media (min-width: 439px) and (max-width: 767px) {
+    .embla__slide {
+      min-width: 70%;
+    }
+  }
+
+  .embla__dot {
+    width: 11px;
+    height: 11px;
+  }
+
+  .embla__dot:after {
+    height: 11px;
+    border-radius: 8px;
+  }
+
+  .embla__dot.is-selected:after {
+    background-color: #262626;
+  }
+  .embla__dots {
+    padding-bottom: 32px;
+  }
+}
