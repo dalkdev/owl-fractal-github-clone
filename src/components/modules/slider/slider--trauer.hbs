@@ -1,4 +1,6 @@
+<style>
 
+</style>
 <div
   class="
     slider nw-trauer-slider nw-embla-trauer-gradient
@@ -27,7 +29,6 @@
   <div class="embla embla--main-carousel nw-mb-8">
     <div class="embla__viewport relative">
       <div class="embla__container ">
-      {{#each images}}
         <div
           class="
             embla__slide
@@ -39,22 +40,40 @@
           "
         >
           <div class="embla__slide__inner nw-bg-clip-padding nw-flex nw-justify-center sm:nw-justify-start">
-            <div class="nw-flex nw-flex-col sm:nw-flex-row nw-justify-center nw-items-center sm:nw-space-x-4">
-              <a target="#" href="#" class="nw-mb-4 sm:nw-mb-0">
-                <div class="nw-flex nw-justify-center nw-items-center nw-bg-white nw-overflow-hidden nw-rounded-md" style="width: 80px; height: 80px;">
-                  <img class="nw-w-full nw-h-auto" style="max-width: 100%; max-height: 100%;"
-                       loading="lazy"
-                       src="{{trauer-img}}">
-                </div>
-              </a>
-
-              <div class="nw-text-center sm:nw-text-left  nw-leading-6">
-                <p class="nw-font-bold nw-text-md">{{trauer-title}}</p>
-                <p class="nw-text-gray-300 nw-text-base">{{trauer-first-date}}<br>{{trauer-second-date}}</p>
-              </div>
+            <div class="nw-mx-auto nw-rounded-lg" style="width: 300px; height: 250px; max-width: 300px; max-height: 250px; background-color: #ccc;">
+              Hier könnte Ihre Werbung stehen.
             </div>
           </div>
         </div>
+
+        {{#each images}}
+          <div
+            class="
+            embla__slide
+            nw-min-w-full
+            sm:min-w-4/10
+            md:nw-min-w-4/10
+            lg:nw-min-w-4/10
+            xl:nw-min-w-3/10
+          "
+          >
+            <div class="embla__slide__inner nw-bg-clip-padding nw-flex nw-justify-center sm:nw-justify-start">
+              <div class="nw-flex nw-flex-col sm:nw-flex-row nw-justify-center nw-items-center sm:nw-space-x-4">
+                <a target="#" href="#" class="nw-mb-4 sm:nw-mb-0">
+                  <div class="nw-flex nw-justify-center nw-items-center nw-bg-white nw-overflow-hidden nw-rounded-md trauer-container">
+                    <img class="nw-w-auto nw-h-auto" style="max-width: 100%; max-height: 100%;"
+                         loading="lazy"
+                         src="{{trauer-img}}">
+                  </div>
+                </a>
+
+                <div class="nw-text-center sm:nw-text-left  nw-leading-6">
+                  <p class="nw-font-bold nw-text-md">{{trauer-title}}</p>
+                  <p class="nw-text-gray-300 nw-text-base">{{trauer-first-date}}<br>{{trauer-second-date}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         {{/each}}
       </div>
       <div
