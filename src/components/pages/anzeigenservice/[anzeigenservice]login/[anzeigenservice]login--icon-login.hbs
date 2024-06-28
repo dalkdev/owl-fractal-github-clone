@@ -1,0 +1,110 @@
+<style>
+  #background-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 99;
+  }
+</style>
+
+<div class="nw-relative nw-login-container">
+  <button class=" nw-border nw-border-red-500 nw-bg-red-500 nw-p-4
+  nw-inline-flex nw-text-white nw-py-2 nw-px-4 nw-rounded
+  hover:nw-bg-white hover:nw-text-red-500
+  "
+          onclick="toggleLoginBox()">
+    Login
+  </button>
+
+  <div id="nw-loginboxneu" class="nw-hidden nw-fixed nw-top-16 sm:nw-top-1/4 nw-left-1/2 nw-transform -nw-translate-x-1/2
+  nw-p-4 nw-bg-white nw-rounded-lg nw-mx-auto nw-z-50 nw-border nw-border-gray-200
+  nw-shadow-md" style="z-index: 2147483647; width: 344px;">
+
+    <div class="nw-text-gray-600 nw-text-2xl nw-flex nw-justify-end
+    nw-cursor-pointer nw-leading-3 hover:nw-text-black"
+         onclick="toggleLoginBox()">
+      ×
+    </div>
+    <div class="nw-mb-4">
+      <p class="nw-text-xl nw-font-bold"> Jetzt Anmelden
+      </p>
+    </div>
+
+    <form action="" name="" id="" class="" role="form" method="" onsubmit="" accept-charset="utf-8">
+      <div id=""></div>
+      <div class="nw-mb-2">
+        <label for="" class="nw-sr-only">E-Mail Adresse</label>
+        <input type="email" name="" id="" autocomplete="email" required="" class="nw-rounded nw-appearance-none nw-min-w-0
+        nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-roundednw-py-1 nw-px-2 nw-text-base
+        nw-text-gray-900 nw-placeholder-gray-300" placeholder="E-Mail">
+      </div>
+      <div class="nw-mb-3">
+        <label for="" class="nw-sr-only">Passwort</label>
+        <div class="nw-relative">
+          <div class="nw-absolute nw-right-2 nw-cursor-pointer nw-z-999 nw-m-auto">
+            <div class="nw-relative">
+              <span id="" class="nw-mr-1 nw-mt-2 nw-flex nw-justify-center" onclick="">
+                <img id="" class="nw-w-6 nw-h-6 nw-overflow-clip-margin-content-box nw-overflow-clip nw-opacity-60" alt=""
+                     src="https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg">
+              </span>
+            </div>
+          </div>
+          <input type="" name="" id="" autocomplete="" required="" class="nw-rounded nw-appearance-none nw-min-w-0
+          nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-roundednw-py-1 nw-px-2 nw-text-tiny
+          nw-text-gray-900 nw-placeholder-gray-300" placeholder="Passwort">
+        </div>
+      </div>
+      <div class="nw-text-right nw-mb-4 nw-text-xs">
+        <div>
+          <a href="#" class="nw-text-gray-700 hover:nw-underline" onclick="">Passwort vergessen?</a>
+        </div>
+      </div>
+      <div class="nw-mb-4">
+        <label class="nw-flex nw-items-center nw-space-x-1">
+          <input type="checkbox" id="" name="" value="" style="margin-top:0" class="nw-rounded nw-form-tick nw-border
+          nw-nw-border-gray-300 nw-appearance-none nw-h-3 nw-w-3 nw-outline-none checked:nw-bg-gray-500 focus:outline-none">
+          <span class="nw-text-gray-600 nw-text-xs nw-font-medium">Angemeldet bleiben</span>
+        </label>
+      </div>
+      <div class="nw-mb-6">
+        <button id="loginButton" type="button" class="for-tracking nw-w-full nw-bg-red-500 nw-border nw-border-transparent
+        nw-rounded nw-py-1 nw-px-4 nw-flex nw-items-center nw-justify-center nw-text-base nw-font-medium nw-text-white
+        hover:nw-bg-red-600 hover:nw-text-white focus:nw-bg-red-700" onclick="">
+          Anmelden
+        </button>
+      </div>
+    </form>
+
+    <div class="nw-text-center">
+      <p class="nw-text-sm nw-leading-5 nw-pb-3">Sie haben noch keinen Zugang?</p>
+      <div class="nw-font-medium">
+        <div>
+          <a href="#" class="nw-for-tracking nw-text-sm nw-font-bold nw-underline nw-text-red-500 hover:nw-text-red-600">
+            Hier kostenlos registrieren
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="background-popup" class="nw-hidden" onclick="toggleLoginBox()"></div>
+</div>
+
+<script>
+  function toggleLoginBox() {
+    const loginBox = document.getElementById('nw-loginboxneu');
+    const backgroundPopup = document.getElementById('background-popup');
+    const isHidden = loginBox.classList.contains('nw-hidden');
+    if (isHidden) {
+      loginBox.classList.remove('nw-hidden');
+      backgroundPopup.classList.remove('nw-hidden');
+    } else {
+      loginBox.classList.add('nw-hidden');
+      backgroundPopup.classList.add('nw-hidden');
+    }
+  }
+</script>
