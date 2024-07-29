@@ -86,7 +86,7 @@
     nw-right-0
     nw-z-50
     nw-border
-    nw-border-gray-200
+    nw-border-gray-100
     nw-absolute
     nw-top-10
     nw-filter
@@ -96,7 +96,7 @@
 .nw-loginbox-arrow {
   @apply nw-inline-block
     nw-bg-white
-    nw-border-gray-200
+    nw-border-gray-100
     nw-border-l
     nw-border-t
     nw-transform
@@ -112,21 +112,21 @@
 
 .nw-abo-button {
   @apply nw-font-bold
-  nw-bg-red-500
+  nw-bg-red-0
   nw-text-white
   nw-py-0.5
   nw-px-1
   nw-rounded
   nw-uppercase
   sm:nw-inline
-  hover:nw-bg-red-600
+  hover:nw-bg-red-100
   hover:nw-text-white
   focus:nw-outline-none
-  focus:nw-bg-red-700;
+  focus:nw-bg-red-200;
 }
 
 #nw-login-button {
-  @apply nw-text-custom-1-700 nw-cursor-pointer;
+  @apply nw-text-slate-300 nw-cursor-pointer;
 }
 
 // von app-patch.css

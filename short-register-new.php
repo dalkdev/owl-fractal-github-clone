@@ -171,7 +171,6 @@ $tpl_text .= '
             class="
         nw-text-left
         nw-text-lg
-        nw-leading-5
         nw-font-bold
         nw-pb-1
       "
@@ -182,7 +181,6 @@ $tpl_text .= '
             class="
         nw-text-left
         nw-text-tiny
-        nw-leading-8
         nw-font-medium
         nw-py-1
       "
@@ -192,7 +190,7 @@ $tpl_text .= '
     </div>
     <ul role="list" class="nw-mb-4 nw-text-left nw-font-medium nw-text-tiny">
         <li class="nw-flex nw-items-center nw-space-x-1">
-            <svg class="nw-flex-shrink-0 nw-w-5 nw-h-5 nw-text-green-500 svg-green" fill="currentColor"
+            <svg class="nw-flex-shrink-0 nw-w-5 nw-h-5 nw-text-green-100 svg-green" fill="currentColor"
                  viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -202,7 +200,7 @@ $tpl_text .= '
             <span>Artikel freischalten (außer NW+)</span>
         </li>
         <li class="nw-flex nw-items-center nw-space-x-1">
-            <svg class="nw-w-5 h-5 nw-text-green-500 svg-green" fill="currentColor" viewBox="0 0 20 20"
+            <svg class="nw-w-5 h-5 nw-text-green-100 svg-green" fill="currentColor" viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -211,7 +209,7 @@ $tpl_text .= '
             <span>redaktioneller Newsletter</span>
         </li>
         <li class="nw-flex nw-items-center nw-space-x-1 ">
-            <svg class="nw-w-5 nw-h-5 nw-text-green-500 svg-green" fill="currentColor" viewBox="0 0 20 20"
+            <svg class="nw-w-5 nw-h-5 nw-text-green-100 svg-green" fill="currentColor" viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -629,13 +627,13 @@ $tpl_text .= '
 
 $tpl_text .= '
     <div class="form-group' . (!empty($fill['error']['my_agb']) ? ' has-error' : '') . '">
-        <div class="nw-pr-4 nw-text-gray-700">
+        <div class="nw-pr-4 nw-text-gray-600">
             <div class="checkbox">
                 <label>
                     <input type="checkbox" name="my_agb"
                            class="nw-w-3 nw-h-3 nw-cursor-pointer' . (!empty($fill['agb']) ? ' checked=" checked"' : '')
     . '">
-                    Ich stimme den Allgemeinen Geschäftsbedingungen <a class="nw-text-red-500 hover:nw-underline" href="/agb"
+                    Ich stimme den Allgemeinen Geschäftsbedingungen <a class="nw-text-red-0 hover:nw-underline" href="/agb"
                                                                        target="_blank"> der Neuen Westfälischen </a> zu.
                 </label>
             </div>
@@ -644,7 +642,7 @@ $tpl_text .= '
     ';
 /*$tpl_text .= '
 <div class="form-group' . (!empty($fill['error']['my_agb']) ? ' has-error' : '') . '">
-    <div class="nw-mb-3 nw-pr-6 nw-text-gray-700 nw-text-sm ">
+    <div class="nw-mb-3 nw-pr-6 nw-text-gray-600 nw-text-sm ">
         <div class="checkbox">
             <label class="nw-font-normal">
                 <input type="checkbox" name="my_agb" class="nw-w-3 nw-h-3 nw-cursor-pointer"' .
@@ -657,7 +655,7 @@ $tpl_text .= '
 </div>
 
 <div class="form-group' . (!empty($fill['error']['my_is_optin']) ? ' has-error' : '') . '">
-    <div class="nw-mb-3 nw-pr-6 nw-text-gray-700 nw-text-sm ">
+    <div class="nw-mb-3 nw-pr-6 nw-text-gray-600 nw-text-sm ">
         <div class="checkbox">
             <label class="nw-font-normal">
                 <input type="checkbox" name="my_is_optin" class="nw-w-3 nw-h-3 nw-cursor-pointer checkbox-gray"' .
@@ -723,7 +721,7 @@ $tpl_text .= '
 
     <div class="nw-mb-8 md:nw-mb-3">
         <div class="nw-w-full sm:nw-w-auto form-control-container nw-font-medium nw-text-xs">
-            Bitte beachten Sie unsere <a href="/datenschutz/" class="nw-text-red-500 hover:nw-underline">Datenschutzhinweise</a>.
+            Bitte beachten Sie unsere <a href="/datenschutz/" class="nw-text-red-0 hover:nw-underline">Datenschutzhinweise</a>.
         </div>
     </div>
     <div class="nw-mb-8 md:nw-mb-4 clearfix">
@@ -736,9 +734,9 @@ $tpl_text .= '
     . ' class=" nw-w-full nw-px-1
             sm:nw-px-3
             nw-text-white
-            nw-bg-red-500
+            nw-bg-red-0
             nw-border
-            nw-border-red-500
+            nw-border-red-0
             nw-rounded-md
             nw-text-center
             nw-flex
@@ -746,7 +744,7 @@ $tpl_text .= '
             nw-items-center
             nw-text-tiny
             nw-font-medium
-            nw-cursor-pointer nw-py-3 hover:nw-bg-white hover:nw-text-red-500'
+            nw-cursor-pointer nw-py-3 hover:nw-bg-white hover:nw-text-red-0'
     . (em_get_var_value('em_paywall_type')
         ? ' for-tracking' : ''
     )
@@ -767,12 +765,12 @@ $tpl_text .= '
     <p class="nw-font-bold nw-text-base nw-pb-4">Sie haben Fragen zu Ihrer Anmeldung oder Registrierung?</p>
     <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-3">
         <div class="nw-font-medium">
-            <p class="nw-text-gray-600 nw-uppercase nw-font-bold">KONTAKT</p>
-            <p>Tel.: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-600">(0521) 555 800</a></p>
-            <p>E-Mail: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-600 nw-underline">nwplus@nw.de</a></p>
+            <p class="nw-text-gray-500 nw-uppercase nw-font-bold">KONTAKT</p>
+            <p>Tel.: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-500">(0521) 555 800</a></p>
+            <p>E-Mail: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-500 nw-underline">nwplus@nw.de</a></p>
         </div>
         <div class="nw-font-medium">
-            <p class="nw-text-gray-600 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
+            <p class="nw-text-gray-500 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
             <p>Mo - Fr: 6 - 10 Uhr <br>
                 Sa: 6 - 13 Uhr <br>
                 an Feiertagen: 7 - 13 Uhr<br>
@@ -803,68 +801,68 @@ $tpl_text .= '
     var hasEmptyField = false; 
 
     if (!_objForm.my_email.value || !_objForm.my_email.value.match(/[^@]+@[^@]+\.\w{2,}/)) {
-        labels.filter(".email-label").addClass("nw-text-red-500");
-        $("#my_email").addClass("nw-border-red-500");
+        labels.filter(".email-label").addClass("nw-text-red-0");
+        $("#my_email").addClass("nw-border-red-0");
         hasEmptyField = true;
     } else {
         _objForm.my_user.value = _objForm.my_email.value;
-        labels.filter(".email-label").removeClass("nw-text-red-500");
-        $("#my_email").removeClass("nw-border-red-500");
+        labels.filter(".email-label").removeClass("nw-text-red-0");
+        $("#my_email").removeClass("nw-border-red-0");
     }
 
     if (!_objForm.my_new_pass.value) {
-        labels.filter(".password-label").addClass("nw-text-red-500");
-        $("#my_new_pass").addClass("nw-border-red-500");
+        labels.filter(".password-label").addClass("nw-text-red-0");
+        $("#my_new_pass").addClass("nw-border-red-0");
         hasEmptyField = true;
     } else {
-        labels.filter(".password-label").removeClass("nw-text-red-500");
-        $("#my_new_pass").removeClass("nw-border-red-500");
+        labels.filter(".password-label").removeClass("nw-text-red-0");
+        $("#my_new_pass").removeClass("nw-border-red-0");
     }
 
     if (!_objForm.nl_id.value) {
-        labels.filter(".region-label").addClass("nw-text-red-500");
-        $("#my_region").addClass("nw-border-red-500");
+        labels.filter(".region-label").addClass("nw-text-red-0");
+        $("#my_region").addClass("nw-border-red-0");
         hasEmptyField = true;
     } else {
-        labels.filter(".region-label").removeClass("nw-text-red-500");
-        $("#my_region").removeClass("nw-border-red-500");
+        labels.filter(".region-label").removeClass("nw-text-red-0");
+        $("#my_region").removeClass("nw-border-red-0");
     }
     
     if (!_objForm.my_gender.value) {
-        labels.filter(".anrede-label").addClass("nw-text-red-500");
-        $("#my_gender").addClass("nw-border-red-500");
+        labels.filter(".anrede-label").addClass("nw-text-red-0");
+        $("#my_gender").addClass("nw-border-red-0");
         hasEmptyField = true;
     } else {
-        labels.filter(".anrede-label").removeClass("nw-text-red-500");
-        $("#my_gender").removeClass("nw-border-red-500");
+        labels.filter(".anrede-label").removeClass("nw-text-red-0");
+        $("#my_gender").removeClass("nw-border-red-0");
     }
 
     if (!_objForm.my_firstname.value) {
-        labels.filter(".vorname-label").addClass("nw-text-red-500");
-        $("#my_firstname").addClass("nw-border-red-500");
+        labels.filter(".vorname-label").addClass("nw-text-red-0");
+        $("#my_firstname").addClass("nw-border-red-0");
         hasEmptyField = true;
     } else {
-        labels.filter(".vorname-label").removeClass("nw-text-red-500");
-        $("#my_firstname").removeClass("nw-border-red-500");
+        labels.filter(".vorname-label").removeClass("nw-text-red-0");
+        $("#my_firstname").removeClass("nw-border-red-0");
     }
 
     if (!_objForm.my_name.value) {
-        labels.filter(".nachname-label").addClass("nw-text-red-500");
-        $("#my_name").addClass("nw-border-red-500");
+        labels.filter(".nachname-label").addClass("nw-text-red-0");
+        $("#my_name").addClass("nw-border-red-0");
         hasEmptyField = true;
     } else {
-        labels.filter(".nachname-label").removeClass("nw-text-red-500");
-        $("#my_name").removeClass("nw-border-red-500");
+        labels.filter(".nachname-label").removeClass("nw-text-red-0");
+        $("#my_name").removeClass("nw-border-red-0");
     }
 
    /*  
    if (!_objForm.my_zip.value) {
-        labels.filter(".plz-label").addClass("nw-text-red-500");
-        $("#my_zip").addClass("nw-border-red-500");
+        labels.filter(".plz-label").addClass("nw-text-red-0");
+        $("#my_zip").addClass("nw-border-red-0");
         hasEmptyField = true;
     } else {
-        labels.filter(".plz-label").removeClass("nw-text-red-500");
-        $("#my_zip").removeClass("nw-border-red-500");
+        labels.filter(".plz-label").removeClass("nw-text-red-0");
+        $("#my_zip").removeClass("nw-border-red-0");
     } 
     */
         

@@ -52,7 +52,7 @@
   @apply nw-text-md nw-px-4 nw-w-full md:nw-w-5/6 nw-mx-auto;
 
   h2 {
-    @apply nw-w-full md:nw-w-5/6 nw-font-bold nw-pb-2 nw-leading-relaxed;
+    @apply nw-w-full md:nw-w-5/6 nw-font-bold nw-pb-2;
   }
 
   li,
@@ -60,7 +60,7 @@
     @apply nw-w-full md:nw-w-5/6 nw-pb-4 nw-text-lg;
 
     a {
-      @apply nw-text-red-500 nw-underline nw-leading-tight nw-cursor-pointer;
+      @apply nw-text-red-0 nw-underline nw-cursor-pointer;
     }
 
     a[href^="http"]::after,
@@ -87,5 +87,5 @@
 .nw-editorial-comment {
   @apply nw-p-4 nw-rounded-md nw-mt-2.5;
   max-width: 656px;
-  background-color: #F2F5F9;
+  background-color: #F2F2F2;
 }

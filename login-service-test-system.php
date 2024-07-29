@@ -138,15 +138,15 @@ Wartungsmeldung ENDE -->
 
         <div class="form-group">
             <div class="form-control-container">
-                <div class="nw-mb-2 nw-font-bold nw-text-xl">Sie möchten eine Anzeige aufgeben?</div>
+                <div class="nw-mb-2 nw-font-bold nw-text-lg">Sie möchten eine Anzeige aufgeben?</div>
                 <div class="nw-text-tiny nw-font-semibold">Bitte melden Sie sich an</div>
             </div>
         </div>
         <div class="myonline-login-page-form-user input-group">
-            <input name="my_user" type="text" maxlength="50" size="11" class="nw-rounded-md nw-appearance-none nw-min-w-0 nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-rounded-md nw-py-1 nw-px-2 nw-text-tiny nw-text-gray-900 nw-placeholder-gray-300" placeholder="Benutzername o. E-Mail">
+            <input name="my_user" type="text" maxlength="50" size="11" class="nw-rounded-md nw-appearance-none nw-min-w-0 nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-rounded-md nw-py-1 nw-px-2 nw-text-tiny nw-text-black nw-placeholder-gray-200" placeholder="Benutzername o. E-Mail">
         </div>
         <div class="myonline-login-page-form-password input-group">
-            <input type="password" class="nw-rounded-md nw-appearance-none nw-min-w-0 nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-rounded-md nw-py-1 nw-px-2 nw-text-tiny nw-text-gray-900 nw-placeholder-gray-300" maxlength="50" size="11" name="my_pass" value="" placeholder="'.(!empty($em_projekt[$em_client]['myonline_passwort']) ? $em_projekt[$em_client]['myonline_passwort'] : 'Passwort'). '">
+            <input type="password" class="nw-rounded-md nw-appearance-none nw-min-w-0 nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-rounded-md nw-py-1 nw-px-2 nw-text-tiny nw-text-black nw-placeholder-gray-200" maxlength="50" size="11" name="my_pass" value="" placeholder="'.(!empty($em_projekt[$em_client]['myonline_passwort']) ? $em_projekt[$em_client]['myonline_passwort'] : 'Passwort'). '">
             <a href="/profil/?pid=7" class="myonline-login-page-form-forgot pull-right">Passwort vergessen?</a>
         </div>';
 if (!empty($GLOBALS['em_my_login_error_reset_sso_sessions'])) {
@@ -178,7 +178,7 @@ $tpl_text.= '
         <div class="nw-text-center">
             <div class="nw-font-bold nw-text-lg">Sie haben noch kein Zugang?</div>
             <div class="nw-text-tiny nw-font-semibold">Jetzt kostenfrei registrieren</div>
-            <a type="button" class="nw-mt-2 btn btn-secondary nw-border nw-rounded-md nw-py-1 nw-px-4 nw-text-tiny nw-font-semibold hover:nw-bg-red-400 focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-offset-2 focus:nw-ring-offset-gray-800 focus:nw-ring-indigo-500" href="/anzeigen/service/register">Zur Registrierung</a>
+            <a type="button" class="nw-mt-2 btn btn-secondary nw-border nw-rounded-md nw-py-1 nw-px-4 nw-text-tiny nw-font-semibold hover:nw-bg-red-0 focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-offset-2 focus:nw-ring-offset-gray-600 focus:nw-ring-indigo-500" href="/anzeigen/service/register">Zur Registrierung</a>
         </div>
     </div>
 

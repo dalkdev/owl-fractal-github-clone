@@ -15,7 +15,7 @@
                 <div
                     class="
             nw-mt-6
-            nw-bg-gray-600
+            nw-bg-gray-500
             nw-relative
             nw-text-white
             nw-text-center
@@ -66,12 +66,12 @@
         <!--
             <ul
                 class="
-            nw-nav nw-nav-tabs nw-flex nw-flex-col nw-text-gray-400
+            nw-nav nw-nav-tabs nw-flex nw-flex-col nw-text-gray-300
             md:nw-flex-row
             nw-flex-wrap
             nw-list-none
             nw-border-b
-            nw-border-gray-200
+            nw-border-gray-100
             nw-pl-0
             nw-pb-
             nw-mb-4
@@ -94,7 +94,7 @@
                 nw-items-center
                 nw-text-black
                 nw-border-b-2
-                nw-border-gray-600
+                nw-border-gray-500
               "
                         id="tabs-home-tab"
                         data-bs-toggle="pill"
@@ -105,7 +105,7 @@
                     >
                         <svg
                             id="svgErstellen"
-                            class="nw-mr-1.5 nw-cursor-pointer nw-text-custom-1-700"
+                            class="nw-mr-1.5 nw-cursor-pointer nw-text-slate-300"
                             width="25"
                             height="25"
                             xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +146,7 @@
                     >
                         <svg
                             id="svgVerwalten"
-                            class="nw-mr-1.5 nw-cursor-pointer nw-text-gray-400"
+                            class="nw-mr-1.5 nw-cursor-pointer nw-text-gray-300"
                             width="25"
                             height="25"
                             xmlns="http://www.w3.org/2000/svg"
@@ -175,12 +175,12 @@
         nw-nav-tabs
         nw-flex
         nw-flex-col
-        nw-text-gray-400
+        nw-text-gray-300
         md:nw-flex-row
         nw-flex-wrap
         nw-list-none
         nw-border-b
-        nw-border-gray-200
+        nw-border-gray-100
         nw-pl-0
         nw-pb-
         nw-mb-4
@@ -199,7 +199,7 @@
             nw-cursor-pointer
             nw-text-black
             nw-border-b-2
-            nw-border-gray-600
+            nw-border-gray-500
           "
                     id="tabs-home-tab"
                     data-bs-toggle="pill"
@@ -209,7 +209,7 @@
                     aria-selected="true"
                 >
                     <svg
-                        class="nw-mr-1.5 nw-cursor-pointer nw-text-custom-1-700"
+                        class="nw-mr-1.5 nw-cursor-pointer nw-text-slate-300"
                         width="25"
                         height="25"
                         xmlns="http://www.w3.org/2000/svg"
@@ -233,7 +233,7 @@
                     class="
             nw-tab
             nw-p-4
-            nw-text-gray-400
+            nw-text-gray-300
             nw-rounded-t-lg
             nw-font-medium
             nw-uppercase
@@ -250,7 +250,7 @@
                     aria-current="page"
                 >
                     <svg
-                        class="nw-mr-1.5 nw-cursor-pointer nw-text-gray-400"
+                        class="nw-mr-1.5 nw-cursor-pointer nw-text-gray-300"
                         width="25"
                         height="25"
                         xmlns="http://www.w3.org/2000/svg"
@@ -286,27 +286,27 @@
       iconverwalten.addEventListener('click', mouseOver2);
 
       function mouseOver1() {
-          svg1.classList.add('nw-text-custom-1-700');
-          svg2.classList.remove('nw-text-custom-1-700');
-          svg2.classList.add('nw-text-gray-400');
+          svg1.classList.add('nw-text-slate-300');
+          svg2.classList.remove('nw-text-slate-300');
+          svg2.classList.add('nw-text-gray-300');
           iconerstellen.classList.add('nw-text-black');
           iconverwalten.classList.remove('nw-text-black');
-          iconverwalten.classList.add('nw-text-gray-400');
+          iconverwalten.classList.add('nw-text-gray-300');
           iconerstellen.classList.add('nw-border-b-2');
-          iconerstellen.classList.add('nw-border-gray-600');
+          iconerstellen.classList.add('nw-border-gray-500');
           iconerstellen.classList.add('nw-border-solid');
           iconverwalten.classList.remove('nw-border-b-2');
       }
 
       function mouseOver2() {
-          svg2.classList.add('nw-text-custom-1-700');
-          svg1.classList.remove('nw-text-custom-1-700');
-          svg1.classList.add('nw-text-gray-400');
+          svg2.classList.add('nw-text-slate-300');
+          svg1.classList.remove('nw-text-slate-300');
+          svg1.classList.add('nw-text-gray-300');
           iconverwalten.classList.add('nw-text-black');
           iconerstellen.classList.remove('nw-text-black');
-          iconerstellen.classList.add('nw-text-gray-400');
+          iconerstellen.classList.add('nw-text-gray-300');
           iconverwalten.classList.add('nw-border-b-2');
-          iconverwalten.classList.add('nw-border-gray-600');
+          iconverwalten.classList.add('nw-border-gray-500');
           iconverwalten.classList.add('nw-border-solid');
           iconerstellen.classList.remove('nw-border-b-2');
       } */
@@ -316,24 +316,24 @@
         /*
            x.addEventListener('click', (e) => {
                RemoveAllActiveClasses();
-               x.classList.remove('nw-text-gray-400');
-               x.classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-gray-600', 'nw-border-solid');
-               x.firstElementChild.classList.remove('nw-text-gray-400');
-               x.firstElementChild.classList.add('nw-text-custom-1-700');
+               x.classList.remove('nw-text-gray-300');
+               x.classList.add('nw-text-black', 'nw-border-b-2', 'nw-border-gray-500', 'nw-border-solid');
+               x.firstElementChild.classList.remove('nw-text-gray-300');
+               x.firstElementChild.classList.add('nw-text-slate-300');
 
            });*/
 
         x.onclick = function () {
             RemoveAllActiveClasses();
-            x.classList.remove('nw-text-gray-400');
+            x.classList.remove('nw-text-gray-300');
             x.classList.add(
                 'nw-text-black',
                 'nw-border-b-2',
-                'nw-border-gray-600',
+                'nw-border-gray-500',
                 'nw-border-solid'
             );
-            x.firstElementChild.classList.remove('nw-text-gray-400');
-            x.firstElementChild.classList.add('nw-text-custom-1-700');
+            x.firstElementChild.classList.remove('nw-text-gray-300');
+            x.firstElementChild.classList.add('nw-text-slate-300');
         };
     });
 
@@ -343,12 +343,12 @@
             x.classList.remove(
                 'nw-text-black',
                 'nw-border-b-2',
-                'nw-border-gray-600',
+                'nw-border-gray-500',
                 'nw-border-solid'
             );
-            x.classList.add('nw-text-gray-400');
-            x.firstElementChild.classList.remove('nw-text-custom-1-700');
-            x.firstElementChild.classList.add('nw-text-gray-400');
+            x.classList.add('nw-text-gray-300');
+            x.firstElementChild.classList.remove('nw-text-slate-300');
+            x.firstElementChild.classList.add('nw-text-gray-300');
         });
     }
 </script>

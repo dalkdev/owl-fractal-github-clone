@@ -64,7 +64,7 @@
                 <p
                     id="anredeT"
                     class="
-            nw-text-red-500
+            nw-text-red-0
             nw-text-xs
             nw-font-medium
             nw-hidden
@@ -107,7 +107,7 @@
                 <p
                     id="vnameT"
                     class="
-            nw-text-red-500
+            nw-text-red-0
             nw-text-xs
             nw-font-medium
             nw-hidden
@@ -152,7 +152,7 @@
                 <p
                     id="nnameT"
                     class="
-            nw-text-red-500
+            nw-text-red-0
             nw-text-xs
             nw-font-medium
             nw-hidden
@@ -198,7 +198,7 @@
                         <p
                             id="strasseT"
                             class="
-                nw-text-red-500
+                nw-text-red-0
                 nw-text-xs
                 nw-font-medium
                 nw-hidden
@@ -243,7 +243,7 @@
                         <p
                             id="hnummerT"
                             class="
-                nw-text-red-500
+                nw-text-red-0
                 nw-text-xs
                 nw-font-medium
                 nw-hidden
@@ -290,7 +290,7 @@
                         <p
                             id="plzT"
                             class="
-                nw-text-red-500
+                nw-text-red-0
                 nw-text-xs
                 nw-font-medium
                 nw-hidden
@@ -335,7 +335,7 @@
                         <p
                             id="ortT"
                             class="
-                nw-text-red-500
+                nw-text-red-0
                 nw-text-xs
                 nw-font-medium
                 nw-hidden
@@ -385,7 +385,7 @@
                 <p
                     id="land1T"
                     class="
-            nw-text-red-500
+            nw-text-red-0
             nw-text-xs
             nw-font-medium
             nw-hidden
@@ -429,7 +429,7 @@
                 <p
                     id="eMailT"
                     class="
-            nw-text-red-500
+            nw-text-red-0
             nw-text-xs
             nw-font-medium
             nw-hidden
@@ -473,7 +473,7 @@
                 <p
                     id="passwortT"
                     class="
-            nw-text-red-500
+            nw-text-red-0
             nw-text-xs
             nw-font-medium
             nw-hidden
@@ -493,12 +493,12 @@
               nw-form-tick
               nw-border
               nw-rounded-sm
-              nw-nw-border-gray-300
+              nw-nw-border-gray-200
               nw-appearance-none
               nw-cursor-pointer
               nw-h-3
               nw-w-3
-              checked:nw-bg-gray-600
+              checked:nw-bg-gray-500
               focus:outline-none
             "
                         onclick="checkFunction()"
@@ -509,7 +509,7 @@
             <span
                 class="
                 nw-pr-6
-                nw-text-gray-700
+                nw-text-gray-600
                 nw-text-xs
               "
             >
@@ -528,12 +528,12 @@
               nw-form-tick
               nw-border
               nw-rounded-sm
-              nw-nw-border-gray-300
+              nw-nw-border-gray-200
               nw-appearance-none
               nw-cursor-pointer
               nw-h-3
               nw-w-3
-              checked:nw-bg-gray-600
+              checked:nw-bg-gray-500
               focus:outline-none
             "
                         onclick="checkFunction()"
@@ -544,7 +544,7 @@
             <span
                 class="
                 nw-pr-6
-                nw-text-gray-700
+                nw-text-gray-600
                 nw-text-xs
               "
             >
@@ -569,8 +569,8 @@
           nw-font-bold
           nw-text-white
           nw-cursor-pointer
-          focus:nw-bg-red-700
-          disabled:nw-bg-red-100
+          focus:nw-bg-red-200
+          disabled:nw-bg-gray-100
         "
                 type="button"
                 value="Registrieren"
@@ -609,10 +609,10 @@
         Array.prototype.forEach.call(array_input, x => {
             if (x.value == '') {
                 valid = false;
-                x.classList.add('nw-border-red-500');
+                x.classList.add('nw-border-red-0');
                 x.nextElementSibling.style.display = 'block';
             } else {
-                x.classList.remove('nw-border-red-500');
+                x.classList.remove('nw-border-red-0');
                 x.nextElementSibling.style.display = 'none';
             }
         });
@@ -621,7 +621,7 @@
 
     Array.prototype.forEach.call(array_input, x => {
         x.onclick = function () {
-            x.classList.remove('nw-border-red-500');
+            x.classList.remove('nw-border-red-0');
             x.nextElementSibling.style.display = 'none';
         };
     });

@@ -16,14 +16,13 @@
         background-position: right 5px top 50%;
     }
 </style>
-<div class="nw-bg-custom-1-700 nw-p-4 sm:nw-p-8">
+<div class="nw-bg-slate-300 nw-p-4 sm:nw-p-8">
     <div class="nw-bg-white nw-p-4 nw-pb-6 md:nw-p-6 nw-mx-0 md:nw-max-w-md nw-mx-auto nw-rounded-md">
         <div>
             <p
                 class="
         nw-text-left
-        nw-text-xl
-        nw-leading-5
+        nw-text-lg
         nw-font-bold
         nw-opacity-100
         nw-pb-1
@@ -37,7 +36,6 @@
                 class="
                 nw-text-left
                 nw-text-base
-                nw-leading-8
                 nw-font-medium
                 nw-py-1
               "
@@ -47,7 +45,7 @@
         </div>
         <ul role="list" class="nw-mb-6 nw-text-left nw-font-medium nw-text-base">
             <li class="nw-flex nw-items-center nw-space-x-2">
-                <svg class="nw-flex-shrink-0 nw-w-5 nw-h-5 nw-text-green-500" fill="currentColor" viewBox="0 0 20 20"
+                <svg class="nw-flex-shrink-0 nw-w-5 nw-h-5 nw-text-green-100" fill="currentColor" viewBox="0 0 20 20"
                      xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                           d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -56,7 +54,7 @@
                 <span>Artikel freischalten (außer NW+)</span>
             </li>
             <li class="nw-flex nw-items-center nw-space-x-2">
-                <svg class="nw-w-5 h-5 nw-text-green-500" fill="currentColor" viewBox="0 0 20 20"
+                <svg class="nw-w-5 h-5 nw-text-green-100" fill="currentColor" viewBox="0 0 20 20"
                      xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                           d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -65,7 +63,7 @@
                 <span>redaktioneller Newsletter</span>
             </li>
             <li class="nw-flex nw-items-center nw-space-x-2 ">
-                <svg class="nw-w-5 nw-h-5 nw-text-green-500" fill="currentColor" viewBox="0 0 20 20"
+                <svg class="nw-w-5 nw-h-5 nw-text-green-100" fill="currentColor" viewBox="0 0 20 20"
                      xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                           d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -74,7 +72,7 @@
                 <span>Kommentarfunktion</span>
             </li>
         </ul>
-        <p id="dangerAlert" class="nw-bg-red-100 nw-text-red-700 nw-px-2
+        <p id="dangerAlert" class="nw-bg-red-0 nw-text-red-200 nw-px-2
             nw-py-2 nw-mb-4 nw-rounded nw-hidden"> Bitte füllen Sie die roten Felder aus!</p>
         <div>
             <form action="" id="myForm" method="post">
@@ -469,12 +467,12 @@
               nw-form-tick
               nw-border
               nw-rounded-sm
-              nw-nw-border-gray-300
+              nw-nw-border-gray-200
               nw-appearance-none
               nw-cursor-pointer
               nw-h-4
               nw-w-4
-              checked:nw-bg-gray-600
+              checked:nw-bg-gray-500
               focus:outline-none
             "
                             onclick="checkFunction()"
@@ -485,26 +483,26 @@
             <span
                 class="
                 nw-pr-6
-                nw-text-gray-700
+                nw-text-gray-600
                 nw-text-xs
                 nw-text-left
                 nw-opacity-100
               "
             >
-                 Ich stimme den   <a href="#" class="nw-text-red-500 hover:nw-underline">Allgemeinen Geschäftsbedingungen</a> der Neuen Westfälischen zu.
+                 Ich stimme den   <a href="#" class="nw-text-red-0 hover:nw-underline">Allgemeinen Geschäftsbedingungen</a> der Neuen Westfälischen zu.
             </span>
                         </label>
                     </div>
                 </div>
-                <label class="class=nw-text-gray-500 nw-taxt-base nw-font-bold" for="answer">Sicherheitsabfrage
+                <label class="class=nw-text-gray-400 nw-taxt-base nw-font-bold" for="answer">Sicherheitsabfrage
                 </label>
                 <input class=" nw-mb-4 nw-mt-2 nw-appearance-none nw-bg-transparent nw-border nw-text-base nw-text-center
-                     nw-text-gray-900 nw-rounded nw-px-2 nw-py-3 nw-leading-tight focus:nw-outline-none"
+                     nw-text-black nw-rounded nw-px-2 nw-py-3 focus:nw-outline-none"
                        id="answer"
                        name="answer" placeholder="Ergebnis Sicherheitsabfrage" required>
                 <div class="nw-text-xs nw-font-medium nw-mb-8 sm:nw-mb-4">
                     Bitte beachten Sie unsere <a href="#"
-                                                 class="nw-text-red-500 hover:nw-underline">Datenschutzhinweise</a>.
+                                                 class="nw-text-red-0 hover:nw-underline">Datenschutzhinweise</a>.
                 </div>
 
                 <input
@@ -513,7 +511,7 @@
                     class="
           nw-w-full
           nw-px-8
-          nw-py-3
+          nw-py-1
           nw-mx-auto
           nw-inline-block
           nw-rounded
@@ -521,8 +519,8 @@
           nw-font-bold
           nw-text-white
           nw-cursor-pointer
-          focus:nw-bg-red-700
-          disabled:nw-bg-red-100
+          focus:nw-bg-red-200
+          disabled:nw-bg-gray-100
         "
                     type="button"
                     value="Registrieren"
@@ -535,14 +533,14 @@
         <p class="nw-font-bold nw-text-md nw-pb-6">Sie haben Fragen zu Ihrer Anmeldung oder Registrierung?</p>
         <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-4">
             <div class="nw-font-medium">
-                <p class="nw-text-gray-600 nw-uppercase nw-font-bold">KONTAKT</p>
-                <p>Tel.: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-600">(0521) 555 800</a>
+                <p class="nw-text-gray-500 nw-uppercase nw-font-bold">KONTAKT</p>
+                <p>Tel.: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-500">(0521) 555 800</a>
                 </p>
-                <p>E-Mail: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-600 nw-underline">nwplus@nw.de</a>
+                <p>E-Mail: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-500 nw-underline">nwplus@nw.de</a>
                 </p>
             </div>
             <div class="nw-font-medium">
-                <p class="nw-text-gray-600 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
+                <p class="nw-text-gray-500 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
                 <p>Mo - Fr: 6 - 10 Uhr <br>
                     Sa: 6 - 13 Uhr <br>
                     an Feiertagen: 7 - 13 Uhr<br>
@@ -574,7 +572,7 @@
     var number2 = Math.floor(Math.random() * 10) + 1;
     var sumOfTheNumbers = number1 + number2;
     var questionLabel = document.querySelector('label[for="answer"]');
-    questionLabel.innerHTML = "<span class='nw-text-gray-500 nw-taxt-base nw-font-bold' >Sicherheitsabfrage </span><br> " + number1 + " + " + number2 + " = ";
+    questionLabel.innerHTML = "<span class='nw-text-gray-400 nw-taxt-base nw-font-bold' >Sicherheitsabfrage </span><br> " + number1 + " + " + number2 + " = ";
 
     answerInput.addEventListener('input', checkSecurityAnswer);
 
@@ -605,11 +603,11 @@
                 let label = x.previousElementSibling;
                 if (x.value === '') {
                     valid = false;
-                    x.classList.add('nw-border-red-500');
-                    label.classList.add('nw-text-red-500');
+                    x.classList.add('nw-border-red-0');
+                    label.classList.add('nw-text-red-0');
                 } else {
-                    x.classList.remove('nw-border-red-500');
-                    label.classList.remove('nw-text-red-500');
+                    x.classList.remove('nw-border-red-0');
+                    label.classList.remove('nw-text-red-0');
                 }
             });
 
@@ -618,8 +616,8 @@
 
         Array.prototype.forEach.call(array_input, x => {
             x.onclick = function () {
-                x.classList.remove('nw-border-red-500');
-                x.previousElementSibling.classList.remove('nw-text-red-500');
+                x.classList.remove('nw-border-red-0');
+                x.previousElementSibling.classList.remove('nw-text-red-0');
             };
         }); */
     /*
@@ -629,11 +627,11 @@
                 const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
                 if (x.value === '') {
                     valid = false;
-                    x.classList.add('nw-border-red-500');
-                    label.classList.add('nw-text-red-500');
+                    x.classList.add('nw-border-red-0');
+                    label.classList.add('nw-text-red-0');
                 } else {
-                    x.classList.remove('nw-border-red-500');
-                    label.classList.remove('nw-text-red-500');
+                    x.classList.remove('nw-border-red-0');
+                    label.classList.remove('nw-text-red-0');
                 }
             });
 
@@ -649,9 +647,9 @@
 
         Array.prototype.forEach.call(array_input, x => {
             x.onclick = function () {
-                x.classList.remove('nw-border-red-500');
+                x.classList.remove('nw-border-red-0');
                 const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
-                label.classList.remove('nw-text-red-500');
+                label.classList.remove('nw-text-red-0');
 
                 var dangerAlert = document.getElementById('dangerAlert');
                 dangerAlert.classList.add('nw-hidden');
@@ -670,11 +668,11 @@
             const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
             if (x.value === '') {
                 valid = false;
-                x.classList.add('nw-border-red-500');
-                label.classList.add('nw-text-red-500');
+                x.classList.add('nw-border-red-0');
+                label.classList.add('nw-text-red-0');
             } else {
-                x.classList.remove('nw-border-red-500');
-                label.classList.remove('nw-text-red-500');
+                x.classList.remove('nw-border-red-0');
+                label.classList.remove('nw-text-red-0');
             }
         });
 
@@ -691,9 +689,9 @@
 
     Array.prototype.forEach.call(array_input, x => {
         x.onclick = function () {
-            x.classList.remove('nw-border-red-500');
+            x.classList.remove('nw-border-red-0');
             const label = document.querySelector('label[for="' + x.getAttribute('id') + '"]');
-            label.classList.remove('nw-text-red-500');
+            label.classList.remove('nw-text-red-0');
 
             var dangerAlert = document.getElementById('dangerAlert');
             dangerAlert.classList.add('nw-hidden');

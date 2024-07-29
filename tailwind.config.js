@@ -9,49 +9,74 @@ module.exports = {
         extend: {
             colors: {
                 gray: {
-                    100: '#F2F2F2',
-                    '150': '#F2F5F9',
-                    200: '#D9D9D9',
-                    '250': '#B3B3B3',
-                    300: '#BFBFBF',
-                    400: '#999999',
-                    500: '#737373',
-                    600: '#4D4D4D',
-                    700: '#262626',
+                    0: '#F2F2F2', // 100 .. wurde geändert
+                    100: '#D9D9D9', // 200
+                    200: '#BFBFBF', // 300
+                    300: '#999999', // 400
+                    400: '#737373', // 500
+                    500: '#4D4D4D', // 600
+                    600: '#262626', // 700
                 },
                 green: {
-                    400: '#41BCA7',
-                    500: '#6EB783',
-                    600: '#77A79B',
+                    0: '#85DE9F', // neu
+                    100: '#6EB783', // war 500
+                    200: '#579168', // neu
+                    300: '#406B4D', // neu
+                    400: '#41BCA7', // slate-0 wurde geänder
+                    500: '#6EB783',  // ist 100 geworden
+                    600: '#77A79B', // sky-0 wurde geänder
                 },
                 red: {
-                    100: '#E1B9BA',
-                    200: '#DD8D8F',
-                    300: '#D96165',
-                    400: '#D5353A',
-                    500: '#D20A11',
-                    600: '#B3080E',
-                    700: '#8C070B',
+                    0: '#D20A11',  // war red-500
+                    100: '#AB080E', // war #E1B9BA
+                    200: '#85060B', // war #DD8D8F
+                    300: '#5E0408', // war #D96165
+                    400: '#D5353A',  // war #D5353A
+                    500: '#D20A11',  // ist red-0 geworden
+                    600: '#B3080E',  // ist red-100 geworden
+                    700: '#8C070B',  // ist red-200 geworden
+                },
+                yellow: {
+                    0: '#FEF3C7',  // neu
+                    100: '#FDE68A',  // neu
+                    200: '#FCD34D',  // neu
+                    300: '#FBBF24',  // neu
+                },
+                slate: {
+                    0: '#9CB3DB', // neu
+                    100: '#8194B5',  // neu
+                    200: '#66758F', // neu
+                    300: '#4A5568',  // war custom-1-700
+                },
+                light: {
+                    0: '#F2F5F9',  // neu
+                    100: '#CED0D4', // neu
+                    200: '#A9ABAD', // neu
+                },
+                sky: {
+                    0: '#4F46E5',  // neu
+                    100: '#352F99',  // neu
+                    200: '#1A174D',  // neu
                 },
                 custom: {
-                    '1-800': '#0063AF',
-                    '1-700': '#4A5568',
-                    '1-600': '#038ed5',
-                    '1-500': '#1F90D1',
-                    '2-400': '#495467',
-                    '2-300': '#41BCA7',
-                    '2-200': '#485199',
-                    '1-200': '#414B5C',
-                    'erwinteaser-bg': '#1f114c',
-                    'erwinteaser-font-big': '#9dcde3',
-                    'lesepaten-bg': '#F1F2F8',
+                    '1-800': '#0063AF',  // ist sky-0 geworden
+                    '1-700': '#4A5568',  // ist slate-300 geworden
+                    '1-600': '#038ed5',  // ist slate-100 geworden
+                    '1-500': '#1F90D1', // ist slate-0 geworden
+                    '2-400': '#495467', // bleibt
+                    '2-300': '#41BCA7', // bleibt
+                    '2-200': '#485199', // bleibt
+                    '1-200': '#414B5C', // bleibt
+                    'erwinteaser-bg': '#1f114c', // bleibt
+                    'erwinteaser-font-big': '#9dcde3', // bleibt
+                    'lesepaten-bg': '#F1F2F8', // bleibt
                 },
-                blue: '#41B7CC',
+                blue: '#41B7CC', // nicht benutzt
                 hk: {
-                    'nw-blue-100': '#00B4D1',
+                    'nw-blue-100': '#00B4D1', // bleibt
                 },
                 lz: {
-                    'nw-yellow-100': '#FFDC09',
+                    'nw-yellow-100': '#FFDC09', // bleibt
                 },
             },
             fontFamily: {
@@ -60,8 +85,37 @@ module.exports = {
                 montserrat: ['Montserrat', 'sans-serif'],
             },
             fontSize: {
-                md: '1.125rem',
-                '2.5xl': '1.75rem',
+                xs: ['0.75rem', {
+                    lineHeight: '1.25rem',
+                }],
+                sm: ['0.875rem', {
+                    lineHeight: '1.375rem',
+                }],
+                base: ['1rem', {
+                    lineHeight: '1.5rem',
+                }],
+                md: ['1.125rem', {
+                    lineHeight: '1.625rem',
+                }],
+                lg: ['1.25rem', {
+                    lineHeight: '1.75rem',
+                }],
+                xl: ['1.5rem', {
+                    lineHeight: '2rem',
+                }],
+                '2xl': ['1.75rem', {
+                    lineHeight: '2.25rem',
+                }],
+                '3xl': ['2rem', {
+                    lineHeight: '2.5rem',
+                }],
+                '4xl': ['2.5rem', {
+                    lineHeight: '3rem',
+                }],
+                '5xl': ['3rem', {
+                    lineHeight: '3.5rem',
+                }],
+
             },
             width: {
                 '200px': '12.5rem',
@@ -92,8 +146,8 @@ module.exports = {
         },
     },
     safelist: [
-        'bg-green-500',
-        'nw-bg-green-500'
+        'bg-green-100',
+        'nw-bg-green-100'
     ],
     variants: {
         extend: {

@@ -7,7 +7,7 @@
   }
 }
 #nw-sidebar-navigation {
-  @apply nw-fixed nw-top-0 nw-left-0 nw-w-72 nw-h-full nw-bg-custom-1-700 nw-overflow-y-auto nw-text-sm nw-z-50 nw-transform nw--translate-x-72;
+  @apply nw-fixed nw-top-0 nw-left-0 nw-w-72 nw-h-full nw-bg-slate-300 nw-overflow-y-auto nw-text-sm nw-z-50 nw-transform nw--translate-x-72;
 
   &.nw-close-burgermenu {
     @apply nw-inline-block nw-transform nw--translate-x-72 nw-duration-500;
@@ -31,7 +31,7 @@
   }
 
   .nw-nav-item {
-    @apply nw-bg-gray-100;
+    @apply nw-bg-gray-0;
 
     > div {
       @apply nw-flex nw-justify-between nw-py-2 nw-pl-3 nw-border-b;
@@ -60,7 +60,7 @@
         @apply nw-flex nw-justify-between nw-py-2 nw-bg-white;
 
         > a {
-          @apply nw-text-red-500 nw-uppercase nw-text-sm nw-flex-grow;
+          @apply nw-text-red-0 nw-uppercase nw-text-sm nw-flex-grow;
         }
 
         .nw-dropdown-indicator-closed {

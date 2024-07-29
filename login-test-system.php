@@ -113,7 +113,7 @@ Wartungsmeldung ENDE -->
                         <p class="nw-text-lg nw-underline">Anmelden</p>
                     </div>
                     <div class="col-xs-6">
-                        ' . (!empty($fill['url_register']) ? '<a href="' . $fill['url_register'] . '" class="nw-text-md nw-text-gray-400">oder Registrieren</a>' : '') . '
+                        ' . (!empty($fill['url_register']) ? '<a href="' . $fill['url_register'] . '" class="nw-text-md nw-text-gray-300">oder Registrieren</a>' : '') . '
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@ $tpl_text.= '
             </div>
         </div>
         <div class="form-group">
-            <button type="button" class="nw-flex nw-justify-center nw-items-center nw-rounded-lg nw-border nw-text-white nw-bg-red-500 nw-border-red-500 nw-mx-auto nw-w-3/4 hover:nw-bg-white hover:nw-text-red-500 center-block" onclick="jQuery(\'#my_anmeldung\').submit();">Jetzt anmelden</button>
+            <button type="button" class="nw-flex nw-justify-center nw-items-center nw-rounded-lg nw-border nw-text-white nw-bg-red-0 nw-border-red-0 nw-mx-auto nw-w-3/4 hover:nw-bg-white hover:nw-text-red-0 center-block" onclick="jQuery(\'#my_anmeldung\').submit();">Jetzt anmelden</button>
         </div>
         <input type="submit" class="hidden" />
     </form>

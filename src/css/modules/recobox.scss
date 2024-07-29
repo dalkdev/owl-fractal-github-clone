@@ -18,10 +18,10 @@
   }
 
   .nw-reco-title {
-    color: #333;
+    color: #4D4D4D;
     font-weight: 600;
     hyphens: auto;
-    @apply nw-no-underline nw-text-black nw-pt-0 md:nw-pt-4 nw-ml-2 md:nw-ml-0 nw-text-lg md:nw-text-2xl;
+    @apply nw-no-underline nw-text-black nw-pt-0 md:nw-pt-4 nw-ml-2 md:nw-ml-0 nw-text-lg md:nw-text-xl;
 
     img {
       display: inline-block;
@@ -50,11 +50,11 @@
 }
 
 .nw-reco-bannertext-rebrush {
-  @apply nw-text-xs md:nw-text-sm nw-text-left nw-text-gray-600 nw-font-medium nw-leading-tight;
+  @apply nw-text-xs md:nw-text-sm nw-text-left nw-text-gray-500 nw-font-medium;
 }
 
 .nw-reco-caption-rebrush {
-  @apply nw-font-bold nw-text-base md:nw-text-md nw-leading-tight;
+  @apply nw-font-bold nw-text-base md:nw-text-md;
 }
 
 .nw-plus-icon::before {

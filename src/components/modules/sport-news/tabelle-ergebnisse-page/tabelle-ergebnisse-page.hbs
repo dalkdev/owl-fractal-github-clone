@@ -7,7 +7,7 @@
       nw-text-center
       nw-text-black
       nw-border-b
-      nw-border-gray-200
+      nw-border-gray-100
       nw-mx-2
     "
     >
@@ -19,9 +19,9 @@
             tabs
             nw-inline-block
             nw-p-4
-            nw-text-custom-1-600
+            nw-text-slate-100
             nw-border-b-2
-            nw-border-custom-1-600
+            nw-border-slate-100
           "
                     aria-current="page"
                 >Tabelle</a
@@ -55,7 +55,7 @@
             <div class="nw-pt-4 nw-px-2 nw-text-md nw-text-black nw-font-bold">
                 Tabelle
             </div>
-            <div class="nw-text-gray-600 nw-px-2 nw-text-md nw-font-medium">
+            <div class="nw-text-gray-500 nw-px-2 nw-text-md nw-font-medium">
                 DSC Arminia Bielefeld
             </div>
         </div>
@@ -64,7 +64,7 @@
             <div class="nw-pt-4 nw-px-2 nw-text-md nw-text-black nw-font-bold">
                 Spiele & Kader
             </div>
-            <div class="nw-text-gray-600 nw-px-2 nw-text-md nw-font-medium">
+            <div class="nw-text-gray-500 nw-px-2 nw-text-md nw-font-medium">
                 DSC Arminia Bielefeld
             </div>
         </div>
@@ -73,7 +73,7 @@
             <div class="nw-pt-4 nw-px-2 nw-text-md nw-text-black nw-font-bold">
                 Ergebnisse
             </div>
-            <div class="nw-text-gray-600 nw-px-2 nw-text-md nw-font-medium">
+            <div class="nw-text-gray-500 nw-px-2 nw-text-md nw-font-medium">
                 DSC Arminia Bielefeld
             </div>
         </div>
@@ -105,17 +105,17 @@
         x.addEventListener('click', e => {
             Array.prototype.forEach.call(array_tabs, x => {
                 x.classList.remove(
-                    'nw-text-custom-1-600',
+                    'nw-text-slate-100',
                     'nw-border-b-2',
-                    'nw-border-custom-1-600'
+                    'nw-border-slate-100'
                 );
                 x.classList.add('nw-text-black', 'nw-border-transparent');
             });
             x.classList.remove('nw-text-black', 'nw-border-transparent');
             x.classList.add(
-                'nw-text-custom-1-600',
+                'nw-text-slate-100',
                 'nw-border-b-2',
-                'nw-border-custom-1-600'
+                'nw-border-slate-100'
             );
             let array_container = document.getElementsByClassName('container');
             Array.prototype.forEach.call(array_container, x => {

@@ -20,7 +20,7 @@ $reg_wall =  $_POST['reg-wall'] ? '-reg-wall' : '' ;
 $tpl_text .= '
 <script>_paq.push(["trackEvent", "paywall", "registration' . $reg_wall  . ' ", "register-form completed"]);</script>
 
-<div class="nw-bg-custom-1-700 nw-p-3 md:nw-p-8 nw-rounded-md">
+<div class="nw-bg-slate-300 nw-p-3 md:nw-p-8 nw-rounded-md">
         
          ';
 
@@ -42,7 +42,7 @@ if (!empty($fill['text'])) {
         </div>
         <div class="nw-pt-1">
            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  
-                class="nw-mx-auto nw-text-custom-1-700"
+                class="nw-mx-auto nw-text-slate-300"
                 width="40"
                 height="40"">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -100,7 +100,7 @@ if (!empty($fill['paywall_type'])) {
 if (!empty($fill['ref'])) {
     $tpl_text .= '
            <p class="text-center">
-                <a href="' . em_text_to_value($fill['ref']) . '" class="nw-border nw-border-red-500 nw-rounded nw-bg-red-500 hover:nw-bg-white nw-text-white nw-px-4 nw-py-2 nw-inline-flex">Zurück zum Beitrag</a>
+                <a href="' . em_text_to_value($fill['ref']) . '" class="nw-border nw-border-red-0 nw-rounded nw-bg-red-0 hover:nw-bg-white nw-text-white nw-px-4 nw-py-2 nw-inline-flex">Zurück zum Beitrag</a>
             </p>';
 }
 
@@ -111,12 +111,12 @@ $tpl_text .= '
     <p class="nw-font-bold nw-text-base nw-pb-4">Sie haben Fragen zu Ihrer Anmeldung oder Registrierung?</p>
     <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-3">
         <div class="nw-font-medium">
-            <p class="nw-text-gray-600 nw-uppercase nw-font-bold">KONTAKT</p>
-            <p>Tel.: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-600">(0521) 555 800</a></p>
-            <p>E-Mail: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-600 nw-underline">nwplus@nw.de</a></p>
+            <p class="nw-text-gray-500 nw-uppercase nw-font-bold">KONTAKT</p>
+            <p>Tel.: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-500">(0521) 555 800</a></p>
+            <p>E-Mail: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-500 nw-underline">nwplus@nw.de</a></p>
         </div>
         <div class="nw-font-medium">
-            <p class="nw-text-gray-600 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
+            <p class="nw-text-gray-500 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
             <p>Mo - Fr: 6 - 10 Uhr <br>
                 Sa: 6 - 13 Uhr <br>
                 an Feiertagen: 7 - 13 Uhr<br>

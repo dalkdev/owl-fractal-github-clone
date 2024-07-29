@@ -5,7 +5,7 @@
 </style>
 <div class="nw-lesepaten-anmelden nw-max-w-sm nw-mx-auto nw-px-4 nw-bg-white">
     <div id="lesepatenSchritte">
-    <div class="nw-text-2xl nw-leading-6 nw-font-bold nw-text-center nw-pb-8 nw-pt-4 md:nw-pt-2"> Ich möchte Lesepate
+    <div class="nw-text-xl nw-font-bold nw-text-center nw-pb-8 nw-pt-4 md:nw-pt-2"> Ich möchte Lesepate
         werden
     </div>
     <ul class="nw-relative nw-flex nw-flex-row nw-mb-8 nw-max-stepper nw-mx-auto">
@@ -14,10 +14,10 @@
             <div
                 class="nw-min-w-7 nw-min-h-7 nw-w-full nw-inline-flex nw-items-center nw-text-xs nw-align-middle">
                     <span
-                        class="nw-w-7 nw-h-7 nw-flex nw-justify-center nw-items-center nw-flex-shrink-0 nw-bg-green-600 bgChange nw-font-medium nw-text-white nw-rounded-full">
+                        class="nw-w-7 nw-h-7 nw-flex nw-justify-center nw-items-center nw-flex-shrink-0 nw-bg-sky-0 bgChange nw-font-medium nw-text-white nw-rounded-full">
                         1
                     </span>
-                <div class=" nw-w-full nw-h-px nw-flex-1 nw-bg-gray-200 group-last:nw-hidden"></div>
+                <div class=" nw-w-full nw-h-px nw-flex-1 nw-bg-gray-100 group-last:nw-hidden"></div>
             </div>
             <div class="nw-mt-3">
                 <span class="nw-block nw-text-xs nw-font-bold nw-text-black textChange">Daten</span>
@@ -29,24 +29,24 @@
             <div
                 class="nw-min-w-7 nw-min-h-7 nw-w-full nw-inline-flex nw-items-center nw-text-xs nw-align-middle">
                     <span
-                        class="nw-w-7 nw-h-7 nw-flex nw-justify-center nw-items-center nw-flex-shrink-0 nw-bg-gray-200 bgChange nw-font-medium nw-text-white nw-rounded-full">
+                        class="nw-w-7 nw-h-7 nw-flex nw-justify-center nw-items-center nw-flex-shrink-0 nw-bg-gray-100 bgChange nw-font-medium nw-text-white nw-rounded-full">
                         2
                     </span>
-                <div class=" nw-w-full nw-h-px nw-flex-1 nw-bg-gray-200 group-last:nw-hidden"></div>
+                <div class=" nw-w-full nw-h-px nw-flex-1 nw-bg-gray-100 group-last:nw-hidden"></div>
             </div>
             <div class="nw-mt-3">
-                <span class="nw-block nw-text-xs nw-text-gray-300 nw-font-normal textChange nw--ml-4">Patenschaft</span>
+                <span class="nw-block nw-text-xs nw-text-gray-200 nw-font-normal textChange nw--ml-4">Patenschaft</span>
             </div>
         </li>
         <!-- Item -->
         <li class="patewerdenTabs nw-rounded-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="5"
                  stroke="currentColor"
-                 class="nw-w-7 nw-h-7 nw-text-white nw-bg-gray-200 nw-rounded-full nw-p-2 bgChange">
+                 class="nw-w-7 nw-h-7 nw-text-white nw-bg-gray-100 nw-rounded-full nw-p-2 bgChange">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/>
             </svg>
             <div class="nw-mt-3">
-                <span class="nw-block nw-text-xs nw-text-gray-300 nw-font-normal textChange ">Fertig</span>
+                <span class="nw-block nw-text-xs nw-text-gray-200 nw-font-normal textChange ">Fertig</span>
             </div>
         </li>
     </ul>
@@ -78,7 +78,7 @@
                                                             nw-cursor-pointer nw-border nw-hidden">
                         Zurück
                     </button>
-                    <button type="button"id="weiterButton" class="nw-w-full md:nw-w-1/2 nw-block nw-bg-red-500
+                    <button type="button"id="weiterButton" class="nw-w-full md:nw-w-1/2 nw-block nw-bg-red-0
                                                             nw-rounded nw-text-base nw-font-bold  nw-text-white
                                                             nw-cursor-pointer nw-border">
                         Weiter
@@ -91,7 +91,7 @@
                         Zurück
                     </button>
                     <input type="submit" value="Jetzt beantragen" id="beantragenButton" class=" nw-w-full md:nw-w-1/2 nw-mx-auto nw-block nw-px-4
-                                                            nw-rounded nw-text-base nw-font-bold nw-text-white nw-bg-red-100
+                                                            nw-rounded nw-text-base nw-font-bold nw-text-white nw-bg-gray-100
                                                            nw-cursor-pointer nw-border" disabled>
                 </div>
             </div>
@@ -200,12 +200,12 @@
     function lesepatenChangeTabs(index) {
         const tabs = document.querySelectorAll('.patewerdenTabs');
         tabs.forEach(tab => {
-            tab.querySelector('.bgChange').classList.replace('nw-bg-green-600', 'nw-bg-gray-200');
-            tab.querySelector('.textChange').classList.replace('nw-text-black', 'nw-text-gray-300');
+            tab.querySelector('.bgChange').classList.replace('nw-bg-sky-0', 'nw-bg-gray-100');
+            tab.querySelector('.textChange').classList.replace('nw-text-black', 'nw-text-gray-200');
             tab.querySelector('.textChange').classList.replace('nw-font-bold', 'nw-font-normal');
         });
-        tabs[index].querySelector('.bgChange').classList.replace('nw-bg-gray-200', 'nw-bg-green-600');
-        tabs[index].querySelector('.textChange').classList.replace('nw-text-gray-300', 'nw-text-black');
+        tabs[index].querySelector('.bgChange').classList.replace('nw-bg-gray-100', 'nw-bg-sky-0');
+        tabs[index].querySelector('.textChange').classList.replace('nw-text-gray-200', 'nw-text-black');
         tabs[index].querySelector('.textChange').classList.replace('nw-font-normal', 'nw-font-bold');
 
         // Zurück button in erster Seite hidden

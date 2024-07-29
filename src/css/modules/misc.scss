@@ -65,12 +65,12 @@
 /* @apply rules for documentation, these do not work as inline style */
 .nw-toggle-checkbox {
   &:checked {
-    @apply nw-right-0 nw-border-green-500;
+    @apply nw-right-0 nw-border-green-100;
     right: 0;
     border-color: #6eb783;
 
     + .nw-toggle-label {
-      @apply nw-bg-green-500;
+      @apply nw-bg-green-100;
       background-color: #6eb783;
     }
   }
@@ -92,11 +92,11 @@ h2.Zwischenzeile {
 }
 
 p.druck-text {
-  @apply nw-text-md nw-w-5/6 nw-mb-4 nw-leading-6;
+  @apply nw-text-md nw-w-5/6 nw-mb-4;
 }
 
 h2.druck-text {
-  @apply nw-text-2xl nw-font-bold nw-w-5/6 nw-mb-4 nw-mt-6 nw-leading-7;
+  @apply nw-text-xl nw-font-bold nw-w-5/6 nw-mb-4 nw-mt-6;
 }
 
 .article-detail-entry-content ol {
