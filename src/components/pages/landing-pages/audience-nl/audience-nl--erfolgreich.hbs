@@ -1,0 +1,20 @@
+
+<div id="success-message-mail" class="nw-relative nw-mb-6 nw-bg-custom-1-700 nw-p-6 nw-rounded-md nw-text-white nw-mx-auto nw-flex nw-flex-col nw-justify-center nw-items-center" style="max-width: 560px;">
+  <div class="close-button nw-absolute nw-top-2 nw-right-4 nw-text-gray-200 nw-cursor-pointer nw-tracking-tighter nw-text-xl">
+    ×
+  </div>
+  <img class="nw-w-12 nw-h-12 nw-mb-5" src="/images/nw-wortmarke-logo.svg" alt="">
+  <div class="nw-text-center">
+    <p class="nw-font-bold nw-text-xl nw-mb-6">Wunderbar. Fast geschafft!</p>
+    <p href="" class="nw-font-normal nw-cursor-pointer nw-text-xs">Sie erhalten in Kürze eine E-Mail, um Ihre Anmeldung zu bestätigen. Erst nach dieser Bestätigung ist Ihre Anmeldung abgeschlossen. Bitte überprüfen
+      Sie ebenfalls Ihren Spam-Ordner.</p>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const closeButton = document.querySelector('.close-button');
+    closeButton.addEventListener('click', () => {
+      document.getElementById('success-message-mail').classList.add('nw-hidden');
+    });
+  });
+</script>
