@@ -44,6 +44,7 @@
 @use './modules/redweb';
 @use './modules/fonts';
 @use './modules/error-seite';
+@use './modules/autoren-seite';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 

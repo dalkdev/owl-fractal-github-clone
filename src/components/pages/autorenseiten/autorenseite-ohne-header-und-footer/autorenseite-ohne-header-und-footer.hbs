@@ -1,0 +1,70 @@
+<div class="nw-mx-auto nw-mb-16" style="max-width: 1062px">
+  <div class="nw-py-10 nw-px-4 md:nw-py-12 md:nw-px-7 md:nw-mb-4 md:nw-rounded-md nw-bg-white md:nw-shadow-md">
+    <div class="nw-flex nw-flex-col nw-items-center md:nw-items-start md:nw-flex-row nw-gap-4 md:nw-gap-14">
+        <div>
+          <div class="icon-container">
+            <img class="nw-rounded-full nw-w-60 nw-h-60 nw-mb-6 md:nw-mb-4 nw-object-cover"
+               src="/images/lesepaten/profil-bild.png" alt="profil-bild">
+          </div>
+        </div>
+        <div class="" style="max-width: 632px">
+          <div class="nw-font-bold nw-text-black nw-text-center md:nw-text-start nw-px-6 md:nw-px-0 nw-text-2xl nw-mb-2 ">
+            Michael Stefan Kiel Steinkamp
+          </div>
+          <div class="nw-font-light nw-text-gray-500 nw-text-md nw-mb-6 nw-text-center nw-px-6 md:nw-px-0 md:nw-text-start">
+            Redakteur in der Lokalredaktion Enger/Spenge
+          </div>
+          <div class="nw-text-base nw-mb-6">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit amet
+          </div>
+          <div class="nw-mb-4">
+            <p class="nw-font-bold nw-text-md nw-pb-2">Kontakt</p>
+            <div class="nw-flex nw-flex-col md:nw-flex-row md:nw-gap-4 nw-text-gray-500 nw-text-md ">
+              <p class="nw-font-medium nw-pb-2 md:nw-pb-0">Telefon:
+                <a href="#" class="nw-cursor-pointer nw-font-normal"> +49 778 0101 091
+                </a>
+              </p>
+              <p class="nw-font-medium">E-Mail
+                <a href="#" class=" nw-cursor-pointer nw-font-normal">
+                  kiel@nw.de
+                </a>
+              </p>
+            </div>
+          </div>
+          {{>@social-icons--autoren}}
+          <div class="nw-flex nw-justify-end">
+            <a
+              href="#"
+              class=" nw-w-[200px] nw-text-gray-600
+              nw-border nw-rounded-md nw-text-center nw-text-sm nw-font-bold
+              nw-cursor-pointer nw-py-2 nw-px-4"
+            >
+              Zur Redaktionsübersicht
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- -->
+  <div class="nw-py-10 nw-px-4 md:nw-py-12 md:nw-px-7 md:nw-rounded-md nw-bg-white md:nw-shadow-md">
+    <div>
+      <p class="nw-text-xl nw-uppercase nw-font-bold">Aktuelle Beiträge</p>
+      <hr class="nw-red-line-m nw-mt-0.5">
+    </div>
+    <div class="nw-py-6 nw-grid nw-grid-col-1 sm:nw-grid-cols-2 md:nw-grid-cols-1 nw-gap-6" >
+      {{#each beitraege-box}} {{>'@recobox-item--in-der-autorenseite'}} {{/each}}
+      <div class="nw-flex nw-justify-center">
+        <a href="#"
+          class="nw-inline-flex nw-border nw-rounded-md nw-text-center nw-text-sm nw-font-bold nw-cursor-pointer nw-py-2 nw-px-4">
+          Mehr laden
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="nw-w-4 nw-h-4 nw-ml-2">
+            <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
