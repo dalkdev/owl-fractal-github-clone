@@ -1,8 +1,25 @@
+
+.autoren-img-container{
+  width: 148px;
+  max-width: 148px;
+  height: 148px;
+}
+.autoren-img-container > img {
+  width: 148px;
+  height: 148px;
+}
+
 @media (min-width: 768px) {
-  .icon-container {
+  .autoren-img-container {
     width: 248px;
     max-width: 248px;
+    height: 248px;
   }
+  .autoren-img-container > img {
+    width: 248px;
+    height: 248px;
+  }
+
 
   .nw-beitraege-img > img{
     width: 290px;
