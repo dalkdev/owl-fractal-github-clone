@@ -1,0 +1,27 @@
+
+      {{#each this.autoren-box}}
+      <div class="nw-py-6 nw-border-b nw-border-gray-0 nw-flex nw-items-center nw-gap-2">
+        <div class=" nw-flex nw-flex-grow nw-items-center nw-gap-4">
+          <img
+            class="autoren-sortieren-img nw-rounded-full"
+            src="{{this.autoren-img}}"
+            alt=""
+          />
+          <div>
+            <p class="nw-text-md nw-font-bold">
+              {{this.autoren-name}}</p>
+            <p class="nw-text-sm nw-text-gray-500">
+              {{this.autoren-caption}}</p>
+          </div>
+        </div>
+        <div class="nw-flex-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="nw-w-5 nw-h-5 nw-float-right nw-text-red-0 nw-ml-1 nw-cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
+      </div>
+      {{/each}}
+
