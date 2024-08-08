@@ -12,6 +12,7 @@ import {initModalbox} from "./modules/modal-box";
 import {initGLightBox} from "./modules/glightbox";
 import {initDirektZumThema} from "./modules/direkt-zum-thema";
 import {initLesepaten} from "./modules/lesepaten";
+import { initDropdownMenu } from './modules/dropdownMenu';
 
 let adIsTriggered = false;
 
@@ -32,6 +33,7 @@ const initializationFunctions: Array<() => void> = [
     initGLightBox,
     initDirektZumThema,
     initLesepaten,
+    initDropdownMenu,
 //    initLightBox,
 
 ];

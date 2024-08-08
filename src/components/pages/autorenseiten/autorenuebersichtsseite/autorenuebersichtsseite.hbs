@@ -28,9 +28,7 @@
     background-position: right 10px top 50%;
   }
 </style>
-<div class="nw-header-container">
-  {{>@header-full--lokal}}
-</div>
+
 <div class="nw-mx-auto md:nw-mb-4" style="max-width: 1062px">
   <div class="nw-px-4 md:nw-px-7 nw-pt-6 nw-pb-10 md:nw-py-10 nw-bg-white md:nw-rounded-md md:nw-shadow-md">
     <div class="nw-mb-6 md:nw-mb-10">
@@ -76,36 +74,34 @@
       </div>
       <div class="nw-w-full">
         <div class="nw-mb-1">
-          <label for=""
-                 class="nw-text-xs nw-uppercase nw-font-bold">
+          <label for="" class="nw-text-xs nw-uppercase nw-font-bold">
             Ressort und region
           </label>
         </div>
-        <div class="nw-relative nw-bg-white  nw-w-full nw-items-stretch">
-          <div>
-            <select
-              class="
-            nw-w-full
+        <div class="nw-dropdown nw-relative nw-w-full nw-bg-white">
+          <div class="nw-dropdown-block nw-flex nw-justify-between nw-items-center nw-space-x-1 nw-cursor-pointer nw-w-full
             nw-px-3
             nw-py-2
             nw-mx-auto
             nw-text-sm
             nw-font-medium
-            nw-inline-block
             nw-border
             nw-rounded
             nw-box-border nw-border-gray-200
-            nw-cursor-pointer"
-              id=""
-              name=""
-            >
-              <option value="" disabled selected hidden>Alle</option>
-              <option value="">A</option>
-              <option value="">B</option>
-              <option value="">C</option>
-              <option value="">D</option>
-            </select>
+           ">
+            <p class="">Alle
+            </p>
+            <svg class="nw-h-5 nw-w-5 nw-text-slate-300"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" />
+            </svg>
+
           </div>
+
+          <ul class="nw-hidden nw-absolute nw-mt-1 nw-text-sm nw-w-full nw-shadow-lg nw-rounded nw-bg-white nw-border nw-border-gray-100 nw-transition nw-delay-75 nw-ease-in-out nw-z-10">
+            <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0 nw-rounded-t">Minden Lübbecke</a></li>
+            <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Bielefeld</a></li>
+            <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0 nw-rounded-b">Gütersloh</a></li>
+          </ul>
         </div>
       </div>
     </div>
