@@ -126,3 +126,27 @@ h2.druck-text {
   }
 }
 /* Hotfix pinpoll end*/
+
+
+/* toggle-buttons  */
+
+.toggle-buttons {
+  margin-right: 8px;
+}
+
+.toggle-buttons {
+  width: 33px;
+  min-width: 33px;
+  max-width: 33px;
+  height: 33px;
+}
+
+@media (min-width: 768px) {
+  .toggle-buttons {
+    margin-right: 5.8px;
+  }
+}
+
+.toggle-buttons:last-child {
+  margin-right: 0;
+}

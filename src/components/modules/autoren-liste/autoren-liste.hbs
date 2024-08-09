@@ -2,11 +2,10 @@
       {{#each this.autoren-box}}
       <a href="#" class="nw-py-6 nw-border-b nw-border-gray-0 nw-flex nw-items-center nw-gap-2 nw-cursor-pointer hover:nw-bg-gray-0 hover:nw-rounded">
         <div class=" nw-flex nw-flex-grow nw-items-center nw-gap-4">
-          <img
-            class="autoren-sortieren-img nw-rounded-full"
-            src="{{this.autoren-img}}"
-            alt=""
-          />
+          <div class="autoren-sortieren-container">
+            <img class="nw-rounded-full nw-w-full nw-h-auto nw-object-cover"
+                 src="https://via.placeholder.com/500x500" alt="profil-bild">
+          </div>
           <div>
             <p class="nw-text-base md:nw-text-md nw-font-bold nw-pb-1 md:nw-pb-0">
               {{this.autoren-name}}</p>
