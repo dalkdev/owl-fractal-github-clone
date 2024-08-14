@@ -79,6 +79,10 @@ module.exports = {
                     'nw-yellow-100': '#FFDC09', // bleibt
                 },
             },
+            borderWidth: {
+                '0.5': '0.5px',
+                '6': '6px',
+            },
             fontFamily: {
                 body: ['Roboto', 'sans-serif'],
                 roboto: ['Roboto', 'sans-serif'],
