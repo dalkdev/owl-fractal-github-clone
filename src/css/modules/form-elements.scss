@@ -1,3 +1,42 @@
+.nw-divide-solid-1-16 {
+  @apply nw-border-b  nw-border-gray-100 nw-my-2;
+}
+.nw-divide-solid-1-24 {
+  @apply nw-border-b nw-border-gray-100 nw-my-3;
+}
+.nw-divide-solid-1-32 {
+  @apply nw-border-b nw-border-gray-100 nw-my-4;
+}
+.nw-divide-solid-2-16 {
+  @apply nw-border-b-2 nw-border-gray-100 nw-my-2;
+}
+.nw-divide-solid-2-24 {
+  @apply nw-border-b-2 nw-border-gray-100 nw-my-3;
+}
+.nw-divide-solid-2-32 {
+  @apply nw-border-b-2 nw-border-gray-100 nw-my-4;
+}
+.nw-divide-dashed-1-16 {
+  @apply nw-border-b nw-border-dashed nw-border-gray-100 nw-my-2;
+}
+.nw-divide-dashed-1-24 {
+  @apply nw-border-b nw-border-dashed nw-border-gray-100 nw-my-3;
+}
+.nw-divide-dashed-1-32 {
+  @apply nw-border-b nw-border-dashed nw-border-gray-100 nw-my-4;
+}
+.nw-divide-dashed-2-16 {
+  @apply nw-border-b-2 nw-border-dashed nw-border-gray-100 nw-my-2;
+}
+.nw-divide-dashed-2-24 {
+  @apply nw-border-b-2 nw-border-dashed nw-border-gray-100 nw-my-3;
+}
+.nw-divide-dashed-2-32 {
+  @apply nw-border-b-2 nw-border-dashed nw-border-gray-100 nw-my-4;
+}
+
+
+
 .nw-landingpage-button {
   @apply nw-mt-2 nw-mb-4
   nw-px-2
