@@ -1,8 +1,6 @@
 {
   "status": "qm",
   "context": {
-    "button": {
       "label": "Weitere Artikel laden"
-    }
   }
 }
