@@ -70,7 +70,7 @@
 .nw-btn-primary-blue-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-md nw-text-xs nw-font-bold
-  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-sky-100 focus:nw-bg-sky-200 focus:nw-border-sky-200
+  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-sky-100 focus:nw-bg-sky-200
   disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
 }
 
