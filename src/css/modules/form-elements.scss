@@ -13,7 +13,7 @@
 .nw-btn-outline {
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-md nw-text-base nw-font-bold
-  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed ;
 }
 .nw-btn-primary-blue {
@@ -37,7 +37,7 @@
 .nw-btn-outline-md {
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-md nw-text-sm nw-font-bold
-  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-primary-blue-md {
@@ -61,7 +61,7 @@
 .nw-btn-outline-sm {
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-md nw-text-xs nw-font-bold
-  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-primary-blue-sm {
@@ -86,7 +86,7 @@
 .nw-btn-icon-outline {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-md nw-text-base nw-font-bold
-  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-icon-primary-blue {
@@ -111,7 +111,7 @@
 .nw-btn-icon-outline-md {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-md nw-text-sm nw-font-bold
-  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-icon-primary-blue-md {
@@ -136,7 +136,7 @@
 .nw-btn-icon-outline-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit  nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-md nw-text-xs nw-font-bold
-  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-icon-primary-blue-sm {
@@ -163,7 +163,7 @@
 .nw-btn-rounded-outline {
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-full nw-text-base nw-font-bold
-  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed ;
 }
 .nw-btn-rounded-primary-blue {
@@ -187,7 +187,7 @@
 .nw-btn-rounded-outline-md {
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-full nw-text-sm nw-font-bold
-  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-primary-blue-md {
@@ -211,7 +211,7 @@
 .nw-btn-rounded-outline-sm {
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-full nw-text-xs nw-font-bold
-  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-primary-blue-sm {
@@ -236,7 +236,7 @@
 .nw-btn-rounded-icon-outline {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-full nw-text-base nw-font-bold
-  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-icon-primary-blue {
@@ -261,7 +261,7 @@
 .nw-btn-rounded-icon-outline-md {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-full nw-text-sm nw-font-bold
-  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-icon-primary-blue-md {
@@ -286,7 +286,7 @@
 .nw-btn-rounded-icon-outline-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit  nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
   nw-border nw-border-gray-600 nw-rounded-full nw-text-xs nw-font-bold
-  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-0 hover:nw-transition-all focus:nw-bg-gray-100 focus:nw-transition-all
+  nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-100 hover:nw-transition-all focus:nw-bg-gray-200 focus:nw-transition-all
   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-icon-primary-blue-sm {
