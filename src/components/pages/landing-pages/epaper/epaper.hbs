@@ -145,7 +145,66 @@
         nw-my-8 nw-pt-4 nw-px-4 nw-gap-4
       "
         >
-            {{>'@single-page-menu'}}
+          {{#each this.box}}
+            <div class="nw-shadow-md nw-rounded-md nw-bg-gray-0 nw-flex-col">
+              <div class="nw-bg-red-0 nw-rounded-t-md nw-h-1"></div>
+              <div
+                class="
+      nw-text-lg
+      md:nw-text-lg
+      nw-text-gray-500 nw-text-center nw-font-bold nw-pt-4 nw-pb-2 nw-bg-white
+    "
+              >
+                {{this.title}}
+              </div>
+              <div class="nw-bg-white">
+                <img class="nw-w-full nw-h-28 nw-pb-2" src="{{this.box-image}}"/>
+              </div>
+              <div class="nw-w-16 nw-overflow-hidden nw-block nw-mx-auto">
+                <div
+                  class="
+        nw-h-11
+        nw-w-11
+        nw-bg-white
+        nw--rotate-45
+        nw-transform
+        nw-origin-top-left
+        nw-mb-2
+      "
+                ></div>
+              </div>
+              {{#each this.elements}}
+                <div class="nw-pb-4 nw-flex-1">
+                  <div class="nw-px-4 nw-flex">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        class="nw-mr-1 nw-text-red-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+        <span class="nw-font-bold nw-text-black nw-text-md md:nw-text-md">
+          {{this.caption}}
+        </span>
+                    </div>
+                  </div>
+                </div>
+              {{/each}}
+            </div>
+          {{/each}}
+
         </div>
         {{>'@link-button' button}}
     </div>
@@ -230,8 +289,41 @@
     {{>'@gradient'}}
     <!-- -->
     <!--Fragen-page -->
-    {{>'@fragen-landingpage'}}
-    <!-- -->
+  <div class="nw-pb-4">
+    <div class="nw-pt-12 nw-text-center nw-font-bold nw-text-xl md:nw-text-4xl">
+      <div class="nw-text-gray-500 nw-mb-0 md:nw-mb-1">Sie haben Fragen</div>
+      <div class=" nw-text-red-0">
+        oder wünschen Beratung?
+      </div>
+    </div>
+    <div
+      class="
+      nw-px-8 nw-pt-12 nw-pb-8
+      md:nw-pb-12
+      nw-text-md
+      md:nw-text-xl
+      nw-font-bold nw-text-gray-500 nw-text-center
+    "
+    >
+      Kontaktieren Sie uns gern oder besuchen Sie uns!
+    </div>
+    <div
+      class="
+      nw-px-4
+      md:nw-px-12 md:nw-max-w-md
+      lg:nw-max-w-full
+      nw-mx-8 nw-grid nw-grid-cols-1
+      lg:nw-grid-cols-3
+      nw-gap-4 nw-font-bold nw-text-md
+      md:nw-text-lg md:nw-text-center
+      nw-mx-auto
+    "
+    >
+      {{#each this.fragen-page}} {{>'@box-mit-icons'}} {{/each}}
+    </div>
+  </div>
+
+  <!-- -->
 </div>
 <script>
     const button = document.querySelector('#menu-button');
