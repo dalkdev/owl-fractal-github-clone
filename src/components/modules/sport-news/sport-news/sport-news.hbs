@@ -3,7 +3,85 @@
   <!-- Arminia Bielefeld -->
   {{>'@arminia-header'}}
   <!-- Arminia-Bielefeld-News-->
-  {{>'@arminia-bielefeld-news'}}
+  {{#each arminia-news-box}}
+    <div class="nw-text-black nw-uppercase nw-mx-2 nw-py-3 nw-text-lg nw-font-bold">
+      Arminia Bielefeld News
+    </div>
+
+    <div
+      class="nw-mx-2"
+    >
+      <div
+        class=" nw-mb-2
+      nw-grid nw-grid-cols-1
+      md:nw-grid-cols-2
+      nw-rounded-lg
+      nw-overflow-hidden
+      nw-bg-white
+      nw-bg-origin-padding
+      nw-bg-no-repeat
+      nw-shadow-md
+    "
+      >
+        <div>
+          <div class="nw-aspect-w-16 nw-aspect-h-9">
+            <img
+              class="nw-object-cover nw-w-full nw-opacity-1"
+              src="{{this.image-src-m}}"
+            />
+          </div>
+        </div>
+        <div class="nw-p-2">
+          {{>'@sport-banner'}}
+          <div>
+            <p
+              itemprop="headline"
+              class="
+            nw-text-lg
+            nw-text-left
+            nw-font-bold
+            nw-text-black
+          "
+            >
+              {{this.headline}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  <!-- -->
+  <!-- -->
+  <div
+    class="
+    nw-grid nw-grid-cols-1
+    sm:nw-grid-cols-1
+    md:nw-grid-cols-2
+    lg:nw-grid-cols-3
+  "
+  >
+    {{#each box}}
+      <div class="nw-mx-2 nw-my-1 nw-rounded-md nw-bg-white nw-shadow-md">
+        <a href="">
+          <div class="nw-flex nw-justify-between nw-my-2">
+            <div class="nw-ml-2 nw-mr-1 nw-text-sm nw-text-gray-400 nw-max-w-sm">
+              {{this.title-box}} <br/>
+              <span class="nw-text-black nw-text-md nw-font-bold">
+                {{this.caption-box}}</span
+              >
+            </div>
+            <img
+              src=" {{this.img-box}}"
+              class="nw-mr-2 nw-min-h-20 nw-max-h-20 nw nw-max-w-1/2 nw-min-w-1/2"
+              loading=""
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+    {{/each}}
+  </div>
+
   <!-- Weitere Artkel anzeigen-->
   <hr class="nw-mx-2 nw-my-2" />
   <a
@@ -33,7 +111,85 @@
   <!--Spielplan Arminia Bieleeld-->
   {{>'@spielplan-arminia-bielefeld'}}
   <!--transfer & gerüchte-->
-  {{>'@transfer-geruchte-page'}}
+  {{#each transfer-geruchte-box}}
+    <div class="nw-text-black nw-uppercase nw-mx-2 nw-py-3 nw-text-lg nw-font-bold">
+      Transfer & Gerüchte
+    </div>
+
+    <div
+      class="nw-mx-2"
+    >
+      <div
+        class=" nw-mb-2
+      nw-grid nw-grid-cols-1
+      md:nw-grid-cols-2
+      nw-rounded-lg
+      nw-overflow-hidden
+      nw-bg-white
+      nw-bg-origin-padding
+      nw-bg-no-repeat
+      nw-shadow-md
+    "
+      >
+        <div>
+          <div class="nw-aspect-w-16 nw-aspect-h-9">
+            <img
+              class="nw-object-cover nw-w-full nw-opacity-1"
+              src="{{this.image-src-m}}"
+            />
+          </div>
+        </div>
+        <div class="nw-p-2">
+          {{>'@sport-banner'}}
+          <div>
+            <p
+              itemprop="headline"
+              class="
+            nw-text-lg
+            nw-text-left
+            nw-font-bold
+            nw-text-black
+          "
+            >
+              {{this.headline}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  <!-- -->
+  <!-- -->
+  <div
+    class="
+     nw-grid nw-grid-cols-1
+    sm:nw-grid-cols-1
+    md:nw-grid-cols-2
+    lg:nw-grid-cols-3
+  "
+  >
+    {{#each transfer-box}}
+      <div class="nw-mx-2 nw-my-1 nw-rounded-md nw-bg-white nw-shadow-md">
+        <a href="">
+          <div class="nw-flex nw-justify-between nw-my-2">
+            <div class="nw-ml-2 nw-mr-1 nw-text-sm nw-text-gray-400 nw-max-w-sm">
+              {{this.title-box}} <br/>
+              <span class="nw-text-black nw-text-md nw-font-bold">
+                {{this.caption-box}}</span
+              >
+            </div>
+            <img
+              src=" {{this.img-box}}"
+              class="nw-mr-2 nw-min-h-20 nw-max-h-20 nw-max-w-28 nw-min-w-28"
+              loading=""
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+    {{/each}}
+  </div>
+
   <!--verein-page-->
   {{>'@verein-page'}}
   <!--saison-statistik-page-->
@@ -45,5 +201,94 @@
   <!--arminia-fanshop-slider-->
   {{>'@arminia-fanshop-slider'}}
   <!--arminia-artikel-page-->
-  {{>'@arminia-artikel-page'}}
+  {{#each artikel-box}}
+    <div
+      class="
+    nw-text-black
+    nw-text-center
+    nw-uppercase
+    nw-mx-2
+    nw-py-3
+    nw-text-lg
+    nw-font-bold
+    nw-mt-6
+  "
+    >
+      Weitere Arminia Artikel
+    </div>
+
+    <div
+      class="nw-mx-2"
+    >
+      <div
+        class="
+      nw-grid nw-grid-cols-1
+      md:nw-grid-cols-2
+      nw-rounded-lg
+      nw-overflow-hidden
+      nw-bg-white
+      nw-bg-origin-padding
+      nw-bg-no-repeat
+      nw-shadow-md
+    "
+      >
+        <div>
+          <div class="nw-aspect-w-16 nw-aspect-h-9">
+            <img
+              class="nw-object-cover nw-w-full nw-opacity-1"
+              src="{{this.image-src-m}}"
+            />
+          </div>
+        </div>
+        <div class="nw-p-2">
+          {{>'@sport-banner'}}
+          <div>
+            <p
+              itemprop="headline"
+              class="
+            nw-text-lg
+            nw-text-left
+            nw-font-bold
+            nw-text-black
+          "
+            >
+              {{this.headline}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  <!-- -->
+  <!-- -->
+  <div
+    class="
+    nw-mt-2 nw-grid nw-grid-cols-1
+    sm:nw-grid-cols-1
+    md:nw-grid-cols-2
+    lg:nw-grid-cols-3
+  "
+  >
+    {{#each artikelcontainer-box}}
+      <div class="nw-mx-2 nw-my-1 nw-rounded-md nw-bg-white nw-shadow-md">
+        <a href="">
+          <div class="nw-flex nw-justify-between nw-my-2">
+            <div class="nw-ml-2 nw-mr-1 nw-text-sm nw-text-gray-400 nw-max-w-sm">
+              {{this.title-box}} <br/>
+              <span class="nw-text-black nw-text-md nw-font-bold">
+                {{this.caption-box}}</span
+              >
+            </div>
+            <img
+              src=" {{this.img-box}}"
+              class="nw-mr-2 nw-min-h-20 nw-max-h-20 nw-max-w-28 nw-min-w-28"
+              loading=""
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+    {{/each}}
+  </div>
+
 </div>

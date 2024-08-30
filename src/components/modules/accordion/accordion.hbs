@@ -2,5 +2,19 @@
   Fragen und Antworten
 </div>
 <ul class="nw-max-w-xl nw-mx-auto nw-mb-8">
-  {{#each items}} {{>'@accordion-item' this}} {{/each}}
+  {{#each items}}
+  <li>
+    <div class="nw-bg-gray-0 nw-text-black nw-font-bold nw-p-2 nw-mb-1">
+      <a href="#" class="faq-opener nw-block">
+        <div class="nw-flex nw-justify-between">
+          <p>{{{headline}}}</p>
+        </div>
+      </a>
+
+      <div class="faq-toggle nw-pt-2 nw-font-normal nw-hidden nw-pr-6">
+        {{{content }}}
+      </div>
+    </div>
+  </li>
+  {{/each}}
 </ul>

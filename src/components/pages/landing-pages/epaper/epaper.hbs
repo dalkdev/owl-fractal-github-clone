@@ -206,7 +206,14 @@
           {{/each}}
 
         </div>
-        {{>'@link-button' button}}
+      <div class="nw-text-center nw-pt-8 nw-pb-4">
+        <a href="hhtps://shop.nw.de/4-wochen-epaper-inkl.-nw-webabo"
+           class="nw-inline-flex nw-items-center nw-justiy-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap
+          nw-text-white nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100
+          focus:nw-bg-red-200 disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed">
+          Jetzt das ePaper kostenlos testen
+        </a>
+      </div>
     </div>
     <!-- epaper vorteile ende -->
     <!-- epaper-info -->
@@ -244,10 +251,23 @@
           md:nw-text-lg
         "
             >
-                {{>'@absatz-mit-roter-ueberschrift' epaper-info}}
+              {{#each epaper-info}}
+                <div class="nw-mb-4">
+                  <div class="nw-text-red-0">{{this.title}}</div>
+                  <div>{{this.caption}}</div>
+                </div>
+              {{/each}}
+
             </div>
         </div>
-        {{>'@link-button' button}}
+        <div class="nw-text-center nw-pt-8 nw-pb-4">
+          <a href="hhtps://shop.nw.de/4-wochen-epaper-inkl.-nw-webabo"
+          class="nw-inline-flex nw-items-center nw-justiy-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap
+          nw-text-white nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100
+          focus:nw-bg-red-200 disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed">
+            Jetzt das ePaper kostenlos testen
+          </a>
+        </div>
     </div>
     <!-- epaper-info ende -->
     <!-- epaper-info2-->
@@ -273,7 +293,12 @@
           md:nw-order-first
         "
             >
-                {{>'@absatz-mit-roter-ueberschrift' epaper-info2}}
+              {{#each epaper-info2}}
+                <div class="nw-mb-4">
+                  <div class="nw-text-red-0">{{this.title}}</div>
+                  <div>{{this.caption}}</div>
+                </div>
+              {{/each}}
             </div>
             <div class="nw-mb-4 md:nw-mb-0">
                 <img
@@ -283,11 +308,102 @@
                 />
             </div>
         </div>
-        {{>'@link-button' button}}
+      <div class="nw-text-center nw-pt-8 nw-pb-4">
+        <a href="hhtps://shop.nw.de/4-wochen-epaper-inkl.-nw-webabo"
+           class="nw-inline-flex nw-items-center nw-justiy-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap
+          nw-text-white nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100
+          focus:nw-bg-red-200 disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed">
+          Jetzt das ePaper kostenlos testen
+        </a>
+      </div>
     </div>
     <!-- gradient-page -->
-    {{>'@gradient'}}
-    <!-- -->
+  <div class="nw-px-2 nw-mt-8">
+    <div
+      class="
+      nw-bg-gradient-to-b
+      nw-from-black
+      nw-via-red-0
+      nw-to-black
+      nw-w-full
+      nw-block
+      nw-px-2
+      nw-pb-8
+      nw-rounded-md
+    "
+    >
+      <div
+        class="nw-pt-12 nw-text-center nw-font-bold nw-text-xl md:nw-text-4xl"
+      >
+        <div class="nw-text-white nw-mb-0 md:nw-mb-1">Übersichtlich</div>
+        <div class="nw-text-red-0">& Intuitiv</div>
+        <img
+          class="nw-py-8 nw-mx-auto nw-rounded-md nw-w-1/4"
+          src="/images/landingpage-fuer-vertrieb/img-asset-epaper-1000x1379.png"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="
+        nw-grid nw-grid-cols-1
+        md:nw-grid-cols-2
+        nw-gap-16 nw-pt-12 nw-px-12 nw-hidden
+      "
+      >
+        <div class="nw-font-bold">
+          <div class="nw-text-white nw-text-lg md:nw-text-xl">
+            Ich weiß, was bei meinen Kindern los ist!
+          </div>
+          <div
+            class="
+            nw-pt-0
+            md:nw-pt-4 nw-text-white
+            nw-text-4xl
+            md:nw-text-7xl
+          "
+          >
+            ”
+          </div>
+          <div class="nw-text-white nw-text-md md:nw-text-lg">
+            Ich wohne in Bielefeld, meine Tochter in Lübbecke, mein Sohn in
+            Paderborn. Mit dem ePaper kann ich alle Lokalausgaben kostenlos lesen
+            und weiß immer, was bei meinen Kindern los ist.“
+          </div>
+        </div>
+        <div class="nw-font-bold">
+          <div class="nw-text-white nw-text-lg md:nw-text-xl">
+            Endlich kein Gerangel mehr um die Zeitung
+          </div>
+          <div
+            class="
+            nw-pt-0
+            md:nw-pt-4 nw-text-white
+            nw-text-4xl
+            md:nw-text-7xl
+          "
+          >
+            ”
+          </div>
+          <div class="nw-text-white nw-text-md md:nw-text-lg">
+            Speziell samstags wollen mein Mann und mein Sohn gleichzeitig den
+            Sportteil lesen. Mit dem ePaper kann nun auf bis zu vier Geräten
+            gleichzeitig gelesen werden.“
+          </div>
+        </div>
+      </div>
+      <div class="nw-text-center nw-pt-8 nw-pb-4">
+        <a href="hhtps://shop.nw.de/4-wochen-epaper-inkl.-nw-webabo"
+           class="nw-inline-flex nw-items-center nw-justiy-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap
+          nw-text-white nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100
+          focus:nw-bg-red-200 disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed">
+          Jetzt das ePaper kostenlos testen
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- -->
     <!--Fragen-page -->
   <div class="nw-pb-4">
     <div class="nw-pt-12 nw-text-center nw-font-bold nw-text-xl md:nw-text-4xl">
@@ -319,7 +435,32 @@
       nw-mx-auto
     "
     >
-      {{#each this.fragen-page}} {{>'@box-mit-icons'}} {{/each}}
+      {{#each this.fragen-page}} <div
+        class="
+    nw-border nw-rounded-md nw-px-8
+    md:nw-px-4
+    nw-pt-4 nw-pb-12
+    sm:nw-mx-16
+    md:nw-mx-0
+  "
+      >
+        <img class="nw-w-full nw-h-14 nw-pb-2" src="{{icon}}" />
+        <div class="nw-pt-2">
+          <a
+            class="
+        nw-text-red-0
+        hover:nw-text-red-100
+        nw-no-underline
+        hover:nw-underline
+      "
+            href="{{href-link}}"
+          >
+            {{title}}
+          </a>
+        </div>
+        <span> {{caption}}</span>
+      </div>
+      {{/each}}
     </div>
   </div>
 

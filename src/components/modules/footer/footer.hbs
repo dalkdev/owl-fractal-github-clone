@@ -1,106 +1,202 @@
 <footer class="nw-bg-gray-600 nw-text-sm" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="nw-sr-only">Footer</h2>
-    <div
-        class="
+  <h2 id="footer-heading" class="nw-sr-only">Footer</h2>
+  <div
+    class="
       nw-max-w-7xl nw-mx-auto nw-py-8 nw-px-4
       sm:nw-px-6
       lg:nw-py-8 lg:nw-px-8
     "
-    >
-        <div class="xl:nw-grid xl:nw-grid-cols-3 xl:nw-gap-8">
-            <div class="nw-grid nw-grid-cols-2 nw-gap-8 xl:nw-col-span-2">
-                <div class="md:nw-grid md:nw-grid-cols-2 md:nw-gap-8">
-                    <div>
-                        {{>'@footer-headline'}}
-                        <div class="nw-flex nw-flex-col nw-gap-2 nw-pt-4">
-                            <a
-                                href="https://apps.apple.com/app/apple-store/id1532888930?pt=503434&ct=abofooter-stores-livegang&mt=8"
-                            >
-                                <img
-                                    src="/images/label_google-play@2x.png"
-                                    class="nw-w-32 md:nw-max-w-md"
-                                    title="Android Newsapp - Neue Westfälische"
-                                    alt="Android Newsapp - Neue Westfälische"
-                                />
-                            </a>
-                            <a
-                                href="https://play.google.com/store/apps/details?id=de.nw.news.ampapp&referrer=utm_source%3Dabofooter%26utm_medium%3Dstores%26utm_term%3Dnewsapp%26utm_campaign%3Dlivegang%26anid%3Dadmob"
-                            >
-                                <img
-                                    src="/images/label-appstore@2x.png"
-                                    class="nw-w-32 md:nw-max-w-md"
-                                    title="iOS Newsapp - Neue Westfälische"
-                                    alt="iOS Newsapp - Neue Westfälische"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nw-mt-12 md:nw-mt-0">
-                        {{#with columns}} {{>'@footer-headline' nwportale}}
-                            {{>'@footer-section' nwportale}} {{/with}}
-                    </div>
-                </div>
-                <div class="md:nw-grid md:nw-grid-cols-2 md:nw-gap-8">
-                    <div>
-                        {{#with columns}} {{>'@footer-headline' service}}
-                            {{>'@footer-section' service}} {{/with}}
-                    </div>
-                    <div class="nw-mt-12 md:nw-mt-0">
-                        {{#with columns}} {{>'@footer-headline' rechtliches}}
-                            {{>'@footer-section' rechtliches}} {{/with}}
-                    </div>
-                </div>
+  >
+    <div class="xl:nw-grid xl:nw-grid-cols-3 xl:nw-gap-8">
+      <div class="nw-grid nw-grid-cols-2 nw-gap-8 xl:nw-col-span-2">
+        <div class="md:nw-grid md:nw-grid-cols-2 md:nw-gap-8">
+          <div>
+            <div class="nw-text-sm nw-font-semibold nw-text-gray-400 nw-tracking-wider nw-uppercase">
+              NW APP
             </div>
-            <div class="nw-mt-8 xl:nw-mt-0">
-                {{>@footer-headline columns.newsletter}}
-                <p class="nw-mt-4 nw-text-base xl:nw-text-sm nw-text-gray-0">
-                    {{columns.newsletter.menuitems.[0].menuitem}}
-                </p>
-                <form
-                    class="nw-mt-4 sm:nw-flex sm:nw-max-w-md nw-flex nw-flex-col nw-gap-2"
-                >
-                    <div id="nl-message" class="nw-hidden nw-text-gray-0 nw-text-lg">
-                        Message
-                    </div>
-                    <div
-                        id="nl-selligent-message"
-                        class="nw-mt-4 nw-text-lg nw-text-white"
-                    >
-                        Selligent-Message
-                    </div>
-                    {{>@input--email (contextData '@input')}}
-                    <div class="nw-rounded-md sm:nw-flex-shrink-0">
-                        {{>'@submit-button' submitButton}}
-                    </div>
-                    <div class="nw-mt-1 nw-text-xs nw-text-gray-0">
-                        Mit meiner Anmeldung zum Newsletter stimme ich der
-                        <a class="nw-underline" href="#">Werbevereinbarung</a> zu.
-                    </div>
-                </form>
+            <div class="nw-flex nw-flex-col nw-gap-2 nw-pt-4">
+              <a
+                href="https://apps.apple.com/app/apple-store/id1532888930?pt=503434&ct=abofooter-stores-livegang&mt=8"
+              >
+                <img
+                  src="/images/label_google-play@2x.png"
+                  class="nw-w-32 md:nw-max-w-md"
+                  title="Android Newsapp - Neue Westfälische"
+                  alt="Android Newsapp - Neue Westfälische"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=de.nw.news.ampapp&referrer=utm_source%3Dabofooter%26utm_medium%3Dstores%26utm_term%3Dnewsapp%26utm_campaign%3Dlivegang%26anid%3Dadmob"
+              >
+                <img
+                  src="/images/label-appstore@2x.png"
+                  class="nw-w-32 md:nw-max-w-md"
+                  title="iOS Newsapp - Neue Westfälische"
+                  alt="iOS Newsapp - Neue Westfälische"
+                />
+              </a>
             </div>
+          </div>
+          <div class="nw-mt-12 md:nw-mt-0">
+            <div class="nw-text-sm nw-font-semibold nw-text-gray-400 nw-tracking-wider nw-uppercase">
+              NW-Portale
+            </div>
+
+            <ul role="list" class="nw-mt-4 nw-space-y-2">
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Stellen
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Immobilien
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Fahrzeugmarkt
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Trauer
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Ausbildung
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div
-            class="
+        <div class="md:nw-grid md:nw-grid-cols-2 md:nw-gap-8">
+          <div>
+            <div class="nw-text-sm nw-font-semibold nw-text-gray-400 nw-tracking-wider nw-uppercase">
+              Service
+            </div>
+            <ul role="list" class="nw-mt-4 nw-space-y-2">
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Abo-Service
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  ePaper-Login
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Anzeigen
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  NW-Karte
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Newsletter
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Kontakt
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Mediadaten
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nw-mt-12 md:nw-mt-0">
+            <div class="nw-text-sm nw-font-semibold nw-text-gray-400 nw-tracking-wider nw-uppercase">
+              Rechtliches
+            </div>
+            <ul role="list" class="nw-mt-4 nw-space-y-2">
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Impressum
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  Datenschutz
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+                  AGB
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nw-mt-8 xl:nw-mt-0">
+        <div class="nw-text-sm nw-font-semibold nw-text-gray-400 nw-tracking-wider nw-uppercase">
+          Newsletter abonnieren
+        </div>
+        <ul role="list" class="nw-mt-4 nw-space-y-2">
+          <li>
+            <a href="#" class="nw-text-sm nw-text-gray-0 hover:nw-text-white">
+              NW Newsletter - die wichtigsten News
+            </a>
+          </li>
+        </ul>
+        <p class="nw-mt-4 nw-text-base xl:nw-text-sm nw-text-gray-0">
+          {{columns.newsletter.menuitems.[0].menuitem}}
+        </p>
+        <form
+          class="nw-mt-4 sm:nw-flex sm:nw-max-w-md nw-flex nw-flex-col nw-gap-2"
+        >
+          <div id="nl-message" class="nw-hidden nw-text-gray-0 nw-text-lg">
+            Message
+          </div>
+          <div
+            id="nl-selligent-message"
+            class="nw-mt-4 nw-text-lg nw-text-white"
+          >
+            Selligent-Message
+          </div>
+          {{>@input--email (contextData '@input')}}
+          <div class="nw-rounded-md sm:nw-flex-shrink-0">
+            <button type="submit" class="nw-w-full nw-bg-red-0 nw-rounded nw-py-1 nw-px-4 nw-flex nw-items-center nw-justify-center
+                         nw-text-base nw-font-medium nw-text-white hover:nw-bg-red-100 focus:nw-bg-red-200">
+              Abschicken
+
+            </button>
+          </div>
+          <div class="nw-mt-1 nw-text-xs nw-text-gray-0">
+            Mit meiner Anmeldung zum Newsletter stimme ich der
+            <a class="nw-underline" href="#">Werbevereinbarung</a> zu.
+          </div>
+        </form>
+      </div>
+    </div>
+    <div
+      class="
         nw-mt-8 nw-border-t nw-border-gray-500 nw-pt-8
         md:nw-flex md:nw-items-center md:nw-justify-between
       "
-        >
-            <div
-                class="
+    >
+      <div
+        class="
           nw-flex nw-justify-start
           md:nw-justify-end
           nw-gap-1
           md:nw-order-2
         "
-            >
-                {{>'@social-media-button' socialmedia.facebook}}
-                {{>'@social-media-button' socialmedia.twitter}}
-                {{>'@social-media-button' socialmedia.pinterest}}
-                {{>'@social-media-button' socialmedia.instagram}}
-            </div>
-            <p class="nw-mt-8 nw-text-sm nw-text-gray-300 md:nw-mt-0 md:nw-order-1">
-                © Zeitungsverlag Neue Westfälische GmbH & Co. KG
-            </p>
-        </div>
+      >
+      </div>
+      <p class="nw-mt-8 nw-text-sm nw-text-gray-300 md:nw-mt-0 md:nw-order-1">
+        © Zeitungsverlag Neue Westfälische GmbH & Co. KG
+      </p>
     </div>
+  </div>
 </footer>
