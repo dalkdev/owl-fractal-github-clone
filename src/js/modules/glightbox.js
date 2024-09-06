@@ -7,7 +7,9 @@ export function initGLightBox()
         touchNavigation: true,
         loop: true,
         moreText: 'mehr...',
-        moreLength: 0
+        moreLength: 0,
+        draggable: true,
+        arrows: true
     });
 
 
@@ -28,6 +30,8 @@ export function initGLightBox()
         touchNavigation: true,
         loop: false,
         moreText: 'mehr...',
-        moreLength: 0
+        moreLength: 0,
+        draggable: true,
+        arrows: true
     });
 }
