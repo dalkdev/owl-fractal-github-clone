@@ -10,8 +10,14 @@
   max-width: 80px;
   height: 80px;
 }
-
+.newsletter-boxen {
+  height: 250px;
+}
 @media (min-width: 768px) {
+  .newsletter-boxen {
+    height: 100%;
+  }
+
   .autoren-img-container {
     width: 248px;
     max-width: 248px;
