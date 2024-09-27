@@ -1,3 +1,43 @@
+<style>
+  .spinner {
+    animation: spin 1s linear infinite;
+  }
+
+  .loader {
+    border: 2px solid #BFBFBF;
+    border-radius: 50%;
+    border-top: 2px solid #262626;
+
+    animation: spin 1s linear infinite;
+
+  }
+
+  .loader-standard {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  .loader-md {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+  }
+  .loader-sm {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+</style>
 <div class="nw-flex nw-flex-col nw-gap-10 nw-p-14 nw-bg-white">
   <!-- Standard -->
   <div class="nw-mb-10">
@@ -323,6 +363,314 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
             </svg>
           </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Spinner  Mit Ikons-->
+  <!-- Standard -->
+  <div class="nw-mb-10">
+    <h1 class="nw-text-md nw-font-medium nw-mb-2">Standard</h1>
+    <div class="nw-text-sm nw-text-gray-400 nw-pb-1 nw-font-medium nw-border-b nw-border-gray-100 nw-mb-4">
+      Variants: nw-btn-icon-primary, nw-btn-icon-secondary, nw-btn-icon-outline, nw-btn-icon-primary-blue
+    </div>
+
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-8">
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1.5 nw-h-5 nw-w-5 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-secondary</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1.5 nw-h-5 nw-w-5 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-outline</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-outline"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1.5 nw-h-5 nw-w-5 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+
+      </div>
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-blue</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-primary-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1.5 nw-h-5 nw-w-5 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Medium -->
+  <div class="nw-mb-10">
+    <h1 class="nw-text-md nw-font-medium nw-mb-2">Medium</h1>
+    <div class="nw-text-sm nw-text-gray-400 nw-pb-1 nw-font-medium nw-border-b nw-border-gray-100 nw-mb-4">
+      Variants: nw-btn-icon-primary_icon, nw-btn-icon-secondary, nw-btn-icon-outline, nw-btn-icon-primary-blue
+    </div>
+
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-8">
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-md</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-primary-md">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1.5 nw-w-4.5 nw-h-4.5 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-secondary-md</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-secondary-md">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1.5 nw-w-4.5 nw-h-4.5 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-outline-md</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-outline-md"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1.5 nw-w-4.5 nw-h-4.5 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+
+      </div>
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-blue-md</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-primary-blue-md">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1.5 nw-w-4.5 nw-h-4.5 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Small -->
+  <div class="nw-mb-10">
+    <h1 class="nw-text-md nw-font-medium nw-mb-2">Small</h1>
+    <div class="nw-text-sm nw-text-gray-400 nw-pb-1 nw-font-medium nw-border-b nw-border-gray-100 nw-mb-4">
+      Variants: nw-btn-icon-primary, nw-btn-icon-secondary, nw-btn-icon-outline, nw-btn-icon-primary-blue
+    </div>
+
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-8">
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-sm</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-primary-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1 nw-w-4 nw-h-4 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-secondary-sm</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-secondary-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1 nw-w-4 nw-h-4 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-outline-sm</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-outline-sm"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1 nw-w-4 nw-h-4 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+
+      </div>
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-blue-sm</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-primary-blue-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-mr-1 nw-w-4 nw-h-4 spinner">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+            Button CTA
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--loader spinner Mit Ikons-->
+  <!-- Standard -->
+  <div class="nw-mb-10">
+    <h1 class="nw-text-md nw-font-medium nw-mb-2">Standard</h1>
+    <div class="nw-text-sm nw-text-gray-400 nw-pb-1 nw-font-medium nw-border-b nw-border-gray-100 nw-mb-4">
+      Variants: nw-btn-icon-primary, nw-btn-icon-secondary, nw-btn-icon-outline, nw-btn-icon-primary-blue
+    </div>
+
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-8">
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-primary nw-flex nw-items-center"> <div class="loader loader-standard"></div>Lädt</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-secondary</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-secondary nw-flex nw-items-center"> <div class="loader loader-standard"></div>Lädt</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-outline</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-outline nw-flex nw-items-center"> <div class="loader loader-standard"></div>Lädt</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-blue</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-primary-blue nw-flex nw-items-center"> <div class="loader loader-standard"></div>Lädt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Medium -->
+  <div class="nw-mb-10">
+    <h1 class="nw-text-md nw-font-medium nw-mb-2">Medium</h1>
+    <div class="nw-text-sm nw-text-gray-400 nw-pb-1 nw-font-medium nw-border-b nw-border-gray-100 nw-mb-4">
+      Variants: nw-btn-icon-primary_icon, nw-btn-icon-secondary, nw-btn-icon-outline, nw-btn-icon-primary-blue
+    </div>
+
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-8">
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-md</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-primary-md nw-flex nw-items-center"> <div class="loader loader-md"></div>Lädt</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-secondary-md</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-secondary-md nw-flex nw-items-center"> <div class="loader loader-md"></div>Lädt</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-outline-md</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-outline-md nw-flex nw-items-center"> <div class="loader loader-md"></div>Lädt</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-blue-md</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-primary-blue-md nw-flex nw-items-center"> <div class="loader loader-md"></div>Lädt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Small -->
+  <div class="nw-mb-10">
+    <h1 class="nw-text-md nw-font-medium nw-mb-2">Small</h1>
+    <div class="nw-text-sm nw-text-gray-400 nw-pb-1 nw-font-medium nw-border-b nw-border-gray-100 nw-mb-4">
+      Variants: nw-btn-icon-primary, nw-btn-icon-secondary, nw-btn-icon-outline, nw-btn-icon-primary-blue
+    </div>
+
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-8">
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-sm</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-primary-sm nw-flex nw-items-center"> <div class="loader loader-sm"></div>Lädt</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-secondary-sm</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-secondary-sm nw-flex nw-items-center"> <div class="loader loader-sm"></div>Lädt</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-outline-sm</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-outline-sm nw-flex nw-items-center"> <div class="loader loader-sm"></div>Lädt</button>
+        </div>
+      </div>
+      <div>
+        <p class="nw-text-gray-600 nw-text-sm nw-font-bold nw-pb-4">nw-btn-icon-primary-blue-sm</p>
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button class="nw-btn-icon-primary-blue-sm nw-flex nw-items-center"> <div class="loader loader-sm"></div>Lädt</button>
         </div>
       </div>
     </div>
