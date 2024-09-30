@@ -45,6 +45,7 @@
 @use './modules/fonts';
 @use './modules/error-seite';
 @use './modules/autoren-seite';
+@use './modules/newsletter-boxen-slider';
 // has to be at the end to override certain properties
 @use 'general/a11y';
 

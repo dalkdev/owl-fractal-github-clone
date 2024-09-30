@@ -29,6 +29,15 @@
     }
   }
 
+  &.last-child {
+    .embla__slide {
+
+      &:last-child {
+        padding-right: 0 !important;
+      }
+    }
+  }
+
   .landing-page-min-width {
     min-width: 100%;
   }
