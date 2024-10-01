@@ -130,6 +130,71 @@
         "name": "Frank-Michael Kiel-Steinkamp"
       }
     ],
+    "newletter-box": [
+      {
+        "image": "https://via.placeholder.com/304x176",
+        "alt": "image",
+        "label-button": "Häufig abonniert",
+        "title": "Update zum Mittag",
+        "caption1": "täglich (Mo - So)",
+        "caption2": "Die wichtigsten News des Tages aus OWL, Deutschland und der Welt per E-Mail direkt aus der Chefredaktion.",
+        "button": "Abonnieren"
+      },
+      {
+        "image": "/images/fruhlingslandingpage/aktuell.png",
+        "alt": "image",
+        "label-button": "Häufig abonniert",
+        "title": "Update zum Abend",
+        "caption1": "täglich (Mo - So)",
+        "caption2": "Alle wichtigen Nachrichten aus Ihrer Nähe, OWL und der Welt jeden Abend bequem in Ihrem Postfach.",
+        "button": "Abonnieren"
+      },
+      {
+        "image": "https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg",
+        "alt": "image",
+        "label-button": "Häufig abonniert",
+        "title": "Wirtschaft",
+        "caption1": "täglich (Mo - So)",
+        "caption2": "Die neuesten Wirtschaftsthemen und Entwicklungen aus OWL – regional, aktuell und informativ.",
+        "button": "Abonnieren"
+      },
+      {
+        "image": "/images/newsletter/nw-foodie.jpg",
+        "alt": "image",
+        "label-button": "Häufig abonniert",
+        "title": "Wirtschaft",
+        "caption1": "täglich (Mo - So)",
+        "caption2": "Die neuesten Wirtschaftsthemen und Entwicklungen aus OWL – regional, aktuell und informativ.",
+        "button": "Abonnieren"
+      },
+      {
+        "image": "https://via.placeholder.com/304x176",
+        "alt": "image",
+        "label-button": "Häufig abonniert",
+        "title": "Update zum Mittag",
+        "caption1": "täglich (Mo - So)",
+        "caption2": "Die wichtigsten News des Tages aus OWL, Deutschland und der Welt per E-Mail direkt aus der Chefredaktion.",
+        "button": "Abonnieren"
+      },
+      {
+        "image": "https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg",
+        "alt": "image",
+        "label-button": "Häufig abonniert",
+        "title": "Wirtschaft",
+        "caption1": "täglich (Mo - So)",
+        "caption2": "Die neuesten Wirtschaftsthemen und Entwicklungen aus OWL – regional, aktuell und informativ.",
+        "button": "Abonnieren"
+      },
+      {
+        "image": "https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg",
+        "alt": "image",
+        "label-button": "Häufig abonniert",
+        "title": "Wirtschaft",
+        "caption1": "täglich (Mo - So)",
+        "caption2": "Die neuesten Wirtschaftsthemen und Entwicklungen aus OWL – regional, aktuell und informativ.",
+        "button": "Abonnieren"
+      }
+    ],
     "caption": "Alle wichtigsten und neusten News.",
     "title": "Die Corona-Pandemie",
     "leseempfehlung-title": "fotostrecke",

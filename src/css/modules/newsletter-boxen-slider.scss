@@ -1,9 +1,14 @@
 .nw-newsletter-boxen-slider {
   .embla__slide__inner {
     border: 0px solid transparent;
+    max-width:320px;
   }
 
   .embla__slide {
     padding-right: 16px;
   }
+}
+
+.newsletter-boxen-image-container-slider {
+  height: 160px;
 }

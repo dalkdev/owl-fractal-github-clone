@@ -9,7 +9,7 @@
     background-position: right 4px top 50%;
   }
 </style>
-<div class="nw-bg-white">
+<div class="responsive-newsletter-box nw-bg-white nw-mx-auto nw-mb-8">
   <a href="#" class="nw-block nw-w-full nw-cursor-pointer nw-mb-4">
     <div class="nw-flex nw-justify-between nw-place-items-center">
       <div>
@@ -26,19 +26,18 @@
   </a>
   <div class="nw-px-4 nw-pt-4 nw-pb-6 lg:nw-pb-4 nw-border nw-border-gray-100 nw-rounded-md nw-mx-auto">
     <div class="nw-flex nw-flex-col lg:nw-flex-row nw-justify-center lg:nw-gap-4">
-      <div class="newsletter-boxen-image-container nw-flex-1 nw-mb-6 lg:nw-mb-0">
+      <div class="newsletter-boxen-image-container lg:nw-flex-1 nw-mb-4 lg:nw-mb-0">
         <img
-          class="nw-object-cover nw-rounded-md nw-w-full"
+          class="nw-object-cover nw-rounded-md nw-h-full nw-w-full"
           src="/images/newsletter/nw-foodie.jpg" alt="newslletter-bild"
         />
       </div>
-      <div class="nw-flex-1 nw-pb-6">
+      <div class="lg:nw-flex-1">
         <div class="nw-mb-4">
           <a href="#"
              class=" nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
-                      nw-bg-green-100 nw-rounded-md nw-text-xs nw-font-bold
-                      nw-cursor-pointer nw-py-1 nw-px-3 hover:nw-bg-green-200 hover:nw-transition-all hover:nw-duration-300
-                      focus:nw-bg-green-300 focus:nw-transition-all">
+                      nw-bg-slate-300 nw-rounded-md nw-text-xs nw-font-bold
+                      nw-cursor-pointer nw-py-1 nw-px-3">
             Häufig abonniert
           </a>
         </div>
@@ -46,12 +45,12 @@
           <div class="nw-mb-6">
             <p class="nw-text-lg nw-font-bold nw-pb-1">Update zum Mittag</p>
             <p class="nw-text-sm nw-mb-2 nw-text-gray-500">täglich (Mo - So)</p>
-            <p class="nw-text-base nw-font-medium nw-text-gray-500">Täglich um 12 Uhr erhalten Sie die wichtigsten Entwicklungen und News aus OWL und weltweit per E-Mail mit dem Update zum Mittag.</p>
+            <p class="nw-text-base nw-font-medium nw-text-gray-500">News aus OWL und weltweit per E-Mail mit dem Update zum Mittag.</p>
           </div>
           <div class="nw-mb-4">
             <label class="nw-font-bold nw-text-xs nw-uppercase nw-label" for="my_region">REGION</label>
             <select
-              class="nw-w-full nw-px-2 nw-py-3 nw-mx-auto nw-font-medium nw-text-sm nw-inline-block nw-border nw-rounded nw-box-border nw-cursor-pointer"
+              class="nw-w-full nw-px-3 nw-py-2 nw-mx-auto nw-font-medium nw-text-sm nw-inline-block nw-border nw-rounded nw-box-border nw-cursor-pointer"
               id="my_region" name="nl_id">
               <option value="" disabled selected hidden>Region wählen</option>
               <option value="14">Bielefeld</option>
@@ -64,25 +63,23 @@
           </div>
           <div class="nw-mb-4 nw-w-full">
             <input
-              class="nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border nw-font-medium nw-rounded nw-text-sm nw-box-border
-                nw-cursor-pointer placeholder:nw-px-2"
+              class="nw-w-full nw-px-3 nw-py-2 nw-mx-auto nw-inline-block nw-border nw-font-medium nw-rounded nw-text-sm nw-box-border
+                nw-cursor-pointer placeholder:nw-text-gray-400"
               type="email" placeholder="E-Mail-Adresse" name="email" id="email"
               value="">
           </div>
           <p class="nw-text-xs nw-text-gray-300 nw-mb-4">Mit meiner Anmeldung zum Newsletter stimme ich der  <a href="https://www.nw.de/service/formales/23036205_Werbevereinbarung.html" class="nw-underline nw-text-red-0">Werbevereinbarung</a> zu. Weitere Informationen finden Sie in der
             <a href="https://www.nw.de/service/formales/20262936_Datenschutzerklaerung.html" class="nw-underline">Datenschutzerklärung</a>.
           </p>
-
-          <div class="nw-flex nw-flex-col lg:nw-flex-row nw-items-center lg:nw-justify-between">
-            <div class="nw-mb-6 lg:nw-mb-0">
-              <button
-                class="nw-btn-rounded-primary">
-                Abonnieren
-              </button>
-            </div>
-            <div class="nw-text-gray-400 nw-text-xs nw-underline nw-flex nw-justify-center nw-pb-2 lg:nw-pb-4">
-              <a href="#">Vorschau ansehen</a>
-            </div>
+          <div class="nw-flex nw-justify-start">
+            <button
+              class="nw-text-center nw-min-w-32 nw-max-w-fit nw-whitespace-nowrap nw-text-white
+            nw-bg-red-0 nw-rounded-full nw-text-base nw-font-bold
+            nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300
+            focus:nw-bg-red-200 focus:nw-transition-all
+            disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed">
+              Abonnieren
+            </button>
           </div>
         </form>
       </div>
