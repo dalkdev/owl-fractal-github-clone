@@ -2,13 +2,13 @@
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-secondary {
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-md nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed ;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed ;
 }
 .nw-btn-outline {
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -20,19 +20,19 @@
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-md nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-primary-md {
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-secondary-md {
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-md nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-outline-md {
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -44,19 +44,19 @@
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-md nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-primary-sm {
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-secondary-sm {
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-md nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-outline-sm {
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -68,20 +68,20 @@
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-md nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 
 .nw-btn-icon-primary {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-icon-secondary {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-md nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-icon-outline {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -93,20 +93,20 @@
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-md nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 
 .nw-btn-icon-primary-md {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed ;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed ;
 }
 .nw-btn-icon-secondary-md {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-md nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-icon-outline-md {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -118,20 +118,20 @@
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-md nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 
 .nw-btn-icon-primary-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-icon-secondary-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit  nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-md nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed ;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed ;
 }
 .nw-btn-icon-outline-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit  nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -143,7 +143,7 @@
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit  nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-md nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed ;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed ;
 }
 
 //rounded-buttons
@@ -152,13 +152,13 @@
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-full nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-secondary {
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-full nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed ;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed ;
 }
 .nw-btn-rounded-outline {
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -170,19 +170,19 @@
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-full nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-primary-md {
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-full nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-secondary-md {
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-full nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-outline-md {
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -194,19 +194,19 @@
   @apply nw-text-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-full nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-primary-sm {
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-full nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-secondary-sm {
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-full nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-outline-sm {
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -218,20 +218,20 @@
   @apply nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-full nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 
 .nw-btn-rounded-icon-primary {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-full nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-icon-secondary {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-full nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-icon-outline {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -243,20 +243,20 @@
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-40 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-full nw-text-base nw-font-bold
   nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 
 .nw-btn-rounded-icon-primary-md {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-full nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed ;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed ;
 }
 .nw-btn-rounded-icon-secondary-md {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-full nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-icon-outline-md {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -268,20 +268,20 @@
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-full nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 
 .nw-btn-rounded-icon-primary-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-full nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
 }
 .nw-btn-rounded-icon-secondary-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit  nw-whitespace-nowrap nw-text-white
   nw-bg-gray-500 nw-rounded-full nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-gray-600 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-black focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed ;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed ;
 }
 .nw-btn-rounded-icon-outline-sm {
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit  nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
@@ -293,7 +293,7 @@
   @apply nw-flex nw-items-center nw-justify-center nw-w-full sm:nw-min-w-26 sm:nw-max-w-fit  nw-whitespace-nowrap nw-text-white
   nw-bg-sky-0 nw-rounded-full nw-text-xs nw-font-bold
   nw-cursor-pointer nw-py-1.5 nw-px-3 hover:nw-bg-sky-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-sky-200 focus:nw-transition-all
-  disabled:nw-bg-gray-100 disabled:nw-cursor-not-allowed ;
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed ;
 }
 
 .nw-divide-solid-1-16 {
