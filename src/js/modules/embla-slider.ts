@@ -38,8 +38,11 @@ function initSlider(wrapperNode: HTMLElement) {
 
     const mainCarouselWrap = wrapperNode.querySelector('.embla--main-carousel');
     const mainCarouselView = mainCarouselWrap?.querySelector('.embla__viewport');
+    // Drag-Free-Einstellung nur für den Photos-Slider
+    const isPhotosSlider = wrapperNode.classList.contains('photos-slider');
+
     const mainCarousel = EmblaCarousel(mainCarouselView as HTMLElement, {
-        dragFree: true,
+        dragFree: !isPhotosSlider, // dragFree: false für den Photos-Slider
         containScroll: 'trimSnaps',
     });
     const dotsArray = generateDotBtns(dots, mainCarousel);
@@ -120,3 +123,5 @@ function initSlider(wrapperNode: HTMLElement) {
     }
 
 }
+// Initialisiere die Slider beim Laden der Seite
+document.addEventListener('DOMContentLoaded', initSliders);
