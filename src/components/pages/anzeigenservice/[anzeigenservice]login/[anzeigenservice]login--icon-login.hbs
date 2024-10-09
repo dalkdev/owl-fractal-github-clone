@@ -15,11 +15,9 @@
   <button class=" nw-border nw-border-red-0 nw-bg-red-0 nw-p-4
   nw-inline-flex nw-text-white nw-py-2 nw-px-4 nw-rounded
   hover:nw-bg-white hover:nw-text-red-0
-  "
-          onclick="toggleLoginBox()">
+  " onclick="toggleLoginBox()">
     Login
   </button>
-
   <div id="nw-loginboxneu" class="nw-hidden nw-fixed nw-top-16 sm:nw-top-1/4 nw-left-1/2 nw-transform -nw-translate-x-1/2
   nw-p-4 nw-bg-white nw-rounded-lg nw-mx-auto nw-z-50 nw-border nw-border-gray-100
   nw-shadow-md" style="z-index: 2147483647; width: 344px;">
@@ -34,44 +32,47 @@
       </p>
     </div>
 
-    <form action="" name="" id="" class="" role="form" method="" onsubmit="" accept-charset="utf-8">
-      <div id=""></div>
+    <form action="/" name="my_anmeldung_navbar" id="my_anmeldung_navbar" class="myonline-login-page-form" role="form" method="post"
+          onsubmit="return em_myonline_check(this)" accept-charset="utf-8">
+      <div id="em_login_error_destination"></div>
       <div class="nw-mb-2">
-        <label for="" class="nw-sr-only">E-Mail Adresse</label>
-        <input type="email" name="" id="" autocomplete="email" required="" class="nw-rounded nw-appearance-none nw-min-w-0
-        nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-roundednw-py-1 nw-px-2 nw-text-base
+        <label for="email-address" class="nw-sr-only">E-Mail Adresse</label>
+        <input type="email" name="my_user" id="email-address" autocomplete="email" required="" class="nw-rounded nw-appearance-none nw-min-w-0
+        nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-rounded nw-py-2 nw-px-3 nw-text-base
         nw-text-black nw-placeholder-gray-200" placeholder="E-Mail">
       </div>
       <div class="nw-mb-3">
-        <label for="" class="nw-sr-only">Passwort</label>
+        <label for="passwort" class="nw-sr-only">Passwort</label>
         <div class="nw-relative">
           <div class="nw-absolute nw-right-2 nw-cursor-pointer nw-z-999 nw-m-auto">
             <div class="nw-relative">
-              <span id="" class="nw-mr-1 nw-mt-2 nw-flex nw-justify-center" onclick="">
-                <img id="" class="nw-w-6 nw-h-6 nw-overflow-clip-margin-content-box nw-overflow-clip nw-opacity-60" alt=""
+              <span id="eye-login-icon" class="nw-mr-1 nw-mt-2 nw-flex nw-justify-center" onclick="passwordToggleInLoginbox();">
+                <img id="eye-login-img" class="nw-w-6 nw-h-6 nw-overflow-clip-margin-content-box nw-overflow-clip nw-opacity-60" alt="svg"
                      src="https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg">
               </span>
             </div>
           </div>
-          <input type="" name="" id="" autocomplete="" required="" class="nw-rounded nw-appearance-none nw-min-w-0
-          nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-roundednw-py-1 nw-px-2 nw-text-tiny
+          <input type="password" name="my_pass" id="loginPassword" autocomplete="password" required="" class="nw-rounded nw-appearance-none nw-min-w-0
+          nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-rounded nw-py-2 nw-px-3 nw-text-tiny
           nw-text-black nw-placeholder-gray-200" placeholder="Passwort">
         </div>
       </div>
       <div class="nw-text-right nw-mb-4 nw-text-xs">
         <div>
-          <a href="#" class="nw-text-gray-600 hover:nw-underline" onclick="">Passwort vergessen?</a>
+          <a href="/profil/?pid=7" class="nw-text-gray-600 hover:nw-underline" onclick="_paq.push(['trackEvent', 'Menü', device + ' Login', 'Passwort vergessen']);">Passwort vergessen?</a>
         </div>
       </div>
       <div class="nw-mb-4">
         <label class="nw-flex nw-items-center nw-space-x-1">
-          <input type="checkbox" id="" name="" value="" style="margin-top:0" class="nw-rounded nw-form-tick nw-border
+          <input type="checkbox" id="my_auto_login_inline_head" name="my_auto_login" value="1" style="margin-top:0" class="nw-rounded nw-form-tick nw-border
           nw-nw-border-gray-200 nw-appearance-none nw-h-3 nw-w-3 nw-outline-none checked:nw-bg-gray-400 focus:outline-none">
           <span class="nw-text-gray-500 nw-text-xs nw-font-medium">Angemeldet bleiben</span>
         </label>
       </div>
       <div class="nw-mb-6">
-        <button id="loginButton" type="button" class="for-tracking nw-btn-primary nw-bg-red-0 nw-mx-auto" onclick="">
+        <button id="loginButton" type="button" class="for-tracking nw-btn-primary nw-bg-red-0 nw-mx-auto"
+                data-tracking-event="profil-login-click"
+                onclick="jQuery('#my_anmeldung_navbar').submit();">
           Anmelden
         </button>
       </div>
@@ -81,7 +82,8 @@
       <p class="nw-text-sm nw-pb-3">Sie haben noch keinen Zugang?</p>
       <div class="nw-font-medium">
         <div>
-          <a href="#" class="nw-for-tracking nw-text-sm nw-font-bold nw-underline nw-text-red-0 hover:nw-text-red-100">
+          <a href="/profil/?pid=2&amp;em_event=Article-Need-Login"
+             data-tracking-event="profil-register-click"class="nw-for-tracking nw-text-sm nw-font-bold nw-underline nw-text-red-0 hover:nw-text-red-100">
             Hier kostenlos registrieren
           </a>
         </div>
