@@ -1,6 +1,18 @@
-<div id="overlay" class="nw-hidden" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 90;"></div>
+<style>
+  @media (max-width: 440px) {
+    #confirmation {
+      height: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 50%;
+    }
+  }
+</style>
+<div id="overlay" class="nw-hidden"
+     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 90;"></div>
 
-<div id="confirmation" class="nw-hidden nw-bg-white nw-p-4 nw-mx-auto nw-rounded-md" style="max-width: 440px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100;">
+<div id="confirmation" class="nw-hidden nw-bg-white nw-p-4 nw-mx-auto nw-rounded-md"
+     style="max-width: 440px; width: 100%; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100;">
   <div class="nw-text-lg nw-text-gray-700 nw-flex nw-justify-end nw-cursor-pointer nw-tracking-tighter nw--mt-2 nw-mb-2.5" onclick="document.getElementById('confirmation').style.display='none'; document.getElementById('overlay').style.display='none';">
     ×
   </div>
