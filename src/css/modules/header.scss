@@ -93,6 +93,7 @@
     nw-shadow-md;
 }
 
+
 .nw-loginbox-arrow {
   @apply nw-inline-block
     nw-bg-white
@@ -109,6 +110,19 @@
   top: -5px;
   right: 12px;
 }
+
+// new login-box
+#background-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 99;
+}
+//
 
 .nw-abo-button {
   @apply nw-font-bold

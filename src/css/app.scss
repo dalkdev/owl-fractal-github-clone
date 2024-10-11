@@ -98,6 +98,14 @@ body {
     }
   }
 
+  &-horizontal-breadcrumb {
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #999999;
+    }
+  }
   &-horizontal-lesepaten {
     &::-webkit-scrollbar-thumb {
       background: #999999;
