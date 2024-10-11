@@ -1,4 +1,22 @@
 <style>
+  @keyframes slideIn {
+    from {
+      transform: translate(-50%, 100%);
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translate(-50%, -50%);
+    }
+    to {
+      transform: translate(-50%, 100%);
+    }
+  }
+
   @media (max-width: 440px) {
     #confirmation {
       height: 100%;
@@ -8,58 +26,67 @@
     }
   }
 </style>
-<div id="overlay" class="nw-hidden"
-     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 90;"></div>
 
+<div id="overlay" class="nw-hidden nw-fixed nw-top-0 nw-left-0 nw-inset-0 nw-bg-black nw-bg-opacity-30 nw-z-90"
+     style=" z-index: 90;"></div>
 <div id="confirmation" class="nw-hidden nw-bg-white nw-p-4 nw-mx-auto nw-rounded-md"
      style="max-width: 440px; width: 100%; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100;">
-  <div class="nw-text-lg nw-text-gray-700 nw-flex nw-justify-end nw-cursor-pointer nw-tracking-tighter nw--mt-2 nw-mb-2.5" onclick="document.getElementById('confirmation').style.display='none'; document.getElementById('overlay').style.display='none';">
-    ×
-  </div>
-  <div class="nw-flex nw-justify-center nw-mb-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#352F99" class="nw-text-sky-100 nw-w-8 nw-h-8">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-    </svg>
-  </div>
-  <div class="nw-text-center lg:nw-px-8 nw-mx-auto">
-    <p class="nw-text-xl nw-font-medium nw-pb-2 nw-text-black">
-      Sie erhalten in wenigen Minuten eine E-Mail zur Bestätigung Ihrer Anmeldung.
-    </p>
-    <div class="nw-text-gray-400 nw-text-base nw-pb-1 nw-font-medium">
-      <p>Erst danach ist diese abgeschlossen.</p>
-      <p>Bitte prüfen Sie auch den Spam-Ordner.</p>
+    <div
+      class="x-svg nw-text-2xl nw-leading-6 nw-text-gray-700 nw-flex nw-justify-end nw-cursor-pointer nw-tracking-tighter nw--mt-2 nw-mb-2.5">
+      ×
     </div>
-  </div>
+    <div class="nw-flex nw-justify-center nw-mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#352F99" class="nw-text-sky-100 nw-w-12 nw-h-12">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+      </svg>
+    </div>
+    <div class="nw-text-center nw-px-2 md:nw-px-0 nw-mx-auto" style="max-width: 350px;">
+      <p class="nw-text-xl nw-font-bold nw-pb-2 nw-text-black">
+        Sie erhalten in wenigen Minuten eine E-Mail zur Bestätigung Ihrer Anmeldung.
+      </p>
+      <div class="nw-text-gray-400 nw-text-base nw-pb-1 nw-font-medium">
+        <p>Erst danach ist diese abgeschlossen.</p>
+        <p>Bitte prüfen Sie auch den Spam-Ordner.</p>
+      </div>
+    </div>
 </div>
 
-<div class="responsive-newsletter-box nw-px-4 nw-pt-4 nw-pb-6 lg:nw-pb-4 nw-border nw-border-gray-100 nw-rounded-md nw-bg-white nw-mx-auto nw-mb-8" style="position: relative;">
+<div class="responsive-newsletter-box nw-px-4 nw-pt-4 nw-pb-6 lg:nw-pb-4 nw-border nw-border-gray-100 nw-rounded-md nw-bg-white
+            nw-mx-auto nw-mb-8" style="position: relative;">
   <div class="nw-flex nw-flex-col lg:nw-flex-row nw-justify-center lg:nw-gap-4">
     <div class="newsletter-boxen-image-container lg:nw-flex-1 nw-mb-4 lg:nw-mb-0">
       <img class="nw-object-cover nw-rounded-md nw-h-full nw-w-full" src="https://via.placeholder.com/304x176" />
     </div>
     <div class="nw-flex-1">
       <div class="nw-mb-4">
-        <a href="#" style="cursor: default !important;" class="nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white nw-bg-slate-300 nw-rounded-md nw-text-xs nw-font-bold nw-py-1.5 nw-px-3">
+        <a href="#" style="cursor: default !important;" class="nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap
+        nw-text-white nw-bg-slate-300 nw-rounded-md nw-text-xs nw-font-bold nw-py-1.5 nw-px-3">
           Häufig abonniert
         </a>
       </div>
-      <form id="newsletterForm" method="" action="">
+      <form id="newsletterForm" method="post" action="/">
         <div class="nw-mb-6">
           <p class="nw-text-lg nw-font-bold nw-pb-1">Update zum Mittag</p>
           <p class="nw-text-sm nw-font-medium nw-pb-2 nw-text-gray-400">täglich (Mo - So)</p>
           <p class="nw-text-base nw-font-medium nw-text-gray-500">News aus OWL und weltweit per E-Mail mit dem Update zum Mittag.</p>
         </div>
         <div class="nw-mb-4 nw-w-full">
-          <input class="nw-w-full nw-px-3 nw-py-3 nw-mx-auto nw-font-medium nw-inline-block nw-border nw-rounded nw-text-sm nw-box-border nw-cursor-pointer placeholder:nw-text-gray-400" type="email" placeholder="E-Mail-Adresse" name="email" id="email" required value="">
+          <input class="nw-w-full nw-px-3 nw-py-3 nw-mx-auto nw-font-medium nw-inline-block nw-border nw-rounded nw-text-sm nw-box-border
+                        nw-cursor-pointer placeholder:nw-text-gray-400"
+                 type="email" placeholder="E-Mail-Adresse" name="email" id="email" required value="">
         </div>
         <p class="nw-text-xs nw-text-gray-300 nw-mb-4">Mit meiner Anmeldung zum Newsletter stimme ich der
           <a href="https://www.nw.de/service/formales/23036205_Werbevereinbarung.html" class="nw-underline nw-text-red-0">Werbevereinbarung</a>
-          zu. Weitere Informationen finden Sie in der
+              zu. Weitere Informationen finden Sie in der
           <a href="https://www.nw.de/service/formales/20262936_Datenschutzerklaerung.html" class="nw-underline">Datenschutzerklärung</a>.
         </p>
 
         <div class="nw-flex nw-justify-start">
-          <button class="nw-text-center nw-min-w-32 nw-max-w-fit nw-whitespace-nowrap nw-text-white nw-bg-red-0 nw-rounded-full nw-text-base nw-font-bold nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed" type="submit">
+          <button class="nw-text-center nw-min-w-32 nw-max-w-fit nw-whitespace-nowrap nw-text-white nw-bg-red-0 nw-rounded-full nw-text-base
+                  nw-font-bold nw-cursor-pointer nw-py-3 nw-px-6
+                  hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
+                  disabled:nw-bg-gray-500
+                  disabled:nw-cursor-not-allowed" type="submit">
             Abonnieren
           </button>
         </div>
@@ -76,11 +103,26 @@
       event.preventDefault();
       const confirmation = document.getElementById('confirmation');
       const overlay = document.getElementById('overlay');
+
       confirmation.style.display = 'block';
+      confirmation.style.animation = 'slideIn 1s forwards';
       overlay.style.display = 'block';
       emailInput.value = '';
     } else {
       event.preventDefault();
     }
   });
+
+  document.querySelector('#confirmation .x-svg').onclick = function() {
+    const confirmation = document.getElementById('confirmation');
+    const overlay = document.getElementById('overlay');
+
+    confirmation.style.animation = 'slideOut 1s forwards';
+
+    confirmation.addEventListener('animationend', function() {
+      confirmation.style.display = 'none';
+      overlay.style.display = 'none';
+      window.scrollTo(0, document.body.scrollHeight);
+    }, { once: true });
+  };
 </script>
