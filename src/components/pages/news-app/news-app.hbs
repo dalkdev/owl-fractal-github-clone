@@ -137,11 +137,25 @@
         </div>
     </div>
     <div>
-        <p class="nw-font-bold nw-text-3xl nw-my-8 nw-text-center nw-pt-8"> Haben Sie nochh Fragen</p>
+        <p class="nw-font-bold nw-text-3xl nw-my-8 nw-text-center nw-pt-8"> Haben Sie noch Fragen</p>
     </div>
     <ul class="nw-flex nw-flex-col nw-gap-4 nw-max-w-2xl nw-mx-auto nw-text-md">
+      <ul class="accordion lesepaten-accordion nw-max-w-xl nw-mx-auto nw-mb-8">
         {{#each items}}
-            {{>'@accordion-item' this}}
+          <li>
+            <div class="nw-bg-gray-0 nw-text-black nw-font-bold nw-p-2 nw-mb-1">
+              <a href="#" class="faq-opener nw-block">
+                <div class="nw-flex nw-justify-between">
+                  <p>{{{headline}}}</p>
+                </div>
+              </a>
+
+              <div class="faq-toggle nw-pt-2 nw-font-normal nw-hidden nw-pr-6">
+                {{{content }}}
+              </div>
+            </div>
+          </li>
         {{/each}}
+      </ul>
     </ul>
 </div>
