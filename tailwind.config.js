@@ -47,7 +47,7 @@ module.exports = {
                     0: '#9CB3DB', // neu
                     100: '#8194B5',  // neu
                     200: '#66758F', // neu
-                    300: '#4A5568',  // war custom-1-700
+                    300: '#1f2937',  // war custom-1-700
                 },
                 light: {
                     0: '#F2F5F9',  // neu
