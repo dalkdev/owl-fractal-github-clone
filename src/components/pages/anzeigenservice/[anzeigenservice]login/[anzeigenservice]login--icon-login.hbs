@@ -1,18 +1,17 @@
 
 <div class="nw-relative nw-login-container">
-  <button id="nw-login-button" class=" nw-border nw-border-red-0 nw-bg-red-0 nw-p-4
-  nw-inline-flex nw-text-white nw-py-2 nw-px-4 nw-rounded
-  hover:nw-bg-white hover:nw-text-red-0
-  ">
-    Login
-  </button>
+<span id="nw-login-button">
+<svg xmlns="http://www.w3.org/2000/svg" class="nw-h-8 nw-w-8" viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
+</svg>
+</span>
   <div id="nw-loginbox" class="nw-hidden nw-fixed nw-top-16 sm:nw-top-1/4 nw-left-1/2 nw-transform -nw-translate-x-1/2
   nw-p-4 nw-bg-white nw-rounded-lg nw-mx-auto nw-z-50 nw-border nw-border-gray-100
   nw-shadow-md" style="z-index: 2147483647; width: 344px;">
 
     <div id="nw-close-button" class="  nw-text-gray-500 nw-text-xl nw-flex nw-justify-end
     nw-cursor-pointer hover:nw-text-black"
-         onclick="toggleLoginBox()">
+    >
       ×
     </div>
     <div class="nw-mb-4">
@@ -76,12 +75,9 @@
         nw-mt-0
         nw-outline-none
         checked:nw-bg-gray-400
-        focus:outline-none
-      "
-          />
-          <span class="nw-text-gray-500 nw-text-xs nw-font-medium"
-          >Bestehende Login-Sitzungen beenden</span
-          >
+        focus:outline-none"
+        />
+          <span class="nw-text-gray-500 nw-text-xs nw-font-medium">Bestehende Login-Sitzungen beenden</span>
         </label>
       </div>
       {% endif %} -->
