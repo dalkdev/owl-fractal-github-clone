@@ -1,16 +1,16 @@
 
 <div class="nw-relative nw-login-container">
-  <button class=" nw-border nw-border-red-0 nw-bg-red-0 nw-p-4
+  <button id="nw-login-button" class=" nw-border nw-border-red-0 nw-bg-red-0 nw-p-4
   nw-inline-flex nw-text-white nw-py-2 nw-px-4 nw-rounded
   hover:nw-bg-white hover:nw-text-red-0
-  " onclick="toggleLoginBox()">
+  ">
     Login
   </button>
   <div id="nw-loginbox" class="nw-hidden nw-fixed nw-top-16 sm:nw-top-1/4 nw-left-1/2 nw-transform -nw-translate-x-1/2
   nw-p-4 nw-bg-white nw-rounded-lg nw-mx-auto nw-z-50 nw-border nw-border-gray-100
   nw-shadow-md" style="z-index: 2147483647; width: 344px;">
 
-    <div class="nw-text-gray-500 nw-text-xl nw-flex nw-justify-end
+    <div id="nw-close-button" class="  nw-text-gray-500 nw-text-xl nw-flex nw-justify-end
     nw-cursor-pointer hover:nw-text-black"
          onclick="toggleLoginBox()">
       ×
@@ -108,20 +108,5 @@
     </div>
   </div>
 
-  <div id="background-popup" class="nw-hidden" onclick="toggleLoginBox()"></div>
+  <div id="background-popup" class="nw-hidden"></div>
 </div>
-
-<script>
-  function toggleLoginBox() {
-    const loginBox = document.getElementById('nw-loginbox');
-    const backgroundPopup = document.getElementById('background-popup');
-    const isHidden = loginBox.classList.contains('nw-hidden');
-    if (isHidden) {
-      loginBox.classList.remove('nw-hidden');
-      backgroundPopup.classList.remove('nw-hidden');
-    } else {
-      loginBox.classList.add('nw-hidden');
-      backgroundPopup.classList.add('nw-hidden');
-    }
-  }
-</script>

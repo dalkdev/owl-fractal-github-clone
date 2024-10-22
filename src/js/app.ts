@@ -13,6 +13,7 @@ import {initGLightBox} from "./modules/glightbox";
 import {initDirektZumThema} from "./modules/direkt-zum-thema";
 import {initLesepaten} from "./modules/lesepaten";
 import { initDropdownMenu } from './modules/dropdownMenu';
+import { initLoginBox } from './modules/login-box';
 
 let adIsTriggered = false;
 
@@ -28,6 +29,7 @@ const initializationFunctions: Array<() => void> = [
     initStickymenu,
     initFAQ,
     initTransform,
+    initLoginBox,
 //    initPrivacybox,
     initModalbox,
     initGLightBox,
