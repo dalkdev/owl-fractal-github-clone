@@ -1,0 +1,253 @@
+<style>
+  .nw-text-mob-res{
+    font-size: .75rem!important;
+  }
+  /** MIN WIDTH SIMULATE **/
+  @media screen and (min-width: 767px) {
+    .paywall-overlay-rebrush-2023{
+      min-width: 539px;
+    }
+    .nw-text-mob-res{
+      font-size: .75rem!important;
+    }
+  }
+  .nwplus-on-border{
+    position: absolute;
+    top:-23px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .paywall-overlay-rebrush-2023 label:hover,input[type=radio]:hover{
+    cursor: pointer;
+  }
+  input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 22px;
+    height: 22px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  input[type=radio]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #4F46E5;
+    background-color: #4F46E5;
+  }
+  input[type=radio]:checked::before {
+    transform: scale(1);
+  }
+  .spinner {
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #loadingButton:disabled{
+    background-color: rgb(77, 77, 77)!important;
+  }
+  .abo-container {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .abo-container:not(.nw-bg-light-0):hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+</style>
+<div class="nw-pb-8 nw-bg-white paywall-overlay-rebrush-2023 nw-my-8 nw-relative" style="max-width: 540px">
+  <div class="nw-bg-white nw-px-6 nw-pt-10 nw-pb-6 nw-border-2 nw-rounded-md nw-max-w-full nw-mx-auto">
+    <div class="nwplus-on-border nw-p-2 nw-bg-white">
+      <img class="" src="https://www.nw.de/_apps/nw/plus.svg" alt="nw-plus-icon">
+    </div>
+    <div class="nw-flex nw-items-center nw-flex-col">
+      <div>
+        <p class="nw-text-xl nw-text-center nw-font-bold nw-text-black">Diesen Artikel weiterlesen mit NW+</p>
+      </div>
+      <div class="nw-text-gray-400 nw-text-center nw-text-xs md:nw-text-md">
+        <p style="font-size:16px!important" class="nw-py-2 nw-text-center">
+          Sie haben bereits ein Digital-Abo?
+          <a style="float:none;text-decoration:underline!important;" href="#" class="nw-font-bold nw-float-right hover:nw-text-white toLogin nw-underline" onclick="window.scrollTo(0, 0);jQuery('#nw-loginbox').slideToggle(750);_paq.push(['trackEvent', 'overlay', 'login', '', '23964710']);">
+            Zum Login
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="abo-container nw-bg-light-0 nw-rounded-md nw-py-8 nw-px-8 nw-pb-2 nw-mb-4" onclick="changeAbo('weekly')">
+      <div class="nw-flex nw-justify-between nw-items-center">
+        <div>
+          <img class="" style="width:45px" src="https://www.nw.de/_apps/nw/plus.svg" alt="nw-plus-svg">
+        </div>
+        <div>
+          <div class="nw-bg-gray-400 nw-py-0.5 nw-px-4 nw-rounded-lg" style="background-color:#6EB783">
+            <p style="padding-bottom: 0!important;" class="nw-text-white nw-text-mob-res nw-mb-0 nw-font-bold">Nur für Neukunden</p>
+          </div>
+        </div>
+      </div>
+      <div class="nw-flex nw-justify-between nw-mb-2">
+        <div class="nw-flex nw-flex-col nw-gap-4 nw-items-center nw-mt-2">
+          <label class="nw-flex nw-items-center">
+            <input type="radio" name="abo" value="weekly" checked="" onclick="changeAbo('weekly')">
+            <span class="nw-font-bold nw-my-1 nw-block nw-text-lg nw-text-gray-600 nw-pl-2">1 € pro Woche</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="" data-target="weekly">
+        <div class="nw-text-left nw-w-full">
+          <div class="nw-my-2">
+            <ul style="max-width:100%!important;width:100%!important;margin: 0!important;list-style-type:none!important;" class="nw-list-none nw-ml-0">
+            {{#each angebot1}}
+              <li style="font-size: 1rem;!important;line-height: 1.5rem!important;width:100%!important;" class="nw-flex nw-items-start nw-text-sm sm:nw-text-sm nw-gap-2 nw-text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#406b4d" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>{{this.caption}}
+              </li>
+            {{/each}}
+            </ul>
+          </div>
+
+          <div class="buttonWrap nw-flex nw-flex-col nw-items-end nw-justify-center nw-mb-8">
+            <button class="funnel-entry nw-btn-icon-primary nw-rounded-3xl" data-upscore-conversion="1" onclick="handleButtonClick(event);_paq.push(['trackEvent', 'overlay', 'click', 'nwplus_wochenangebot', '23968064']);document.getElementById('checkoutjump').submit();" data-event-value="paywall-overlay-click" data-label="Artikel-Overlay" data-product="NW+ Wochenangebot" data-price="1 EUR / Woche">
+              <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path>
+              </svg>
+              <span id="loadingText">Jetzt abonnieren</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="arrow nw-ml-1.5 nw-h-5 nw-w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="abo-container  nw-rounded-md nw-py-8 nw-px-8 nw-pb-2 " onclick="changeAbo('yearly')">
+      <div class="nw-flex nw-justify-between nw-items-center">
+        <div>
+          <img class="" style="width:45px" src="https://www.nw.de/_apps/nw/plus.svg" alt="nw-plus-icon">
+        </div>
+        <div>
+          <div class="nw-bg-gray-400 nw-py-0.5 nw-px-4 nw-rounded-lg">
+            <p style="padding-bottom: 0!important;" class="nw-text-white nw-text-mob-res nw-mb-0 nw-font-bold">Entspricht 6,58 € mtl.</p>
+          </div>
+        </div>
+      </div>
+      <div class="nw-flex nw-justify-between nw-mb-2">
+        <div class="nw-flex nw-flex-col nw-gap-4 nw-items-center nw-mt-2">
+          <label class="nw-flex nw-items-center">
+            <input type="radio" name="abo" value="yearly" onclick="changeAbo('yearly')">
+            <span class="nw-font-bold nw-my-1 nw-block nw-text-lg nw-text-gray-600 nw-pl-2">79 € im 1. Jahr</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="nw-hidden" data-target="yearly">
+        <div class="nw-text-left nw-w-full">
+          <div class="nw-my-2">
+            <ul style="max-width:100%!important;width:100%!important;margin: 0!important;list-style-type:none!important;" class="nw-list-none nw-ml-0">
+              {{#each angebot2}}
+                <li style="font-size: 1rem;!important;line-height: 1.5rem!important;width:100%!important;" class="nw-flex nw-items-start nw-text-sm sm:nw-text-sm nw-gap-2 nw-text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#406b4d" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                  </svg>{{this.caption}}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+
+          <div class="buttonWrap nw-flex nw-flex-col nw-items-end nw-justify-center nw-mb-8">
+            <button class="funnel-entry nw-btn-icon-primary nw-rounded-3xl" data-upscore-conversion="1" onclick="handleButtonClickYearly(event);_paq.push(['trackEvent', 'overlay', 'click', 'nwplus_jahresangebot', '23968064']);document.getElementById('checkoutjumpyearly').submit();" data-event-value="paywall-overlay-click" data-label="Artikel-Overlay" data-product="NW+ Jahresangebot" data-price="79 EUR / 1. Jahr">
+              <svg id="spinner1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path>
+              </svg>
+              <span id="loadingText1">Jetzt abonnieren</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="arrow nw-ml-1.5 nw-h-5 nw-w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-top-left-radius:0;border-top-right-radius:0" class="nw-text-gray-400 nw-mt-4 nw-text-center nw-text-xs md:nw-text-md">
+      <p style="font-size:14px!important" class="nw-py-2 nw-text-center">
+        Sie haben bereits ein Print-Abo?
+        <a style="float:none;text-decoration:underline!important;" target="_blank" href="https://shop.nw.de/nw/nw-webabo-als-zusatz-zur-zeitung" class="nw-float-right hover:nw-text-white toLogin nw-underline nw-font-bold" onclick="_paq.push(['trackEvent', 'overlay', 'nwdigital', '', '23968064']);">
+          Rabattiert Digital-Zugang bestellen
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function changeAbo(option) {
+    const radioButton = document.querySelector(`input[name="abo"][value="${option}"]`);
+    if (radioButton) {
+      radioButton.checked = true; // Setze den Radio-Button als ausgewählt
+    }
+    document.querySelectorAll('.abo-container').forEach(div => {
+      div.classList.remove('nw-bg-light-0');
+    });
+    document.querySelectorAll('[data-target]').forEach(div => {
+      div.classList.add('nw-hidden');
+    });
+    const targetDiv = document.querySelector(`[data-target="${option}"]`);
+    if (targetDiv) {
+      targetDiv.classList.remove('nw-hidden');
+      const parentDiv = targetDiv.closest('.abo-container');
+      if (parentDiv) {
+        parentDiv.classList.add('nw-bg-light-0');
+      }
+    }
+
+  }
+
+  function handleButtonClick(event) {
+    const loadingButton = event.currentTarget;
+    const loadingText = loadingButton.querySelector('#loadingText');
+    const spinner = loadingButton.querySelector('#spinner');
+    loadingButton.disabled = true;
+    loadingText.textContent = 'Lädt ...';
+    spinner.classList.remove('nw-hidden');
+    setTimeout(() => {
+      loadingText.textContent = '{{offer.buttonText}}';
+      spinner.classList.add('nw-hidden');
+      loadingButton.disabled = false;
+      loadingButton.blur();
+    }, 5000);
+  }
+
+  function handleButtonClickYearly(event) {
+    const loadingButton = event.currentTarget;
+    const loadingText = loadingButton.querySelector('#loadingText1');
+    const spinner = loadingButton.querySelector('#spinner1');
+    loadingButton.disabled = true;
+    loadingText.textContent = 'Lädt ...';
+    spinner.classList.remove('nw-hidden');
+    setTimeout(() => {
+      loadingText.textContent = '{{offer.buttonText}}';
+      spinner.classList.add('nw-hidden');
+      loadingButton.disabled = false;
+      loadingButton.blur();
+    }, 5000);
+  }
+</script>

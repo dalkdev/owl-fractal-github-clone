@@ -1,0 +1,33 @@
+{
+  "status": "qm",
+  "context": {
+    "angebot1": [
+      {
+        "caption": "inkl. täglicher NW+-Newsletter"
+
+      },
+      {
+        "caption": "ab dem 2. Jahr 2 € / Woche"
+
+      },
+      {
+        "caption": "mtl. kündbar und Abrechnung mtl."
+
+      }
+    ],
+    "angebot2": [
+      {
+        "caption": "danach 99 € / Jahr und jederzeit kündbar"
+
+      },
+      {
+        "caption": "mit der NW-Spar-Karte Rabatte sichern"
+
+      },
+      {
+        "caption": "inkl. täglicher NW+-Newsletter"
+
+      }
+    ]
+  }
+}

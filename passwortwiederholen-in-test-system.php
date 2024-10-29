@@ -1,3 +1,7 @@
+<?php
+$tpl_text = '' . (!empty($fill['update_error']) ? '
+<p class="alert alert-danger">' . nl2br($fill['update_error']) . '</p>
+' : '') . '
 <div class="nw-bg-slate-300 nw-p-4 md:nw-p-8 nw-mb-6">
     <div class="nw-bg-white nw-py-4 nw-px-4 md:nw-max-w-md nw-mx-auto nw-rounded">
         <div class="nw-mb-4">
@@ -8,22 +12,22 @@
             </p>
         </div>
         <div>
-            <form name="my_newpass" id="my_newpass" class="" role="form" action="" method="post">
-                <input name="code" value="2cl12dc28c8dd0136819b2e79b7bf5" type="hidden">
-                <input name="pid" value="9_1" type="hidden">
-
-                <div class="nw-mb-4">
+          <form name="my_newpass" id="my_newpass" class="form-horizontal myonline-login-page-form " role="form" action="" method="post">
+            <input name="code" value="' . $fill['code'] . '" type="hidden">
+            <input name="pid" value="9_1" type="hidden">
+        
+             <div class="nw-mb-4">
                     <label class="nw-font-medium nw-text-xs nw-uppercase" for="my_pass" id="passwortLabel">
                         Passwort
                     </label>
                     <div class="nw-relative">
                         <div class="nw-absolute nw-right-2
                                     nw-top-3.5 nw-cursor-pointer
-                                    nw-z-999 nw-m-auto">
+                                    nw-z-999 nw-m-auto" style="top: 0.875rem;"> 
                             <div class="nw-relative">
-                                <span id="eye-icon1" class="nw-mr-2" onclick="passwordToggle('my_pass', 'eye-img1');">
+                                <span id="eye-icon1" class="nw-mr-2" onclick="passwordToggle(passwordFieldId, eyeIconId1);">
                                     <img id="eye-img1" class="nw-w-5 nw-h-5 nw-overflow-clip-margin-content-box nw-overflow-clip"
-                                        src="/images/eye.svg">
+                                        src="https://www-test2.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye.svg">
                                 </span>
                             </div>
                         </div>
@@ -39,17 +43,17 @@
                                 name="my_pass"
                                 id="my_pass" value=""/>
                     </div>
-                </div>
-                <div class="nw-mb-5">
+             </div>
+             <div class="nw-mb-5">
                     <label class="nw-font-medium nw-text-xs nw-uppercase" for="my_pass2" id="passwortLabel">
                         Passwort wiederholen
                     </label>
                     <div class="nw-relative">
-                        <div class="nw-absolute nw-right-2 nw-top-3.5 nw-cursor-pointer nw-z-999 nw-m-auto">
+                        <div class="nw-absolute nw-right-2 nw-top-3.5 nw-cursor-pointer nw-z-999 nw-m-auto" style="top: 0.875rem;">
                             <div class="nw-relative">
-                                <span id="eye-icon2"class="nw-mr-2" onclick="passwordToggle('my_pass2', 'eye-img2');">
+                                <span id="eye-icon2"class="nw-mr-2" onclick="passwordToggle(passwordFieldId2, eyeIconId2);" >
                                     <img id="eye-img2" class="nw-w-5 nw-h-5 nw-overflow-clip-margin-content-box nw-overflow-clip"
-                                         src="/images/eye.svg">
+                                         src="https://www-test2.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye.svg">
                                 </span>
                             </div>
                         </div>
@@ -66,7 +70,7 @@
                                 id="my_pass2" value=""/>
                     </div>
                 </div>
-                <div class="nw-flex nw-flex-col">
+             <div class="nw-flex nw-flex-col">
                     <button type="button"
                             class=" nw-mb-4 nw-text-center nw-w-full nw-whitespace-nowrap nw-text-white
                 nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold
@@ -82,28 +86,78 @@
                         zurück zur Anmeldung
                     </a>
                 </div>
-                <input type="submit" class="nw-hidden">
-            </form>
+            <input type="submit" class="hidden" />
+          </form>
         </div>
     </div>
 </div>
-
-
-<script>
-  var passwordFieldId = 'my_pass'; // ID des Passwortfeldes
-  var eyeIconId1 = 'eye-img1';
-  var passwordFieldId2 = 'my_pass2'; // ID des Passwortfeldes
-  var eyeIconId2 = 'eye-img2';
+<div class="clearfix"></div>
+<script type="text/javascript">
+  var passwordFieldId = "my_pass"; // ID des Passwortfeldes
+  var eyeIconId1 = "eye-img1";
+  var passwordFieldId2 = "my_pass2"; // ID des Passwortfeldes
+  var eyeIconId2 = "eye-img2";
   // Passwort eye-toggle ( Zweimal benutzen)
   function passwordToggle(passwordFieldId, eyeIconId) {
     var passwordField = document.getElementById(passwordFieldId);
     var eyeIcon = document.getElementById(eyeIconId);
     if (passwordField.type === "password") {
       passwordField.type = "text";
-      eyeIcon.src = '/images/eye-slash.svg';
+      eyeIcon.src = " https://www-test2.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg";
     } else {
       passwordField.type = "password";
-      eyeIcon.src = '/images/eye.svg';
+      eyeIcon.src =  "https://www-test2.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye.svg";
     }
   }
-</script>
+    function mydaten_check()
+    {
+       var eyeIcon = $("#eye-img1");
+    $("#my_pass").attr("type", "password");
+    eyeIcon.attr("src", "https://www-test2.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye.svg");
+      var eyeIcon2 = $("#eye-img2");
+    $("#my_pass2").attr("type", "password");
+    eyeIcon2.attr("src", "https://www-test2.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye.svg");
+    
+        var objForm = jQuery("#my_newpass");
+        var objNewPass = jQuery("#my_pass");
+        var objNewPass2 = jQuery("#my_pass2");
+
+        if(objNewPass.val() == "") {
+            alert("Bitte tragen Sie Ihr gewünschtes Passwort ein!");
+            objNewPass.focus();
+            return false;
+        }
+
+        if(objNewPass2.val() == "") {
+            alert("Bitte tragen Sie Ihr gewünschtes Passwort in Wiederholfeld ein!");
+            objForm.find("#my_pass2").focus();
+            return false;
+        }
+
+        if (objNewPass.val() != objNewPass2.val()) {
+            alert("Die eingegebenen Passwörter stimmen nicht überein!");
+            objNewPass.focus();
+            return false;
+        }
+
+        var bolPassError = false,
+        strPassword = objNewPass.val();
+
+        jQuery.ajax({
+            url: "/_em_cms/globals/ajax_password.php",
+            dataType: "jsonp",
+            async: false,
+            crossDomain: true,
+            data: {"strPassCheck":strPassword},
+            success: function(objRequest) {
+                if (!objRequest.success) {
+                    alert(objRequest.notice);
+                    objNewPass.focus();
+                } else {
+                    objForm.submit();
+                }
+            }
+        });
+        return false;
+    }
+</script>';
