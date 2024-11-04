@@ -1,13 +1,12 @@
 <div class="nw-bg-slate-300 nw-p-4 md:nw-p-8 nw-mb-6 ">
     <div>
         <div class="nw-bg-white nw-py-4 nw-px-4 nw-mb-4 md:nw-max-w-md nw-mx-auto nw-rounded">
-        <div class="nw-mb-4">
-            <p class="nw-text-lg nw-font-bold"> Anmelden
-            </p>
-        </div>
-        <div>
-            <form name="my_newpass" id="my_newpass" class="" role="form" action="" method="post">
-                <div class="nw-mb-2">
+            <div class="nw-mb-4">
+              <p class="nw-text-lg nw-font-bold"> Anmelden</p>
+            </div>
+            <div>
+                <form name="my_newpass" id="my_newpass" class="" role="form" action="" method="post">
+                  <div class="nw-mb-2">
                     <input required
                         class="nw-w-full nw-px-2 nw-py-3
                         nw-mx-auto nw-inline-block
@@ -18,17 +17,17 @@
                     placeholder="E-Mail"
                     name="my_email"
                     id="my_email"/>
-                </div>
-                <div class="nw-mb-3">
-                    <div class="nw-relative">
-                        <div class="nw-absolute nw-right-2 nw-top-3 nw-cursor-pointer nw-z-999 nw-m-auto">
-                            <div class="nw-relative">
+                  </div>
+                  <div class="nw-mb-3">
+                      <div class="nw-relative">
+                          <div class="nw-absolute nw-right-2 nw-top-3 nw-cursor-pointer nw-z-999 nw-m-auto">
+                              <div class="nw-relative">
                                 <span id="eye-icon1" class="nw-mr-2" onclick="passwordToggle('my_pass', 'eye-img1');">
                                     <img id="eye-img1" class="nw-w-5 nw-h-5 nw-overflow-clip-margin-content-box nw-overflow-clip"
                                          src="/images/eye.svg">
                                 </span>
-                            </div>
-                        </div>
+                              </div>
+                          </div>
                         <input
                             class="nw-w-full
                             nw-px-2 nw-py-3
@@ -42,13 +41,13 @@
                         size="11"
                         name="my_pass"
                         id="my_pass" value=""/>
-                    </div>
-                </div>
-                <p class="nw-text-right nw-text-xs nw-pb-1
+                      </div>
+                  </div>
+                  <p class="nw-text-right nw-text-xs nw-pb-1
                           nw-text-gray-600 nw-mx-auto">
                     <a href="" target="_blank"> {{password}} </a>
-                </p>
-                <div class="nw-mb-5">
+                  </p>
+                  <div class="nw-mb-5">
                     <label class="nw-flex nw-items-center nw-space-x-1">
                         <input
                             type="checkbox"
@@ -63,19 +62,19 @@
                               Angemeldet bleiben
                             </span>
                     </label>
-                </div>
+                  </div>
 
-                <div>
+                  <div>
                     <button type="button"
                           class="nw-mb-4 nw-btn-primary nw-bg-red-0 nw-mx-auto">
                       Aufrufen
                     </button>
-                </div>
-            </form>
+                  </div>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="nw-bg-white nw-px-4 nw-py-6 md:nw-max-w-md nw-mx-auto md:nw-shadow-md nw-rounded nw-mb-4">
-        <div class="nw-pb-4">
+        <div class="nw-bg-white nw-px-4 nw-py-6 md:nw-max-w-md nw-mx-auto md:nw-shadow-md nw-rounded nw-mb-4">
+          <div class="nw-pb-4">
             <p class="nw-text-center nw-text-md nw-font-bold">
                 {{caption1}}
             </p>
@@ -94,16 +93,16 @@
                     {{register}}
                 </a>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="nw-p-6 nw-rounded nw-bg-white md:nw-max-w-md nw-mx-auto">
+        <div class="nw-p-6 nw-rounded nw-bg-white md:nw-max-w-md nw-mx-auto">
           <p class="nw-font-bold nw-text-md nw-pb-6">Sie haben Fragen zu Ihrer Anmeldung oder Registrierung?</p>
           <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-4">
               <div class="nw-font-medium">
                   <p class="nw-text-gray-500 nw-uppercase nw-font-bold">KONTAKT</p>
-                  <p>Tel.: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-500">(0521) 555 800</a>
+                  <p>Tel.: <a href="tel:(0521) 555 800" class="nw-cursor-pointer hover:nw-text-gray-500">(0521) 555 800</a>
                   </p>
-                  <p>E-Mail: <a href="#" class="nw-cursor-pointer hover:nw-text-gray-500 nw-underline">nwplus@nw.de</a>
+                  <p>E-Mail: <a href="mailto:nwplus@nw.de" class="nw-cursor-pointer hover:nw-text-gray-500 nw-underline">nwplus@nw.de</a>
                   </p>
               </div>
               <div class="nw-font-medium">
@@ -111,9 +110,10 @@
                 <p>Mo - Fr: 6 - 10 Uhr <br>
                   Sa: 6 - 13 Uhr <br>
                   an Feiertagen: 7 - 13 Uhr<br>
-                  (außer Weihnachten und Ostern)</p></div>
+                  (außer Weihnachten und Ostern)</p>
               </div>
           </div>
+        </div>
     </div>
 </div>
 
@@ -125,7 +125,7 @@
     var eyeIcon = document.getElementById(eyeIconId);
     if (passwordField.type === "password") {
       passwordField.type = "text";
-      eyeIcon.src = '/images/eye-slash.svg';
+      eyeIcon.src ="https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg";
     } else {
       passwordField.type = "password";
       eyeIcon.src = '/images/eye.svg';
