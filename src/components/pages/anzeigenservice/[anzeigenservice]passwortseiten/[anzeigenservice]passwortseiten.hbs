@@ -42,7 +42,7 @@
                             <input type="text"
                                    class="nw-w-full nw-border
                                    nw-rounded
-                                   nw-p-2 nw-h-auto
+                                   nw-px-2 nw-py-3  nw-h-auto
                                    nw-font-bold nw-text-base
                                    placeholder:nw-text-xs
                                    placeholder:nw-font-medium"
@@ -53,18 +53,19 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <button type="button"
-                            class="nw-mb-4 nw-btn-primary nw-bg-red-0 nw-mx-auto"
-                            onclick="mydaten_check(document.my_anmeldung);">
-                            Absenden
-                    </button>
-
-                    <a href="https://www-test2.nw.de/profil?pid=1"
-                       class="nw-btn-secondary-md nw-mx-auto">
-                        zurück zur Anmeldung
-                    </a>
-                </div>
+              <div class="nw-flex nw-flex-col">
+                <button type="button" class=" nw-mb-4 nw-text-center nw-w-full nw-whitespace-nowrap nw-text-white
+                nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold
+                nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
+                   disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed " onclick="mydaten_check();">Absenden
+                </button>
+                <a href="https://www-test2.nw.de/profil?pid=1" class="nw-text-center nw-w-full nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
+                nw-border nw-border-gray-600 nw-rounded-md nw-text-base nw-font-bold
+              nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-gray-200 focus:nw-transition-all
+                  disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed">
+                  zurück zur Anmeldung
+                </a>
+              </div>
                 <input type="submit" class="nw-hidden">
             </form>
         </div>
