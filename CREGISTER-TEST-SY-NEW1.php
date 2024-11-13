@@ -24,10 +24,34 @@ $tpl_text .= '
     .bouncer-social-links > * {
         visibility: hidden !important;
     }
+    
+    #my_daten .btn {
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    width:100%;
+    }
 
     .sep-text.single.centered,
     #breadcrumb-wrapper {
         display: none;
+    }
+    
+    .form-control {
+    font-size: 13px;
+    color: #000;
+    background-color: #ffffff;
+    border: none !important;
+    border-bottom: 1px solid #757575 !important;
+    font-style: italic;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    }
+  
+    .form-header {
+    font-size: 18px;
+    color: #8d8d8d;
     }
 
     #header-logo img {
@@ -147,6 +171,7 @@ $tpl_text .= '
             class="
         nw-text-left
         nw-text-lg
+        nw-leading-5
         nw-font-bold
         nw-pb-1
       "
@@ -157,6 +182,7 @@ $tpl_text .= '
             class="
         nw-text-left
         nw-text-tiny
+        nw-leading-8
         nw-font-medium
         nw-py-1
       "
@@ -166,7 +192,7 @@ $tpl_text .= '
     </div>
     <ul role="list" class="nw-mb-4 nw-text-left nw-font-medium nw-text-tiny">
         <li class="nw-flex nw-items-center nw-space-x-1">
-            <svg class="nw-flex-shrink-0 nw-w-5 nw-h-5 nw-text-green-100 svg-green" fill="currentColor"
+            <svg class="nw-flex-shrink-0 nw-w-5 nw-h-5 nw-text-green-500 svg-green" fill="currentColor"
                  viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -176,7 +202,7 @@ $tpl_text .= '
             <span>Artikel freischalten (außer NW+)</span>
         </li>
         <li class="nw-flex nw-items-center nw-space-x-1">
-            <svg class="nw-w-5 h-5 nw-text-green-100 svg-green" fill="currentColor" viewBox="0 0 20 20"
+            <svg class="nw-w-5 h-5 nw-text-green-500 svg-green" fill="currentColor" viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -185,7 +211,7 @@ $tpl_text .= '
             <span>redaktioneller Newsletter</span>
         </li>
         <li class="nw-flex nw-items-center nw-space-x-1 ">
-            <svg class="nw-w-5 nw-h-5 nw-text-green-100 svg-green" fill="currentColor" viewBox="0 0 20 20"
+            <svg class="nw-w-5 nw-h-5 nw-text-green-500 svg-green" fill="currentColor" viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -263,12 +289,12 @@ $tpl_text .= '
             <label class="input-label email-label nw-font-medium nw-text-xs nw-uppercase"
                    for="my_email">E-Mail*</label>
             <!-- <input
-                 class="nw-formfield nw-w-full nw-px-2 nw-py-1.5 nw-mx-auto nw-inline-block nw-border-2 nw-border-solid nw-rounded nw-text-base nw-box-border nw-cursor-pointer"
+                 class="nw-formfield nw-w-full nw-px-2 nw-py-1.5 nw-mx-auto nw-inline-block nw-border-2 nw-border-solid nw-rounded-md nw-text-base nw-box-border nw-cursor-pointer"
                  type="email" placeholder="" name="my_email" id="my_email"
                  value="' . (!empty($fill['email']) ? $fill['email'] : '') . '"> -->
 
             <input
-                class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border nw-rounded nw-text-tiny nw-box-border nw-cursor-pointer"
+                class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border nw-rounded-md nw-text-tiny nw-box-border nw-cursor-pointer"
                 type="email" placeholder="" name="my_email" id="my_email"
                 value="' . $mailaddress . '">
     </div>
@@ -291,7 +317,7 @@ if (empty($GLOBALS['em_projekt'][$GLOBALS['em_subclient']]['bolUseDOI'])) {
                     </div>
                 </div>
                 <input
-                    class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border nw-rounded nw-text-tiny nw-box-border nw-cursor-pointer"
+                    class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border nw-rounded-md nw-text-tiny nw-box-border nw-cursor-pointer"
                     type="password" placeholder="Mindestlänge 6 Zeichen" name="my_new_pass"
                     id="my_new_pass">
             </div>
@@ -301,7 +327,7 @@ if (empty($GLOBALS['em_projekt'][$GLOBALS['em_subclient']]['bolUseDOI'])) {
     <div>
         <label class="input-label password-confirm-label nw-font-medium nw-text-xs nw-uppercase nw-text-black nw-tracking-normal" for="my_new_pass_confirm">Passwort bestätigen*</label>
             <input
-                class="nw-formfield nw-w-full nw-px-2 nw-py-1.5 nw-mx-auto nw-inline-block nw-border-2 nw-border-solid nw-rounded nw-text-base nw-box-border nw-cursor-pointer"
+                class="nw-formfield nw-w-full nw-px-2 nw-py-1.5 nw-mx-auto nw-inline-block nw-border-2 nw-border-solid nw-rounded-md nw-text-base nw-box-border nw-cursor-pointer"
                 type="password"  name="my_new_pass_confirm"
                 id="my_new_pass_confirm">
     </div>
@@ -330,7 +356,7 @@ $tpl_text .= '
     <div class="nw-mb-3">
         <label class="input-label region-label nw-font-medium nw-text-xs nw-uppercase" for="my_region">MEINE REGION*</label>
             <select class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-text-tiny nw-inline-block nw-border
-                nw-rounded nw-box-border nw-cursor-pointer" id="my_region" name="nl_id">
+                nw-rounded-md nw-box-border nw-cursor-pointer" id="my_region" name="nl_id">
                         <option value="" disabled selected hidden>Bitte wählen</option>
                         <option value="14">Bielefeld</option>
                         <option value="15">Kreis Gütersloh</option>
@@ -347,7 +373,7 @@ $tpl_text .= '
     <div class="nw-mb-3">
         <label class="input-label anrede-label nw-font-medium nw-text-xs nw-uppercase" for="my_gender">Anrede*</label>
         <select class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-text-tiny nw-inline-block nw-border
-            nw-rounded nw-box-border nw-cursor-pointer" id="my_gender" name="my_gender">
+            nw-rounded-md nw-box-border nw-cursor-pointer" id="my_gender" name="my_gender">
             <option value="" disabled selected hidden>Bitte wählen</option>
             <option value="Herr"
             ' . (!empty($fill['sele_herr']) ? ' selected' : '') . '>Herr</option>
@@ -369,7 +395,7 @@ $tpl_text .= '
             <label class="input-label vorname-label nw-font-medium nw-text-xs nw-uppercase"
                    for="my_firstname">Vorname*</label>
             <input
-                class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-text-tiny nw-inline-block nw-border nw-rounded nw-box-border nw-cursor-pointer"
+                class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-text-tiny nw-inline-block nw-border nw-rounded-md nw-box-border nw-cursor-pointer"
                 type="text" id="my_firstname" name="my_firstname"
                 value="' . (!empty($fill['firstname']) ? $fill['firstname'] : '') . '"/>
         </div>
@@ -378,7 +404,7 @@ $tpl_text .= '
             <label class="input-label nachname-label nw-font-medium nw-text-xs nw-uppercase"
                    for="my_name">Nachname*</label>
             <input
-                class=" nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-text-tiny nw-inline-block nw-border nw-rounded nw-box-border nw-cursor-pointer"
+                class=" nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-text-tiny nw-inline-block nw-border nw-rounded-md nw-box-border nw-cursor-pointer"
                 type="text" id="my_name" name="my_name" value="' . (!empty($fill['name']) ? $fill['name'] : '') . '"/>
         </div>
     </div>
@@ -420,13 +446,13 @@ $tpl_text .= '
         <div class="nw-col-span-2 nw-mb-3">
                 <label class="nw-font-medium nw-text-xs nw-uppercase" for="my_strasse">Straße</label>
                 <input type="text" class="nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border
-                    nw-rounded nw-text-tiny nw-box-border nw-cursor-pointer" id="my_strasse" name="my_strasse" placeholder=""
+                    nw-rounded-md nw-text-tiny nw-box-border nw-cursor-pointer" id="my_strasse" name="my_strasse" placeholder=""
                        value="' . (!empty($fill['street']) ? $fill['street'] : '') . '">
         </div>
         <div class="nw-mb-3">
                 <label class="nw-font-medium nw-text-xs nw-uppercase" for="my_hausn">Hausnummer</label>
                 <input type="text" class="nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border
-                    nw-rounded nw-text-tiny nw-box-border nw-cursor-pointer" id="my_hausnr" name="my_hausnr" placeholder=""
+                    nw-rounded-md nw-text-tiny nw-box-border nw-cursor-pointer" id="my_hausnr" name="my_hausnr" placeholder=""
                        value="' . (!empty($fill['number']) ? $fill['number'] : '') . '">
         </div>
     </div>
@@ -437,13 +463,13 @@ $tpl_text .= '
             <div class="nw-mb-3">
                 <label class="input-label plz-label nw-font-medium nw-text-xs nw-uppercase" for="my_zip">PLZ</label>
                 <input type="text" class="nw-formfield nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border
-                    nw-rounded nw-text-tiny nw-box-border nw-cursor-pointer" id="my_zip" name="my_zip" placeholder=""
+                    nw-rounded-md nw-text-tiny nw-box-border nw-cursor-pointer" id="my_zip" name="my_zip" placeholder=""
                        value="' . (!empty($fill['zip']) ? $fill['zip'] : '') . '">
             </div>
         <div class="nw-col-span-2 nw-mb-4">
                 <label class="nw-font-medium nw-text-xs nw-uppercase" for="my_ort">Ort</label>
                 <input type="text" class="nw-w-full nw-px-1 nw-py-2 nw-mx-auto nw-inline-block nw-border
-                nw-rounded nw-text-tiny nw-box-border nw-cursor-pointer" id="my_ort" name="my_ort" placeholder=""
+                nw-rounded-md nw-text-tiny nw-box-border nw-cursor-pointer" id="my_ort" name="my_ort" placeholder=""
                        value="' . (!empty($fill['city']) ? $fill['city'] : '') . '">
         </div>
     </div>
@@ -453,7 +479,7 @@ $tpl_text .= '
 <div class="nw-mb-6">
     <label class="nw-font-medium nw-text-xs nw-uppercase" for="my_country">Land</label>
     <select class="nw-formfield nw-w-full nw-px-2 nw-py-1 nw-mx-auto nw-text-base nw-inline-block nw-border-2 nw-border-solid
-nw-rounded nw-text-base nw-box-border nw-cursor-pointer" type="text" placeholder="" name="my_country"
+nw-rounded-md nw-text-base nw-box-border nw-cursor-pointer" type="text" placeholder="" name="my_country"
             id="my_country">
         <option value="Deutschland">Deutschland</option>
         <option value="herr">Herr</option>
@@ -715,6 +741,9 @@ $tpl_text .= '
             nw-border-red-0
             nw-rounded-md
             nw-text-center
+            nw-flex
+            nw-justify-center
+            nw-items-center
             nw-text-tiny
             nw-font-medium
             nw-cursor-pointer nw-py-3 hover:nw-bg-white hover:nw-text-red-0'
@@ -827,18 +856,7 @@ $tpl_text .= '
         labels.filter(".nachname-label").removeClass("nw-text-red-0");
         $("#my_name").removeClass("nw-border-red-0");
     }
-
-   /*  
-   if (!_objForm.my_zip.value) {
-        labels.filter(".plz-label").addClass("nw-text-red-0");
-        $("#my_zip").addClass("nw-border-red-0");
-        hasEmptyField = true;
-    } else {
-        labels.filter(".plz-label").removeClass("nw-text-red-0");
-        $("#my_zip").removeClass("nw-border-red-0");
-    } 
-    */
-        
+ 
     if (hasEmptyField) {
         // Show the error message for empty required fields
         $(".alert.alert-danger").removeClass("hidden").html(errorMessage);
@@ -896,31 +914,7 @@ $tpl_text .= '
         });
     });
 
-    /*  function resetPasswordField() {
-          var passwordField = document.getElementById("my_new_pass");
-          passwordField.type = "password";
-      }
-
-      var myForm = document.getElementById("my_daten");
-      myForm.addEventListener("submit", resetPasswordField); */
-
-    /*
-    $(document).ready(function() {
-        var password = $("#my_new_pass"),
-        confirm_password = $("#my_new_pass_confirm");
-
-        function validatePassword() {
-            if (password.val() != confirm_password.val()) {
-                confirm_password[0].setCustomValidity("Password stimmt nicht überein");
-            } else {
-                confirm_password[0].setCustomValidity("");
-            }
-        }
-
-        password.on("change", validatePassword);
-        confirm_password.on("keyup", validatePassword);
-    });
-    */
+   
 </script>
 ' . (!empty($GLOBALS['em_projekt'][$GLOBALS['em_client']]['bolMyOnlineReCaptcha']) ? '
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>' : '') . '';

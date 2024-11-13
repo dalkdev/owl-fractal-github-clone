@@ -62,7 +62,16 @@ function initSlider(wrapperNode: HTMLElement) {
     mainCarousel.on('scroll', () => {
         gallery.forEach(function(el)  {
             el.removeEventListener("click", preventClick);
-        })
+        });
+        if (btnPrev && wrapperNode.classList.contains('nw-newsletter-boxen-slider')) {
+            if (mainCarousel.selectedScrollSnap() === 0) {
+                btnPrev.classList.remove('md:nw-block');
+                btnPrev.classList.add('md:nw-hidden');
+            } else {
+                btnPrev.classList.remove('md:nw-hidden');
+                btnPrev.classList.add('md:nw-block');
+            }
+        }
     });
 
     let adIsTriggered = -1;
