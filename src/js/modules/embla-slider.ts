@@ -63,6 +63,7 @@ function initSlider(wrapperNode: HTMLElement) {
         gallery.forEach(function(el)  {
             el.removeEventListener("click", preventClick);
         });
+
         if (btnPrev && wrapperNode.classList.contains('nw-newsletter-boxen-slider')) {
             if (mainCarousel.selectedScrollSnap() === 0) {
                 btnPrev.classList.remove('md:nw-block');
@@ -71,6 +72,13 @@ function initSlider(wrapperNode: HTMLElement) {
                 btnPrev.classList.remove('md:nw-hidden');
                 btnPrev.classList.add('md:nw-block');
             }
+        }
+        if (mainCarousel.selectedScrollSnap() ===  BilderCount - 1) {
+            btnNext.classList.remove('md:nw-block');
+            btnNext.classList.add('md:nw-hidden');
+        } else {
+            btnNext.classList.remove('md:nw-hidden');
+            btnNext.classList.add('md:nw-block');
         }
     });
 
