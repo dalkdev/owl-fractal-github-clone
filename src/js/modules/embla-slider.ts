@@ -46,6 +46,8 @@ function initSlider(wrapperNode: HTMLElement) {
         containScroll: 'trimSnaps',
     });
     const dotsArray = generateDotBtns(dots, mainCarousel);
+    const dotsArray2 = dotsArray.length;
+
     const setSelectedDotBtn = selectDotBtn(dotsArray, mainCarousel);
     setupDotBtns(dotsArray, mainCarousel);
     mainCarousel.on('select', setSelectedDotBtn);
@@ -66,19 +68,25 @@ function initSlider(wrapperNode: HTMLElement) {
 
         if (btnPrev && wrapperNode.classList.contains('nw-newsletter-boxen-slider')) {
             if (mainCarousel.selectedScrollSnap() === 0) {
+
                 btnPrev.classList.remove('md:nw-block');
                 btnPrev.classList.add('md:nw-hidden');
+                btnPrev.classList.remove('lg:nw-block');
+                btnPrev.classList.add('lg:nw-hidden');
             } else {
                 btnPrev.classList.remove('md:nw-hidden');
                 btnPrev.classList.add('md:nw-block');
+                btnPrev.classList.remove('lg:nw-hidden');
+                btnPrev.classList.add('lg:nw-block');
             }
         }
-        if (mainCarousel.selectedScrollSnap() ===  BilderCount - 1) {
+        if (mainCarousel.selectedScrollSnap() ===  dotsArray2 - 1 ) {
             btnNext.classList.remove('md:nw-block');
             btnNext.classList.add('md:nw-hidden');
         } else {
             btnNext.classList.remove('md:nw-hidden');
             btnNext.classList.add('md:nw-block');
+
         }
     });
 
