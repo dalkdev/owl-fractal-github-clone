@@ -23,14 +23,18 @@
       top: 50%;
       transform: translateY(-50%);
       margin-top: 50%;
+      border-radius:0 !important;
     }
+  }
+  #confirmation {
+    border-radius: 0.375rem;
   }
 </style>
 
 <div id="overlay" class="nw-hidden nw-fixed nw-top-0 nw-left-0 nw-inset-0 nw-bg-black nw-bg-opacity-30 nw-z-90"
      style=" z-index: 90;"></div>
-<div id="confirmation" class="nw-hidden nw-bg-white nw-p-4 nw-mx-auto nw-rounded-md"
-     style="max-width: 440px; width: 100%; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100;">
+<div id="confirmation" class="nw-hidden nw-bg-white nw-p-4 nw-mx-auto"
+     style="max-width: 480px; width: 100%; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100;">
     <div
       class="x-svg nw-text-2xl nw-leading-6 nw-text-gray-700 nw-flex nw-justify-end nw-cursor-pointer nw-tracking-tighter nw--mt-2 nw-mb-2.5">
       ×
