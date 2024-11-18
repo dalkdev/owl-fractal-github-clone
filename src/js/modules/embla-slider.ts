@@ -46,7 +46,6 @@ function initSlider(wrapperNode: HTMLElement) {
         containScroll: 'trimSnaps',
     });
     const dotsArray = generateDotBtns(dots, mainCarousel);
-    const dotsArray2 = dotsArray.length;
 
     const setSelectedDotBtn = selectDotBtn(dotsArray, mainCarousel);
     setupDotBtns(dotsArray, mainCarousel);
@@ -79,15 +78,16 @@ function initSlider(wrapperNode: HTMLElement) {
                 btnPrev.classList.remove('lg:nw-hidden');
                 btnPrev.classList.add('lg:nw-block');
             }
-        }
-        if (mainCarousel.selectedScrollSnap() ===  dotsArray2 - 1 ) {
-            btnNext.classList.remove('md:nw-block');
-            btnNext.classList.add('md:nw-hidden');
-        } else {
-            btnNext.classList.remove('md:nw-hidden');
-            btnNext.classList.add('md:nw-block');
+            if (mainCarousel.selectedScrollSnap() ===  dotsArray.length - 1 ) {
+                btnNext.classList.remove('md:nw-block');
+                btnNext.classList.add('md:nw-hidden');
+            } else {
+                btnNext.classList.remove('md:nw-hidden');
+                btnNext.classList.add('md:nw-block');
 
+            }
         }
+
     });
 
     let adIsTriggered = -1;
