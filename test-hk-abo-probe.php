@@ -72,14 +72,16 @@ $abo_descriptions = [
     'HK-Jahresabo' => [
         'description' => '79 € im 1. Jahr und 99 € im 2. Jahr',
         'billing' => 'Jährliche Abrechnung',
+        'second-billing' => 'danach 99 € jährlich & jederzeit kündbar',
+        'third-billing' => 'inkl. HK-Karte',
+        'forth-billing' => 'inkl. HK+-Updates per Mail',
         'angebot' => 'Jährlich'
-
     ],
     'HK-Plus-Angebot' => [
-        'description' => '1 € / Woche (nach 1 Jahr 2 €/Woche)',
-        'billing' => 'Monatliche Abrechnung',
-        'second-billing' => 'monatlich kündbar',
-        'third-billing' => 'NW+-Updates per Mail',
+        'description' => '1 € / Woche (nach 1 Jahr 2 € / Woche)',
+        'billing' => 'mtl. Abrechnung',
+        'second-billing' => 'mtl. kündbar',
+        'third-billing' => 'HK+-Updates per Mail',
         'angebot' => 'Monatlich'
 
     ]
@@ -395,6 +397,10 @@ if ($offer_description) {
     if (isset($offer_description["third-billing"])) {
         $tpl_text .= '<li class="nw-text-sm nw-block">' . $offer_description["third-billing"] . '</li>';
     }
+    if (isset($offer_description["forth-billing"])) {
+        $tpl_text .= '<li class="nw-text-sm nw-block">' . $offer_description["forth-billing"] . '</li>';
+    }
+
 
 
     $tpl_text .= '</ul>';
