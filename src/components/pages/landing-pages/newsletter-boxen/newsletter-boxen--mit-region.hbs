@@ -42,19 +42,19 @@
           <label class="nw-font-bold nw-text-xs nw-uppercase nw-label" for="my_region">REGION</label>
           <div class="nw-dropdown nw-relative nw-w-full nw-bg-white nw-cursor-pointer">
             <div class="nw-dropdown-block nw-flex nw-justify-between nw-items-center nw-space-x-1 nw-cursor-pointer nw-w-full nw-px-3 nw-py-3 nw-mx-auto nw-text-sm nw-font-medium nw-border nw-rounded-md nw-box-border nw-border-gray-200">
-              <p class="nw-dropdown-text">Alle</p>
+              <p id="dropdown-text" class="nw-dropdown-text">Alle</p>
               <svg class="nw-h-5 nw-w-5 nw-text-slate-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" />
               </svg>
             </div>
-
+            <input id="region_id"  type="hidden">
             <ul class="nw-hidden nw-overflow-y-scroll nw-scrollbar-vertical nw-absolute nw-mt-1 nw-text-sm nw-w-full nw-shadow-lg nw-rounded-md nw-bg-white nw-border nw-border-gray-100 nw-transition nw-delay-75 nw-ease-in-out nw-z-10 nw-cursor-pointer">
-              <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0 nw-rounded-t-md">Bielefeld</a></li>
-              <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Gütersloh</a></li>
-              <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Herford</a></li>
-              <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Höxter</a></li>
-              <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Minden-Lübbecke</a></li>
-              <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0 nw-rounded-b-md">Kreis Paderborn</a></li>
+              <li data-region-id="1"><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0 nw-rounded-t-md">Bielefeld</a></li>
+              <li data-region-id="2"><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Gütersloh</a></li>
+              <li data-region-id="3"><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Herford</a></li>
+              <li data-region-id="4"><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Höxter</a></li>
+              <li data-region-id="5"><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Minden-Lübbecke</a></li>
+              <li data-region-id="6"><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0 nw-rounded-b-md">Kreis Paderborn</a></li>
             </ul>
           </div>
         </div>
@@ -83,6 +83,17 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.querySelectorAll('.nw-dropdown ul li').forEach(function(item) {
+    item.addEventListener('click', function(event) {
+      const regionId = item.getAttribute('data-region-id');
+      document.getElementById('region_id').value = regionId;
+      document.querySelector('.nw-dropdown-text').textContent = item.textContent;
+    })
+  })
+
+</script>
 
 
 
