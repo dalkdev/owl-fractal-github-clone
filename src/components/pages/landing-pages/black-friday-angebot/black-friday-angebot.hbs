@@ -45,6 +45,16 @@
       margin: 0 0;
     }
   }
+  @media (max-width: 348px) {
+    .small-ansicht {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+  .small-ansicht {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
 
 </style>
 <div>
@@ -204,7 +214,7 @@
       <div class="nw-rounded-md nw-py-2 nw-px-4 nw-uppercase nw-text-base nw-mb-3 nw--mt-5 " style="background-color: #F19500; width: 189px;">
         NUR FÜR KURZE ZEIT
       </div>
-      <div class="nw-flex nw-mb-10 nw-px-3 nw-bg-white nw-place-content-center nw-flex-row nw-gap-1
+      <div class="nw-flex nw-mb-10 small-ansicht nw-bg-white nw-place-content-center nw-flex-row nw-gap-1
           nw-text-center nw-rounded-md nw-text-black" id="clockdiv" style="padding-bottom: 10px; padding-top: 10px;">
         <div class="nw-pl-2 nw-pr-4">
           <div class="hours nw-text-xl nw-font-bold"></div>
@@ -231,7 +241,7 @@
   <div id="background-popup" class="nw-hidden"></div>
 
 </div>
-<script> const deadline = 'December 24, 2024 23:59:59';
+<script> const deadline = 'December 2, 2024 23:59:59';
 
 window.onload = function() {
   document.querySelector('.nw-black-friday').style.display = 'block';
