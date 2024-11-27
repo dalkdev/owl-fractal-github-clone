@@ -1,0 +1,180 @@
+<style>
+
+  .first-block {
+    height: 283px;
+    max-height: 283px;
+
+  }
+
+  .sceond {
+    background-image: url('/images/black-friday.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .divider {
+    width: 1px;
+    height: 30px;
+    background-color: #737373;
+    margin: 0 10px;
+  }
+
+  .nw-black-friday {
+    max-width: 400px;
+
+  }
+
+  #background-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+    display: none;
+  }
+
+  @media (max-width: 639px) {
+    .nw-black-friday {
+      max-width: 344px;
+    }
+
+    .divider {
+      margin: 0 0;
+    }
+  }
+  @media (max-width: 348px) {
+    .small-ansicht {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+  .small-ansicht {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+</style>
+<div>
+
+
+  <div  class="nw-black-friday nw-fixed nw-top-16 sm:nw-top-1/4 nw-left-1/2 nw-transform -nw-translate-x-1/2 nw-text-white
+      nw-bg-black nw-rounded-lg nw-mx-auto nw-z-50
+        nw-shadow-md" style="z-index: 2147483647;">
+    <div class="first-block sceond nw-bg-gray-600 nw-px-6 nw-pt-6 nw-pb-8 nw-rounded-t-lg  ">
+      <div class="nw-text-xl nw-flex nw-justify-end nw-mt-[-1.25rem] nw-mr-[-0.75rem]">
+        <p id="nw-close-button" class="close-btn nw-shrink-0 nw-text-white hover:nw-text-gray-500 nw-cursor-pointer">
+          ×
+        </p>
+      </div>
+
+      <div class="nw-flex nw-flex-col nw-text-center nw-place-items-center nw-justify-center ">
+        <div style="margin-bottom: 18px;">
+         <img class="nw-w-14 nw-h-6" src="/images/label-hk-plus.svg">
+        </div>
+        <div class="nw-font-bold nw-uppercase" style="margin-bottom: 18px;">
+          <span class="nw-text-red-0" style="font-size: 38px; line-height: 34px;">Black</span> <br>
+          <span class=" nw-text-white" style="font-size: 48px; line-height: 34px; ">Friday</span>
+        </div>
+        <div class="nw-text-xl nw-font-bold nw-mb-10">60% Rabatt auf <br> Ihr Jahresabo sichern!</div>
+      </div>
+    </div>
+
+    <div class="nw-flex nw-flex-col nw-px-4 nw-justify-center nw-place-items-center nw-text-center">
+
+      <div class="nw-rounded-md nw-py-2 nw-px-4 nw-uppercase nw-text-base nw-mb-3 nw--mt-5 " style="background-color: #F19500; width: 189px;">
+        NUR FÜR KURZE ZEIT
+      </div>
+      <div class="nw-flex nw-mb-10 small-ansicht nw-bg-white nw-place-content-center nw-flex-row nw-gap-1
+          nw-text-center nw-rounded-md nw-text-black" id="clockdiv" style="padding-bottom: 10px; padding-top: 10px;">
+        <div class="nw-pl-2 nw-pr-4">
+          <div class="hours nw-text-xl nw-font-bold"></div>
+          <div class="nw-text-gray-400 nw-text-base">Stunden</div>
+        </div>
+        <div class="nw-flex nw-place-items-center"><div class="divider"></div></div>
+        <div class="nw-px-4">
+          <div class="minutes nw-text-xl nw-font-bold"></div>
+          <div class="nw-text-gray-400 nw-text-base">Minuten</div>
+        </div>
+        <div class="nw-flex nw-place-items-center"><div class="divider"></div></div>
+        <div class="nw-pl-4 nw-pr-2">
+          <div class="seconds nw-text-xl nw-font-bold"></div>
+          <div class="nw-text-gray-400 nw-text-base">Sekunden</div>
+        </div>
+      </div>
+      <div class="nw-flex nw-justify-center nw-mb-8">
+        <a href="https://www.haller-kreisblatt.de/mein_hk/abo" class="nw-btn-rounded-primary">
+          Zum Angebot
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="background-popup" class="nw-hidden"></div>
+
+</div>
+<script> const deadline = 'December 2, 2024 23:59:59';
+
+window.onload = function() {
+  document.querySelector('.nw-black-friday').style.display = 'block';
+  document.querySelector('#background-popup').style.display = 'block';
+};
+
+
+document.querySelector('#nw-close-button').onclick = function() {
+  document.querySelector('.nw-black-friday').style.display = 'none';
+  document.querySelector('#background-popup').style.display = 'none';
+};
+
+document.querySelector('#background-popup').onclick = function() {
+  document.querySelector('.nw-black-friday').style.display = 'none';
+  document.querySelector('#background-popup').style.display = 'none';
+};
+
+(function () {
+  initializeClock('clockdiv', deadline);
+})();
+
+
+function getTimeRemaining(endtime) {
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const seconds = Math.floor((total / 1000) % 60);
+  const minutes = Math.floor((total / 1000 / 60) % 60);
+  const hours = Math.floor((total / (1000 * 60 * 60)));
+
+  return {
+    total,
+    hours,
+    minutes,
+    seconds
+  };
+}
+
+function initializeClock(id, endtime, daysWithZero = false) {
+  const clock = document.getElementById(id);
+  const hoursSpan = clock.querySelector('.hours');
+  const minutesSpan = clock.querySelector('.minutes');
+  const secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    const t = getTimeRemaining(endtime);
+
+    if (t.total < 0) {
+      clock.style.display = 'none';
+    }
+
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock(); // run function once at first to avoid delay
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+</script>
