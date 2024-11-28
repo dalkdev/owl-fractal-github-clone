@@ -1,0 +1,95 @@
+<style>
+  .nw-dropdown ul {
+    max-height: 200px;
+  }
+  input[type=text] {
+    -webkit-appearance: none;
+  }
+  select {
+    font-size: 14px;
+    position: relative;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%234A5568' ><path fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z' clip-rule='evenodd' /></svg>") no-repeat;
+    background-position: right 4px top 50%;
+  }
+</style>
+<div class="responsive-newsletter-box nw-bg-white nw-mx-auto nw-mb-8">
+  <a href="#" class="nw-block nw-w-full nw-cursor-pointer nw-mb-4">
+      <div>
+        <span class="nw-text-2xl nw-font-bold">Tägliche Updates</span>
+      </div>
+
+  </a>
+  <div class="nw-px-4 nw-pt-4 nw-pb-6 lg:nw-pb-4 nw-border nw-border-gray-100 nw-rounded-md nw-mx-auto">
+    <div class="nw-flex nw-flex-col lg:nw-flex-row nw-justify-center lg:nw-gap-4">
+      <div class="newsletter-boxen-image-container lg:nw-flex-1 nw-mb-4 lg:nw-mb-0">
+        <img
+          class="nw-object-cover nw-rounded-md nw-h-full nw-w-full"
+          src="/images/newsletter/nw-foodie.jpg" alt="newslletter-bild"
+        />
+      </div>
+      <div class="lg:nw-flex-1">
+        <!-- <div class="nw-mb-4">
+           <a href="#" style="cursor: default !important;"
+              class=" nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
+                       nw-bg-slate-300 nw-rounded-md nw-text-xs nw-font-bold
+                       nw-py-1.5 nw-px-3">
+             Häufig abonniert
+           </a>
+         </div>-->
+        <form>
+          <div class="nw-mb-6">
+            <p class="nw-text-lg nw-font-bold nw-pb-1">Update zum Mittag</p>
+            <p class="nw-text-sm nw-font-medium nw-mb-2 nw-text-gray-400">täglich (Mo - So)</p>
+            <p class="nw-text-base nw-font-medium nw-text-gray-500">News aus OWL und weltweit per E-Mail mit dem Update zum Mittag.</p>
+          </div>
+          <div class="nw-mb-4">
+            <label class="nw-font-bold nw-text-xs nw-uppercase nw-label" for="my_region">REGION</label>
+            <div class="nw-dropdown nw-relative nw-w-full nw-bg-white nw-cursor-pointer">
+              <div class="nw-dropdown-block nw-flex nw-justify-between nw-items-center nw-space-x-1 nw-cursor-pointer nw-w-full nw-px-3 nw-py-3 nw-mx-auto nw-text-sm nw-font-medium nw-border nw-rounded-md nw-box-border nw-border-gray-200">
+                <p class="nw-dropdown-text">Alle</p>
+                <svg class="nw-h-5 nw-w-5 nw-text-slate-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+
+              <ul class="nw-hidden nw-overflow-y-scroll nw-scrollbar-vertical nw-absolute nw-mt-1 nw-text-sm nw-w-full nw-shadow-lg nw-rounded-md nw-bg-white nw-border nw-border-gray-100 nw-transition nw-delay-75 nw-ease-in-out nw-z-10 nw-cursor-pointer">
+                <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0 nw-rounded-t-md">Bielefeld</a></li>
+                <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Gütersloh</a></li>
+                <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Herford</a></li>
+                <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Höxter</a></li>
+                <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0">Kreis Minden-Lübbecke</a></li>
+                <li><a href="#" class="nw-block nw-px-3 nw-py-3 hover:nw-bg-gray-0 nw-rounded-b-md">Kreis Paderborn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nw-mb-4 nw-w-full">
+            <input
+              class="nw-w-full nw-px-3 nw-py-3 nw-mx-auto nw-inline-block nw-border nw-font-medium nw-rounded nw-text-sm nw-box-border
+                 placeholder:nw-text-gray-400"
+              type="email" placeholder="E-Mail-Adresse" name="email" id="email"
+              value="">
+          </div>
+          <p class="nw-text-xs nw-text-gray-300 nw-mb-4">Mit meiner Anmeldung zum Newsletter stimme ich der  <a href="https://www.nw.de/service/formales/23036205_Werbevereinbarung.html" class="nw-underline nw-text-red-0">Werbevereinbarung</a> zu. Weitere Informationen finden Sie in der
+            <a href="https://www.nw.de/service/formales/20262936_Datenschutzerklaerung.html" class="nw-underline">Datenschutzerklärung</a>.
+          </p>
+          <div class="nw-flex nw-justify-center">
+            <button
+              class="nw-text-center nw-min-w-32 nw-max-w-fit nw-whitespace-nowrap nw-text-white
+            nw-bg-red-0 nw-rounded-full nw-text-base nw-font-bold
+            nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300
+            focus:nw-bg-red-200 focus:nw-transition-all
+            disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed">
+              Abonnieren
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
