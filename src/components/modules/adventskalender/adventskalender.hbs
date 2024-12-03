@@ -1,14 +1,18 @@
-
 <style>
-  @media (min-width: 768px) {
-    .nw-width-container {
-      max-width: 380px;
-      width: 380px;
+  @media (max-width: 639px) {
+    .mobile-ansicht {
+      max-width: 400px !important;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .mobile-ansicht {
+      max-width: none;
     }
   }
 </style>
 
-<div class="nw-flex nw-flex-col md:nw-flex-row nw-justify-between  nw-p-4 nw-rounded-md nw-mx-auto nw-text-white nw-mb-6 nw-gap-4"
+<div class="mobile-ansicht nw-flex sm:nw-hidden md:nw-flex  nw-flex-col md:nw-flex-row nw-justify-between  nw-p-4 nw-rounded-md nw-mx-auto nw-text-white nw-mb-6 nw-gap-4"
       style="background-color: #2A7E4D; max-width: 950px;">
     <div class="nw-flex nw-justify-between md:nw-justify-start nw-items-start sm:nw-items-center">
          <div class="nw-order-last md:nw-order-first sm:nw-mr-4">
@@ -71,6 +75,59 @@
         </div>
     </div>
 </div>
+
+
+<div class="nw-hidden sm:nw-flex md:nw-hidden  nw-flex-col md:nw-flex-row   nw-p-4 nw-rounded-md nw-mx-auto nw-text-white nw-mb-6 nw-gap-4"
+     style="background-color: #2A7E4D; max-width: 950px;">
+  <div class="nw-flex nw-justify-between nw-items-start">
+    <div class="nw-order-last sm:nw-mr-4">
+      <img
+        src="/images/logo-nw-short-border.svg"
+        alt=""
+        width="32"
+        height="32"
+
+      />
+    </div>
+    <div class="sm:nw-mr-5 ">
+      <div class="nw-text-md md:nw-text-lg nw-font-bold nw-pr-2">Zum Adventskalender: </div>
+      <div class="nw-text-base md:nw-text-lg nw-mb-4">24 Tage, 24 Überraschungen</div>
+      <div>
+        <a href="#" class="nw-btn-primary-md  " >
+          Türchen öffnen
+        </a>
+      </div>
+
+    </div>
+
+    <div  class="nw-hidden sm:nw-flex nw-w-1/3 nw-mt-2">
+      <div>
+        <img
+          src="/images/gift.svg"
+          alt=""
+          width="60"
+          height="60"
+        />
+      </div>
+      <div class="nw-flex  nw-items-end ">
+        <img
+          src="/images/gift.svg"
+          alt=""
+          width="30"
+          height="30"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
 
 
