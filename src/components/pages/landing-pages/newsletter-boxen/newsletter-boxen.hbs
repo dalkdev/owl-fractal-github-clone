@@ -17,7 +17,7 @@
     }
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 1023px) {
     #confirmation {
       height: 100%;
       top: 50%;
@@ -36,7 +36,7 @@
 <div id="confirmation" class="nw-hidden nw-bg-white nw-p-4 nw-mx-auto"
      style="max-width: 480px; width: 100%; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100;">
     <div
-      class="x-svg nw-text-2xl nw-leading-6 nw-text-gray-700 nw-flex nw-justify-end nw-cursor-pointer nw-tracking-tighter nw--mt-2 nw-mb-2.5">
+      class="x-svg nw-text-2xl nw-leading-6 nw-text-gray-700 nw-flex nw-justify-end nw-cursor-pointer nw-tracking-tighter nw--mt-1 nw-mr-1 nw-mb-2.5">
       ×
     </div>
     <div class="nw-flex nw-justify-center nw-mb-2">
@@ -60,11 +60,15 @@
   <div class="nw-flex nw-flex-col lg:nw-flex-row nw-justify-center lg:nw-gap-4">
     <div class="newsletter-boxen-image-container lg:nw-flex-1 nw-mb-4 lg:nw-mb-0">
       <img
-        class="nw-object-cover nw-rounded-md nw-h-full nw-w-full nw-hidden lg:nw-block"
+        class="nw-object-cover nw-rounded-md nw-h-full nw-w-full nw-hidden sm:nw-hidden lg:nw-block"
         src="/images/newsletter-boxen/newsletter-anmeldung-desktop2.jpg"
       />
       <img
-        class="nw-object-cover nw-rounded-md nw-h-full nw-w-full  nw-block lg:nw-hidden"
+        class="nw-object-cover nw-rounded-md nw-h-full nw-w-full nw-hidden  sm:nw-block lg:nw-hidden"
+        src="/images/newsletter-boxen/newsletter-anmeldungen-ipad2.jpg"
+      />
+      <img
+        class="nw-object-cover nw-rounded-md nw-h-full nw-w-full  nw-block sm:nw-hidden lg:nw-hidden"
         src="/images/newsletter-boxen/newsletter-anmeldung-mobile2.jpg"
       />
     </div>

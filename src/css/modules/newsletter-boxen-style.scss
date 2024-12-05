@@ -2,6 +2,13 @@
   height: 160px;
   width: 100%;
 }
+
+@media (min-width: 640px) {
+  .newsletter-boxen-image-container{
+    height: 196px;
+    width: 100%;
+  }
+}
 @media (min-width: 1023px) {
   .newsletter-boxen-image-container {
     height: auto;
@@ -15,6 +22,13 @@
 
 .responsive-newsletter-box {
   max-width: 320px;
+}
+
+@media (min-width: 640px) {
+  .responsive-newsletter-box {
+    max-width: 712px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
