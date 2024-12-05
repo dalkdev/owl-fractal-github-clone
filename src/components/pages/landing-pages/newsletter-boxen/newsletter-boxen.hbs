@@ -23,7 +23,7 @@
       top: 50%;
       transform: translateY(-50%);
       margin-top: 50%;
-      border-radius:0 !important;
+      border-radius:24px !important;
     }
   }
   #confirmation {
@@ -59,15 +59,20 @@
             nw-mx-auto nw-mb-8" style="position: relative;">
   <div class="nw-flex nw-flex-col lg:nw-flex-row nw-justify-center lg:nw-gap-4">
     <div class="newsletter-boxen-image-container lg:nw-flex-1 nw-mb-4 lg:nw-mb-0">
-      <img class="nw-object-cover nw-rounded-md nw-h-full nw-w-full" src="/images/newsletter-boxen/newsletter-anmeldung-mobile2.jpg" />
+      <img
+        class="nw-object-cover nw-rounded-md nw-h-full nw-w-full nw-hidden lg:nw-block"
+        src="/images/newsletter-boxen/newsletter-anmeldung-desktop2.jpg"
+      />
+      <img
+        class="nw-object-cover nw-rounded-md nw-h-full nw-w-full  nw-block lg:nw-hidden"
+        src="/images/newsletter-boxen/newsletter-anmeldung-mobile2.jpg"
+      />
     </div>
     <div class="nw-flex-1">
-      <!--<div class="nw-mb-4">
-        <a href="#" style="cursor: default !important;" class="nw-text-center nw-w-full sm:nw-min-w-16 sm:nw-max-w-fit nw-whitespace-nowrap
-        nw-text-white nw-bg-slate-300 nw-rounded-md nw-text-xs nw-font-bold nw-py-1.5 nw-px-3">
+        <div  class="nw-inline-flex nw-mb-4 nw-text-center
+            nw-text-white nw-bg-slate-300 nw-rounded-md nw-text-xs nw-font-bold nw-py-1.5 nw-px-3">
           Häufig abonniert
-        </a>
-      </div>-->
+        </div>
       <form id="newsletterForm" method="post" action="/">
         <div class="nw-mb-6">
           <p class="nw-text-lg nw-font-bold nw-pb-1">Update zum Mittag</p>

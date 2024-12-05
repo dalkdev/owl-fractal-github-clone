@@ -1,0 +1,38 @@
+<br>
+<br>
+<br>
+
+<button class="nw-btn-primary nw-mx-auto">
+  <a href="https://www.nw.de/" >
+  href mit button
+  </a>
+</button>
+
+<br>
+<br>
+<br>
+
+<div class="nw-bg-gray-100 nw-p-6 nw-rounded-lg nw-shadow-md nw-max-w-sm">
+  <h2 class="nw-text-2xl nw-font-bold nw-text-center nw-mb-4">button mit submit und a tag </h2>
+
+  <form id="myForm" class="nw-space-y-4">
+    <div>
+      <label for="name" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700">Name</label>
+      <input type="text" id="name" name="name" class="nw-mt-1 nw-block nw-w-full nw-px-4 nw-py-2 nw-border nw-border-gray-300
+      nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500" required>
+    </div>
+
+    <button type="submit"  class="nw-btn-primary">
+      Button CTA
+    </button>
+  </form>
+
+  <p id="message" class="nw-mt-4 nw-text-center nw-text-green-500 nw-hidden">Alles ist gut!</p>
+</div>
+
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('message').classList.remove('nw-hidden');
+  });
+</script>
