@@ -1,14 +1,9 @@
 .newsletter-boxen-image-container {
-  height: 160px;
+  height: 196px;
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .newsletter-boxen-image-container{
-    height: 196px;
-    width: 100%;
-  }
-}
+
 @media (min-width: 1023px) {
   .newsletter-boxen-image-container {
     height: auto;
@@ -24,7 +19,7 @@
   max-width: 320px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 250px) {
   .responsive-newsletter-box {
     max-width: 712px;
     width: 100%;
