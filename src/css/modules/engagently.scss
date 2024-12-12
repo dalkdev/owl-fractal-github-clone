@@ -239,6 +239,12 @@ egy-discussion::part(load-more__button load-more__button--level-1) {
   font-family: var(--font-family-default);
 }
 
+@media (max-width: 640px) {
+  .discussion-content {
+    margin-bottom: 100px;
+  }
+}
+
 .nw-landingpage-button.engagently-load-button:hover {
   color: #d20a11
 }
