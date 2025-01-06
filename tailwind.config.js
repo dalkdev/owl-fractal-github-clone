@@ -56,8 +56,9 @@ module.exports = {
                 },
                 sky: {
                     0: '#4F46E5',  // neu
-                    100: '#352F99',  // neu
+                    100: '#352F99',  // neu  #1F2937
                     200: '#1A174D',  // neu
+                    300: '#1F2937',  // neu
                 },
                 custom: {
                     '1-800': '#0063AF',  // ist sky-0 geworden

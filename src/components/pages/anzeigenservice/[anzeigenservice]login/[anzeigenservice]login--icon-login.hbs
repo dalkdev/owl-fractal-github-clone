@@ -1,13 +1,63 @@
+<style>
+  @keyframes slideIn {
+    from {
+      transform: translate(-50%, 100%);
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+  }
 
-<div class="nw-relative nw-login-container">
+  @keyframes slideOut {
+    from {
+      transform: translate(-50%, -50%);
+    }
+    to {
+      transform: translate(-50%, 100%);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+
+  @media (max-width: 639px) {
+    .confirmation {
+      height: 100%;
+      width: 100% !important;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 20%;
+      border-radius:24px !important;
+    }
+  }
+
+</style>
+<div class="nw-relative nw-login-container  ">
 <span id="nw-login-button">
 <svg xmlns="http://www.w3.org/2000/svg" class="nw-h-8 nw-w-8" viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
 </svg>
 </span>
-  <div id="nw-loginbox" class="nw-hidden nw-fixed nw-top-16 sm:nw-top-1/4 nw-left-1/2 nw-transform -nw-translate-x-1/2
+  <div id="nw-loginbox" class="confirmation nw-hidden nw-fixed nw-top-1/2 sm:nw-top-1/2 nw-left-1/2 nw-transform -nw-translate-x-1/2
   nw-p-4 nw-bg-white nw-rounded-lg nw-mx-auto nw-z-50 nw-border nw-border-gray-100
-  nw-shadow-md" style="z-index: 2147483647; width: 344px;">
+  nw-shadow-md" style="z-index: 2147483647; width: 320px; ">
+
 
     <div id="nw-close-button" class="  nw-text-gray-500 nw-text-xl nw-flex nw-justify-end
     nw-cursor-pointer hover:nw-text-black"
