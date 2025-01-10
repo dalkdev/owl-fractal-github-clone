@@ -49,7 +49,7 @@
 
 </style>
 <div class="nw-relative nw-login-container  ">
-<span id="nw-login-button">
+<span id="nw-login-button" >
 <svg xmlns="http://www.w3.org/2000/svg" class="nw-h-8 nw-w-8" viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
 </svg>
@@ -156,3 +156,59 @@
 
   <div id="background-popup" class="nw-hidden"></div>
 </div>
+
+<script>
+  function toggleLoginBoxicon() {
+    const loginBox = document.getElementById('nw-loginbox');
+    const backgroundPopup = document.getElementById('background-popup');
+
+    if (loginBox !== null) {
+      const isHidden = loginBox.classList.contains('nw-hidden');
+
+      if (isHidden) {
+        // Slide in and fade in animation when the login box appears
+        loginBox.style.animation = 'slideIn 1s forwards';
+        backgroundPopup.style.animation = 'fadeIn 0.5s forwards';
+      } else {
+        // Slide out and fade out animation when the login box disappears
+        loginBox.style.animation = 'slideOut 1s forwards';
+        backgroundPopup.style.animation = 'fadeOut 0.5s forwards';
+
+        // Wait for the slide-out animation to finish before hiding the box
+        loginBox.addEventListener('animationend', function() {
+          loginBox.classList.add('nw-hidden');
+          backgroundPopup.classList.add('nw-hidden');
+        }, { once: true });
+      }
+
+      loginBox.classList.toggle('nw-hidden');
+      backgroundPopup.classList.toggle('nw-hidden');
+    }
+  }
+
+  const loginBoxButton = document.getElementById('nw-login-button');
+  const closeButton = document.getElementById('nw-close-button');
+
+  if (loginBoxButton !== null) {
+    loginBoxButton.addEventListener('click', toggleLoginBox);
+  }
+
+  if (closeButton !== null) {
+    closeButton.addEventListener('click', function() {
+      // Trigger the slide-out animation only when close button is clicked
+      const loginBox = document.getElementById('nw-loginbox');
+      const backgroundPopup = document.getElementById('background-popup');
+
+      if (loginBox !== null && backgroundPopup !== null) {
+        loginBox.style.animation = 'slideOut 1s forwards';
+        backgroundPopup.style.animation = 'fadeOut 0.5s forwards';
+
+        // Wait for the animation to end before hiding the box
+        loginBox.addEventListener('animationend', function() {
+          loginBox.classList.add('nw-hidden');
+          backgroundPopup.classList.add('nw-hidden');
+        }, { once: true });
+      }
+    });
+  }
+</script>
