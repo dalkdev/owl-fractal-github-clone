@@ -154,6 +154,23 @@
   @apply nw-text-slate-300 nw-cursor-pointer;
 }
 
+
+.confirmation-loginbox {
+  height: auto;
+  width: 320px; !important;
+  top: 50%;
+  border-radius:12px !important;
+}
+@media (max-width: 639px) {
+  .confirmation-loginbox {
+    height: 100%;
+    width: 100%!important;
+    top: 50%;
+    margin-top: 20% !important;
+    border-radius:24px !important;
+  }
+}
+
 // von app-patch.css
 @media (max-width: 767px)
 {
