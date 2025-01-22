@@ -54,7 +54,6 @@ function initSlider(wrapperNode: HTMLElement) {
 
         mainCarousel.on('scroll', () => {
             const scrollProgress = mainCarousel.scrollProgress();
-            const maxScrollProgress = 1; // maxScrollProgress ist immer 1 (100%)
 
             leftMask.style.opacity = scrollProgress > 0 ? '1' : '0';
             rightMask.style.opacity = '1';
