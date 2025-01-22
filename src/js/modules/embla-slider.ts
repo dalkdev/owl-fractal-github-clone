@@ -40,11 +40,27 @@ function initSlider(wrapperNode: HTMLElement) {
     const mainCarouselView = mainCarouselWrap?.querySelector('.embla__viewport');
     // Drag-Free-Einstellung nur für den Photos-Slider
     const isPhotosSlider = wrapperNode.classList.contains('photos-slider');
+    const leftMask = wrapperNode.querySelector('.slider-mask.left') as HTMLElement;
+    const rightMask = wrapperNode.querySelector('.slider-mask.right') as HTMLElement;
+
 
     const mainCarousel = EmblaCarousel(mainCarouselView as HTMLElement, {
         dragFree: !isPhotosSlider, // dragFree: false für den Photos-Slider
         containScroll: 'trimSnaps',
     });
+
+    if (mainCarousel && leftMask && rightMask) {
+        rightMask.style.opacity = '1';
+
+        mainCarousel.on('scroll', () => {
+            const scrollProgress = mainCarousel.scrollProgress();
+            const maxScrollProgress = 1; // maxScrollProgress ist immer 1 (100%)
+
+            leftMask.style.opacity = scrollProgress > 0 ? '1' : '0';
+            rightMask.style.opacity = '1';
+        });
+    }
+
     const dotsArray = generateDotBtns(dots, mainCarousel);
 
     const setSelectedDotBtn = selectDotBtn(dotsArray, mainCarousel);
