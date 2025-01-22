@@ -1,12 +1,12 @@
 {
   "status": "qm",
   "context": {
-    "themen-title": "MEHR LESEN ÜBER",
+    "themen-title": "VERWANDTE THEMEN",
     "buttons": [
-      "Bundesregierung",
-      "Deutschland",
+      "Labeltheme",
+      "Themelabelcontent",
       "Bundestag",
-      "Christian Lindner",
+      "Alle Themen",
       "Corona",
       "Klimawandel",
       "Digital",

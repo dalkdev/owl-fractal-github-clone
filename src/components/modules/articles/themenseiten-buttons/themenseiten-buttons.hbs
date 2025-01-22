@@ -1,61 +1,14 @@
-<!-- Desktop Design -->
-<div class="nw-px-4 nw-bg-white nw-pb-9 nw-hidden sm:nw-block">
-  <div class="nw-mb-1">
-    <p
-      class="
-        nw-text-left
-        nw-uppercase
-        nw-text-lg
-        nw-font-bold
-        nw-pt-2
-        nw-text-black
-      "
-    >
-      {{themen-title}}
-    </p>
-  </div>
-
-  <div class="nw-pr-auto nw-max-w-lg">
-    {{#each buttons}}
-    <a
-      href="#"
-      class="
-        button
-        nw-inline-block
-        nw-border
-        nw-border-gray-100
-        nw-border-solid
-        nw-rounded-3xl
-        nw-pt-1.5
-        nw-pb-1.5
-        nw-px-3
-        nw-font-bold
-        nw-text-sm
-        nw-text-black
-        nw-text-left
-        nw-mt-1
-        hover:nw-border-black
-        focus:nw-outline-none focus:nw-bg-gray-100 focus:nw-border-red-0
-        disabled:nw-opacity-200
-      "
-    >
-      {{this}}
-    </a>
-    {{/each}}
-  </div>
-</div>
-<!-- Mobile Design -->
 <div
-  class="slider nw-article-themenbox nw-pl-4 nw-bg-white nw-pb-9 sm:nw-hidden"
+  class="slider nw-article-themenbox nw-pt-4 nw-bg-white nw-pl-4 md:nw-pl-0 nw-pb-9 nw-mx-auto nw-mb-10" style="max-width: 668px;"
 >
   <div>
     <p
       class="
         nw-text-left
         nw-uppercase
-        nw-text-lg
+        nw-text-md
         nw-font-bold
-        nw-py-2
+        nw-pb-4
         nw-text-black
       "
     >
@@ -84,7 +37,6 @@
                 nw-text-sm
                 nw-text-black
                 nw-text-left
-                nw-mx-0.5
                 hover:nw-border-black
                 focus:nw-outline-none
                 focus:nw-bg-gray-100
@@ -98,8 +50,12 @@
         </div>
         {{/each}}
       </div>
+      <div class="slider-mask left"></div>
+      <div class="slider-mask right"></div>
     </div>
   </div>
+  <div class="slider-mask left"></div>
+  <div class="slider-mask right"></div>
   <!-- Dots -->
   <div class="embla__dots nw-mt-0 sm:nw-mt-2"></div>
   <script type="text/template" id="embla-dot-template">
