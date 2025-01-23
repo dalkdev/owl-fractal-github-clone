@@ -55,23 +55,19 @@ module.exports = {
                     200: '#A9ABAD', // neu
                 },
                 sky: {
-                    0: '#4F46E5',  // neu
-                    100: '#352F99',  // neu  #1F2937
-                    200: '#1A174D',  // neu
-                    300: '#1F2937',  // neu
+                    0: '#4F46E5',
+                    100: '#352F99',
+                    200: '#1A174D',
+                    300: '#1F2937',
                 },
                 custom: {
                     '1-800': '#0063AF',  // ist sky-0 geworden
                     '1-700': '#4A5568',  // ist slate-300 geworden
                     '1-600': '#038ed5',  // ist slate-100 geworden
                     '1-500': '#1F90D1', // ist slate-0 geworden
-                    '2-400': '#495467', // bleibt
                     '2-300': '#41BCA7', // bleibt
-                    '2-200': '#485199', // bleibt
-                    '1-200': '#414B5C', // bleibt
-                    'erwinteaser-bg': '#1f114c', // bleibt
                     'erwinteaser-font-big': '#9dcde3', // bleibt
-                    'lesepaten-bg': '#F1F2F8', // bleibt
+
                 },
                 blue: '#41B7CC', // nicht benutzt
                 hk: {
