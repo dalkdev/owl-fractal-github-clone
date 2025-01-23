@@ -19,12 +19,13 @@
     <div class="embla__viewport relative">
       <div class="embla__container">
         {{#each buttons}}
-        <div class="embla__slide">
-          <div class="embla__slide__inner nw-bg-clip-padding nw-block">
-            <a
-              href="#"
-              class="
+          <div class="embla__slide">
+            <div class="embla__slide__inner nw-bg-clip-padding nw-block">
+              <a
+                href="#"
+                class="
                 button
+                nw-whitespace-nowrap
                 nw-inline-block
                 nw-border
                 nw-border-gray-100
@@ -43,11 +44,11 @@
                 focus:nw-border-red-0
                 disabled:nw-opacity-200
               "
-            >
-              {{this}}
-            </a>
+              >
+                {{this}}
+              </a>
+            </div>
           </div>
-        </div>
         {{/each}}
       </div>
       <div class="slider-mask left"></div>
