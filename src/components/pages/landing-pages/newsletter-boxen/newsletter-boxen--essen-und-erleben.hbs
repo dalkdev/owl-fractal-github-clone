@@ -1,25 +1,25 @@
 
-  <div class="nw-pt-6 nw-pb-6 nw-px-4 md:nw-p-6 nw-bg-light-0 nw-border nw-border-gray-100 nw-rounded-md" style="max-width: 656px;">
-    <div class=" nw-flex nw-flex-row nw-justify-between " >
-      <div>
-        <p class="nw-font-bold nw-text-lg nw-text-sky-300 nw-pb-2"> Essen & Erleben</p>
-        <p class="nw-font-medium nw-text-base nw-pb-4 nw-text-gray-500">Jede Woche aktuelle Highlights aus Ihrer Region: die besten Restaurants, Cafés, Events und Trends. </p>
-        <button id="showNewsletterBtn" class=" nw-text-center nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
+<div class="nw-pt-6 nw-pb-6 nw-px-4 md:nw-p-6 nw-bg-light-0 nw-border nw-border-gray-100 nw-rounded-md" style="max-width: 656px;">
+  <div class=" nw-flex nw-flex-row nw-justify-between " >
+    <div>
+      <p class="nw-font-bold nw-text-lg nw-text-sky-300 nw-pb-2"> Essen & Erleben</p>
+      <p class="nw-font-medium nw-text-base nw-pb-4 nw-text-gray-500">Jede Woche aktuelle Highlights aus Ihrer Region: die besten Restaurants, Cafés, Events und Trends. </p>
+      <button id="showNewsletterBtn" class=" nw-text-center nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
   disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed">Newsletter abonnieren</button>
-      </div>
-      <div class="nw-pl-8 nw-hidden sm:nw-block">
-        <div class="nw-flex nw-flex-col nw-items-center nw-justify-center nw-rounded-full nw-bg-light-200 nw-border">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nw-w-12 nw-h-12 nw-m-3 nw-text-white">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-          </svg>
-        </div>
+    </div>
+    <div class="nw-pl-8 nw-hidden sm:nw-block">
+      <div class="nw-flex nw-flex-col nw-items-center nw-justify-center nw-rounded-full nw-bg-light-200 nw-border">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="nw-w-12 nw-h-12 nw-m-5 nw-text-white">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+        </svg>
       </div>
     </div>
-    <!-- Hidden Div -->
-    <div id="newsletterDiv" class="sm:nw-mt-4 " style="display: none;">
-      <form id="newsletterForm" method="post">
+  </div>
+  <!-- Hidden Div -->
+  <div id="newsletterDiv" class="sm:nw-mt-4 " style="display: none;">
+    <form id="newsletterForm" method="post">
       <div class=" nw-block sm:nw-flex nw-gap-3 nw-mb-4">
         <label for="email-address" class="nw-sr-only">E-Mail Adresse</label>
         <input
@@ -35,16 +35,21 @@
           nw-bg-white
           nw-border
           nw-nw-border-transparent
-          nw-rounded-md
-          nw-py-2 nw-px-3 nw-text-base nw-font-medium nw-text-black nw-placeholder-gray-400 placeholder:nw-font-medium nw-mb-3 sm:nw-mb-0
+          nw-rounded-md  focus:nw-outline-none
+          focus:nw-ring-1
+          focus:nw-ring-offset-1
+          focus:nw-ring-offset-sky-0
+          focus:nw-ring-sky-0
+          focus:nw-border-sky-0
+          nw-py-2 nw-px-3 nw-text-sm nw-font-medium nw-text-black nw-placeholder-gray-400 placeholder:nw-font-medium nw-mb-3 sm:nw-mb-0
         "
           placeholder="E-Mail-Adresse"
         />
 
 
         <button id="anmeldenNewsletter"
-          type="submit"
-          class="
+                type="submit"
+                class="
           nw-text-center nw-min-w-26
           sm:nw-w-1/2 nw-whitespace-nowrap nw-text-white
           nw-bg-red-0 nw-rounded-md nw-text-sm nw-font-bold
@@ -55,44 +60,24 @@
           Newsletter abonnieren
         </button>
       </div>
-        <div id="formMessage" class="nw-my-2 nw-font-medium nw-text-xs sm:nw-text-sm"></div>
-        <div class="nw-text-gray-300 nw-font-medium nw-text-xs">
-          Mit meiner Anmeldung zum Newsletter stimme ich der  <a href="#" class="nw-text-red-0 nw-underline"> Werbevereinbarung </a> zu. Weitere Informationen finden Sie in der
-          <a href="#" class="nw-underline">Datenschutzerklärung</a>.
+      <div id="formMessage" class="nw-my-2 nw-font-medium nw-text-xs sm:nw-text-sm"></div>
+      <div class="nw-text-gray-300 nw-font-medium nw-text-xs">
+        Mit meiner Anmeldung zum Newsletter stimme ich der  <a href="#" class="nw-text-red-0 nw-underline"> Werbevereinbarung </a> zu. Weitere Informationen finden Sie in der
+        <a href="#" class="nw-underline">Datenschutzerklärung</a>.
 
-          zu.
-        </div>
-      </form>
-    </div>
+        zu.
+      </div>
+    </form>
   </div>
-
+</div>
 
 <script>
   const showNewsletterBtn = document.getElementById('showNewsletterBtn');
   const newsletterDiv = document.getElementById('newsletterDiv');
-  const newsletterForm = document.getElementById('newsletterForm');
-  const emailInput = document.getElementById('email-address');
-  const formMessage = document.getElementById('formMessage');
-
 
   showNewsletterBtn.addEventListener('click', function () {
     newsletterDiv.style.display = 'block';
     showNewsletterBtn.style.display = 'none';
   });
 
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  newsletterForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const emailValue = emailInput.value.trim();
-    if (emailRegex.test(emailValue)) {
-      formMessage.style.color = '#6EB783';
-      formMessage.textContent = 'Vielen Dank für Ihre Anmeldung!';
-      newsletterForm.reset();
-    } else {
-      formMessage.style.color = '#D20A11';
-      formMessage.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
-    }
-  });
 </script>
