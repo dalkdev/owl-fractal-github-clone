@@ -284,18 +284,13 @@
     .app_faq.show .app_plus_icon:before {
         content:"-";
     }
-
-
     .app_font_28 {
         font-size:28px;
     }
-
     .toggleButton svg {
         transition: transform 0.3s ease;
     }
 </style>
-
-
 
 <div class="row white_bg app_list_point app_introduce  flex-center">
 
