@@ -69,6 +69,15 @@ module.exports = {
                     'erwinteaser-font-big': '#9dcde3', // bleibt
 
                 },
+                scp: {
+                    0 : '#1AB0F8',
+                },
+                dsc: {
+                    0 : '#005B9D',
+                },
+                cstm: {
+                    'green' : '#6EB783',
+                },
                 blue: '#41B7CC', // nicht benutzt
                 hk: {
                     'nw-blue-100': '#00B4D1', // bleibt
