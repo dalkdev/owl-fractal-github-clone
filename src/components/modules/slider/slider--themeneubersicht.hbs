@@ -1,122 +1,24 @@
-<!-- Desktop-Ansicht -->
 
-<div class=" nw-hidden md:nw-flex  nw-flex-row nw-gap-4 nw-mb-10 nw-bg-white nw-pb-10">
-{{#each this.themabox}}
-  <div class="nw-bg-gray-0 nw-flex nw-flex-col nw-justify-between nw-shadow-md nw-rounded-t-lg nw-rounded-b-md">
-    <!-- Head -->
-    <div class="nw-w-full nw-relative ">
-      <div
-        class="
-        nw-w-full nw-rounded-t-md
-        nw-h-full
-        nw-bg-gray-500
-        nw-top-0
-        nw-left-0
-        nw-absolute
-        nw-opacity-80
-      "
-      ></div>
-      <div
-        class="
-        nw-w-full
-        nw-h-full
-        nw-flex
-        nw-flex-col
-        nw-absolute
-        nw-top-0
-        nw-left-0
-        nw-justify-center
-        nw-items-center
-        nw-z-30
-      "
-      >
-        <div
-          class="
-          nw-text-base
-          nw-font-medium
-          nw-tracking-normal
-          nw-uppercase
-          nw-text-gray-100
-        "
-        >
-          Thema
-        </div>
-        <div class="nw-text-md nw-tracking-normal nw-font-bold nw-text-white">
-          {{this.title}}
-        </div>
-      </div>
-      <img class="nw-object-cover nw-w-full nw-h-24 nw-rounded-t-md" src="{{this.image-src-s}}"/>
-    </div>
-    <!-- Head1 Ende -->
-    <!-- Liste 1 -->
-    {{#each this.images}}
-      <div class="nw-border-b-2 nw-flex-1">
-        <a href="" class="nw-cursor-pointer nw-flex">
-          <img
-            class="
-          nw-p-3 nw-min-h-20 nw-max-h-20 nw-max-w-24 nw-min-w-24
-          sm:nw-min-h-24 sm:nw-max-h-24 sm:nw-max-w-28 sm:nw-min-w-28
-          md:nw-min-h-20 md:nw-max-h-20 md:nw-max-w-24 md:nw-min-w-24
-        "
-            src="{{this.src}}"
-          />
-          <span class="nw-pt-2 nw-pr-2 nw-text-sm nw-text-left nw-mb-2">
-            {{this.caption}}
-          </span>
-        </a>
-      </div>
-    {{/each}}
-    <div>
-      <a
-        href=""
-        class="nw-py-3 nw-flex nw-text-base nw-place-content-center nw-mx-auto"
-      >
-        Mehr zum Thema
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="nw-cursor-pointer nw-text-gray-500 nw-pl-1"
-          width="30"
-          height="25"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"
-          />
-        </svg>
-      </a>
-    </div>
-    <!-- Liste1 Ende -->
-  </div>
-{{/each}}
-</div>
-
-<!-- Mobile Design-->
-<div class="slider nw-leseempfehlung nw-bg-white nw-py-10 nw-block md:nw-hidden nw-mb-10">
+<div  class="slider photos-slider  nw-newsletter-boxen-slider nw-bg-white nw-py-10 nw-block nw-mb-10">
   <div class="embla embla--main-carousel" style="max-width: 1024px;">
     <div class="embla__viewport relative">
       <div class="embla__container nw-ml-4">
         {{#each this.themabox}}
-
           <div
             class="
-            embla__slide
+            embla__slide nw-overflow-hidden
             nw-min-w-8/10
             sm:min-w-6/10
             md:nw-min-w-6/10
-            lg:nw-min-w-4/10
-            xl:nw-min-w-3/10
+            lg:nw-min-w-4/12
+            xl:nw-min-w-4/12
           "
           >
-              <div class="nw-bg-gray-0 nw-flex nw-flex-col nw-justify-between nw-shadow-md nw-rounded-t-lg nw-rounded-b-md">
-                <!-- Head -->
-                <div class="nw-w-full nw-relative ">
-                  <div
-                    class="
+            <div class="nw-bg-gray-0 nw-flex nw-flex-col nw-justify-between nw-shadow-md nw-rounded-t-lg nw-rounded-b-md">
+              <!-- Head -->
+              <div class="nw-w-full nw-relative ">
+                <div
+                  class="
         nw-w-full nw-rounded-t-md
         nw-h-full
         nw-bg-gray-500
@@ -125,9 +27,9 @@
         nw-absolute
         nw-opacity-80
       "
-                  ></div>
-                  <div
-                    class="
+                ></div>
+                <div
+                  class="
         nw-w-full
         nw-h-full
         nw-flex
@@ -139,72 +41,120 @@
         nw-items-center
         nw-z-30
       "
-                  >
-                    <div
-                      class="
+                >
+                  <div
+                    class="
           nw-text-base
           nw-font-medium
           nw-tracking-normal
           nw-uppercase
           nw-text-gray-100
         "
-                    >
-                      Thema
-                    </div>
-                    <div class="nw-text-md nw-tracking-normal nw-font-bold nw-text-white">
-                      {{this.title}}
-                    </div>
+                  >
+                    Thema
                   </div>
-                  <img class="nw-object-cover nw-w-full nw-h-24 nw-rounded-t-md" src="{{this.image-src-s}}"/>
+                  <div class="nw-text-md nw-tracking-normal nw-font-bold nw-text-white">
+                    {{this.title}}
+                  </div>
                 </div>
-                <!-- Head1 Ende -->
-                <!-- Liste 1 -->
-                {{#each this.images}}
-                  <div class="nw-border-b-2 nw-flex-1">
-                    <a href="" class="nw-cursor-pointer nw-flex">
-                      <img
-                        class="
+                <img class="nw-object-cover nw-w-full nw-h-24 nw-rounded-t-md" src="{{this.image-src-s}}"/>
+              </div>
+              <!-- Head1 Ende -->
+              <!-- Liste 1 -->
+              {{#each this.images}}
+                <div class="nw-border-b-2 nw-flex-1">
+                  <a href="" class="nw-cursor-pointer nw-flex">
+                    <img
+                      class="
           nw-p-3 nw-min-h-20 nw-max-h-20 nw-max-w-24 nw-min-w-24
           sm:nw-min-h-24 sm:nw-max-h-24 sm:nw-max-w-28 sm:nw-min-w-28
           md:nw-min-h-20 md:nw-max-h-20 md:nw-max-w-24 md:nw-min-w-24
         "
-                        src="{{this.src}}"
-                      />
-                      <span class="nw-pt-2 nw-pr-2 nw-text-sm nw-text-left nw-mb-2">
-                        {{this.caption}}
-                      </span>
-                    </a>
-                  </div>
-                {{/each}}
-                <div>
-                  <a
-                    href=""
-                    class="nw-py-3 nw-flex nw-text-base nw-place-content-center nw-mx-auto"
-                  >
-                    Mehr zum Thema
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="nw-cursor-pointer nw-text-gray-500 nw-pl-1"
-                      width="30"
-                      height="25"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
+                      src="{{this.src}}"
+                    />
+                    <span class="nw-pt-2 nw-pr-2 nw-text-sm nw-text-left nw-mb-2">
+                      {{this.caption}}
+                    </span>
                   </a>
                 </div>
-                <!-- Liste1 Ende -->
+              {{/each}}
+              <div>
+                <a
+                  href=""
+                  class="nw-py-3 nw-flex nw-text-base nw-place-content-center nw-mx-auto"
+                >
+                  Mehr zum Thema
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="nw-cursor-pointer nw-text-gray-500 nw-pl-1"
+                    width="30"
+                    height="25"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
               </div>
+              <!-- Liste1 Ende -->
+            </div>
           </div>
         {{/each}}
       </div>
+      <div
+        class="
+          nw-hidden
+          md:nw-hidden
+
+          slider--button-prev nw-place-content-center
+          nw-bg-black
+          nw-text-black
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-left-0
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="nw-w-6 nw-h-6 nw-mx-auto nw-text-white">
+          <path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div
+        class="
+          nw-hidden
+          md:nw-block
+          lg:nw-hidden
+          slider--button-next nw-place-content-center
+          nw-bg-black
+          nw-text-black
+          nw-w-8
+          nw-h-8
+          nw-absolute
+          nw-rounded-full
+          nw-object-center
+          nw-top-1/2
+          nw-right-0
+          nw-transform
+          nw--translate-y-1/2
+          nw-cursor-pointer" >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="nw-w-6 nw-h-6 nw-mx-auto nw-text-white">
+          <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+        </svg>
+      </div>
     </div>
   </div>
+  <div class=" embla__dots" style="display: none !important;" ></div>
 </div>
+<script type="text/template" id="embla-dot-template">
+  <button class="embla__dot" type="button"></button>
+</script>
