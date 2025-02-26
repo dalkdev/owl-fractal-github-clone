@@ -17,7 +17,7 @@
 
 p#absatz1.em_text {
   padding-bottom: 1.5rem;
-  line-height: 1.75rem;
+  line-height: 1.625rem;
   --tw-text-opacity: 1;
   color: rgba(0,0,0,var(--tw-text-opacity));
 }
@@ -36,9 +36,9 @@ p#absatz1.em_text {
   font-style: normal;
 }
 
-p#absatz1.em_text > span {
+/*p#absatz1.em_text > span {
   display: block;
-}
+}*/
 
 .nw-aspect-video{
   aspect-ratio: 16 / 9;
