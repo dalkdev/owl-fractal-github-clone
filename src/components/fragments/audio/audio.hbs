@@ -1,0 +1,26 @@
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/media-chrome@3/+esm"
+></script>
+
+<media-controller audio id="audioSection"   class="@container nw-rounded-md"  style="
+        --media-background-color: black;
+         border-radius: 6px;
+        --media-control-background: transparent;
+        --media-control-hover-background: transparent;
+          --media-range-bar-color: rgb(79 70 229);
+      ">
+  <audio
+    class=""
+    slot="media"
+    src="https://stream.mux.com/O4h5z00885HEucNNa1rV02wZapcGp01FXXoJd35AHmGX7g/audio.m4a"
+    crossorigin
+  ></audio>
+  <media-control-bar class="nw-flex nw-justify-between ">
+    <media-play-button class="nw-px-2"></media-play-button>
+    <media-time-range></media-time-range>
+    <media-time-display></media-time-display>
+    <span class="nw-flex nw-items-center nw-content-center">/ </span>
+    <media-duration-display class="nw-text-gray-300 nw-font-medium nw-px-2 "></media-duration-display>
+  </media-control-bar>
+</media-controller>
