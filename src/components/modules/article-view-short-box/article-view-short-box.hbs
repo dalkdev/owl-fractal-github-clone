@@ -1,0 +1,108 @@
+<div class="nw-mx-4 nw-mb-6 nw-rounded-md nw-w-full sm:nw-max-w-lg nw-mx-auto">
+  <div class="nw-p-4 nw-rounded-t-md nw-text-white" style="background-color: #2F3642;">
+    <div class="nw-flex nw-justify-between nw-place-items-center">
+      <div class="nw-mr-4 nw-uppercase nw-text-base nw-font-bold">
+        DER TAG KOMPAKT
+      </div>
+      <div class="nw-flex-none">
+        <div class="nw-flex nw-flex-col nw-gap-2">
+          <button
+            class="nw-btn-icon-primary-sm ">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="nw-mr-1 nw-w-4 nw-h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+            </svg>
+
+            Anhören
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 2 Section-->
+  <div class="nw-bg-white nw-px-4 nw-pt-4 nw-pb-1.5 nw-border nw-border-gray-100 nw-rounded-b-md">
+    <div class="nw-text-base nw-pb-5">
+      <p class="nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+      <p class="nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff ...</p>
+    </div>
+    <div>
+      <button id="toggleButton" class="nw-w-full nw-py-2 nw-rounded nw-flex nw-items-center nw-justify-center" onclick="toggleContent()">
+        <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Mehr lesen</span>
+        <svg id="toggleIcon" width="18" height="18" data-slot="icon" fill="none" stroke-width="2.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="nw-text-red-0 nw-transition-transform nw-duration-300">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- hidden-Section-->
+    <div id="hiddenSection" class="nw-hidden">
+      <div class="nw-mb-6">
+        <div class="nw-pb-5">
+          <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+          <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+        </div>
+        <div>
+          <a href=" " id="" class="nw-w-full nw-py-2">
+            <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+          </a>
+        </div>
+      </div>
+      <div class="nw-mb-6">
+        <div class="nw-pb-5">
+          <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+          <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+        </div>
+        <div>
+          <a href=" " id="" class="nw-w-full nw-py-2">
+            <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+          </a>
+        </div>
+      </div>
+      <div class="nw-mb-6">
+        <div class="nw-pb-5">
+          <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+          <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+        </div>
+        <div>
+          <a href=" " id="" class="nw-w-full nw-py-2">
+            <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+          </a>
+        </div>
+      </div>
+
+     <!-- -->
+      <div>
+        <button id="toggleButton" class="nw-w-full nw-py-2 nw-rounded nw-flex nw-items-center nw-justify-center" onclick="toggleContent()">
+          <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Weniger anzeigen</span>
+          <svg class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold" width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- -->
+</div>
+
+<script>
+  function toggleContent() {
+    var hiddenSection = document.getElementById('hiddenSection');
+    var toggleButton = document.getElementById('toggleButton');
+    
+    if (hiddenSection.classList.contains('nw-hidden')) {
+      hiddenSection.classList.remove('nw-hidden');
+      toggleButton.classList.add('nw-hidden');
+    } else {
+      hiddenSection.classList.add('nw-hidden');
+      toggleButton.classList.remove('nw-hidden');
+    }
+  }
+</script>
+
+
+
+
+
