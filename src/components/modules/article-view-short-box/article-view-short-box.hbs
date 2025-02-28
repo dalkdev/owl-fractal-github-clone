@@ -1,4 +1,22 @@
-<div class="nw-m-4  nw-rounded-md">
+<style>
+  .hiddensection {
+    transform: translateY(-20px);
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, transform 0.6s ease, height 0s 0.6s;
+  }
+
+  .showSection {
+    opacity: 1;
+    transform: translateY(0);
+    height: auto;
+    transition: opacity 0.5s ease, transform 0.6s ease;
+  }
+
+</style>
+<div class="nw-m-4 md:nw-max-w-lg md:nw-mx-auto nw-rounded-md">
+
   <div class="nw-w-full">
     <div class="nw-p-4 nw-rounded-t-md nw-text-white" style="background-color: #2F3642;">
       <div id="headerSection" class="nw-flex nw-justify-between nw-place-items-center">
@@ -25,7 +43,9 @@
         src="https://cdn.jsdelivr.net/npm/media-chrome@3/+esm"
       ></script>
 
+
       <media-controller audio id="audioSection"   class="nw-hidden nw-rounded-md"  style="
+
         --media-background-color: black;
          border-radius: 6px;
         --media-control-background: transparent;
@@ -52,11 +72,21 @@
       <div id="mehrSection">
         <div class="nw-text-base nw-pb-5">
           <p class="nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+
           <p class="nw-text-gray-400 nw-text-limit-2 ">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
             In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
         </div>
         <div class="nw--mx-4 ">
-          <button id="" class="toggleButton nw-border-b nw-rounded-md nw-w-full nw-py-2 nw-flex nw-items-center nw-justify-center" style="background-color: #F2F5F9;"
+
+          <p class="nw-text-gray-400 nw-text-limit-2 ">In Bielefeld treten auch kleinere Parteien an und sorgen für
+            Gesprächsstoff.
+            In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+        </div>
+        <div class="nw--mx-4">
+          <button id=""
+                  class="toggleButton nw-rounded-b-md  nw-w-full nw-py-2 nw-flex nw-items-center nw-justify-center"
+                  style="background-color: #F2F5F9;"
+
                   onclick="toggleContent();">
             <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Mehr lesen</span>
             <svg id="toggleIcon" width="18" height="18" data-slot="icon" fill="none" stroke-width="2.5"
@@ -69,47 +99,64 @@
       </div>
 
       <!-- hidden-Section-->
-      <div id="hiddenSection" class="nw-hidden nw-pt-3">
+      <div id="hiddenSection" class="hiddensection ">
         <div class="nw-mb-6">
           <div class="nw-pb-5">
-            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
-            <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
-              In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
-          </div>
-          <div>
-            <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
-              <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
-            </a>
-          </div>
-        </div>
-        <div class="nw-mb-6">
-          <div class="nw-pb-5">
-            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im
+              Wahlkampf</p>
             <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für
-              Gesprächsstoff.</p>
+              Gesprächsstoff.
+              In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
           </div>
-          <div>
-            <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
-              <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+          <div class=" nw-flex nw-justify-end">
+            <a href="#" id="" class=" nw-p-2 nw-rounded-md nw-border nw-border-gray-300 nw-inline-flex"
+               style="background-color: #F2F5F9;">
+              <span class="nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+
             </a>
           </div>
         </div>
         <div class="nw-mb-6">
           <div class="nw-pb-5">
-            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
-            <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
+            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im
+              Wahlkampf</p>
+            <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für
+              Gesprächsstoff.
               In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
           </div>
-          <div>
-            <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
-              <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+          <div class=" nw-flex nw-justify-end">
+            <a href="#" id="" class=" nw-p-2 nw-rounded-md nw-border nw-border-gray-300 nw-inline-flex"
+               style="background-color: #F2F5F9;">
+              <span class="nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+
             </a>
           </div>
         </div>
-        <div class="nw-mb-4"> <span class="nw-text-gray-400 nw-text-xs ">27.02.2025, 14:50</span> </div>
+        <div class="nw-mb-6">
+          <div class="nw-pb-5">
+            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im
+              Wahlkampf</p>
+            <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für
+              Gesprächsstoff.
+              In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+          </div>
+          <div class=" nw-flex nw-justify-end">
+            <a href="#" id="" class=" nw-p-2 nw-rounded-md nw-border nw-border-gray-300 nw-inline-flex"
+               style="background-color: #F2F5F9;">
+              <span class="nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+
+            </a>
+          </div>
+        </div>
+
+
+        <div class="nw-mb-4"><span class="nw-text-gray-400 nw-text-xs ">27.02.2025, 14:50</span></div>
         <!-- -->
         <div class="nw--mx-4">
-          <button id="" class="toggleButton nw-border-b nw-rounded-md nw-w-full nw-py-2 nw-flex nw-items-center nw-justify-center" style="background-color: #F2F5F9;"
+          <button id=""
+                  class="toggleButton  nw-rounded-b-md nw-w-full nw-py-2 nw-flex nw-items-center nw-justify-center"
+                  style="background-color: #F2F5F9;"
+
                   onclick="toggleContent()">
             <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Weniger anzeigen</span>
             <svg class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold" width="18" height="18"
@@ -126,17 +173,33 @@
   </div>
 </div>
 <script>
+
   function toggleContent() {
     var hiddenSection = document.getElementById('hiddenSection');
     var mehrSection = document.getElementById('mehrSection');
     var headerSection = document.getElementById('headerSection');
     var audioSection = document.getElementById('audioSection');
 
-    ['hiddenSection', 'mehrSection', 'headerSection', 'audioSection'].forEach(id => {
-      document.getElementById(id).classList.toggle('nw-hidden');
-    });
-    audioSection.classList.toggle('nw-block', !hiddenSection.classList.contains('nw-hidden'));
+    if (hiddenSection.classList.contains('hiddensection')) {
+
+      hiddenSection.classList.toggle('hiddensection');
+      hiddenSection.classList.toggle('showSection');
+      mehrSection.classList.toggle('nw-hidden');
+      headerSection.classList.toggle('nw-hidden');
+      audioSection.classList.toggle('nw-hidden');
+      audioSection.classList.toggle('nw-block', !hiddenSection.classList.contains('hiddenSection'));
+    } else {
+
+      hiddenSection.classList.toggle('showSection');
+      hiddenSection.classList.toggle('hiddensection');
+      mehrSection.classList.toggle('nw-hidden');
+      headerSection.classList.toggle('nw-hidden');
+      audioSection.classList.toggle('nw-hidden');
+      audioSection.classList.toggle('nw-block', !hiddenSection.classList.contains('hiddenSection'));
+    }
   }
+
+
 </script>
 
 
