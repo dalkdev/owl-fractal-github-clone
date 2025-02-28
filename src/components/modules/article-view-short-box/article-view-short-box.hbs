@@ -1,29 +1,29 @@
-<div class="nw-m-4 md:nw-max-w-lg md:nw-mx-auto nw-rounded-md">
-<div class="nw-w-full">
-  <div class="nw-p-4 nw-rounded-t-md nw-text-white" style="background-color: #2F3642;">
-    <div id="headerSection" class="nw-flex nw-justify-between nw-place-items-center">
-      <div class="nw-mr-4 nw-uppercase nw-text-base nw-font-bold">
-        DER TAG KOMPAKT
+<div class="nw-m-4  nw-rounded-md">
+  <div class="nw-w-full">
+    <div class="nw-p-4 nw-rounded-t-md nw-text-white" style="background-color: #2F3642;">
+      <div id="headerSection" class="nw-flex nw-justify-between nw-place-items-center">
+        <div class="nw-mr-4 nw-uppercase nw-text-base nw-font-bold">
+          DER TAG KOMPAKT
+        </div>
+        <div class="nw-flex-none md:nw-mr-0">
+          <button
+            class="nw-btn-icon-primary-sm " onclick="toggleContent();">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="nw-mr-1 nw-w-4 nw-h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+            </svg>
+
+            Anhören
+          </button>
+        </div>
       </div>
-      <div class="nw-flex-none md:nw-mr-0">
-        <button
-          class="nw-btn-icon-primary-sm " onclick="toggleContent();">
 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke-width="1.5"
-               stroke="currentColor" class="nw-mr-1 nw-w-4 nw-h-4">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
-          </svg>
-
-          Anhören
-        </button>
-      </div>
-    </div>
-
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/media-chrome@3/+esm"
-    ></script>
+      <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/media-chrome@3/+esm"
+      ></script>
 
       <media-controller audio id="audioSection"   class="nw-hidden nw-rounded-md"  style="
         --media-background-color: black;
@@ -33,7 +33,7 @@
           --media-range-bar-color: rgb(79 70 229);
       ">
         <audio
-       class=""
+          class=""
           slot="media"
           src="https://stream.mux.com/O4h5z00885HEucNNa1rV02wZapcGp01FXXoJd35AHmGX7g/audio.m4a"
           crossorigin
@@ -46,84 +46,84 @@
           <media-duration-display class="nw-text-gray-300 nw-font-medium nw-px-2 "></media-duration-display>
         </media-control-bar>
       </media-controller>
-  </div>
-  <!-- 2 Section-->
-  <div class="nw-bg-white nw-px-4 nw-pt-4 nw-border nw-border-gray-100 nw-rounded-b-md">
-    <div id="mehrSection">
-      <div class="nw-text-base nw-pb-5">
-        <p class="nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
-        <p class="nw-text-gray-400 nw-text-limit-2 ">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
-          In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+    </div>
+    <!-- 2 Section-->
+    <div class="nw-bg-white nw-px-4 nw-pt-4 nw-border nw-border-gray-100 nw-rounded-b-md">
+      <div id="mehrSection">
+        <div class="nw-text-base nw-pb-5">
+          <p class="nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+          <p class="nw-text-gray-400 nw-text-limit-2 ">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
+            In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+        </div>
+        <div class="nw--mx-4 ">
+          <button id="" class="toggleButton nw-border-b nw-rounded-md nw-w-full nw-py-2 nw-flex nw-items-center nw-justify-center" style="background-color: #F2F5F9;"
+                  onclick="toggleContent();">
+            <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Mehr lesen</span>
+            <svg id="toggleIcon" width="18" height="18" data-slot="icon" fill="none" stroke-width="2.5"
+                 stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                 class="nw-text-red-0 nw-transition-transform nw-duration-300">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="nw--mx-4 ">
-       <button id="" class="toggleButton nw-border-b nw-rounded-md nw-w-full nw-py-2 nw-flex nw-items-center nw-justify-center" style="background-color: #F2F5F9;"
-                onclick="toggleContent();">
-          <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Mehr lesen</span>
-          <svg id="toggleIcon" width="18" height="18" data-slot="icon" fill="none" stroke-width="2.5"
-               stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-               class="nw-text-red-0 nw-transition-transform nw-duration-300">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-          </svg>
-        </button>
+
+      <!-- hidden-Section-->
+      <div id="hiddenSection" class="nw-hidden nw-pt-3">
+        <div class="nw-mb-6">
+          <div class="nw-pb-5">
+            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+            <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
+              In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+          </div>
+          <div>
+            <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
+              <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+            </a>
+          </div>
+        </div>
+        <div class="nw-mb-6">
+          <div class="nw-pb-5">
+            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+            <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für
+              Gesprächsstoff.</p>
+          </div>
+          <div>
+            <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
+              <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+            </a>
+          </div>
+        </div>
+        <div class="nw-mb-6">
+          <div class="nw-pb-5">
+            <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
+            <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
+              In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
+          </div>
+          <div>
+            <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
+              <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
+            </a>
+          </div>
+        </div>
+        <div class="nw-mb-4"> <span class="nw-text-gray-400 nw-text-xs ">27.02.2025, 14:50</span> </div>
+        <!-- -->
+        <div class="nw--mx-4">
+          <button id="" class="toggleButton nw-border-b nw-rounded-md nw-w-full nw-py-2 nw-flex nw-items-center nw-justify-center" style="background-color: #F2F5F9;"
+                  onclick="toggleContent()">
+            <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Weniger anzeigen</span>
+            <svg class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold" width="18" height="18"
+                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                 stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- hidden-Section-->
-    <div id="hiddenSection" class="nw-hidden nw-pt-3">
-      <div class="nw-mb-6">
-        <div class="nw-pb-5">
-          <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
-          <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
-            In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
-        </div>
-        <div>
-          <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
-            <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
-          </a>
-        </div>
-      </div>
-      <div class="nw-mb-6">
-        <div class="nw-pb-5">
-          <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
-          <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für
-            Gesprächsstoff.</p>
-        </div>
-        <div>
-          <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
-            <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
-          </a>
-        </div>
-      </div>
-      <div class="nw-mb-6">
-        <div class="nw-pb-5">
-          <p class="nw-text-md nw-font-bold nw-pb-1" style="color: #2F3642;">Bielefelder Kleinparteien im Wahlkampf</p>
-          <p class="nw-text-base nw-text-gray-400">In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.
-            In Bielefeld treten auch kleinere Parteien an und sorgen für Gesprächsstoff.</p>
-        </div>
-        <div>
-          <a href="#" id="" class="nw-w-full nw-p-2 nw-rounded-md" style="background-color: #F2F5F9;">
-            <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Zum Artikel</span>
-          </a>
-        </div>
-      </div>
-      <div class="nw-mb-4"> <span class="nw-text-gray-400 nw-text-xs ">27.02.2025, 14:50</span> </div>
-      <!-- -->
-      <div class="nw--mx-4">
-        <button id="" class="toggleButton nw-border-b nw-rounded-md nw-w-full nw-py-2 nw-flex nw-items-center nw-justify-center" style="background-color: #F2F5F9;"
-                onclick="toggleContent()">
-          <span class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold">Weniger anzeigen</span>
-          <svg class="nw-mr-1.5 nw-text-sm nw-text-red-0 nw-font-bold" width="18" height="18"
-               xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-               stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-          </svg>
-        </button>
-      </div>
-    </div>
+    <!-- -->
   </div>
-
-  <!-- -->
-</div>
 </div>
 <script>
   function toggleContent() {
