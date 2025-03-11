@@ -1,120 +1,136 @@
-<div class="nw-bg-slate-300 nw-p-4 md:nw-p-8 nw-mb-6 ">
+<div class="nw-bg-slate-300 nw-px-4 nw-pb-6 nw-pt-8 md:nw-p-8 nw-mb-6">
+  <div class="nw-mx-auto" style="max-width: 472px;">
+  <div class="nw-bg-white nw-p-4 nw-pt-6 nw-mb-4 nw-rounded" >
+    <div class="nw-mb-4">
+      <p class="nw-text-lg nw-font-bold"> Anmelden</p>
+    </div>
+    <div class="nw-mb-4 nw-p-4 nw-rounded-m nw-shadow-md" style="background-color: #F2F5F9;">
+      <div class="nw-flex nw-items-top nw-mb-3.5">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+             class="nw-w-6 nw-h-6 nw-mr-1 nw-text-red-0">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+        </svg>
+        <p class="nw-text-base nw-font-bold">Es ist einen Fehler aufgetreten</p>
+      </div>
+      <div class="nw-text-sm nw-font-medium nw-text-slate-300">
+        Das hat leider nicht funktioniert.
+        <br>
+        E-MAul und PAsswort prüfen
+      </div>
+    </div>
     <div>
-        <div class="nw-bg-white nw-py-4 nw-px-4 nw-mb-4 md:nw-max-w-md nw-mx-auto nw-rounded">
-            <div class="nw-mb-4">
-              <p class="nw-text-lg nw-font-bold"> Anmelden</p>
-            </div>
-            <div>
-                <form name="my_newpass" id="my_newpass" class="" role="form" action="" method="post">
-                  <div class="nw-mb-2">
-                    <input required
-                        class="nw-w-full nw-px-2 nw-py-3
+      <form name="" id="" class="" role="form" action="" method="post">
+        <div class="nw-mb-2">
+          <input required
+                 class="nw-w-full nw-p-3
                         nw-mx-auto nw-inline-block
                         nw-border nw-rounded nw-text-base
                         nw-box-border nw-cursor-pointer"
-                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
-                    type="email"
-                    placeholder="E-Mail"
-                    name="my_email"
-                    id="my_email"/>
-                  </div>
-                  <div class="nw-mb-3">
-                      <div class="nw-relative">
-                          <div class="nw-absolute nw-right-2 nw-top-3 nw-cursor-pointer nw-z-999 nw-m-auto">
-                              <div class="nw-relative">
+                 pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                 type="email"
+                 placeholder="E-Mail"
+                 name="my_email"
+                 id="my_email" />
+        </div>
+        <div class="nw-mb-2">
+          <div class="nw-relative">
+            <div class="nw-absolute nw-right-2 nw-top-3 nw-cursor-pointer nw-z-999 nw-m-auto">
+              <div class="nw-relative">
                                 <span id="eye-icon1" class="nw-mr-2" onclick="passwordToggle('my_pass', 'eye-img1');">
-                                    <img id="eye-img1" class="nw-w-5 nw-h-5 nw-overflow-clip-margin-content-box nw-overflow-clip"
-                                         src="/images/eye.svg">
+                                    <img id="eye-img1"
+                                         class="nw-w-6 nw-h-6 nw-overflow-clip-margin-content-box nw-overflow-clip"
+                                         src="https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg">
                                 </span>
-                              </div>
-                          </div>
-                        <input
-                            class="nw-w-full
-                            nw-px-2 nw-py-3
+              </div>
+            </div>
+            <input
+              class="nw-w-full
+                            nw-p-3
                             nw-mx-auto nw-inline-block
                             nw-border nw-rounded
                             nw-text-base nw-box-border
                             nw-cursor-pointer"
-                        maxlength="50"
-                        type="password"
-                        placeholder="Mindestlänge 6 Zeichen"
-                        size="11"
-                        name="my_pass"
-                        id="my_pass" value=""/>
-                      </div>
-                  </div>
-                  <p class="nw-text-right nw-text-xs nw-pb-1
+              maxlength="50"
+              type="password"
+              placeholder="Mindestlänge 6 Zeichen"
+              size="11"
+              name="my_pass"
+              id="my_pass" value="" />
+          </div>
+        </div>
+        <p class="nw-text-right nw-text-xs nw-pb-3
                           nw-text-gray-600 nw-mx-auto">
-                    <a href="" target="_blank"> {{password}} </a>
-                  </p>
-                  <div class="nw-mb-5">
-                    <label class="nw-flex nw-items-center nw-space-x-1">
-                        <input
-                            type="checkbox"
-                            name="checked-demo"
-                            class=" nw-form-tick nw-border
+          <a href="" target="_blank"> Passwort vergessen? </a>
+        </p>
+        <div class="nw-mb-5">
+          <label class="nw-flex nw-items-center nw-space-x-1">
+            <input
+              type="checkbox"
+              name="checked-demo"
+              class=" nw-form-tick nw-border
                             nw-rounded-sm nw-nw-border-gray-200
                             nw-cursor-pointer
                             nw-h-3 nw-w-3 checked:nw-bg-gray-400
-                            focus:outline-none"/>
-                            <span class=" nw-text-gray-600
+                            focus:outline-none" />
+            <span class=" nw-text-gray-600
                                           nw-text-xs">
                               Angemeldet bleiben
                             </span>
-                    </label>
-                  </div>
-
-                  <div>
-                    <button type="button"
-                          class="nw-mb-4 nw-btn-primary nw-bg-red-0 nw-mx-auto">
-                      Aufrufen
-                    </button>
-                  </div>
-                </form>
-            </div>
+          </label>
         </div>
-        <div class="nw-bg-white nw-px-4 nw-py-6 md:nw-max-w-md nw-mx-auto md:nw-shadow-md nw-rounded nw-mb-4">
-          <div class="nw-pb-4">
-            <p class="nw-text-center nw-text-md nw-font-bold">
-                {{caption1}}
-            </p>
-            <p class="nw-text-center nw-text-base
+
+        <div>
+          <button type="button"
+                  class="nw-mb-4 nw-btn-primary nw-bg-red-0 nw-mx-auto">
+            Anmelden
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="nw-bg-white nw-p-6 nw-rounded nw-mb-4">
+    <p class="nw-text-center nw-text-lg nw-font-bold">
+      Noch keinen Zugang?
+    </p>
+    <p class="nw-text-center nw-text-base
                       nw-font-medium nw-pb-3">
-                {{caption2}}
-            </p>
-            <div class="nw-text-center">
-                <a href="#" class="nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit  nw-mx-auto
+      Kostenfrei anmelden und Vorteile sichern
+    </p>
+    <div class="nw-text-center">
+      <a href="#" class="nw-min-w-32 nw-max-w-fit  nw-mx-auto
                           nw-flex nw-items-center nw-justify-center
                           nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
                           nw-border nw-border-gray-600 nw-rounded-md nw-text-md nw-font-bold
                           nw-cursor-pointer nw-py-1.5 nw-px-4 hover:nw-bg-gray-0 focus:nw-bg-gray-100
                           "
-                    onclick="">
-                    {{register}}
-                </a>
-            </div>
-          </div>
-        </div>
-        <div class="nw-p-6 nw-rounded nw-bg-white md:nw-max-w-md nw-mx-auto">
-          <p class="nw-font-bold nw-text-md nw-pb-6">Sie haben Fragen zu Ihrer Anmeldung oder Registrierung?</p>
-          <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-4">
-              <div class="nw-font-medium">
-                  <p class="nw-text-gray-500 nw-uppercase nw-font-bold">KONTAKT</p>
-                  <p>Tel.: <a href="tel:(0521) 555 800" class="nw-cursor-pointer hover:nw-text-gray-500">(0521) 555 800</a>
-                  </p>
-                  <p>E-Mail: <a href="mailto:nwplus@nw.de" class="nw-cursor-pointer hover:nw-text-gray-500 nw-underline">nwplus@nw.de</a>
-                  </p>
-              </div>
-              <div class="nw-font-medium">
-                <p class="nw-text-gray-500 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
-                <p>Mo - Fr: 6 - 10 Uhr <br>
-                  Sa: 6 - 13 Uhr <br>
-                  an Feiertagen: 7 - 13 Uhr<br>
-                  (außer Weihnachten und Ostern)</p>
-              </div>
-          </div>
-        </div>
+         onclick="">
+        Jetzt registrieren
+      </a>
     </div>
+  </div>
+  <div class="nw-px-4 nw-py-6 nw-rounded nw-bg-white">
+    <p class="nw-font-bold nw-text-center nw-text-md nw-pb-6">Sie haben Fragen oder Anmerkungen?</p>
+    <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-6">
+      <div class="nw-font-medium">
+        <p class="nw-text-gray-500 nw-uppercase nw-font-bold">KONTAKT</p>
+        <div class="nw-font-medium nw-text-gray-600 ">
+          <p>Tel.: <a href="tel:(0521) 555 800" class="nw-cursor-pointer">(0521) 555 800</a>
+          </p>
+          <p>E-Mail: <a href="mailto:nwplus@nw.de" class="nw-cursor-pointer">nwplus@nw.de</a>
+          </p>
+        </div>
+      </div>
+      <div class="nw-font-medium">
+        <p class="nw-text-gray-500 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
+        <p class="nw-font-medium nw-text-gray-600">Mo - Fr: 6 - 10 Uhr <br>
+          Sa: 6 - 13 Uhr <br>
+          an Feiertagen: 7 - 13 Uhr<br>
+          (außer Weihnachten und Ostern)</p>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
 
 
@@ -123,12 +139,12 @@
   function passwordToggle(passwordFieldId, eyeIconId) {
     var passwordField = document.getElementById(passwordFieldId);
     var eyeIcon = document.getElementById(eyeIconId);
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-      eyeIcon.src ="https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg";
+    if (passwordField.type === 'password') {
+      passwordField.type = 'text';
+      eyeIcon.src = 'https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg';
     } else {
-      passwordField.type = "password";
-      eyeIcon.src = '/images/eye.svg';
+      passwordField.type = 'password';
+      eyeIcon.src = 'https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye.svg';
     }
   }
 
