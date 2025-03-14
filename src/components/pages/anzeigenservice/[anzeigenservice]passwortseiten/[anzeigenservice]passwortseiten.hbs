@@ -1,73 +1,90 @@
-<div class="nw-bg-slate-300 nw-p-4 md:nw-p-8 nw-mb-6">
-    <div class="nw-bg-white nw-py-4 nw-px-4 md:nw-max-w-md nw-mx-auto nw-rounded">
-        <div class="nw-mb-4">
-            <p class="nw-text-left nw-text-lg nw-font-bold">
-                Passwort zurücksetzen
-            </p>
-        </div>
-        <div>
-            <form name="my_anmeldung" id="my_anmeldung" action="https://www-test2.nw.de/profil"  method="post">
-                <input type="hidden" name="pid" value="7_1">
-                <input type="hidden" name="em_cnt" value="">
-                <input type="hidden" name="ref" value="">
-                <input type="hidden" name="my_user_loyalty_class" id="my_user_loyalty_class" value="">
+<div class="nw-bg-slate-300 nw-p-4 md:nw-p-8 md:nw-pb-10 nw-mb-6">
+  <div class="nw-bg-white nw-p-4 nw-pt-6 nw-rounded nw-mx-auto" style="max-width: 472px;">
+    <div class="nw-mb-4">
+      <p class="nw-text-left nw-text-lg nw-font-bold">
+        Passwort zurücksetzen
+      </p>
+    </div>
+    <div>
+      <form name="my_anmeldung" id="my_anmeldung" action="https://www-test2.nw.de/profil" method="post">
+        <input type="hidden" name="pid" value="7_1">
+        <input type="hidden" name="em_cnt" value="">
+        <input type="hidden" name="ref" value="">
+        <input type="hidden" name="my_user_loyalty_class" id="my_user_loyalty_class" value="">
 
-                <div class="nw-mb-4">
-                    <label class="nw-font-medium
-                                  nw-text-xs nw-uppercase"
-                           for="my_email">
-                      E-Mail Adresse*
-                    </label>
-                    <input required
-                            class="nw-w-full nw-px-2 nw-py-3 nw-mx-auto
+        <div class="nw-mb-4">
+          <label class="nw-font-medium
+                                  nw-text-xs nw-uppercase nw-pb-2"
+                 for="my_email">
+            E-Mail Adresse*
+          </label>
+          <input required
+                 class="nw-w-full nw-p-3 nw-mx-auto
                             nw-inline-block nw-border nw-rounded
                             nw-text-base nw-box-border nw-cursor-pointer"
-                            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
-                            type="email"
-                           placeholder=""
-                           name="my_email"
-                           id="my_email">
-                </div>
-                <div class=" nw-flex nw-flex-col nw-justify-start nw-mb-6 nw-text-base ">
-                    <label class="nw-mb-2 nw-control-label nw-font-bold">
-                        Sicherheitsabfrage
-                    </label>
-                    <div class="nw-flex nw-justify-start nw-items-center">
-                        <div>
-<!--                            <img src="/_em_cms/locals/nw/captcha.php" id="captchaImage" alt="Captcha Image">-->
-                          <p class="nw-font-bold">9&nbsp+&nbsp6 </p>
-                        </div>
-                        <div class="nw-ml-4 nw-w-full">
-                            <label for="captchaAnswer" class="nw-sr-only">Captcha Antwort</label>
-                            <input type="text"
-                                   class="nw-w-full nw-border
+                 pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                 type="email"
+                 placeholder=""
+                 name="my_email"
+                 id="my_email">
+        </div>
+        <!--<div class=" nw-flex nw-flex-col nw-justify-start nw-mb-6  ">
+          <label class="nw-mb-2 nw-control-label nw-font-bold nw-text-base">
+            Sicherheitsabfrage
+          </label>
+          <div class="nw-flex nw-justify-start nw-items-center">
+            <div>
+              &lt;!&ndash;                            <img src="/_em_cms/locals/nw/captcha.php" id="captchaImage" alt="Captcha Image">&ndash;&gt;
+              <p class="nw-font-bold nw-text-lg">9&nbsp+&nbsp6 </p>
+            </div>
+            <div class="nw-ml-4 nw-w-full">
+              <label for="captchaAnswer" class="nw-sr-only">Captcha Antwort</label>
+              <input type="text"
+                     class="nw-w-full nw-border
                                    nw-rounded
                                    nw-px-2 nw-py-3  nw-h-auto
-                                   nw-font-bold nw-text-base
-                                   placeholder:nw-text-xs
-                                   placeholder:nw-font-medium"
-                                  id="captchaAnswer"
-                                   name="check"
-                                   placeholder="Ergebnis Sicherheitsabfrage"
-                                   autocomplete="off">
-                        </div>
-                    </div>
-                </div>
-              <div class="nw-flex nw-flex-col">
-                <button type="button" class=" nw-mb-4 nw-text-center nw-w-full nw-whitespace-nowrap nw-text-white
+                                   nw-text-base
+                                   placeholder:nw-text-base placeholder:nw-text-gray-200
+                                   "
+                     id="captchaAnswer"
+                     name="check"
+                     placeholder="Ergebnis Sicherheitsabfrage"
+                     autocomplete="off">
+            </div>
+          </div>
+        </div>-->
+        <div class="nw-mb-6 clearfix">
+
+          <div class="h-captcha form-control-container" id="h-captcha"
+               data-sitekey="b9c2c8ff-2566-4856-a5e2-85fd51e76b07">
+            <iframe
+              src="https://newassets.hcaptcha.com/captcha/v1/14dbe0f1619b8014e2630bcdde727e7785a80dee/static/hcaptcha.html#frame=checkbox&amp;id=0taglwhor29&amp;host=www-test2.nw.de&amp;sentry=true&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;recaptchacompat=true&amp;custom=false&amp;hl=de&amp;tplinks=on&amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;sitekey=b9c2c8ff-2566-4856-a5e2-85fd51e76b07&amp;theme=light&amp;origin=https%3A%2F%2Fwww-test2.nw.de"
+              tabindex="0" frameborder="0" scrolling="no"
+              allow="private-state-token-issuance 'src'; private-state-token-redemption 'src'"
+              title="Widget mit Kontrollkästchen für die hCaptcha-Sicherheitsabfrage"
+              data-hcaptcha-widget-id="0taglwhor29" data-hcaptcha-response=""
+              style="pointer-events: auto; background-color: rgba(255, 255, 255, 0); width: 303px; height: 78px; overflow: hidden;"></iframe>
+            <textarea id="g-recaptcha-response-0taglwhor29" name="g-recaptcha-response"
+                      style="display: none;"></textarea><textarea id="h-captcha-response-0taglwhor29"
+                                                                  name="h-captcha-response"
+                                                                  style="display: none;"></textarea></div>
+
+        </div>
+        <div class="nw-flex nw-flex-col">
+          <button type="button" class=" nw-mb-3 nw-text-center nw-w-full nw-whitespace-nowrap nw-text-white
                 nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold
                 nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
                    disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed " onclick="mydaten_check();">Absenden
-                </button>
-                <a href="https://www-test2.nw.de/profil?pid=1" class="nw-text-center nw-w-full nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
+          </button>
+          <a href="https://www-test2.nw.de/profil?pid=1" class="nw-text-center nw-w-full nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
                 nw-border nw-border-gray-600 nw-rounded-md nw-text-base nw-font-bold
               nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-gray-200 focus:nw-transition-all
                   disabled:nw-bg-white disabled:nw-text-gray-200 disabled:nw-border-gray-200 disabled:nw-cursor-not-allowed">
-                  zurück zur Anmeldung
-                </a>
-              </div>
-                <input type="submit" class="nw-hidden">
-            </form>
+            zurück zur Anmeldung
+          </a>
         </div>
+        <input type="submit" class="nw-hidden">
+      </form>
     </div>
+  </div>
 </div>
