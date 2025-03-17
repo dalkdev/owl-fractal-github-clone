@@ -1,135 +1,140 @@
 <div class="nw-bg-slate-300 nw-px-4 nw-pb-6 nw-pt-8 md:nw-p-8 nw-mb-6">
   <div class="nw-mx-auto" style="max-width: 472px;">
-  <div class="nw-bg-white nw-p-4 nw-pt-6 nw-mb-4 nw-rounded" >
-    <div class="nw-mb-4">
-      <p class="nw-text-lg nw-font-bold"> Anmelden</p>
-    </div>
-    <div class="nw-mb-4 nw-p-4 nw-rounded-m nw-shadow-md" style="background-color: #F2F5F9;">
-      <div class="nw-flex nw-items-top nw-mb-3.5">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-             class="nw-w-5 nw-h-5 nw-mr-2 nw-text-red-0">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-        </svg>
-        <p class="nw-text-base nw-font-bold">Es ist einen Fehler aufgetreten</p>
+    <div class="nw-bg-white nw-p-4 nw-pt-6 nw-mb-4 nw-rounded" >
+      <div class="nw-mb-4">
+        <p class="nw-text-xl nw-font-bold"> Anmelden</p>
       </div>
-      <div class="nw-text-sm nw-font-medium nw-text-slate-300">
-        Das hat leider nicht funktioniert.
-        <br>
-        E-Mail und Passwort prüfen
-      </div>
-    </div>
-    <div>
-      <form name="" id="" class="" role="form" action="" method="post">
-        <div class="nw-mb-2">
-          <input required
-                 class="nw-w-full nw-p-3
-                        nw-mx-auto nw-inline-block
-                        nw-border nw-rounded nw-text-base
-                        nw-box-border nw-cursor-pointer"
-                 pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
-                 type="email"
-                 placeholder="E-Mail"
-                 name="my_email"
-                 id="my_email" />
+      <div class="nw-mb-4 nw-p-4 nw-rounded-md nw-shadow-md" style="background-color: #F2F5F9;">
+        <div class="nw-flex nw-items-top nw-mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+               class="nw-w-6 nw-h-6 nw-mr-2 nw-text-red-0">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+          </svg>
+          <p class="nw-text-base nw-font-bold">Es ist einen Fehler aufgetreten</p>
         </div>
-        <div class="nw-mb-2">
-          <div class="nw-relative">
-            <div class="nw-absolute nw-right-2 nw-top-3 nw-cursor-pointer nw-z-999 nw-m-auto">
-              <div class="nw-relative">
+        <div class="nw-text-sm nw-font-medium nw-text-slate-300">
+          Das hat leider nicht funktioniert.
+          E-Mail und Passwort prüfen
+        </div>
+      </div>
+      <div>
+        <form name="" id="" class="" role="form" action="" method="post">
+          <div class="nw-mb-2">
+            <input required
+                   class="nw-w-full nw-p-3
+                        nw-mx-auto nw-inline-block
+                        nw-border nw-rounded nw-text-sm
+                        nw-box-border nw-cursor-pointer"
+                   pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                   type="email"
+                   placeholder="E-Mail"
+                   name="my_email"
+                   id="my_email" />
+          </div>
+          <div class="nw-mb-2">
+            <div class="nw-relative">
+              <div class="nw-absolute nw-right-2 nw-top-3 nw-cursor-pointer nw-z-999 nw-m-auto">
+                <div class="nw-relative">
                                 <span id="eye-icon1" class="nw-mr-2" onclick="passwordToggle('my_pass', 'eye-img1');">
                                     <img id="eye-img1"
                                          class="nw-w-6 nw-h-6 nw-overflow-clip-margin-content-box nw-overflow-clip"
                                          src="https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg">
                                 </span>
+                </div>
               </div>
-            </div>
-            <input
-              class="nw-w-full
+              <input
+                class="nw-w-full
                             nw-p-3
                             nw-mx-auto nw-inline-block
                             nw-border nw-rounded
-                            nw-text-base nw-box-border
+                            nw-text-sm nw-box-border
                             nw-cursor-pointer"
-              maxlength="50"
-              type="password"
-              placeholder="Mindestlänge 6 Zeichen"
-              size="11"
-              name="my_pass"
-              id="my_pass" value="" />
+                maxlength="50"
+                type="password"
+                placeholder="Mindestlänge 6 Zeichen"
+                size="11"
+                name="my_pass"
+                id="my_pass" value="" />
+            </div>
           </div>
-        </div>
-        <p class="nw-text-right nw-text-xs nw-pb-3
+          <p class="nw-text-right nw-text-xs nw-pb-3
                           nw-text-gray-600 nw-mx-auto">
-          <a href="" target="_blank"> Passwort vergessen? </a>
-        </p>
-        <div class="nw-mb-5">
-          <label class="nw-flex nw-items-center nw-space-x-1">
-            <input
-              type="checkbox"
-              name="checked-demo"
-              class=" nw-form-tick nw-border
+            <a href="" target="_blank"> Passwort vergessen? </a>
+          </p>
+          <div class="nw-mb-5">
+            <label class="nw-flex nw-items-center nw-space-x-1">
+              <input
+                type="checkbox"
+                name="checked-demo"
+                class=" nw-form-tick nw-border
                             nw-rounded-sm nw-nw-border-gray-200
                             nw-cursor-pointer
                             nw-h-3 nw-w-3 checked:nw-bg-gray-400
                             focus:outline-none" />
-            <span class=" nw-text-gray-600
+              <span class=" nw-text-gray-600
                                           nw-text-xs">
                               Angemeldet bleiben
                             </span>
-          </label>
-        </div>
+            </label>
+          </div>
 
-        <div>
-          <button type="button"
-                  class="nw-mb-4 nw-btn-primary nw-bg-red-0 nw-mx-auto">
-            Anmelden
-          </button>
-        </div>
-      </form>
+          <div>
+            <button type="button"
+                    class="nw-mb-4 nw-btn-primary nw-bg-red-0 nw-mx-auto">
+              Anmelden
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-  <div class="nw-bg-white nw-p-6 nw-rounded nw-mb-4">
-    <p class="nw-text-center nw-text-lg nw-font-bold">
-      Noch keinen Zugang?
-    </p>
-    <p class="nw-text-center nw-text-base
+    <div class="nw-bg-white nw-p-6 nw-rounded nw-mb-4">
+      <p class="nw-text-center nw-text-lg nw-font-bold">
+        Noch keinen Zugang?
+      </p>
+      <p class="nw-text-center nw-text-base
                       nw-font-medium nw-pb-3">
-      Kostenfrei anmelden und Vorteile sichern
-    </p>
-    <div class="nw-text-center">
-      <a href="#" class="nw-min-w-32 nw-max-w-fit  nw-mx-auto
-                          nw-flex nw-items-center nw-justify-center
-                          nw-text-gray-600 nw-whitespace-nowrap nw-bg-white
-                          nw-border nw-border-gray-600 nw-rounded-md nw-text-base nw-font-bold
-                          nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-gray-0 focus:nw-bg-gray-100
+        Kostenfrei anmelden und Vorteile sichern
+      </p>
+      <div class="nw-text-center">
+        <a href="#" class="nw-btn-outline
                           "
-         onclick="">
-        Jetzt registrieren
-      </a>
+           onclick="">
+          Jetzt registrieren
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="nw-px-4 nw-py-6 nw-rounded nw-bg-white">
-    <p class="nw-font-bold nw-text-center nw-text-md nw-pb-6">Sie haben Fragen oder Anmerkungen?</p>
-    <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-6">
-      <div class="nw-font-medium">
-        <p class="nw-text-gray-500 nw-uppercase nw-font-bold">KONTAKT</p>
-        <div class="nw-font-medium nw-text-gray-600 ">
-          <p>Tel.: <a href="tel:(0521) 555 800" class="nw-cursor-pointer">(0521) 555 800</a>
-          </p>
-          <p>E-Mail: <a href="mailto:nwplus@nw.de" class="nw-cursor-pointer">nwplus@nw.de</a>
-          </p>
+    <div class="nw-px-4 nw-py-6 nw-rounded nw-bg-white">
+      <p class="nw-font-bold nw-text-center nw-text-md nw-pb-6">Sie haben Fragen oder Anmerkungen?</p>
+      <div class="nw-text-sm nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-gap-6">
+        <div class="nw-font-medium nw-flex nw-flex-col nw-items-center">
+          <div class="nw-mb-4">
+            <svg class="nw-w-8 nw-h-8" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"></path>
+            </svg>
+          </div>
+          <p class="nw-text-gray-500 nw-uppercase nw-font-bold">KONTAKT</p>
+          <div class="nw-font-medium nw-text-gray-600 ">
+            <p>Tel.: <a href="tel:(0521) 555 800" class="nw-cursor-pointer">(0521) 555 800</a>
+            </p>
+            <p>E-Mail: <a href="mailto:nwplus@nw.de" class="nw-cursor-pointer">nwplus@nw.de</a>
+            </p>
+          </div>
+        </div>
+        <div class="nw-font-medium nw-flex nw-flex-col nw-items-center">
+          <div class="nw-mb-4">
+            <svg class="nw-w-8 nw-h-8" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path>
+            </svg>
+          </div>
+          <p class="nw-text-gray-500 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
+          <p class="nw-font-medium nw-text-gray-600 nw-text-center">Mo - Fr: 6 - 10 Uhr <br>
+            Sa: 6 - 13 Uhr <br>
+            an Feiertagen: 7 - 13 Uhr<br>
+            (außer Weihnachten und Ostern)</p>
         </div>
       </div>
-      <div class="nw-font-medium">
-        <p class="nw-text-gray-500 nw-uppercase nw-font-bold">SERVICEZEITEN</p>
-        <p class="nw-font-medium nw-text-gray-600">Mo - Fr: 6 - 10 Uhr <br>
-          Sa: 6 - 13 Uhr <br>
-          an Feiertagen: 7 - 13 Uhr<br>
-          (außer Weihnachten und Ostern)</p>
-      </div>
     </div>
-  </div>
   </div>
 </div>
 
