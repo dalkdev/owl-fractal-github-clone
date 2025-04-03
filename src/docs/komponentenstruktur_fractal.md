@@ -15,6 +15,7 @@ Wir verwenden **[Tailwind CSS](https://tailwindcss.com/)** – alle Gestaltung e
 - Schriftgrößen und Typografie (`text-sm`, `font-bold`)
 - Abstände, Raster, Layout (`p-4`, `grid`, `gap-6`)
 - Responsive Verhalten (`sm:`, `md:`, `lg:`)
+- Media (`Icons`, `NW+ Lable`)
 
 ### Beispiel:
 > „Wie sieht unser Standardabstand aus?“  
@@ -27,12 +28,11 @@ Wir verwenden **[Tailwind CSS](https://tailwindcss.com/)** – alle Gestaltung e
 Die **kleinsten UI-Bausteine**, die für sich alleine funktionieren – z. B. Buttons, Icons oder Links.
 
 ### Hier gehört rein:
-- `Button`
-- `Input-Feld`
-- `Icon`
-- `Label`
-- `Link`
-- `Überschrift`
+- `Buttons`
+- `Inputfields`
+- `Labels`
+- `Links`
+- `Überschriften`
 
 ### Beispiel:
 > „Ich brauche einen einheitlichen, klickbaren Button.“
@@ -45,7 +45,6 @@ Die **kleinsten UI-Bausteine**, die für sich alleine funktionieren – z. B. 
 
 ### Hier gehört rein:
 - Suchfeld (Input + Button)
-- Artikel-Teaser
 - Bild mit Beschriftung
 - Formularblock
 
@@ -61,6 +60,7 @@ Die **kleinsten UI-Bausteine**, die für sich alleine funktionieren – z. B. 
 ### Hier gehört rein:
 - Header (Logo + Navigation + Suche)
 - Footer
+- Artikel-Teaser
 - Artikelansicht
 - Kommentarsektion
 - Sidebar
@@ -70,7 +70,7 @@ Die **kleinsten UI-Bausteine**, die für sich alleine funktionieren – z. B. 
 
 ---
 
-## 🧩 04-Module
+## 🧩 04-Module?
 
 **Redaktionelle oder funktionale Bausteine**, die an bestimmten Stellen eingefügt werden – oft gesteuert durch das CMS.
 
