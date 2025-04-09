@@ -109,9 +109,8 @@ h2.druck-text {
 
 .article-detail-entry-content ul,
 .article-detail-entry-content ol {
-  @apply nw-w-full md:nw-w-5/6 nw-ml-5 nw-mb-8 nw-pb-4;
+  @apply nw-w-full md:nw-w-5/6 nw-ml-5;
   // von app-patch.css
-  padding-bottom: 1rem;
   max-width: 83.33333333%;
 
   li {
