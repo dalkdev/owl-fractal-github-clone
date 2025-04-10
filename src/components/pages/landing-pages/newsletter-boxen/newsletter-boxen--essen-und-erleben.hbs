@@ -1,20 +1,48 @@
+<style>
+  .nw-newsletter-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(169 171 173 );
+    border: 1px solid rgb(169 171 173 );
+    width: 3.75rem;
+    height: 3.75rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.8' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75'/%3E%3C/svg%3E");
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: 640px) {
+    .nw-newsletter-icon{
+      width: 5.625rem;
+      height: 5.625rem;
+      background-size: 3rem;
+    }
+  }
+</style>
 
 <div class="nw-p-4 sm:nw-p-6 nw-bg-light-0 nw-border nw-border-gray-100 nw-rounded-md" style="max-width: 656px;">
-  <div class=" nw-flex nw-flex-row nw-justify-between nw-gap-4" >
+  <div class=" nw-flex nw-flex-row nw-justify-between nw-gap-4">
     <div>
       <p class="nw-font-bold nw-text-base nw-text-gray-400 nw-pb-0.5"> Newsletter</p>
       <p class="nw-font-bold nw-text-lg nw-text-sky-300 nw-pb-2"> Essen & Erleben</p>
-      <p class="nw-font-medium nw-text-sm sm:nw-text-base nw-pb-4 nw-text-gray-500">Jede Woche aktuelle Highlights aus Ihrer Region: die besten Restaurants, Cafés, Events und Trends. </p>
+      <p class="nw-font-medium nw-text-sm sm:nw-text-base nw-pb-4 nw-text-gray-500">Jede Woche aktuelle Highlights aus
+        Ihrer Region: die besten Restaurants, Cafés, Events und Trends. </p>
       <button id="showNewsletterBtn" class=" nw-text-center
       nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-sm nw-font-bold
   nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-bg-red-100 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
-  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed">Jetzt anmelden</button>
-    </div>
-    <div class="nw-flex-shrink-0">
-        <img src="/images/nl-icons/icon-nl.png" alt="Icon" class="nw-w-[56px] nw-h-[56px] sm:nw-w-[84px] sm:nw-h-[84px] ">
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed">Jetzt anmelden
+      </button>
     </div>
 
+    <div class="nw-pl-8 nw-block">
+      <div class="nw-newsletter-icon">
+      </div>
+    </div>
   </div>
   <!-- Hidden Div -->
   <div id="newsletterDiv" class="sm:nw-mt-4 " style="display: none;">
@@ -61,7 +89,8 @@
       </div>
       <div id="formMessage" class="nw-my-2 nw-font-medium nw-text-xs sm:nw-text-sm"></div>
       <div class="nw-text-gray-300 nw-font-medium nw-text-xs">
-        Mit meiner Anmeldung zum Newsletter stimme ich der  <a href="#" class="nw-text-red-0 nw-underline"> Werbevereinbarung </a> zu. Weitere Informationen finden Sie in der
+        Mit meiner Anmeldung zum Newsletter stimme ich der <a href="#" class="nw-text-red-0 nw-underline">
+        Werbevereinbarung </a> zu. Weitere Informationen finden Sie in der
         <a href="#" class="nw-underline">Datenschutzerklärung</a>.
 
         zu.
@@ -74,7 +103,7 @@
   const showNewsletterBtn = document.getElementById('showNewsletterBtn');
   const newsletterDiv = document.getElementById('newsletterDiv');
 
-  showNewsletterBtn.addEventListener('click', function () {
+  showNewsletterBtn.addEventListener('click', function() {
     newsletterDiv.style.display = 'block';
     showNewsletterBtn.style.display = 'none';
   });
