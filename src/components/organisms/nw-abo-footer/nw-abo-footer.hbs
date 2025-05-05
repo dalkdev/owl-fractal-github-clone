@@ -1,0 +1,98 @@
+<div id="abo-footer" class="nw-fixed nw-bottom-0 nw-w-full dark:nw-bg-gray-800 nw-border-t nw-border-gray-200
+dark:nw-border-gray-600 nw-shadow-md nw-z-50" style="background-color: rgb(239 246 255);">
+  <!-- Toggle-Knopf oben mittig mit halbrundem Design -->
+  <div class="nw-absolute nw-top-0 nw-left-1/2 nw-transform nw--translate-x-1/2 nw--translate-y-1/2 nw-z-10">
+    <button aria-expanded="false" aria-controls="footerExpanded" onclick="toggleFooter()" id="toggleArrow"
+            class="hover:nw-bg-blue-100 nw-border nw-border-gray-200 nw-shadow nw-w-10 nw-h-6 nw-rounded-t-full
+            nw-flex nw-items-center nw-justify-center" style="background-color: rgb(239 246 255);">
+      <svg xmlns="http://www.w3.org/2000/svg" class="nw-h-4 nw-w-4 nw-text-gray-600 nw-transition-transform nw-duration-300"
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Eingeklappt -->
+  <div id="footerCollapsed" class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-between nw-p-4 nw-border-t
+   nw-border-gray-100 dark:nw-border-gray-700 nw-gap-4">
+    <div class="nw-mt-4 nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-space-y-1 sm:nw-space-y-0 sm:nw-space-x-2 nw-text-sm nw-font-medium
+    nw-text-center sm:nw-text-left">
+      <span class="nw-bg-red-700 nw-text-white nw-text-sm nw-px-3 nw-py-1 nw-rounded nw-font-bold">NW+</span>
+      <span class="nw-text-base sm:nw-text-lg">Statt <span class="nw-line-through nw-text-gray-500">14,90€</span> jetzt <span
+        class="nw-text-black dark:nw-text-gray-100 nw-font-bold">1€ pro Woche</span></span>
+    </div>
+    <div class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-center sm:nw-justify-end nw-gap-2 nw-text-center sm:nw-text-right">
+      <button onclick="toggleFooter()" class="nw-bg-green-700 hover:nw-bg-green-800 nw-text-white nw-text-sm nw-font-bold nw-px-4 nw-py-1.5 nw-rounded">
+        Jetzt sichern →
+      </button>
+      <!-- Desktop -->
+      <button onclick="closeFooter()" class="nw-hidden sm:nw-block nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
+        ✕
+      </button>
+      <!-- Mobile -->
+      <button onclick="closeFooter()"
+              class="nw-absolute nw-top-2 nw-right-4 sm:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black">
+        ✕
+      </button>
+    </div>
+  </div>
+
+  <!-- Ausgeklappt -->
+  <div id="footerExpanded" class="nw-hidden nw-relative nw-flex nw-flex-col nw-gap-4 nw-pb-4 nw-pt-6 nw-bg-blue-50
+  nw-border-t nw-border-gray-100
+  sm:nw-flex-row sm:nw-items-center sm:nw-justify-between" style="background-color: rgb(239 246 255);">
+
+    <!-- Mobile Close Button oben rechts -->
+    <button onclick="closeFooter()"
+            class="nw-absolute nw-top-2 nw-right-4 md:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black ">
+      ✕
+    </button>
+
+    <div class="nw-flex nw-flex-col nw-gap-2 nw-ml-4">
+      <div class="nw-flex nw-items-center nw-space-x-2 nw-text-sm nw-font-medium">
+        <span class="nw-bg-red-700 nw-text-white nw-text-sm nw-px-3 nw-py-1 nw-rounded nw-font-bold">NW+</span>
+        <span class="nw-text-base sm:nw-text-lg">Statt <span class="nw-line-through nw-text-gray-500">14,90€</span> jetzt
+        <span class="nw-text-black nw-font-bold">1€ pro Woche</span></span>
+      </div>
+      <div class="nw-flex nw-flex-col nw-gap-3">
+        <p class="nw-text-sm nw-text-gray-800 dark:nw-text-gray-200">Ein Webabo bietet Zugriff auf alle Artikel.<br class="nw-block sm:nw-hidden">
+          Per Mail informiert – jederzeit kündbar.</p>
+      </div>
+    </div>
+
+    <div class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-center sm:nw-justify-end nw-gap-2 nw-text-center sm:nw-text-right nw-mr-4">
+      <button onclick="toggleFooter()"
+              class="nw-bg-green-700 hover:nw-bg-green-800 nw-text-white nw-text-sm nw-font-bold nw-px-4 nw-py-1.5 nw-rounded">
+        Jetzt sichern →
+      </button>
+      <!-- Desktop Close Button bleibt wie gehabt -->
+      <button onclick="closeFooter()"
+              class="nw-hidden  sm:nw-inline nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
+        ✕
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
+  <script>
+    function toggleFooter() {
+    const collapsed = document.getElementById('footerCollapsed');
+    const expanded = document.getElementById('footerExpanded');
+    const arrow = document.querySelector('#toggleArrow svg');
+    const toggleButton = document.getElementById('toggleArrow');
+
+    collapsed.classList.toggle('nw-hidden');
+    expanded.classList.toggle('nw-hidden');
+
+    arrow.classList.toggle('nw-rotate-180');
+
+    const isExpanded = expanded.classList.contains('nw-hidden') === false;
+    toggleButton.setAttribute('aria-expanded', isExpanded);
+  }
+
+    function closeFooter() {
+    document.getElementById('abo-footer').classList.add('nw-hidden');
+  }
+</script>
