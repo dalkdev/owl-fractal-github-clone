@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/css/app.css?1738834922"
+        rel="stylesheet">
+  <title>Abonnieren</title>
+  <style>
+      .nwplus-on-border {
+          position: absolute;
+          top: -23px;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+      body {
+          background-color: #ffffff !important;
+      }
+  </style>
+
+</head>
+<body>
+
+
+<div class="nw-pb-8 nw-bg-white paywall-overlay-rebrush-2023 nw-mt-8 nw-relative" style="max-width: 540px">
+  <div class="nw-bg-white nw-px-6 nw-pt-10 nw-pb-6 nw-border-2 nw-rounded-md nw-max-w-full nw-mx-auto">
+    <div class="nwplus-on-border nw-p-2 nw-bg-white">
+      <img class="" src="https://www.nw.de/_apps/nw/plus.svg" alt="">
+    </div>
+    <div class="nw-flex nw-items-center nw-flex-col">
+      <div>
+        <p style="font-size:24px;padding-bottom: 0"
+           class="nw-text-2xl nw-text-center nw-font-bold nw-text-black nw-pb-0">Jetzt weiterlesen mit NW+</p>
+      </div>
+      <div style="border-top-left-radius:0;border-top-right-radius:0"
+           class="nw-text-gray-400 nw-text-center nw-text-xs md:nw-text-md">
+        <p style="font-size:1em!important" class="nw-py-2 nw-text-center">
+          Sie haben bereits ein Digital-Abo?
+          <span style="float:none;text-decoration:underline!important; color:#737373; "
+                class="nw-cursor-pointer nw-font-bold nw-float-right hover:nw-text-white toLogin nw-underline" data-action="login">
+            Zum Login
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class=" abo-container nw-bg-light-0 nw-rounded-md nw-py-8 nw-px-6 nw-pb-2 nw-mb-4 " onclick="changeAbo('yearly')">
+      <div class="nw-flex nw-justify-between nw-items-center nw-mb-1">
+        <div>
+          <img class="" style="width:45px" src="https://www.nw.de/_apps/nw/plus.svg" alt="">
+        </div>
+        <div>
+          <div class="nw-bg-black nw-py-2 nw-px-4 nw-rounded-lg">
+            <p style="padding-bottom: 0!important;font-size:0.75rem!important;" class="nw-text-white nw-text-xs nw-mb-0 nw-font-bold">Pokal-Deal ⚽</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="nw-flex nw-justify-between nw-mb-2">
+        <div class="nw-flex nw-flex-col nw-gap-4 nw-items-center nw-mt-2">
+          <label class="nw-flex nw-items-center">
+            <input type="radio" name="aboOverlay" value="yearly" checked=""  onclick="changeAbo('yearly')">
+            <span class="nw-font-bold nw-my-1 nw-block nw-text-lg nw-text-gray-600 nw-pl-2">19,05 € für 6 Monate</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="" data-target="yearly">
+        <div class="nw-text-left nw-w-full">
+          <div class="nw-my-2">
+            <ul
+              style="max-width:100%!important;width:100%!important;margin: 0!important;list-style-type:none!important;"
+              class="nw-list-none nw-ml-0">
+              <li style="font-size: 1rem;!important;line-height: 1.5rem!important;width:100%!important;"
+                  class="nw-flex nw-items-start nw-text-sm sm:nw-text-sm nw-gap-2 nw-text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                     stroke="#406b4d" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                für alle, die mehr wissen wollen
+              </li>
+              <li style="font-size: 1rem;!important;line-height: 1.5rem!important;width:100%!important;"
+                  class="nw-flex nw-items-start nw-text-sm sm:nw-text-sm nw-gap-2 nw-text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                     stroke="#406b4d" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                alle News zum Pokalfinale
+              </li>
+              <li style="font-size: 1rem;!important;line-height: 1.5rem!important;width:100%!important;"
+                  class="nw-flex nw-items-start nw-text-sm sm:nw-text-sm nw-gap-2 nw-text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                     stroke="#406b4d" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                nur jetzt 70 € sparen!
+              </li>
+            </ul>
+          </div>
+
+          <div class="buttonWrap nw-mb-4 nw-flex nw-flex-col nw-items-center nw-justify-center nw-mt-4 nw-mb-3">
+            <button class="funnel-entry nw-btn-icon-primary nw-rounded-3xl" data-upscore-conversion="1"  style=" background-color: #005C9E !important; "
+                    onclick="handleButtonClick2(event);_paq.push(['trackEvent', 'overlay', 'click', 'SW12838', '24046209']);_paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'SW12838\', \'Stepname\': \'Overlay Klick\', \'cmsId\': \'24046209\'}', '1']);"
+                    data-event-value="paywall-overlay-click" data-label="Artikel-Overlay" data-product="SW12838"
+                    data-price="19,05 € für 6 Monate" data-action="subscribe" data-checkout-form-id="checkoutjumpyearly" >
+              <svg id="spinner1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                   stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path>
+              </svg>
+              <span id="loadingText1">Pokal sichern</span>
+            </button>
+          </div>
+          <div class="nw-w-full nw-max-w-md nw-mx-auto nw-pb-4 ">
+            <!-- Überschrift -->
+            <div id="toggleButton" class=" nw-cursor-pointer nw-w-full nw-py-2 nw-rounded nw-flex nw-items-center nw-justify-center"
+                 onclick="toggleInfoyearly()">
+              <span style="font-size:14px" class="nw-mr-1">Mehr Informationen</span>
+              <svg id="icon-yearly" width="20" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor"
+                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                   class="nw-transition-transform nw-duration-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+              </svg>
+            </div>
+
+            <!-- Versteckbarer Bereich -->
+            <div id="infoSection-yearly" class="nw-hidden nw-mt-1 nw-text-sm nw-text-gray-700">
+              <p style="font-size:12px;line-height: 1.25rem;" class="nw-text-xs">
+                Ab dem 7. Monat nutzen Sie das Angebot zum gültigen Bezugspreis (derzeit monatlich 14,90 €) automatisch weiter. Sie können dann dieses Angebot jederzeit bequem kündigen. </p></div>
+          </div>
+          <!-- <form id="checkoutjump" action="https://shop.nw.de/checkout/addArticle" method="post">
+             <input type="hidden" name="sAdd" value="SW12773">
+             <input type="hidden" name="sTargetAction" value="confirm">
+             <input type="hidden" name="sQuantity" value="1">
+             <input id="return-url" type="hidden" name="return" value="{{ shop_return_url }">
+             <input id="cmsId" type="hidden" name="cmsId" value="{{ shop_cms_id }}">
+           </form>
+           <form id="checkoutjumpyearly" action="https://shop.nw.de/checkout/addArticle" method="post">
+             <input type="hidden" name="sAdd" value="SW12777">
+             <input type="hidden" name="sTargetAction" value="confirm">
+             <input type="hidden" name="sQuantity" value="1">
+             <input id="return-url" type="hidden" name="return" value="{{ shop_return_url }}">
+             <input id="cmsId" type="hidden" name="cmsId" value="{{ shop_cms_id }}">
+           </form>-->
+
+          <script>
+            function toggleInfoyearly() {
+              const infoSection = document.getElementById('infoSection-yearly');
+              const icon = document.getElementById('icon-yearly');
+
+              // Toggle the hidden class for the info section
+              infoSection.classList.toggle('nw-hidden');
+
+              // Add or remove the rotate class to rotate the arrow
+              if (infoSection.classList.contains('nw-hidden')) {
+                icon.classList.remove('nw-rotate-180');
+              } else {
+                icon.classList.add('nw-rotate-180');
+              }
+            }
+          </script>
+
+          <style>
+              .nw-rotate-180 {
+                  transform: rotate(180deg);
+              }
+
+              .nw-transition-transform {
+                  transition: transform 0.3s ease-in-out;
+              }
+          </style>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="abo-container  nw-rounded-md nw-py-8 nw-px-6 nw-pb-2"
+         onclick="changeAbo('weekly')">
+      <div>
+        <img class="" style="width:45px" src="https://www.nw.de/_apps/nw/plus.svg" alt="">
+      </div>
+      <div class="nw-flex nw-justify-between nw-mb-2">
+        <div class="nw-flex nw-flex-col nw-gap-4 nw-items-center nw-mt-2">
+          <label class="nw-flex nw-items-center">
+            <input type="radio" name="aboOverlay" value="weekly" onclick="changeAbo('weekly')">
+            <span class="nw-font-bold nw-my-1 nw-block nw-text-lg nw-text-gray-600 nw-pl-2">1 € pro Woche</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="nw-hidden"  data-target="weekly">
+        <div class="nw-text-left nw-w-full">
+          <div class="nw-my-2">
+            <ul
+              style="max-width:100%!important;width:100%!important;margin: 0!important;list-style-type:none!important;"
+              class="nw-list-none nw-ml-0">
+              <li style="font-size: 1rem;!important;line-height: 1.5rem!important;width:100%!important;"
+                  class="nw-flex nw-items-start nw-text-sm sm:nw-text-sm nw-gap-2 nw-text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                     stroke="#406b4d" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                flexibel monatlich kündbar
+              </li>
+              <li style="font-size: 1rem;!important;line-height: 1.5rem!important;width:100%!important;"
+                  class="nw-flex nw-items-start nw-text-sm sm:nw-text-sm nw-gap-2 nw-text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                     stroke="#406b4d" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                immer aktuell – in Web und App
+              </li>
+              <li style="font-size: 1rem;!important;line-height: 1.5rem!important;width:100%!important;"
+                  class="nw-flex nw-items-start nw-text-sm sm:nw-text-sm nw-gap-2 nw-text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                     stroke="#406b4d" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                NW+-Updates per E-Mail
+              </li>
+            </ul>
+          </div>
+
+          <div class="buttonWrap nw-mb-4 nw-flex nw-flex-col nw-items-center nw-justify-center nw-mt-4 nw-mb-3">
+
+            <button class="funnel-entry nw-btn-icon-primary nw-rounded-3xl" data-upscore-conversion="1" style=" background-color: #6EB783 !important; "
+                    onclick="handleButtonClick1(event);_paq.push(['trackEvent', 'overlay', 'click', 'SW12773', '24046209']);_paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'SW12773\', \'Stepname\': \'Overlay Klick\', \'cmsId\': \'24046209\'}', '1']);"
+                    data-event-value="paywall-overlay-click" data-label="Artikel-Overlay" data-product="SW12773"
+                    data-price="1 EUR / Woche" data-action="subscribe" data-checkout-form-id="checkoutjump" >
+              <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                   stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5"
+                   style="	margin-right: 0.375rem;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path>
+              </svg>
+              <span id="loadingText">Jetzt abonnieren</span>
+            </button>
+          </div>
+          <div class="nw-w-full nw-max-w-md nw-mx-auto nw-pb-4 ">
+            <!-- Überschrift -->
+            <div id="toggleButton"
+                 class="nw-cursor-pointer nw-w-full nw-py-2 nw-rounded nw-flex nw-items-center nw-justify-center"
+                 onclick="toggleInfoweekly()">
+              <span style="font-size:14px" class="nw-mr-1 ">Mehr Informationen</span>
+              <svg id="icon-weekly" width="20" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor"
+                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                   class="nw-transition-transform nw-duration-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+              </svg>
+            </div>
+
+            <!-- Versteckbarer Bereich -->
+            <div id="infoSection-weekly" class="nw-hidden nw-mt-1 nw-text-sm nw-text-gray-700">
+              <p style="font-size:12px;line-height: 1.25rem;" class="nw-text-xs">
+                Ab dem 7. Monat nutzen Sie das Angebot für derzeit monatlich 8,00 € und ab dem 13. Monat für monatlich
+                14,90 € automatisch weiter. Sie können dieses Angebot jederzeit bequem monatlich kündigen. Die
+                Abrechnung erfolgt monatlich. </p>
+            </div>
+          </div>
+
+          <script>
+            function toggleInfoweekly() {
+              const infoSection = document.getElementById('infoSection-weekly');
+              const icon = document.getElementById('icon-weekly');
+
+              // Toggle the hidden class for the info section
+              infoSection.classList.toggle('nw-hidden');
+
+              // Add or remove the rotate class to rotate the arrow
+              if (infoSection.classList.contains('nw-hidden')) {
+                icon.classList.remove('nw-rotate-180');
+              } else {
+                icon.classList.add('nw-rotate-180');
+              }
+            }
+          </script>
+
+          <style>
+              .nw-rotate-180 {
+                  transform: rotate(180deg);
+              }
+
+              .nw-transition-transform {
+                  transition: transform 0.3s ease-in-out;
+              }
+          </style>
+
+
+        </div>
+      </div>
+    </div>
+    <div style="border-top-left-radius:0;border-top-right-radius:0"
+         class="nw-text-gray-400 nw-mt-4 nw-text-center nw-text-xs md:nw-text-md">
+      <p style="font-size:14px!important" class="nw-py-2 nw-text-center">
+        <span>Sie haben bereits ein Print-Abo?</span><br>
+        <a style="float:none;text-decoration:underline!important; color:#737373; " target="_blank"
+           href="https://shop.nw.de/nw/nw-webabo-als-zusatz-zur-zeitung"
+           class="nw-bestellen nw-float-right hover:nw-text-white toLogin nw-underline nw-font-bold"
+           onclick="_paq.push(['trackEvent', 'overlay', 'nwdigital', '', '24046209']);">
+          Hier rabattiert Digital-Zugang bestellen
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .alert-danger {
+        background-color: #f2dede;
+        border-color: #ebccd1;
+        color: #a94442;
+    }
+
+    @media (max-width: 767px) {
+        .alert {
+            font-size: 16px !important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .alert {
+            font-size: 16px !important;
+        }
+    }
+    .hidden {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .confirmation-loginbox {
+        height: auto;
+        width: 320px !important;
+        top: 30%;
+        left: 0;
+        right: 0;
+        border-radius:8px !important;
+    }
+
+    @media (max-width: 639px) {
+        .confirmation-loginbox {
+            height: auto;
+            width: 100% !important;
+            border-radius: 24px 24px 0 0 !important;
+            left: 0;
+            right: 0;
+            top: auto;
+            bottom: 0 !important;
+        }
+    }
+
+    @media (max-width: 639px) {
+        @keyframes slideInLoginbox {
+            from {
+                transform: translate(0, 100%);
+            }
+            to {
+                transform: translate(0, 0);
+            }
+        }
+
+        @keyframes slideOutLoginbox {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(0%, 100%);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    }
+</style>
+<div class="nw-relative nw-login-container">
+  <div id="nw-loginbox"  class="confirmation-loginbox nw-hidden nw-fixed
+  nw-p-4 nw-bg-white nw-rounded-lg nw-mx-auto nw-z-50 nw-border nw-border-gray-100
+  nw-shadow-md" style="z-index: 2147483647; width: 320px;">
+
+    <div id=" nw-close-button" class=" nw-text-gray-500  nw-flex nw-justify-end
+                  nw-cursor-pointer hover:nw-text-black" onclick="closeLoginBox();">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-h-5 nw-w-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+    </div>
+    <div class="nw-mb-4">
+      <p class="nw-text-lg nw-font-bold"> Jetzt Anmelden
+      </p>
+    </div>
+    <div id="notification" style="display: none;">
+      <p class="alert alert-danger"> Diese Funktion steht nur angemeldeten Nutzern/Nutzerinnen zur Verfügung Bitte melden Sie sich an oder registrieren Sie sich kostenlos. </p>
+
+    </div>
+
+    <form action="{{ login_action }}" name="my_anmeldung_navbar" id="my_anmeldung_navbar" class="myonline-login-page-form" role="form" method="post"
+          onsubmit="return em_myonline_check(this)" accept-charset="utf-8" novalidate>
+      <div id="em_login_error_destination"></div>
+      <div class="nw-mb-2">
+        <label for="email-address" class="nw-sr-only">E-Mail Adresse</label>
+        <input type="email" name="my_user" id="email-address" autocomplete="email"  class="nw-rounded nw-appearance-none nw-min-w-0
+        nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-rounded nw-py-2 nw-px-3 nw-text-base
+        nw-text-black nw-placeholder-gray-200" placeholder="E-Mail">
+      </div>
+      <div class="nw-mb-3">
+        <label for="loginPassword" class="nw-sr-only">Passwort</label>
+        <div class="nw-relative">
+          <div class="nw-absolute nw-right-2 nw-cursor-pointer nw-z-999 nw-m-auto">
+            <div class="nw-relative">
+              <span id="eye-login-icon" class="nw-mr-1 nw-mt-2 nw-flex nw-justify-center" onclick="passwordToggleInLoginbox();">
+                <img id="eye-login-img" class="nw-w-6 nw-h-6 nw-overflow-clip-margin-content-box nw-overflow-clip nw-opacity-60" alt="svg"
+                     src="https://www.nw.de/_em_daten/locals/module/nw/_includes/twig/current/public/images/eye-slash.svg">
+              </span>
+            </div>
+          </div>
+          <input type="password" name="my_pass" id="loginPassword" autocomplete="password" required class="nw-rounded nw-appearance-none nw-min-w-0
+          nw-w-full nw-bg-white nw-border nw-nw-border-transparent nw-nw-rounded nw-py-2 nw-px-3 nw-text-base
+          nw-text-black nw-placeholder-gray-200" placeholder="Passwort">
+        </div>
+      </div>
+      <div class="nw-text-right nw-mb-6 nw-text-xs">
+        <div>
+          <a href="/profil/?pid=7" class="nw-text-gray-600 hover:nw-underline"
+             onclick="_paq.push(['trackEvent', 'Menü', device + ' Login', 'Passwort vergessen']);">
+            Passwort vergessen?
+          </a>
+        </div>
+      </div>
+      <div class="nw-mb-4 nw-hidden">
+        <label class="nw-flex nw-items-center nw-space-x-1">
+          <input type="hidden" id="my_auto_login_inline_head" name="my_auto_login" value="1" style="margin-top:0" class="nw-rounded nw-form-tick nw-border
+          nw-nw-border-gray-200 nw-appearance-none nw-h-3 nw-w-3 nw-outline-none checked:nw-bg-gray-400 focus:outline-none">
+          <span class="nw-text-gray-500 nw-text-xs nw-font-medium">Angemeldet bleiben</span>
+        </label>
+      </div>
+      {% if too_many_logins == true %}
+      <div class="nw-mb-3">
+        <label class="nw-flex nw-items-center nw-space-x-1">
+          <input id="my_reset_login_session_inline" name="my_reset_login_session" value="1" type="checkbox"
+                 style="margin-top:0"
+                 class="
+                        nw-rounded
+        nw-form-tick
+        nw-border
+        nw-nw-border-gray-200
+        nw-appearance-none
+        nw-h-3
+        nw-w-3
+        nw-mt-0
+        nw-outline-none
+        checked:nw-bg-gray-400
+        focus:outline-none
+      "
+          />
+          <span class="nw-text-gray-500 nw-text-xs nw-font-medium">Bestehende Login-Sitzungen beenden</span
+          >
+        </label>
+      </div>
+      {% endif %}
+      <div class="nw-mb-6">
+        <button id="loginButton" type="button" class="for-tracking nw-btn-primary nw-bg-red-0 nw-mx-auto" style="width: 100% !important; max-width: 100% !important;"
+                data-tracking-event="profil-login-click"
+                onclick="jQuery('#my_anmeldung_navbar').submit();">
+          Anmelden
+        </button>
+      </div>
+    </form>
+
+    <div class="nw-text-center">
+      <p class="nw-text-base md:nw-text-sm nw-pb-3">Sie haben noch keinen Zugang?</p>
+      <div class="nw-font-medium">
+        <div class="nw-pb-4 md:nw-pb-0">
+          <a href="/profil/?pid=2&amp;em_event=Article-Need-Login"
+             data-tracking-event="profil-register-click"
+             class="nw-for-tracking nw-text-base md:nw-text-sm nw-font-bold nw-underline nw-text-red-0 hover:nw-text-red-100">
+            Hier kostenlos registrieren
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="background-popup" class="nw-hidden"></div>
+
+</div>
+<script src="https://pw.thenewsbar.net/static/offer_iframe_script.js "></script>
+<script>
+  var passwordField = document.getElementById('loginPassword');
+
+  if (passwordField) {
+    passwordField.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById('my_anmeldung_navbar').submit();
+      }
+    });
+  }
+</script>
+
+<script>
+  function changeAbo(option) {
+    const radioButton = document.querySelector(`.paywall-overlay-rebrush-2023 input[name="aboOverlay"][value="${option}"]`);
+    if (radioButton) {
+      radioButton.checked = true; // Setze den Radio-Button als ausgewählt
+    }
+    document.querySelectorAll('.paywall-overlay-rebrush-2023 .abo-container').forEach(div => {
+      div.classList.remove('nw-bg-light-0');
+    });
+    document.querySelectorAll('[data-target]').forEach(div => {
+      div.classList.add('nw-hidden');
+    });
+    const targetDiv = document.querySelector(`[data-target="${option}"]`);
+    if (targetDiv) {
+      targetDiv.classList.remove('nw-hidden');
+      const parentDiv = targetDiv.closest('.paywall-overlay-rebrush-2023 .abo-container');
+      if (parentDiv) {
+        parentDiv.classList.add('nw-bg-light-0');
+      }
+    }
+
+  }
+  var _paq = window._paq || [];
+  function handleButtonClick1(event) {
+    const loadingButton = event.currentTarget;
+    const loadingText = loadingButton.querySelector('#loadingText');
+    const spinner = loadingButton.querySelector('#spinner');
+    loadingButton.disabled = true;
+    loadingText.textContent = 'Lädt ...';
+    spinner.classList.remove('nw-hidden');
+    setTimeout(() => {
+      loadingText.textContent = '';
+      spinner.classList.add('nw-hidden');
+      loadingButton.disabled = false;
+      loadingButton.blur();
+    }, 5000);
+  }
+  function handleButtonClick2(event) {
+    const loadingButton = event.currentTarget;
+    const loadingText = loadingButton.querySelector('#loadingText1');
+    const spinner = loadingButton.querySelector('#spinner1');
+    loadingButton.disabled = true;
+    loadingText.textContent = 'Lädt ...';
+    spinner.classList.remove('nw-hidden');
+    setTimeout(() => {
+      loadingText.textContent = '';
+      spinner.classList.add('nw-hidden');
+      loadingButton.disabled = false;
+      loadingButton.blur();
+    }, 5000);
+  }
+</script>
+</body>
+</html>
