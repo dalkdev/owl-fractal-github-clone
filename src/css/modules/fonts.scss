@@ -94,3 +94,15 @@ url("/_em_daten/nw/assets/fonts/Roboto/roboto-v27-latin-ext_latin-700italic.ttf"
   font-style: italic;
   font-display: swap;
 }
+
+/* test */
+/* Roboto Serif-700 - italic */
+
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+  url('/fonts/RobotoSerif-ExtraBold.ttf') format('ttf');
+}
+

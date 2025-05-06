@@ -1,5 +1,5 @@
-<div id="abo-footer" class="nw-fixed nw-bottom-0 nw-w-full dark:nw-bg-gray-800 nw-border-t nw-border-gray-200
-dark:nw-border-gray-600 nw-shadow-md nw-z-50" style="background-color: rgb(239 246 255);">
+<div id="abo-footer" class="nw-fixed nw-bottom-0 nw-w-full
+ nw-shadow-md nw-z-50" style="background-color: rgb(239 246 255);">
   <!-- Toggle-Knopf oben mittig mit halbrundem Design -->
   <div class="nw-absolute nw-top-0 nw-left-1/2 nw-transform nw--translate-x-1/2 nw--translate-y-1/2 nw-z-10">
     <button aria-expanded="false" aria-controls="footerExpanded" onclick="toggleFooter()" id="toggleArrow"
@@ -14,15 +14,19 @@ dark:nw-border-gray-600 nw-shadow-md nw-z-50" style="background-color: rgb(239 2
 
   <!-- Eingeklappt -->
   <div id="footerCollapsed" class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-between nw-p-4 nw-border-t
-   nw-border-gray-100 dark:nw-border-gray-700 nw-gap-4">
+   nw-border-gray-100 nw-gap-4">
     <div class="nw-mt-4 sm:nw-mt-0 nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-space-y-1 sm:nw-space-y-0 sm:nw-space-x-2 nw-text-sm nw-font-medium
     nw-text-center sm:nw-text-left">
       <img style="width: 41px" class="nw-mb-2 sm:nw-mb-0" src="https://www.nw.de/_apps/nw/plus.svg" alt="">
       <span class="nw-text-base sm:nw-text-lg">Statt <span class="nw-line-through nw-text-gray-300">14,90€</span> jetzt <span
-        class="nw-text-black dark:nw-text-gray-100 nw-font-bold">1€ pro Woche</span></span>
+        class="nw-text-black nw-font-bold">1€ pro Woche</span></span>
     </div>
     <div class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-center sm:nw-justify-end nw-gap-2 nw-text-center sm:nw-text-right">
-      <button onclick="toggleFooter()" class="nw-bg-green-700 hover:nw-bg-green-800 nw-text-white nw-text-sm nw-font-bold nw-px-4 nw-py-1.5 nw-rounded">
+      <button onclick="toggleFooter()" class="nw-bg-green-700 hover:nw-bg-green-800 nw-text-center nw-w-full
+      sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
+      nw-rounded-md nw-text-sm nw-font-bold
+  nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-red-200 focus:nw-transition-all
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed">
         Jetzt sichern
       </button>
       <!-- Desktop -->
@@ -55,7 +59,7 @@ dark:nw-border-gray-600 nw-shadow-md nw-z-50" style="background-color: rgb(239 2
         <span class="nw-text-black nw-font-bold">1€ pro Woche</span></span>
       </div>
       <div class="nw-flex nw-flex-col nw-gap-3">
-        <p class="nw-text-sm nw-text-gray-800 dark:nw-text-gray-200">Ein Webabo bietet Zugriff auf alle Artikel.<br class="nw-block sm:nw-hidden">
+        <p class="nw-text-sm nw-text-gray-600">Ein Webabo bietet Zugriff auf alle Artikel.<br class="nw-block sm:nw-hidden">
           Per Mail informiert – jederzeit kündbar.</p>
       </div>
     </div>
