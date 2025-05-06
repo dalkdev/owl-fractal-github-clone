@@ -15,15 +15,15 @@ dark:nw-border-gray-600 nw-shadow-md nw-z-50" style="background-color: rgb(239 2
   <!-- Eingeklappt -->
   <div id="footerCollapsed" class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-between nw-p-4 nw-border-t
    nw-border-gray-100 dark:nw-border-gray-700 nw-gap-4">
-    <div class="nw-mt-4 nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-space-y-1 sm:nw-space-y-0 sm:nw-space-x-2 nw-text-sm nw-font-medium
+    <div class="nw-mt-4 sm:nw-mt-0 nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-space-y-1 sm:nw-space-y-0 sm:nw-space-x-2 nw-text-sm nw-font-medium
     nw-text-center sm:nw-text-left">
-      <span class="nw-bg-red-0 nw-text-white nw-text-sm nw-px-3 nw-py-1 nw-rounded nw-font-bold">NW+</span>
+      <img style="width: 41px" src="https://www.nw.de/_apps/nw/plus.svg" alt="">
       <span class="nw-text-base sm:nw-text-lg">Statt <span class="nw-line-through nw-text-gray-300">14,90€</span> jetzt <span
         class="nw-text-black dark:nw-text-gray-100 nw-font-bold">1€ pro Woche</span></span>
     </div>
     <div class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-center sm:nw-justify-end nw-gap-2 nw-text-center sm:nw-text-right">
       <button onclick="toggleFooter()" class="nw-bg-green-700 hover:nw-bg-green-800 nw-text-white nw-text-sm nw-font-bold nw-px-4 nw-py-1.5 nw-rounded">
-        Jetzt sichern →
+        Jetzt sichern
       </button>
       <!-- Desktop -->
       <button onclick="closeFooter()" class="nw-hidden sm:nw-block nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
@@ -44,14 +44,14 @@ dark:nw-border-gray-600 nw-shadow-md nw-z-50" style="background-color: rgb(239 2
 
     <!-- Mobile Close Button oben rechts -->
     <button onclick="closeFooter()"
-            class="nw-absolute nw-top-2 nw-right-4 md:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black ">
+            class="nw-absolute nw-top-2 nw-right-4 sm:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black">
       ✕
     </button>
 
-    <div class="nw-flex nw-flex-col nw-gap-2 nw-ml-4">
-      <div class="nw-flex nw-items-center nw-space-x-2 nw-text-sm nw-font-medium">
-        <span class="nw-bg-red-0 nw-text-white nw-text-sm nw-px-3 nw-py-1 nw-rounded nw-font-bold">NW+</span>
-        <span class="nw-text-base sm:nw-text-lg">Statt <span class="nw-line-through nw-text-gray-300">14,90€</span> jetzt
+    <div class="nw-flex nw-flex-col nw-justify-items-start nw-gap-2 nw-mx-4 nw-mt-2 md:nw-mt-0">
+      <div class="nw-flex nw-items-start nw-place-items-start nw-content-start nw-space-x-2 nw-text-sm nw-font-medium">
+        <img class="nw-mt-1" style="width: 41px" src="https://www.nw.de/_apps/nw/plus.svg" alt="">
+        <span class="nw-text-base md:nw-text-lg">Statt <span class="nw-line-through nw-text-gray-300">14,90€</span> jetzt
         <span class="nw-text-black nw-font-bold">1€ pro Woche</span></span>
       </div>
       <div class="nw-flex nw-flex-col nw-gap-3">
@@ -63,7 +63,7 @@ dark:nw-border-gray-600 nw-shadow-md nw-z-50" style="background-color: rgb(239 2
     <div class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-center sm:nw-justify-end nw-gap-2 nw-text-center sm:nw-text-right nw-mr-4">
       <button onclick="toggleFooter()"
               class="nw-bg-green-700 hover:nw-bg-green-800 nw-text-white nw-text-sm nw-font-bold nw-px-4 nw-py-1.5 nw-rounded">
-        Jetzt sichern →
+        Jetzt sichern
       </button>
       <!-- Desktop Close Button bleibt wie gehabt -->
       <button onclick="closeFooter()"
