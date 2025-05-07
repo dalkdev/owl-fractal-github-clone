@@ -1,3 +1,10 @@
+.nw-btn-green{
+  @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
+  nw-bg-green-100 nw-rounded-md nw-text-base nw-font-bold
+  nw-cursor-pointer nw-py-3 nw-px-6 hover:nw-bg-green-200 hover:nw-transition-all hover:nw-duration-300 focus:nw-bg-green-300 focus:nw-transition-all
+  disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed;
+}
+
 .nw-btn-primary {
   @apply nw-text-center nw-w-full sm:nw-min-w-32 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
   nw-bg-red-0 nw-rounded-md nw-text-base nw-font-bold
