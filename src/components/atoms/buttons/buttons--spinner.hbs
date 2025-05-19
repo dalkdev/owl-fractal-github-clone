@@ -13,17 +13,88 @@
   }
 </style>
 
+
 <button id="loadingButton" class="nw-btn-rounded-icon-primary" onclick="handleButtonClick(event)">
-  <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+  <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+       stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
   </svg>
-  <span id="loadingText">Button CTA</span>
+  <span id="abofooter-button-1">Button CTA</span>
 </button>
+
+<br>
+
+<button
+  class="funnel-entry nw-btn-icon-primary"
+  data-upscore-conversion="5"
+  onclick="handleButtonClick(event);_paq.push(['trackEvent', 'footer-widget', 'click', '{{ abo.matomo_product }}', '{{ returnId }}']);_paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'{{ abo.matomo_product }}\', \'Stepname\': \'Footer Klick\', \'cmsId\': \'{{ returnId }}\'}', '1']);document.getElementById('checkoutjump').submit();"
+  data-event-value="paywall-footer-click" data-label="Artikel-Footer" data-product="{{ abo.dataProduct }}"
+  data-price="{{ abo.dataPrice }}">
+  <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+       stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path>
+  </svg>
+  <span id="abofooter-button-1">Spinner - Abo-Button</span>
+</button>
+
+<br>
+
+<button
+  class="funnel-entry nw-btn-icon-primary"
+  data-upscore-conversion="1"
+  onclick="handleButtonClick(event);_paq.push(['trackEvent', 'footer-widget', 'click', '{{ abo.matomo_product }}', '{{ returnId }}']);_paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'{{ abo.matomo_product }}\', \'Stepname\': \'Footer Klick\', \'cmsId\': \'{{ returnId }}\'}', '1']);document.getElementById('checkoutjump').submit();"
+  data-event-value="paywall-overlay-click" data-label="Artikel-Overlay" data-product="{{ abo.dataProduct }}"
+  data-price="{{ abo.dataPrice }}">
+  <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+       stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path>
+  </svg>
+  <span id="abofooter-button-1">Spinner - Overlay-Button</span>
+</button>
+
+
+<br>
+
+<div>
+  <p class="nw-pb-6 nw-font-bold nw-text-xl">
+    Tracking in Paywall- und Abofooter-Buttons
+  </p>
+  <div class="nw-mb-6">
+    <p class="nw-text-lg nw-font-bold nw-pb-3"> Drive: </p>
+    <p class="nw-font-bold nw-text-md nw-pb-3">Class: <span class="nw-font-medium nw-text-base">funnel-entry</span></p>
+    <p class="nw-font-bold nw-text-md">Attribute: <span class="nw-font-medium nw-text-base">
+      <br>data-label="Artikel-Overlay"
+    <br> data-product="{{ abo.dataProduct }}"  <br> data-price="{{ abo.dataPrice }}"</span></p>
+  </div>
+  <div class="nw-mb-6">
+    <p class="nw-text-lg nw-font-bold nw-pb-3"> Google Analytics: </p>
+    <p class="nw-font-bold nw-text-md">Attribute: <span class="nw-font-medium nw-text-base">
+      <br>data-event-value="paywall-overlay-click"
+    <br> data-event-value="paywall-footer-click"</span></p>
+  </div>
+  <div class="nw-mb-6">
+    <p class="nw-text-lg nw-font-bold nw-pb-3"> Matomo: </p>
+    <p class="nw-font-bold nw-text-md">Onclick: <span class="nw-font-medium nw-text-base">
+      <br>   _paq.push(['trackEvent', 'footer-widget', 'click', '{{ abo.matomo_product }}', '{{ returnId }}']);
+    <br>   _paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'{{ abo.matomo_product }}\', \'Stepname\': \'Footer Klick\', \'cmsId\': \'{{ returnId }}
+      \'}', '1']);</span></p>
+  </div>
+  <div>
+    <p class="nw-text-lg nw-font-bold nw-pb-3"> Upscore: </p>
+    <p class="nw-font-bold nw-text-md">Attribute: <span class="nw-font-medium nw-text-base">
+      <br>data-upscore-conversion="1" - Paywall
+    <br> data-upscore-conversion="5" - Abofooter</span></p>
+  </div>
+</div>
+
 
 <script>
   function handleButtonClick(event) {
     const loadingButton = event.currentTarget;
-    const loadingText = loadingButton.querySelector('#loadingText');
+    const loadingText = loadingButton.querySelector('#abofooter-button-1');
     const spinner = loadingButton.querySelector('#spinner');
 
     loadingButton.disabled = true;
@@ -31,10 +102,11 @@
     spinner.classList.remove('nw-hidden');
 
     setTimeout(() => {
-      loadingText.textContent = 'Button CTA';
+      loadingText.textContent = 'Jetzt sichern';
       spinner.classList.add('nw-hidden');
       loadingButton.disabled = false;
       loadingButton.blur();
     }, 3000);
   }
+
 </script>

@@ -81,9 +81,15 @@ module.exports = {
                 blue: '#41B7CC', // nicht benutzt
                 hk: {
                     'nw-blue-100': '#00B4D1', // bleibt
+                    'blue': '#00B4D1',
+                    'blue-0': '#009FF3',
+                    'blue-100': '#0091CF',
+                    'blue-200': '#0071A1',
+                    'blue-300': '#00577D',
                 },
                 lz: {
                     'nw-yellow-100': '#FFDC09', // bleibt
+                    'yellow-100': '#FFDC09', // bleibt
                 },
             },
             borderWidth: {

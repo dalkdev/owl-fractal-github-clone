@@ -1,12 +1,13 @@
-<article class="nw-relative nw-bg-white nw-pb-4">
+<!-- Mobile- und Tablet-Ansicht -->
+<article class="nw-relative nw-bg-white nw-pb-4 lg:nw-hidden">
   <div>
-    <div class="nw-aspect-w-16 nw-aspect-h-9">
+    <figure class="nw-aspect-w-16 nw-aspect-h-9">
       <img
         src="/images/artikel-teaser-xl-image.jpg"
         class="nw-object-cover nw-w-full nw-h-full"
-        alt="image-new"
+        alt="Mobile-Bild"
       />
-    </div>
+    </figure>
 
     <div class="nw-bg-[#F2F5F9] nw--mt-6 nw-mx-4 nw-p-4 nw-z-50 nw-relative nw-rounded-md">
       <p class="nw-plus-icon-l nw-text-gray-600 nw-text-base nw-font-medium nw-pb-3">
@@ -22,3 +23,81 @@
     </div>
   </div>
 </article>
+
+<!-- Desktop-Ansicht -->
+<article
+  class="nw-hidden lg:nw-flex flex-col lg:nw-flex-row nw-justify-center nw-items-center nw-bg-white nw-py-8 nw-px-7 nw-mx-auto"
+  style="max-width: 1064px;">
+  <figure class=" lg:nw-w-[574px] lg:nw-h-[340px]">
+    <img src="/images/artikel-teaser.jpg" alt="DEsktop-Bild"
+         class="nw-w-full nw-h-full nw-rounded-md nw-object-cover" />
+  </figure>
+
+  <div class=" nw-flex nw-items-center nw-justify-center  nw-content-center nw-ml-[-100px]">
+    <div
+      class="nw-bg-white nw-px-6 nw-shadow-lg nw-rounded-md lg:nw-w-[534px] lg:nw-h-[306px]  nw-flex nw-flex-col  nw-justify-center "
+      style="background-color: #F2F5F9;">
+      <p class="nw-plus-icon-s nw-text-md nw-font-medium nw-text-gray-600 nw-pb-3">„Habe verrückte Wünsche“</p>
+      <p class="nw-text-2xl nw-font-bold nw-pb-2.5">Bielefelder setzt bei „Wer wird Millionär“ auf kluge Taktik</p>
+      <p class="nw-text-md nw-font-medium nw-text-gray-400 nw-pb-2.5">
+        Dem Bielefelder Produktentwickler für Mikroskope fehlt nicht viel bis zur Million.
+        Doch dann kam alles anders. So viel hat er gewonnen.</p>
+      {{>'@artikel-content-icons'}}
+    </div>
+  </div>
+</article>
+
+
+<!--
+<div class="nw-hidden lg:nw-flex flex-col lg:nw-flex-row nw-justify-center nw-items-center nw-bg-white nw-py-8 nw-mx-auto"
+     style="max-width: 1064px;">
+
+  <div class="nw-w-full lg:nw-w-1/2">
+    <img src="/images/artikel-teaser.jpg" alt="Zweites Bild"  height="340" width="574" class="nw-w-full nw-rounded-md nw-object-cover" />
+  </div>
+
+  <div class="nw-w-full lg:nw-w-1/2 nw-flex nw-items-center  nw-ml-[-56px]">
+    <div class="nw-bg-white nw-px-6 nw-py-7 nw-shadow-lg nw-rounded-md nw-w-full" style="background-color: #F2F5F9;">
+      <p class="nw-plus-icon-s nw-text-md nw-font-medium nw-text-gray-600 nw-pb-3">„Habe verrückte Wünsche“</p>
+      <p class="nw-text-2xl nw-font-bold nw-pb-2.5">Bielefelder setzt bei „Wer wird Millionär“ auf kluge Taktik</p>
+      <p class="nw-text-md nw-font-medium nw-text-gray-400 nw-pb-2.5">
+        Dem Bielefelder Produktentwickler für Mikroskope fehlt nicht viel bis zur Million.
+        Doch dann kam alles anders. So viel hat er gewonnen.</p>
+       { { >'@artikel-content-icons' } }
+    </div>
+  </div>
+</div>
+-->
+
+<!--
+<div class="nw-hidden lg:nw-flex nw-items-center nw-justify-center nw-bg-gray-100 nw-p-4 nw-relative">
+  <div class="nw-w-1/2">
+    <img src="/images/polizei-meldung.png" alt="Zweites Bild" class="nw-w-full nw-h-auto nw-rounded-md nw-object-cover" />
+  </div>
+  <div class="nw-relative nw-w-1/2 nw-flex nw-ml-[-3rem]">
+    <div class="nw-bg-white nw-p-4 nw-shadow-lg nw-z-10 nw-rounded-md">
+      <h2 class="nw-text-xl nw-font-bold nw-text-gray-800">Zweite Section Titel</h2>
+      <p class="nw-text-gray-600">Weitere Beschreibung, die dieselbe Breite nutzt wie das Bild daneben.</p>
+    </div>
+  </div>
+</div>
+-->
+
+<!--
+<div class="nw-hidden lg:nw-flex flex-col lg:nw-flex-row nw-justify-center nw-gap-4 nw-bg-white nw-py-4" >
+  <div class="nw-w-full lg:nw-w-1/2">
+    <img src="/images/polizei-meldung.png" alt="Zweites Bild" class="nw-w-full nw-h-auto nw-rounded-md nw-object-cover" />
+  </div>
+
+  <div class="nw-w-full lg:nw-w-1/2 nw-flex nw-items-center nw-ml-[-3rem] " >
+    <div class="nw-bg-white nw-p-4 nw-shadow-lg nw-rounded-md nw-w-full" style="background-color: #F2F5F9;">
+      <h2 class="nw-text-xl nw-font-bold nw-text-gray-800 nw-pb-4">„Habe verrückte Wünsche“</h2>
+      <p class="nw-text-gray-600 nw-pb-4">Bielefelder setzt bei „Wer wird Millionär“ auf kluge Taktik</p>
+      <p>Dem Bielefelder Produktentwickler für Mikroskope fehlt nicht viel bis zur Million.
+        Doch dann kam alles anders. So viel hat er gewonnen.</p>
+    </div>
+  </div>
+</div
+-->
+
+
