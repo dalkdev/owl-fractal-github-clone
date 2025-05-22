@@ -1,3 +1,6 @@
+
+
+
 <style>
   .paywall-footer-rebrush-2024{
     position: fixed;
@@ -27,23 +30,37 @@
   </div>
 
   <!-- Eingeklappt -->
-  <div id="footerCollapsed" class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-between nw-p-4 nw-gap-4 nw-border-t nw-border-gray-100">
-    <div class="nw-mt-4 sm:nw-mt-0 nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-space-y-1 sm:nw-space-y-0 sm:nw-space-x-2 nw-text-sm nw-font-medium
-    nw-text-center sm:nw-text-left">
-      <img style="width: 41px" class="nw-mb-2 sm:nw-mb-0" src="https://www.haller-kreisblatt.de/_apps/nw/assets/hk/label-hk_plus2.svg" alt="">
+  <div id="footerCollapsed" class="nw-flex nw-flex-col md:nw-flex-row nw-items-center nw-justify-between nw-p-4 nw-gap-4 nw-border-t nw-border-gray-100">
+    <div class="nw-mt-4 md:nw-mt-0 nw-flex nw-flex-col md:nw-flex-row nw-items-center nw-space-y-1 md:nw-space-y-0 md:nw-space-x-2 nw-text-sm nw-font-medium
+    sm:nw-text-left">
+      <img style="width: 41px" class="nw-mb-2 md:nw-mb-0" src="https://www.haller-kreisblatt.de/_apps/nw/assets/hk/label-hk_plus2.svg" alt="">
       <span class="nw-text-base sm:nw-text-lg">Statt <span
         class="nw-line-through nw-text-gray-500">14,90 € </span>&nbsp;mtl. nur <span
         class="nw-text-black nw-font-bold">1€ pro Woche</span></span>
     </div>
+    <div class="nw-flex nw-flex-row nw-gap-2 nw-text-sm nw-place-content-center nw-text-center nw-rounded-md nw-pb-2 nw-pt-1 nw-mx-auto" id="clockdiv_abo_footer">
+      <div>
+        <p class="hours nw-px-1 nw-bg-white nw-rounded-md nw-mb-1"></p>
+        <p class="nw-text-xs"> Std. </p>
+      </div>
+      <div>
+        <p class="minutes nw-px-1 nw-bg-white nw-rounded-md nw-mb-1"></p>
+        <p class="nw-text-xs"> Min. </p>
+      </div>
+      <div>
+        <p class="seconds nw-px-1 nw-bg-white nw-rounded-md nw-mb-1"></p>
+        <p class="nw-text-xs"> Sek. </p>
+      </div>
+    </div>
     <div class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-center sm:nw-justify-end nw-gap-2 nw-text-center sm:nw-text-right">
       <a href="https://www.haller-kreisblatt.de/mein_hk/abo/checkout/login?abos=HK-Plus-Angebot"
-         class="funnel-entry nw-flex nw-bg-[#FF7F50] hover:nw-bg-[#E5673F] hover:nw-text-white focus:nw-bg-[#CC5F3A] nw-text-center
+         class="funnel-entry nw-flex nw-bg-red-0 hover:nw-bg-red-100 hover:nw-text-white focus:nw-bg-red-200 nw-text-center
         sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
          nw-rounded-md nw-text-sm nw-font-bold
          nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-transition-all hover:nw-duration-300  focus:nw-transition-all
         disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed"
          onclick="handleButtonClick(event);_paq.push(['trackEvent', 'footer-widget', 'click', 'HK+ Wochenangebot', '{{ returnId }}']);_paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'HK+ Wochenangebot\', \'Stepname\': \'Footer Klick\', \'cmsId\': \'{{ returnId }}\'}', '1']);document.getElementById('checkoutjump').submit();"
-         data-event-value="paywall-aboseite-click" data-upscore-conversion="1" data-label="Abo-Seite"
+         data-event-value="paywall-footer-click" data-upscore-conversion="5" data-label="Artikel-Footer"
          data-product="HK+ Wochenangebot" data-price="4 € / monatlich">
         <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
@@ -52,12 +69,12 @@
       </a>
       <!-- Desktop -->
       <button onclick="closeFooter()"
-              class="nw-hidden sm:nw-block nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
+              class="nw-hidden md:nw-block nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
         ✕
       </button>
       <!-- Mobile -->
       <button onclick="closeFooter()"
-              class="nw-absolute nw-top-2 nw-right-4 sm:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black">
+              class="nw-absolute nw-top-2 nw-right-4 md:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black">
         ✕
       </button>
     </div>
@@ -66,11 +83,11 @@
   <!-- Ausgeklappt -->
   <div id="footerExpanded" class="nw-hidden nw-relative nw-flex nw-flex-col nw-gap-4 nw-pb-4 nw-pt-6 nw-bg-blue-50
   nw-border-t nw-border-gray-100
-  sm:nw-flex-row sm:nw-items-center sm:nw-justify-between" style="background-color: rgb(239 246 255);">
+  md:nw-flex-row md:nw-items-center md:nw-justify-between" style="background-color: rgb(239 246 255);">
 
     <!-- Mobile Close Button oben rechts -->
     <button onclick="closeFooter()"
-            class="nw-absolute nw-top-2 nw-right-4 sm:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black">
+            class="nw-absolute nw-top-2 nw-right-4 md:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black">
       ✕
     </button>
 
@@ -83,20 +100,20 @@
       </div>
       <div class="nw-flex nw-flex-col nw-gap-3">
         <p class="nw-text-sm nw-text-gray-600">Ein Webabo bietet Zugriff auf alle Artikel. <br
-          class="nw-block sm:nw-hidden">
+          class="nw-block md:nw-hidden">
           Mit HK+-Updates per Mail - jederzeit kündbar.</p>
       </div>
     </div>
 
-    <div class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center nw-justify-center sm:nw-justify-end nw-gap-2 nw-text-center sm:nw-text-right sm:nw-mr-4">
+    <div class="nw-flex nw-flex-col md:nw-flex-row nw-items-center nw-justify-center md:nw-justify-end nw-gap-2 nw-text-center sm:nw-text-right sm:nw-mr-4">
       <a href="https://www.haller-kreisblatt.de/mein_hk/abo/checkout/login?abos=HK-Plus-Angebot"
-         class="funnel-entry nw-flex nw-bg-green-700 hover:nw-bg-green-800 hover:nw-text-white focus:nw-bg-green-900 nw-text-center
+         class="funnel-entry nw-flex nw-bg-red-0 hover:nw-bg-red-100 hover:nw-text-white focus:nw-bg-red-200 nw-text-center
         sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
          nw-rounded-md nw-text-sm nw-font-bold
          nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-transition-all hover:nw-duration-300  focus:nw-transition-all
         disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed"
          onclick="handleButtonClick(event);_paq.push(['trackEvent', 'footer-widget', 'click', 'HK+ Wochenangebot', '{{ returnId }}']);_paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'HK+ Wochenangebot\', \'Stepname\': \'Footer Klick\', \'cmsId\': \'{{ returnId }}\'}', '1']);document.getElementById('checkoutjump').submit();"
-         data-event-value="paywall-aboseite-click" data-upscore-conversion="1" data-label="Abo-Seite"
+         data-event-value="paywall-footer-click" data-upscore-conversion="5" data-label="Artikel-Footer"
          data-product="HK+ Wochenangebot" data-price="4 € / monatlich">
         <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
@@ -105,7 +122,7 @@
       </a>
       <!-- Desktop Close Button bleibt wie gehabt -->
       <button onclick="closeFooter()"
-              class="nw-hidden  sm:nw-inline nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
+              class="nw-hidden  md:nw-inline nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
         ✕
       </button>
     </div>
@@ -155,3 +172,45 @@
   }
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const deadline_overlay = 'May 26, 2025 13:30:00';
+
+    initializeClock('clockdiv_abo_footer', deadline_overlay);
+
+  });
+  function getTimeRemaining(endtime) {
+    const total = Date.parse(endtime) - Date.parse(new Date());
+    const seconds = Math.floor((total / 1000) % 60);
+    const minutes = Math.floor((total / 1000 / 60) % 60);
+    const hours = Math.floor((total / (1000 * 60 * 60)));
+    return {
+      total,
+      hours,
+      minutes,
+      seconds
+    };
+  }
+
+  function initializeClock(id, endtime) {
+    const clock = document.getElementById(id);
+    if (!clock) return;
+
+    const hoursSpan = clock.querySelector('.hours');
+    const minutesSpan = clock.querySelector('.minutes');
+    const secondsSpan = clock.querySelector('.seconds');
+
+    function updateClock() {
+      const t = getTimeRemaining(endtime);
+      if (t.total < 0) {
+        clock.style.display = 'none';
+        return;
+      }
+      if (hoursSpan) hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      if (minutesSpan) minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      if (secondsSpan) secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    }
+    updateClock(); // run function once at first to avoid delay
+    const timeinterval = setInterval(updateClock, 1000);
+  }
+</script>
