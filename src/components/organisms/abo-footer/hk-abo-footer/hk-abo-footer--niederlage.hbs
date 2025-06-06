@@ -8,33 +8,29 @@
     transform: translate(-50%);
   }
 
+  /** MIN WIDTH SIMULATE **/
   @media screen and (min-width: 1064px) {
     .paywall-footer-rebrush-2024 {
       min-width: 1064px !important;
     }
   }
 
-  @media screen and (min-width: 767px) {
-
-    .paywall-footer-rebrush-2024 {
-      max-width: 1064px !important;
+  @media screen and (min-width: 640px) {
+    .hidden {
+      display: none !important;
     }
 
-    .svg-close {
+    .block {
       display: block !important;
-    }
-
-    .break {
-      display: none;
     }
   }
 
   .spinner {
     animation: spin 1s linear infinite;
   }
-
 </style>
-<div id="abo-footer" class="specialcheck nw-shadow-md  paywall-footer-rebrush-2024  minimized nw-z-50"
+
+<div id="abo-footer" class="specialcheck nw-shadow-md paywall-footer-rebrush-2024 minimized nw-z-50"
      style="background-color: rgb(239 246 255); max-width: 1064px !important; z-index: 599;">
   <div class="nw-absolute nw-top-0 nw-left-1/2 nw-transform nw--translate-x-1/2 nw--translate-y-1/2 nw-z-10">
     <button aria-expanded="false" aria-controls="footerExpanded" aria-label="Footer togglen"
@@ -49,25 +45,40 @@
     </button>
   </div>
 
-  <!-- Eingeklappt -->
+  <!-- Footer-Block -->
   <div id="footerCollapsed"
-       class="nw-flex nw-flex-col md:nw-flex-row nw-justify-between nw-p-4 nw-gap-4 nw-border-t nw-border-gray-100">
-    <div class="nw-margin nw-mt-4 md:nw-mt-0 nw-flex nw-flex-col md:nw-flex-row nw-place-items-center md:nw-place-items-start lg:nw-place-items-center nw-space-y-1 md:nw-space-y-0 md:nw-space-x-2 nw-text-sm nw-font-medium
-    nw-text-center md:nw-text-left">
-      <img class="nw-mt-0 md:nw-mt-1.5 lg:nw-mt-0 nw-mb-2 md:nw-mb-0" style="width: 45px" src="https://www.haller-kreisblatt.de/_apps/nw/assets/hk/label-hk_plus2.svg"
-           alt="">
-      <span class="nw-text-base md:nw-text-lg md:nw-pt-0.5 lg:nw-pt-0 nw-pr-6">Finale verloren - Stolz geblieben!🖤🤍💙 6 Monate HK+ für <span style="text-decoration: line-through; color: grey;">89,40€</span> 19,05 €</span>
+       class="nw-flex nw-flex-col md:nw-flex-row nw-justify-between md:nw-place-items-center nw-p-4 nw-gap-4 nw-border-t nw-border-gray-100">
+    <div class="nw-margin nw-mt-4 md:nw-mt-0 nw-flex nw-flex-col  nw-text-sm nw-font-medium
+    ">
+      <div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-4 md:nw-gap-2">
+        <img class="nw-mx-auto md:nw-self-start md:nw-mt-1 md:nw-mx-0" style="width: 45px"
+             src="https://www.haller-kreisblatt.de/_apps/nw/assets/hk/label-hk_plus2.svg"
+             alt="">
+
+        <p class="nw-text-base md:nw-text-lg">
+          Finale verloren - Stolz geblieben!🖤🤍💙 6 Monate HK+ für <span style="text-decoration: line-through; color: grey;">89,40€</span>19,05 €
+        </p>
+
+      </div>
+      <div>
+        <p id="footerExpanded" class="nw-hidden nw-pt-2 nw-text-sm nw-text-gray-600 ">
+          So nah dran - großartig gekämpft. Jetzt mit dem Webabo alles lesen <br class="break nw-block md:nw-hidden">
+          & exklusiven Zugang zu allen Artikeln rund um das große Pokalfinale erhalten.
+        </p>
+      </div>
     </div>
-    <div class="nw-flex nw-flex-col md:nw-flex-row nw-items-center nw-justify-center md:nw-justify-end nw-gap-2 nw-text-center md:nw-text-right">
-      <a href="https://www.haller-kreisblatt.de/mein_hk/abo/checkout/login?abos=HK-Plus-Angebot"
+
+    <div
+      class="nw-flex nw-flex-col md:nw-flex-row nw-items-center nw-justify-center md:nw-justify-end nw-gap-2 nw-text-center md:nw-text-right">
+      <a href="https://www.haller-kreisblatt.de/mein_hk/abo/checkout/login?abos=HK-Plus"
          class="funnel-entry nw-flex nw-bg-red-0 hover:nw-bg-red-100 hover:nw-text-white focus:nw-bg-red-200 nw-text-center
-        md:nw-min-w-26 md:nw-max-w-fit nw-whitespace-nowrap nw-text-white
+        sm:nw-min-w-26 sm:nw-max-w-fit nw-whitespace-nowrap nw-text-white
          nw-rounded-md nw-text-sm nw-font-bold
          nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-transition-all hover:nw-duration-300  focus:nw-transition-all
         disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed" style="text-decoration: none;"
-         onclick="handleButtonClick(event);_paq.push(['trackEvent', 'footer-widget', 'click', 'HK+ Wochenangebot', '{{ returnId }}']);_paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'HK+ Wochenangebot\', \'Stepname\': \'Footer Klick\', \'cmsId\': \'{{ returnId }}\'}', '1']);document.getElementById('checkoutjump').submit();"
+         onclick="_paq.push(['trackEvent', 'footer-widget', 'click', 'HK+-Jahresangebot', '{{ returnId }}']);"
          data-event-value="paywall-footer-click" data-upscore-conversion="5" data-label="Artikel-Footer"
-         data-product="HK+ Wochenangebot" data-price="4 € / monatlich">
+         data-product="HK+-Jahresangebot" data-price="19,05 € für 6 Monate">
         <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
              stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -75,63 +86,16 @@
         </svg>
         <span id="loadingText">Angebot sichern</span>
       </a>
-      <!-- Desktop -->
+
+      <!-- Desktop Close Button -->
       <button onclick="closeFooter()"
               class="svg-close nw-hidden md:nw-block nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
         ✕
       </button>
-      <!-- Mobile -->
+
+      <!-- Mobile Close Button -->
       <button onclick="closeFooter()"
               class="nw-absolute nw-top-2 nw-right-4 md:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black">
-        ✕
-      </button>
-    </div>
-  </div>
-
-  <!-- Ausgeklappt -->
-  <div id="footerExpanded" class="nw-hidden nw-relative nw-flex nw-flex-col nw-gap-4 nw-pb-4 nw-pt-6 nw-bg-blue-50
-  nw-border-t nw-border-gray-100
-  md:nw-flex-row md:nw-items-center md:nw-justify-between" style="background-color: rgb(239 246 255);">
-    <!-- Mobile Close Button oben rechts -->
-    <button onclick="closeFooter()"
-            class="nw-absolute nw-top-2 nw-right-4 md:nw-hidden nw-text-lg nw-text-gray-700 hover:nw-text-black">
-      ✕
-    </button>
-
-    <div class="nw-flex nw-flex-col nw-justify-items-start nw-gap-2 nw-mx-4 nw-mt-3 md:nw-mt-0">
-      <div class="nw-flex nw-items-start nw-place-items-center md:nw-place-items-start lg:nw-place-items-center  nw-space-x-2 nw-text-sm nw-font-medium">
-        <img  class="nw-mt-1 md:nw-mt-1.5 lg:nw-mt-0" style="width: 45px"
-              src="https://www.haller-kreisblatt.de/_apps/nw/assets/hk/label-hk_plus2.svg" alt="">
-        <span class="nw-text-base md:nw-text-lg nw-pr-6">Finale verloren - Stolz geblieben!🖤🤍💙 6 Monate HK+ für <span style="text-decoration: line-through; color: grey;">89,40€</span> 19,05 €</span>
-      </div>
-
-      <div class="nw-flex nw-flex-col nw-gap-3">
-        <p class="nw-text-sm nw-text-gray-600">So nah dran - so großartig gekämpft. Jetzt mit dem Webabo alles lesen <br
-          class="break nw-block md:nw-hidden">
-          & exklusiven Zugang zu allen Artikeln rund um das große Pokalfinale erhalten.</p>
-      </div>
-    </div>
-
-    <div class="nw-flex nw-flex-col md:nw-flex-row nw-items-center nw-justify-center md:nw-justify-end nw-gap-2 nw-text-center md:nw-text-right md:nw-mr-4">
-      <a href="https://www.haller-kreisblatt.de/mein_hk/abo/checkout/login?abos=HK-Plus-Angebot"
-         class="funnel-entry nw-flex nw-bg-red-0 hover:nw-bg-red-100 hover:nw-text-white focus:nw-bg-red-200 nw-text-center
-        md:nw-min-w-26 md:nw-max-w-fit nw-whitespace-nowrap nw-text-white
-         nw-rounded-md nw-text-sm nw-font-bold
-         nw-cursor-pointer nw-py-2 nw-px-4 hover:nw-transition-all hover:nw-duration-300  focus:nw-transition-all
-        disabled:nw-bg-gray-500 disabled:nw-cursor-not-allowed" style="text-decoration: none;"
-         onclick="handleButtonClick(event);_paq.push(['trackEvent', 'footer-widget', 'click', 'HK+ Wochenangebot', '{{ returnId }}']);_paq.push(['trackEvent', 'CheckoutStep', '{\'produktname\': \'HK+ Wochenangebot\', \'Stepname\': \'Footer Klick\', \'cmsId\': \'{{ returnId }}\'}', '1']);document.getElementById('checkoutjump').submit();"
-         data-event-value="paywall-footer-click" data-upscore-conversion="5" data-label="Artikel-Footer"
-         data-product="HK+ Wochenangebot" data-price="4 € / monatlich">
-        <svg id="spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-             stroke="currentColor" class="nw-hidden spinner nw-mr-1.5 nw-h-5 nw-w-5">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
-        </svg>
-        <span id="loadingText">Angebot sichern</span>
-      </a>
-      <!-- Desktop Close Button bleibt wie gehabt -->
-      <button onclick="closeFooter()"
-              class="svg-close nw-hidden md:nw-inline nw-text-lg nw-text-gray-700 hover:nw-text-black nw-pl-2">
         ✕
       </button>
     </div>
@@ -139,45 +103,35 @@
 </div>
 
 <script>
-  function triggerAboFooter() {
-    if (userstatus_upscore < 2) {
-      $("#abo-footer").removeClass("nw-hidden");
-      _paq.push(["trackEvent", "footer-widget", "view", "Abofooter", {{ returnId }}]);
-    }
-  }
-
-  function handleButtonClick(event) {
-    const loadingButton = event.currentTarget;
-    const loadingText = loadingButton.querySelector('#loadingText');
-    const spinner = loadingButton.querySelector('#spinner');
-    loadingButton.disabled = true;
-    loadingText.textContent = 'Lädt ...';
-    spinner.classList.remove('nw-hidden');
-    setTimeout(() => {
-      loadingText.textContent = '{{ offer.buttonText }}';
-      spinner.classList.add('nw-hidden');
-      loadingButton.disabled = false;
-      loadingButton.blur();
-    }, 5000);
-  }
-
   function toggleFooter() {
-    const collapsed = document.getElementById('footerCollapsed');
-    const expanded = document.getElementById('footerExpanded');
+    const expandedText = document.getElementById('footerExpanded');
     const arrow = document.querySelector('#toggleArrow svg');
     const toggleButton = document.getElementById('toggleArrow');
 
-    collapsed.classList.toggle('nw-hidden');
-    expanded.classList.toggle('nw-hidden');
-
+    const isHidden = expandedText.classList.contains('nw-hidden');
+    expandedText.classList.toggle('nw-hidden');
     arrow.classList.toggle('nw-rotate-180');
-
-    const isExpanded = expanded.classList.contains('nw-hidden') === false;
-    toggleButton.setAttribute('aria-expanded', isExpanded);
+    toggleButton.setAttribute('aria-expanded', isHidden);
   }
 
   function closeFooter() {
-    document.getElementById('abo-footer').classList.add('nw-hidden');
+    const footer = document.getElementById('abo-footer');
+    if (footer) {
+      localStorage.setItem('abofooterClosed', 'true');
+      footer.classList.add('nw-hidden');
+    }
   }
-</script>
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const footer = document.getElementById('abo-footer');
+    const aboFooterClosed = localStorage.getItem('abofooterClosed');
+    console.log('Footer :', aboFooterClosed);
+
+
+    if ((aboFooterClosed === null || aboFooterClosed === "false")) {
+      footer.classList.remove('nw-hidden');
+      _paq.push(["trackEvent", "footer-widget", "view", "Abofooter", {{ returnId }}]);
+    }
+  });
+
+</script>
