@@ -1,0 +1,786 @@
+<style>
+  .focus-nw-ring:focus {
+    nw-outline: 2px solid #0071A1;
+    nw-outline-offset: 2px;
+  }
+
+  .drag-over {
+    nw-border-color: #0071A1;
+    background-color: rgba(0, 113, 161, 0.05);
+  }
+
+  .file-preview {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .file-preview img {
+    nw-transition: nw-transform 0.3s ease;
+  }
+
+  .file-preview:hover img {
+    nw-transform: scale(1.05);
+  }
+
+  .remove-file {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #dc2626;
+    color: white;
+    nw-border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0;
+    nw-transition: opacity 0.3s ease;
+  }
+
+  .file-preview:hover .remove-file,
+  .file-preview:focus-within .remove-file {
+    opacity: 1;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .remove-file {
+      opacity: 1;
+      width: 28px;
+      height: 28px;
+      font-size: 14px;
+      top: -6px;
+      right: -6px;
+    }
+
+    .file-preview img {
+      min-height: 80px;
+    }
+
+    /* Better touch targets on mobile */
+    input, textarea, select, button {
+      min-height: 44px;
+      font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    /* Improved spacing on mobile */
+    .nw-space-y-6 > * + * {
+      margin-top: 1rem;
+    }
+
+    .nw-space-y-4 > * + * {
+      margin-top: 0.75rem;
+    }
+
+    /* Mobile form improvements */
+    .upload-area {
+      padding: 1rem;
+      min-height: 120px;
+    }
+
+    /* Stack form fields on mobile */
+    .md\:nw-grid-cols-2 {
+      nw-grid-template-columns: 1fr;
+    }
+
+    /* Larger checkboxes for mobile */
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Better mobile typography */
+    h1 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+    }
+  }
+
+  /* Touch device optimizations */
+  @media (hover: none) and (pointer: coarse) {
+    .upload-area:hover {
+      nw-border-color: #d1d5db;
+    }
+
+    .upload-area:active {
+      nw-border-color: #0071A1;
+      background-color: rgba(0, 113, 161, 0.05);
+    }
+  }
+
+  .error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+
+  .success-message {
+    color: #16a34a;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+
+  .loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+</style>
+<div class="nw-bg-white">
+  <!-- Header -->
+  <header class="nw-shadow-sm nw-border-b nw-border-gray-0">
+    <div class="nw-max-w-7xl nw-mx-auto nw-px-4 sm:nw-px-6 lg:nw-px-8 nw-py-4">
+      <div
+        class="nw-flex nw-flex-col md:nw-flex-row nw-items-center nw-gap-8">
+        <div
+          class="nw-flex-shrink-0"><img
+          src="/images/arminia-angebot/img-analysen.jpg"
+          alt="Hochzeitspaar im Brautkleid und Anzug - romantische Hochzeitsfeier"
+          class="nw-w-48 nw-h-32 sm:nw-w-64 sm:nw-h-40 nw-object-cover nw-rounded-lg nw-shadow-lg"></div>
+        <div
+          class="nw-flex-1 nw-text-center md:nw-text-left">
+          <div
+            class="nw-flex nw-items-center nw-justify-center md:nw-justify-start nw-gap-3 nw-mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="lucide lucide-heart nw-h-10 nw-w-10 nw-text-hk-blue-200">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+            </svg>
+            <h1
+              class="nw-text-3xl md:nw-text-4xl nw-font-bold nw-text-gray-800">Brautpaar der Woche</h1>
+          </div>
+          <p
+            class="nw-text-lg md:nw-text-xl nw-text-gray-700 nw-leading-relaxed nw-mb-3">Bewerben Sie sich als Brautpaar
+            der Woche und
+            teilen Sie Ihre Liebesgeschichte mit unseren Leserinnen und Lesern</p>
+          <p
+            class="nw-text-base nw-text-gray-600">Ihre Geschichte verdient es, erzählt zu werden</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="nw-max-w-4xl nw-mx-auto nw-px-4 sm:nw-px-6 lg:nw-px-8 nw-py-6" role="main">
+    <form id="brautpaar-form" class="nw-space-y-8" novalidate role="form"
+          aria-label="Bewerbungsformular für Brautpaar der Woche">
+
+      <!-- Personal Information -->
+      <div class="nw-bg-white nw-shadow nw-rounded-lg nw-border nw-border-gray-100">
+        <div class="nw-px-6 nw-py-4 nw-border-b nw-border-gray-0">
+          <div class="nw-flex nw-items-center nw-gap-2">
+            <svg class="nw-h-6 nw-w-6 nw-text-hk-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+            <h2 id="personal-info-section" class="nw-text-xl nw-font-bold nw-text-black">Persönliche Angaben</h2>
+          </div>
+        </div>
+        <div class="nw-p-4 sm:nw-p-6 nw-grid nw-grid-cols-1 md:nw-grid-cols-2 nw-gap-4 sm:nw-gap-6">
+          <!-- Bride Information -->
+          <div class="nw-space-y-4" role="group" aria-labelledby="bride-info-heading">
+            <h3 id="bride-info-heading" class="nw-text-lg nw-font-medium nw-text-gray-600">Angaben zur Braut</h3>
+
+            <div>
+              <label for="bride-firstname" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+                Vorname <span class="nw-text-red-600">*</span>
+              </label>
+              <input
+                type="text"
+                id="bride-firstname"
+                name="brideFirstname"
+                required
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="Vorname der Braut"
+              >
+              <div class="error-message nw-hidden" id="bride-firstname-error"></div>
+            </div>
+
+            <div>
+              <label for="bride-lastname" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+                Nachname <span class="nw-text-red-600">*</span>
+              </label>
+              <input
+                type="text"
+                id="bride-lastname"
+                name="brideLastname"
+                required
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="Nachname der Braut"
+              >
+              <div class="error-message nw-hidden" id="bride-lastname-error"></div>
+            </div>
+
+            <div>
+              <label for="bride-age" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+                Alter <span class="nw-text-red-600">*</span>
+              </label>
+              <input
+                type="number"
+                id="bride-age"
+                name="brideAge"
+                required
+                min="16"
+                max="100"
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="25"
+              >
+              <div class="error-message nw-hidden" id="bride-age-error"></div>
+            </div>
+
+            <div>
+              <label for="bride-profession" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+                Beruf
+              </label>
+              <input
+                type="text"
+                id="bride-profession"
+                name="brideProfession"
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="z.B. Lehrerin, Krankenschwester"
+              >
+            </div>
+          </div>
+
+          <!-- Groom Information -->
+          <div class="nw-space-y-4" role="group" aria-labelledby="groom-info-heading">
+            <h3 id="groom-info-heading" class="nw-text-lg nw-font-medium nw-text-gray-600">Angaben zum Bräutigam</h3>
+
+            <div>
+              <label for="groom-firstname" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+                Vorname <span class="nw-text-red-600">*</span>
+              </label>
+              <input
+                type="text"
+                id="groom-firstname"
+                name="groomFirstname"
+                required
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="Vorname des Bräutigams"
+              >
+              <div class="error-message nw-hidden" id="groom-firstname-error"></div>
+            </div>
+
+            <div>
+              <label for="groom-lastname" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+                Nachname <span class="nw-text-red-600">*</span>
+              </label>
+              <input
+                type="text"
+                id="groom-lastname"
+                name="groomLastname"
+                required
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="Nachname des Bräutigams"
+              >
+              <div class="error-message nw-hidden" id="groom-lastname-error"></div>
+            </div>
+
+            <div>
+              <label for="groom-age" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+                Alter <span class="nw-text-red-600">*</span>
+              </label>
+              <input
+                type="number"
+                id="groom-age"
+                name="groomAge"
+                required
+                min="16"
+                max="100"
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="27"
+              >
+              <div class="error-message nw-hidden" id="groom-age-error"></div>
+            </div>
+
+            <div>
+              <label for="groom-profession" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+                Beruf
+              </label>
+              <input
+                type="text"
+                id="groom-profession"
+                name="groomProfession"
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="z.B. Ingenieur, Handwerker"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="nw-bg-white nw-shadow nw-rounded-lg nw-border nw-border-gray-100">
+        <div class="nw-px-6 nw-py-4 nw-border-b nw-border-gray-0">
+          <div class="nw-flex nw-items-center nw-gap-2">
+            <svg class="nw-h-6 nw-w-6 nw-text-hk-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <h2 id="contact-info-section" class="nw-text-xl nw-font-bold nw-text-black">Kontaktdaten</h2>
+          </div>
+        </div>
+        <div class="nw-p-4 sm:nw-p-6 nw-grid nw-grid-cols-1 md:nw-grid-cols-2 nw-gap-4 sm:nw-gap-6">
+          <div>
+            <label for="email" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+              E-Mail-Adresse <span class="nw-text-red-600">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+              placeholder="ihre@email.de"
+            >
+            <p class="nw-text-sm nw-text-gray-600 nw-mt-1">Für Rückfragen und zur Terminvereinbarung für das
+              Interview</p>
+            <div class="error-message nw-hidden" id="email-error"></div>
+          </div>
+
+          <div>
+            <label for="phone" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+              Telefonnummer <span class="nw-text-red-600">*</span>
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+              placeholder="0123 456789"
+            >
+            <div class="error-message nw-hidden" id="phone-error"></div>
+          </div>
+
+          <div class="md:nw-col-span-2">
+            <label for="address" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+              Adresse <span class="nw-text-red-600">*</span>
+            </label>
+            <textarea
+              id="address"
+              name="address"
+              required
+              rows="3"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200 nw-resize-none"
+              placeholder="Straße, Hausnummer, PLZ Ort"
+            ></textarea>
+            <div class="error-message nw-hidden" id="address-error"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wedding Information -->
+      <div class="nw-bg-white nw-shadow nw-rounded-lg nw-border nw-border-gray-100">
+        <div class="nw-px-6 nw-py-4 nw-border-b nw-border-gray-0">
+          <div class="nw-flex nw-items-center nw-gap-2">
+
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="nw-h-6 nw-w-6 nw-text-hk-blue-200" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+            </svg>
+
+            <h2 id="wedding-data-section" class="nw-text-xl nw-font-bold nw-text-gray-900">Hochzeitsdaten</h2>
+          </div>
+        </div>
+        <div class="nw-p-4 sm:nw-p-6 nw-grid nw-grid-cols-1 md:nw-grid-cols-2 nw-gap-4 sm:nw-gap-6">
+          <div>
+            <label for="wedding-date" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+              Hochzeitsdatum <span class="nw-text-red-600">*</span>
+            </label>
+            <input
+              type="date"
+              id="wedding-date"
+              name="weddingDate"
+              required
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+            >
+            <div class="error-message nw-hidden" id="wedding-date-error"></div>
+          </div>
+
+          <div>
+            <label for="wedding-location" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+              Hochzeitsort <span class="nw-text-red-600">*</span>
+            </label>
+            <input
+              type="text"
+              id="wedding-location"
+              name="weddingLocation"
+              required
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+              placeholder="z.B. Standesamt Halle, Evangelische Kirche in Bockhorst"
+            >
+            <div class="error-message nw-hidden" id="wedding-location-error"></div>
+          </div>
+
+          <div>
+            <label for="ceremony-type" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">Art der
+              Trauung</label>
+            <select
+              id="ceremony-type"
+              name="ceremonyType"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+              aria-label="Art der Trauung auswählen"
+            >
+              <option value="">Bitte wählen</option>
+              <option value="standesamt">Standesamtliche Trauung</option>
+              <option value="kirche">Kirchliche Trauung</option>
+              <option value="freie">Freie Trauung</option>
+              <option value="beides">Standesamt und Kirche</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="married-name"
+                   class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">Ehename</label>
+            <input
+              type="text"
+              id="married-name"
+              name="marriedName"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+              placeholder="z.B. Familie Müller"
+            >
+          </div>
+
+          <div>
+            <label for="celebration-location" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">Wo
+              wird/wurde gefeiert?</label>
+            <input
+              type="text"
+              id="celebration-location"
+              name="celebrationLocation"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+              placeholder="z.B. Restaurant Zur Krone, Eventlocation..."
+            >
+          </div>
+
+          <div>
+            <label for="honeymoon-destination" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">Wohin
+              ging/geht die Hochzeitsreise?</label>
+            <input
+              type="text"
+              id="honeymoon-destination"
+              name="honeymoonDestination"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+              placeholder="z.B. Italien, Malediven, noch nicht geplant..."
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Love Story -->
+      <div class="nw-bg-white nw-shadow nw-rounded-lg nw-border nw-border-gray-100">
+        <div class="nw-px-6 nw-py-4 nw-border-b nw-border-gray-0">
+          <div class="nw-flex nw-items-center nw-gap-2">
+            <svg class="nw-h-6 nw-w-6 nw-text-hk-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+            <h2 id="love-story-section" class="nw-text-xl nw-font-bold nw-text-black">Ihre Liebesgeschichte</h2>
+          </div>
+        </div>
+        <div class="nw-p-4 sm:nw-p-6 nw-space-y-4 sm:nw-space-y-6">
+          <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-2 nw-gap-4 sm:nw-gap-6">
+            <div>
+              <label for="where-met-details" class="nw-block nw-text-sm nw-font-medium nw-text-blacknw-mb-1">Wann
+                kennen gelernt?</label>
+              <input
+                type="text"
+                id="where-met-details"
+                name="whereMetDetails"
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="z.B. September 2019, Sommer 2020..."
+              >
+            </div>
+
+            <div>
+              <label for="how-met-details" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">Wo kennen
+                gelernt?</label>
+              <input
+                type="text"
+                id="how-met-details"
+                name="howMetDetails"
+                class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+                placeholder="z.B. Universität, Freunde, Online..."
+              >
+            </div>
+          </div>
+
+          <div>
+            <label for="how-met" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+              Wie haben Sie sich kennengelernt? <span class="nw-text-red-600">*</span>
+            </label>
+            <textarea
+              id="how-met"
+              name="howMet"
+              required
+              rows="4"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200 nw-resize-none"
+              placeholder="Erzählen Sie uns, wie Ihre Liebesgeschichte begann..."
+            ></textarea>
+            <p class="nw-text-sm nw-text-gray-600 nw-mt-1">Mindestens 50 Zeichen</p>
+            <div class="error-message nw-hidden" id="how-met-error"></div>
+          </div>
+
+          <div>
+            <label for="proposal-story" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">Wie war der
+              Heiratsantrag?</label>
+            <textarea
+              id="proposal-story"
+              name="proposalStory"
+              rows="4"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200 nw-resize-none"
+              placeholder="Erzählen Sie uns von Ihrem besonderen Moment..."
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="relationship-duration" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">
+              Wie lange sind Sie zusammen? <span class="nw-text-red-600">*</span>
+            </label>
+            <input
+              type="text"
+              id="relationship-duration"
+              name="relationshipDuration"
+              required
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200"
+              placeholder="z.B. 3 Jahre, 5 Jahre und 6 Monate"
+            >
+            <div class="error-message nw-hidden" id="relationship-duration-error"></div>
+          </div>
+
+          <div>
+            <label for="what-appreciate-partner" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">Was
+              schätzen Sie aneinander?</label>
+            <textarea
+              id="what-appreciate-partner"
+              name="whatAppreciatePartner"
+              rows="3"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200 nw-resize-none"
+              placeholder="Was mögen Sie besonders an Ihrem Partner/Ihrer Partnerin?"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="common-hobbies" class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-1">Gemeinsame
+              Hobbies</label>
+            <textarea
+              id="common-hobbies"
+              name="commonHobbies"
+              rows="3"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200 nw-resize-none"
+              placeholder="Welche Hobbies und Interessen teilen Sie?"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="future-plans" class="nw-block nw-text-sm nw-font-medium nw-text-blacknw-mb-1">Gemeinsame
+              Zukunftspläne</label>
+            <textarea
+              id="future-plans"
+              name="futurePlans"
+              rows="3"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-100 nw-rounded-md focus-nw-ring focus:nw-border-hk-blue-200 nw-resize-none"
+              placeholder="Welche Pläne haben Sie für Ihre gemeinsame Zukunft?"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo Upload -->
+      <div class="nw-bg-white nw-shadow nw-rounded-lg nw-border nw-border-gray-100">
+        <div class="nw-px-6 nw-py-4 nw-border-b nw-border-gray-0">
+          <div class="nw-flex nw-items-center nw-gap-2">
+            <svg class="nw-h-6 nw-w-6 nw-text-hk-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <h2 id="photo-section" class="nw-text-xl nw-font-bold nw-text-gray-900">Fotos</h2>
+          </div>
+        </div>
+        <div class="nw-p-4 sm:nw-p-6 nw-space-y-4 sm:nw-space-y-6">
+          <div>
+            <label class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-2">
+              Gemeinsames Foto <span class="nw-text-red-600">*</span>
+            </label>
+            <div id="couple-photo-upload"></div>
+            <div
+              class="nw-space-y-4">
+              <div
+                class="nw-relative nw-border-2 nw-border-dashed nw-rounded-lg nw-p-6 nw-transition-colors nw-cursor-pointer
+                   hover:nw-border-hk-blue-200 focus-within:nw-border-hk-blue-200 focus-within:nw-ring-2 focus-within:nw-ring-hk-blue-200/20 nw-border-muted-foreground/25"
+                tabindex="0" role="button" aria-label="Dateien für couplePhoto hochladen"><input
+                data-replit-metadata="client/src/components/file-upload.tsx:174:8" data-component-name="input"
+                type="file" id="couple-photo" name="couplePhoto" accept="image/*" required="" class="sr-only">
+                <div
+                  class="nw-flex nw-flex-col nw-items-center nw-justify-center nw-space-y-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                       class="lucide lucide-upload nw-h-12 nw-w-12 nw-text-muted-foreground"
+                       data-replit-metadata="client/src/components/file-upload.tsx:189:10" data-component-name="Upload"
+                       aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" x2="12" y1="3" y2="15"></line>
+                  </svg>
+                  <div
+                    class="nw-text-center"><p class="nw-text-sm nw-font-medium nw-text-foreground"><span
+
+                    class="nw-text-hk-blue-200 font-bold">Klicken Sie hier</span> oder ziehen Sie Dateien hierher</p>
+                    <p
+                      class="nw-text-xs nw-text-black nw-mt-1">PNG, JPG bis zu 10MB</p></div>
+                </div>
+              </div>
+            </div>
+            <p class="nw-mt-2 nw-text-sm nw-text-gray-600">
+              Hochauflösendes Foto für die bestmögliche Darstellung im Artikel
+            </p>
+          </div>
+
+          <div>
+            <label class="nw-block nw-text-sm nw-font-medium nw-text-black nw-mb-2">
+              Weitere Fotos (optional)
+            </label>
+            <div id="additional-photos-upload"></div>
+            <div
+              class="nw-space-y-4">
+              <div
+                class="nw-relative nw-border-2 nw-border-dashed nw-rounded-lg nw-p-6 nw-transition-colors nw-cursor-pointer
+                   hover:nw-border-hk-blue-200 focus-within:nw-border-hk-blue-200 focus-within:nw-ring-2 focus-within:nw-ring-hk-blue-200/20 nw-border-muted-foreground/25"
+                tabindex="0" role="button" aria-label="Dateien für couplePhoto hochladen"><input
+                data-replit-metadata="client/src/components/file-upload.tsx:174:8" data-component-name="input"
+                type="file" id="couple-photo" name="couplePhoto" accept="image/*" required="" class="sr-only">
+                <div
+                  class="nw-flex nw-flex-col nw-items-center nw-justify-center nw-space-y-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                       class="lucide lucide-upload nw-h-12 nw-w-12 nw-text-muted-foreground"
+                       data-replit-metadata="client/src/components/file-upload.tsx:189:10" data-component-name="Upload"
+                       aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" x2="12" y1="3" y2="15"></line>
+                  </svg>
+                  <div
+                    class="nw-text-center"><p class="nw-text-sm nw-font-medium nw-text-foreground"><span
+
+                    class="nw-text-hk-blue-200 font-bold">Klicken Sie hier</span> oder ziehen Sie Dateien hierher</p>
+                    <p
+                       class="nw-text-xs nw-text-black nw-mt-1">PNG, JPG bis zu 10MB • Maximal 10 Dateien</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="nw-mt-2 nw-text-sm nw-text-gray-600">
+              Zusätzliche Fotos von Ihnen beiden, der Verlobung, etc.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consent -->
+      <div class="nw-bg-white nw-shadow nw-rounded-lg nw-border nw-border-gray-100">
+        <div class="nw-px-6 nw-py-4 nw-border-b nw-border-gray-0">
+          <div class="nw-flex nw-items-center nw-gap-2">
+            <svg class="nw-h-6 nw-w-6 nw-text-hk-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <h2 id="consent-section" class="nw-text-xl nw-font-bold nw-text-black">Einverständniserklärung</h2>
+          </div>
+        </div>
+        <div class="nw-p-4 sm:nw-p-6 nw-space-y-4 sm:nw-space-y-6">
+
+          <div class="nw-flex nw-items-start nw-space-x-3">
+
+            <input
+              type="checkbox"
+              id="consent-publication"
+              name="consentPublication"
+              required
+              class="nw-mt-1 nw-h-4 nw-w-4 nw-text-hk-blue-200 focus:nw-ring-hk-blue-200  nw-border-gray-100 nw-rounded focus-nw-ring"
+            >
+            <label for="consent-publication" class="nw-text-sm nw-text-black">
+              <span class="nw-font-medium">Veröffentlichung <span class="nw-text-red-600">*</span></span><br>
+              Ich/Wir stimmen der Veröffentlichung unserer Daten, Fotos und Liebesgeschichte im Haller Kreisblatt zu.
+            </label>
+          </div>
+          <div class="error-message nw-hidden" id="consent-publication-error"></div>
+
+          <div class="nw-flex nw-items-start nw-space-x-3">
+            <input
+              type="checkbox"
+              id="consent-contact"
+              name="consentContact"
+              class="nw-mt-1 nw-h-4 nw-w-4 nw-text-hk-blue-200 focus:nw-ring-hk-blue-200  nw-border-gray-100 nw-rounded focus-nw-ring"
+            >
+            <label for="consent-contact" class="nw-text-sm nw-text-black">
+              <span class="nw-font-medium">Kontakt für weitere Artikel</span><br>
+              Ich/Wir stimmen zu, dass wir für ähnliche Artikel kontaktiert werden dürfen.
+            </label>
+          </div>
+
+          <div class="nw-flex nw-items-start nw-space-x-3">
+            <input
+              type="checkbox"
+              id="data-protection"
+              name="dataProtection"
+              required
+              class="nw-mt-1 nw-h-4 nw-w-4 nw-text-hk-blue-200  focus:nw-ring-hk-blue-200  nw-border-gray-100 nw-rounded focus-nw-ring"
+            >
+            <label for="data-protection" class="nw-text-sm nw-text-black">
+              <span class="nw-font-medium">Datenschutz <span class="nw-text-red-600">*</span></span><br>
+              Ich/Wir haben die <a href="https://www.haller-kreisblatt.de/microsites/datenschutz" target="_blank"
+                                   rel="noopener" class="nw-text-hk-blue-200 hover:underline">Datenschutzerklärung</a>
+              gelesen
+              und stimmen der Verarbeitung unserer Daten zu.
+            </label>
+          </div>
+          <div class="error-message nw-hidden" id="data-protection-error"></div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="nw-bg-white nw-shadow nw-rounded-lg nw-border nw-border-gray-100 nw-text-center">
+        <div class="nw-px-6 nw-py-4 nw-border-b nw-border-gray-0">
+          <p class="text-gray-600 nw-mb-6">Vielen Dank für Ihr Interesse! Nach dem Absenden prüfen wir Ihre Bewerbung
+            und melden
+            uns bei Ihnen.</p>
+          <div class="nw-flex nw-justify-center nw-mb-6">
+            <button
+              type="submit"
+              id="submit-btn"
+              class="nw-bg-hk-blue-200 hover:nw-bg-hk-blue-300 nw-text-white nw-font-bold nw-py-3 nw-px-8 nw-rounded-lg focus-nw-ring disabled:nw-opacity-50
+          disabled:nw-cursor-not-allowed nw-transition-colors"
+              aria-label="Bewerbung als Brautpaar der Woche absenden"
+            >
+              <span id="submit-text">Bewerbung absenden</span>
+              <span id="submit-loading" class="nw-hidden">Wird gesendet...</span>
+            </button>
+          </div>
+          <p
+            class="nw-text-sm nw-text-gray-600"><span class="nw-text-red-600">*</span> Pflichtfelder müssen ausgefüllt
+            werden</p>
+        </div>
+      </div>
+
+
+    </form>
+  </main>
+</div>
