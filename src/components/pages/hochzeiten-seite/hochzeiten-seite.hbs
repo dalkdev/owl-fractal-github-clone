@@ -1059,8 +1059,8 @@
                  tabindex="0"
                  role="button"
                  aria-label="Dateien für ${this.options.name} hochladen">
-                  <label for="file-upload" class="nw-sr-only">Dateien für ${this.options.name} hochladen</label>
-                <input type="file"
+                <label for="${this.options.name}" class="nw-sr-only">Upload File</label>
+                <input type="file" id="${this.options.name}"
                        class="nw-hidden"
                        ${this.options.multiple ? 'multiple' : ''}
                        accept="${this.options.accept}"
