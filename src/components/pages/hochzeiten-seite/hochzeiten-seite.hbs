@@ -7,6 +7,8 @@
     background-size: 100% 100%;
     background-position: 50%;
     background-repeat: no-repeat;
+    width: 20px !important;
+    height: 20px !important;
   }
 
   .focus-nw-ring:focus {
@@ -76,6 +78,14 @@
       font-size: 16px; /* Prevents zoom on iOS */
     }
 
+    @media (max-width: 768px) {
+      input[type="checkbox"] {
+        min-height: 20px !important; /* falls nötig */
+        min-width: 20px !important;
+        font-size: 16px;  /* wird bei Checkboxen meist ignoriert, kannst auch weglassen */
+      }
+    }
+
     /* Improved spacing on mobile */
     .nw-space-y-6 > * + * {
       margin-top: 1rem;
@@ -98,8 +108,8 @@
 
     /* Larger checkboxes for mobile */
     input[type="checkbox"] {
-      width: 20px;
-      height: 20px;
+      width: 20px !important;
+      height: 20px !important;
     }
 
     /* Better mobile typography */
@@ -148,7 +158,7 @@
 <div class="nw-bg-white">
   <!-- Header -->
   <header class="nw-shadow-sm nw-border-b nw-border-gray-0">
-    <div class="nw-max-w-7xl nw-mx-auto nw-px-4 sm:nw-px-6 lg:nw-px-8 nw-py-4">
+    <div class="nw-max-w-4xl nw-mx-auto nw-px-4 sm:nw-px-6 lg:nw-px-8 nw-py-4">
       <div
         class="nw-flex nw-flex-col md:nw-flex-row nw-items-center nw-gap-8">
         <div
@@ -709,8 +719,9 @@
               focus:outline-none"
             >
             <label for="consent-publication" class="nw-text-sm nw-text-black">
-              <span class="nw-font-medium">Veröffentlichung <span class="nw-text-red-600">*</span></span><br>
-              Ich/Wir stimmen der Veröffentlichung unserer Daten, Fotos und Liebesgeschichte im Haller Kreisblatt zu.
+              <span class="nw-font-medium">Einverständnis zur Veröffentlichung <span class="nw-text-red-600">*</span></span><br>
+              Ich/Wir erteile(n) dem Haller Kreisblatt die Erlaubnis, unsere Geschichte und die eingereichten Fotos in der Rubrik<br>
+              "Brautpaar der Woche" zu veröffentlichen. Dies umfasst sowohl die Print- als auch die Online-Ausgabe.
             </label>
           </div>
           <div class="error-message nw-hidden" id="consent-publication-error"></div>
@@ -732,8 +743,8 @@
             "
             />
             <label for="consent-contact" class="nw-text-sm nw-text-black">
-              <span class="nw-font-medium">Kontakt für weitere Artikel</span><br>
-              Ich/Wir stimmen zu, dass wir für ähnliche Artikel kontaktiert werden dürfen.
+              <span class="nw-font-medium">Kontakt für Rückfragen</span><br>
+              Ich/Wir bin/sind damit einverstanden, dass die Redaktion bei Rückfragen Kontakt aufnimmt.
             </label>
           </div>
 
@@ -754,11 +765,10 @@
               focus:outline-none"
             >
             <label for="data-protection" class="nw-text-sm nw-text-black">
-              <span class="nw-font-medium">Datenschutz <span class="nw-text-red-600">*</span></span><br>
-              Ich/Wir haben die <a href="https://www.haller-kreisblatt.de/microsites/datenschutz" target="_blank"
+              <span class="nw-font-medium">Datenschutzerklärung <span class="nw-text-red-600">*</span></span><br>
+              Ich habe die <a href="https://www.haller-kreisblatt.de/microsites/datenschutz" target="_blank"
                                    rel="noopener" class="nw-text-hk-blue-200 hover:underline">Datenschutzerklärung</a>
-              gelesen
-              und stimmen der Verarbeitung unserer Daten zu.
+              gelesen und stimme der Verarbeitung meiner personenbezogenen Daten zu.
             </label>
           </div>
           <div class="error-message nw-hidden" id="data-protection-error"></div>
