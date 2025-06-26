@@ -1,0 +1,23 @@
+{
+  "status": "qm",
+  "context": {
+    "items": [
+      {
+        "headline": "Sicherer Job",
+        "content": "Auf uns als Arbeitgeber können Sie sich auch in Krisenzeiten jederzeit verlassen."
+      },
+      {
+        "headline": "Faire Bezahlung",
+        "content": " Wir zahlen fair und transparent – Sie wissen genau, was Sie verdienen."
+      },
+      {
+        "headline": "Urlaub",
+        "content": "Wir bieten familienfreundliche Urlaubsregelungen und 30 Urlaubstage im Jahr."
+      },
+      {
+        "headline": "Zweit-Job",
+        "content": "Zustellerinnen und Zusteller starten früh in den Tag und sind danach flexibel."
+      }
+    ]
+  }
+}
