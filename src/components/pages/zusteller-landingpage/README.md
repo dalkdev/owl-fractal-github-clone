@@ -1,0 +1,1 @@
+Hier haben wir Font-awesome Ikons benutzt, das gibt es im _head_imports.hbs

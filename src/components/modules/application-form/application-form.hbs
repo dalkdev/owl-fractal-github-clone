@@ -1,0 +1,260 @@
+<style>
+  /* Animation for form feedback */
+  .form-input:focus {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .error-icon, .success-icon {
+    transition: opacity 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .form-error-summary {
+    animation: slideDown 0.4s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Visual feedback transitions */
+  .form-input.nw-border-red-500, .form-input.nw-border-green-500 {
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+</style>
+<div id="form-error-box" class="nw-bg-red-0 nw-rounded-md nw-p-4 nw-mb-6 nw-hidden">
+  <p class="nw-font-bold nw-text-white" data-i18n="error-title">Bitte überprüfen Sie Ihre Eingaben</p>
+  <p class="nw-text-white" data-i18n="error-caption">Es gibt noch Fehler im Formular. Bitte korrigieren Sie die markierten Felder.</p>
+</div>
+<form id="application-form" action="" method=""
+      class="nw-bg-white nw-p-5 sm:nw-p-8 nw-rounded-lg nw-shadow-md animate-scale-in delay-200"
+      style="border: 1px solid #e2e2e2;" aria-labelledby="form-heading" novalidate>
+
+  <!-- Formular mit Feldset für bessere Gruppierung -->
+  <fieldset>
+    <legend class="sr-only" data-i18n="form_personal_info">Persönliche Informationen für Ihre Bewerbung
+    </legend>
+
+    <!-- Name field -->
+    <div class="nw-mb-5 sm:nw-mb-6">
+      <label for="name" class="nw-block nw-text-gray-700 nw-font-medium nw-mb-1 sm:nw-mb-2"><span
+        data-i18n="form_name">Name</span> <span class="nw-text-red-0">*</span></label>
+      <input type="text" id="name" name="name"
+             class="form-input nw-border nw-border-gray-200 nw-w-full  nw-px-2
+            nw-py-1.5 nw-rounded-md nw-text-base sm:nw-text-lg" required
+             aria-required="true"
+             aria-describedby="name-error" autocomplete="name">
+      <p id="name-error" class="
+                nw-text-red-0
+                nw-text-xs
+                nw-font-medium
+                nw-hidden
+              " data-i18n="validation_required">
+        Dieses Feld ist erforderlich.
+      </p>
+    </div>
+
+    <!-- Phone field -->
+    <div class="nw-mb-5 sm:nw-mb-6">
+      <label for="phone" class="nw-block nw-text-gray-700 nw-font-medium nw-mb-1 sm:nw-mb-2"><span
+        data-i18n="form_phone">Telefon</span> <span class="nw-text-red-0">*</span></label>
+      <input type="tel" id="phone" name="phone"
+             class="form-input nw-border nw-border-gray-200 nw-w-full  nw-px-2
+            nw-py-1.5 nw-rounded-md nw-text-base sm:nw-text-lg" required
+             aria-required="true"
+             aria-describedby="phone-error" autocomplete="tel">
+      <p id="phone-error" class="
+                nw-text-red-0
+                nw-text-xs
+                nw-font-medium
+                nw-hidden
+              " data-i18n="validation_required">
+        Dieses Feld ist erforderlich.
+      </p>
+    </div>
+
+    <!-- Email field -->
+    <div class="nw-mb-5 sm:nw-mb-6">
+      <label for="email" class="nw-block nw-text-gray-700 nw-font-medium nw-mb-1 sm:nw-mb-2"><span
+        data-i18n="form_email">E-Mail</span> <span class="nw-text-red-0">*</span></label>
+      <input type="email" id="email" name="email"
+             class="form-input nw-border nw-border-gray-200 nw-w-full  nw-px-2
+            nw-py-1.5 nw-rounded-md nw-text-base sm:nw-text-lg" required
+             aria-required="true"
+             aria-describedby="email-error" autocomplete="email">
+      <p id="email-error" class="
+                nw-text-red-0
+                nw-text-xs
+                nw-font-medium
+                nw-hidden
+              " data-i18n="validation_required">
+        Dieses Feld ist erforderlich.
+      </p>
+    </div>
+
+    <!-- Postal code field -->
+    <div class="nw-mb-5 sm:nw-mb-6">
+      <label for="postal_code" class="nw-block nw-text-gray-700 nw-font-medium nw-mb-1 sm:nw-mb-2"><span
+        data-i18n="form_postal_code">Postleitzahl</span> <span class="nw-text-red-0">*</span></label>
+      <input type="text" id="postal_code" name="postal_code"
+             class="form-input nw-border nw-border-gray-200 nw-w-full  nw-px-2
+            nw-py-1.5 nw-rounded-md nw-text-base sm:nw-text-lg" pattern="[0-9]{5}"
+             maxlength="5" required aria-required="true" aria-describedby="postal-code-error"
+             autocomplete="postal-code" inputmode="numeric">
+      <p id="postal-code-error" class="
+                nw-text-red-0
+                nw-text-xs
+                nw-font-medium
+                nw-hidden
+              " data-i18n="validation_required">
+        Dieses Feld ist erforderlich.
+      </p>
+    </div>
+  </fieldset>
+
+  <!-- Privacy notice -->
+  <div class="nw-mb-6 sm:nw-mb-8 nw-text-xs sm:nw-text-sm nw-text-gray-700 nw-text-center">
+    <p> <span data-i18n="beachten">Bitte beachten Sie unsere </span><a href="https://www.nw.de/datenschutz/" target="_blank"
+                                                                       rel="noopener noreferrer" data-i18n="datenschutze" class="nw-pl-1 nw-text-red-0 hover:nw-underline">Datenschutzhinweise</a>.
+    </p>
+  </div>
+
+  <!-- Submit button -->
+  <div class="nw-text-center">
+    <button type="submit"
+            class="nw-bg-red-0 nw-text-white nw-font-bold nw-rounded-lg nw-px-6 sm:nw-px-8 nw-py-3 nw-text-base sm:nw-text-lg nw-btn-primary nw-w-full sm:nw-w-auto"
+            aria-label="Bewerbung absenden" data-i18n="form_submit" onclick="onClickRegistrieren()">Absenden
+    </button>
+  </div>
+
+  <!-- Required fields note -->
+  <div class="nw-mt-4 nw-text-center nw-text-xs sm:nw-text-sm nw-text-gray-600" >
+    <span data-i18n="notiz1">(Die Felder mit einem </span><span class="nw-text-red-0">*</span><span data-i18n="notiz2">Sternchen sind Pflichtfelder und müssen somit
+              bitte ausgefüllt werden.)</span>
+  </div>
+</form>
+{{>@zusteller-erfolgreich}}
+
+<script>
+  function onClickRegistrieren(event) {
+    event.preventDefault();
+
+    const valid = Validator();
+
+    if (valid) {
+      // Formular ausblenden
+      document.getElementById('application-form').classList.add('nw-hidden');
+
+      // Bestätigungssektion anzeigen
+      document.getElementById('confirmation-section').classList.remove('nw-hidden');
+    }
+  }
+
+  function Validator() {
+    let valid = true;
+    const inputs = document.querySelectorAll('.form-input');
+
+    inputs.forEach(input => {
+      const errorMsg = input.nextElementSibling;
+
+      if (!input.value.trim()) {
+        valid = false;
+        input.classList.add('nw-border-red-0');
+
+        if (errorMsg && errorMsg.hasAttribute('data-i18n')) {
+          const key = errorMsg.getAttribute('data-i18n');
+          const lang = window.languageSwitcher.getCurrentLanguage();
+          const t = translations[lang];
+          if (t && t[key]) {
+            errorMsg.textContent = t[key];
+          }
+          errorMsg.classList.remove('nw-hidden'); // ← sichtbar machen
+        }
+
+      } else {
+        input.classList.remove('nw-border-red-0');
+        if (errorMsg) {
+          errorMsg.textContent = '';
+          errorMsg.classList.add('nw-hidden');
+        }
+      }
+    });
+
+    // Fehlerbox anzeigen oder ausblenden
+    const errorBox = document.getElementById('form-error-box');
+    if (!valid) {
+      errorBox.classList.remove('nw-hidden');
+    } else {
+      errorBox.classList.add('nw-hidden');
+    }
+
+    return valid;
+  }
+
+
+
+  // Fehleranzeige zurücksetzen beim Klicken
+  document.addEventListener('DOMContentLoaded', function() {
+    let inputs = document.getElementsByClassName('form-input');
+
+    Array.prototype.forEach.call(inputs, function(input) {
+      input.addEventListener('input', function() {
+        input.classList.remove('nw-border-red-0');
+        const errorMsg = input.nextElementSibling;
+        if (errorMsg) {
+          errorMsg.textContent = '';
+          errorMsg.style.display = 'none';
+        }
+      });
+    });
+
+    // Button-Funktion verbinden
+    document.querySelector('button[type="submit"]').addEventListener('click', onClickRegistrieren);
+  });
+
+  document.getElementById('back-to-form').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // "Vielen Dank"-Nachricht ausblenden
+    document.getElementById('confirmation-section').classList.add('nw-hidden');
+
+    // Formular wieder anzeigen
+    document.getElementById('application-form').classList.remove('nw-hidden');
+
+    // Fehlerbox ausblenden
+    document.getElementById('form-error-box').classList.add('nw-hidden');
+
+    // Eingaben zurücksetzen
+    document.getElementById('application-form').reset();
+
+    // Fehlerklassen und Hinweise entfernen
+    const inputs = document.querySelectorAll('#application-form .form-input');
+    inputs.forEach(function(input) {
+      input.classList.remove('nw-border-red-0');
+      const errorMsg = input.nextElementSibling;
+      if (errorMsg) {
+        errorMsg.textContent = '';
+        errorMsg.style.display = 'none';
+      }
+    });
+
+    // Optional: sanft zum Formular scrollen
+    document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>

@@ -1,0 +1,20 @@
+{{#each items}}
+<style>
+  /* Card hover effects */
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+</style>
+<article class="nw-bg-gray-0 nw-p-6 nw-rounded-lg nw-shadow-md card-hover animate-slide-up nw-delay-100" tabindex="0">
+  <div class="nw-flex nw-items-center nw-justify-center nw-w-16 nw-h-16 nw-bg-red-0 nw-text-white nw-rounded-full nw-mb-4 nw-mx-auto" aria-hidden="true" role="img">
+    <i class="fas fa-shield-alt nw-text-2xl" aria-label="Sicherheit Symbol"></i>
+  </div>
+  <h3 class="nw-text-xl nw-font-bold nw-mb-2 nw-text-center" data-i18n="advantage_secure_job">{{{headline}}}</h3>
+  <p class="nw-text-gray-400 nw-text-center" data-i18n="advantage_secure_job_desc">{{{content }}}</p>
+</article>
+{{/each}}

@@ -1,0 +1,700 @@
+<!-- Resource Hints für schnelleres Laden -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+<!-- Kritische CSS zuerst laden -->
+
+<!-- Nicht-kritische Ressourcen asynchron laden -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+  html {
+    scroll-behavior: smooth;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Show on focus */
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  .nw-zusteller-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .nw-zusteller-container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .nw-zusteller-container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .nw-zusteller-container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .nw-zusteller-container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .nw-zusteller-container {
+      max-width: 1536px;
+    }
+  }
+
+
+  /* Verbesserte Fokusdarstellung für Tastaturnavigation */
+  a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid #e11c22;
+    outline-offset: 2px;
+  }
+
+  /* Bessere Sichtbarkeit von Formularfeldern */
+  .form-input:focus {
+    border-color: #e11c22;
+    box-shadow: 0 0 0 3px rgba(225, 28, 34, 0.25);
+  }
+
+  /* Subtile Hover-Effekte für interaktive Elemente */
+  a, button {
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: #e11c22;
+    text-decoration: underline;
+  }
+
+
+  /* Bildoptimierung und Lazy Loading */
+  img {
+    transition: opacity 0.5s ease, filter 0.5s ease;
+  }
+
+  img:not([loading="eager"]) {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  img.loaded, img[loading="eager"] {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  /* Verbesserte Seitenleistung */
+  .content-visibility-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
+  }
+
+  /* Animationen für Seitenladung */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Animation-Klassen */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+</style>
+
+<div class="nw-text-gray-800">
+  <!-- Skip Navigation Link for Screen Readers -->
+  <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:nw-absolute focus:nw-top-4 focus:nw-left-4 nw-bg-red-0 nw-text-white nw-px-4
+    nw-py-2 nw-rounded-md nw-z-50 nw-font-medium">Zum Hauptinhalt springen</a>
+
+  <main id="main-content" >
+    {{>@hero-header-zusteller}}
+
+    <!-- Advantages Section -->
+    <section id="vorteile" class="nw-py-16 nw-bg-white" aria-labelledby="vorteile-heading">
+      <div class="nw-zusteller-container nw-mx-auto nw-px-4">
+        <h2 id="vorteile-heading" class="nw-text-3xl nw-font-bold nw-mb-12 nw-text-center animate-slide-up"
+            data-i18n="advantages_title">Vorteile</h2>
+
+        <!-- Advantage 1 -->
+        {{>@advantage-grid}}
+
+      </div>
+    </section>
+
+    <!-- Requirements Section -->
+    {{>@requirements-list}}
+
+    <!-- Additional Benefits Section -->
+    <section id="weitere-vorteile" class="nw-py-16 nw-bg-white content-visibility-auto"
+             aria-labelledby="weitere-vorteile-heading">
+      <div class="nw-zusteller-container nw-mx-auto nw-px-4">
+        <h2 id="weitere-vorteile-heading" class="nw-text-3xl nw-font-bold nw-mb-12 nw-text-center animate-slide-up"
+            data-i18n="additional_benefits_title">Weitere Vorteile</h2>
+        <div class="nw-max-w-4xl nw-mx-auto">
+          {{>@additional-benefits}}
+        </div>
+      </div>
+    </section>
+    <!-- Where I Work Section -->
+    {{>@where-work}}
+
+
+    <!-- Application Form Section -->
+    <section id="bewerbung" class="nw-py-12 md:nw-py-16 nw-bg-white content-visibility-auto">
+      <div class="nw-zusteller-container nw-mx-auto nw-px-4 sm:nw-px-6">
+        <h2 class="nw-text-2xl sm:nw-text-3xl nw-font-bold nw-mb-4 md:nw-mb-6 nw-text-center animate-slide-up"
+            id="form-heading" data-i18n="application_title">Bewerbung</h2>
+        <p
+          class="nw-text-center nw-text-base md:nw-text-lg nw-mb-8 md:nw-mb-12 nw-max-w-2xl nw-mx-auto animate-fade-in delay-100"
+          data-i18n="application_intro">
+          Einfach das Formular ausfüllen, schon nehmen wir Kontakt mit Ihnen auf. Wir freuen uns auf Sie!
+        </p>
+
+        <div class="nw-max-w-2xl nw-mx-auto">
+          {{>@application-form}}
+
+          <!-- Alternative contact -->
+          <div
+            class="nw-mt-8 sm:nw-mt-12 nw-text-center nw-p-4 sm:nw-p-6 nw-bg-gray-0 nw-rounded-lg animate-fade-in nw-delay-400">
+            <p class="nw-font-bold nw-text-base sm:nw-text-lg nw-mb-2" data-i18n="contact-treten">Sie möchten lieber telefonisch mit uns in Kontakt
+              treten?</p>
+            <p class="nw-mb-2 sm:nw-mb-4 nw-text-sm sm:nw-text-base" data-i18n="melden">Kein Problem. Melden Sie sich unter der</p>
+            <a href="tel:+49521555499"
+               class="nw-block nw-text-red-0 nw-text-xl sm:nw-text-2xl nw-font-bold hover:nw-underline nw-py-3 nw-px-6 nw-bg-white nw-border nw-border-gray-200 nw-rounded-lg nw-mb-2 nw-shadow-md animate-scale-in delay-500">
+              <i class="fas fa-mobile-alt nw-mr-2"></i>0521 555-499
+            </a>
+            <p class="nw-mt-2 sm:nw-mt-4 nw-text-sm sm:nw-text-base" data-i18n="anruf">Wir freuen uns auf Ihren Anruf!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+  <style> /* Language Switcher Styles */
+  .language-switcher-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(225, 28, 34, 0.2);
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+  }
+
+  .language-switcher-container:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .language-options {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .language-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    margin-right: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .language-link {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.2s ease;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .language-link:hover {
+    background-color: rgba(225, 28, 34, 0.1);
+    color: #e11c22;
+    transform: scale(1.05);
+  }
+
+  .language-link.active {
+    background-color: #e11c22;
+    color: white;
+    box-shadow: 0 2px 4px rgba(225, 28, 34, 0.3);
+  }
+
+  .language-link.active:hover {
+    background-color: #c41e3a;
+    transform: scale(1.05);
+  }
+
+  .divider {
+    color: #ccc;
+    font-weight: 300;
+    margin: 0 2px;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .language-switcher-container {
+      top: 10px;
+      right: 10px;
+      padding: 6px 10px;
+    }
+
+    .language-label {
+      display: none;
+    }
+
+    .language-link {
+      padding: 3px 6px;
+      font-size: 13px;
+    }
+  }
+
+  /* Animation for language switching */
+  .language-transition {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .language-transition.fade-out {
+    opacity: 0.8;
+  }
+
+  /* Ensure switcher appears above other elements */
+  .language-switcher-container {
+    position: fixed !important;
+    z-index: 9999 !important;
+  }
+
+  /* Accessibility improvements */
+  .language-link:focus {
+    outline: 2px solid #e11c22;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .language-switcher-container,
+    .language-link {
+      transition: none;
+    }
+  }
+  </style>
+  <script>
+    // Comprehensive translation system for NW Zusteller application
+    const translations = {
+      'de': {
+        // Hero Section
+        'hero_title': 'WIR SUCHEN ZUSTELLER (M/W/D)',
+        'hero_subtitle': 'Worauf noch warten? Verstärken Sie jetzt unser Zusteller-Team!',
+        'hero_cta': 'Jetzt bewerben',
+        'hero_alt': 'Zustellerin mit NW Wagen',
+        'error-title': 'Bitte überprüfen Sie Ihre Eingaben',
+        'contact-treten': 'Sie möchten lieber telefonisch mit uns in Kontakt treten?',
+        'melden': 'Kein Problem. Melden Sie sich unter der',
+        'anruf': 'Wir freuen uns auf Ihren Anruf!',
+
+
+
+
+        // Advantages Section
+        'advantages_title': 'Vorteile',
+        'advantage_secure_job': 'Sicherer Job',
+        'advantage_secure_job_desc': 'Auf uns als Arbeitgeber können Sie sich auch in Krisenzeiten jederzeit verlassen.',
+        'advantage_fair_pay': 'Faire Bezahlung',
+        'advantage_fair_pay_desc': 'Wir zahlen fair und transparent – Sie wissen genau, was Sie verdienen.',
+        'advantage_vacation': 'Urlaub',
+        'advantage_vacation_desc': 'Wir bieten familienfreundliche Urlaubsregelungen und 30 Urlaubstage im Jahr.',
+        'advantage_second_job': 'Zweit-Job',
+        'advantage_second_job_desc': 'Zustellerinnen und Zusteller starten früh in den Tag und sind danach flexibel.',
+
+        // Requirements Section
+        'requirements_title': 'Voraussetzungen',
+        'requirement_age': 'Sie sind mindestens 18 Jahre alt',
+        'requirement_early_riser': 'Sie sind Frühaufsteherin oder Frühaufsteher',
+        'requirement_independent': 'Sie arbeiten eigenverantwortlich',
+        'requirement_reliable': 'Sie sind zuverlässig',
+        'requirement_note': 'Auch zeitlich befristete Urlaubsvertretungen durch Zustellerinnen und Zusteller sind bei uns jederzeit willkommen.',
+
+        // Additional Benefits Section
+        'additional_benefits_title': 'Weitere Vorteile',
+        'employment_opportunities': 'Beschäftigungsmöglichkeiten',
+        'minijob_parttime': 'Minijob oder Teilzeit',
+        'monday_saturday': 'Montag bis Samstag',
+        'fair_payment': 'faire Bezahlung',
+        'working_hours_vacation': 'Arbeitszeiten & Urlaub',
+        'paid_vacation_days': '30 Tage bezahlter Urlaub',
+        'fixed_schedule': 'Fester Stundenplan ggf. plus Nachtzuschlag',
+        'delivery_nearby': 'Zustellung und Fahrdienste in Ihrer Nähe',
+
+        // Where I Work Section
+        'where_work_title': 'Wo arbeite ich?',
+        'where_work_desc': 'Nachdem Sie Kontakt zu uns aufgenommen haben, schauen wir gemeinsam, wo für Sie der beste Einsatzort liegt, und stimmen dies mit Ihnen ab.',
+
+        // Application Form Section
+        'application_title': 'Bewerbung',
+        'application_intro': 'Einfach das Formular ausfüllen, schon nehmen wir Kontakt mit Ihnen auf. Wir freuen uns auf Sie!',
+        'form_name': 'Name',
+        'form_email': 'E-Mail',
+        'form_phone': 'Telefon',
+        'form_postal_code': 'Postleitzahl',
+        'form_submit': 'Absenden',
+        'form_required': 'erforderlich',
+        'form_personal_info': 'Persönliche Informationen für Ihre Bewerbung',
+        //application-form
+        'notiz1': '(Die Felder mit einem',
+        'notiz2': 'Sternchen sind Pflichtfelder und müssen ausgefüllt werden.)',
+        'beachten': 'Bitte beachten Sie unsere',
+        'datenschutze': 'Datenschutzhinweise',
+        'error-caption': 'Es gibt noch Fehler im Formular. Bitte korrigieren Sie die markierten Felder.',
+
+
+        // Validation messages
+        'validation_required': 'Dieses Feld ist erforderlich.',
+        'validation_email': 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+        'validation_postal_code': 'Bitte geben Sie eine gültige deutsche Postleitzahl ein (5 Ziffern).',
+        'validation_phone': 'Bitte geben Sie eine gültige Telefonnummer ein.',
+
+        // Success messages
+        'success_message': 'Vielen Dank für Ihre Bewerbung! Wir haben Ihre Daten erfolgreich erhalten und werden uns in Kürze bei Ihnen melden.',
+        'error_message': 'Es gab einen Fehler beim Senden Ihrer Bewerbung. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.',
+
+        //erfolgreich-page
+        'thanks-message': 'Vielen Dank,',
+        'thanks-caption1': 'Ihre Bewerbung wurde erfolgreich übermittelt.',
+        'thanks-caption2': 'Wir werden uns in Kürze mit Ihnen in Verbindung setzen.',
+        'next': 'Was passiert als nächstes?',
+        'controll': 'Wir prüfen Ihre Bewerbung und kontaktieren Sie innerhalb der nächsten 1-2 Werktage.',
+        'discuss': 'Wir besprechen mit Ihnen Ihre Einsatzzeit und Ihren bevorzugten Einsatzort.',
+        'information': 'Nach erfolgreicher Abstimmung erhalten Sie alle notwendigen Informationen zum Arbeitsbeginn.',
+        'go-back': 'Zurück zur Startseite',
+
+
+        // Language switcher
+        'language_label': 'Sprache'
+      },
+      'en': {
+        // Hero Section
+        'hero_title': 'WE ARE LOOKING FOR DELIVERY PERSONNEL (M/F/D)',
+        'hero_subtitle': 'Why wait? Join our delivery team now!',
+        'hero_cta': 'Apply now',
+        'hero_alt': 'Female delivery person with NW vehicle',
+        'error-title': 'Please verify your input.',
+        'contact-treten': 'Would you prefer to contact us by phone?',
+        'melden': 'No problem. Please contact us at',
+        'anruf': 'We look forward to your call!',
+        'notiz1': '(Fields marked with a ',
+        'notiz2': 'asterisk are mandatory and must be filled out.)',
+        'beachten': 'Please read our',
+        'datenschutze': 'privacy policy',
+        'error-caption': 'There are still errors in the form. Please correct the highlighted fields.',
+
+        // Advantages Section
+        'advantages_title': 'Benefits',
+        'advantage_secure_job': 'Secure Job',
+        'advantage_secure_job_desc': 'You can always rely on us as an employer, even in times of crisis.',
+        'advantage_fair_pay': 'Fair Payment',
+        'advantage_fair_pay_desc': 'We pay fairly and transparently – you know exactly what you earn.',
+        'advantage_vacation': 'Vacation',
+        'advantage_vacation_desc': 'We offer family-friendly vacation arrangements and 30 vacation days per year.',
+        'advantage_second_job': 'Second Job',
+        'advantage_second_job_desc': 'Delivery personnel start early in the day and are flexible afterwards.',
+
+        // Requirements Section
+        'requirements_title': 'Requirements',
+        'requirement_age': 'You are at least 18 years old',
+        'requirement_early_riser': 'You are an early riser',
+        'requirement_independent': 'You work independently',
+        'requirement_reliable': 'You are reliable',
+        'requirement_note': 'Temporary vacation replacements by delivery personnel are also welcome at any time.',
+
+        // Additional Benefits Section
+        'additional_benefits_title': 'Additional Benefits',
+        'employment_opportunities': 'Employment Opportunities',
+        'minijob_parttime': 'Mini-job or part-time',
+        'monday_saturday': 'Monday to Saturday',
+        'fair_payment': 'fair payment',
+        'working_hours_vacation': 'Working Hours & Vacation',
+        'paid_vacation_days': '30 days paid vacation',
+        'fixed_schedule': 'Fixed schedule possibly plus night shift allowance',
+        'delivery_nearby': 'Delivery and driving services in your area',
+
+        // Where I Work Section
+        'where_work_title': 'Where do I work?',
+        'where_work_desc': 'After you contact us, we will look together at where the best place of work is for you and coordinate this with you.',
+
+        // Application Form Section
+        'application_title': 'Application',
+        'application_intro': 'Simply fill out the form and we will contact you. We look forward to hearing from you!',
+        'form_name': 'Name',
+        'form_email': 'Email',
+        'form_phone': 'Phone',
+        'form_postal_code': 'Postal Code',
+        'form_submit': 'Submit',
+        'form_required': 'required',
+        'form_personal_info': 'Personal information for your application',
+
+        // Validation messages
+        'validation_required': 'This field is required.',
+        'validation_email': 'Please enter a valid email address.',
+        'validation_postal_code': 'Please enter a valid German postal code (5 digits).',
+        'validation_phone': 'Please enter a valid phone number.',
+
+        // Success messages
+        'success_message': 'Thank you for your application! We have successfully received your data and will contact you shortly.',
+        'error_message': 'There was an error sending your application. Please try again or contact us directly.',
+
+        //erfolgreich-page
+        'thanks-message': 'Thank you,',
+        'thanks-caption1': 'Your application has been submitted successfully.',
+        'thanks-caption2': 'We will contact you shortly.',
+        'next': 'What happens next?',
+        'controll': 'We will review your application and contact you within the next 1–2 business days.',
+        'discuss': 'We will discuss your working hours and preferred location with you.',
+        'information': 'After successful coordination, you will receive all the necessary information about your job start.',
+        'go-back': 'Back to the homepage',
+
+        // Language switcher
+        'language_label': 'Language'
+      }
+    };
+
+    // Language switching functionality
+    class LanguageSwitcher {
+      constructor() {
+        this.currentLanguage = localStorage.getItem('nw_language') || 'de';
+        this.init();
+      }
+
+      init() {
+        this.createLanguageSwitcher();
+        this.setupEventListeners();
+        this.applyTranslations(this.currentLanguage);
+        this.updateLanguageSwitcher();
+      }
+
+      createLanguageSwitcher() {
+        // Remove existing language switcher if present
+        const existing = document.querySelector('.language-switcher-container');
+        if (existing) {
+          existing.remove();
+        }
+
+        // Create language switcher
+        const switcher = document.createElement('div');
+        switcher.className = 'language-switcher-container';
+        switcher.innerHTML = `
+            <div class="language-switcher">
+                <div class="language-options">
+                    <span class="language-label" data-i18n="language_label">Sprache</span>
+                    <a href="#" class="language-link" data-lang="de">DE</a>
+                    <span class="divider">|</span>
+                    <a href="#" class="language-link" data-lang="en">EN</a>
+                </div>
+            </div>
+        `;
+
+        // Insert at the top of the page
+        const hero = document.querySelector('section[role="banner"]');
+        if (hero) {
+          hero.insertBefore(switcher, hero.firstChild);
+        } else {
+          document.body.insertBefore(switcher, document.body.firstChild);
+        }
+      }
+
+      setupEventListeners() {
+        document.addEventListener('click', (e) => {
+          if (e.target.classList.contains('language-link')) {
+            e.preventDefault();
+            const lang = e.target.getAttribute('data-lang');
+            this.changeLanguage(lang);
+          }
+        });
+      }
+
+      changeLanguage(language) {
+        if (language === this.currentLanguage) return;
+
+        this.currentLanguage = language;
+        localStorage.setItem('nw_language', language);
+
+        // Update document language
+        document.documentElement.lang = language;
+
+        // Apply translations
+        this.applyTranslations(language);
+        this.updateLanguageSwitcher();
+
+        // Smooth transition effect
+        document.body.style.opacity = '0.9';
+        setTimeout(() => {
+          document.body.style.opacity = '1';
+        }, 150);
+      }
+
+      applyTranslations(language) {
+        const t = translations[language];
+        if (!t) return;
+
+        // Apply translations to all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          if (t[key]) {
+            // Handle different element types
+            if (element.tagName === 'INPUT') {
+              if (element.type === 'submit' || element.type === 'button') {
+                element.value = t[key];
+              } else {
+                element.placeholder = t[key];
+              }
+            } else if (element.tagName === 'IMG') {
+              element.alt = t[key];
+            } else {
+              element.textContent = t[key];
+            }
+          }
+        });
+
+        // Handle images with data-i18n-alt attribute
+        document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+          const key = element.getAttribute('data-i18n-alt');
+          if (t[key] && element.tagName === 'IMG') {
+            element.alt = t[key];
+          }
+        });
+
+        // Update form validation if validation system exists
+        if (window.updateValidationMessages) {
+          window.updateValidationMessages(language);
+        }
+      }
+
+      updateLanguageSwitcher() {
+        const links = document.querySelectorAll('.language-link');
+        links.forEach(link => {
+          const lang = link.getAttribute('data-lang');
+          if (lang === this.currentLanguage) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+
+      getCurrentLanguage() {
+        return this.currentLanguage;
+      }
+
+      getTranslation(key) {
+        return translations[this.currentLanguage][key] || key;
+      }
+    }
+
+    // Initialize language switcher when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+      window.languageSwitcher = new LanguageSwitcher();
+    });
+
+    // Export for use in other scripts
+    if (typeof module !== 'undefined' && module.exports) {
+      module.exports = { translations, LanguageSwitcher };
+    }
+  </script>
