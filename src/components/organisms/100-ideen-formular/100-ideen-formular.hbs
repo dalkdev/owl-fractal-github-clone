@@ -1,0 +1,402 @@
+<style>
+  .preview-content {
+    background: #2d3748;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  @keyframes shake {
+    0%   { transform: translateX(0); }
+    16%  { transform: translateX(-6px); }
+    33%  { transform: translateX(6px); }
+    50%  { transform: translateX(-6px); }
+    66%  { transform: translateX(6px); }
+    83%  { transform: translateX(-6px); }
+    100% { transform: translateX(0); }
+  }
+
+  .nw-animate-shake {
+    animation: shake 0.3s ease;
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .nw-animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+</style>
+<div class="preview-content nw-mx-auto" style="max-width: 1046px;">
+<div class="nw-bg-gray-50 nw-min-h-screen nw-py-8">
+  <div class="nw-max-w-4xl nw-mx-auto nw-px-4 sm:nw-px-6 lg:nw-px-8">
+
+    <div class="nw-mb-8 nw-animate-slide-up">
+      <div class="nw-hidden lg:nw-flex nw-items-start nw-space-x-8">
+        <div class="nw-flex-shrink-0">
+          <div class="nw-rounded-full nw-p-6 nw-shadow-xl nw-animate-pulse-soft" style="background: linear-gradient(135deg, #FEF3C7 0%, #FCD34D 50%, #F59E0B 100%);">
+            <svg class="nw-w-20 nw-h-20" fill="none" stroke="#E53E3E" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="nw-flex-1 nw-pt-2">
+          <h1 class="nw-text-5xl nw-font-bold nw-text-gray-900 nw-mb-4 nw-leading-tight">
+            100 Ideen für Ihren Ort
+          </h1>
+
+          <p class="nw-text-xl nw-text-gray-700 nw-mb-4 nw-leading-relaxed">
+            Teilen Sie Ihre Vorschläge mit uns und helfen Sie dabei, Ihren Ort noch lebenswerter zu machen.
+          </p>
+
+          <p class="nw-text-sm nw-text-gray-600 nw-mt-3 nw-font-medium">Einsendeschluss: 16. Juli 2025, 9:00 Uhr</p>
+
+          <p class="nw-text-base nw-text-gray-600 nw-mt-4 nw-max-w-2xl">
+            Ihre Idee kann den Unterschied machen! Teilen Sie Ihre Vorschläge für ein lebenswertes Zuhause und gewinnen Sie tolle Preise.
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:nw-hidden nw-text-center">
+        <div class="nw-flex nw-justify-center nw-mb-6">
+          <div class="nw-rounded-full nw-p-4 nw-shadow-xl nw-animate-pulse-soft" style="background: linear-gradient(135deg, #FEF3C7 0%, #FCD34D 50%, #F59E0B 100%);">
+            <svg class="nw-w-16 nw-h-16" fill="none" stroke="#E53E3E" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+        </div>
+
+        <h1 class="nw-text-4xl sm:nw-text-5xl nw-font-bold nw-text-gray-900 nw-mb-4 nw-leading-tight">
+          100 Ideen für Ihren Ort
+        </h1>
+
+        <p class="nw-text-xl nw-text-gray-700 nw-mb-4 nw-max-w-3xl nw-mx-auto nw-leading-relaxed">
+          Teilen Sie Ihre Vorschläge mit uns und helfen Sie dabei, Ihren Ort noch lebenswerter zu machen.
+        </p>
+
+        <p class="nw-text-sm nw-text-gray-600 nw-mt-3 nw-font-medium">Einsendeschluss: 16. Juli 2025, 9:00 Uhr</p>
+
+        <p class="nw-text-base nw-text-gray-600 nw-mt-6 nw-max-w-2xl nw-mx-auto">
+          Ihre Idee kann den Unterschied machen! Teilen Sie Ihre Vorschläge für ein lebenswertes Zuhause und gewinnen Sie tolle Preise.
+        </p>
+      </div>
+    </div>
+
+    <div class="nw-bg-white nw-rounded-lg nw-shadow-lg nw-p-6 sm:nw-p-8 nw-animate-zoom-in nw-delay-200">
+      <form id="ideensammlung-form" class="nw-space-y-6">
+
+        <div class="nw-animate-slide-up nw-delay-400">
+          <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4 nw-border-b nw-border-gray-200 nw-pb-2">
+            Ihr Ort
+          </h2>
+
+          <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-2 nw-gap-4">
+            <div>
+              <label for="stadt-kreis" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-1">
+                Stadt/Kreis <span class="nw-text-red-500">*</span>
+              </label>
+              <select id="stadt-kreis" name="stadt-kreis" required class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal">
+                <option value="">Bitte auswählen</option>
+                <option value="bielefeld">Bielefeld</option>
+                <option value="kreis-guetersloh">Kreis Gütersloh</option>
+                <option value="kreis-herford">Kreis Herford</option>
+                <option value="kreis-hoexter">Kreis Höxter</option>
+                <option value="kreis-lippe">Kreis Lippe</option>
+                <option value="kreis-minden-luebbecke">Kreis Minden-Lübbecke</option>
+                <option value="kreis-paderborn">Kreis Paderborn</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="ort" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-1">
+                Ort <span class="nw-text-red-500">*</span>
+              </label>
+              <select id="ort" name="ort" required disabled class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal disabled:nw-bg-gray-100 disabled:nw-text-gray-500">
+                <option value="">Zuerst Stadt/Kreis wählen</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="nw-animate-slide-up nw-delay-500">
+          <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4 nw-border-b nw-border-gray-200 nw-pb-2">
+            Ihre Idee
+          </h2>
+
+          <div class="nw-mb-6">
+            <label for="kategorie" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">
+              Kategorie <span class="nw-text-red-500">*</span>
+            </label>
+            <select id="kategorie" name="kategorie" required class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal">
+              <option value="">Bitte wählen Sie eine Kategorie</option>
+              <option value="verkehr-mobilitaet">Verkehr &amp; Mobilität</option>
+              <option value="umwelt-nachhaltigkeit">Umwelt &amp; Nachhaltigkeit</option>
+              <option value="kultur-freizeit">Kultur &amp; Freizeit</option>
+              <option value="bildung-familie">Bildung &amp; Familie</option>
+              <option value="wirtschaft-tourismus">Wirtschaft &amp; Tourismus</option>
+              <option value="soziales-gemeinschaft">Soziales &amp; Gemeinschaft</option>
+              <option value="digitalisierung">Digitalisierung</option>
+              <option value="stadtentwicklung">Stadtentwicklung</option>
+              <option value="gesundheit-sport">Gesundheit &amp; Sport</option>
+              <option value="sicherheit">Sicherheit</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+
+          <div class="nw-mb-6">
+            <label for="idee-titel" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">
+              Ihre Idee in einem Satz <span class="nw-text-red-500">*</span>
+            </label>
+            <input type="text" id="idee-titel" name="idee-titel" required maxlength="150" class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal" placeholder="Beschreiben Sie Ihre Idee kurz und prägnant...">
+            <p class="nw-text-xs nw-text-gray-500 nw-mt-1">Maximal 150 Zeichen</p>
+          </div>
+
+          <div class="nw-mb-6">
+            <label for="idee-beschreibung" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">
+              Ausführliche Beschreibung <span class="nw-text-red-500">*</span>
+            </label>
+            <textarea id="idee-beschreibung" name="idee-beschreibung" required rows="6" maxlength="1000" class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal nw-resize-vertical" placeholder="Erklären Sie Ihre Idee detaillierter. Welches Problem löst sie? Wie könnte sie umgesetzt werden? Wer würde davon profitieren?"></textarea>
+            <p class="nw-text-xs nw-text-gray-500 nw-mt-1">Maximal 1000 Zeichen</p>
+          </div>
+
+          <div class="nw-mb-6">
+            <label for="nutzen" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">
+              Welchen Nutzen hätte Ihre Idee für den Ort?
+            </label>
+            <textarea id="nutzen" name="nutzen" rows="5" maxlength="500" class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal nw-resize-vertical" placeholder="Welche Verbesserungen würde Ihre Idee für die Bewohner, die Umwelt oder die Wirtschaft bringen?"></textarea>
+            <p class="nw-text-xs nw-text-gray-500 nw-mt-1">Maximal 500 Zeichen</p>
+          </div>
+        </div>
+
+        <div class="nw-animate-slide-up nw-delay-700">
+          <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4 nw-border-b nw-border-gray-200 nw-pb-2">
+            Ihre Kontaktdaten
+          </h2>
+
+          <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-2 nw-gap-4">
+            <div>
+              <label for="vorname" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-1">
+                Vorname <span class="nw-text-red-500">*</span>
+              </label>
+              <input type="text" id="vorname" name="vorname" required class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal">
+            </div>
+
+            <div>
+              <label for="nachname" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-1">
+                Nachname <span class="nw-text-red-500">*</span>
+              </label>
+              <input type="text" id="nachname" name="nachname" required class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal">
+            </div>
+
+            <div>
+              <label for="email" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-1">
+                E-Mail-Adresse <span class="nw-text-red-500">*</span>
+              </label>
+              <input type="email" id="email" name="email" required class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal">
+            </div>
+
+            <div>
+              <label for="telefon" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-1">
+                Telefonnummer <span class="nw-text-red-500">*</span>
+              </label>
+              <input type="tel" id="telefon" name="telefon" required class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal" placeholder="z.B. 0521 123456">
+            </div>
+          </div>
+        </div>
+
+        <div class="nw-animate-slide-up nw-delay-800">
+          <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4 nw-border-b nw-border-gray-200 nw-pb-2">
+            Newsletter & Gewinnspiel
+          </h2>
+
+          <div class="nw-bg-gray-50 nw-p-4 nw-rounded-md nw-space-y-4">
+            <div class="nw-flex nw-items-start">
+              <input type="checkbox" id="newsletter" name="newsletter" class="nw-mt-1 nw-h-4 nw-w-4 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded">
+              <label for="newsletter" class="nw-ml-3 nw-text-sm nw-text-gray-700">
+                Ja, ich möchte den kostenlosen Newsletter der Neuen Westfälischen erhalten und über lokale Neuigkeiten informiert werden.
+              </label>
+            </div>
+
+            <div class="nw-flex nw-items-start">
+              <input type="checkbox" id="werbung" name="werbung" class="nw-mt-1 nw-h-4 nw-w-4 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded">
+              <label for="werbung" class="nw-ml-3 nw-text-sm nw-text-gray-700">
+                Ich bin jederzeit widerruflich damit einverstanden, dass mich die Zeitungsverlag Neue Westfälische GmbH & Co. KG, auch durch ihre Dienstleister, über ihre interessanten NW-Verlagsprodukte und -angebote (Zeitungen, Zeitschriften, Abo, Leserreisen, Leservorteile, NW-Karte, NW-Gewinnspiele, Newsletter) informiert.
+              </label>
+            </div>
+
+            <div class="nw-flex nw-items-start">
+              <input type="checkbox" id="agb" name="agb" required class="nw-mt-1 nw-h-4 nw-w-4 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded">
+              <label for="agb" class="nw-ml-3 nw-text-sm nw-text-gray-700">
+                Ich akzeptiere die <a href="https://www.nw.de/agb" target="_blank" class="nw-text-blue-600 nw-underline hover:nw-text-blue-800">Allgemeinen Geschäftsbedingungen</a>. <span class="nw-text-red-500">*</span>
+              </label>
+            </div>
+
+            <p class="nw-text-xs nw-text-gray-600 nw-leading-relaxed">
+              Veranstalter des Gewinnspiels ist die Zeitungsverlag Neue Westfälische GmbH & Co. KG.
+              Die Umfrage endet am 16. Juli 2025 um 9 Uhr. Der Rechtsweg ist ausgeschlossen.
+            </p>
+          </div>
+        </div>
+
+        <div class="nw-text-center nw-pt-6 nw-animate-slide-up nw-delay-900">
+          <button type="submit" class="nw-bg-red-0 nw-text-white nw-px-8 nw-py-3 nw-rounded-lg nw-font-semibold nw-text-base hover:nw-bg-red-600 focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-red-700 focus:nw-ring-offset-2 nw-transition-colors nw-duration-200 nw-interactive nw-button-press nw-hover-lift">
+                        <span class="nw-flex nw-items-center nw-justify-center">
+                            <span id="submit-text">Idee einreichen</span>
+                            <span id="loading-spinner" class="nw-hidden nw-ml-2 nw-loading-spinner"></span>
+                        </span>
+          </button>
+
+          <p class="nw-text-sm nw-text-gray-500 nw-mt-3">
+            Mit einem Klick auf "Idee einreichen" bestätigen Sie Ihre Angaben.
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <div id="success-message" class="nw-hidden nw-bg-[#6EB783] nw-border nw-border-green-400 nw-text-[#15803D] nw-px-6 nw-py-4 nw-rounded-lg nw-mt-6 nw-text-center nw-animate-bounce-in">
+      <h3 class="nw-font-semibold nw-mb-2">Vielen Dank für Ihre Idee!</h3>
+      <p class="nw-text-sm">Ihre Idee wurde erfolgreich übermittelt. Wir prüfen alle Einsendungen und melden uns bei Rückfragen.</p>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('ideensammlung-form');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const submitText = document.getElementById('submit-text');
+    const loadingSpinner = document.getElementById('loading-spinner');
+    const successMessage = document.getElementById('success-message');
+    // Character counters
+    const textInputs = form.querySelectorAll('input[maxlength], textarea[maxlength]');
+    textInputs.forEach(input => {
+      const maxLength = input.getAttribute('maxlength');
+      const helpText = input.parentNode.querySelector('.nw-text-xs');
+      input.addEventListener('input', function() {
+        const remaining = maxLength - this.value.length;
+        if (helpText) {
+          helpText.textContent = `${remaining} Zeichen übrig`;
+          helpText.classList.toggle('nw-text-red-500', remaining < 50);
+          helpText.classList.toggle('nw-text-gray-500', remaining >= 50);
+        }
+      });
+    });
+    // Form submission
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Show loading state
+      submitButton.disabled = true;
+      submitText.textContent = 'Wird gesendet...';
+      loadingSpinner.classList.remove('nw-hidden');
+      // Simulate form submission (replace with actual API call)
+      setTimeout(() => {
+        // Hide form and show success message
+        form.parentNode.classList.add('nw-hidden');
+        successMessage.classList.remove('nw-hidden');
+        // Scroll to success message
+        successMessage.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }, 2000);
+    });
+    // Enhanced form validation
+    const requiredFields = form.querySelectorAll('[required]');
+    requiredFields.forEach(field => {
+      field.addEventListener('invalid', function() {
+        this.classList.add('nw-border-red-500', 'nw-animate-shake');
+        setTimeout(() => {
+          this.classList.remove('nw-animate-shake');
+        }, 500);
+      });
+      field.addEventListener('input', function() {
+        if (this.validity.valid) {
+          this.classList.remove('nw-border-red-500');
+          this.classList.add('nw-border-green-500');
+        }
+      });
+    });
+    // Auto-trigger animations on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('nw-animate-slide-up');
+        }
+      });
+    }, observerOptions);
+    // Observe animated elements
+    const animatedElements = document.querySelectorAll('[class*="nw-delay-"]');
+    animatedElements.forEach(el => observer.observe(el));
+    // Dynamic location dropdown
+    const stadtKreisSelect = document.getElementById('stadt-kreis');
+    const ortSelect = document.getElementById('ort');
+    const locationData = {
+      'bielefeld': [
+        'Brackwede', 'Dornberg', 'Gadderbaum', 'Heepen', 'Jöllenbeck',
+        'Mitte', 'Schildesche', 'Senne', 'Sennestadt', 'Stieghorst'
+      ],
+      'kreis-guetersloh': [
+        'Borgholzhausen', 'Gütersloh', 'Halle', 'Harsewinkel', 'Herzebrock-Clarholz',
+        'Langenberg', 'Rheda-Wiedenbrück', 'Rietberg', 'Schloß Holte-Stukenbrock',
+        'Steinhagen', 'Verl', 'Versmold', 'Werther'
+      ],
+      'kreis-herford': [
+        'Bünde', 'Enger', 'Herford', 'Hiddenhausen', 'Kirchlengern',
+        'Löhne', 'Rödinghausen', 'Spenge', 'Vlotho'
+      ],
+      'kreis-hoexter': [
+        'Bad Driburg', 'Beverungen', 'Boffzen', 'Borgentreich', 'Brakel',
+        'Höxter', 'Holzminden', 'Marienmünster', 'Nieheim', 'Steinheim',
+        'Warburg', 'Willebadessen'
+      ],
+      'kreis-lippe': [
+        'Augustdorf', 'Bad Salzuflen', 'Barntrup', 'Blomberg', 'Detmold',
+        'Dörentrup', 'Extertal', 'Horn-Bad Meinberg', 'Kalletal', 'Lage',
+        'Lemgo', 'Lügde', 'Leopoldshöhe', 'Oerlinghausen', 'Schieder-Schwalenberg',
+        'Schlangen'
+      ],
+      'kreis-minden-luebbecke': [
+        'Bad Oeynhausen', 'Espelkamp', 'Hille', 'Hüllhorst', 'Lübbecke',
+        'Minden', 'Petershagen', 'Porta Westfalica', 'Pr Oldendorf', 'Rahden',
+        'Stemwede'
+      ],
+      'kreis-paderborn': [
+        'Altenbeken', 'Bad Lippspringe', 'Bad Wünnenberg', 'Borchen', 'Büren',
+        'Delbrück', 'Hövelhof', 'Lichtenau', 'Paderborn', 'Salzkotten'
+      ]
+    };
+    stadtKreisSelect.addEventListener('change', function() {
+      const selectedRegion = this.value;
+      // Clear and reset ort dropdown
+      ortSelect.innerHTML = '<option value="">Bitte auswählen</option>';
+      if (selectedRegion && locationData[selectedRegion]) {
+        // Enable ort dropdown
+        ortSelect.disabled = false;
+        ortSelect.classList.remove('disabled:nw-bg-gray-100', 'disabled:nw-text-gray-500');
+        // Populate with locations
+        locationData[selectedRegion].forEach(location => {
+          const option = document.createElement('option');
+          option.value = location.toLowerCase().replace(/\s+/g, '-').replace(/ü/g, 'ue').replace(/ö/g, 'oe').replace(/ä/g, 'ae').replace(/ß/g, 'ss');
+          option.textContent = location;
+          ortSelect.appendChild(option);
+        });
+      } else {
+        // Disable ort dropdown
+        ortSelect.disabled = true;
+        ortSelect.classList.add('disabled:nw-bg-gray-100', 'disabled:nw-text-gray-500');
+        ortSelect.innerHTML = '<option value="">Zuerst Stadt/Kreis wählen</option>';
+      }
+    });
+  });
+</script>
