@@ -207,45 +207,81 @@
               <label for="telefon" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-1">
                 Telefonnummer <span class="nw-text-red-500">*</span>
               </label>
-              <input type="tel" id="telefon" name="telefon" required class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal" placeholder="z.B. 0521 123456">
+              <input
+                type="text"
+                id="telefon"
+                name="telefon"
+                inputmode="tel"
+                required
+                pattern=".*"
+              minlength="5"
+              class="nw-w-full nw-px-3 nw-py-2 nw-border nw-border-gray-300 nw-rounded-md nw-shadow-sm focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-blue-500 focus:nw-border-blue-500 nw-transition-normal"
+              placeholder="z.B. 0521123456"
+              oninput="
+              this.value = this.value.replace(/[^0-9+() ]/g, '');
+              const digitCount = (this.value.match(/\d/g) || []).length;
+              this.setCustomValidity(digitCount < 5 ? 'Bitte mindestens 5 Ziffern eingeben.' : '');
+              "
+              oninvalid="this.setCustomValidity('Bitte mindestens 5 Ziffern eingeben.')"
+              />
             </div>
           </div>
         </div>
 
+        <!-- -->
+        <style>
+          .nw-fixed-checkbox {
+            width: 16px;         /* feste Breite */
+            height: 16px;        /* feste Höhe */
+            min-width: 16px;
+            min-height: 16px;
+            max-width: 16px;
+            max-height: 16px;
+            box-sizing: border-box;
+            flex-shrink: 0;      /* nicht schrumpfen in Flexbox */
+          }
+        </style>
         <div class="nw-animate-slide-up nw-delay-800">
           <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4 nw-border-b nw-border-gray-200 nw-pb-2">
             Newsletter & Gewinnspiel
           </h2>
 
           <div class="nw-bg-gray-50 nw-p-4 nw-rounded-md nw-space-y-4">
-            <div class="nw-flex nw-items-start">
-              <input type="checkbox" id="newsletter" name="newsletter" class="nw-mt-1 nw-h-4 nw-w-4 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded">
-              <label for="newsletter" class="nw-ml-3 nw-text-sm nw-text-gray-700">
+            <div class="nw-flex nw-items-start nw-space-x-3">
+              <input type="checkbox" id="newsletter" name="newsletter"
+                     class="nw-w-4 nw-h-4 nw-flex-shrink-0 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded" />
+              <label for="newsletter" class="nw-text-sm nw-text-gray-700">
                 Ja, ich möchte den kostenlosen Newsletter der Neuen Westfälischen erhalten und über lokale Neuigkeiten informiert werden.
               </label>
             </div>
 
-            <div class="nw-flex nw-items-start">
-              <input type="checkbox" id="werbung" name="werbung" class="nw-mt-1 nw-h-4 nw-w-4 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded">
-              <label for="werbung" class="nw-ml-3 nw-text-sm nw-text-gray-700">
+            <div class="nw-flex nw-items-start nw-space-x-3">
+              <input type="checkbox" id="werbung" name="werbung"
+                     class="nw-w-4 nw-h-4 nw-flex-shrink-0 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded" />
+              <label for="werbung" class="nw-text-sm nw-text-gray-700">
                 Ich bin jederzeit widerruflich damit einverstanden, dass mich die Zeitungsverlag Neue Westfälische GmbH & Co. KG, auch durch ihre Dienstleister, über ihre interessanten NW-Verlagsprodukte und -angebote (Zeitungen, Zeitschriften, Abo, Leserreisen, Leservorteile, NW-Karte, NW-Gewinnspiele, Newsletter) informiert.
               </label>
             </div>
 
-            <div class="nw-flex nw-items-start">
-              <input type="checkbox" id="agb" name="agb" required class="nw-mt-1 nw-h-4 nw-w-4 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded">
-              <label for="agb" class="nw-ml-3 nw-text-sm nw-text-gray-700">
-                Ich akzeptiere die <a href="https://www.nw.de/agb" target="_blank" class="nw-text-blue-600 nw-underline hover:nw-text-blue-800">Allgemeinen Geschäftsbedingungen</a>. <span class="nw-text-red-500">*</span>
+            <div class="nw-flex nw-items-start nw-space-x-3">
+              <input type="checkbox" id="agb" name="agb" required
+                     class="nw-w-4 nw-h-4 nw-flex-shrink-0 nw-text-blue-600 focus:nw-ring-blue-500 nw-border-gray-300 nw-rounded" />
+              <label for="agb" class="nw-text-sm nw-text-gray-700">
+                Ich akzeptiere die <a href="https://www.nw.de/agb" target="_blank"
+                                      class="nw-text-blue-600 nw-underline hover:nw-text-blue-800">Allgemeinen Geschäftsbedingungen</a>. <span class="nw-text-red-500">*</span>
               </label>
             </div>
 
-            <p class="nw-text-xs nw-text-gray-600 nw-leading-relaxed">
+            <p class="nw-text-xs nw-text-gray-600 nw-leading-relaxed nw-mb-6">
               Veranstalter des Gewinnspiels ist die Zeitungsverlag Neue Westfälische GmbH & Co. KG.
-              Die Umfrage endet am 16. Juli 2025 um 9 Uhr. Der Rechtsweg ist ausgeschlossen.
+              Die Umfrage endet am 31. August 2025 um 9 Uhr. Der Rechtsweg ist ausgeschlossen.
             </p>
+
+            <p class="nw-text-xs nw-text-gray-600"><span class="nw-text-red-600">*</span> Pflichtfelder müssen ausgefüllt
+              werden</p>
           </div>
         </div>
-
+        
         <div class="nw-text-center nw-pt-6 nw-animate-slide-up nw-delay-900">
           <button type="submit" class="nw-bg-red-0 nw-text-white nw-px-8 nw-py-3 nw-rounded-lg nw-font-semibold nw-text-base hover:nw-bg-red-600 focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-red-700 focus:nw-ring-offset-2 nw-transition-colors nw-duration-200 nw-interactive nw-button-press nw-hover-lift">
                         <span class="nw-flex nw-items-center nw-justify-center">
@@ -261,7 +297,7 @@
       </form>
     </div>
 
-    <div id="success-message" class="nw-hidden nw-bg-[#6EB783] nw-border nw-border-green-400 nw-text-[#15803D] nw-px-6 nw-py-4 nw-rounded-lg nw-mt-6 nw-text-center nw-animate-bounce-in">
+    <div id="success-message" class="nw-hidden nw-bg-[#3E6A4F] nw-border nw-border-green-400 nw-text-white nw-px-6 nw-py-4 nw-rounded-lg nw-mt-6 nw-text-center nw-animate-bounce-in">
       <h3 class="nw-font-semibold nw-mb-2">Vielen Dank für Ihre Idee!</h3>
       <p class="nw-text-sm">Ihre Idee wurde erfolgreich übermittelt. Wir prüfen alle Einsendungen und melden uns bei Rückfragen.</p>
     </div>
