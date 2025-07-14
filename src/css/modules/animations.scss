@@ -1,0 +1,544 @@
+/* NW Design System - Animation Utilities */
+
+/* Soft pulse animation for icons */
+@keyframes nw-pulse-soft {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.nw-animate-pulse-soft {
+  animation: nw-pulse-soft 3s ease-in-out infinite;
+}
+
+/* Custom Keyframes */
+@keyframes nw-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nw-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes nw-slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nw-slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nw-slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nw-slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nw-bounce-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes nw-bounce-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes nw-zoom-in {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes nw-zoom-out {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes nw-rotate-in {
+  from {
+    transform: rotate(-180deg) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes nw-pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes nw-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes nw-wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes nw-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes nw-typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes nw-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animation Classes */
+.nw-animate-fade-in {
+  animation: nw-fade-in 0.3s ease-out forwards;
+}
+
+.nw-animate-fade-out {
+  animation: nw-fade-out 0.3s ease-out forwards;
+}
+
+.nw-animate-slide-in-right {
+  animation: nw-slide-in-right 0.5s ease-out forwards;
+}
+
+.nw-animate-slide-in-left {
+  animation: nw-slide-in-left 0.5s ease-out forwards;
+}
+
+.nw-animate-slide-up {
+  animation: nw-slide-up 0.5s ease-out forwards;
+}
+
+.nw-animate-slide-down {
+  animation: nw-slide-down 0.5s ease-out forwards;
+}
+
+.nw-animate-bounce-in {
+  animation: nw-bounce-in 0.6s ease-out forwards;
+}
+
+.nw-animate-bounce-out {
+  animation: nw-bounce-out 0.6s ease-out forwards;
+}
+
+.nw-animate-zoom-in {
+  animation: nw-zoom-in 0.4s ease-out forwards;
+}
+
+.nw-animate-zoom-out {
+  animation: nw-zoom-out 0.4s ease-out forwards;
+}
+
+.nw-animate-rotate-in {
+  animation: nw-rotate-in 0.6s ease-out forwards;
+}
+
+.nw-animate-pulse-soft {
+  animation: nw-pulse-soft 2s ease-in-out infinite;
+}
+
+.nw-animate-shake {
+  animation: nw-shake 0.5s ease-in-out;
+}
+
+.nw-animate-wiggle {
+  animation: nw-wiggle 1s ease-in-out infinite;
+}
+
+.nw-animate-float {
+  animation: nw-float 3s ease-in-out infinite;
+}
+
+.nw-animate-typewriter {
+  overflow: hidden;
+  border-right: 2px solid currentColor;
+  white-space: nowrap;
+  animation: nw-typewriter 3s steps(40) forwards;
+}
+
+.nw-animate-gradient {
+  background-size: 200% 200%;
+  animation: nw-gradient-shift 3s ease infinite;
+}
+
+/* Hover Effects */
+.nw-hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nw-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.nw-hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.nw-hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.nw-hover-rotate {
+  transition: transform 0.3s ease;
+}
+
+.nw-hover-rotate:hover {
+  transform: rotate(5deg);
+}
+
+.nw-hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.nw-hover-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+.nw-hover-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.nw-hover-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+                  90deg,
+                  transparent,
+                  rgba(255, 255, 255, 0.2),
+                  transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.nw-hover-slide:hover::before {
+  left: 100%;
+}
+
+/* Loading States */
+.nw-loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+.nw-loading-dots {
+  display: inline-block;
+}
+
+.nw-loading-dots::after {
+  content: '';
+  animation: nw-dots 1.5s infinite;
+}
+
+@keyframes nw-dots {
+  0%, 20% {
+    content: '';
+  }
+  40% {
+    content: '.';
+  }
+  60% {
+    content: '..';
+  }
+  80%, 100% {
+    content: '...';
+  }
+}
+
+.nw-loading-pulse {
+  animation: nw-pulse-soft 1.5s ease-in-out infinite;
+}
+
+/* Transition Utilities */
+.nw-transition-fast {
+  transition: all 0.15s ease;
+}
+
+.nw-transition-normal {
+  transition: all 0.3s ease;
+}
+
+.nw-transition-slow {
+  transition: all 0.5s ease;
+}
+
+.nw-transition-bounce {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* 3D Effects */
+.nw-perspective {
+  perspective: 1000px;
+}
+
+.nw-transform-3d {
+  transform-style: preserve-3d;
+}
+
+.nw-backface-hidden {
+  backface-visibility: hidden;
+}
+
+.nw-flip-x {
+  transform: rotateX(180deg);
+}
+
+.nw-flip-y {
+  transform: rotateY(180deg);
+}
+
+/* Animation Delays */
+.nw-delay-75 {
+  animation-delay: 75ms;
+}
+
+.nw-delay-100 {
+  animation-delay: 100ms;
+}
+
+.nw-delay-150 {
+  animation-delay: 150ms;
+}
+
+.nw-delay-200 {
+  animation-delay: 200ms;
+}
+
+.nw-delay-300 {
+  animation-delay: 300ms;
+}
+
+.nw-delay-500 {
+  animation-delay: 500ms;
+}
+
+.nw-delay-700 {
+  animation-delay: 700ms;
+}
+
+.nw-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* Animation Durations */
+.nw-duration-75 {
+  animation-duration: 75ms;
+}
+
+.nw-duration-100 {
+  animation-duration: 100ms;
+}
+
+.nw-duration-150 {
+  animation-duration: 150ms;
+}
+
+.nw-duration-200 {
+  animation-duration: 200ms;
+}
+
+.nw-duration-300 {
+  animation-duration: 300ms;
+}
+
+.nw-duration-500 {
+  animation-duration: 500ms;
+}
+
+.nw-duration-700 {
+  animation-duration: 700ms;
+}
+
+.nw-duration-1000 {
+  animation-duration: 1000ms;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .nw-animate-wiggle,
+  .nw-animate-float,
+  .nw-animate-pulse-soft {
+    animation: none !important;
+  }
+}
+
+/* Utility Classes for Common Patterns */
+.nw-interactive {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nw-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nw-interactive:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nw-card-hover {
+  transition: all 0.3s ease;
+}
+
+.nw-card-hover:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.nw-button-press {
+  transition: all 0.1s ease;
+}
+
+.nw-button-press:active {
+  transform: scale(0.95);
+}
+
+/* Stagger animations for lists */
+.nw-stagger-children > * {
+  animation-delay: calc(var(--stagger-delay, 100ms) * var(--stagger-index, 0));
+}
+
+/* Custom properties for dynamic animations */
+:root {
+  --nw-animation-duration: 300ms;
+  --nw-animation-easing: ease;
+  --nw-hover-scale: 1.05;
+  --nw-hover-lift: -4px;
+}

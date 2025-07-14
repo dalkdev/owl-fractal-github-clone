@@ -1,0 +1,340 @@
+<div class="nw-bg-gray-50 nw-py-16">
+  <div class="nw-max-w-7xl nw-mx-auto nw-px-4 sm:nw-px-6 lg:nw-px-8">
+    <div class="nw-text-center nw-mb-12">
+      <h1 class="nw-text-3xl sm:nw-text-4xl nw-font-bold nw-text-gray-900 nw-mb-4">Micro-Animation Playground</h1>
+      <p class="nw-text-lg nw-text-gray-600 nw-max-w-3xl nw-mx-auto">Explore and test interactive micro-animations for the NW Design System. Each animation is optimized for performance and accessibility, with smooth transitions and engaging user feedback.</p>
+    </div>
+
+    <div class="nw-grid nw-grid-cols-1 lg:nw-grid-cols-2 xl:nw-grid-cols-3 nw-gap-8">
+
+      <div class="nw-bg-white nw-rounded-lg nw-shadow-md nw-p-6">
+        <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4">Hover Effects</h2>
+        <div class="nw-space-y-4">
+          <div class="nw-p-4 nw-bg-blue-50 nw-rounded nw-cursor-pointer nw-transition-all nw-duration-300 hover:nw-shadow-lg hover:nw-transform hover:nw--translate-y-1 hover:nw-scale-105">
+            <h3 class="nw-font-medium nw-text-blue-900">Lift & Scale</h3>
+            <p class="nw-text-sm nw-text-blue-700">Hover to see lift effect</p>
+          </div>
+
+          <div class="nw-p-4 nw-bg-green-50 nw-rounded nw-cursor-pointer nw-transition-all nw-duration-300 hover:nw-shadow-green-200 hover:nw-shadow-lg hover:nw-bg-green-100">
+            <h3 class="nw-font-medium nw-text-green-900">Glow Effect</h3>
+            <p class="nw-text-sm nw-text-green-700">Hover to see glow</p>
+          </div>
+
+          <div class="nw-p-4 nw-bg-purple-50 nw-rounded nw-cursor-pointer nw-border-2 nw-border-purple-200 nw-transition-all nw-duration-300 hover:nw-border-purple-500 hover:nw-bg-purple-100">
+            <h3 class="nw-font-medium nw-text-purple-900">Border Animation</h3>
+            <p class="nw-text-sm nw-text-purple-700">Hover to see border change</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nw-bg-white nw-rounded-lg nw-shadow-md nw-p-6">
+        <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4">Loading States</h2>
+        <div class="nw-space-y-6">
+          <div class="nw-text-center">
+            <div class="nw-inline-block nw-animate-spin nw-rounded-full nw-h-8 nw-w-8 nw-border-b-2 nw-border-blue-600"></div>
+            <p class="nw-text-sm nw-text-gray-600 nw-mt-2">Spinner</p>
+          </div>
+
+          <div class="nw-text-center">
+            <div class="nw-inline-block nw-h-8 nw-w-8 nw-bg-green-500 nw-rounded-full nw-animate-pulse"></div>
+            <p class="nw-text-sm nw-text-gray-600 nw-mt-2">Pulse</p>
+          </div>
+
+          <div class="nw-text-center">
+            <div class="nw-inline-block nw-h-8 nw-w-8 nw-bg-purple-500 nw-rounded-full nw-animate-bounce"></div>
+            <p class="nw-text-sm nw-text-gray-600 nw-mt-2">Bounce</p>
+          </div>
+
+          <div>
+            <p class="nw-text-sm nw-text-gray-600 nw-mb-2">Progress Bar</p>
+            <div class="nw-w-full nw-bg-gray-200 nw-rounded-full nw-h-2">
+              <div class="nw-bg-blue-600 nw-h-2 nw-rounded-full nw-animate-pulse" style="width: 65%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nw-bg-white nw-rounded-lg nw-shadow-md nw-p-6">
+        <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4">Button States</h2>
+        <div class="nw-space-y-4">
+          <button class="nw-w-full nw-bg-blue-600 nw-text-white nw-py-2 nw-px-4 nw-rounded nw-transition-all nw-duration-300 hover:nw-bg-blue-700 hover:nw-shadow-lg nw-transform hover:nw-scale-105 active:nw-scale-95">
+            Ripple Effect
+          </button>
+
+          <button class="nw-w-full nw-bg-green-600 nw-text-white nw-py-2 nw-px-4 nw-rounded nw-relative nw-overflow-hidden nw-transition-all nw-duration-300 hover:nw-bg-green-700 group">
+            <span class="nw-relative nw-z-10">Slide Effect</span>
+            <div class="nw-absolute nw-inset-0 nw-bg-green-700 nw-transform nw--translate-x-full nw-transition-transform nw-duration-300 group-hover:nw-translate-x-0"></div>
+          </button>
+
+          <button class="nw-w-full nw-bg-purple-600 nw-text-white nw-py-2 nw-px-4 nw-rounded nw-transition-all nw-duration-300 hover:nw-bg-purple-700 nw-flex nw-items-center nw-justify-center nw-space-x-2">
+            <span class="nw-animate-spin nw-rounded-full nw-h-4 nw-w-4 nw-border-b-2 nw-border-white nw-hidden" id="loading-spinner"></span>
+            <span>Loading Button</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nw-bg-white nw-rounded-lg nw-shadow-md nw-p-6">
+        <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4">Card Effects</h2>
+        <div class="nw-space-y-4">
+          <div class="nw-group nw-h-32 nw-relative nw-cursor-pointer">
+            <div class="nw-absolute nw-inset-0 nw-bg-blue-500 nw-rounded nw-flex nw-items-center nw-justify-center nw-text-white nw-transition-transform nw-duration-500 group-hover:nw-rotate-y-180">
+              <span class="nw-font-medium">Hover to Flip</span>
+            </div>
+            <div class="nw-absolute nw-inset-0 nw-bg-blue-600 nw-rounded nw-flex nw-items-center nw-justify-center nw-text-white nw-transform nw-rotate-y-180 nw-transition-transform nw-duration-500 group-hover:nw-rotate-y-0">
+              <span class="nw-font-medium">Flipped!</span>
+            </div>
+          </div>
+
+          <div class="nw-h-32 nw-bg-gradient-to-r nw-from-green-400 nw-to-green-600 nw-rounded nw-flex nw-items-center nw-justify-center nw-text-white nw-cursor-pointer nw-transition-transform nw-duration-300 hover:nw-rotate-2 hover:nw-scale-105">
+            <span class="nw-font-medium">Tilt Effect</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nw-bg-white nw-rounded-lg nw-shadow-md nw-p-6">
+        <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4">Notifications</h2>
+        <div class="nw-space-y-4">
+          <div class="nw-bg-green-100 nw-border nw-border-green-400 nw-text-green-700 nw-px-4 nw-py-3 nw-rounded nw-transform nw-translate-x-full nw-transition-transform nw-duration-500" id="slide-notification">
+            <span class="nw-block sm:nw-inline">Slide-in notification</span>
+          </div>
+
+          <div class="nw-bg-blue-100 nw-border nw-border-blue-400 nw-text-blue-700 nw-px-4 nw-py-3 nw-rounded nw-opacity-0 nw-transition-opacity nw-duration-500" id="fade-notification">
+            <span class="nw-block sm:nw-inline">Fade-in notification</span>
+          </div>
+
+          <div class="nw-bg-purple-100 nw-border nw-border-purple-400 nw-text-purple-700 nw-px-4 nw-py-3 nw-rounded nw-transform nw-scale-0 nw-transition-transform nw-duration-500" id="bounce-notification">
+            <span class="nw-block sm:nw-inline">Bounce-in notification</span>
+          </div>
+
+          <button class="nw-w-full nw-bg-gray-600 nw-text-white nw-py-2 nw-px-4 nw-rounded nw-hover:nw-bg-gray-700 nw-transition-colors" onclick="triggerNotifications()">
+            Trigger Notifications
+          </button>
+        </div>
+      </div>
+
+      <div class="nw-bg-white nw-rounded-lg nw-shadow-md nw-p-6">
+        <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4">Text Effects</h2>
+        <div class="nw-space-y-4">
+          <div>
+            <p class="nw-text-sm nw-text-gray-600 nw-mb-2">Typewriter Effect:</p>
+            <p class="nw-text-lg nw-font-mono nw-text-blue-600" id="typewriter"></p>
+          </div>
+
+          <div>
+            <p class="nw-text-sm nw-text-gray-600 nw-mb-2">Fade In Text:</p>
+            <p class="nw-text-lg nw-text-green-600 nw-opacity-0 nw-transition-opacity nw-duration-1000" id="fade-text">This text fades in</p>
+          </div>
+
+          <div class="nw-overflow-hidden">
+            <p class="nw-text-sm nw-text-gray-600 nw-mb-2">Slide Up Text:</p>
+            <p class="nw-text-lg nw-text-purple-600 nw-transform nw-translate-y-full nw-transition-transform nw-duration-1000" id="slide-text">This text slides up</p>
+          </div>
+
+          <button class="nw-w-full nw-bg-gray-600 nw-text-white nw-py-2 nw-px-4 nw-rounded nw-hover:nw-bg-gray-700 nw-transition-colors" onclick="triggerTextAnimations()">
+            Trigger Text Animations
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="nw-mt-12 nw-bg-white nw-rounded-lg nw-shadow-md nw-p-6">
+      <h2 class="nw-text-xl nw-font-semibold nw-text-gray-900 nw-mb-4">Animation Utilities</h2>
+      <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-2 lg:nw-grid-cols-4 nw-gap-4">
+        <div class="nw-text-center nw-p-4 nw-bg-gray-50 nw-rounded">
+          <div class="nw-text-sm nw-text-gray-600">Duration</div>
+          <div class="nw-font-mono nw-text-xs nw-mt-1">duration-300</div>
+        </div>
+        <div class="nw-text-center nw-p-4 nw-bg-gray-50 nw-rounded">
+          <div class="nw-text-sm nw-text-gray-600">Easing</div>
+          <div class="nw-font-mono nw-text-xs nw-mt-1">ease-in-out</div>
+        </div>
+        <div class="nw-text-center nw-p-4 nw-bg-gray-50 nw-rounded">
+          <div class="nw-text-sm nw-text-gray-600">Transform</div>
+          <div class="nw-font-mono nw-text-xs nw-mt-1">hover:scale-105</div>
+        </div>
+        <div class="nw-text-center nw-p-4 nw-bg-gray-50 nw-rounded">
+          <div class="nw-text-sm nw-text-gray-600">Opacity</div>
+          <div class="nw-font-mono nw-text-xs nw-mt-1">hover:opacity-80</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Custom animations for the playground */
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+
+  .animate-bounce-in {
+    animation: bounceIn 0.6s ease-out forwards;
+  }
+
+  .animate-typewriter {
+    overflow: hidden;
+    border-right: 2px solid #3B82F6;
+    white-space: nowrap;
+    animation: typewriter 3s steps(40) 1s forwards;
+  }
+
+  /* 3D flip effect */
+  .group:hover .nw-rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .group:hover .nw-rotate-y-0 {
+    transform: rotateY(0deg);
+  }
+
+  .nw-rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .nw-rotate-y-0 {
+    transform: rotateY(0deg);
+  }
+
+  /* Perspective for 3D effects */
+  .group {
+    perspective: 1000px;
+  }
+
+  .group>div {
+    backface-visibility: hidden;
+  }
+</style>
+
+<script>
+  // Notification triggers
+  function triggerNotifications() {
+    const slideNotification = document.getElementById('slide-notification');
+    const fadeNotification = document.getElementById('fade-notification');
+    const bounceNotification = document.getElementById('bounce-notification');
+    // Reset animations
+    slideNotification.classList.add('nw-translate-x-full');
+    fadeNotification.classList.add('nw-opacity-0');
+    bounceNotification.classList.add('nw-scale-0');
+    // Trigger animations with delays
+    setTimeout(() => {
+      slideNotification.classList.remove('nw-translate-x-full');
+      slideNotification.classList.add('nw-translate-x-0');
+    }, 100);
+    setTimeout(() => {
+      fadeNotification.classList.remove('nw-opacity-0');
+      fadeNotification.classList.add('nw-opacity-100');
+    }, 600);
+    setTimeout(() => {
+      bounceNotification.classList.remove('nw-scale-0');
+      bounceNotification.classList.add('nw-scale-100');
+    }, 1100);
+    // Reset after 3 seconds
+    setTimeout(() => {
+      slideNotification.classList.add('nw-translate-x-full');
+      slideNotification.classList.remove('nw-translate-x-0');
+      fadeNotification.classList.add('nw-opacity-0');
+      fadeNotification.classList.remove('nw-opacity-100');
+      bounceNotification.classList.add('nw-scale-0');
+      bounceNotification.classList.remove('nw-scale-100');
+    }, 4000);
+  }
+  // Text animation triggers
+  function triggerTextAnimations() {
+    const typewriterText = document.getElementById('typewriter');
+    const fadeText = document.getElementById('fade-text');
+    const slideText = document.getElementById('slide-text');
+    // Reset animations
+    typewriterText.textContent = '';
+    typewriterText.classList.remove('animate-typewriter');
+    fadeText.classList.add('nw-opacity-0');
+    slideText.classList.add('nw-translate-y-full');
+    // Typewriter effect
+    const text = 'Design System Animations';
+    let i = 0;
+    const typeInterval = setInterval(() => {
+      typewriterText.textContent += text.charAt(i);
+      i++;
+      if (i >= text.length) {
+        clearInterval(typeInterval);
+      }
+    }, 100);
+    // Fade in text
+    setTimeout(() => {
+      fadeText.classList.remove('nw-opacity-0');
+      fadeText.classList.add('nw-opacity-100');
+    }, 1000);
+    // Slide up text
+    setTimeout(() => {
+      slideText.classList.remove('nw-translate-y-full');
+      slideText.classList.add('nw-translate-y-0');
+    }, 1500);
+  }
+  // Auto-trigger some animations on load
+  document.addEventListener('DOMContentLoaded', function() {
+    // Auto-start typewriter after a delay
+    setTimeout(() => {
+      triggerTextAnimations();
+    }, 2000);
+  });
+  // Loading button interaction
+  document.addEventListener('DOMContentLoaded', function() {
+    const loadingButtons = document.querySelectorAll('button');
+    loadingButtons.forEach(button => {
+      if (button.textContent.includes('Loading Button')) {
+        button.addEventListener('click', function() {
+          const spinner = button.querySelector('#loading-spinner');
+          const text = button.querySelector('span:last-child');
+          if (spinner && text) {
+            spinner.classList.remove('nw-hidden');
+            text.textContent = 'Loading...';
+            button.disabled = true;
+            setTimeout(() => {
+              spinner.classList.add('nw-hidden');
+              text.textContent = 'Loading Button';
+              button.disabled = false;
+            }, 2000);
+          }
+        });
+      }
+    });
+  });
+</script>

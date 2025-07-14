@@ -1,0 +1,15 @@
+{{#each benefits}}
+  <div class="nw-bg-white nw-rounded-xl nw-shadow-lg nw-p-6 md:nw-p-8 nw-text-center hover:nw-shadow-xl nw-transition-shadow nw-duration-300" role="listitem">
+    <div class="nw-flex nw-justify-center nw-mb-6">
+      <div class="nw-w-16 nw-h-16 md:nw-w-20 md:nw-h-20 nw-bg-hk-blue-200 nw-rounded-full nw-flex nw-items-center nw-justify-center nw-shadow-lg" aria-hidden="true">
+        {{{icon}}}
+      </div>
+    </div>
+    <h3 class="nw-text-xl md:nw-text-2xl nw-font-bold nw-text-gray-900 nw-mb-4">
+      {{title}}
+    </h3>
+    <p class="nw-text-gray-600 nw-leading-relaxed">
+      {{text}}
+    </p>
+  </div>
+{{/each}}
