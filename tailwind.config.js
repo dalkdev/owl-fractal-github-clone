@@ -24,7 +24,7 @@ module.exports = {
                     200: '#579168', // neu
                     300: '#406B4D', // neu
                     400: '#41BCA7', // slate-0 wurde geänder
-                    500: '#6EB783',  // ist 100 geworden
+                    500: '#22C55E',
                     600: '#16A34A',
                 },
                 red: {
