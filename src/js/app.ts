@@ -14,6 +14,7 @@ import {initDirektZumThema} from "./modules/direkt-zum-thema";
 import {initLesepaten} from "./modules/lesepaten";
 import { initDropdownMenu } from './modules/dropdownMenu';
 import { initLoginBox } from './modules/login-box';
+import { initFAQToggleAbo } from './modules/fag-toggle-abo';
 import { initZusammenfassungAkkordeon } from './modules/zusammenfassung-akkordeon';
 
 
@@ -39,6 +40,7 @@ const initializationFunctions: Array<() => void> = [
     initLesepaten,
     initDropdownMenu,
     initZusammenfassungAkkordeon,
+    initFAQToggleAbo,
 //    initLightBox,
 
 ];

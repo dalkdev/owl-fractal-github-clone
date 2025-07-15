@@ -25,7 +25,7 @@ module.exports = {
                     300: '#406B4D', // neu
                     400: '#41BCA7', // slate-0 wurde geänder
                     500: '#6EB783',  // ist 100 geworden
-                    600: '#77A79B', // sky-0 wurde geänder
+                    600: '#16A34A',
                 },
                 red: {
                     0: '#D20A11',  // war red-500
@@ -83,9 +83,11 @@ module.exports = {
                     'nw-blue-100': '#00B4D1', // bleibt
                     'blue': '#00B4D1',
                     'blue-0': '#009FF3',
+                    'blue-50': '#CCE7F0',
                     'blue-100': '#0091CF',
                     'blue-200': '#0071A1',
                     'blue-300': '#00577D',
+                    'blue-700': '#005a85',
                 },
                 lz: {
                     'nw-yellow-100': '#FFDC09', // bleibt
