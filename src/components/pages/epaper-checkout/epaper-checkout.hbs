@@ -273,14 +273,28 @@
         </div>
       </nav>
 
-      <div id="auth-step" class="nw-space-y-6">
+    <div id="auth-step" class="nw-space-y-6">
         <h3 class="nw-text-lg sm:nw-text-xl nw-font-semibold nw-mb-4 nw-text-center sm:nw-text-left" style="color: #0071A1;">Loggen Sie sich ein oder erstellen Sie ein Konto</h3>
 
         <div id="email-step" class="nw-space-y-4">
-          <div>
-            <label for="auth-email" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">E-Mail-Adresse *</label>
-            <input type="email" id="auth-email" name="auth-email" required class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200" placeholder="ihre.email@beispiel.de" maxlength="254" autocomplete="email" spellcheck="false" aria-describedby="email-help">
-            <div id="email-help" class="nw-sr-only">Geben Sie Ihre E-Mail-Adresse ein, um fortzufahren</div>
+          <div class="nw-space-y-1">
+            <label for="auth-email" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700">E-Mail-Adresse *</label>
+
+            <input
+              type="email"
+              id="auth-email"
+              class="nw-w-full nw-px-4 nw-py-3 nw-border nw-rounded-xl nw-text-base nw-border-gray-300 focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+              placeholder="ihre.email@beispiel.de"
+              autocomplete="email"
+              spellcheck="false"
+            >
+
+            <!-- Fehlerausgabe für JavaScript-Anpassung -->
+            <p
+              id="email-error"
+              class="nw-text-sm nw-text-red-500 nw-mt-1 nw-hidden"
+              aria-live="polite"
+            ></p>
           </div>
 
           <button id="continue-btn" type="button" class="nw-w-full nw-py-4 sm:nw-py-4 nw-px-6 nw-text-white nw-font-semibold nw-text-base nw-rounded-xl nw-transition-all nw-duration-200 nw-shadow-lg hover:nw-shadow-xl nw-transform hover:nw-scale-105 nw-min-h-[48px] active:nw-scale-95" style="background: linear-gradient(135deg, #0071A1 0%, #005a85 100%) !important; color: white !important;" aria-describedby="continue-help">
@@ -326,16 +340,23 @@
           <div>
             <label for="register-password" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Ihr Passwort *</label>
             <div class="nw-relative">
-              <input type="password" id="register-password" required class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200" maxlength="16" autocomplete="new-password" spellcheck="false">
-              <button type="button" id="toggle-register-password" aria-label="Passwort anzeigen" class="nw-absolute nw-right-3 nw-top-1/2 nw-transform nw--translate-y-1/2 nw-text-gray-500 hover:nw-text-gray-700 nw-p-2">
+              <input type="password" id="register-password" required
+                     class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+                     maxlength="16" autocomplete="new-password" spellcheck="false">
+              <button type="button" id="toggle-register-password" aria-label="Passwort anzeigen"
+                      class="nw-absolute nw-right-3 nw-top-1/2 nw-transform nw--translate-y-1/2 nw-text-gray-500 hover:nw-text-gray-700 nw-p-2">
                 <svg class="nw-w-5 nw-h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                 </svg>
               </button>
             </div>
-            <p class="nw-text-xs nw-text-gray-500 nw-mt-1">Ihr Passwort muss mindestens 6 und max. 16 Zeichen umfassen.</p>
+
+            <!-- Hier die Fehlernachricht -->
+            <p id="register-password-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
           </div>
+
 
           <div>
             <label class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-3">Ich bin:</label>
@@ -353,38 +374,56 @@
 
           <div>
             <label for="salutation" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Anrede *</label>
-            <select id="salutation" required class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200">
+            <select id="salutation" required
+                    class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200">
               <option value="">Bitte wählen</option>
               <option value="herr">Herr</option>
               <option value="frau">Frau</option>
               <option value="divers">Divers</option>
             </select>
+            <p id="salutation-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
           </div>
 
           <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-2 nw-gap-4">
             <div>
               <label for="first-name" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Vorname *</label>
-              <input type="text" id="first-name" required class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200" maxlength="50" autocomplete="given-name" spellcheck="false">
+              <input type="text" id="first-name" required
+                     class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+                     maxlength="50" autocomplete="given-name" spellcheck="false">
+              <p id="first-name-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
             </div>
+
             <div>
               <label for="last-name" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Nachname *</label>
-              <input type="text" id="last-name" required class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200" maxlength="50" autocomplete="family-name" spellcheck="false">
+              <input type="text" id="last-name" required
+                     class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+                     maxlength="50" autocomplete="family-name" spellcheck="false">
+              <p id="last-name-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
             </div>
           </div>
 
           <div>
             <label for="street" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Straße & Nr. *</label>
-            <input type="text" id="street" required class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200" maxlength="100" autocomplete="street-address" spellcheck="false">
+            <input type="text" id="street" required
+                   class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+                   maxlength="100" autocomplete="street-address" spellcheck="false">
+            <p id="street-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
           </div>
 
           <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4">
             <div>
               <label for="postal-code" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">PLZ *</label>
-              <input type="text" id="postal-code" required class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200" maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" spellcheck="false">
+              <input type="text" id="postal-code" required
+                     class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+                     maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" spellcheck="false">
+              <p id="postal-code-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
             </div>
             <div>
               <label for="city" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Ort *</label>
-              <input type="text" id="city" required class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200" maxlength="50" autocomplete="address-level2" spellcheck="false">
+              <input type="text" id="city" required
+                     class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+                     maxlength="50" autocomplete="address-level2" spellcheck="false">
+              <p id="city-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
             </div>
             <div>
               <label for="country" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Land</label>
@@ -421,6 +460,12 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+
     </div>
 
     <div class="nw-bg-white nw-rounded-2xl nw-shadow-lg nw-p-6 nw-mt-6">
@@ -510,7 +555,6 @@
       const hasUpperCase = /[A-Z]/.test(password);
       const hasLowerCase = /[a-z]/.test(password);
       const hasNumbers = /\d/.test(password);
-      const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
       if (!hasUpperCase || !hasLowerCase || !hasNumbers) {
         return {
           valid: false,
@@ -522,6 +566,21 @@
         message: ''
       };
     }
+
+    const passwordInput = document.getElementById('register-password');
+    const errorMessage = document.getElementById('register-password-error');
+
+    passwordInput.addEventListener('input', () => {
+      const { valid, message } = validatePassword(passwordInput.value);
+
+      if (valid) {
+        errorMessage.textContent = '';
+        errorMessage.classList.add('nw-hidden');
+      } else {
+        errorMessage.textContent = message;
+        errorMessage.classList.remove('nw-hidden');
+      }
+    });
     // Security: CSRF token simulation
     function generateCSRFToken() {
       return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
@@ -618,15 +677,32 @@
           return;
         }
         const email = sanitizeInput(emailInput.value);
+        const emailErrorText = document.getElementById('email-error');
+
+// Reset visuelle Fehleranzeige
+        emailInput.classList.remove('nw-border-red-500');
+        emailErrorText?.classList.add('nw-hidden');
+
+// Leere Eingabe prüfen
         if (!email) {
-          alert('Bitte geben Sie Ihre E-Mail-Adresse ein.');
+          emailInput.classList.add('nw-border-red-500');
+          if (emailErrorText) {
+            emailErrorText.textContent = 'Bitte geben Sie Ihre E-Mail-Adresse ein.';
+            emailErrorText.classList.remove('nw-hidden');
+          }
           return;
         }
-        // Security: Enhanced email validation
+
+// Ungültige E-Mail prüfen
         if (!validateEmail(email)) {
-          alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+          emailInput.classList.add('nw-border-red-500');
+          if (emailErrorText) {
+            emailErrorText.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+            emailErrorText.classList.remove('nw-hidden');
+          }
           return;
         }
+
         // Security: Record attempt
         rateLimiter.recordAttempt();
         // Show loading state
@@ -768,12 +844,13 @@
     if (registerBtn) {
       registerBtn.addEventListener('click', async function(e) {
         e.preventDefault();
+
         // Security: Rate limiting check
         if (!rateLimiter.canAttempt()) {
           alert(`Zu viele Versuche. Bitte warten Sie ${rateLimiter.getRemainingTime()} Sekunden.`);
           return;
         }
-        // Security: Validate and sanitize all required fields
+
         const requiredFields = {
           'register-password': 'Passwort',
           'salutation': 'Anrede',
@@ -783,43 +860,79 @@
           'postal-code': 'PLZ',
           'city': 'Ort'
         };
+
         const sanitizedData = {};
+        let firstErrorField = null;
+
+        function setError(field, message) {
+          field.classList.add('nw-border-red-500');
+          const errorElem = document.getElementById(field.id + '-error');
+          if (errorElem) {
+            errorElem.textContent = message;
+            errorElem.classList.remove('nw-hidden');
+          }
+        }
+
+        function clearError(field) {
+          field.classList.remove('nw-border-red-500');
+          const errorElem = document.getElementById(field.id + '-error');
+          if (errorElem) {
+            errorElem.textContent = '';
+            errorElem.classList.add('nw-hidden');
+          }
+        }
+
+        // Clear all errors first
+        for (const fieldId of Object.keys(requiredFields)) {
+          const field = document.getElementById(fieldId);
+          if (field) clearError(field);
+        }
+        clearError(registerPassword);
+
+        // Validate required fields
         for (const [fieldId, fieldName] of Object.entries(requiredFields)) {
           const field = document.getElementById(fieldId);
           const value = sanitizeInput(field?.value || '');
           if (!value) {
-            alert(`Bitte füllen Sie das Feld "${fieldName}" aus.`);
-            field?.focus();
-            return;
+            setError(field, 'Dieses Feld ist erforderlich');
+            if (!firstErrorField) firstErrorField = field;
+            continue;
           }
-          // Security: Additional validation for specific fields
           if (fieldId === 'postal-code' && !/^\d{5}$/.test(value)) {
-            alert('PLZ muss aus 5 Ziffern bestehen.');
-            field?.focus();
-            return;
+            setError(field, 'PLZ muss aus 5 Ziffern bestehen.');
+            if (!firstErrorField) firstErrorField = field;
+            continue;
           }
           if ((fieldId === 'first-name' || fieldId === 'last-name') && value.length < 2) {
-            alert(`${fieldName} muss mindestens 2 Zeichen lang sein.`);
-            field?.focus();
-            return;
+            setError(field, `${fieldName} muss mindestens 2 Zeichen lang sein.`);
+            if (!firstErrorField) firstErrorField = field;
+            continue;
           }
           sanitizedData[fieldId] = value;
         }
-        // Security: Enhanced password validation
+
+        // Password validation
         const password = sanitizeInput(registerPassword.value);
+        clearError(registerPassword);
         const passwordValidation = validatePassword(password);
         if (!passwordValidation.valid) {
-          alert(passwordValidation.message);
-          registerPassword.focus();
+          setError(registerPassword, passwordValidation.message);
+          if (!firstErrorField) firstErrorField = registerPassword;
+        }
+
+        if (firstErrorField) {
+          firstErrorField.focus();
           return;
         }
+
         // Security: Record attempt
         rateLimiter.recordAttempt();
+
         // Show loading state
         registerBtn.disabled = true;
         registerBtn.textContent = 'Registrierung...';
+
         try {
-          // Security: Secure API call with proper validation
           const response = await fetch('/api/auth/register', {
             method: 'POST',
             headers: {
@@ -838,19 +951,21 @@
               timestamp: Date.now()
             })
           });
+
           if (!response.ok) {
             throw new Error('Registrierung fehlgeschlagen');
           }
           const data = await response.json();
+
           if (data.success) {
             alert('Registrierung erfolgreich! Weiter zur Zahlungsauswahl...');
-            // Here you would proceed to next step
+            // Hier weitere Schritte
           } else {
             alert(data.message || 'Registrierung fehlgeschlagen');
           }
+
         } catch (error) {
           console.warn('Using mock registration due to:', error.message);
-          // Mock registration for development
           setTimeout(() => {
             alert('Registrierung erfolgreich! Weiter zur Zahlungsauswahl...');
           }, 1000);
@@ -860,6 +975,7 @@
         }
       });
     }
+
     // E-Paper details toggle functionality with accessibility
     const toggleButton = document.getElementById('toggleDetails');
     const expandedDetails = document.getElementById('expandedDetails');
