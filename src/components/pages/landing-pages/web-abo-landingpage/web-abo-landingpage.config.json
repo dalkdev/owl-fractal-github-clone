@@ -1,6 +1,38 @@
 {
   "status": "qm",
   "context": {
+    "pricing_features": [
+      {
+        "type": "monthly",
+        "check_class": "nw-text-hk-blue-300",
+        "features": [
+          "Alle Artikel freischalten",
+          "Immer aktuell – in Web und App",
+          "HK+-Updates per Mail & HK-Karte",
+          "Flexibel monatlich kündbar"
+        ]
+      },
+      {
+        "type": "yearly",
+        "check_class": "nw-text-hk-blue-300",
+        "features": [
+          "Alle Artikel freischalten",
+          "Jederzeit aktuell – in Web und App",
+          "Bequeme jährliche Zahlung",
+          "Sparen mit der HK-Karte"
+        ]
+      }
+    ],
+    "intro_offer": {
+      "check_class": "nw-text-green-700 nw-text-lg",
+      "features": [
+        "Alle Artikel freischalten",
+        "Immer aktuell – in Web und App",
+        "Flexibel monatlich kündbar",
+        "HK+-Updates per Mail"
+      ]
+    },
+
     "benefits": [
       {
         "icon": "<svg class='nw-w-8 nw-h-8 md:nw-w-10 md:nw-h-10 nw-text-white' fill='none' stroke='currentColor' viewBox='0 0 24 24' aria-hidden='true'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'></path><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'></path></svg>",

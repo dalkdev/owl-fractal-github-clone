@@ -1,0 +1,23 @@
+{
+  "status": "qm",
+  "context": {
+    "items": [
+      {
+        "text": "Werbetrackingfreier Zugang",
+        "iconPath": "M5 13l4 4L19 7"
+      },
+      {
+        "text": "Ohne personalisierte Werbung",
+        "iconPath": "M5 13l4 4L19 7"
+      },
+      {
+        "text": "Website und News-App",
+        "iconPath": "M5 13l4 4L19 7"
+      },
+      {
+        "text": "Monatlich kündbar",
+        "iconPath": "M5 13l4 4L19 7"
+      }
+    ]
+  }
+}

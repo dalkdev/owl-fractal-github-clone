@@ -1,6 +1,23 @@
 {
   "status": "qm",
   "context": {
+    "items": [
+      {
+        "text": "Montag bis Sonntag ab 3:30 Uhr"
+      },
+      {
+        "text": "HK am Abend ab 20:30 Uhr"
+      },
+      {
+        "text": "Gleichzeitig auf bis zu vier Geräten nutzbar"
+      },
+      {
+        "text": "Alle Ausgaben der letzten zwölf Monate durchsuchbar"
+      },
+      {
+        "text": "Zusätzlich HK+ Webabo für alle Online-Artikel von haller-kreisblatt.de"
+      }
+    ],
     "contacts": [
       {
         "type": "E-Mail",

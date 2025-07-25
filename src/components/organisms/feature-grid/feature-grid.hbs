@@ -1,0 +1,10 @@
+<div class="nw-grid nw-grid-cols-2 nw-gap-y-3 nw-gap-x-4">
+  {{#each items}}
+    <div class="nw-flex nw-items-start nw-text-sm nw-text-gray-700">
+      <svg class="nw-w-4 nw-h-4 nw-text-green-500 nw-mr-2 nw-flex-shrink-0 nw-mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{iconPath}}" />
+      </svg>
+      <span class="nw-leading-tight">{{text}}</span>
+    </div>
+  {{/each}}
+</div>

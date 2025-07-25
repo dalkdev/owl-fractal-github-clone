@@ -64,22 +64,12 @@
 
         <!-- Features -->
         <ul class="nw-space-y-2 md:nw-space-y-3 nw-mb-6 md:nw-mb-8" role="list" aria-label="Leistungen des Kennenlern-Abo Angebots">
-          <li class="pricing-feature-item nw-flex nw-items-center" role="listitem">
-            <span class="nw-text-green-700 nw-mr-3 nw-text-lg" aria-hidden="true">✓</span>
-            <span class="nw-text-gray-700 nw-text-sm md:nw-text-base">Alle Artikel freischalten</span>
-          </li>
-          <li class="pricing-feature-item nw-flex nw-items-center" role="listitem">
-            <span class="nw-text-green-700 nw-mr-3 nw-text-lg" aria-hidden="true">✓</span>
-            <span class="nw-text-gray-700 nw-text-sm md:nw-text-base">Immer aktuell – in Web und App</span>
-          </li>
-          <li class="pricing-feature-item nw-flex nw-items-center" role="listitem">
-            <span class="nw-text-green-700 nw-mr-3 nw-text-lg" aria-hidden="true">✓</span>
-            <span class="nw-text-gray-700 nw-text-sm md:nw-text-base">Flexibel monatlich kündbar</span>
-          </li>
-          <li class="pricing-feature-item nw-flex nw-items-center" role="listitem">
-            <span class="nw-text-green-700 nw-mr-3 nw-text-lg" aria-hidden="true">✓</span>
-            <span class="nw-text-gray-700 nw-text-sm md:nw-text-base">HK+-Updates per Mail</span>
-          </li>
+          {{#each intro_offer.features}}
+            <li class="pricing-feature-item nw-flex nw-items-center" role="listitem">
+              <span class="{{../intro_offer.check_class}} nw-mr-3" aria-hidden="true">✓</span>
+              <span class="nw-text-gray-700 nw-text-sm md:nw-text-base">{{this}}</span>
+            </li>
+          {{/each}}
         </ul>
 
         <!-- Expandable Info -->
@@ -176,45 +166,18 @@
 
         <!-- Trial Info -->
 
-        <!-- Features -->
-
-        <ul class="nw-space-y-3 nw-mb-8 pricing-features-monthly">
-          <li class="nw-flex nw-items-center">
-            <span class="nw-text-hk-blue-300 nw-mr-3">✓</span>
-            <span class="nw-text-gray-700">Alle Artikel freischalten</span>
-          </li>
-          <li class="nw-flex nw-items-center">
-            <span class="nw-text-hk-blue-300 nw-mr-3">✓</span>
-            <span class="nw-text-gray-700">Immer aktuell – in Web und App</span>
-          </li>
-          <li class="nw-flex nw-items-center">
-            <span class="nw-text-hk-blue-300 nw-mr-3">✓</span>
-            <span class="nw-text-gray-700">HK+-Updates per Mail & HK-Karte</span>
-          </li>
-          <li class="nw-flex nw-items-center">
-            <span class="nw-text-hk-blue-300 nw-mr-3">✓</span>
-            <span class="nw-text-gray-700">Flexibel monatlich kündbar</span>
-          </li>
+        <!-- Features --> {{#each pricing_features}}
+      {{!-- Erster Durchlauf = monthly, Zweiter Durchlauf = yearly --}}
+        <ul class="nw-space-y-3 nw-mb-8 pricing-features-{{this.type}}{{#unless @first}} nw-hidden{{/unless}}">
+          {{#each this.features}}
+            <li class="nw-flex nw-items-center">
+              <span class="{{../check_class}} nw-mr-3">✓</span>
+              <span class="nw-text-gray-700">{{this}}</span>
+            </li>
+          {{/each}}
         </ul>
+      {{/each}}
 
-        <ul class="nw-space-y-3 nw-mb-8 pricing-features-yearly nw-hidden">
-          <li class="nw-flex nw-items-center">
-            <span class="nw-text-hk-blue-300 nw-mr-3">✓</span>
-            <span class="nw-text-gray-700">Alle Artikel freischalten</span>
-          </li>
-          <li class="nw-flex nw-items-center">
-            <span class="nw-text-hk-blue-300 nw-mr-3">✓</span>
-            <span class="nw-text-gray-700">Jederzeit aktuell – in Web und App</span>
-          </li>
-          <li class="nw-flex nw-items-center">
-            <span class="nw-text-hk-blue-300 nw-mr-3">✓</span>
-            <span class="nw-text-gray-700">Bequeme jährliche Zahlung</span>
-          </li>
-          <li class="nw-flex nw-items-center">
-            <span class="nw-text-hk-blue-300 nw-mr-3">✓</span>
-            <span class="nw-text-gray-700">Sparen mit der HK-Karte</span>
-          </li>
-        </ul>
 
         <!-- Expandable Info Yearly (Toggle-specific) -->
         <div class="nw-mb-6 expandable-info-yearly nw-hidden">
