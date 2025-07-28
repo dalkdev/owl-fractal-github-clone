@@ -287,8 +287,8 @@
               placeholder="ihre.email@beispiel.de"
               autocomplete="email"
               spellcheck="false"
-            >
-
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            />
             <!-- Fehlerausgabe für JavaScript-Anpassung -->
             <p
               id="email-error"
@@ -541,7 +541,7 @@
     }
     // Security: Enhanced email validation
     function validateEmail(email) {
-      const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+      const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
       return emailRegex.test(email) && email.length <= 254;
     }
     // Security: Password strength validation
@@ -888,6 +888,14 @@
           if (field) clearError(field);
         }
         clearError(registerPassword);
+        // Password validation
+        const password = sanitizeInput(registerPassword.value);
+        clearError(registerPassword);
+        const passwordValidation = validatePassword(password);
+        if (!passwordValidation.valid) {
+          setError(registerPassword, passwordValidation.message);
+          if (!firstErrorField) firstErrorField = registerPassword;
+        }
 
         // Validate required fields
         for (const [fieldId, fieldName] of Object.entries(requiredFields)) {
@@ -911,14 +919,7 @@
           sanitizedData[fieldId] = value;
         }
 
-        // Password validation
-        const password = sanitizeInput(registerPassword.value);
-        clearError(registerPassword);
-        const passwordValidation = validatePassword(password);
-        if (!passwordValidation.valid) {
-          setError(registerPassword, passwordValidation.message);
-          if (!firstErrorField) firstErrorField = registerPassword;
-        }
+
 
         if (firstErrorField) {
           firstErrorField.focus();
