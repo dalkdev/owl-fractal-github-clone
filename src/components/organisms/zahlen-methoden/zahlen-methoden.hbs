@@ -1,0 +1,5 @@
+<div class="nw-flex nw-justify-center nw-items-center nw-space-x-3 nw-mt-6 nw-flex-wrap">
+  {{#each paymentMethods}}
+    {{> @zahlen-methode src=this.src alt=this.alt}}
+  {{/each}}
+</div>

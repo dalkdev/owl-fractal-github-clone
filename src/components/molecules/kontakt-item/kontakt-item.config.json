@@ -1,0 +1,12 @@
+{
+  "status": "qm",
+  "context": {
+    "containerClass": "nw-flex nw-items-center nw-px-4 nw-py-3 nw-rounded-xl nw-flex-1",
+        "class": "nw-w-5 nw-h-5 nw-mr-3",
+        "path": "M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
+        "href": "mailto:service@haller-kreisblatt.de",
+        "text": "service@haller-kreisblatt.de",
+        "bgColor": "#E6F3F8"
+
+  }
+}

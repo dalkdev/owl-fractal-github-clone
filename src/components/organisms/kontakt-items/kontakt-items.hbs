@@ -1,0 +1,13 @@
+<div class="nw-flex nw-flex-col md:nw-flex-row nw-gap-4">
+{{#each icons}}
+    <div class="{{containerClass}}" style="background-color: {{bgColor}};">
+      <svg class="{{svgClass}}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{this.path}}" />
+      </svg>
+      <a href="{{href}}" class="nw-text-gray-700 hover:nw-text-gray-900 nw-underline nw-text-sm">
+        {{text}}
+      </a>
+    </div>
+
+{{/each}}
+</div>

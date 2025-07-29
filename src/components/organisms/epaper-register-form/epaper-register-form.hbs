@@ -1,0 +1,228 @@
+<div id="auth-step" class="nw-space-y-6">
+  <h3 class="nw-text-lg sm:nw-text-xl nw-font-semibold nw-mb-4 nw-text-center sm:nw-text-left"
+      style="color: #0071A1;">Loggen Sie sich ein oder erstellen Sie ein Konto</h3>
+  <!-- -->
+
+  <div id="email-step" class="nw-space-y-4">
+    <div class="nw-space-y-1">
+      <label for="auth-email" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700">E-Mail-Adresse *</label>
+
+      <input
+        type="email"
+        id="auth-email"
+        class="nw-w-full nw-px-4 nw-py-3 nw-border nw-rounded-xl nw-text-base nw-border-gray-300 focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+        placeholder="ihre.email@beispiel.de"
+        autocomplete="email"
+        spellcheck="false"
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+      />
+      <!-- Fehlerausgabe für JavaScript-Anpassung -->
+      <p
+        id="email-error"
+        class="nw-text-sm nw-text-red-500 nw-mt-1 nw-hidden"
+        aria-live="polite"
+      ></p>
+    </div>
+
+    <button id="continue-btn" type="button"
+            class="nw-w-full nw-py-4 sm:nw-py-4 nw-px-6 nw-text-white nw-font-semibold nw-text-base nw-rounded-xl nw-transition-all nw-duration-200 nw-shadow-lg hover:nw-shadow-xl nw-transform hover:nw-scale-105 nw-min-h-[48px] active:nw-scale-95"
+            style="background: linear-gradient(135deg, #0071A1 0%, #005a85 100%) !important; color: white !important;"
+            aria-describedby="continue-help">
+      Weiter
+    </button>
+    <div id="continue-help" class="nw-sr-only">Klicken Sie hier, um mit Ihrer E-Mail-Adresse fortzufahren</div>
+  </div>
+
+  <!-- login Seite -->
+  <div id="login-step" class="nw-hidden nw-space-y-4">
+    <div>
+      <label for="login-email"
+             class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">E-Mail-Adresse</label>
+      <input type="email" id="login-email" name="login-email" readonly
+             class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base nw-bg-gray-50"
+             maxlength="254" autocomplete="email" spellcheck="false" aria-label="Ihre E-Mail-Adresse">
+    </div>
+    <div>
+      <label for="login-password" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Ihr Passwort
+        *</label>
+      <div class="nw-relative">
+        <input type="password" id="login-password" name="login-password" required
+               class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+               maxlength="16" autocomplete="current-password" spellcheck="false"
+               aria-describedby="login-password-help">
+        <button type="button" id="toggle-password"
+                class="nw-absolute nw-right-3 nw-top-1/2 nw-transform nw--translate-y-1/2 nw-text-gray-500 hover:nw-text-gray-700 nw-p-2 nw-min-h-[44px] nw-min-w-[44px]"
+                aria-label="Passwort anzeigen" aria-pressed="false">
+          <svg class="nw-w-5 nw-h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="login-password-help" class="nw-sr-only">Geben Sie Ihr Passwort ein</div>
+    </div>
+    <div class="nw-flex nw-flex-col sm:nw-flex-row nw-space-y-3 sm:nw-space-y-0 sm:nw-space-x-3">
+      <button type="button" id="back-to-email"
+              class="nw-flex-1 nw-py-4 nw-px-6 nw-font-medium nw-text-gray-700 nw-border nw-border-gray-300 nw-rounded-xl hover:nw-bg-gray-50 nw-transition-colors nw-duration-200 nw-min-h-[48px] active:nw-scale-95">
+        Zurück
+      </button>
+      <button type="button" id="login-btn"
+              class="nw-flex-1 nw-py-4 nw-px-6 nw-text-white nw-font-semibold nw-text-base nw-rounded-xl nw-transition-all nw-duration-200 nw-shadow-lg hover:nw-shadow-xl nw-transform hover:nw-scale-105 nw-min-h-[48px] active:nw-scale-95"
+              style="background: linear-gradient(135deg, #0071A1 0%, #005a85 100%);">
+        Anmelden
+      </button>
+    </div>
+  </div>
+
+  <!-- Register Seite-->
+
+  <div id="registration-step" class="nw-hidden nw-space-y-4">
+    <div>
+      <label for="register-email" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">E-Mail-Adresse</label>
+      <input type="email" id="register-email" readonly
+             class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base nw-bg-gray-50"
+             maxlength="254" autocomplete="email" spellcheck="false">
+    </div>
+
+    <div>
+      <label for="register-password" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Ihr
+        Passwort *</label>
+      <div class="nw-relative">
+        <input type="password" id="register-password" required
+               class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+               maxlength="16" autocomplete="new-password" spellcheck="false">
+        <button type="button" id="toggle-register-password" aria-label="Passwort anzeigen"
+                class="nw-absolute nw-right-3 nw-top-1/2 nw-transform nw--translate-y-1/2 nw-text-gray-500 hover:nw-text-gray-700 nw-p-2">
+          <svg class="nw-w-5 nw-h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Hier die Fehlernachricht -->
+      <p id="register-password-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
+    </div>
+
+
+    <div>
+      <label class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-3">Ich bin:</label>
+      <div class="nw-flex nw-flex-col sm:nw-flex-row nw-space-y-3 sm:nw-space-y-0 sm:nw-space-x-6">
+        <label class="nw-flex nw-items-center nw-p-2">
+          <input type="radio" name="customer-type" value="private" checked
+                 class="nw-w-5 nw-h-5 nw-border-gray-300 focus:nw-ring-2" style="color: #0071A1;">
+          <span class="nw-ml-3 nw-text-sm nw-text-gray-700">Privatkunde</span>
+        </label>
+        <label class="nw-flex nw-items-center nw-p-2">
+          <input type="radio" name="customer-type" value="business"
+                 class="nw-w-5 nw-h-5 nw-border-gray-300 focus:nw-ring-2" style="color: #0071A1;">
+          <span class="nw-ml-3 nw-text-sm nw-text-gray-700">Firma</span>
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <label for="salutation" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Anrede *</label>
+      <select id="salutation" required
+              class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200">
+        <option value="">Bitte wählen</option>
+        <option value="herr">Herr</option>
+        <option value="frau">Frau</option>
+        <option value="divers">Divers</option>
+      </select>
+      <p id="salutation-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
+    </div>
+
+    <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-2 nw-gap-4">
+      <div>
+        <label for="first-name" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Vorname
+          *</label>
+        <input type="text" id="first-name" required
+               class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+               maxlength="50" autocomplete="given-name" spellcheck="false">
+        <p id="first-name-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
+      </div>
+
+      <div>
+        <label for="last-name" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Nachname
+          *</label>
+        <input type="text" id="last-name" required
+               class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+               maxlength="50" autocomplete="family-name" spellcheck="false">
+        <p id="last-name-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div>
+      <label for="street" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Straße & Nr.
+        *</label>
+      <input type="text" id="street" required
+             class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+             maxlength="100" autocomplete="street-address" spellcheck="false">
+      <p id="street-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
+    </div>
+
+    <div class="nw-grid nw-grid-cols-1 md:nw-grid-cols-3 nw-gap-4">
+      <div>
+        <label for="postal-code" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">PLZ *</label>
+        <input type="text" id="postal-code" required
+               class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+               maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" spellcheck="false">
+        <p id="postal-code-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
+      </div>
+      <div>
+        <label for="city" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Ort *</label>
+        <input type="text" id="city" required
+               class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+               maxlength="50" autocomplete="address-level2" spellcheck="false">
+        <p id="city-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
+      </div>
+      <div>
+        <label for="country" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Land</label>
+        <select id="country"
+                class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200">
+          <option value="DE" selected>Deutschland</option>
+          <option value="AT">Österreich</option>
+          <option value="CH">Schweiz</option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <label for="phone" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Telefon
+        (Rufnummer)</label>
+      <input type="tel" id="phone"
+             class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+             maxlength="20" autocomplete="tel" spellcheck="false">
+    </div>
+
+    <div>
+      <label for="birth-date" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Ihr
+        Geburtsdatum</label>
+      <input type="date" id="birth-date"
+             class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+             min="1900-01-01" max="2010-12-31" autocomplete="bday">
+    </div>
+
+    <p class="nw-text-xs nw-text-gray-500 nw-mb-4">* hierbei handelt es sich um ein Pflichtfeld</p>
+
+    <div class="nw-flex nw-space-x-3">
+      <button type="button" id="back-to-email-from-register"
+              class="nw-flex-1 nw-py-4 nw-px-6 nw-font-medium nw-text-gray-700 nw-border nw-border-gray-300 nw-rounded-xl hover:nw-bg-gray-50 nw-transition-colors nw-duration-200">
+        Zurück
+      </button>
+      <button type="button" id="register-btn"
+              class="nw-flex-1 nw-py-4 nw-px-6 nw-font-medium nw-text-white nw-rounded-xl nw-transition-all nw-duration-200 nw-shadow-lg hover:nw-shadow-xl nw-transform hover:nw-scale-105"
+              style="background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);">
+        Weiter
+        <svg class="nw-w-4 nw-h-4 nw-ml-2 nw-inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>

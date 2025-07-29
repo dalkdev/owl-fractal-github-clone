@@ -1,0 +1,28 @@
+
+{
+  "status": "qm",
+  "context": {
+    "paymentMethods": [
+      {
+        "src": "/images/zahlen-methoden/payment_creditcard.svg",
+        "alt": "Credit Card"
+      },
+      {
+        "src": "/images/zahlen-methoden/payment_paypal_badge.svg",
+        "alt": "PayPal"
+      },
+      {
+        "src": "/images/zahlen-methoden/payment_sepa.svg",
+        "alt": "Sepa"
+      },
+      {
+        "src": "/images/zahlen-methoden/payment_apay.svg",
+        "alt": "apay"
+      },
+      {
+        "src": "/images/zahlen-methoden/payment_g-pay.svg",
+        "alt": "gpay"
+      }
+    ]
+  }
+}
