@@ -1,3 +1,293 @@
+<style>
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  .secure-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .product-card {
+    background: linear-gradient(135deg, #0071A1 0%, #005a85 100%);
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0071A1;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .product-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0.25rem 0;
+  }
+
+  .product-description {
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  .price-display {
+    text-align: right;
+  }
+
+  .price-main {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .price-period {
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  .trial-badge {
+    background: white;
+    color: #0071A1;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  .checkout-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0071A1;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .progress-step {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .step-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  .step-active {
+    background: #0071A1;
+    color: white;
+  }
+
+  .step-inactive {
+    background: #d1d5db;
+    color: #6b7280;
+  }
+
+  .step-line {
+    width: 80px;
+    height: 2px;
+    background: #d1d5db;
+  }
+
+  .help-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .help-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0071A1;
+    margin: 0 0 1rem 0;
+  }
+
+  .help-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .help-contact {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .help-contact:hover {
+    background: #f1f5f9;
+  }
+
+  .payment-methods {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .payment-method {
+    background: #f59e0b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .form-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+
+  .payment-element {
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    text-align: center;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #0071A1 0%, #005a85 100%);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+
+  .submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .submit-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 113, 161, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+
+    .product-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .price-display {
+      text-align: left;
+    }
+
+    .help-contacts {
+      grid-template-columns: 1fr;
+    }
+
+    .progress-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .step-line {
+      display: none;
+    }
+
+    .secure-badge {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-bottom: 1rem;
+      align-self: flex-end;
+    }
+  }
+</style>
 <!-- pop up hidden willkommen zurück -->
 <div id="auth-modal"
      class="nw-fixed nw-inset-0 nw-bg-black nw-bg-opacity-50 nw-flex nw-items-center nw-justify-center nw-z-50 nw-hidden">
@@ -220,23 +510,274 @@
       <h2 class="nw-text-xl sm:nw-text-2xl nw-font-bold nw-mb-6 sm:nw-mb-8 nw-text-center sm:nw-text-left"
           style="color: #0071A1;">Ihre Bestellung</h2>
 
-      {{>@epaper-register-schritte}}
+      <nav class="nw-flex nw-items-center nw-justify-between nw-mb-6 sm:nw-mb-8 nw-px-2 sm:nw-px-0" role="navigation"
+           aria-label="Bestellvorgang">
+        <div class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center">
+          <div
+            class="nw-w-8 nw-h-8 sm:nw-w-10 sm:nw-h-10 nw-rounded-full nw-text-white nw-flex nw-items-center nw-justify-center nw-font-semibold nw-text-xs sm:nw-text-sm nw-shadow-md"
+            style="background: linear-gradient(135deg, #0071A1 0%, #005a85 100%);" aria-current="step">
+            1
+          </div>
+          <span class="nw-mt-1 sm:nw-mt-0 sm:nw-ml-3 nw-text-xs sm:nw-text-sm nw-font-medium nw-text-center"
+                style="color: #0071A1;">Kunde</span>
+        </div>
+
+        <div id="progress-1-2" class="nw-flex-1 nw-h-1 nw-bg-gray-200 nw-mx-2 sm:nw-mx-4 nw-rounded-full nw-min-w-0" aria-hidden="true"></div>
+        <div  class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center">
+          <div id="step-1-2" class="nw-w-8 nw-h-8 sm:nw-w-10 sm:nw-h-10 nw-rounded-full nw-bg-gray-200 nw-text-gray-500 nw-flex nw-items-center nw-justify-center
+    nw-font-semibold nw-text-xs sm:nw-text-sm" style="">
+            2
+          </div>
+          <span id="step-1-2-span"  class="nw-mt-1 sm:nw-mt-0 sm:nw-ml-3 nw-text-xs sm:nw-text-sm nw-font-medium nw-text-gray-500 nw-text-center" style="">Zahlung</span>
+        </div>
+        <div id="progress-2-3" class="nw-flex-1 nw-h-1 nw-bg-gray-200 nw-mx-2 sm:nw-mx-4 nw-rounded-full nw-min-w-0"
+             aria-hidden="true"></div>
+        <div  class="nw-flex nw-flex-col sm:nw-flex-row nw-items-center">
+          <div id="step-2-3"
+            class="nw-w-8 nw-h-8 sm:nw-w-10 sm:nw-h-10 nw-rounded-full nw-bg-gray-200 nw-text-gray-500 nw-flex nw-items-center nw-justify-center nw-font-semibold nw-text-xs sm:nw-text-sm">
+            3
+          </div>
+          <span id="step-2-3-span"
+            class="nw-mt-1 sm:nw-mt-0 sm:nw-ml-3 nw-text-xs sm:nw-text-sm nw-font-medium nw-text-gray-500 nw-text-center">Fertig</span>
+        </div>
+      </nav>
       <!-- step1 -->
       <!-- register step 1 -->
+
       {{>@epaper-register-form}}
 
+
       <!-- step2 -->
-      <div id="step2-block" class="nw-bg-white nw-p-4 sm:nw-p-6 nw-hidden">
-        step 2
+      <div id="step2-block" class="nw-bg-white nw-p-4 sm:nw-p-6 nw-hidden ">
+        <form id="hk-payment-form" class="payment-form" novalidate>
+          <h3 class="form-title">Zahlungsinformationen</h3>
+
+          <div class="form-group">
+            <label class="form-label">Zahlungsart auswählen</label>
+            <div style="display: grid; gap: 0.75rem;">
+              <label
+                style="display: flex; align-items: center; padding: 1rem; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+                class="payment-option" data-payment="card">
+                <input type="radio" name="payment-method" value="card"
+                       style="margin-right: 1rem; accent-color: #0071A1;" checked>
+                <div style="display: flex; align-items: center; flex-grow: 1;">
+                  <svg style="width: 24px; height: 24px; margin-right: 1rem; color: #0071A1;" fill="currentColor"
+                       viewBox="0 0 24 24">
+                    <path
+                      d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
+                  </svg>
+                  <div>
+                    <div style="font-weight: 500; color: #111827;">Kreditkarte</div>
+                    <div style="font-size: 0.875rem; color: #6b7280;">Visa, Mastercard, American Express</div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 0.25rem;">
+                  <img src="https://img.icons8.com/color/24/visa.png" alt="Visa" style="width: 24px; height: 16px;">
+                  <img src="https://img.icons8.com/color/24/mastercard.png" alt="Mastercard"
+                       style="width: 24px; height: 16px;">
+                  <img src="https://img.icons8.com/color/24/amex.png" alt="American Express"
+                       style="width: 24px; height: 16px;">
+                </div>
+              </label>
+
+              <label style="display: flex; align-items: center; padding: 1rem; border: 2px solid #e5e7eb; border-radius: 8px;
+              cursor: pointer; transition: all 0.2s;" class="payment-option" data-payment="sepa">
+                <input type="radio" name="payment-method" value="sepa"
+                       style="margin-right: 1rem; accent-color: #0071A1;">
+                <div style="display: flex; align-items: center; flex-grow: 1;">
+                  <svg style="width: 24px; height: 24px; margin-right: 1rem; color: #0071A1;" fill="currentColor"
+                       viewBox="0 0 24 24">
+                    <path
+                      d="M11.5 0C5.8 0 1 4.8 1 10.5S5.8 21 11.5 21 22 16.2 22 10.5 17.2 0 11.5 0zm0 19C6.9 19 3 15.1 3 10.5S6.9 2 11.5 2 20 5.9 20 10.5 16.1 19 11.5 19z" />
+                    <path d="M7.5 7.5h8v1.5h-8zm0 3h8v1.5h-8zm0 3h5v1.5h-5z" />
+                  </svg>
+                  <div>
+                    <div style="font-weight: 500; color: #111827;">SEPA-Lastschrift</div>
+                    <div style="font-size: 0.875rem; color: #6b7280;">Abbuchung von Ihrem Bankkonto</div>
+                  </div>
+                </div>
+                <div
+                  style="background: #0071A1; color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 500;">
+                  SEPA
+                </div>
+              </label>
+
+              <label
+                style="display: flex; align-items: center; padding: 1rem; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+                class="payment-option" data-payment="paypal">
+                <input type="radio" name="payment-method" value="paypal"
+                       style="margin-right: 1rem; accent-color: #0071A1;">
+                <div style="display: flex; align-items: center; flex-grow: 1;">
+                  <svg style="width: 24px; height: 24px; margin-right: 1rem; color: #0070ba;" fill="currentColor"
+                       viewBox="0 0 24 24">
+                    <path
+                      d="M7.076 21.337H2.47a.641.641 0 01-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm1.417-8.326h2.19c3.546 0 6.14-1.44 6.898-5.28l.077-.437c.246-1.564.047-2.54-.831-3.467C15.96 2.775 14.31 2.4 12.14 2.4H6.283c-.524 0-.968.382-1.05.9L3.94 13.011h2.553z" />
+                  </svg>
+                  <div>
+                    <div style="font-weight: 500; color: #111827;">PayPal</div>
+                    <div style="font-size: 0.875rem; color: #6b7280;">Schnell und sicher mit PayPal</div>
+                  </div>
+                </div>
+                <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal" style="width: 32px; height: 20px;">
+              </label>
+            </div>
+
+            <div id="payment-details" style="margin-top: 1rem;">
+              <div id="card-details" style="display: none; margin-top:1rem;">
+                <div style="display:grid; gap:1rem;">
+                  <div>
+                    <label for="card-number">Kartennummer *</label>
+                    <input type="text" id="card-number" required aria-describedby="card-number-error"
+                           style="width:100%; padding:0.75rem; border:1px solid #d1d5db; border-radius:6px;">
+                    <span id="card-number-error" class="error-message" role="alert" aria-live="assertive"
+                          style="color:#dc2626; font-size:0.875rem;"></span>
+                  </div>
+                  <div>
+                    <label for="card-expiry">Gültig bis (MM/JJ) *</label>
+                    <input type="text" id="card-expiry" required aria-describedby="card-expiry-error"
+                           style="width:100%; padding:0.75rem; border:1px solid #d1d5db; border-radius:6px;">
+                    <span id="card-expiry-error" class="error-message" role="alert" aria-live="assertive"
+                          style="color:#dc2626; font-size:0.875rem;"></span>
+                  </div>
+                  <div>
+                    <label for="card-cvc">CVC *</label>
+                    <input type="text" id="card-cvc" required aria-describedby="card-cvc-error"
+                           style="width:100%; padding:0.75rem; border:1px solid #d1d5db; border-radius:6px;">
+                    <span id="card-cvc-error" class="error-message" role="alert" aria-live="assertive"
+                          style="color:#dc2626; font-size:0.875rem;"></span>
+                  </div>
+                  <div>
+                    <label for="card-holder">Karteninhaber *</label>
+                    <input type="text" id="card-holder" required aria-describedby="card-holder-error"
+                           style="width:100%; padding:0.75rem; border:1px solid #d1d5db; border-radius:6px;">
+                    <span id="card-holder-error" class="error-message" role="alert" aria-live="assertive"
+                          style="color:#dc2626; font-size:0.875rem;"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="sepa-details" style="display: none; margin-top: 1rem;">
+                <div style="display: grid; gap: 1rem;">
+                  <!-- IBAN -->
+                  <div>
+                    <label for="iban">IBAN *</label>
+                    <input type="text" id="iban" name="iban" required
+                           aria-describedby="iban-error"
+                           style="width:100%; padding:0.75rem; border:1px solid #d1d5db; border-radius:6px;">
+                    <span id="iban-error" class="error-message" role="alert" aria-live="assertive"
+                          style="color:#dc2626; font-size:0.875rem;"></span>
+                  </div>
+                  <!-- Kontoinhaber -->
+                  <div>
+                    <label for="account-holder">Kontoinhaber *</label>
+                    <input type="text" id="account-holder" name="account-holder" required
+                           aria-describedby="account-holder-error"
+                           style="width:100%; padding:0.75rem; border:1px solid #d1d5db; border-radius:6px;">
+                    <span id="account-holder-error" class="error-message" role="alert" aria-live="assertive"
+                          style="color:#dc2626; font-size:0.875rem;"></span>
+                  </div>
+                  <!-- SEPA-Mandat -->
+                  <div style="background:#f9fafb; padding:1rem; border-radius:6px; border:1px solid #e5e7eb;">
+                    <h4 style="font-weight:500; color:#111827; margin-bottom:0.5rem;">SEPA‑Lastschriftmandat</h4>
+                    <p style="font-size:0.875rem; color:#374151; margin-bottom:0.75rem;">
+                      Ich ermächtige die Haller Kreisblatt GmbH & Co. KG, Zahlungen von meinem Konto mittels Lastschrift
+                      einzuziehen.
+                    </p>
+                    <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+                      <input type="checkbox" id="sepa-mandate"
+                             style="margin-top:2px; width:18px; height:18px; accent-color:#0071A1;">
+                      <label for="sepa-mandate"
+                             style="font-size:0.875rem; color:#374151; line-height:1.5; cursor:pointer;">
+                        Ich erteile das SEPA‑Lastschriftmandat für wiederkehrende Zahlungen *
+                      </label>
+                    </div>
+                    <span id="sepa-mandate-error" class="error-message" role="alert" aria-live="assertive"
+                          style="color:#dc2626; font-size:0.875rem;"></span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div id="paypal-details" style="display: none;">
+                <div
+                  style="background: #f0f9ff; padding: 1rem; border-radius: 6px; border: 1px solid #0ea5e9; margin-top: 1rem;">
+                  <div style="display: flex; align-items: center;">
+                    <svg style="width: 20px; height: 20px; color: #0369a1; margin-right: 0.5rem;" fill="currentColor"
+                         viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p style="margin: 0; font-size: 0.875rem; color: #0369a1;">
+                      Sie werden nach dem Klick auf "Jetzt bezahlen" zu PayPal weitergeleitet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
+              <input type="checkbox" id="hk-email-consent"
+                     style="margin-right: 8px; width: 16px; height: 16px; accent-color: #0071A1; flex-shrink: 0;">
+              <label for="hk-email-consent"
+                     style="font-size: 0.875rem; color: #374151; line-height: 1.5; cursor: pointer; margin-top: -3px;">
+                Ich bin jederzeit widerruflich damit einverstanden, dass mich die Haller Kreisblatt Verlags-GmbH, auch
+                durch ihre Dienstleister, über ihre interessanten Verlagsprodukte und -angebote (Zeitungen,
+                Zeitschriften, Abo, Leserreisen, Leservorteile, HK-Karte, Gewinnspiele, Newsletter) per E-Mail
+                informiert.
+              </label>
+            </div>
+
+
+            <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+              <input type="checkbox" id="hk-terms-checkbox" required
+                     style="margin-right: 8px; width: 16px; height: 16px; accent-color: #0071A1; flex-shrink: 0;"
+                     aria-describedby="hk-terms-description">
+              <label for="hk-terms-checkbox"
+                     style="font-size: 0.875rem; color: #374151; line-height: 1.5; margin-top: -3px; cursor: pointer;"
+                     id="hk-terms-description">
+                Die <a href="https://www.haller-kreisblatt.de/agb" target="_blank" rel="noopener noreferrer"
+                       style="color: #2563eb; text-decoration: underline;">AGB</a>, die
+                <a href="https://www.haller-kreisblatt.de/widerruf" target="_blank" rel="noopener noreferrer"
+                   style="color: #2563eb; text-decoration: underline;">
+                  Widerrufserklärung
+                </a> und die
+                <a href="https://www.haller-kreisblatt.de/microsites/datenschutz" target="_blank"
+                   rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">
+                  Datenschutzerklärung
+                </a> hab ich gelesen und akzeptiert.
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" id="hk-submit-button" class="submit-button" disabled>
+                    <span id="hk-button-text" style="display: flex; align-items: center; gap: 0.5rem;">
+                      Zahlungspflichtig bestellen
+                    </span>
+            <span id="hk-spinner" style="display: none; align-items: center; gap: 0.5rem;">
+                        <svg style="animation: spin 1s linear infinite; width: 20px; height: 20px;" fill="none"
+                             viewBox="0 0 24 24">
+                            <circle style="opacity: 0.25;" cx="12" cy="12" r="10" stroke="currentColor"
+                                    stroke-width="4"></circle>
+                            <path style="opacity: 0.75;" fill="currentColor"
+                                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Wird verarbeitet...
+                    </span>
+          </button>
+        </form>
+
       </div>
       <!-- step3 -->
-      <div class="nw-bg-white nw-rounded-2xl nw-shadow-lg nw-p-4 sm:nw-p-6 nw-hidden">
+      <div id="step3-block" class="nw-bg-white nw-p-4 sm:nw-p-6 nw-hidden">
         step 3
       </div>
 
     </div>
 
-    <div class="nw-bg-white nw-rounded-2xl nw-shadow-lg nw-p-6 nw-mt-6">
+    <div id="step2-block" class="nw-bg-white nw-rounded-2xl nw-shadow-lg nw-p-6 nw-mt-6">
       <h3 class="nw-text-lg nw-font-semibold nw-mb-4" style="color: #0071A1;">BRAUCHEN SIE HILFE?</h3>
 
       {{>@kontakt-items}}
@@ -245,30 +786,57 @@
     {{> @zahlen-methoden}}
   </main>
 </div>
-
 <script>
+
+  function activateStep3() {
+    // Schritt 3 Kreis + Label
+    const step3Circle = document.getElementById('step-2-3');
+    const step3Label = document.getElementById('step-2-3-span');
+
+    if (step3Circle && step3Label) {
+      step3Circle.style.background = 'linear-gradient(135deg, #0071A1 0%, #005a85 100%)';
+      step3Circle.classList.remove('nw-bg-gray-200', 'nw-text-gray-500');
+      step3Circle.classList.add('nw-text-white', 'nw-shadow-md');
+
+      step3Label.classList.remove('nw-text-gray-500');
+      step3Label.style.color = '#0071A1';
+    }
+
+    // Fortschrittslinie von Schritt 2 zu 3
+    const progressBar2to3 = document.getElementById('progress-2-3');
+    if (progressBar2to3) {
+      progressBar2to3.style.background = 'linear-gradient(135deg, #0071A1 0%, #005a85 100%)';
+    }
+
+    // Schritt 2 verstecken
+    const step2 = document.getElementById('step2-block');
+    if (step2) step2.classList.add('nw-hidden');
+
+    // Schritt 3 zeigen
+    const step3 = document.getElementById('step3-block');
+    if (step3) step3.classList.remove('nw-hidden');
+  }
+
+
 
   function activateStep2() {
     // Schritt 2 Kreis + Label
-    const step2Circle = document.querySelectorAll('[role="navigation"] .nw-flex')[2].querySelector('div');
-    const step2Label = document.querySelectorAll('[role="navigation"] .nw-flex')[2].querySelector('span');
-
+    const step2Circle = document.getElementById('step-1-2');
+    const step2Label = document.getElementById('step-1-2-span');
     step2Circle.style.background = 'linear-gradient(135deg, #0071A1 0%, #005a85 100%)';
     step2Circle.classList.remove('nw-bg-gray-200', 'nw-text-gray-500');
     step2Circle.classList.add('nw-text-white', 'nw-shadow-md');
-    step2Label.style.color = '#0071A1';
     step2Label.classList.remove('nw-text-gray-500');
+    step2Label.style.color = '#0071A1';
 
     // ✅ Fortschrittslinie per ID ansprechen
     const progressBar1to2 = document.getElementById('progress-1-2');
     if (progressBar1to2) {
       progressBar1to2.style.background = 'linear-gradient(135deg, #0071A1 0%, #005a85 100%)';
     }
-
     // Schritt 1 verstecken
     const step1 = document.getElementById('auth-step');
     if (step1) step1.classList.add('nw-hidden');
-
     // Schritt 2 zeigen
     const step2 = document.getElementById('step2-block');
     if (step2) step2.classList.remove('nw-hidden');
@@ -906,8 +1474,220 @@
   });
 </script>
 
-<link rel="stylesheet" href="/accessibility.css">
+<!-- step2 acript -->
 
+<script>
+  // Payment method switching
+  document.addEventListener('DOMContentLoaded', function() {
+    const paymentOptions = document.querySelectorAll('.payment-option');
+    const cardDetails = document.getElementById('card-details');
+    const sepaDetails = document.getElementById('sepa-details');
+    const paypalDetails = document.getElementById('paypal-details');
+
+    // Style selected payment option
+    function updatePaymentOptionStyles() {
+      paymentOptions.forEach(option => {
+        const radio = option.querySelector('input[type="radio"]');
+        if (radio.checked) {
+          option.style.borderColor = '#0071A1';
+          option.style.backgroundColor = '#f0f9ff';
+        } else {
+          option.style.borderColor = '#e5e7eb';
+          option.style.backgroundColor = 'white';
+        }
+      });
+    }
+
+    // Show/hide payment details based on selection
+    function showPaymentDetails(paymentType) {
+      cardDetails.style.display = 'none';
+      sepaDetails.style.display = 'none';
+      paypalDetails.style.display = 'none';
+      switch (paymentType) {
+        case 'card':
+          cardDetails.style.display = 'block';
+          break;
+        case 'sepa':
+          sepaDetails.style.display = 'block';
+          break;
+        case 'paypal':
+          paypalDetails.style.display = 'block';
+          break;
+      }
+    }
+
+    // Initialize payment options
+    paymentOptions.forEach(option => {
+      const radio = option.querySelector('input[type="radio"]');
+      // Handle option click
+      option.addEventListener('click', function() {
+        radio.checked = true;
+        const paymentType = radio.value;
+        showPaymentDetails(paymentType);
+        updatePaymentOptionStyles();
+      });
+      // Handle radio change
+      radio.addEventListener('change', function() {
+        const paymentType = this.value;
+        showPaymentDetails(paymentType);
+        updatePaymentOptionStyles();
+      });
+    });
+    // Initialize with first option selected
+    updatePaymentOptionStyles();
+    showPaymentDetails('card');
+    // Form validation
+    const form = document.getElementById('hk-payment-form');
+    const submitButton = document.getElementById('hk-submit-button');
+    const termsCheckbox = document.getElementById('hk-terms-checkbox');
+
+    function updateSubmitButton() {
+      if (termsCheckbox.checked) {
+        submitButton.disabled = false;
+        submitButton.style.opacity = '1';
+      } else {
+        submitButton.disabled = true;
+        submitButton.style.opacity = '0.5';
+      }
+    }
+
+    termsCheckbox.addEventListener('change', updateSubmitButton);
+    // Initialize submit button state
+    updateSubmitButton();
+    // Form submission
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (!termsCheckbox.checked) {
+        alert('Bitte akzeptieren Sie die AGB, Widerrufserklärung und Datenschutzerklärung.');
+        return;
+      }
+      // Get selected payment method
+      const selectedPayment = document.querySelector('input[name="payment-method"]:checked').value;
+      // Validate required fields based on payment method
+      let isValid = true;
+      /*  let errorMessage = '';
+       if (selectedPayment === 'card') {
+         const cardInputs = cardDetails.querySelectorAll('input');
+         cardInputs.forEach(input => {
+           if (!input.value.trim()) {
+             isValid = false;
+             input.style.borderColor = '#dc2626';
+           } else {
+             input.style.borderColor = '#d1d5db';
+           }
+         });
+         if (!isValid) errorMessage = 'Bitte füllen Sie alle Kreditkarten-Felder aus.';
+       } */
+      if (selectedPayment === 'card') {
+        isValid = true;
+
+        const fields = cardDetails.querySelectorAll('input[type="text"]');
+        fields.forEach(input => {
+          const err = document.getElementById(input.id + '-error');
+          input.removeAttribute('aria-invalid');
+          err.textContent = '';
+          input.style.borderColor = '#d1d5db';
+
+          if (!input.value.trim()) {
+            isValid = false;
+            input.setAttribute('aria-invalid', 'true');
+            err.textContent = 'Dieses Feld ist erforderlich.';
+            input.style.borderColor = '#dc2626';
+          }
+        });
+
+        if (!isValid) {
+          const firstInvalid = document.querySelector('[aria-invalid="true"]');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+      }
+
+     /*  if (selectedPayment === 'sepa') {
+        const sepaInputs = sepaDetails.querySelectorAll('input[type="text"]');
+        const sepaMandate = document.getElementById('sepa-mandate');
+        sepaInputs.forEach(input => {
+          if (!input.value.trim()) {
+            isValid = false;
+            input.style.borderColor = '#dc2626';
+          } else {
+            input.style.borderColor = '#d1d5db';
+          }
+        });
+        if (!sepaMandate.checked) {
+          isValid = false;
+          errorMessage = 'Bitte erteilen Sie das SEPA-Lastschriftmandat.';
+        } else if (!isValid) {
+          errorMessage = 'Bitte füllen Sie alle SEPA-Felder aus.';
+        }
+      }
+      if (!isValid) {
+        alert(errorMessage);
+        return;
+      } */
+      if (selectedPayment === 'sepa') {
+        let isValid = true;
+
+        const inputs = sepaDetails.querySelectorAll('input[type="text"]');
+        inputs.forEach(input => {
+          const err = document.getElementById(input.id + '-error');
+          input.removeAttribute('aria-invalid');
+          err.textContent = '';
+          input.style.borderColor = '#d1d5db';
+
+          if (!input.value.trim()) {
+            isValid = false;
+            input.setAttribute('aria-invalid', 'true');
+            err.textContent = 'Dieses Feld ist erforderlich.';
+            input.style.borderColor = '#dc2626';
+          }
+        });
+
+        const mandate = document.getElementById('sepa-mandate');
+        const mandateErr = document.getElementById('sepa-mandate-error');
+        mandateErr.textContent = '';
+        if (!mandate.checked) {
+          isValid = false;
+          mandateErr.textContent = 'Bitte erteilen Sie das SEPA‑Lastschriftmandat.';
+        }
+
+        if (!isValid) {
+          const firstInvalid = document.querySelector('[aria-invalid="true"]');
+          if (firstInvalid) {
+            firstInvalid.focus();
+          } else {
+            mandate.focus();
+          }
+          return;
+        }
+      }
+      // Show loading state
+      const buttonText = document.getElementById('hk-button-text');
+      const spinner = document.getElementById('hk-spinner');
+      buttonText.style.display = 'none';
+      spinner.style.display = 'flex';
+      submitButton.disabled = true;
+      // Simulate payment processing
+      setTimeout(() => {
+        alert('Zahlung erfolgreich! Sie erhalten in Kürze eine Bestätigungsmail.');
+        activateStep3();
+        // Reset button state (in real implementation, redirect to success page)
+        buttonText.style.display = 'flex';
+        spinner.style.display = 'none';
+        submitButton.disabled = false;
+        updateSubmitButton();
+      }, 2000);
+    });
+  });
+  // Spinner animation
+  const style = document.createElement('style');
+  style.textContent = `
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+        `;
+  document.head.appendChild(style);
+</script>
 <style>
   /* Security: Prevent form field highlighting for screenshots */
   input[type="password"],
