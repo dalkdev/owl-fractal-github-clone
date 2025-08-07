@@ -543,12 +543,12 @@
       </nav>
       <!-- step1 -->
       <!-- register step 1 -->
-
-      {{>@epaper-register-form}}
-
+      <div class="">
+        {{>@epaper-register-form}}
+      </div>
 
       <!-- step2 -->
-      <div id="step2-block" class="nw-bg-white nw-p-4 sm:nw-p-6 nw-hidden ">
+      <div id="step2-block" class="nw-bg-white nw-p-4 sm:nw-p-6 nw-hidden  ">
         <form id="hk-payment-form" class="payment-form" novalidate>
           <h3 class="form-title">Zahlungsinformationen</h3>
 
@@ -817,8 +817,6 @@
     if (step3) step3.classList.remove('nw-hidden');
   }
 
-
-
   function activateStep2() {
     // Schritt 2 Kreis + Label
     const step2Circle = document.getElementById('step-1-2');
@@ -843,6 +841,61 @@
   }
 
   document.addEventListener('DOMContentLoaded', function() {
+
+    // neu
+    const customerTypeRadios = document.querySelectorAll('input[name="customer-type"]');
+    const salutationField = document.getElementById('salutation');
+    const salutationWrapper = document.getElementById('salutation-wrapper');
+    const salutationError = document.getElementById('salutation-error');
+
+    const firmaField = document.getElementById('firma');
+    const firmaWrapper = document.getElementById('firma-wrapper');
+    const firmaError = document.getElementById('firma-error');
+
+    function updateSalutationVisibility() {
+      const selected = document.querySelector('input[name="customer-type"]:checked')?.value;
+
+      if (selected === 'business') {
+        // Firma gewählt → Anrede ausblenden
+        salutationWrapper.style.display = 'none';
+        salutationField.value = '';
+        salutationField.required = false;
+        salutationField.classList.remove('nw-border-red-500');
+        if (salutationError) {
+          salutationError.textContent = '';
+          salutationError.classList.add('nw-hidden');
+        }
+
+        // Firma anzeigen
+        if (firmaWrapper) {
+          firmaWrapper.style.display = '';
+          firmaField.required = true;
+        }
+
+      } else {
+        // Privatkunde → Anrede anzeigen
+        salutationWrapper.style.display = '';
+        salutationField.required = true;
+
+        // Firma ausblenden
+        if (firmaWrapper) {
+          firmaWrapper.style.display = 'none';
+          firmaField.value = '';
+          firmaField.required = false;
+        }
+      }
+    }
+
+    // Event-Listener für Auswahländerung
+    customerTypeRadios.forEach(radio => {
+      radio.addEventListener('change', updateSalutationVisibility);
+    });
+
+    // Initialer Aufruf
+    updateSalutationVisibility();
+
+    // end neu
+
     'use strict';
     // Security: Prevent console access in production
     if (typeof console !== 'undefined' && window.location.hostname !== 'localhost') {
@@ -1201,15 +1254,37 @@
       registerBtn.addEventListener('click', async function(e) {
         e.preventDefault();
 
+        //neu
+
+        const selectedCustomerType = document.querySelector('input[name="customer-type"]:checked')?.value;
+
+        if (selectedCustomerType === 'business') {
+          salutationWrapper.style.display = 'none';
+          salutationField.required = false;
+
+          firmaWrapper.style.display = '';
+          firmaField.required = true;
+        } else {
+          salutationWrapper.style.display = '';
+          salutationField.required = true;
+
+          firmaWrapper.style.display = 'none';
+          firmaField.required = false;
+        }
+
+        // end
+
         // Security: Rate limiting check
         if (!rateLimiter.canAttempt()) {
           alert(`Zu viele Versuche. Bitte warten Sie ${rateLimiter.getRemainingTime()} Sekunden.`);
           return;
         }
 
+          //neu
         const requiredFields = {
           'register-password': 'Passwort',
-          'salutation': 'Anrede',
+          ...(selectedCustomerType !== 'business' && { 'salutation': 'Anrede' }),
+          ...(selectedCustomerType === 'business' && { 'firma': 'Firma' }),
           'first-name': 'Vorname',
           'last-name': 'Nachname',
           'street': 'Straße & Nr.',
@@ -1217,6 +1292,7 @@
           'city': 'Ort'
         };
 
+        // end
         const sanitizedData = {};
         let firstErrorField = null;
 

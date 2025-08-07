@@ -125,7 +125,17 @@
       </div>
     </div>
 
-    <div>
+    <!-- Firma (nur bei Firmenkunden sichtbar) -->
+    <div id="firma-wrapper" style="display: none;">
+      <label for="firma" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Firma *</label>
+      <input type="text" id="firma"
+             class="nw-w-full nw-px-4 nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200"
+             maxlength="50" autocomplete="organization" spellcheck="false">
+      <p id="firma-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
+    </div>
+
+    <!-- Anrede (nur bei Privatkunden sichtbar) -->
+    <div id="salutation-wrapper">
       <label for="salutation" class="nw-block nw-text-sm nw-font-medium nw-text-gray-700 nw-mb-2">Anrede *</label>
       <select id="salutation" required
               class="nw-w-full nw-px-4 nw-py-4 sm:nw-py-3 nw-border nw-border-gray-300 nw-rounded-xl nw-text-base focus:nw-ring-2 focus:nw-border-transparent nw-transition-all nw-duration-200">
@@ -133,7 +143,6 @@
         <option value="herr">Herr</option>
         <option value="frau">Frau</option>
         <option value="divers">Divers</option>
-        <option value="firma">Firma</option>
       </select>
       <p id="salutation-error" class="nw-text-xs nw-text-red-500 nw-mt-1 nw-hidden" aria-live="polite"></p>
     </div>
