@@ -127,13 +127,16 @@
 
     <div class="nw-max-w-4xl nw-mx-auto">
       <!-- Progress Bar -->
-      <div class="nw-mb-8" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20" aria-label="Fortschritt der Abohilfe">
+      <div class="nw-mb-8" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Fortschritt der Abohilfe">
         <div class="nw-flex nw-justify-between nw-items-center nw-mb-2">
           <span class="nw-text-sm nw-font-medium nw-text-gray-700">Fortschritt</span>
           <span class="nw-text-sm nw-font-medium nw-text-gray-700 progress-text" id="progress-text">Frage 1 von 5</span>
         </div>
         <div class="nw-w-full nw-bg-gray-200 nw-rounded-full nw-h-2">
-          <div class="nw-h-2 nw-rounded-full nw-transition-all nw-duration-300 progress-bar" style="width: 20%; background-color: #1e3a8a;" aria-describedby="progress-text"></div>
+          <div class="nw-h-2 nw-rounded-full nw-transition-all nw-duration-300 progress-bar"
+               style="width: 0%; background-color: #1e3a8a;"
+               aria-describedby="progress-text">
+          </div>
         </div>
       </div>
 
@@ -667,7 +670,7 @@
     return 'webabo';
   }
 
-  function updateProgressBar() {
+/*   function updateProgressBar() {
     // Don't show progress bar for recommendation (after all questions)
     if (currentQuestion >= totalQuestions) {
       const progressContainer = document.querySelector('.nw-mb-8');
@@ -685,8 +688,72 @@
     if (progressText) {
       progressText.textContent = `Frage ${currentQuestion + 1} von ${totalQuestions}`;
     }
+  } */
+ /*  function updateProgressBar() {
+    const progressContainer = document.querySelector('.nw-mb-8');
+    const progressBar = document.querySelector('.progress-bar');
+    const progressText = document.querySelector('.progress-text');
+
+    // Verstecke Fortschrittsbalken, wenn alle Fragen abgeschlossen sind
+    if (currentQuestion >= totalQuestions) {
+      if (progressContainer) {
+        progressContainer.style.display = 'none';
+      }
+      return;
+    }
+
+    // Zeige Fortschrittsbalken, falls er zuvor versteckt war
+    if (progressContainer) {
+      progressContainer.style.display = 'block';
+    }
+
+    // Fortschritt berechnen: z.B. 0%, 20%, ... bei 5 Fragen
+    const progress = (currentQuestion / totalQuestions) * 100;
+
+    // Breite setzen
+    if (progressBar) {
+      progressBar.style.width = `${progress}%`;
+    }
+
+    // Text aktualisieren
+    if (progressText) {
+      progressText.textContent = `Frage ${currentQuestion} von ${totalQuestions}`;
+    }
+  } */
+  function updateProgressBar() {
+    const progressContainer = document.querySelector('.nw-mb-8');
+    const progressBar = document.querySelector('.progress-bar');
+    const progressText = document.querySelector('.progress-text');
+    const progress = (currentQuestion / totalQuestions) * 100;
+    if (progressBar) {
+      progressBar.style.width = `${progress}%`;
+    }
+    if (progressText && currentQuestion < totalQuestions) {
+      progressText.textContent = `Frage ${currentQuestion + 1} von ${totalQuestions}`;
+    }
+    if (currentQuestion >= totalQuestions) {
+      if (progressText) {
+        progressText.textContent = 'Abgeschlossen';
+      }
+      setTimeout(() => {
+        if (progressContainer) {
+          progressContainer.style.display = 'none';
+        }
+      }, 500);
+    } else {
+      if (progressContainer) {
+        progressContainer.style.display = 'block';
+      }
+    }
   }
 
+
+  /*   function updateBackButton() {
+      const backButton = document.querySelector('.back-btn');
+      if (backButton) {
+        backButton.style.display = currentQuestion > 0 ? 'block' : 'none';
+      }
+    } */
   function updateBackButton() {
     const backButton = document.querySelector('.back-btn');
     if (backButton) {
@@ -694,7 +761,7 @@
     }
   }
 
-  function goBack() {
+/*   function goBack() {
     if (currentQuestion > 0) {
       currentQuestion--;
       answers.pop();
@@ -706,6 +773,24 @@
       if (recommendationContainer) recommendationContainer.style.display = 'none';
       if (progressContainer && progressContainer.querySelector('.progress-bar')) progressContainer.style.display = 'block';
       showQuestion(currentQuestion);
+      updateProgressBar();
+      updateBackButton();
+    }
+  } */
+  function goBack() {
+    if (currentQuestion > 0) {
+      currentQuestion--;
+      answers.pop();
+
+      const questionContainer = document.querySelector('.question-container');
+      const recommendationContainer = document.querySelector('.recommendation-container');
+      const progressContainer = document.querySelector('.nw-mb-8');
+
+      if (questionContainer) questionContainer.style.display = 'block';
+      if (recommendationContainer) recommendationContainer.style.display = 'none';
+      if (progressContainer) progressContainer.style.display = 'block';
+
+      showQuestion(currentQuestion); // ← diese Funktion musst du implementiert haben
       updateProgressBar();
       updateBackButton();
     }
