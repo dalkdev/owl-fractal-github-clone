@@ -1,10 +1,10 @@
-<div class="nw-py-8 nw-px-4 md:nw-px-7 nw-bg-white nw-mx-auto slider meldungen-slider " style="max-width:1024px;">
+<div class="nw-py-8 nw-px-4 md:nw-px-7 nw-mx-auto slider meldungen-slider  nw-bg-shine-blue" style="max-width:1024px;">
   <div class="nw-inline nw-text-xl nw-uppercase nw-font-bold">
-    GASTRO-NEWS BIELEFELD
+    DIE SCHÖNSTEN GÄRTEN IN OWL
   </div>
   <hr class=" nw-red-line-l nw-mt-0.5 nw-mb-2">
   <!--Mobile -->
-  <article class="nw-relative nw-bg-white nw-pt-6 nw-pb-8 md:nw-hidden">
+  <article class="nw-relative nw-bg-shine-blue nw-mt-6 nw-pb-4 nw-rounded-b md:nw-hidden">
     <a>
       <figure class="nw-aspect-w-16 nw-aspect-h-9">
         <img
@@ -14,16 +14,17 @@
         />
       </figure>
 
-      <div class="nw-bg-[#F2F5F9] nw--mt-6 nw-mx-4 nw-p-4 nw-z-50 nw-relative nw-rounded-md">
+      <div class="nw-bg-white nw-border nw-border-gray-100 nw--mt-6 nw-mx-4 nw-p-4 nw-z-50 nw-relative nw-rounded-md">
         <p class="nw-plus-icon-l nw-text-gray-600 nw-text-base nw-font-medium nw-pb-3">
           Dollar Sand connar
         </p>
         <p class="nw-text-lg nw-font-bold nw-pb-2.5">
           Campingwagen geht in Flammen auf: Bielefelder Zapfer sucht neue Bleibe in Bielefeld
         </p>
-        <p class="nw-text-base nw-font-medium nw-text-gray-400">
+        <p class="nw-text-base nw-font-medium nw-text-gray-400 nw-pb-4">
           Campingwagen geht in Flammen auf: Bielefelder Zapfer sucht neue Bleibe in Bielefeld
         </p>
+        {{>@artikel-content-icons}}
       </div>
     </a>
   </article>
@@ -36,19 +37,20 @@
            class="nw-w-full nw-h-full nw-rounded-md nw-object-cover">
     </figure>
     <div class="nw-w-1/2 nw-px-6">
-      <p class="nw-plus-icon-s nw-text-gray-600 nw-text-md nw-font-medium nw-mb-3">
+      <p class="nw-plus-icon-l nw-text-gray-600 nw-text-md nw-font-medium nw-mb-3">
         Dollar Sand connar
       </p>
       <p class="nw-text-xl nw-font-bold nw-pb-2.5">
         Campingwagen geht in Flammen auf: Bielefelder Zapfer sucht neue Bleibe in Bielefeld
       </p>
-      <p class="nw-text-base nw-text-gray-400 nw-font-medium">
+      <p class="nw-text-base nw-text-gray-400 nw-font-medium nw-pb-6">
         Campingwagen geht in Flammen auf: Bielefelder Zapfer sucht neue Bleibe in Bielefeld
       </p>
+      {{>@artikel-content-icons}}
     </div>
     </a>
   </article>
-  <div class="embla embla--main-carousel">
+  <div class="embla embla--main-carousel nw-pt-6 md:nw-pt-0">
     <div class="embla__viewport relative">
       <div class="embla__container ">
         {{#each artikel}}

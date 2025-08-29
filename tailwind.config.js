@@ -69,6 +69,10 @@ module.exports = {
                     'erwinteaser-font-big': '#9dcde3', // bleibt
 
                 },
+                shine: {
+                    'blue': '#F2F5F9',
+                },
+
                 scp: {
                     0 : '#1AB0F8',
                 },
