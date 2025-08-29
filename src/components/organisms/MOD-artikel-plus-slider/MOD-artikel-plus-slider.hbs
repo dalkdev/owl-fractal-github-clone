@@ -4,7 +4,7 @@
   </div>
   <hr class=" nw-red-line-l nw-mt-0.5 nw-mb-2">
   <!--Mobile -->
-  <article class="nw-relative nw-bg-shine-blue nw-mt-6 nw-pb-4 nw-rounded-b md:nw-hidden">
+  <article class="nw-relative nw-bg-shine-blue nw-mt-6 nw-pb-4 nw-rounded-b sm:nw-hidden">
     <a>
       <figure class="nw-aspect-w-16 nw-aspect-h-9">
         <img
@@ -30,7 +30,7 @@
   </article>
 
   <!-- Desktop -->
-  <article class="nw-pt-6 nw-pb-8 nw-hidden md:nw-flex">
+  <article class="nw-pt-6 nw-pb-8 nw-hidden sm:nw-flex">
     <a class=" nw-flex nw-flex-row nw-gap-6  nw-justify-center nw-items-center ">
     <figure class="nw-w-1/2 " style="width: 492px; height: 306px;">
       <img src="/images/artikel-teaser.jpg" alt="DEsktop-Bild"
@@ -54,24 +54,23 @@
     <div class="embla__viewport relative">
       <div class="embla__container ">
         {{#each artikel}}
-          <!-- -->
-          <div
-            class="
-            embla__slide
-           md:nw-min-w-[312px] nw-flex nw-items-center
-          "
-          >
-            <div class="nw-flex nw-flex-col nw-gap-4 nw-p-4 nw-rounded-md nw-bg-white nw-border nw-border-gray-100">
+          <div class="embla__slide md:nw-min-w-[312px] nw-flex nw-justify-between nw-items-stretch">
+            <a href="#" class="nw-flex nw-cursor-pointer nw-flex-col nw-justify-between nw-gap-4 nw-p-4 nw-rounded-md nw-bg-white nw-border nw-border-gray-100 nw-w-full">
+
+              <!-- Oberer Teil (Überschrift und Titel) -->
               <div>
                 <p class="nw-text-xs nw-font-medium nw-text-gray-600">
                   {{this.heading}}
                 </p>
-                <p class="nw-text-base nw-font-bold nw-line-clamp-2">
+                <p class="nw-text-base nw-font-bold">
                   {{this.title}}
                 </p>
               </div>
+
+              <!-- Unterer Teil (Icons oder ähnliches) -->
               {{>@artikel-content-icons}}
-            </div>
+
+            </a>
           </div>
         {{/each}}
       </div>
@@ -82,7 +81,7 @@
     <a href="#" class="nw-group nw-inline-flex  nw-text-base nw-text-red-0 hover:nw-text-red-100 focus:nw-text-red-200 nw-font-bold nw-items-center
     nw-space-x-1 nw-transition-all
           nw-duration-200 nw-ease-in-out focus:nw-outline-none focus:nw-ring-2 focus:nw-ring-gray-500">
-      <span>Weitere Meldungen</span>
+      <span>Mehr zum Thema</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="nw-h-5 nw-w-5">
         <path fill-rule="evenodd"
               d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z"
