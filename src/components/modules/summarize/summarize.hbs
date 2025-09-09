@@ -1,0 +1,38 @@
+<div class="nw-bg-white nw-rounded-lg nw-shadow-md nw-p-4 nw-max-w-2xl nw-mx-auto">
+  <!-- Header with badge and title -->
+  <div class="nw-flex nw-items-center nw-justify-between nw-mb-4">
+    <div class="nw-flex nw-items-center nw-gap-3">
+      {{#if badge.isNew}}
+      <span class="nw-bg-green-600 nw-text-white nw-text-sm nw-font-bold nw-px-2 nw-py-1 nw-rounded">
+        {{badge.text}}
+      </span>
+      {{/if}}
+      <h2 class="nw-text-lg nw-font-bold nw-text-gray-900">
+        {{title}}
+      </h2>
+    </div>
+    
+    <!-- Audio button -->
+    <a href="{{audioUrl}}" class="nw-bg-red-600 nw-text-white nw-px-4 nw-py-2 nw-rounded nw-text-sm nw-font-medium nw-flex nw-items-center nw-gap-2 hover:nw-bg-red-700 nw-transition-colors">
+      <i class="fas fa-play" aria-hidden="true"></i>
+      Anhören
+    </a>
+  </div>
+  
+  <!-- Article content -->
+  <div class="nw-border-t nw-pt-4">
+    <h3 class="nw-text-xl nw-font-bold nw-text-gray-900 nw-mb-3 nw-leading-tight">
+      {{article.headline}}
+    </h3>
+    
+    <p class="nw-text-gray-700 nw-leading-relaxed nw-mb-4">
+      {{article.preview}}
+    </p>
+    
+    <!-- Read more link -->
+    <a href="{{article.readMoreUrl}}" class="nw-text-red-600 nw-font-medium hover:nw-text-red-700 nw-transition-colors nw-flex nw-items-center nw-gap-1">
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      Mehr lesen
+    </a>
+  </div>
+</div>

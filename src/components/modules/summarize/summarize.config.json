@@ -1,0 +1,16 @@
+{
+  "status": "ready",
+  "context": {
+    "badge": {
+      "text": "NEU",
+      "isNew": true
+    },
+    "title": "DER TAG KOMPAKT",
+    "audioUrl": "#",
+    "article": {
+      "headline": "Fälschungsvorwurf gegen AfD-Doktor in Bad Oeynhausen",
+      "preview": "Der AfD-Bürgermeisterkandidat Michael Grove steht unter dem Verdacht der Urkundenfälschung. Recherchen der NW zeigen, dass Groves Doktorurkunde von der...",
+      "readMoreUrl": "#"
+    }
+  }
+}
