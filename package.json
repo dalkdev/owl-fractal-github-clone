@@ -16,7 +16,7 @@
     "node": ">=14 < 15"
   },
   "scripts": {
-    "start": "cross-env HMR_PORT=3042 concurrently -n fractal,vite -c magenta,yellow \"yarn fractal:start\" \"yarn vite:start\"",
+    "start": "cross-env HMR_PORT=5000 concurrently -n fractal,vite -c magenta,yellow \"npm run fractal:start\" \"npm run vite:start\"",
     "build": "yarn vite:build && fractal build",
     "build:copy": "yarn build && copy build\\app.css ..\\owl-cms-twig\\public\\css\\ && copy build\\app.js ..\\owl-cms-twig\\public\\js\\ && copy build\\vendor.js ..\\owl-cms-twig\\public\\js\\",
     "l:build:copy": "yarn build && cp build/app.css ../owl-cms-twig/public/css/ && cp build/app.js ../owl-cms-twig/public/js/",
@@ -24,8 +24,8 @@
     "build:serve": "yarn build && serve build",
     "build:upload": "yarn build && winscp.com /script=ftp_upload.scp",
     "fractal:start": "cross-env NODE_ENV=dev fractal start ./ --sync",
-    "vite:start": "cross-env  HMR_PORT=3042 vite",
-    "vite:build": "tsc && vite build",
+    "vite:start": "cross-env HMR_PORT=5000 vite",
+    "vite:build": "vite build",
     "clean": "node scripts/clean",
     "format": "yarn prettier --write . && yarn stylelint:fix && yarn eslint:fix",
     "stylelint": "stylelint \"src/css/**/*.scss\" \"src/css/**/*.css\" --config .stylelintrc.json",

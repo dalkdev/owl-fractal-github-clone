@@ -1,7 +1,7 @@
 'use strict';
 const ENV_DEV = process.env.NODE_ENV === 'dev';
 const HMR_PORT = process.env.HMR_PORT;
-const HMR_URL = 'localhost';
+const HMR_URL = process.env.REPLIT_DOMAIN || 'localhost';
 
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = (module.exports = require('@frctl/fractal').create());
