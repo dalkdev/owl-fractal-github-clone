@@ -219,3 +219,6 @@ fractal.web.set('server.syncOptions', {
   reloadDelay: 0,
   files: ['src/components/**/*.hbs'],
 });
+
+/* Configure server port for Replit */
+fractal.web.set('server.port', 5000);

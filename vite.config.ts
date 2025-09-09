@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 
-const HMR_PORT = parseInt(process.env.HMR_PORT) || 5000;
+const HMR_PORT = parseInt(process.env.HMR_PORT) || 3042;
 
 // https://vitejs.dev/config/
 export default defineConfig({
