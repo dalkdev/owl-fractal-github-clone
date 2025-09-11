@@ -16,6 +16,7 @@ import { initDropdownMenu } from './modules/dropdownMenu';
 import { initLoginBox } from './modules/login-box';
 import { initFAQToggleAbo } from './modules/fag-toggle-abo';
 import { initZusammenfassungAkkordeon } from './modules/zusammenfassung-akkordeon';
+import { initArticleSummary } from './modules/article-summary';
 
 
 let adIsTriggered = false;
@@ -40,6 +41,7 @@ const initializationFunctions: Array<() => void> = [
     initLesepaten,
     initDropdownMenu,
     initZusammenfassungAkkordeon,
+    initArticleSummary,
     initFAQToggleAbo,
 //    initLightBox,
 
